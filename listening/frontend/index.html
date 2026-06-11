@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body{margin:0;padding:4px 0 0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;text-align:center;-webkit-tap-highlight-color:transparent}
+.playbtn{width:96px;height:96px;border-radius:50%;background:#e6f5ee;border:3px solid #1d9e75;font-size:38px;color:#0f6e56;cursor:pointer;touch-action:manipulation}
+.playbtn:disabled{opacity:.4;border-color:#9bb5aa}
+.cnt{font-size:14px;color:#5b6b7a;margin-top:6px}
+.cnt b{color:#0f6e56}
+.err{font-size:13px;color:#a32d2d;margin-top:4px;display:none}
+</style>
+</head>
+<body>
+<button id="btn" class="playbtn" aria-label="播放">&#9658;</button>
+<div class="cnt" id="cnt"></div>
+<div class="err" id="err">音频加载失败，请检查网络后重试</div>
+<audio id="au" preload="auto"></audio>
+<script>
+"use strict";
+var args = {}, used = 0, playing = false, lastSrc = null;
+
+function send(type, data){
+ var msg = Object.assign({isStreamlitMessage:true, type:type}, data || {});
+ window.parent.postMessage(msg, "*");
+}
+function setValue(v){ send("streamlit:setComponentValue", {value:v, dataType:"json"}); }
+function setHeight(){ send("streamlit:setFrameHeight", {height: document.body.scrollHeight + 8}); }
+
+var au = document.getElementById("au");
+var btn = document.getElementById("btn");
+var cnt = document.getElementById("cnt");
+var err = document.getElementById("err");
+
+function left(){
+ var l = (args.max_plays || 0) - used;
+ return l < 0 ? 0 : l;
+}
+function refresh(){
+ btn.disabled = playing || left() <= 0;
+ cnt.innerHTML = (args.label || "还能听") + " <b>" + left() + "</b> 遍";
+ setHeight();
+}
+
+btn.onclick = function(){
+ if (playing || left() <= 0) return;
+ err.style.display = "none";
+ used++;
+ playing = true;
+ refresh();
+ setValue({qid: args.qid, used: used, ts: Date.now()});
+ try{ au.currentTime = 0; }catch(e){}
+ var p = au.play();
+ if (p && p.catch){
+  p.catch(function(){
+   playing = false;
+   err.style.display = "block";
+   refresh();
+  });
+ }
+};
+au.onended = function(){ playing = false; refresh(); };
+au.onerror = function(){
+ if (playing){ playing = false; err.style.display = "block"; refresh(); }
+};
+
+window.addEventListener("message", function(e){
+ var d = e.data;
+ if (!d || d.type !== "streamlit:render") return;
+ args = (d.args) || {};
+ if (args.src && args.src !== lastSrc){
+  lastSrc = args.src;
+  au.src = args.src;
+  used = args.used || 0;
+  playing = false;
+ }
+ if (typeof args.used === "number" && args.used > used) used = args.used;
+ refresh();
+});
+
+send("streamlit:componentReady", {apiVersion: 1});
+setHeight();
+</script>
+</body>
+</html>

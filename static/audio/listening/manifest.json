@@ -1,0 +1,182 @@
+{
+ "fragments": {
+  "b69ce5a6fbeec6ea": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Hello! Can you hear me? Let's begin."
+  },
+  "c396545df920d22d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "present"
+  },
+  "66d9454cde4d7075": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "bitter"
+  },
+  "db41349b76ea1e11": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "June"
+  },
+  "e8437e46dc8ebf0b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "mouth"
+  },
+  "3ba60a8fe045d2fc": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The juice tastes sweet."
+  },
+  "139d3b2e773e2fe1": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I can see two rabbits."
+  },
+  "f86fab7c9dac5588": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Touch the scarf. It feels soft."
+  },
+  "85883d897972cff6": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "My kite is under the chair."
+  },
+  "868385e865595832": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How does the apple feel?"
+  },
+  "b9e67463673aa604": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What shape is your clock?"
+  },
+  "24a95ae300777e74": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Can you swim?"
+  },
+  "cbe3b6e4d681a959": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How many ducks can you see?"
+  },
+  "fa74a731753942b8": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "What do you like doing, Peter?"
+  },
+  "61d1caeb76117f97": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "I like flying kites."
+  },
+  "7eca08d7f45e4260": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does Peter like doing?"
+  },
+  "e7391c191fd50d9a": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Is this red dress yours, Mary?"
+  },
+  "92e5c898fc643449": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "No. My dress is pink."
+  },
+  "efb33c754c665446": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What colour is Mary's dress?"
+  },
+  "e183acf27949607b": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "When is Children's Day, Danny?"
+  },
+  "1d0f71d7c6c434bf": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "It's in June."
+  },
+  "6294e02517e4c14c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: When is Children's Day?"
+  },
+  "5dea7f051c5f081c": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "What season do you like, Alice?"
+  },
+  "2195fb323937e700": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I like autumn. The leaves are yellow."
+  },
+  "e5594d3c86a24d9d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What season does Alice like?"
+  },
+  "7a9b7abb7934b9c3": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Hello, I'm Danny. Today is Children's Day. Look at my new kite. It is a triangle. It is yellow and green. I fly the kite with my father in the park. I'm very happy."
+  }
+ },
+ "courses": {
+  "W01D01": {
+   "static/audio/listening/W01D01/hello.mp3": "9c3d431c92f97887",
+   "static/audio/listening/W01D01/q01.mp3": "0ab7738b90e5ba5a",
+   "static/audio/listening/W01D01/q02.mp3": "e1b53dfda3dbae1e",
+   "static/audio/listening/W01D01/q03.mp3": "52ba581da7b9d930",
+   "static/audio/listening/W01D01/q04.mp3": "1234659d2b40e4cd",
+   "static/audio/listening/W01D01/q05.mp3": "df47d4d9645d5253",
+   "static/audio/listening/W01D01/q06.mp3": "431dbb1d614b8440",
+   "static/audio/listening/W01D01/q07.mp3": "adb365141559ba6f",
+   "static/audio/listening/W01D01/q08.mp3": "318e883ac792d10b",
+   "static/audio/listening/W01D01/q09.mp3": "fc71dc7ca7568094",
+   "static/audio/listening/W01D01/q10.mp3": "044bdb9d4fc2d0f8",
+   "static/audio/listening/W01D01/q11.mp3": "8cbb07d486417efa",
+   "static/audio/listening/W01D01/q12.mp3": "29d62416dbd5a5ff",
+   "static/audio/listening/W01D01/q13.mp3": "2241565d2b4d4fc8",
+   "static/audio/listening/W01D01/q14.mp3": "609e5daaec819c37",
+   "static/audio/listening/W01D01/q15.mp3": "abfd994fb83062d9",
+   "static/audio/listening/W01D01/q16.mp3": "e01e78662ef4893d",
+   "static/audio/listening/W01D01/p01.mp3": "be67f340a2571e4a"
+  }
+ }
+}

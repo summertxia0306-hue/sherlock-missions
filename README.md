@@ -1,0 +1,14 @@
+# Sherlock English Missions · 听力模块
+
+小学英语听力训练 Streamlit 应用（沪教牛津版，三年级）。
+
+- 部署/更新操作 → `00_部署指南_零基础版.md`
+- **与统一系统对接（Codex 必读）→ `listening/CONTRACT.md`**：完整目录结构注释、
+  功能清单（已实现/计划中/明确不做）、接口契约、结果结构、信息隔离红线
+- 范围说明：本模块只做听力；跟读/口语/录音归口语模块（Codex）
+- 设计与决策记录 → 项目文件夹 `听力部分/10_Streamlit迁移设计_v1_待确认.md`
+- 新课开发流程：AI 写 `content/listening/W0xD0x.json` → `tools/生成音频_v2.bat` → commit+push
+
+结构：`app.py` 临时入口（统一架构将替换）；`listening/` 引擎+页面+受限播放组件；
+`content/` 课程数据；`static/audio/` 音频资产；`storage/` 进度接口（v1 运行目录存储）；
+`tools/` 开发期音频生成。
