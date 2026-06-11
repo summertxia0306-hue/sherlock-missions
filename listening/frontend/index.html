@@ -49,14 +49,14 @@ btn.onclick = function(){
  playing = true;
  refresh();
 
- // 【核心修复】：移除了这里的 setValue，播放期间不再打扰服务器
  try{ au.currentTime = 0; }catch(e){}
  var p = au.play();
  if (p && p.catch){
   p.catch(function(){
    playing = false;
-   used--; // 如果播放失败，把次数退回去
+   used--; // 没播成功不扣次数
    err.style.display = "block";
+   err.innerText = "播放异常，请重试";
    refresh();
   });
  }
@@ -65,12 +65,12 @@ btn.onclick = function(){
 au.onended = function(){
  playing = false;
  refresh();
- // 【核心修复】：只有当声音彻底播放完毕，才通知服务器扣减次数
+ // 播完才通知后端，防止页面抖动
  setValue({qid: args.qid, used: used, ts: Date.now()});
 };
 
 au.onerror = function(){
- if (playing){ playing = false; used--; err.style.display = "block"; refresh(); }
+ if (playing){ playing = false; used--; err.style.display = "block"; err.innerText = "播放中断"; refresh(); }
 };
 
 window.addEventListener("message", function(e){
@@ -79,7 +79,24 @@ window.addEventListener("message", function(e){
  args = (d.args) || {};
  if (args.src && args.src !== lastSrc){
   lastSrc = args.src;
-  au.src = args.src;
+  
+  // 【核心黑科技：Blob 下载】
+  // 不再把链接直接塞给播放器，而是先用 fetch 完整下载到手机内存里
+  fetch(args.src)
+    .then(function(response) {
+      if (!response.ok) throw new Error("网络错误");
+      return response.blob(); 
+    })
+    .then(function(blob) {
+      // 生成一个完全属于手机本地的虚拟音频地址
+      au.src = URL.createObjectURL(blob);
+    })
+    .catch(function(error) {
+      err.style.display = "block";
+      err.innerText = "音频下载失败，请刷新";
+      setHeight();
+    });
+
   used = args.used || 0;
   playing = false;
  }
