@@ -16,9 +16,9 @@ _component = components.declare_component("limited_audio", path=_FRONTEND)
 
 
 def audio_url(repo_path):
-    """repo 内 static/xxx 路径 → Streamlit 静态服务 URL。"""
+    """repo 内 static/xxx 路径 → GitHub 原始文件 URL。"""
     assert repo_path.startswith("static/"), repo_path
-    return "/app/" + repo_path
+    return "https://raw.githubusercontent.com/summertxia0306-hue/sherlock-missions/main/" + repo_path
 
 
 def limited_audio(repo_path, qid, max_plays, used, key, label="还能听"):
