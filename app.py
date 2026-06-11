@@ -2,13 +2,15 @@
 """Sherlock English Missions · 听力模块临时入口。
 
 注意：这只是听力模块的极简路由，不是总系统首页。
-总首页 / 任务地图 / 星星规则由 Codex 的统一架构接管，届时本文件被替换，
-listening 包按 listening/CONTRACT.md 的接口被调用。
+统一架构的一级界面（口语练习 / 听力练习 两个入口）由 Codex 总架构师实现，
+届时"听力练习"入口指向 listening.page.listening_home()，本文件被替换。
+接口契约见 listening/CONTRACT.md。
 
 URL 用法：
-  儿童端（默认）:  /?course_id=W01D01
-  家长端:          /?mode=parent      （需密码，st.secrets 的 PARENT_PASSWORD）
-  可选参数:        student_id（默认 sherlock）
+  儿童端听力主界面（默认）:  /
+  直接打开某课:              /?course_id=W01D01
+  家长端:                    /?mode=parent   （密码 = st.secrets 的 PARENT_PASSWORD）
+  可选参数:                  student_id（默认 sherlock）
 """
 import streamlit as st
 
@@ -26,17 +28,7 @@ course_id = qp.get("course_id", None)
 if mode == "parent":
     lpage.parent_view()
 else:
-    courses = progress.visible_courses()
-    if not courses:
-        st.info("今天还没有开放的听力任务，请告诉爸爸妈妈。")
-    elif course_id and course_id in courses:
+    if course_id and course_id in progress.visible_courses():
         lpage.render_course(student_id, course_id)
-    elif len(courses) == 1:
-        lpage.render_course(student_id, list(courses)[0])
     else:
-        st.markdown("## 🎧 选择今天的听力任务")
-        for cid, meta in courses.items():
-            if st.button("%s · %s" % (cid, meta.get("title", "")),
-                         key="pick_" + cid, use_container_width=True):
-                st.query_params["course_id"] = cid
-                st.rerun()
+        lpage.listening_home(student_id)

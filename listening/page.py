@@ -37,8 +37,25 @@ def _state(course_id):
     key = "L_" + course_id
     if key not in st.session_state:
         st.session_state[key] = {"idx": -1, "answers": {}, "plays": {},
-                                 "t0": None, "result": None}
+                                 "t0": None, "result": None,
+                                 "submitted": False, "attempt": 1,
+                                 "in_correction": False, "correction_done": False,
+                                 "corr": None}
     return st.session_state[key]
+
+
+def _reset_for_retry(s):
+    """提交后"再做一次"：attempt+1 使所有控件 key 失效，全新开始。"""
+    s["attempt"] += 1
+    s["idx"] = -1
+    s["answers"] = {}
+    s["plays"] = {}
+    s["t0"] = None
+    s["result"] = None
+    s["submitted"] = False
+    s["in_correction"] = False
+    s["correction_done"] = False
+    s["corr"] = None
 
 
 @st.cache_resource(show_spinner=False)
@@ -52,9 +69,53 @@ def get_last_result(student_id, course_id):
     return rs[-1] if rs else None
 
 
-def render_course(student_id, course_id):
-    """渲染一节课。完成时结果已写入 storage.progress，并返回结果 dict。"""
+def listening_home(student_id):
+    """听力主界面（2026-06-12 家长定）：列出已开发课程；完成状态由"提交"
+    自动产生（提交过=已完成），非家长控制；已完成可重做；
+    隐藏/删除/未到开放日期的课程不显示；关闭的显示但锁定。"""
     st.markdown(_CSS, unsafe_allow_html=True)
+    st.markdown("## 🎧 听力练习")
+    today = progress.beijing_today()
+    done = set()
+    for r in progress.list_results(student_id=student_id):
+        done.add(r["course_id"])
+    metas = progress.all_courses()
+    shown = []
+    for cid in sorted(metas):
+        m = metas[cid]
+        if m["status"] in ("hidden", "archived"):
+            continue
+        if m.get("open_date") and m["open_date"] > today:
+            continue
+        shown.append((cid, m))
+    if not shown:
+        st.info("今天还没有听力任务，请告诉爸爸妈妈。")
+        return
+    for cid, m in shown:
+        c1, c2, c3 = st.columns([4, 2, 2])
+        c1.markdown("**%s**" % m["title"])
+        c1.caption("%s · 第%s周第%s天" % (cid, m["week"], m["day"]))
+        c2.markdown("✅ 已完成" if cid in done else "⬜ 未完成")
+        if m["status"] == "closed":
+            c3.button("🔒 未开放", key="go_" + cid, disabled=True,
+                      use_container_width=True)
+        else:
+            label = "再做一遍" if cid in done else "开始"
+            if c3.button(label, key="go_" + cid, use_container_width=True,
+                         type="secondary" if cid in done else "primary"):
+                st.query_params["course_id"] = cid
+                st.rerun()
+
+
+def render_course(student_id, course_id):
+    """渲染一节课。提交模型：交卷只出成绩单；孩子点"提交"才写入
+    storage.progress 并返回结果 dict（未提交返回 None）。可重做再提交，
+    每次提交一条记录（attempt 递增）。"""
+    st.markdown(_CSS, unsafe_allow_html=True)
+    if st.button("← 返回课程列表", key="back_" + course_id):
+        if "course_id" in st.query_params:
+            del st.query_params["course_id"]
+        st.rerun()
     try:
         course = _load_course(course_id)
     except models.CourseValidationError as e:
@@ -65,9 +126,12 @@ def render_course(student_id, course_id):
         return None
 
     s = _state(course_id)
+    if s.get("in_correction"):
+        _correction_page(course, s)
+        return None
     if s["result"]:
-        _result_page(course, s["result"])
-        return s["result"]
+        _result_page(course, s)
+        return s["result"] if s["submitted"] else None
 
     steps = engine.build_steps(course)
     if s["idx"] < 0:
@@ -103,7 +167,8 @@ def _start_page(course, s):
     st.write("")
     st.markdown("**第一步：点下面的按钮试试声音**")
     v = limited_audio(course["test_audio"], "test", 99,
-                      s["plays"].get("test", 0), key="au_test_" + course["course_id"],
+                      s["plays"].get("test", 0),
+                      key="au_test_%s_a%d" % (course["course_id"], s["attempt"]),
                       label="试音，想听几遍都行，还能听")
     tried = merge_plays(s["plays"], "test", v) > 0
     if st.button("开始做题", type="primary", disabled=not tried,
@@ -135,7 +200,7 @@ def _question_page(course, s, qid, steps, student_id):
     st.caption(q["_section_name"] + "：" + engine.section_by_id(course, q["_section_id"])["tip"])
 
     v = limited_audio(q["audio"], qid, q["_max_plays"], s["plays"].get(qid, 0),
-                      key="au_%s_%s" % (course["course_id"], qid))
+                      key="au_%s_%s_a%d" % (course["course_id"], qid, s["attempt"]))
     merge_plays(s["plays"], qid, v)
 
     if q["type"] == "sentence_judge":
@@ -151,10 +216,10 @@ def _question_page(course, s, qid, steps, student_id):
         canon = list(range(len(q["options"])))
 
     pick = st.radio("选择答案", labels, index=None,
-                    key="r_%s_%s" % (course["course_id"], qid),
+                    key="r_%s_%s_a%d" % (course["course_id"], qid, s["attempt"]),
                     label_visibility="collapsed")
     if st.button("确认，下一题", type="primary", disabled=pick is None,
-                 use_container_width=True, key="ok_%s" % qid):
+                 use_container_width=True, key="ok_%s_a%d" % (qid, s["attempt"])):
         s["answers"][qid] = canon[labels.index(pick)]
         s["idx"] += 1
         if s["idx"] >= len(steps):
@@ -170,7 +235,7 @@ def _passage_page(course, s, sec_id, steps, student_id):
 
     v = limited_audio(sec["passage_audio"], sec_id, sec["max_plays"],
                       s["plays"].get(sec_id, 0),
-                      key="au_%s_%s" % (course["course_id"], sec_id),
+                      key="au_%s_%s_a%d" % (course["course_id"], sec_id, s["attempt"]),
                       label="短文还能听")
     merge_plays(s["plays"], sec_id, v)
 
@@ -178,7 +243,7 @@ def _passage_page(course, s, sec_id, steps, student_id):
     for q in qs:
         picks[q["id"]] = st.radio("%d. %s" % (q["id"], q["statement"]),
                                   ["√ 对", "× 错"], index=None, horizontal=True,
-                                  key="r_%s_%s" % (course["course_id"], q["id"]))
+                                  key="r_%s_%s_a%d" % (course["course_id"], q["id"], s["attempt"]))
     all_done = all(p is not None for p in picks.values())
     if st.button("全部完成，交卷", type="primary", disabled=not all_done,
                  use_container_width=True):
@@ -190,16 +255,22 @@ def _passage_page(course, s, sec_id, steps, student_id):
 
 
 def _finish(course, s, student_id):
+    """交卷：只生成结果不入库。入库发生在孩子点"提交"时（家长定的提交模型）。"""
     if s["result"]:
         return
     result = results_mod.build_result(course, s["answers"], s["plays"],
                                       student_id, s["t0"])
-    progress.save_result(result)
+    result["attempt"] = s["attempt"]
+    if s["attempt"] > 1:
+        result["result_text"] += "\n（本课第 %d 次完成·重做仅作参考）" % s["attempt"]
     s["result"] = result
 
 
-def _result_page(course, result):
+def _result_page(course, s):
+    result = s["result"]
     st.markdown("## 🎉 做完啦，辛苦了！")
+    if s["attempt"] > 1:
+        st.caption("本课第 %d 次完成" % s["attempt"])
     st.markdown('<div class="scorebig">%d <span style="font-size:20px;color:#5b6b7a">'
                 '/ %d</span></div>' % (result["score"], course["scoring"]["total"]),
                 unsafe_allow_html=True)
@@ -210,10 +281,135 @@ def _result_page(course, result):
                      "得分": "%d / %d" % (result["section_scores"][sec["id"]],
                                           per * len(sec["questions"]))})
     st.table(rows)
-    st.markdown('<div class="bignote"><b>重要：先回传成绩再关页面！</b><br>'
-                '点下面成绩框右上角的复制图标，打开微信发给<b>文件传输助手</b>；'
-                '或者直接<b>截图本页</b>发到微信。</div>', unsafe_allow_html=True)
+
+    if not s["submitted"]:
+        if st.button("📨 提交成绩给爸爸妈妈", type="primary", use_container_width=True,
+                     key="submit_a%d" % s["attempt"]):
+            progress.save_result(result)
+            s["submitted"] = True
+            st.rerun()
+        st.caption("点提交后，爸爸妈妈在家长端就能看到这次成绩。不提交就没有记录哦。")
+    else:
+        st.success("成绩已提交 ✓ 爸爸妈妈在家长端可以看到了")
+        if st.button("再做一次（重新开始本课）", use_container_width=True,
+                     key="retry_a%d" % s["attempt"]):
+            _reset_for_retry(s)
+            st.rerun()
+
+    if course.get("course_type") != "diagnostic" and result["wrong_answers"]:
+        if s.get("correction_done"):
+            st.info("✏️ 订正已完成：%s" % "  ".join(
+                "%d%s" % (k, v) for k, v in sorted(s["corr"]["log"].items())))
+        else:
+            if st.button("✏️ 错题订正（%d 题）" % len(result["wrong_answers"]),
+                         use_container_width=True, key="corr_a%d" % s["attempt"]):
+                s["in_correction"] = True
+                s["corr"] = {"queue": [w["id"] for w in result["wrong_answers"]],
+                             "i": 0, "phase": "answer", "fb_ok": False, "log": {}}
+                st.rerun()
+            st.caption("订正=把错题再学一遍（看原文、再听、再做一次），不用提交。"
+                       "建议先订正，再复制成绩——这样成绩里带订正情况。")
+
+    st.markdown('<div class="bignote">另外：点下面成绩框右上角的复制图标，'
+                '打开微信发给<b>文件传输助手</b>（给 AI 老师登记错题本用）。</div>',
+                unsafe_allow_html=True)
     st.code(result["result_text"], language=None)
+
+
+def _correction_page(course, s):
+    """错题订正流（2026-06-12 家长定稿，非诊断课专属）：
+    每道错题：看原文 → 重听（2遍）→ 同题重做1次 → 即时反馈；再错不三战。
+    全程没有提交按钮（订正是教学动作，入档只作备注、不计掌握判定）。
+    注：订正环节展示听力原文是儿童端信息隔离红线的唯一例外（交卷后、仅错题）。"""
+    c = s["corr"]
+    queue = c["queue"]
+    cid = course["course_id"]
+
+    if c["i"] >= len(queue):
+        st.markdown("## ✏️ 订正完成，真棒！")
+        summary = "  ".join("%d%s" % (k, v) for k, v in sorted(c["log"].items()))
+        st.write("订正结果：" + summary)
+        if not s["correction_done"]:
+            s["result"]["corrections"] = {str(k): v for k, v in c["log"].items()}
+            s["result"]["result_text"] += "\n订正（教学用·不计判定）：" + summary
+            s["correction_done"] = True
+        st.caption("订正不用提交。回到成绩单记得复制成绩发给爸爸妈妈。")
+        if st.button("返回成绩单", type="primary", use_container_width=True):
+            s["in_correction"] = False
+            st.rerun()
+        return
+
+    qid = queue[c["i"]]
+    q = course["_by_id"][qid]
+    st.markdown("#### ✏️ 错题订正 %d / %d　·　第 %d 题" % (c["i"] + 1, len(queue), qid))
+
+    role_name = {"n": "", "f": "女：", "m": "男："}
+    if q["type"] == "passage_judge":
+        sec = engine.section_by_id(course, q["_section_id"])
+        lines = [t[1] for t in sec["passage_transcript"]]
+        audio_path = sec["passage_audio"]
+    else:
+        lines = [role_name[r] + t for r, t in q["transcript"]]
+        audio_path = q["audio"]
+    st.markdown('<div class="showsent" style="font-size:17px;text-align:left">📖 原文：<br>'
+                + "<br>".join(lines) + '</div>', unsafe_allow_html=True)
+
+    w = None
+    for x in s["result"]["wrong_answers"]:
+        if x["id"] == qid:
+            w = x
+            break
+    correct_disp = engine.pick_label(q, q["answer"])
+    if q["type"] in models.CHOICE_TYPES:
+        correct_disp += ". " + q["options"][q["answer"]]
+    if w:
+        st.markdown("你刚才选了 **%s**，正确答案是 **%s**。先看原文再听一遍，然后再答一次！"
+                    % (w["picked"], correct_disp))
+
+    ckey = "c%s" % qid
+    v = limited_audio(audio_path, ckey, 2, s["plays"].get(ckey, 0),
+                      key="au_c_%s_%s_a%d" % (cid, qid, s["attempt"]),
+                      label="再听一遍，还能听")
+    merge_plays(s["plays"], ckey, v)
+
+    if q["type"] == "sentence_judge":
+        st.markdown('<div class="showsent">%s</div>' % q["display"], unsafe_allow_html=True)
+        labels = ["✓　一样 / 对", "✗　不一样 / 不对"]
+        canon = ["same", "different"]
+    elif q["type"] == "passage_judge":
+        st.markdown('<div class="qtext">%s</div>' % q["statement"], unsafe_allow_html=True)
+        labels = ["√ 对", "× 错"]
+        canon = ["true", "false"]
+    else:
+        if q["type"] == "dialogue_choice":
+            st.markdown('<div class="qtext">%s</div>' % q["question_text"],
+                        unsafe_allow_html=True)
+        labels = ["%s.　%s" % (chr(65 + i), o) for i, o in enumerate(q["options"])]
+        canon = list(range(len(q["options"])))
+
+    if c["phase"] == "answer":
+        pick = st.radio("再选一次", labels, index=None,
+                        key="cr_%s_%s_a%d" % (cid, qid, s["attempt"]),
+                        label_visibility="collapsed")
+        if st.button("确认", type="primary", disabled=pick is None,
+                     use_container_width=True, key="cok_%s_a%d" % (qid, s["attempt"])):
+            val = canon[labels.index(pick)]
+            ok = engine.is_correct(q, val)
+            c["log"][qid] = "✓" if ok else "✗"
+            c["fb_ok"] = ok
+            c["phase"] = "fb"
+            st.rerun()
+    else:
+        if c["fb_ok"]:
+            st.success("答对啦！🎉")
+        else:
+            st.error("还是不对。正确答案：%s。这题我们以后再练，不着急。" % correct_disp)
+        nxt = "下一题" if c["i"] + 1 < len(queue) else "完成订正"
+        if st.button(nxt, type="primary", use_container_width=True,
+                     key="cnext_%s_a%d" % (qid, s["attempt"])):
+            c["i"] += 1
+            c["phase"] = "answer"
+            st.rerun()
 
 
 def parent_view():
@@ -235,12 +431,18 @@ def parent_view():
     tab1, tab2, tab3 = st.tabs(["成绩记录", "课程管理", "原文与答案"])
 
     with tab1:
+        if progress.persistence_enabled():
+            st.caption("☁️ 云端持久化已启用（GitHub 私有结果库），重启不丢")
+        else:
+            st.warning("未配置云端持久化（Secrets 缺 RESULTS_REPO / RESULTS_TOKEN），"
+                       "成绩仅存运行内存，重启即清空。配置方法见部署指南第 5 步。")
         rs = progress.list_results()
         if not rs:
-            st.info("本次运行期内还没有成绩记录（服务重启会清空，复制成绩通道是权威渠道）。")
+            st.info("还没有成绩记录。")
         for r in reversed(rs):
-            with st.expander("%s · %s · %d分" % (r.get("completed_at", "?"),
-                                                 r["course_id"], r["score"])):
+            tag_n = "（第%d次）" % r["attempt"] if r.get("attempt", 1) > 1 else ""
+            with st.expander("%s · %s · %d分%s" % (r.get("completed_at", "?"),
+                                                   r["course_id"], r["score"], tag_n)):
                 st.write({"用时(秒)": r["duration_seconds"],
                           "分项": r["section_scores"],
                           "播放次数": r["play_counts"]})
@@ -251,18 +453,23 @@ def parent_view():
                 st.code(r.get("result_text", ""), language=None)
 
     with tab2:
-        st.caption("hidden/closed/archived 的课程，孩子端都不可见；"
-                   "状态存在运行目录，服务重启会回到 open。固定课件资产在 GitHub，"
-                   "此处不提供删除。")
-        st.caption("今天（北京时间）：%s ｜带开放日期的课程到期自动对孩子可见"
+        st.caption("**打开**=孩子列表可见可做（默认）｜**关闭**=列表显示但锁定🔒｜"
+                   "**隐藏**=列表不显示｜**删除**=永久下架（网页端不真删 GitHub 文件，"
+                   "重新部署会还原文件但状态保持下架）。"
+                   "已配置云端持久化时状态重启不丢，否则重启回到打开。")
+        st.caption("今天（北京时间）：%s ｜带开放日期的课程到期自动出现在孩子列表"
                    % progress.beijing_today())
+        zh_label = {"open": "打开", "closed": "关闭", "hidden": "隐藏", "archived": "删除"}
+        order = list(progress.COURSE_STATUSES)
+        opts = [zh_label[k] for k in order]
         for cid, meta in progress.all_courses().items():
             c1, c2 = st.columns([3, 2])
             extra = ("　·　%s 开放" % meta["open_date"]) if meta.get("open_date") else ""
             c1.write("**%s** %s%s" % (cid, meta["title"], extra))
-            new = c2.selectbox("状态", progress.COURSE_STATUSES,
-                               index=progress.COURSE_STATUSES.index(meta["status"]),
-                               key="st_" + cid, label_visibility="collapsed")
+            picked = c2.selectbox("状态", opts,
+                                  index=order.index(meta["status"]),
+                                  key="st_" + cid, label_visibility="collapsed")
+            new = order[opts.index(picked)]
             if new != meta["status"]:
                 progress.set_course_status(cid, new)
                 st.rerun()

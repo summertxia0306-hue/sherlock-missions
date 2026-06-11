@@ -1,0 +1,130 @@
+{
+  "course_id": "W01D04",
+  "title": "听力练习 · 学校与玩具",
+  "week": 1,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "沪教牛津3A/3B",
+  "difficulty": "L1",
+  "open_date": "2026-06-18",
+  "scoring": { "per_question": 5, "total": 100 },
+  "test_audio": "static/audio/listening/W01D04/hello.mp3",
+  "test_transcript": [["n", "Hello! Can you hear me? Let's begin."]],
+  "sections": [
+    {
+      "id": "word_discrimination", "name": "听音选词",
+      "tip": "听录音，选出你听到的单词", "max_plays": 2,
+      "questions": [
+        { "id": 1, "type": "word_choice", "options": ["ruler", "rubber", "red"], "answer": 0,
+          "transcript": [["n", "ruler"]], "audio": "static/audio/listening/W01D04/q01.mp3",
+          "tag": "听辨·文具词 ruler/rubber", "parent_note": "" },
+        { "id": 2, "type": "word_choice", "options": ["cat", "kite", "key"], "answer": 1,
+          "transcript": [["n", "kite"]], "audio": "static/audio/listening/W01D04/q02.mp3",
+          "tag": "听辨·k音词", "parent_note": "" },
+        { "id": 3, "type": "word_choice", "options": ["swim", "sing", "six"], "answer": 0,
+          "transcript": [["n", "swim"]], "audio": "static/audio/listening/W01D04/q03.mp3",
+          "tag": "听辨·s开头动词", "parent_note": "" },
+        { "id": 4, "type": "word_choice", "options": ["big", "bag", "bed"], "answer": 1,
+          "transcript": [["n", "bag"]], "audio": "static/audio/listening/W01D04/q04.mp3",
+          "tag": "听辨·短元音 a/i/e", "parent_note": "" }
+      ]
+    },
+    {
+      "id": "sentence_meaning", "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样", "max_plays": 2,
+      "questions": [
+        { "id": 5, "type": "sentence_judge", "display": "My bag is big.", "answer": "same",
+          "transcript": [["n", "My bag is big."]],
+          "audio": "static/audio/listening/W01D04/q05.mp3",
+          "tag": "句意·形容词", "parent_note": "" },
+        { "id": 6, "type": "sentence_judge", "display": "I can draw a car.", "answer": "different",
+          "transcript": [["n", "I can draw a star."]],
+          "audio": "static/audio/listening/W01D04/q06.mp3",
+          "tag": "句意·音近词 star/car", "parent_note": "" },
+        { "id": 7, "type": "sentence_judge", "display": "The ball is on the desk.", "answer": "different",
+          "transcript": [["n", "The ball is under the desk."]],
+          "audio": "static/audio/listening/W01D04/q07.mp3",
+          "tag": "句意·方位词 under/on", "parent_note": "" },
+        { "id": 8, "type": "sentence_judge", "display": "I like flying kites.", "answer": "same",
+          "transcript": [["n", "I like flying kites."]],
+          "audio": "static/audio/listening/W01D04/q08.mp3",
+          "tag": "句意·like+Ving(E25语境)", "parent_note": "" }
+      ]
+    },
+    {
+      "id": "question_response", "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答", "max_plays": 2,
+      "questions": [
+        { "id": 9, "type": "question_response",
+          "options": ["Two books and a pen.", "It is red.", "Yes, it is."], "answer": 0,
+          "transcript": [["n", "What's in your bag?"]],
+          "audio": "static/audio/listening/W01D04/q09.mp3",
+          "tag": "应答·What's in", "parent_note": "" },
+        { "id": 10, "type": "question_response",
+          "options": ["Yes, I do.", "Yes, I can.", "Yes, it is."], "answer": 1,
+          "transcript": [["n", "Can you skip rope?"]],
+          "audio": "static/audio/listening/W01D04/q10.mp3",
+          "tag": "应答·Can you(E17语境句)", "parent_note": "" },
+        { "id": 11, "type": "question_response",
+          "options": ["It's in the desk.", "It's a pencil.", "It's green."], "answer": 0,
+          "transcript": [["n", "Where is my pencil?"]],
+          "audio": "static/audio/listening/W01D04/q11.mp3",
+          "tag": "应答·Where", "parent_note": "" },
+        { "id": 12, "type": "question_response",
+          "options": ["He plays football.", "I play football.", "Yes, I do."], "answer": 1,
+          "transcript": [["n", "What do you do on Sunday?"]],
+          "audio": "static/audio/listening/W01D04/q12.mp3",
+          "tag": "应答·人称 I/he(E12关联)", "parent_note": "干扰项A是三单he，呼应笔头E12" }
+      ]
+    },
+    {
+      "id": "dialogue", "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案", "max_plays": 2,
+      "questions": [
+        { "id": 13, "type": "dialogue_choice", "question_text": "What do they play?",
+          "options": ["They fly kites.", "They play football.", "They read books."], "answer": 0,
+          "transcript": [["f", "Let's play football, Sam."], ["m", "No, let's fly kites."],
+                         ["n", "Question: What do they play?"]],
+          "audio": "static/audio/listening/W01D04/q13.mp3",
+          "tag": "对话·转折干扰(No,…)", "parent_note": "" },
+        { "id": 14, "type": "dialogue_choice", "question_text": "How many pencils does May have?",
+          "options": ["Two.", "Four.", "Six."], "answer": 1,
+          "transcript": [["m", "How many pencils do you have, May?"],
+                         ["f", "I have four pencils and two pens."],
+                         ["n", "Question: How many pencils does May have?"]],
+          "audio": "static/audio/listening/W01D04/q14.mp3",
+          "tag": "对话·数字细节干扰(two pens)", "parent_note": "" },
+        { "id": 15, "type": "dialogue_choice", "question_text": "Where is the rubber?",
+          "options": ["Under the chair.", "On the desk.", "In the bag."], "answer": 0,
+          "transcript": [["f", "Where is my rubber, Dad?"], ["m", "Look! It is under your chair."],
+                         ["n", "Question: Where is the rubber?"]],
+          "audio": "static/audio/listening/W01D04/q15.mp3",
+          "tag": "对话·方位", "parent_note": "" },
+        { "id": 16, "type": "dialogue_choice", "question_text": "What can Ann do?",
+          "options": ["Ride a bicycle.", "Swim.", "Skate."], "answer": 1,
+          "transcript": [["m", "Can you ride a bicycle, Ann?"], ["f", "No, I can't. But I can swim."],
+                         ["n", "Question: What can Ann do?"]],
+          "audio": "static/audio/listening/W01D04/q16.mp3",
+          "tag": "对话·转折(But)·bicycle(E26词)", "parent_note": "" }
+      ]
+    },
+    {
+      "id": "passage", "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）", "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [["n", "Hi, I'm Tom. It is Sunday. I am in the park with my sister. I fly my new kite. My sister rides her bicycle. We are very happy."]],
+      "passage_audio": "static/audio/listening/W01D04/p01.mp3",
+      "questions": [
+        { "id": 17, "type": "passage_judge", "statement": "It is Sunday.", "answer": "true",
+          "tag": "短文·时间", "parent_note": "" },
+        { "id": 18, "type": "passage_judge", "statement": "Tom is in the park with his brother.", "answer": "false",
+          "tag": "短文·人物细节(sister)", "parent_note": "" },
+        { "id": 19, "type": "passage_judge", "statement": "Tom flies his new kite.", "answer": "true",
+          "tag": "短文·动作", "parent_note": "" },
+        { "id": 20, "type": "passage_judge", "statement": "Tom's sister skips rope.", "answer": "false",
+          "tag": "短文·动作细节(rides bicycle)", "parent_note": "" }
+      ]
+    }
+  ]
+}

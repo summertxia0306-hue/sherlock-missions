@@ -1,7 +1,18 @@
 # 听力模块对接契约与功能清单（给统一架构 / Codex）
 
-> 版本 v2 · 2026-06-11。字段或接口改动需双方确认后同步本文件。
+> 版本 v3 · 2026-06-12。字段或接口改动需双方确认后同步本文件。
 > v2 变更：补全目录结构与功能清单；明确"跟读/口语不在听力模块范围"。
+> **v3 变更（两位 Codex 必读）**：
+> ① 新增儿童端听力主界面 `listening_home()`——**架构师**的统一首页"听力练习"
+>   入口请调用它，不要自行实现课程列表或完成状态（完成=有提交记录，自动推导）；
+> ② 提交模型——记录只在孩子点"提交"后产生，可重做多次提交多条（attempt 字段）；
+> ③ **错题订正环节已实现**（原 P1）——非诊断课成绩单页有"✏️ 错题订正"按钮，
+>   订正流：看原文→重听2遍→重做1次→即时反馈，无提交按钮；订正结果写入
+>   result["corrections"] 与 result_text 备注；
+> ④ course_type 取值：diagnostic（无订正）/ training / weekly_test（后两者有订正）；
+> ⑤ 信息隔离红线增加唯一例外：订正环节展示错题原文（交卷后、仅错题）；
+> ⑥ 课程总数已 5 节（W01D01–05），D02–05 带 open_date 6/16–6/19 逐日解锁；
+> ⑦ **发布员**注意：本次发布含新增音频 ~85 个 mp3，发布七步的"音频抽查"必须执行。
 
 ## 0. 范围声明（先读）
 
@@ -70,13 +81,22 @@ sherlock-missions/
 | 13 | 音频生产线：JSON→片段(哈希复用)→拼接成品(0.6s停顿)→manifest；代理支持；增量生成 | tools/make_audio_v2 |
 | 14 | 引擎层单元测试通过（满分/混合错题/校验器负样例） | 开发期验证 |
 
-### 计划中（听力模块侧，随 W01D02 起交付）
+### 已实现（v3 追加，2026-06-12）
+
+| # | 功能 | 位置 |
+|---|---|---|
+| 15 | 听力主界面 listening_home（课程卡片/完成标记/再做一遍/锁定态） | page.listening_home |
+| 16 | 提交模型（提交才有记录、可重做多次提交、attempt 标记） | page._result_page |
+| 17 | **错题订正环节**：非诊断课成绩单"✏️ 错题订正"按钮→看原文→重听2遍→同题重做1次→即时反馈→无提交按钮；结果入 corrections 字段+result_text 备注，不计掌握判定 | page._correction_page |
+| 18 | 课程 W01D01–05（诊断1 + 训练3 + 周测1，L1，open_date 逐日解锁） | content/listening |
+| 19 | GitHub 私有结果库持久化（成绩+课程状态，未配置自动退本地） | storage/progress v1.1 |
+
+### 计划中（听力模块侧）
 
 | # | 功能 | 说明 |
 |---|---|---|
-| P1 | 训练课"错题再听"订正环节 | course_type=training 的课，交卷后错题逐题：重听→原文对照→同题重做1次→再错即停；订正结果入 result_text 作备注，不计掌握判定 |
-| P2 | 段间休息屏 | 训练课三段结构（热身复现/主练/小测）之间的休息提示 |
-| P3 | 每日完成星标（课内简单展示） | 最终以统一系统的星星规则为准，届时让位 |
+| P2 | 每日完成星标（课内简单展示） | 最终以统一系统的星星规则为准，届时让位 |
+| P3 | 周中补丁机制工具化 | 重出未解锁课程的便捷流程（当前手工可行） |
 
 ### 明确不做（划给统一架构）
 
@@ -88,8 +108,15 @@ sherlock-missions/
 ```python
 from listening import page
 
+# 听力主界面（2026-06-12 新增）：统一首页的"听力练习"入口应调用它。
+# 列出全部已开发课程卡片：完成状态（✅/⬜）由孩子的提交记录自动推导（非家长设置）；
+# 已完成可"再做一遍"；hidden/archived 或未到 open_date 的不显示；closed 显示但锁定。
+page.listening_home(student_id: str)
+
 # 渲染一节课（在 Streamlit 页面上下文中调用）。
-# 课程完成时：结果自动写入 storage.progress，并返回结果 dict；未完成返回 None。
+# 提交模型（2026-06-12 家长定）：交卷只显示成绩单；孩子点"提交"按钮后
+# 才写入 storage.progress 并返回结果 dict（未提交一律返回 None，无任何记录）。
+# 提交后可"再做一次"并再次提交，每次一条独立记录（result["attempt"] 递增）。
 result = page.render_course(student_id: str, course_id: str)
 
 # 查询某生某课最近一次结果（无则 None）
@@ -102,13 +129,16 @@ from storage import progress
 progress.visible_courses()            # {course_id: meta} 仅 open 且已到 open_date
 progress.all_courses()                # 同上，含全部状态与 open_date
 progress.get_course_status(cid)       # open / closed / hidden / archived（默认 open）
+# 状态语义（家长端 UI 标签）：open=打开（可见可做）/ closed=关闭（列表显示但锁定）/
+# hidden=隐藏（列表不显示）/ archived=删除（永久下架；网页端不真删 GitHub 文件）
 progress.set_course_status(cid, st)
 progress.list_results(course_id=None, student_id=None)
 progress.beijing_today()              # "YYYY-MM-DD"（UTC+8）
 ```
 
-注意：v1 的 progress 存运行目录 `_runtime/`，平台重启清空。统一架构换持久化后端时
-只需重写 storage/progress.py，**函数签名不变**。
+注意：progress v1.1（2026-06-12）起支持双层存储：运行目录（快路径/兜底）+
+GitHub 私有结果库（Secrets 配 RESULTS_REPO / RESULTS_TOKEN 后启用，重启不丢）。
+统一架构做持久化改造时需兼容/迁移 sherlock-results 私有库数据，**函数签名不变**。
 
 ## 4. 结果结构（progress.save_result 入参 / render_course 返回）
 
@@ -155,6 +185,9 @@ progress.beijing_today()              # "YYYY-MM-DD"（UTC+8）
   与 status 叠加生效（visible = open 且到期）。
 - 音频：每题一个成品 MP3（多角色对话已在构建期拼接，运行时单文件播放——
   这是 iPad Safari 自动播放限制下的稳妥设计，勿改回运行时多段连播）。
+- 音频 URL（2026-06-12 生产修正）：经 GitHub Raw 直链播放（audio.py 硬编码仓库地址），
+  **前提 = 仓库 Public**；不要改回 `/app/static/` 内部路径（Community Cloud 禁止组件
+  访问）。大陆网络不稳时的备选是 jsDelivr 前缀（见 01_协作流程 §七）。
 - 音色固定：旁白/单词/短文 = en-US-AnaNeural（童声），对话女 = AriaNeural，
   男 = GuyNeural；语速 -10%。改音色/语速会使 fragments 哈希全部失效（重新生成）。
 
@@ -162,3 +195,5 @@ progress.beijing_today()              # "YYYY-MM-DD"（UTC+8）
 
 儿童端任何页面不得出现：听力原文、正确答案（交卷前）、考点标签、家长操作入口。
 家长端独立路由 + 密码。统一首页集成时请保持此隔离。
+**唯一例外（2026-06-12）**：错题订正环节展示该错题的原文与正确答案——
+仅限交卷后、仅限错题、仅限非诊断课，这是订正教学的必要组成。

@@ -155,6 +155,606 @@
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
    "text": "Hello, I'm Danny. Today is Children's Day. Look at my new kite. It is a triangle. It is yellow and green. I fly the kite with my father in the park. I'm very happy."
+  },
+  "b5cef4b7f51c109a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "bird"
+  },
+  "26f9c0d30bb117ff": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "three"
+  },
+  "9bff9b43d9f109f7": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "tiger"
+  },
+  "f44dd0e75f5213c6": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "ten"
+  },
+  "a5c5fe722b014357": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I have a little cat."
+  },
+  "8d02208a53576edd": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The monkey is fat."
+  },
+  "d14d2179a6dd9849": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I can see five birds."
+  },
+  "29477a77221a2e86": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The panda is black and white."
+  },
+  "2a0f90bf145642aa": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How many cats can you see?"
+  },
+  "80eb2d170bac8c29": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What colour is the bird?"
+  },
+  "0309e74b115aaf11": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is this a tiger?"
+  },
+  "249daf04838cf270": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Do you like pandas?"
+  },
+  "df13fd9f777024a5": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "What's this, Tom?"
+  },
+  "b1c0096c0641d847": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "It's a rabbit."
+  },
+  "d895fa4800847603": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What is it?"
+  },
+  "fd336922f602baf6": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "How many ducks do you have, Amy?"
+  },
+  "5fd19efc6d63619c": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I have six ducks."
+  },
+  "45a885cd29eb1bcb": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: How many ducks does Amy have?"
+  },
+  "a9a9e671a0bbef04": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Look at the elephant. It is so big!"
+  },
+  "23e9666b18159657": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Yes, and it is grey."
+  },
+  "d174d788a76b31fd": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What colour is the elephant?"
+  },
+  "0842d403cababcc2": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Do you like monkeys, Lily?"
+  },
+  "183af756f8b992b8": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "No, I like pandas."
+  },
+  "7eb053e407870476": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does Lily like?"
+  },
+  "611ea37c8a2aa69b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Hi, I'm Sam. Today I am at the zoo. I can see two tigers and three monkeys. The tigers are big. The monkeys are little. I like the monkeys."
+  },
+  "cb11ce6a85b2820d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "sweet"
+  },
+  "a7ae1a6fe9169e66": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "egg"
+  },
+  "71249d2a431887a0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "milk"
+  },
+  "805b3a70f3c48d63": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "taste"
+  },
+  "9c9dccaf7f470fa8": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The cake is sweet."
+  },
+  "7b567126aa7c45ae": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The orange tastes sweet."
+  },
+  "fb26c44fff153dc6": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Smell the flower. It smells nice."
+  },
+  "3aa8734e5264cd53": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The ice cream is cold."
+  },
+  "b7131b44b8f7e545": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How does the cake taste?"
+  },
+  "3e821f28ea55e426": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can you smell?"
+  },
+  "6314c36fc70f4c3d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Do you like apples?"
+  },
+  "118d7b860a52a5c7": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do you like eating?"
+  },
+  "80d99a849482264c": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Taste the soup, Ben. How is it?"
+  },
+  "7ac62196f27288bb": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "It's salty."
+  },
+  "02115564192073fd": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: How does the soup taste?"
+  },
+  "e4e1c9308f2e2482": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Do you like bananas, Kitty?"
+  },
+  "f80058f3f242f10e": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Yes. I like bananas very much."
+  },
+  "bfdebd3f6920c28e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does Kitty like?"
+  },
+  "54bd73769bbc44f7": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Dinner time! We have rice and fish."
+  },
+  "8221cd3cd49f64b7": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Great! I like fish."
+  },
+  "f9731832626e8735": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What do they have for dinner?"
+  },
+  "6b749584aaa0d92b": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Mum, may I have some milk?"
+  },
+  "aef3a45c04bc39bb": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Sure. Here you are."
+  },
+  "f390d01ce7244ff2": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does the boy want?"
+  },
+  "f9af73b54fe0bd7e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Good morning! I'm Mary. It is seven o'clock. I have bread, an egg and some milk for breakfast. The bread is soft. The milk is warm. I like my breakfast."
+  },
+  "080cbe7dbb7e9bc3": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "ruler"
+  },
+  "f5cc4be80b483928": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "kite"
+  },
+  "7e028823f2fa0609": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "swim"
+  },
+  "eaee72d5b15aff9d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "bag"
+  },
+  "1a139b7b1b912656": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "My bag is big."
+  },
+  "6eb60cd80ce2976a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I can draw a star."
+  },
+  "601da062c7d7580b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The ball is under the desk."
+  },
+  "19b95dbf31174fe2": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I like flying kites."
+  },
+  "9574da8247da06a9": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What's in your bag?"
+  },
+  "b0146b3c9d77fb31": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Can you skip rope?"
+  },
+  "b909b53a6a10c1fa": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is my pencil?"
+  },
+  "f1bfb8672c9b3839": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do you do on Sunday?"
+  },
+  "d899bb6837d8bee0": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Let's play football, Sam."
+  },
+  "776f74e4ff335976": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "No, let's fly kites."
+  },
+  "55784535521c4b91": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What do they play?"
+  },
+  "76ff877db17ea30d": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "How many pencils do you have, May?"
+  },
+  "c01297fb83dedc6b": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I have four pencils and two pens."
+  },
+  "17210460803b0ec4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: How many pencils does May have?"
+  },
+  "e4a398881db724e9": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Where is my rubber, Dad?"
+  },
+  "3dd32513fb53bce8": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Look! It is under your chair."
+  },
+  "697b6f9c081877ed": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Where is the rubber?"
+  },
+  "e4f1c878e1f11eb8": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Can you ride a bicycle, Ann?"
+  },
+  "4dcfb6679f22395a": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "No, I can't. But I can swim."
+  },
+  "4a53c16cda0cbb35": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What can Ann do?"
+  },
+  "f80498495116d971": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Hi, I'm Tom. It is Sunday. I am in the park with my sister. I fly my new kite. My sister rides her bicycle. We are very happy."
+  },
+  "0a7fccd483af9f06": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "rabbit"
+  },
+  "9e00f4115818e5b6": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "four"
+  },
+  "fcfb504fb5baa1a5": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "soft"
+  },
+  "c9ec7c9352109503": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "pencil"
+  },
+  "43b52dcde927a23f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The tiger is big."
+  },
+  "585904a93319c8db": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I have an egg and some milk."
+  },
+  "947adfa706e68325": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "My kite is red and yellow."
+  },
+  "dd748b335e558c96": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The soup tastes salty."
+  },
+  "a3a029a4e75aa442": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How many birds can you see?"
+  },
+  "c2c564701f916c97": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How does the orange taste?"
+  },
+  "2936acc87a9e9364": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is the cat?"
+  },
+  "c19918e4593b816e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Do you like swimming?"
+  },
+  "8e07ec9f6e4f5370": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Look at my new dress, Dad."
+  },
+  "78fefa921bcd894f": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Wow, it is pink. How nice!"
+  },
+  "031cd8c7e6b84065": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What colour is the dress?"
+  },
+  "c81df7abe5da1f7b": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Let's go to the zoo, Mum."
+  },
+  "9c4e85f9c2401010": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "OK. We can see the pandas there."
+  },
+  "e44b2cf445af522d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Where do they go?"
+  },
+  "1099088a56d633a6": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "What do you have for breakfast, Sam?"
+  },
+  "6bbf6315c8e7095c": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Some bread and an egg."
+  },
+  "4b5683626fe2a7ab": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does Sam have for breakfast?"
+  },
+  "2847e3c595973c45": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Can you draw a panda, Amy?"
+  },
+  "58b23a70cd4bf076": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "No, but I can draw a cat."
+  },
+  "6679e52844973643": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What can Amy draw?"
+  },
+  "ac23819dbf0c591f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Hello, I'm Amy. Today is Saturday. I go to the park with my mother. I see many birds in the tree. I sit and draw the birds. What a happy day!"
   }
  },
  "courses": {
@@ -177,6 +777,86 @@
    "static/audio/listening/W01D01/q15.mp3": "abfd994fb83062d9",
    "static/audio/listening/W01D01/q16.mp3": "e01e78662ef4893d",
    "static/audio/listening/W01D01/p01.mp3": "be67f340a2571e4a"
+  },
+  "W01D02": {
+   "static/audio/listening/W01D02/hello.mp3": "9c3d431c92f97887",
+   "static/audio/listening/W01D02/q01.mp3": "2d8d0f6d2e3fd27a",
+   "static/audio/listening/W01D02/q02.mp3": "c4148bd832dada7a",
+   "static/audio/listening/W01D02/q03.mp3": "be610189ff494deb",
+   "static/audio/listening/W01D02/q04.mp3": "b8011669604569ff",
+   "static/audio/listening/W01D02/q05.mp3": "2373b5270bb905df",
+   "static/audio/listening/W01D02/q06.mp3": "bb86fbb882e0e603",
+   "static/audio/listening/W01D02/q07.mp3": "e93e0694709a2f4c",
+   "static/audio/listening/W01D02/q08.mp3": "1562b22c950c6aad",
+   "static/audio/listening/W01D02/q09.mp3": "7fd4e948089d461d",
+   "static/audio/listening/W01D02/q10.mp3": "e00813a0277174e6",
+   "static/audio/listening/W01D02/q11.mp3": "a83f5e1c8e9ade52",
+   "static/audio/listening/W01D02/q12.mp3": "dde4d19f0d469532",
+   "static/audio/listening/W01D02/q13.mp3": "018eed65b39a0a3a",
+   "static/audio/listening/W01D02/q14.mp3": "863b14ef8f49af90",
+   "static/audio/listening/W01D02/q15.mp3": "b5c239240ffb0024",
+   "static/audio/listening/W01D02/q16.mp3": "c1e02405dbd216fa",
+   "static/audio/listening/W01D02/p01.mp3": "aa359f0180079fcb"
+  },
+  "W01D03": {
+   "static/audio/listening/W01D03/hello.mp3": "9c3d431c92f97887",
+   "static/audio/listening/W01D03/q01.mp3": "57dcd5ed17cfabda",
+   "static/audio/listening/W01D03/q02.mp3": "33db2d4b99c3bb66",
+   "static/audio/listening/W01D03/q03.mp3": "a94ecf4a77a1476a",
+   "static/audio/listening/W01D03/q04.mp3": "052c853f8acff413",
+   "static/audio/listening/W01D03/q05.mp3": "563b51c62c60027f",
+   "static/audio/listening/W01D03/q06.mp3": "e7d667de160cc672",
+   "static/audio/listening/W01D03/q07.mp3": "50a8a269ce1483a9",
+   "static/audio/listening/W01D03/q08.mp3": "00acc0796156c26a",
+   "static/audio/listening/W01D03/q09.mp3": "1803aa2b5a052fcc",
+   "static/audio/listening/W01D03/q10.mp3": "4a2246ef6a8d806d",
+   "static/audio/listening/W01D03/q11.mp3": "eb563699304387d4",
+   "static/audio/listening/W01D03/q12.mp3": "b86f2a2277b57b4b",
+   "static/audio/listening/W01D03/q13.mp3": "b89aa672fcd2c80e",
+   "static/audio/listening/W01D03/q14.mp3": "2b164f75366ce07f",
+   "static/audio/listening/W01D03/q15.mp3": "1e3dd01685f4ebf1",
+   "static/audio/listening/W01D03/q16.mp3": "6bc5c728818fa613",
+   "static/audio/listening/W01D03/p01.mp3": "255c959e35fa3867"
+  },
+  "W01D04": {
+   "static/audio/listening/W01D04/hello.mp3": "9c3d431c92f97887",
+   "static/audio/listening/W01D04/q01.mp3": "2cb5cdb92ef09bb4",
+   "static/audio/listening/W01D04/q02.mp3": "ffd2548e2d2c9d13",
+   "static/audio/listening/W01D04/q03.mp3": "cf3f4b9111f5c567",
+   "static/audio/listening/W01D04/q04.mp3": "48720dca0983d6a7",
+   "static/audio/listening/W01D04/q05.mp3": "e0740053d7a4c967",
+   "static/audio/listening/W01D04/q06.mp3": "ad8b854353d74e89",
+   "static/audio/listening/W01D04/q07.mp3": "e613a35ff64dc7dc",
+   "static/audio/listening/W01D04/q08.mp3": "a02aa142d388b587",
+   "static/audio/listening/W01D04/q09.mp3": "d530d7e6708e141c",
+   "static/audio/listening/W01D04/q10.mp3": "d9677ae8aa132aad",
+   "static/audio/listening/W01D04/q11.mp3": "a8842dc9110cccfa",
+   "static/audio/listening/W01D04/q12.mp3": "e43961675a1f6fce",
+   "static/audio/listening/W01D04/q13.mp3": "0f0ac3be82db899d",
+   "static/audio/listening/W01D04/q14.mp3": "536eb4157627d15d",
+   "static/audio/listening/W01D04/q15.mp3": "2cb48c8da0877305",
+   "static/audio/listening/W01D04/q16.mp3": "895603cb4cef840a",
+   "static/audio/listening/W01D04/p01.mp3": "6d9823bdc3e8935e"
+  },
+  "W01D05": {
+   "static/audio/listening/W01D05/hello.mp3": "9c3d431c92f97887",
+   "static/audio/listening/W01D05/q01.mp3": "346a785e4ab387f7",
+   "static/audio/listening/W01D05/q02.mp3": "11c290340a01b481",
+   "static/audio/listening/W01D05/q03.mp3": "2b3c5734355bfb86",
+   "static/audio/listening/W01D05/q04.mp3": "47657796da5c5df1",
+   "static/audio/listening/W01D05/q05.mp3": "5ee1fdc5c714528b",
+   "static/audio/listening/W01D05/q06.mp3": "e00743e60283315e",
+   "static/audio/listening/W01D05/q07.mp3": "bfd7c0d018362a12",
+   "static/audio/listening/W01D05/q08.mp3": "5f992a83025c06f1",
+   "static/audio/listening/W01D05/q09.mp3": "2cc83cc40e29ac2c",
+   "static/audio/listening/W01D05/q10.mp3": "8d93396d5feba036",
+   "static/audio/listening/W01D05/q11.mp3": "6cb68f007fdb10a7",
+   "static/audio/listening/W01D05/q12.mp3": "39b0fe37e8391081",
+   "static/audio/listening/W01D05/q13.mp3": "5307601649b281d7",
+   "static/audio/listening/W01D05/q14.mp3": "64c1e5f10973044b",
+   "static/audio/listening/W01D05/q15.mp3": "00fdd859d3606618",
+   "static/audio/listening/W01D05/q16.mp3": "e045e2188bc2b574",
+   "static/audio/listening/W01D05/p01.mp3": "2c6a9b307a7349c6"
   }
  }
 }
