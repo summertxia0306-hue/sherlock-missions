@@ -48,20 +48,29 @@ btn.onclick = function(){
  used++;
  playing = true;
  refresh();
- setValue({qid: args.qid, used: used, ts: Date.now()});
+
+ // 【核心修复】：移除了这里的 setValue，播放期间不再打扰服务器
  try{ au.currentTime = 0; }catch(e){}
  var p = au.play();
  if (p && p.catch){
   p.catch(function(){
    playing = false;
+   used--; // 如果播放失败，把次数退回去
    err.style.display = "block";
    refresh();
   });
  }
 };
-au.onended = function(){ playing = false; refresh(); };
+
+au.onended = function(){
+ playing = false;
+ refresh();
+ // 【核心修复】：只有当声音彻底播放完毕，才通知服务器扣减次数
+ setValue({qid: args.qid, used: used, ts: Date.now()});
+};
+
 au.onerror = function(){
- if (playing){ playing = false; err.style.display = "block"; refresh(); }
+ if (playing){ playing = false; used--; err.style.display = "block"; refresh(); }
 };
 
 window.addEventListener("message", function(e){
