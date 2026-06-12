@@ -173,7 +173,8 @@ GitHub 私有结果库（Secrets 配 RESULTS_REPO / RESULTS_TOKEN 后启用，�
 
 ## 5. URL 参数（当前临时入口；统一首页可沿用或替换）
 
-- `?course_id=W01D01` 打开指定课程（儿童端）
+- `?course_id=W01D01` 打开指定课程（儿童端）。直链不受 open_date 限制（只要状态=open），
+  是家长解锁日前的提前验收通道；课程列表仍按 open_date 到期显示
 - `?mode=parent` 家长端（密码 = st.secrets["PARENT_PASSWORD"]，未设则临时 xlk2026）
 - `?student_id=sherlock`（默认 sherlock）
 
