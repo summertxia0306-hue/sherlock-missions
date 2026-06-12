@@ -305,9 +305,9 @@ def _result_page(course, s):
                          use_container_width=True, key="corr_a%d" % s["attempt"]):
                 s["in_correction"] = True
                 s["corr"] = {"queue": [w["id"] for w in result["wrong_answers"]],
-                             "i": 0, "phase": "answer", "fb_ok": False, "log": {}}
+                             "i": 0, "phase": "try1", "log": {}}
                 st.rerun()
-            st.caption("订正=把错题再学一遍（看原文、再听、再做一次），不用提交。"
+            st.caption("订正=把错题再听再做一遍，不用提交。"
                        "建议先订正，再复制成绩——这样成绩里带订正情况。")
 
     st.markdown('<div class="bignote">另外：点下面成绩框右上角的复制图标，'
@@ -317,10 +317,12 @@ def _result_page(course, s):
 
 
 def _correction_page(course, s):
-    """错题订正流（2026-06-12 家长定稿，非诊断课专属）：
-    每道错题：看原文 → 重听（2遍）→ 同题重做1次 → 即时反馈；再错不三战。
-    全程没有提交按钮（订正是教学动作，入档只作备注、不计掌握判定）。
-    注：订正环节展示听力原文是儿童端信息隔离红线的唯一例外（交卷后、仅错题）。"""
+    """错题订正流 v2（2026-06-12 家长修订）：
+    第一遍 = 盲订正：只重听 + 重做，不显示原文、不显示任何答案信息；
+    再错才显示【原文】（只有原文，永远不显示"你选了X/正确答案是Y"），
+    看原文再听再做第二遍；第二遍无论对错都结束该题，全程不揭示答案。
+    没有提交按钮（订正是教学动作，入档只作备注、不计掌握判定）。
+    红线例外收窄：原文只在第二遍尝试时展示；正确答案任何时候不展示。"""
     c = s["corr"]
     queue = c["queue"]
     cid = course["course_id"]
@@ -329,6 +331,7 @@ def _correction_page(course, s):
         st.markdown("## ✏️ 订正完成，真棒！")
         summary = "  ".join("%d%s" % (k, v) for k, v in sorted(c["log"].items()))
         st.write("订正结果：" + summary)
+        st.caption("✓=订正一次就对　✓²=看原文后做对　✗=还要再练")
         if not s["correction_done"]:
             s["result"]["corrections"] = {str(k): v for k, v in c["log"].items()}
             s["result"]["result_text"] += "\n订正（教学用·不计判定）：" + summary
@@ -341,75 +344,80 @@ def _correction_page(course, s):
 
     qid = queue[c["i"]]
     q = course["_by_id"][qid]
+    phase = c["phase"]
     st.markdown("#### ✏️ 错题订正 %d / %d　·　第 %d 题" % (c["i"] + 1, len(queue), qid))
 
-    role_name = {"n": "", "f": "女：", "m": "男："}
     if q["type"] == "passage_judge":
         sec = engine.section_by_id(course, q["_section_id"])
         lines = [t[1] for t in sec["passage_transcript"]]
         audio_path = sec["passage_audio"]
     else:
+        role_name = {"n": "", "f": "女：", "m": "男："}
         lines = [role_name[r] + t for r, t in q["transcript"]]
         audio_path = q["audio"]
-    st.markdown('<div class="showsent" style="font-size:17px;text-align:left">📖 原文：<br>'
-                + "<br>".join(lines) + '</div>', unsafe_allow_html=True)
 
-    w = None
-    for x in s["result"]["wrong_answers"]:
-        if x["id"] == qid:
-            w = x
-            break
-    correct_disp = engine.pick_label(q, q["answer"])
-    if q["type"] in models.CHOICE_TYPES:
-        correct_disp += ". " + q["options"][q["answer"]]
-    if w:
-        st.markdown("你刚才选了 **%s**，正确答案是 **%s**。先看原文再听一遍，然后再答一次！"
-                    % (w["picked"], correct_disp))
-
-    ckey = "c%s" % qid
-    v = limited_audio(audio_path, ckey, 2, s["plays"].get(ckey, 0),
-                      key="au_c_%s_%s_a%d" % (cid, qid, s["attempt"]),
-                      label="再听一遍，还能听")
-    merge_plays(s["plays"], ckey, v)
-
-    if q["type"] == "sentence_judge":
-        st.markdown('<div class="showsent">%s</div>' % q["display"], unsafe_allow_html=True)
-        labels = ["✓　一样 / 对", "✗　不一样 / 不对"]
-        canon = ["same", "different"]
-    elif q["type"] == "passage_judge":
-        st.markdown('<div class="qtext">%s</div>' % q["statement"], unsafe_allow_html=True)
-        labels = ["√ 对", "× 错"]
-        canon = ["true", "false"]
-    else:
+    def _question_widgets():
+        if q["type"] == "sentence_judge":
+            st.markdown('<div class="showsent">%s</div>' % q["display"],
+                        unsafe_allow_html=True)
+            return ["✓　一样 / 对", "✗　不一样 / 不对"], ["same", "different"]
+        if q["type"] == "passage_judge":
+            st.markdown('<div class="qtext">%s</div>' % q["statement"],
+                        unsafe_allow_html=True)
+            return ["√ 对", "× 错"], ["true", "false"]
         if q["type"] == "dialogue_choice":
             st.markdown('<div class="qtext">%s</div>' % q["question_text"],
                         unsafe_allow_html=True)
-        labels = ["%s.　%s" % (chr(65 + i), o) for i, o in enumerate(q["options"])]
-        canon = list(range(len(q["options"])))
+        return (["%s.　%s" % (chr(65 + i), o) for i, o in enumerate(q["options"])],
+                list(range(len(q["options"]))))
 
-    if c["phase"] == "answer":
-        pick = st.radio("再选一次", labels, index=None,
-                        key="cr_%s_%s_a%d" % (cid, qid, s["attempt"]),
-                        label_visibility="collapsed")
-        if st.button("确认", type="primary", disabled=pick is None,
-                     use_container_width=True, key="cok_%s_a%d" % (qid, s["attempt"])):
-            val = canon[labels.index(pick)]
-            ok = engine.is_correct(q, val)
-            c["log"][qid] = "✓" if ok else "✗"
-            c["fb_ok"] = ok
-            c["phase"] = "fb"
-            st.rerun()
-    else:
-        if c["fb_ok"]:
-            st.success("答对啦！🎉")
-        else:
-            st.error("还是不对。正确答案：%s。这题我们以后再练，不着急。" % correct_disp)
+    def _next_button(label_ok):
         nxt = "下一题" if c["i"] + 1 < len(queue) else "完成订正"
         if st.button(nxt, type="primary", use_container_width=True,
                      key="cnext_%s_a%d" % (qid, s["attempt"])):
             c["i"] += 1
-            c["phase"] = "answer"
+            c["phase"] = "try1"
             st.rerun()
+
+    if phase in ("try1", "try2"):
+        if phase == "try1":
+            st.caption("这道题刚才没做对。再听一遍，重新选一选！")
+            ckey = "c%s" % qid
+        else:
+            st.warning("还不对哦。看看下面的原文，再听一遍，再试一次！")
+            st.markdown('<div class="showsent" style="font-size:17px;text-align:left">'
+                        '📖 原文：<br>' + "<br>".join(lines) + '</div>',
+                        unsafe_allow_html=True)
+            ckey = "d%s" % qid
+        v = limited_audio(audio_path, ckey, 2, s["plays"].get(ckey, 0),
+                          key="au_%s_%s_%s_a%d" % (ckey, cid, qid, s["attempt"]),
+                          label="再听一遍，还能听")
+        merge_plays(s["plays"], ckey, v)
+
+        labels, canon = _question_widgets()
+        pick = st.radio("再选一次", labels, index=None,
+                        key="cr_%s_%s_%s_a%d" % (phase, cid, qid, s["attempt"]),
+                        label_visibility="collapsed")
+        if st.button("确认", type="primary", disabled=pick is None,
+                     use_container_width=True,
+                     key="cok_%s_%s_a%d" % (phase, qid, s["attempt"])):
+            ok = engine.is_correct(q, canon[labels.index(pick)])
+            if phase == "try1":
+                if ok:
+                    c["log"][qid] = "✓"
+                    c["phase"] = "ok"
+                else:
+                    c["phase"] = "try2"
+            else:
+                c["log"][qid] = "✓²" if ok else "✗"
+                c["phase"] = "ok" if ok else "fail"
+            st.rerun()
+    elif phase == "ok":
+        st.success("答对啦！🎉")
+        _next_button("ok")
+    else:
+        st.info("没关系，这道题我们以后再练，不着急。")
+        _next_button("fail")
 
 
 def parent_view():
