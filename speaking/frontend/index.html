@@ -113,8 +113,8 @@ function stopRecord(){
   if(all.length < inRate*0.4){ fail("录音太短了，重新录一次吧"); return; }
   var peak=0;
   for(var k=0;k<all.length;k++){ var a=Math.abs(all[k]); if(a>peak) peak=a; }
-  releaseStream();  // 每次录完即释放话筒（小绿点熄灭；下次点话筒重新申请新流）
   if(peak < 0.01){
+    releaseStream();  // 哑流释放，下一次点话筒自动换新流
     fail("好像没有录到声音，再点一次话筒重试（会重新连接麦克风）"
          + "〔调试: ctx=" + (ctx?ctx.state:"无") + " " + inRate + "Hz peak="
          + peak.toFixed(4) + "〕");
@@ -165,11 +165,15 @@ function onMicTap(){
   if(state==="recording"){ stopRecord(); return; }
   if(state!=="idle") return;
   ensureCtx();  // 必须在手势栈内（iOS）
-  // 每次录音都重新申请新麦克风流（2026-06-12 iOS 二轮实测）：
-  // 播放示范音会把 iOS 音频会话切成"纯播放"，旧流被系统静音变哑；
-  // 同一 iframe 内重复 getUserMedia 不会重复弹权限（按会话记住），
-  // 且新流挂在当前会话上恢复捕获。安卓无此会话机制，行为不变。
-  releaseStream();
+  // 麦克风流策略 v3（2026-06-12 iOS 三轮实测迭代）：
+  // v2"每次新申请"能录但 iOS 随机重弹权限 4-5 次/课。改为：健康流直接复用，
+  // 仅当流被系统静音(muted，播放示范音切走音频会话所致)或失活时才重新申请；
+  // 漏网的哑流由录后静音检测兜底（检测到即释放，下一次点击自动换新流）。
+  if(stream){
+    var tr0 = stream.getAudioTracks()[0];
+    if(tr0 && tr0.readyState === "live" && !tr0.muted){ beginCountdown(); return; }
+    releaseStream();
+  }
   if(!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia){
     fail("这个浏览器不支持录音"); return; }
   navigator.mediaDevices.getUserMedia({audio:true}).then(function(s){
