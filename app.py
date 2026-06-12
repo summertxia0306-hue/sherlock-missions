@@ -27,6 +27,9 @@ course_id = qp.get("course_id", None)
 
 if mode == "parent":
     lpage.parent_view()
+elif mode == "smoke":  # 口语冒烟测试（家长专用，2026-06-12 经家长裁决由口语开发添加）
+    from speaking import smoke
+    smoke.render()
 else:
     # 直链访问（?course_id=…）只看课程状态是否"打开"，不受 open_date 限制——
     # 这是家长在解锁日前提前验收课程的通道；孩子的课程列表仍按 open_date 到期显示。
