@@ -38,20 +38,33 @@ def word_lights(eval_res):
 
 
 def feedback(eval_res):
-    """→ (孩子看的中文提示, 弱词列表)。具体到词，不灌鸡汤。"""
+    """→ (孩子看的中文提示, 弱词列表)。具体到词，不灌鸡汤。
+
+    一致性硬规则（2026-06-12 家长实测纠错：曾出现 1 星却夸"真棒"）：
+    评语必须与星级同向——不满 3 星时绝不说"真棒"，必须点出最该练的词；
+    逐词都不差但总分低时，点名得分最低的词或提示整句连贯度。"""
     if eval_res.get("is_rejected") or eval_res.get("total") is None:
         return "好像没有听清你读的这句话。先听一遍示范，再大声读一次吧！", []
     lights = word_lights(eval_res)
     miss = [w for w, c in lights if c == "miss"]
     weak = [w for w, c in lights if c == "weak"]
-    if not miss and not weak:
+    if miss or weak:
+        parts = []
+        if miss:
+            parts.append("这些单词没读到：%s" % "、".join(miss))
+        if weak:
+            parts.append("这些单词再跟老师读一遍：%s" % "、".join(weak))
+        return "。".join(parts) + "。再听一遍示范，重录试试！", miss + weak
+    if stars(eval_res.get("total"), eval_res.get("is_rejected")) >= 3:
         return "读得真棒！每个单词都很清楚！", []
-    parts = []
-    if miss:
-        parts.append("这些单词没读到：%s" % "、".join(miss))
-    if weak:
-        parts.append("这些单词再跟老师读一遍：%s" % "、".join(weak))
-    return "。".join(parts) + "。再听一遍示范，重录试试！", miss + weak
+    # 没有明显坏词但总分不到三星 → 点名得分最低的词（一致性兜底）
+    scored = [w for w in eval_res.get("words", []) if w.get("score") is not None]
+    low = [w["word"] for w in sorted(scored, key=lambda x: x["score"])[:2]
+           if w["score"] < 75]
+    if low:
+        return ("还差一点点！把这几个单词读得更清楚、更响亮：%s。"
+                "听一遍示范再重录，冲三颗星！" % "、".join(low)), low
+    return "单词都读对了！整句再读得连贯、响亮一点就更好，重录冲三颗星！", []
 
 
 def best_take(takes):

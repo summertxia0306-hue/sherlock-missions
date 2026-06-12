@@ -71,11 +71,21 @@ function beginCountdown(){
   show();
 }
 
+var sink = null;
+function ensureCtx(){
+  // iOS 规矩：AudioContext 必须在用户手势调用栈里创建/恢复；且全程只用这一个，
+  // 录完只 suspend 不 close（close 后复用的麦克风流在 iOS 上会变哑）——2026-06-12 实测教训
+  if(!ctx){
+    ctx = new (window.AudioContext||window.webkitAudioContext)();
+    inRate = ctx.sampleRate;
+  }
+  if(ctx.state === "suspended"){ try{ ctx.resume(); }catch(e){} }
+}
+
 function startRecord(){
   state="recording"; chunks=[]; t0=Date.now();
   try{
-    ctx = new (window.AudioContext||window.webkitAudioContext)();
-    inRate = ctx.sampleRate;
+    ensureCtx();
     srcNode = ctx.createMediaStreamSource(stream);
     node = ctx.createScriptProcessor(4096, 1, 1);
     node.onaudioprocess = function(e){
@@ -85,7 +95,8 @@ function startRecord(){
       timer.textContent = "🔴 " + sec.toFixed(0) + " 秒";
       if(sec >= (args.max_sec||20)) stopRecord();
     };
-    srcNode.connect(node); node.connect(ctx.destination);
+    if(!sink){ sink = ctx.createGain(); sink.gain.value = 0; sink.connect(ctx.destination); }
+    srcNode.connect(node); node.connect(sink);  // 静音汇出，避免录音时外放回声
   }catch(e){ fail("启动录音失败：" + e); return; }
   render();
 }
@@ -94,11 +105,18 @@ function stopRecord(){
   if(state!=="recording") return;
   state="processing"; hint.textContent="处理中…";
   durSec = (Date.now()-t0)/1000;
-  try{ if(node){node.disconnect();} if(srcNode){srcNode.disconnect();} if(ctx){ctx.close();} }catch(e){}
+  try{ if(node){node.disconnect();} if(srcNode){srcNode.disconnect();}
+       if(ctx && ctx.state==="running"){ ctx.suspend(); } }catch(e){}
   var total=0; for(var i=0;i<chunks.length;i++) total+=chunks[i].length;
   var all=new Float32Array(total), off=0;
   for(var j=0;j<chunks.length;j++){ all.set(chunks[j], off); off+=chunks[j].length; }
   if(all.length < inRate*0.4){ fail("录音太短了，重新录一次吧"); return; }
+  var peak=0;
+  for(var k=0;k<all.length;k++){ var a=Math.abs(all[k]); if(a>peak) peak=a; }
+  if(peak < 0.01){
+    fail("好像没有录到声音（话筒可能被静音了），再点话筒试一次");
+    return;
+  }
   var wav = encodeWav16k(all, inRate);
   wavB64 = b64(wav);
   play.src = URL.createObjectURL(new Blob([wav], {type:"audio/wav"}));
@@ -137,6 +155,11 @@ function onMicTap(){
   err.style.display="none";
   if(state==="recording"){ stopRecord(); return; }
   if(state!=="idle") return;
+  ensureCtx();  // 必须在手势栈内（iOS）
+  if(stream){
+    var tr = stream.getAudioTracks()[0];
+    if(!tr || tr.readyState !== "live"){ stream = null; }  // 流已死则重新申请
+  }
   if(stream){ beginCountdown(); return; }
   if(!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia){
     fail("这个浏览器不支持录音"); return; }

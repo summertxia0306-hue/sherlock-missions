@@ -261,8 +261,10 @@ def _show_take_feedback(res):
     n = engine.stars(res.get("total"), res.get("is_rejected"))
     st.markdown('<div class="starbig">%s</div>'
                 % ("⭐" * n if n else "😴"), unsafe_allow_html=True)
-    msg, _weak = engine.feedback(res)
+    msg, weak = engine.feedback(res)
     lights = engine.word_lights(res)
+    # 评语点名的弱词在红绿灯上同步标黄（一致性：不能词全绿、评语却让他练）
+    lights = [(w, ("weak" if (w in weak and c == "good") else c)) for w, c in lights]
     if lights:
         html = "".join('<span class="wl %s">%s</span>' % (c, w) for w, c in lights)
         st.markdown('<div style="text-align:center">%s</div>' % html,
