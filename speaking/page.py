@@ -198,6 +198,16 @@ def _question_page(course, s, q, student_id):
     last = qs_["takes"][-1] if qs_["takes"] else None
     if last is not None:
         _show_take_feedback(last)
+        # 每次录音的星级历史（2026-06-12 家长反馈"重录后好像没变"——
+        # 让每一次的评定可见，计分规则透明：取最好一次）
+        if len(all_takes) > 1:
+            hist = "　".join(
+                "第%d次 %s" % (i + 1,
+                               "⚠️" if t.get("error")
+                               else ("⭐" * engine.stars(t.get("total"),
+                                                        t.get("is_rejected")) or "0星"))
+                for i, t in enumerate(all_takes))
+            st.caption("每次录音：%s　→ 计分取最好的一次" % hist)
 
     can_record = takes_used < models.MAX_TAKES and not qs_["done"]
     if can_record:

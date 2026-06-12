@@ -95,7 +95,11 @@ def build_result(course, qstates, student_id, t0):
             score_sum += best["total"]
             scored_n += 1
         star_sum += n_stars
+        take_stars = [(-1 if t.get("error")
+                       else stars(t.get("total"), t.get("is_rejected")))
+                      for t in st_q.get("takes", [])]
         q_results.append({
+            "take_stars": take_stars,   # 每次录音星级（-1=评分失败），家长端/回传可见
             "id": q["id"], "type": q["type"],
             "text": q.get("text") or q.get("expected"),
             "stars": n_stars,
@@ -140,6 +144,8 @@ def _result_text(course, result):
             "⭐" * qr["stars"] if qr["stars"] else "0星",
             "" if qr["best_total"] is None else " %d" % round(qr["best_total"]),
             qr["takes"])
+        if len(qr.get("take_stars", [])) > 1:
+            line += "｜各次星:" + "/".join(str(x) for x in qr["take_stars"])
         if qr["weak_words"]:
             line += "｜弱词: " + ",".join(qr["weak_words"])
         if qr["is_rejected"]:
