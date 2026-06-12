@@ -157,7 +157,10 @@ def _start_page(course, s):
                 '满意就交给老师打星星。每题最多能录 3 次哦。</div>',
                 unsafe_allow_html=True)
     st.markdown("**第一步：试试话筒**（点话筒说一句话，听到自己的声音就可以开始）")
-    v = recorder.record("test", key="rec_test_%s_a%d" % (course["course_id"], s["attempt"]),
+    # 注意：整节课（含试音）共用同一个组件实例（key 只含课程+attempt，不含题号/录次）——
+    # iOS 对每个新 iframe 实例都重弹麦克风权限（2026-06-12 家长反馈），
+    # 单实例 = 整节课只授权一次；切题靠 args(qid/take) 软复位。
+    v = recorder.record("test", key="rec_%s_a%d" % (course["course_id"], s["attempt"]),
                         max_sec=8, countdown=3, label="点话筒试一试，说：Hello!")
     ready = v is not None and v.get("qid") == "test"
     if ready:
@@ -198,10 +201,11 @@ def _question_page(course, s, q, student_id):
 
     can_record = takes_used < models.MAX_TAKES and not qs_["done"]
     if can_record:
-        seq = len(all_takes) + 1                  # 含 error 次，保证组件 key 唯一不重放
+        seq = len(all_takes) + 1                  # 含 error 次；qid+take 一起做防重放签名
+        # key 与试音相同 = 全课单实例（iOS 只授权一次）；qid/take 经 args 传入，
+        # 前端检测变化后软复位；Python 端靠 (qid, take) 匹配防旧值重放
         rv = recorder.record(qid, take=seq,
-                             key="rec_%s_%d_t%d_a%d" % (course["course_id"], qid,
-                                                        seq, s["attempt"]),
+                             key="rec_%s_a%d" % (course["course_id"], s["attempt"]),
                              max_sec=20, countdown=3)
         if rv is not None and str(rv.get("qid")) == str(qid) and rv.get("take") == seq:
             _consume_take(course, q, qs_, rv)

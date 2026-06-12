@@ -162,10 +162,21 @@ document.getElementById("use").onclick = function(){
   row.style.display="none"; setH();
 };
 
+var curSig = null;
 window.addEventListener("message", function(e){
   var d=e.data;
   if(!d || d.type!=="streamlit:render") return;
   args = d.args || {};
+  // 同一组件实例跨题复用（iOS 每个新 iframe 都重弹麦克风权限，2026-06-12 家长反馈）：
+  // qid/take 变化 = 切到新题或新录次 → 软复位界面，但保留已授权的 stream
+  var sig = String(args.qid) + "|" + String(args.take);
+  if (sig !== curSig){
+    curSig = sig;
+    wavB64 = null;
+    if (state === "recording"){ try{ stopRecord(); }catch(err){} }
+    state = "idle";
+    freshMic();
+  }
   render();
 });
 send("streamlit:componentReady", {apiVersion:1});
