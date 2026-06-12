@@ -24,9 +24,12 @@ from urllib.parse import urlencode
 ISE_HOST = "ise-api.xfyun.cn"
 ISE_PATH = "/v2/open-ise"
 
-# 每帧 1280B（官方建议 40ms/帧）；间隔过小有被服务端限流风险，过大拖慢评分
+# 每帧 1280B。官方建议 40ms/帧，但 2026-06-12 冒烟实测整体 6.5–8.9 秒里大半
+# 耗在按 40ms 发帧上；服务端是离线评测（凑齐 status=2 才算分），实践上可以
+# 快发。降到 10ms/帧，5 秒音频的发送时间从 ~5s 降到 ~1.2s。若出现 10163/限流
+# 类错误再回调到 0.04。
 FRAME_SIZE = 1280
-FRAME_INTERVAL = 0.04
+FRAME_INTERVAL = 0.01
 
 
 class IseError(Exception):
@@ -135,6 +138,15 @@ def evaluate(app_id, api_key, api_secret, text, pcm16k,
             ws.close()
         except Exception:
             pass
+
+
+def evaluate_retry(app_id, api_key, api_secret, text, pcm16k, **kw):
+    """evaluate + 失败自动重试 1 次（冒烟确认跨境偶发抖动的补救，方案 §7）。"""
+    try:
+        return evaluate(app_id, api_key, api_secret, text, pcm16k, **kw)
+    except IseError:
+        time.sleep(1.0)
+        return evaluate(app_id, api_key, api_secret, text, pcm16k, **kw)
 
 
 def _f(val):

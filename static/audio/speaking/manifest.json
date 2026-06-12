@@ -1,0 +1,236 @@
+{
+ "fragments": {
+  "93830c8a0cd44c8f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I have a little cat."
+  },
+  "6e18574d58fee75a": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The panda is black and white."
+  },
+  "52a32431e6bedcd3": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I can see five birds."
+  },
+  "81bc484fc114bf7c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It's a rabbit."
+  },
+  "cbe67e00e238a236": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How many cats can you see?"
+  },
+  "012347eddc300faf": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I like pandas."
+  },
+  "35894030823c591b": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is this a tiger?"
+  },
+  "d24449749f119d0f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The apple tastes sweet."
+  },
+  "a397e8711ba2556c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The orange tastes sour."
+  },
+  "ad917173a308fa1c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Smell the flower. It smells nice."
+  },
+  "3694ffaa0f4ef0e7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The bread is soft."
+  },
+  "83f41e22e5b8de81": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "May I have some milk?"
+  },
+  "3292a7468b78bb21": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I like eating cakes."
+  },
+  "a749ecdaa755c164": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How does the cake taste?"
+  },
+  "5f179c8b33ff4a5c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Do you like apples?"
+  },
+  "e7fc0601dd278783": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I like flying kites."
+  },
+  "52122b1e293ac03f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "My bag is big."
+  },
+  "7936257d38c31de2": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The ball is under the desk."
+  },
+  "aa48feaf262770f4": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I can ride a bicycle."
+  },
+  "8a335c850baf35dd": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Can you skip rope?"
+  },
+  "4c227b45506a9c71": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I play football on Sunday."
+  },
+  "7ae2a8f7862ba14d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Can you swim?"
+  },
+  "610c87d959a7b5e7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is the pencil?"
+  },
+  "5c4fa528049ddd80": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The tiger is big."
+  },
+  "40b9b32f2fb4b155": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I have an egg and some milk."
+  },
+  "1a20c375d9fb0cbe": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "My kite is red and yellow."
+  },
+  "4316544cd6202fc7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The soup tastes salty."
+  },
+  "8634fe7ed6aeacdc": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I go to the park with my mother."
+  },
+  "95df27734af6c7fc": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What a happy day!"
+  },
+  "71dceeb031d9b761": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How does the orange taste?"
+  },
+  "4e856b42a9552978": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Do you like swimming?"
+  },
+  "e560ac2ca363e5ef": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Happy Children's Day!"
+  },
+  "a05c68df7a655235": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is a present for you."
+  },
+  "03baf6e93ec2f616": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Look at that bird over there."
+  },
+  "b7eb7ecf318086fa": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What colour is the bird?"
+  },
+  "d245ffb13c524671": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Can you draw a cat?"
+  }
+ },
+ "courses": {
+  "S01D01": {
+   "static/audio/speaking/S01D01/q01.mp3": "93830c8a0cd44c8f",
+   "static/audio/speaking/S01D01/q02.mp3": "6e18574d58fee75a",
+   "static/audio/speaking/S01D01/q03.mp3": "52a32431e6bedcd3",
+   "static/audio/speaking/S01D01/q04.mp3": "81bc484fc114bf7c",
+   "static/audio/speaking/S01D01/q05.mp3": "cbe67e00e238a236",
+   "static/audio/speaking/S01D01/q06.mp3": "012347eddc300faf",
+   "static/audio/speaking/S01D01/q07.mp3": "35894030823c591b",
+   "static/audio/speaking/S01D01/q08.mp3": "cbe67e00e238a236"
+  },
+  "S01D02": {
+   "static/audio/speaking/S01D02/q01.mp3": "d24449749f119d0f",
+   "static/audio/speaking/S01D02/q02.mp3": "a397e8711ba2556c",
+   "static/audio/speaking/S01D02/q03.mp3": "ad917173a308fa1c",
+   "static/audio/speaking/S01D02/q04.mp3": "3694ffaa0f4ef0e7",
+   "static/audio/speaking/S01D02/q05.mp3": "83f41e22e5b8de81",
+   "static/audio/speaking/S01D02/q06.mp3": "3292a7468b78bb21",
+   "static/audio/speaking/S01D02/q07.mp3": "a749ecdaa755c164",
+   "static/audio/speaking/S01D02/q08.mp3": "5f179c8b33ff4a5c"
+  },
+  "S01D03": {
+   "static/audio/speaking/S01D03/q01.mp3": "e7fc0601dd278783",
+   "static/audio/speaking/S01D03/q02.mp3": "52122b1e293ac03f",
+   "static/audio/speaking/S01D03/q03.mp3": "7936257d38c31de2",
+   "static/audio/speaking/S01D03/q04.mp3": "aa48feaf262770f4",
+   "static/audio/speaking/S01D03/q05.mp3": "8a335c850baf35dd",
+   "static/audio/speaking/S01D03/q06.mp3": "4c227b45506a9c71",
+   "static/audio/speaking/S01D03/q07.mp3": "7ae2a8f7862ba14d",
+   "static/audio/speaking/S01D03/q08.mp3": "610c87d959a7b5e7"
+  },
+  "S01D04": {
+   "static/audio/speaking/S01D04/q01.mp3": "5c4fa528049ddd80",
+   "static/audio/speaking/S01D04/q02.mp3": "40b9b32f2fb4b155",
+   "static/audio/speaking/S01D04/q03.mp3": "1a20c375d9fb0cbe",
+   "static/audio/speaking/S01D04/q04.mp3": "4316544cd6202fc7",
+   "static/audio/speaking/S01D04/q05.mp3": "8634fe7ed6aeacdc",
+   "static/audio/speaking/S01D04/q06.mp3": "95df27734af6c7fc",
+   "static/audio/speaking/S01D04/q07.mp3": "71dceeb031d9b761",
+   "static/audio/speaking/S01D04/q08.mp3": "4e856b42a9552978"
+  },
+  "S01D05": {
+   "static/audio/speaking/S01D05/q01.mp3": "81bc484fc114bf7c",
+   "static/audio/speaking/S01D05/q02.mp3": "d24449749f119d0f",
+   "static/audio/speaking/S01D05/q03.mp3": "e7fc0601dd278783",
+   "static/audio/speaking/S01D05/q04.mp3": "e560ac2ca363e5ef",
+   "static/audio/speaking/S01D05/q05.mp3": "a05c68df7a655235",
+   "static/audio/speaking/S01D05/q06.mp3": "03baf6e93ec2f616",
+   "static/audio/speaking/S01D05/q07.mp3": "b7eb7ecf318086fa",
+   "static/audio/speaking/S01D05/q08.mp3": "d245ffb13c524671"
+  }
+ }
+}

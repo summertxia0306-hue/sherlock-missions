@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body{margin:0;padding:6px 0 0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;text-align:center;-webkit-tap-highlight-color:transparent}
+.micbtn{width:150px;height:150px;border-radius:50%;border:4px solid #c2410c;background:#fff7ed;font-size:60px;cursor:pointer;touch-action:manipulation;transition:transform .1s}
+.micbtn:active{transform:scale(.95)}
+.micbtn.rec{background:#dc2626;border-color:#7f1d1d;animation:pulse 1s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(220,38,38,.5)}70%{box-shadow:0 0 0 22px rgba(220,38,38,0)}100%{box-shadow:0 0 0 0 rgba(220,38,38,0)}}
+.count{font-size:90px;font-weight:800;color:#c2410c;line-height:150px}
+.hint{font-size:17px;color:#374151;margin-top:8px;min-height:24px}
+.timer{font-size:22px;font-weight:700;color:#dc2626;margin-top:4px}
+.err{font-size:14px;color:#a32d2d;margin-top:6px;display:none}
+.row{margin-top:10px;display:none}
+.row button{font-size:18px;padding:12px 20px;margin:0 8px;border-radius:14px;border:2px solid #94a3b8;background:#f8fafc;cursor:pointer;touch-action:manipulation}
+.row .use{background:#16a34a;border-color:#15803d;color:#fff;font-weight:700}
+audio{margin-top:10px;width:92%;max-width:380px}
+</style>
+</head>
+<body>
+<div id="stage"><button id="mic" class="micbtn" aria-label="录音">🎙️</button></div>
+<div class="hint" id="hint">点红圈话筒，数完 3-2-1 再开始读</div>
+<div class="timer" id="timer" style="display:none"></div>
+<audio id="play" controls style="display:none"></audio>
+<div class="row" id="row">
+  <button id="redo">🔁 重录</button>
+  <button id="use" class="use">✅ 就用这个</button>
+</div>
+<div class="err" id="err"></div>
+<script>
+"use strict";
+var args = {}, state = "idle", stream = null, ctx = null, node = null, srcNode = null;
+var chunks = [], inRate = 48000, timerIv = null, t0 = 0, wavB64 = null, durSec = 0;
+
+function send(t, d){ window.parent.postMessage(Object.assign({isStreamlitMessage:true,type:t}, d||{}), "*"); }
+function setValue(v){ send("streamlit:setComponentValue", {value:v, dataType:"json"}); }
+function setH(){ send("streamlit:setFrameHeight", {height: document.body.scrollHeight + 10}); }
+
+var stage=document.getElementById("stage"), mic=document.getElementById("mic"),
+    hint=document.getElementById("hint"), timer=document.getElementById("timer"),
+    play=document.getElementById("play"), row=document.getElementById("row"),
+    err=document.getElementById("err");
+
+function fail(msg){
+  err.textContent = msg; err.style.display = "block";
+  state = "idle"; render();
+}
+function render(){
+  mic.classList.toggle("rec", state==="recording");
+  mic.style.display = (state==="review") ? "none" : "";
+  play.style.display = (state==="review") ? "" : "none";
+  row.style.display = (state==="review") ? "block" : "none";
+  timer.style.display = (state==="recording") ? "" : "none";
+  if(state==="idle") hint.textContent = args.label || "点红圈话筒，数完 3-2-1 再开始读";
+  if(state==="recording") hint.textContent = "在录啦！读完再点一下红圈停止";
+  if(state==="review") hint.textContent = "听听自己的声音。满意就点绿色按钮！";
+  setH();
+}
+
+function beginCountdown(){
+  var n = (typeof args.countdown==="number") ? args.countdown : 3;
+  if(n<=0){ startRecord(); return; }
+  state="countdown";
+  var show=function(){
+    if(n<=0){ stage.innerHTML='<button id="mic" class="micbtn rec">🎙️</button>';
+      mic=document.getElementById("mic"); mic.onclick=stopRecord; startRecord(); return; }
+    stage.innerHTML='<div class="count">'+n+'</div>'; hint.textContent="准备…"; setH();
+    n--; setTimeout(show, 800);
+  };
+  show();
+}
+
+function startRecord(){
+  state="recording"; chunks=[]; t0=Date.now();
+  try{
+    ctx = new (window.AudioContext||window.webkitAudioContext)();
+    inRate = ctx.sampleRate;
+    srcNode = ctx.createMediaStreamSource(stream);
+    node = ctx.createScriptProcessor(4096, 1, 1);
+    node.onaudioprocess = function(e){
+      if(state!=="recording") return;
+      chunks.push(new Float32Array(e.inputBuffer.getChannelData(0)));
+      var sec = (Date.now()-t0)/1000;
+      timer.textContent = "🔴 " + sec.toFixed(0) + " 秒";
+      if(sec >= (args.max_sec||20)) stopRecord();
+    };
+    srcNode.connect(node); node.connect(ctx.destination);
+  }catch(e){ fail("启动录音失败：" + e); return; }
+  render();
+}
+
+function stopRecord(){
+  if(state!=="recording") return;
+  state="processing"; hint.textContent="处理中…";
+  durSec = (Date.now()-t0)/1000;
+  try{ if(node){node.disconnect();} if(srcNode){srcNode.disconnect();} if(ctx){ctx.close();} }catch(e){}
+  var total=0; for(var i=0;i<chunks.length;i++) total+=chunks[i].length;
+  var all=new Float32Array(total), off=0;
+  for(var j=0;j<chunks.length;j++){ all.set(chunks[j], off); off+=chunks[j].length; }
+  if(all.length < inRate*0.4){ fail("录音太短了，重新录一次吧"); return; }
+  var wav = encodeWav16k(all, inRate);
+  wavB64 = b64(wav);
+  play.src = URL.createObjectURL(new Blob([wav], {type:"audio/wav"}));
+  state="review";
+  stage.innerHTML='<button id="mic" class="micbtn" style="display:none">🎙️</button>';
+  mic=document.getElementById("mic");
+  render();
+}
+
+function encodeWav16k(f32, rate){
+  var ratio = rate/16000, n = Math.floor(f32.length/ratio);
+  var pcm = new Int16Array(n);
+  for(var i=0;i<n;i++){
+    var pos=i*ratio, j=Math.floor(pos), fr=pos-j;
+    var v = (j+1<f32.length) ? f32[j]*(1-fr)+f32[j+1]*fr : f32[j];
+    v = Math.max(-1, Math.min(1, v));
+    pcm[i] = v<0 ? v*0x8000 : v*0x7FFF;
+  }
+  var buf=new ArrayBuffer(44+pcm.length*2), dv=new DataView(buf);
+  function ws(o,s){ for(var k=0;k<s.length;k++) dv.setUint8(o+k, s.charCodeAt(k)); }
+  ws(0,"RIFF"); dv.setUint32(4,36+pcm.length*2,true); ws(8,"WAVE"); ws(12,"fmt ");
+  dv.setUint32(16,16,true); dv.setUint16(20,1,true); dv.setUint16(22,1,true);
+  dv.setUint32(24,16000,true); dv.setUint32(28,32000,true);
+  dv.setUint16(32,2,true); dv.setUint16(34,16,true); ws(36,"data");
+  dv.setUint32(40,pcm.length*2,true);
+  new Int16Array(buf,44).set(pcm);
+  return buf;
+}
+function b64(buf){
+  var u8=new Uint8Array(buf), s="", CH=0x8000;
+  for(var i=0;i<u8.length;i+=CH) s+=String.fromCharCode.apply(null, u8.subarray(i,i+CH));
+  return btoa(s);
+}
+
+function onMicTap(){
+  err.style.display="none";
+  if(state==="recording"){ stopRecord(); return; }
+  if(state!=="idle") return;
+  if(stream){ beginCountdown(); return; }
+  if(!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia){
+    fail("这个浏览器不支持录音"); return; }
+  navigator.mediaDevices.getUserMedia({audio:true}).then(function(s){
+    stream = s; beginCountdown();
+  }).catch(function(){
+    fail("需要麦克风权限才能录音。请点允许，或让爸爸妈妈在设置里打开。");
+  });
+}
+function freshMic(){
+  stage.innerHTML='<button id="mic" class="micbtn">🎙️</button>';
+  mic=document.getElementById("mic");
+  mic.onclick=onMicTap;
+}
+mic.onclick=onMicTap;
+document.getElementById("redo").onclick = function(){
+  wavB64=null; state="idle"; freshMic(); render();
+};
+document.getElementById("use").onclick = function(){
+  if(!wavB64) return;
+  setValue({qid: args.qid, take: args.take||1, dur: Math.round(durSec*10)/10, wav_b64: wavB64});
+  hint.textContent = "已交给老师评分…";
+  row.style.display="none"; setH();
+};
+
+window.addEventListener("message", function(e){
+  var d=e.data;
+  if(!d || d.type!=="streamlit:render") return;
+  args = d.args || {};
+  render();
+});
+send("streamlit:componentReady", {apiVersion:1});
+setH();
+</script>
+</body>
+</html>
