@@ -179,7 +179,7 @@ def _question_page(course, s, q, student_id):
     qs_ = _qstate(s, qid)
     all_takes = qs_["takes"]                      # 含评分失败(error)的
     scored = [t for t in all_takes if not t.get("error")]
-    takes_used = len(scored)                      # 只有评上分的才消耗 3 次机会
+    takes_used = len(scored)                      # 只有评上分的才计入"读了几次"
     st.markdown("#### 第 %d 题 · %s" % (qid, TYPE_ZH[q["type"]]))
 
     if q["type"] == "repeat":
@@ -189,15 +189,19 @@ def _question_page(course, s, q, student_id):
         st.markdown('<div class="hintbox">%s</div>' % q["hint"], unsafe_allow_html=True)
         st.caption("听问题，看上面的提示，用英语回答")
         au_label = "听问题，还能听"
-    v = limited_audio(q["audio"], "sq%d" % qid, models.DEMO_PLAYS,
-                      s.setdefault("plays", {}).get("sq%d" % qid, 0),
-                      key="sau_%s_%d_a%d" % (course["course_id"], qid, s["attempt"]),
+    # 示范音可听次数：每次录音不到 3 星会被重置回满（_consume_take 里 bump demo_gen），
+    # 让孩子永远有地方再听一遍。前端计数只升不降，故用"换组件实例"(key 带 g{gen})实现重置。
+    pkey = "sq%d" % qid
+    gen = s.setdefault("demo_gen", {}).get(qid, 0)
+    v = limited_audio(q["audio"], pkey, models.DEMO_PLAYS,
+                      s.setdefault("plays", {}).get(pkey, 0),
+                      key="sau_%s_%d_a%d_g%d"
+                          % (course["course_id"], qid, s["attempt"], gen),
                       label=au_label)
-    merge_plays(s["plays"], "sq%d" % qid, v)
+    merge_plays(s["plays"], pkey, v)
 
-    last = qs_["takes"][-1] if qs_["takes"] else None
-    if last is not None:
-        _show_take_feedback(last)
+    if all_takes:
+        _show_take_feedback(all_takes[-1])
         # 每次录音的星级历史（2026-06-12 家长反馈"重录后好像没变"——
         # 让每一次的评定可见，计分规则透明：取最好一次）
         if len(all_takes) > 1:
@@ -209,8 +213,25 @@ def _question_page(course, s, q, student_id):
                 for i, t in enumerate(all_takes))
             st.caption("每次录音：%s　→ 计分取最好的一次" % hist)
 
-    can_record = takes_used < models.MAX_TAKES and not qs_["done"]
-    if can_record:
+    best = engine.best_take(scored) if scored else None
+    best_stars = engine.stars(best.get("total"), best.get("is_rejected")) if best else 0
+    achieved = best_stars >= 3                     # 拿到 3 星 = 过关
+    safety_open = takes_used >= models.SAFETY_TAKES  # 连读满 6 次仍没 3 星 → 兜底放行
+    is_last = s["idx"] + 1 >= len(course["questions"])
+    next_label = "完成，看星星 🌟" if is_last else "下一题 ➡"
+
+    # —— 已拿 3 星：放行 ——
+    if achieved:
+        st.success("🎉 三颗星！太棒了，进下一题！")
+        if st.button(next_label, type="primary", use_container_width=True,
+                     key="snext_%d_a%d" % (qid, s["attempt"])):
+            qs_["done"] = True
+            s["idx"] += 1
+            st.rerun()
+        return
+
+    # —— 还没 3 星：必须重录（未到兜底前不出"下一题"按钮）——
+    if not safety_open and not qs_["done"]:
         seq = len(all_takes) + 1                  # 含 error 次；qid+take 一起做防重放签名
         # key 与试音相同 = 全课单实例（iOS 只授权一次）；qid/take 经 args 传入，
         # 前端检测变化后软复位；Python 端靠 (qid, take) 匹配防旧值重放
@@ -218,32 +239,25 @@ def _question_page(course, s, q, student_id):
                              key="rec_%s_a%d" % (course["course_id"], s["attempt"]),
                              max_sec=20, countdown=3)
         if rv is not None and str(rv.get("qid")) == str(qid) and rv.get("take") == seq:
-            _consume_take(course, q, qs_, rv)
+            _consume_take(course, q, qs_, rv, s)
             st.rerun()
-    elif not qs_["done"]:
-        st.info("已经录了 3 次啦，老师取最好的一次。点下一题继续！")
+        if scored:
+            st.caption("还没到三颗星呢～ 看上面老师标出哪里要再读，"
+                       "听一遍示范，点话筒再读一次，冲三颗星！")
 
-    if scored:
-        best = engine.best_take(scored)
-        n_stars = engine.stars(best.get("total"), best.get("is_rejected"))
-        can_redo = takes_used < models.MAX_TAKES
-        label = "下一题 ➡" if s["idx"] + 1 < len(course["questions"]) else "完成，看星星 🌟"
-        cols = st.columns(2) if can_redo else [st]
-        if can_redo:
-            cols[0].caption("想再录一次就点上面的话筒（还剩 %d 次机会）"
-                            % (models.MAX_TAKES - takes_used))
-        if cols[-1].button(label, type="primary", use_container_width=True,
-                           key="snext_%d_a%d" % (qid, s["attempt"]),
-                           disabled=n_stars == 0 and can_redo):
+    # —— 兜底：连读满 6 次仍不到 3 星，允许"先过"（不再录，省评分次数、防卡死）——
+    if safety_open and not qs_["done"]:
+        st.info("你已经很努力地读了好多遍啦！这一题先过，后面还有更精彩的题目等你 🎈")
+        if st.button("先过这题 ➡", use_container_width=True,
+                     key="spass_%d_a%d" % (qid, s["attempt"])):
+            qs_["passed_by_safety"] = True
             qs_["done"] = True
             s["idx"] += 1
             st.rerun()
-        if n_stars == 0 and can_redo:
-            st.caption("这次没录上，再试一次吧！")
 
 
-def _consume_take(course, q, qs_, rv):
-    """一次录音：评分（同步）+ 上传私有库（尽力而为）。"""
+def _consume_take(course, q, qs_, rv, s):
+    """一次录音：评分（同步）+ 不到3星重置示范音 + 上传私有库（尽力而为）。"""
     wav, pcm = recorder.wav_bytes(rv)
     try:
         with st.spinner("老师在听你的录音…"):
@@ -256,6 +270,12 @@ def _consume_take(course, q, qs_, rv):
                "raw_xml": "", "seconds": 0, "error": str(e)}
     res["dur"] = rv.get("dur")
     qs_["takes"].append(res)
+    # 这次不到 3 星 → 重置该题示范音可听次数（换组件实例：清服务端计数 + bump gen）
+    if engine.stars(res.get("total"), res.get("is_rejected")) < 3:
+        pkey = "sq%d" % q["id"]
+        s.setdefault("plays", {})[pkey] = 0
+        dg = s.setdefault("demo_gen", {})
+        dg[q["id"]] = dg.get(q["id"], 0) + 1
     try:
         path, _secs = recorder.upload_recording(
             wav, course["course_id"], q["id"], rv.get("take", 1), _secret)
@@ -358,7 +378,11 @@ def parent_view():
                 for qr in r.get("question_results", []):
                     rows.append({"题": "Q%d" % qr["id"], "类型": TYPE_ZH.get(qr["type"]),
                                  "内容": qr["text"], "星": qr["stars"],
-                                 "最高分": qr["best_total"], "录次": qr["takes"],
+                                 "读几次": qr["takes"],
+                                 "首次分": qr.get("first_total"),
+                                 "末次分": qr.get("last_total"),
+                                 "最高分": qr["best_total"],
+                                 "兜底过": "⚠是" if qr.get("passed_by_safety") else "",
                                  "弱词": ",".join(qr["weak_words"]),
                                  "考点": qr.get("tag", "")})
                 st.table(rows)

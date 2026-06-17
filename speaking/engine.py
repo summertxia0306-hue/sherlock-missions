@@ -88,7 +88,8 @@ def build_result(course, qstates, student_id, t0):
     q_results, star_sum, score_sum, scored_n = [], 0, 0.0, 0
     for q in course["questions"]:
         st_q = qstates.get(q["id"], {})
-        best = best_take(st_q.get("takes", []))
+        takes_all = st_q.get("takes", [])
+        best = best_take(takes_all)
         n_stars = stars(best["total"], best.get("is_rejected")) if best else 0
         weak = feedback(best)[1] if best else []
         if best and best.get("total") is not None:
@@ -97,18 +98,26 @@ def build_result(course, qstates, student_id, t0):
         star_sum += n_stars
         take_stars = [(-1 if t.get("error")
                        else stars(t.get("total"), t.get("is_rejected")))
-                      for t in st_q.get("takes", [])]
+                      for t in takes_all]
+        # 首次/末次成绩（家长要求 2026-06-17）：取评上分的录音，首=第一次、末=最后一次
+        scored_takes = [t for t in takes_all
+                        if t.get("total") is not None and not t.get("is_rejected")]
+        first_total = round(scored_takes[0]["total"]) if scored_takes else None
+        last_total = round(scored_takes[-1]["total"]) if scored_takes else None
         q_results.append({
             "take_stars": take_stars,   # 每次录音星级（-1=评分失败），家长端/回传可见
             "id": q["id"], "type": q["type"],
             "text": q.get("text") or q.get("expected"),
             "stars": n_stars,
             "best_total": best.get("total") if best else None,
+            "first_total": first_total,   # 第一次成绩
+            "last_total": last_total,     # 最后一次成绩
+            "passed_by_safety": bool(st_q.get("passed_by_safety")),  # 未达3星·兜底通过
             "accuracy": best.get("accuracy") if best else None,
             "fluency": best.get("fluency") if best else None,
             "integrity": best.get("integrity") if best else None,
             "is_rejected": bool(best.get("is_rejected")) if best else True,
-            "takes": len(st_q.get("takes", [])),
+            "takes": len(takes_all),
             "weak_words": weak,
             "recordings": st_q.get("recordings", []),
             "tag": q.get("tag", ""),
@@ -139,11 +148,16 @@ def _result_text(course, result):
                  course["title"], result["stars_total"], result["stars_max"],
                  result["score"], max(1, result["duration_seconds"] // 60))]
     for qr in result["question_results"]:
-        line = "Q%d %s %s：%s 分%s（录%d次）" % (
+        line = "Q%d %s %s：%s（读%d次" % (
             qr["id"], type_zh.get(qr["type"], qr["type"]), qr["text"],
             "⭐" * qr["stars"] if qr["stars"] else "0星",
-            "" if qr["best_total"] is None else " %d" % round(qr["best_total"]),
             qr["takes"])
+        if qr.get("first_total") is not None:
+            line += "，首%d→末%d，最高%d" % (
+                qr["first_total"], qr["last_total"], round(qr["best_total"]))
+        line += "）"
+        if qr.get("passed_by_safety"):
+            line += "｜⚠未达3星·兜底通过"
         if len(qr.get("take_stars", [])) > 1:
             line += "｜各次星:" + "/".join(str(x) for x in qr["take_stars"])
         if qr["weak_words"]:

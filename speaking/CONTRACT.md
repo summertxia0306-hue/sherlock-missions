@@ -1,6 +1,6 @@
 # 口语模块对接契约与功能清单
 
-> 版本 v1 · 2026-06-12 · Owner = 口语开发（Claude）。
+> 版本 v1.1 · 2026-06-17（加 3星门控+6次兜底+示范音重置+首末成绩记录）· Owner = 口语开发（Claude）。
 > 镜像 `listening/CONTRACT.md` 的体例；改接口先改本文件再改代码。
 
 ## 0. 范围
@@ -15,7 +15,7 @@
 speaking/
   page.py        speaking_home() / render_course() / parent_view() / get_last_result()
   engine.py      星级/规则化评语/最佳成绩/结果组装（纯逻辑，可单测）
-  models.py      课程 JSON 加载+校验（加载即校验）；MAX_TAKES=3 DEMO_PLAYS=2
+  models.py      课程 JSON 加载+校验（加载即校验）；SAFETY_TAKES=6 DEMO_PLAYS=2（MAX_TAKES=3 已弃用保留）
   ise.py         讯飞 ISE WebSocket 客户端（evaluate / evaluate_retry / parse_result）
   wavtools.py    wav→16k 单声道 PCM（纯标准库；smoke 页用，正式录音组件 JS 端已产 16k wav）
   recorder.py    自研录音组件封装 + 录音上传/列出/取回私有库
@@ -41,9 +41,19 @@ course_id 形如 `S01D01`；`questions` 题号 1..n 连续；题型：
 
 - 每题流程：听示范（限 2 遍，复用 listening 限次组件）→ 录音（3-2-1 倒计时）→
   讯飞评分（失败自动重试 1 次，仍失败不消耗录次）→ 星级+逐词红绿灯+具体到词中文提示 →
-  可重录（最多 3 次取最高）→ 下一题。**重录机制即订正，无独立订正流。**
+  **必须读到 3 星才出现"下一题"按钮**；不到 3 星不放行、必须重录。**重录机制即订正，无独立订正流。**
+- **3 星门控 + 兜底（2026-06-17 家长定）**：不到 3 星时不展示"下一题"，孩子据逐词提示重读；
+  **每次不到 3 星会把该题示范音可听次数重置回满**（让孩子永远有地方再听——前端计数只升不降，
+  故用"换组件实例"key 带 `g{demo_gen}` 实现重置，不改共享 frontend/index.html）。
+  **兜底阀（SAFETY_TAKES=6）**：连读满 6 次（仅计评上分的录次，评分失败不计）仍不到 3 星 →
+  出现"先过这题"按钮，记 `passed_by_safety=True`，不再录（省讯飞额度、防讯飞稳定误判童声卡死）。
+  理由见档案 06-13 日志 + 本文件 §7 童声偏差风险。
 - 信息隔离：孩子端只见星级/红绿灯/中文提示，**永不见数字分数**；分数/弱词/考点仅家长端。
 - 星级阈值（W1 从宽，待真实分布校准）：≥75⭐⭐⭐ ≥50⭐⭐ 其余⭐ 拒识0星。
+- **评语与星级一致性硬规则**（2026-06-12 家长纠错）：不满 3 星绝不出现夸赞语；
+  无明显弱词但总分低 → 点名得分最低的词（红绿灯同步标黄）或提示整句连贯度。
+- **录音组件 iOS 约束**（2026-06-12 实测）：AudioContext 全实例唯一、只在用户手势内
+  创建/恢复、录完 suspend 不 close；录音静音检测（峰值<0.01 直接提示重录不送评分）。
 - 提交模型与听力一致：交卷只出成绩单，点"提交"才入库（attempt 递增可重做）。
 - 录音：每次"就用这个"的 wav 传 sherlock-results 私有库 `recordings/{course_id}/`，
   失败不阻塞做题；家长端"录音箱"页签在线试听。
@@ -55,8 +65,9 @@ course_id 形如 `S01D01`；`questions` 题号 1..n 连续；题型：
   "student_id": "sherlock", "course_id": "S01D02", "module": "speaking",
   "status": "completed", "score": 78, "stars_total": 23, "stars_max": 24,
   "question_results": [{"id":1,"type":"repeat","text":"…","stars":3,
-     "best_total":80.1,"accuracy":..,"fluency":..,"integrity":..,
-     "is_rejected":false,"takes":2,"weak_words":["tastes"],
+     "best_total":80.1,"first_total":62,"last_total":80,"passed_by_safety":false,
+     "accuracy":..,"fluency":..,"integrity":..,"take_stars":[1,2,3],
+     "is_rejected":false,"takes":3,"weak_words":["tastes"],
      "recordings":["recordings/S01D02/0617_..wav"],"tag":"…"}],
   "duration_seconds": 300, "completed_at": "2026-06-17 15:02",
   "section_scores": {}, "wrong_answers": [], "play_counts": {},
@@ -76,6 +87,21 @@ course_id 形如 `S01D01`；`questions` 题号 1..n 连续；题型：
 requirements：`streamlit>=1.40`（audio_input 已不用，但保留新版本）、`websocket-client>=1.6`。
 Secrets：XF_APPID / XF_API_KEY / XF_API_SECRET（讯飞）+ RESULTS_REPO / RESULTS_TOKEN（录音与成绩）。
 讯飞免费包 1 万次/90 天（约 2026-09-10 到期）；每次评分（含孩子每一录次）消耗 1 次。
+
+## 6b. 录音组件实例策略（2026-06-12 iOS 实测后定，勿改回）
+
+整节课（含试音）**共用一个组件实例**：key 只含 course_id+attempt，题号/录次走
+args(qid/take)，前端检测 qid|take 变化做软复位。
+原因：iOS WebKit 对每个新 iframe 实例重弹麦克风权限——按题新建实例 = 每题弹一次
+（家长 iOS 实测）；单实例 = 每节课只授权一次。防重放靠 Python 端 (qid, take) 匹配。
+
+**麦克风流策略 v3（2026-06-12 iOS 四轮实测迭代，勿简化）**：
+点话筒时（手势内）：流存在且 live 且未 muted → 直接复用；否则停轨释放并重新
+getUserMedia。录后峰值<0.01（哑流）→ 释放流+提示重试（下一次点击自动换新流）。
+演进记录：v1 复用流→播放示范音把 iOS 音频会话切"纯播放"，旧流静音变哑；
+v2 每次新申请→能录但 iOS 随机重弹权限 4-5 次/课；v3 健康才复用+哑流自愈。
+AudioContext 全程唯一（手势内创建/恢复、录完 suspend 不 close）。
+代价说明：复用期间话筒指示灯（小绿点）整课常亮，属预期。
 
 ## 7. 已知风险与降级路
 
