@@ -77,6 +77,23 @@ def best_take(takes):
     return max(scored, key=lambda t: t["total"])
 
 
+def gate_state(takes, max_takes=3):
+    """口语门控纯逻辑。评分失败不占 3 次有效尝试。"""
+    scored = [t for t in takes if not t.get("error")]
+    best = best_take(scored) if scored else None
+    best_stars = stars(best.get("total"), best.get("is_rejected")) if best else 0
+    achieved = best_stars >= 3
+    used = len(scored)
+    return {
+        "achieved": achieved,
+        "scored_takes": used,
+        "can_retry": not achieved and used < max_takes,
+        "can_skip": not achieved and used >= max_takes,
+        "best": best,
+        "best_stars": best_stars,
+    }
+
+
 def build_result(course, qstates, student_id, t0):
     """组装结果（提交模型：调用方在孩子点"提交"时入库）。
 
@@ -120,6 +137,7 @@ def build_result(course, qstates, student_id, t0):
             "takes": len(takes_all),
             "weak_words": weak,
             "recordings": st_q.get("recordings", []),
+            "recording_records": st_q.get("recording_records", []),
             "tag": q.get("tag", ""),
         })
     avg = round(score_sum / scored_n) if scored_n else 0
@@ -127,6 +145,7 @@ def build_result(course, qstates, student_id, t0):
         "student_id": student_id,
         "course_id": course["course_id"],
         "module": "speaking",
+        "data_kind": "formal",
         "status": "completed",
         "score": avg,                       # 平均总分（家长看）
         "stars_total": star_sum,
@@ -157,7 +176,7 @@ def _result_text(course, result):
                 qr["first_total"], qr["last_total"], round(qr["best_total"]))
         line += "）"
         if qr.get("passed_by_safety"):
-            line += "｜⚠未达3星·兜底通过"
+            line += "｜⚠未达3星·三次后先过"
         if len(qr.get("take_stars", [])) > 1:
             line += "｜各次星:" + "/".join(str(x) for x in qr["take_stars"])
         if qr["weak_words"]:

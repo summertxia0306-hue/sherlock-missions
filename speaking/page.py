@@ -3,7 +3,8 @@
 
 镜像 listening/page.py 的全部模式（提交模型/信息隔离/课程状态/主界面卡片）。
 口语特有规则（02_方案 + 2026-06-12 家长反馈）：
-- 每题最多录 3 次取最高（重录机制即订正，无独立订正流）
+- 3 星正常通关；最多 3 次有效评分，第 3 次后仍不足 3 星可"先过这题"
+- 保留首读、末读、最高分和每次星级（重录机制即订正，无独立订正流）
 - 孩子端只见星级 + 逐词红绿灯 + 具体到词的中文提示，永不见数字分数
 - 示范/问题音可听 2 遍（复用 listening 限次播放组件）
 - 每次"就用这个"的录音：先评分，后台上传私有库（失败不阻塞做题）
@@ -38,6 +39,7 @@ _CSS = """
 """
 
 TYPE_ZH = {"repeat": "跟读", "qa": "听话回答"}
+RECOMMENDED_COURSE = "S01D01"
 
 
 def _secret(name):
@@ -48,16 +50,20 @@ def _secret(name):
     return v or os.environ.get(name, "")
 
 
-def _state(course_id):
-    key = "S_" + course_id
+def _state(course_id, data_kind):
+    key = progress.course_session_key("S", course_id, data_kind)
     if key not in st.session_state:
         st.session_state[key] = {"idx": -1, "q": {}, "t0": None, "result": None,
-                                 "submitted": False, "attempt": 1}
+                                 "submitted": False, "attempt": 1,
+                                 "data_kind": data_kind}
     return st.session_state[key]
 
 
 def _qstate(s, qid):
-    return s["q"].setdefault(qid, {"takes": [], "recordings": [], "done": False})
+    return s["q"].setdefault(
+        qid,
+        {"takes": [], "recordings": [], "recording_records": [], "done": False},
+    )
 
 
 def _reset_for_retry(s):
@@ -75,7 +81,9 @@ def _load_course(course_id):
 
 
 def get_last_result(student_id, course_id):
-    rs = progress.list_results(course_id=course_id, student_id=student_id)
+    rs = progress.list_results(
+        course_id=course_id, student_id=student_id, data_kind="formal"
+    )
     return rs[-1] if rs else None
 
 
@@ -84,8 +92,11 @@ def get_last_result(student_id, course_id):
 def speaking_home(student_id):
     st.markdown(_CSS, unsafe_allow_html=True)
     st.markdown("## 🗣️ 口语练习")
+    st.info("⭐ 当前推荐：S01D01（完成 W01D01 且状态良好时体验）")
     today = progress.beijing_today()
-    done = {r["course_id"] for r in progress.list_results(student_id=student_id)}
+    done = progress.completed_course_ids(
+        progress.list_results(student_id=student_id)
+    )
     metas = models.all_courses()
     shown = []
     for cid in sorted(metas):
@@ -100,7 +111,8 @@ def speaking_home(student_id):
         return
     for cid, m in shown:
         c1, c2, c3 = st.columns([4, 2, 2])
-        c1.markdown("**%s**" % m["title"])
+        recommendation = "　⭐ 当前推荐" if cid == RECOMMENDED_COURSE else ""
+        c1.markdown("**%s**%s" % (m["title"], recommendation))
         c1.caption("%s · 第%s周第%s天" % (cid, m["week"], m["day"]))
         c2.markdown("✅ 已完成" if cid in done else "⬜ 未完成")
         if m["status"] == "closed":
@@ -114,10 +126,14 @@ def speaking_home(student_id):
                 st.rerun()
 
 
-def render_course(student_id, course_id):
+def render_course(student_id, course_id, data_kind="formal"):
     st.markdown(_CSS, unsafe_allow_html=True)
-    if st.button("← 返回课程列表", key="sback_" + course_id):
-        if "course_id" in st.query_params:
+    if st.button("← 返回家长端" if data_kind == "test" else "← 返回课程列表",
+                 key="sback_%s_%s" % (data_kind, course_id)):
+        if data_kind == "test":
+            st.query_params.clear()
+            st.query_params["mode"] = "parent"
+        elif "course_id" in st.query_params:
             del st.query_params["course_id"]
         st.rerun()
     try:
@@ -129,7 +145,7 @@ def render_course(student_id, course_id):
         st.error("找不到课程 %s" % course_id)
         return None
 
-    s = _state(course_id)
+    s = _state(course_id, data_kind)
     if s["result"]:
         _result_page(course, s)
         return s["result"] if s["submitted"] else None
@@ -154,7 +170,8 @@ def _start_page(course, s):
                   len(course["questions"]), course.get("est_minutes", 8)))
     st.markdown('<div class="bignote">小朋友：先听老师读，再点<b>红圈话筒</b>。'
                 '数完 3-2-1 就大声读！读完再点一下话筒停止，听听自己的声音，'
-                '满意就交给老师打星星。每题最多能录 3 次哦。</div>',
+                '满意就交给老师打星星。三颗星就过关；最多试 3 次，'
+                '第三次后还没到三颗星也可以先过这题。</div>',
                 unsafe_allow_html=True)
     st.markdown("**第一步：试试话筒**（点话筒说一句话，听到自己的声音就可以开始）")
     # 注意：整节课（含试音）共用同一个组件实例（key 只含课程+attempt，不含题号/录次）——
@@ -178,8 +195,6 @@ def _question_page(course, s, q, student_id):
     qid = q["id"]
     qs_ = _qstate(s, qid)
     all_takes = qs_["takes"]                      # 含评分失败(error)的
-    scored = [t for t in all_takes if not t.get("error")]
-    takes_used = len(scored)                      # 只有评上分的才计入"读了几次"
     st.markdown("#### 第 %d 题 · %s" % (qid, TYPE_ZH[q["type"]]))
 
     if q["type"] == "repeat":
@@ -213,10 +228,8 @@ def _question_page(course, s, q, student_id):
                 for i, t in enumerate(all_takes))
             st.caption("每次录音：%s　→ 计分取最好的一次" % hist)
 
-    best = engine.best_take(scored) if scored else None
-    best_stars = engine.stars(best.get("total"), best.get("is_rejected")) if best else 0
-    achieved = best_stars >= 3                     # 拿到 3 星 = 过关
-    safety_open = takes_used >= models.SAFETY_TAKES  # 连读满 6 次仍没 3 星 → 兜底放行
+    gate = engine.gate_state(all_takes, models.MAX_TAKES)
+    achieved = gate["achieved"]
     is_last = s["idx"] + 1 >= len(course["questions"])
     next_label = "完成，看星星 🌟" if is_last else "下一题 ➡"
 
@@ -230,8 +243,8 @@ def _question_page(course, s, q, student_id):
             st.rerun()
         return
 
-    # —— 还没 3 星：必须重录（未到兜底前不出"下一题"按钮）——
-    if not safety_open and not qs_["done"]:
+    # —— 还没 3 星：第 3 次有效评分前可以继续重录 ——
+    if gate["can_retry"] and not qs_["done"]:
         seq = len(all_takes) + 1                  # 含 error 次；qid+take 一起做防重放签名
         # key 与试音相同 = 全课单实例（iOS 只授权一次）；qid/take 经 args 传入，
         # 前端检测变化后软复位；Python 端靠 (qid, take) 匹配防旧值重放
@@ -241,16 +254,16 @@ def _question_page(course, s, q, student_id):
         if rv is not None and str(rv.get("qid")) == str(qid) and rv.get("take") == seq:
             _consume_take(course, q, qs_, rv, s)
             st.rerun()
-        if scored:
+        if gate["scored_takes"]:
             st.caption("还没到三颗星呢～ 看上面老师标出哪里要再读，"
-                       "听一遍示范，点话筒再读一次，冲三颗星！")
+                       "听一遍示范，再读一次。每题最多 3 次。")
 
-    # —— 兜底：连读满 6 次仍不到 3 星，允许"先过"（不再录，省评分次数、防卡死）——
-    if safety_open and not qs_["done"]:
-        st.info("你已经很努力地读了好多遍啦！这一题先过，后面还有更精彩的题目等你 🎈")
+    # —— 第 3 次有效评分仍不足 3 星：允许先过，不再要求继续录 ——
+    if gate["can_skip"] and not qs_["done"]:
+        st.info("已经认真读了 3 次，这一题可以先过。老师会保留首读、末读和最高分。")
         if st.button("先过这题 ➡", use_container_width=True,
                      key="spass_%d_a%d" % (qid, s["attempt"])):
-            qs_["passed_by_safety"] = True
+            qs_["passed_by_safety"] = True  # 兼容既有结果字段名：表示三次后先过
             qs_["done"] = True
             s["idx"] += 1
             st.rerun()
@@ -279,7 +292,17 @@ def _consume_take(course, q, qs_, rv, s):
     try:
         path, _secs = recorder.upload_recording(
             wav, course["course_id"], q["id"], rv.get("take", 1), _secret)
+        progress.save_recording_identity(
+            path,
+            s["data_kind"],
+            course["course_id"],
+            q["id"],
+        )
         qs_["recordings"].append(path)
+        qs_["recording_records"].append({
+            "path": path,
+            "data_kind": s["data_kind"],
+        })
     except Exception:
         pass  # 上传失败不阻塞孩子做题；家长端录音箱会缺这条
 
@@ -308,6 +331,7 @@ def _finish(course, s, student_id):
     if s["result"]:
         return
     result = engine.build_result(course, s["q"], student_id, s["t0"])
+    result["data_kind"] = s["data_kind"]
     result["attempt"] = s["attempt"]
     if s["attempt"] > 1:
         result["result_text"] += "\n（本课第 %d 次完成·重做仅作参考）" % s["attempt"]
@@ -362,18 +386,29 @@ def parent_view():
             st.error("密码不对")
         st.stop()
 
-    tab1, tab2, tab3, tab4 = st.tabs(["成绩记录", "课程管理", "课文与答案", "录音箱"])
+    st.session_state["parent_authenticated"] = True
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(
+        ["成绩记录", "课程管理", "课文与答案", "录音箱", "家长测试"]
+    )
 
     with tab1:
         rs = [r for r in progress.list_results() if r.get("module") == "speaking"]
         if not rs:
             st.info("还没有口语成绩记录。")
         for r in reversed(rs):
+            kind = r["data_kind"]
+            kind_icon = "✅" if kind == "formal" else "🧪"
+            kind_label = progress.data_kind_label(kind)
             tag_n = "（第%d次）" % r["attempt"] if r.get("attempt", 1) > 1 else ""
-            with st.expander("%s · %s · %d星/%d · 平均%d分%s"
-                             % (r.get("completed_at", "?"), r["course_id"],
+            with st.expander("%s %s · %s · %s · %d星/%d · 平均%d分%s"
+                             % (kind_icon, kind_label, r.get("completed_at", "?"),
+                                r["course_id"],
                                 r.get("stars_total", 0), r.get("stars_max", 0),
                                 r.get("score", 0), tag_n)):
+                if kind == "test":
+                    st.warning("开发/家长测试：不计入孩子完成状态或学习档案。")
+                else:
+                    st.success("正式学习记录")
                 rows = []
                 for qr in r.get("question_results", []):
                     rows.append({"题": "Q%d" % qr["id"], "类型": TYPE_ZH.get(qr["type"]),
@@ -382,7 +417,7 @@ def parent_view():
                                  "首次分": qr.get("first_total"),
                                  "末次分": qr.get("last_total"),
                                  "最高分": qr["best_total"],
-                                 "兜底过": "⚠是" if qr.get("passed_by_safety") else "",
+                                 "三次后先过": "⚠是" if qr.get("passed_by_safety") else "",
                                  "弱词": ",".join(qr["weak_words"]),
                                  "考点": qr.get("tag", "")})
                 st.table(rows)
@@ -396,7 +431,7 @@ def parent_view():
         metas = models.all_courses()
         if not metas:
             st.info("还没有口语课程")
-        for cid, meta in metas.items():
+        for cid, meta in sorted(metas.items()):
             c1, c2 = st.columns([3, 2])
             extra = ("　·　%s 开放" % meta["open_date"]) if meta.get("open_date") else ""
             c1.write("**%s** %s%s" % (cid, meta["title"], extra))
@@ -408,7 +443,7 @@ def parent_view():
                 st.rerun()
 
     with tab3:
-        ids = list(models.all_courses())
+        ids = sorted(models.all_courses())
         if not ids:
             st.info("没有课程")
         else:
@@ -428,8 +463,9 @@ def parent_view():
                 st.error(str(e))
 
     with tab4:
-        st.caption("孩子每次确认的录音都会存到私有库（评分失败的也在），可在线试听。")
-        ids = list(models.all_courses())
+        st.caption("孩子每次确认的录音都会存到私有库（评分失败的也在）。"
+                   "旧录音默认标为开发/家长测试；正式提交后的新录音标为正式学习。")
+        ids = sorted(models.all_courses())
         if not ids:
             st.info("没有课程")
         else:
@@ -439,10 +475,26 @@ def parent_view():
                 st.info("该课暂无录音（或未配置私有库）")
             for f in files:
                 c1, c2 = st.columns([3, 1])
-                c1.write("%s（%.0f KB）" % (f["name"], f["size"] / 1024))
+                kind = f["data_kind"]
+                kind_label = progress.data_kind_label(kind)
+                kind_icon = "✅" if kind == "formal" else "🧪"
+                c1.write("%s **%s** · %s（%.0f KB）"
+                         % (kind_icon, kind_label, f["name"], f["size"] / 1024))
                 if c2.button("▶ 试听", key="play_" + f["path"]):
                     try:
                         st.audio(recorder.fetch_recording(f["path"], _secret),
                                  format="audio/wav")
                     except Exception as e:
                         st.error("取回失败：%r" % e)
+
+    with tab5:
+        st.warning("此处打开的课程会把成绩和录音标记为 test；不会点亮儿童端“已完成”。")
+        for cid, meta in sorted(models.all_courses().items()):
+            c1, c2 = st.columns([4, 2])
+            c1.write("**%s** %s" % (cid, meta["title"]))
+            if c2.button("测试打开", key="stest_" + cid,
+                         use_container_width=True):
+                st.query_params.clear()
+                st.query_params["mode"] = "test"
+                st.query_params["course_id"] = cid
+                st.rerun()

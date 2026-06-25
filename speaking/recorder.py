@@ -17,6 +17,7 @@ import time
 import urllib.request
 
 import streamlit.components.v1 as components
+from storage import progress
 
 _FRONTEND = os.path.join(os.path.dirname(os.path.abspath(__file__)), "frontend")
 _component = components.declare_component("sherlock_recorder", path=_FRONTEND)
@@ -58,8 +59,20 @@ def upload_recording(wav, course_id, qid, take, secrets_get):
     return path, round(time.time() - t0, 1)
 
 
+def classify_recordings(items, metadata):
+    """给录音列表补明确 data_kind；旧无元数据文件保守按 test。"""
+    out = []
+    for item in items:
+        row = dict(item)
+        meta = metadata.get(row["path"])
+        value = meta.get("data_kind") if isinstance(meta, dict) else meta
+        row["data_kind"] = progress.normalize_data_kind(value)
+        out.append(row)
+    return out
+
+
 def list_recordings(course_id, secrets_get):
-    """家长端录音箱：列出某课全部录音 [{name, path, size}]。未配置/无目录 → []。"""
+    """家长端录音箱：列出某课全部录音并补 data_kind。"""
     tok = secrets_get("RESULTS_TOKEN")
     repo = secrets_get("RESULTS_REPO")
     if not (tok and repo):
@@ -71,8 +84,9 @@ def list_recordings(course_id, secrets_get):
     try:
         with urllib.request.urlopen(req, timeout=15) as resp:
             items = json.loads(resp.read().decode("utf-8"))
-        return [{"name": it["name"], "path": it["path"], "size": it["size"]}
-                for it in items if it["type"] == "file"]
+        rows = [{"name": it["name"], "path": it["path"], "size": it["size"]}
+                for it in items if it["type"] == "file" and it["name"].endswith(".wav")]
+        return classify_recordings(rows, progress.recording_kind_map())
     except Exception:
         return []
 

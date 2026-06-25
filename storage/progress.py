@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 """进度/结果/课程状态的读写接口。
 
+v1.2（2026-06-25）：新增 test/formal 数据隔离；历史无字段记录按 test，
+新提交默认 formal，儿童端完成状态只认 formal。录音身份使用旁路元数据，
+不覆盖历史成绩或 wav 原文件。
 v1.1（2026-06-12）：新增 GitHub 私有仓库持久化后端，修复生产问题 #5
 （平台重启/重新部署清空成绩与课程状态）。
 - 配置（Streamlit 后台 Secrets，两行）：
@@ -21,6 +24,7 @@ import urllib.request
 
 _LOCK = threading.Lock()
 COURSE_STATUSES = ("open", "closed", "hidden", "archived")
+DATA_KINDS = ("test", "formal")
 _TTL = 45
 _cache = {}
 
@@ -75,6 +79,58 @@ def _gh_conf():
 
 def persistence_enabled():
     return _gh_conf()[0] is not None
+
+
+def normalize_data_kind(value, legacy_default="test"):
+    """统一记录身份。历史无字段记录一律按 test，避免污染正式进度。"""
+    if value in DATA_KINDS:
+        return value
+    return legacy_default
+
+
+def _write_data_kind(value, default="formal"):
+    if value is None:
+        return default
+    if value not in DATA_KINDS:
+        raise ValueError("data_kind must be test or formal: %r" % value)
+    return value
+
+
+def data_kind_label(value):
+    return "正式学习" if normalize_data_kind(value) == "formal" else "开发/家长测试"
+
+
+def submission_data_kind(requested=None, parent_authenticated=False):
+    """确定本次课程写入身份；test 只能来自已认证的家长会话。"""
+    if requested in (None, "formal"):
+        return "formal"
+    if requested == "test":
+        if not parent_authenticated:
+            raise PermissionError("test mode requires an authenticated parent session")
+        return "test"
+    raise ValueError("data_kind must be test or formal: %r" % requested)
+
+
+def course_session_key(module_prefix, course_id, data_kind):
+    """隔离同一课程的 test/formal 页面状态，防止跨入口串写。"""
+    kind = _write_data_kind(data_kind, default="formal")
+    return "%s_%s_%s" % (module_prefix, kind, course_id)
+
+
+def _annotate_result(result):
+    """返回带明确 data_kind 的副本；不改写历史源记录。"""
+    out = dict(result)
+    out["data_kind"] = normalize_data_kind(out.get("data_kind"))
+    return out
+
+
+def completed_course_ids(results):
+    """儿童端完成状态只认 formal 结果。"""
+    return {
+        r.get("course_id") for r in results
+        if r.get("course_id")
+        and normalize_data_kind(r.get("data_kind")) == "formal"
+    }
 
 
 def _gh_request(method, url, token, payload=None):
@@ -143,30 +199,141 @@ def _remote_append_result(result):
     return False
 
 
+def _recording_metadata_from_result(result):
+    """从一次提交提取录音身份旁路元数据，不改写 wav 原文件。"""
+    kind = _write_data_kind(result.get("data_kind"), default="formal")
+    out = {}
+    for qr in result.get("question_results", []):
+        records = qr.get("recording_records") or []
+        if records:
+            for rec in records:
+                path = rec.get("path") if isinstance(rec, dict) else None
+                if path:
+                    out[path] = {
+                        "data_kind": _write_data_kind(
+                            rec.get("data_kind"), default=kind
+                        ),
+                        "course_id": result.get("course_id"),
+                        "question_id": qr.get("id"),
+                        "completed_at": result.get("completed_at"),
+                    }
+        else:
+            for path in qr.get("recordings", []):
+                if path:
+                    out[path] = {
+                        "data_kind": kind,
+                        "course_id": result.get("course_id"),
+                        "question_id": qr.get("id"),
+                        "completed_at": result.get("completed_at"),
+                    }
+    return out
+
+
+def _merge_local_recording_metadata(updates):
+    if not updates:
+        return
+    with _LOCK:
+        data = _read("recording_metadata.json", {})
+        data.update(updates)
+        _write("recording_metadata.json", data)
+
+
+def _merge_remote_recording_metadata(updates):
+    if not updates:
+        return True
+    for _attempt in range(2):
+        cur, sha = _remote_read("recording_metadata.json", {}, use_cache=False)
+        if cur is None:
+            return False
+        cur.update(updates)
+        try:
+            _remote_write("recording_metadata.json", cur, sha)
+            return True
+        except Exception:
+            time.sleep(1.5)
+    return False
+
+
+def recording_kind_map(results=None):
+    """录音路径→data_kind。旧无元数据录音由调用方默认 test。"""
+    data = None
+    if persistence_enabled():
+        data, _sha = _remote_read("recording_metadata.json", {})
+    if data is None:
+        data = _read("recording_metadata.json", {})
+    out = {
+        path: normalize_data_kind(meta.get("data_kind"))
+        for path, meta in data.items()
+        if isinstance(meta, dict)
+    }
+    if results is None:
+        results = list_results()
+    for result in results:
+        kind = normalize_data_kind(result.get("data_kind"))
+        for qr in result.get("question_results", []):
+            for rec in qr.get("recording_records", []):
+                if isinstance(rec, dict) and rec.get("path"):
+                    out[rec["path"]] = normalize_data_kind(
+                        rec.get("data_kind"), legacy_default=kind
+                    )
+            for path in qr.get("recordings", []):
+                if path:
+                    out.setdefault(path, kind)
+    return out
+
+
+def save_recording_identity(path, data_kind, course_id=None, question_id=None):
+    """录音上传后立即保存身份旁路元数据，不改写或移动 wav 原文件。"""
+    kind = _write_data_kind(data_kind, default="formal")
+    updates = {
+        path: {
+            "data_kind": kind,
+            "course_id": course_id,
+            "question_id": question_id,
+        }
+    }
+    _merge_local_recording_metadata(updates)
+    if persistence_enabled() and not _merge_remote_recording_metadata(updates):
+        print("[progress] 警告：录音身份元数据云端写入失败；录音原文件已保留")
+
+
 # ---------- 对外接口（签名与 v1 一致） ----------
 
 def save_result(result):
     """保存一次完成结果（结构见 listening/CONTRACT.md）。本地必写；已配置则同步云端。"""
+    result = dict(result)
+    result["data_kind"] = _write_data_kind(
+        result.get("data_kind"), default="formal"
+    )
+    recording_updates = _recording_metadata_from_result(result)
     with _LOCK:
         data = _read("results.json", [])
         data.append(result)
         _write("results.json", data)
+    _merge_local_recording_metadata(recording_updates)
     if persistence_enabled():
         ok = _remote_append_result(result)
         if not ok:
             print("[progress] 警告：成绩云端写入失败，仅存本地；复制成绩文本通道仍有效")
+        elif not _merge_remote_recording_metadata(recording_updates):
+            print("[progress] 警告：录音身份元数据云端写入失败；成绩与录音原文件均已保留")
 
 
-def list_results(course_id=None, student_id=None):
+def list_results(course_id=None, student_id=None, data_kind=None):
     data = None
     if persistence_enabled():
         data, _sha = _remote_read("results.json", [])
     if data is None:
         data = _read("results.json", [])
+    data = [_annotate_result(r) for r in data]
     if course_id:
         data = [r for r in data if r.get("course_id") == course_id]
     if student_id:
         data = [r for r in data if r.get("student_id") == student_id]
+    if data_kind:
+        if data_kind not in DATA_KINDS:
+            raise ValueError(data_kind)
+        data = [r for r in data if r["data_kind"] == data_kind]
     return data
 
 

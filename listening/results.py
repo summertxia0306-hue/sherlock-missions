@@ -49,6 +49,7 @@ def build_result(course, answers, plays_used, student_id,
     result = {
         "student_id": student_id,
         "course_id": course["course_id"],
+        "data_kind": "formal",
         "status": "completed",
         "score": total,
         "duration_seconds": duration,

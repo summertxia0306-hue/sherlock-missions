@@ -16,8 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONTENT_DIR = os.path.join(ROOT, "content", "speaking")
 QUESTION_TYPES = ("repeat", "qa")
 COURSE_TYPES = ("training", "weekly_review")
-MAX_TAKES = 3          # （旧）每题录次上限，已被"3星才过"规则取代，保留兼容
-SAFETY_TAKES = 6       # 兜底阈值：连读满 6 次仍不到 3 星 → 出"先过"按钮（防讯飞稳定误判卡死）
+MAX_TAKES = 3          # 最多计 3 次有效评分；第 3 次仍不足 3 星可"先过这题"
 DEMO_PLAYS = 2         # 示范/问题音可听次数（每次不到 3 星会重置回 2，见 page._consume_take）
 
 

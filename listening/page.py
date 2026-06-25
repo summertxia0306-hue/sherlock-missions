@@ -15,6 +15,7 @@ from .audio import limited_audio, merge_plays
 from storage import progress
 
 ZH_NUM = "一二三四五六七八九"
+RECOMMENDED_COURSE = "W01D01"
 
 _CSS = """
 <style>
@@ -33,14 +34,14 @@ div[role="radiogroup"] > label {
 """
 
 
-def _state(course_id):
-    key = "L_" + course_id
+def _state(course_id, data_kind):
+    key = progress.course_session_key("L", course_id, data_kind)
     if key not in st.session_state:
         st.session_state[key] = {"idx": -1, "answers": {}, "plays": {},
                                  "t0": None, "result": None,
                                  "submitted": False, "attempt": 1,
                                  "in_correction": False, "correction_done": False,
-                                 "corr": None}
+                                 "corr": None, "data_kind": data_kind}
     return st.session_state[key]
 
 
@@ -64,8 +65,10 @@ def _load_course(course_id):
 
 
 def get_last_result(student_id, course_id):
-    """统一系统接口：取该生该课最近一次结果，无则 None。"""
-    rs = progress.list_results(course_id=course_id, student_id=student_id)
+    """统一系统接口：取该生该课最近一次正式结果，无则 None。"""
+    rs = progress.list_results(
+        course_id=course_id, student_id=student_id, data_kind="formal"
+    )
     return rs[-1] if rs else None
 
 
@@ -75,10 +78,11 @@ def listening_home(student_id):
     隐藏/删除/未到开放日期的课程不显示；关闭的显示但锁定。"""
     st.markdown(_CSS, unsafe_allow_html=True)
     st.markdown("## 🎧 听力练习")
+    st.info("⭐ 当前推荐：W01D01（6月28日听力诊断）")
     today = progress.beijing_today()
-    done = set()
-    for r in progress.list_results(student_id=student_id):
-        done.add(r["course_id"])
+    done = progress.completed_course_ids(
+        progress.list_results(student_id=student_id)
+    )
     metas = progress.all_courses()
     shown = []
     for cid in sorted(metas):
@@ -93,7 +97,8 @@ def listening_home(student_id):
         return
     for cid, m in shown:
         c1, c2, c3 = st.columns([4, 2, 2])
-        c1.markdown("**%s**" % m["title"])
+        recommendation = "　⭐ 当前推荐" if cid == RECOMMENDED_COURSE else ""
+        c1.markdown("**%s**%s" % (m["title"], recommendation))
         c1.caption("%s · 第%s周第%s天" % (cid, m["week"], m["day"]))
         c2.markdown("✅ 已完成" if cid in done else "⬜ 未完成")
         if m["status"] == "closed":
@@ -107,13 +112,17 @@ def listening_home(student_id):
                 st.rerun()
 
 
-def render_course(student_id, course_id):
+def render_course(student_id, course_id, data_kind="formal"):
     """渲染一节课。提交模型：交卷只出成绩单；孩子点"提交"才写入
     storage.progress 并返回结果 dict（未提交返回 None）。可重做再提交，
     每次提交一条记录（attempt 递增）。"""
     st.markdown(_CSS, unsafe_allow_html=True)
-    if st.button("← 返回课程列表", key="back_" + course_id):
-        if "course_id" in st.query_params:
+    if st.button("← 返回家长端" if data_kind == "test" else "← 返回课程列表",
+                 key="back_%s_%s" % (data_kind, course_id)):
+        if data_kind == "test":
+            st.query_params.clear()
+            st.query_params["mode"] = "parent"
+        elif "course_id" in st.query_params:
             del st.query_params["course_id"]
         st.rerun()
     try:
@@ -125,7 +134,7 @@ def render_course(student_id, course_id):
         st.error("找不到课程 %s" % course_id)
         return None
 
-    s = _state(course_id)
+    s = _state(course_id, data_kind)
     if s.get("in_correction"):
         _correction_page(course, s)
         return None
@@ -260,6 +269,7 @@ def _finish(course, s, student_id):
         return
     result = results_mod.build_result(course, s["answers"], s["plays"],
                                       student_id, s["t0"])
+    result["data_kind"] = s["data_kind"]
     result["attempt"] = s["attempt"]
     if s["attempt"] > 1:
         result["result_text"] += "\n（本课第 %d 次完成·重做仅作参考）" % s["attempt"]
@@ -436,7 +446,10 @@ def parent_view():
             st.error("密码不对")
         st.stop()
 
-    tab1, tab2, tab3 = st.tabs(["成绩记录", "课程管理", "原文与答案"])
+    st.session_state["parent_authenticated"] = True
+    tab1, tab2, tab3, tab4 = st.tabs(
+        ["成绩记录", "课程管理", "原文与答案", "家长测试"]
+    )
 
     with tab1:
         if progress.persistence_enabled():
@@ -444,17 +457,29 @@ def parent_view():
         else:
             st.warning("未配置云端持久化（Secrets 缺 RESULTS_REPO / RESULTS_TOKEN），"
                        "成绩仅存运行内存，重启即清空。配置方法见部署指南第 5 步。")
-        rs = progress.list_results()
+        rs = [
+            r for r in progress.list_results()
+            if r.get("module", "listening") != "speaking"
+        ]
         if not rs:
             st.info("还没有成绩记录。")
         for r in reversed(rs):
+            kind = r["data_kind"]
+            kind_icon = "✅" if kind == "formal" else "🧪"
+            kind_label = progress.data_kind_label(kind)
             tag_n = "（第%d次）" % r["attempt"] if r.get("attempt", 1) > 1 else ""
-            with st.expander("%s · %s · %d分%s" % (r.get("completed_at", "?"),
-                                                   r["course_id"], r["score"], tag_n)):
-                st.write({"用时(秒)": r["duration_seconds"],
-                          "分项": r["section_scores"],
-                          "播放次数": r["play_counts"]})
-                if r["wrong_answers"]:
+            with st.expander("%s %s · %s · %s · %d分%s"
+                             % (kind_icon, kind_label, r.get("completed_at", "?"),
+                                r["course_id"], r["score"], tag_n)):
+                if kind == "test":
+                    st.warning("开发/家长测试：仅用于验收和排障，不计入孩子完成状态或学习档案。")
+                else:
+                    st.success("正式学习记录")
+                st.write({"数据类型": kind,
+                          "用时(秒)": r.get("duration_seconds", 0),
+                          "分项": r.get("section_scores", {}),
+                          "播放次数": r.get("play_counts", {})})
+                if r.get("wrong_answers"):
                     st.table(r["wrong_answers"])
                 else:
                     st.success("全对")
@@ -470,7 +495,7 @@ def parent_view():
         zh_label = {"open": "打开", "closed": "关闭", "hidden": "隐藏", "archived": "删除"}
         order = list(progress.COURSE_STATUSES)
         opts = [zh_label[k] for k in order]
-        for cid, meta in progress.all_courses().items():
+        for cid, meta in sorted(progress.all_courses().items()):
             c1, c2 = st.columns([3, 2])
             extra = ("　·　%s 开放" % meta["open_date"]) if meta.get("open_date") else ""
             c1.write("**%s** %s%s" % (cid, meta["title"], extra))
@@ -483,7 +508,7 @@ def parent_view():
                 st.rerun()
 
     with tab3:
-        ids = list(progress.all_courses())
+        ids = sorted(progress.all_courses())
         if not ids:
             st.info("没有课程")
             return
@@ -509,3 +534,15 @@ def parent_view():
                 st.markdown("- **Q%d** %s　｜录音：%s　｜答案：**%s**　｜考点：%s%s"
                             % (q["id"], body, " / ".join(lines), ans, q["tag"],
                                ("　｜" + q["parent_note"]) if q.get("parent_note") else ""))
+
+    with tab4:
+        st.warning("此处打开的课程会把成绩标记为 test；测试记录不会点亮儿童端“已完成”。")
+        for cid, meta in sorted(progress.all_courses().items()):
+            c1, c2 = st.columns([4, 2])
+            c1.write("**%s** %s" % (cid, meta["title"]))
+            if c2.button("测试打开", key="ltest_" + cid,
+                         use_container_width=True):
+                st.query_params.clear()
+                st.query_params["mode"] = "test"
+                st.query_params["course_id"] = cid
+                st.rerun()

@@ -1,6 +1,6 @@
 # 口语模块对接契约与功能清单
 
-> 版本 v1.1 · 2026-06-17（加 3星门控+6次兜底+示范音重置+首末成绩记录）· Owner = 口语开发（Claude）。
+> 版本 v1.3 · 2026-06-25（安全家长 test 入口；普通儿童入口固定 formal）。
 > 镜像 `listening/CONTRACT.md` 的体例；改接口先改本文件再改代码。
 
 ## 0. 范围
@@ -15,7 +15,7 @@
 speaking/
   page.py        speaking_home() / render_course() / parent_view() / get_last_result()
   engine.py      星级/规则化评语/最佳成绩/结果组装（纯逻辑，可单测）
-  models.py      课程 JSON 加载+校验（加载即校验）；SAFETY_TAKES=6 DEMO_PLAYS=2（MAX_TAKES=3 已弃用保留）
+  models.py      课程 JSON 加载+校验（加载即校验）；MAX_TAKES=3 DEMO_PLAYS=2
   ise.py         讯飞 ISE WebSocket 客户端（evaluate / evaluate_retry / parse_result）
   wavtools.py    wav→16k 单声道 PCM（纯标准库；smoke 页用，正式录音组件 JS 端已产 16k wav）
   recorder.py    自研录音组件封装 + 录音上传/列出/取回私有库
@@ -42,12 +42,11 @@ course_id 形如 `S01D01`；`questions` 题号 1..n 连续；题型：
 - 每题流程：听示范（限 2 遍，复用 listening 限次组件）→ 录音（3-2-1 倒计时）→
   讯飞评分（失败自动重试 1 次，仍失败不消耗录次）→ 星级+逐词红绿灯+具体到词中文提示 →
   **必须读到 3 星才出现"下一题"按钮**；不到 3 星不放行、必须重录。**重录机制即订正，无独立订正流。**
-- **3 星门控 + 兜底（2026-06-17 家长定）**：不到 3 星时不展示"下一题"，孩子据逐词提示重读；
+- **3 星门控 + 三次后先过（2026-06-25 家长定）**：不到 3 星时不展示"下一题"，孩子据逐词提示重读；
   **每次不到 3 星会把该题示范音可听次数重置回满**（让孩子永远有地方再听——前端计数只升不降，
   故用"换组件实例"key 带 `g{demo_gen}` 实现重置，不改共享 frontend/index.html）。
-  **兜底阀（SAFETY_TAKES=6）**：连读满 6 次（仅计评上分的录次，评分失败不计）仍不到 3 星 →
-  出现"先过这题"按钮，记 `passed_by_safety=True`，不再录（省讯飞额度、防讯飞稳定误判童声卡死）。
-  理由见档案 06-13 日志 + 本文件 §7 童声偏差风险。
+  最多计 3 次有效评分（评分失败不占次数）；第 3 次仍不到 3 星即出现"先过这题"，
+  内部继续使用兼容字段 `passed_by_safety=True`，不再要求录到 6 次。
 - 信息隔离：孩子端只见星级/红绿灯/中文提示，**永不见数字分数**；分数/弱词/考点仅家长端。
 - 星级阈值（W1 从宽，待真实分布校准）：≥75⭐⭐⭐ ≥50⭐⭐ 其余⭐ 拒识0星。
 - **评语与星级一致性硬规则**（2026-06-12 家长纠错）：不满 3 星绝不出现夸赞语；
@@ -56,19 +55,28 @@ course_id 形如 `S01D01`；`questions` 题号 1..n 连续；题型：
   创建/恢复、录完 suspend 不 close；录音静音检测（峰值<0.01 直接提示重录不送评分）。
 - 提交模型与听力一致：交卷只出成绩单，点"提交"才入库（attempt 递增可重做）。
 - 录音：每次"就用这个"的 wav 传 sherlock-results 私有库 `recordings/{course_id}/`，
-  失败不阻塞做题；家长端"录音箱"页签在线试听。
+  失败不阻塞做题；家长端"录音箱"页签在线试听。上传成功后立即把入口身份写入旁路
+  `recording_metadata.json`，提交结果时再由 `recording_records` 复核；历史无元数据录音按 test，
+  不覆盖 wav 原文件。
+- 数据隔离：新提交写 `data_kind=formal`；历史无字段成绩和录音按 test。儿童端完成状态只认 formal；
+  家长端同时显示两类记录并醒目标注。
+- 安全入口：普通儿童课程和普通直链固定 formal；test 只能由同一会话已通过密码的家长端启动。
+  test/formal 使用不同 session_state key，录音上传和成绩提交沿用同一 data_kind。
 
 ## 4. 结果结构（progress.save_result 入参）
 
 ```json
 {
   "student_id": "sherlock", "course_id": "S01D02", "module": "speaking",
+  "data_kind": "formal",
   "status": "completed", "score": 78, "stars_total": 23, "stars_max": 24,
   "question_results": [{"id":1,"type":"repeat","text":"…","stars":3,
      "best_total":80.1,"first_total":62,"last_total":80,"passed_by_safety":false,
      "accuracy":..,"fluency":..,"integrity":..,"take_stars":[1,2,3],
      "is_rejected":false,"takes":3,"weak_words":["tastes"],
-     "recordings":["recordings/S01D02/0617_..wav"],"tag":"…"}],
+     "recordings":["recordings/S01D02/0617_..wav"],
+     "recording_records":[{"path":"recordings/S01D02/0617_..wav","data_kind":"formal"}],
+     "tag":"…"}],
   "duration_seconds": 300, "completed_at": "2026-06-17 15:02",
   "section_scores": {}, "wrong_answers": [], "play_counts": {},
   "result_text": "【夏洛恪·口语 S01D02】…"
@@ -79,8 +87,12 @@ course_id 形如 `S01D01`；`questions` 题号 1..n 连续；题型：
 
 ## 5. 路由（app.py，2026-06-12 起）
 
-`/` 三入口首页｜`?module=listening|speaking` 列表｜`?course_id=…` 前缀路由（W→听力 S→口语，
-直链不受 open_date 限制）｜`?mode=parent` 家长端（模块单选→各自密码页）｜`?mode=smoke` 自检页。
+`/` 三入口首页｜`?module=listening|speaking` 列表｜`?course_id=…` 儿童正式入口
+（W→听力 S→口语，默认 formal）｜`?mode=parent` 家长端（模块单选→各自密码页）｜
+`?mode=test&course_id=…` 已认证家长测试入口（默认拒绝直接访问）｜`?mode=smoke` 自检页。
+
+W01D01–D05、S01D01–D05 当前均保持可见，列表按编号排序；当前推荐为 W01D01，
+完成听力且状态良好时再体验 S01D01。2B 不修改课程状态或 open_date。
 
 ## 6. 依赖与 Secrets
 

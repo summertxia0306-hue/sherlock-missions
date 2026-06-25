@@ -6,8 +6,10 @@
   /?module=listening         听力课程列表（listening.page.listening_home）
   /?module=speaking          口语课程列表（speaking.page.speaking_home）
   /?course_id=W01D01         直接打开课程；前缀路由 W→听力 S→口语；
-                             直链不受 open_date 限制（家长提前验收通道，仅要求状态=open）
+                             普通直链属于儿童正式入口，提交默认 formal
   /?mode=parent              家长端（先选模块，密码各自页面内验证）
+  /?mode=test&course_id=...  家长测试入口；必须先在同一会话通过家长密码，
+                             提交与录音标记 test，不产生儿童端完成状态
   /?mode=smoke               口语冒烟/运维自检页（家长密码）
   /?student_id=xxx           可选，默认 sherlock
 """
@@ -82,8 +84,38 @@ if mode == "parent":
 elif mode == "smoke":  # 口语链路自检页（家长密码门）
     from speaking import smoke
     smoke.render()
+elif mode == "test":
+    try:
+        data_kind = progress.submission_data_kind(
+            "test",
+            parent_authenticated=bool(
+                st.session_state.get("parent_authenticated")
+            ),
+        )
+    except PermissionError:
+        st.error("家长测试入口未授权。请先进入家长端并通过密码验证。")
+        if st.button("进入家长端", type="primary", use_container_width=True):
+            st.query_params.clear()
+            st.query_params["mode"] = "parent"
+            st.rerun()
+        st.stop()
+
+    if not course_id:
+        st.error("测试入口缺少课程编号，请返回家长端重新选择。")
+        st.stop()
+    if course_id.startswith("S"):
+        known = course_id in smodels.all_courses()
+        render = spage.render_course
+    else:
+        known = course_id in progress.all_courses()
+        render = lpage.render_course
+    if known and _course_status_ok(course_id):
+        st.warning("🧪 家长测试模式：本次成绩和录音标记为 test，不计入孩子完成状态。")
+        render(student_id, course_id, data_kind=data_kind)
+    else:
+        st.error("课程不存在或当前状态不可用：%s" % course_id)
 elif course_id:
-    # 直链/列表点入：前缀路由。直链不受 open_date 限制（家长验收通道）。
+    # 儿童课程入口（含普通直链）：默认正式学习，不允许 query 参数改写身份。
     if course_id.startswith("S"):
         known = course_id in smodels.all_courses()
         render = spage.render_course
@@ -94,7 +126,7 @@ elif course_id:
         home = lpage.listening_home
     _back_home()
     if known and _course_status_ok(course_id):
-        render(student_id, course_id)
+        render(student_id, course_id, data_kind="formal")
     else:
         home(student_id)
 elif module == "listening":
