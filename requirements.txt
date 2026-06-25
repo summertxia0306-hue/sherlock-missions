@@ -1,2 +1,3 @@
 streamlit>=1.40
 websocket-client>=1.6
+# 2026-06-25: force a clean Streamlit Cloud rebuild after storage contract changes.
