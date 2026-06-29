@@ -206,6 +206,7 @@ v1.2（2026-06-25）起：
   这是 iPad Safari 自动播放限制下的稳妥设计，勿改回运行时多段连播）。
 - 音频 URL（2026-06-29 生产修正）：`audio.py` 生成多个公开直链，前端失败时自动切换。
   当前顺序为 jsDelivr CDN 优先、GitHub Raw 兜底；**前提 = 仓库 Public**。
+  前端同时兼容历史后端只传 Raw `src` 的场景，会自动派生 jsDelivr 优先源。
   不要改回 `/app/static/` 内部路径（Community Cloud 禁止组件访问）。
 - 音色固定：旁白/单词/短文 = en-US-AnaNeural（童声），对话女 = AriaNeural，
   男 = GuyNeural；语速 -10%。改音色/语速会使 fragments 哈希全部失效（重新生成）。
