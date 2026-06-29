@@ -44,8 +44,16 @@ function refresh(){
 }
 
 function sources(){
- var list = Array.isArray(args.sources) && args.sources.length ? args.sources : [args.src];
- return list.filter(function(src){ return !!src; });
+ if (Array.isArray(args.sources) && args.sources.length){
+  return args.sources.filter(function(src){ return !!src; });
+ }
+ if (!args.src) return [];
+ var legacyRawPrefix = "https://raw.githubusercontent.com/summertxia0306-hue/sherlock-missions/main/";
+ var cdnPrefix = "https://cdn.jsdelivr.net/gh/summertxia0306-hue/sherlock-missions@main/";
+ if (args.src.indexOf(legacyRawPrefix) === 0){
+  return [cdnPrefix + args.src.slice(legacyRawPrefix.length), args.src];
+ }
+ return [args.src];
 }
 
 function countStarted(token){
