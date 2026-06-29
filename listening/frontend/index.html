@@ -18,7 +18,8 @@ body{margin:0;padding:4px 0 0;font-family:-apple-system,"PingFang SC","Microsoft
 <audio id="au" preload="auto"></audio>
 <script>
 "use strict";
-var args = {}, used = 0, playing = false, lastSrc = null;
+var args = {}, used = 0, playing = false, lastSourcesKey = "";
+var playToken = 0, activeSourceIndex = 0, countedThisPlay = false;
 
 function send(type, data){
  var msg = Object.assign({isStreamlitMessage:true, type:type}, data || {});
@@ -42,37 +43,78 @@ function refresh(){
  setHeight();
 }
 
+function sources(){
+ var list = Array.isArray(args.sources) && args.sources.length ? args.sources : [args.src];
+ return list.filter(function(src){ return !!src; });
+}
+
+function countStarted(token){
+ if (token !== playToken || countedThisPlay) return;
+ countedThisPlay = true;
+ used++;
+ refresh();
+ setValue({qid: args.qid, used: used, ts: Date.now()});
+}
+
+function failSource(token, index){
+ if (token !== playToken || !playing || countedThisPlay) return;
+ if (index !== activeSourceIndex) return;
+ var list = sources();
+ if (index + 1 < list.length){
+  trySource(index + 1, token);
+  return;
+ }
+ playing = false;
+ err.style.display = "block";
+ refresh();
+}
+
+function trySource(index, token){
+ var list = sources();
+ if (token !== playToken || !playing) return;
+ if (!list.length){
+  playing = false;
+  err.style.display = "block";
+  refresh();
+  return;
+ }
+ activeSourceIndex = index;
+ if (au.src !== list[index]) au.src = list[index];
+ try{ au.currentTime = 0; }catch(e){}
+ var p = au.play();
+ if (p && p.then){
+  p.then(function(){ countStarted(token); })
+   .catch(function(){ failSource(token, index); });
+ } else {
+  countStarted(token);
+ }
+}
+
 btn.onclick = function(){
  if (playing || left() <= 0) return;
  err.style.display = "none";
- used++;
  playing = true;
+ countedThisPlay = false;
+ playToken++;
  refresh();
- setValue({qid: args.qid, used: used, ts: Date.now()});
- try{ au.currentTime = 0; }catch(e){}
- var p = au.play();
- if (p && p.catch){
-  p.catch(function(){
-   playing = false;
-   err.style.display = "block";
-   refresh();
-  });
- }
+ trySource(0, playToken);
 };
 au.onended = function(){ playing = false; refresh(); };
 au.onerror = function(){
- if (playing){ playing = false; err.style.display = "block"; refresh(); }
+ if (playing) failSource(playToken, activeSourceIndex);
 };
 
 window.addEventListener("message", function(e){
  var d = e.data;
  if (!d || d.type !== "streamlit:render") return;
  args = (d.args) || {};
- if (args.src && args.src !== lastSrc){
-  lastSrc = args.src;
-  au.src = args.src;
+ var key = sources().join("|");
+ if (key && key !== lastSourcesKey){
+  lastSourcesKey = key;
+  au.src = sources()[0];
   used = args.used || 0;
   playing = false;
+  countedThisPlay = false;
  }
  if (typeof args.used === "number" && args.used > used) used = args.used;
  refresh();

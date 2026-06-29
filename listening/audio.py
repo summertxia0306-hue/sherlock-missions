@@ -14,11 +14,22 @@ import streamlit.components.v1 as components
 _FRONTEND = os.path.join(os.path.dirname(os.path.abspath(__file__)), "frontend")
 _component = components.declare_component("limited_audio", path=_FRONTEND)
 
+_AUDIO_BASES = (
+    "https://cdn.jsdelivr.net/gh/summertxia0306-hue/sherlock-missions@main/",
+    "https://raw.githubusercontent.com/summertxia0306-hue/sherlock-missions/main/",
+)
+
 
 def audio_url(repo_path):
-    """repo 内 static/xxx 路径 → GitHub 原始文件 URL。"""
+    """repo 内 static/xxx 路径 → 默认 CDN 音频 URL。"""
     assert repo_path.startswith("static/"), repo_path
-    return "https://raw.githubusercontent.com/summertxia0306-hue/sherlock-missions/main/" + repo_path
+    return _AUDIO_BASES[0] + repo_path
+
+
+def audio_sources(repo_path):
+    """返回多个可播放地址，前端失败时自动切换。"""
+    assert repo_path.startswith("static/"), repo_path
+    return [base + repo_path for base in _AUDIO_BASES]
 
 
 def limited_audio(repo_path, qid, max_plays, used, key, label="还能听"):
@@ -26,7 +37,8 @@ def limited_audio(repo_path, qid, max_plays, used, key, label="还能听"):
 
     调用方负责：used_new = max(used, value['used'])（仅当 value['qid']==qid）。
     """
-    return _component(src=audio_url(repo_path), qid=str(qid),
+    return _component(src=audio_url(repo_path), sources=audio_sources(repo_path),
+                      qid=str(qid),
                       max_plays=int(max_plays), used=int(used),
                       label=label, key=key, default=None)
 

@@ -5,6 +5,7 @@ import time
 import unittest
 from unittest import mock
 
+from listening import audio as listening_audio
 from listening import engine as listening_engine
 from listening import models as listening_models
 from listening import page as listening_page
@@ -24,6 +25,16 @@ class _Response:
 
 
 class RegressionTests(unittest.TestCase):
+    def test_limited_audio_uses_cdn_with_raw_fallback(self):
+        path = "static/audio/listening/W01D01/q13.mp3"
+        sources = listening_audio.audio_sources(path)
+        self.assertEqual(2, len(sources))
+        self.assertTrue(sources[0].startswith("https://cdn.jsdelivr.net/gh/"))
+        self.assertTrue(sources[1].startswith("https://raw.githubusercontent.com/"))
+        self.assertTrue(sources[0].endswith(path))
+        self.assertTrue(sources[1].endswith(path))
+        self.assertEqual(sources[0], listening_audio.audio_url(path))
+
     def test_all_course_json_files_still_validate(self):
         for path in listening_models.list_course_files():
             course = listening_models.load_course(
