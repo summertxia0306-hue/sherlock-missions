@@ -1,0 +1,127 @@
+{
+  "course_id": "W01D06",
+  "title": "听力练习 · M1U1 人物介绍 1",
+  "week": 1,
+  "day": 6,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "4A M1U1 Meeting new people",
+  "difficulty": "L1",
+  "open_date": "2026-07-02",
+  "scoring": { "per_question": 5, "total": 100 },
+  "test_audio": "static/audio/listening/W01D06/hello.mp3",
+  "test_transcript": [["n", "Hello! Can you hear me? Let's begin."]],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        { "id": 1, "type": "word_choice", "options": ["eleven", "seven", "elephant"], "answer": 0,
+          "transcript": [["n", "eleven"]], "audio": "static/audio/listening/W01D06/q01.mp3",
+          "tag": "4A M1U1·数字11", "parent_note": "Lesson 1数字词，先听辨再进入student number语境" },
+        { "id": 2, "type": "word_choice", "options": ["twelve", "twenty", "two"], "answer": 0,
+          "transcript": [["n", "twelve"]], "audio": "static/audio/listening/W01D06/q02.mp3",
+          "tag": "4A M1U1·数字12", "parent_note": "U1此前漏过的核心词，显式复现" },
+        { "id": 3, "type": "word_choice", "options": ["fifteen", "sixteen", "thirteen"], "answer": 1,
+          "transcript": [["n", "sixteen"]], "audio": "static/audio/listening/W01D06/q03.mp3",
+          "tag": "4A M1U1·数字16", "parent_note": "student number语境核心数字" },
+        { "id": 4, "type": "word_choice", "options": ["his", "her", "here"], "answer": 1,
+          "transcript": [["n", "her"]], "audio": "static/audio/listening/W01D06/q04.mp3",
+          "tag": "旧坑复现·his/her", "parent_note": "听辨his/her，后续进入His/Her name句型" }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        { "id": 5, "type": "sentence_judge", "display": "Good morning, Miss Fang.", "answer": "same",
+          "transcript": [["n", "Good morning, Miss Fang."]], "audio": "static/audio/listening/W01D06/q05.mp3",
+          "tag": "4A M1U1·课堂问候", "parent_note": "" },
+        { "id": 6, "type": "sentence_judge", "display": "This is my brother.", "answer": "different",
+          "transcript": [["n", "This is my sister."]], "audio": "static/audio/listening/W01D06/q06.mp3",
+          "tag": "4A M1U1·This is + family", "parent_note": "brother/sister细节听辨" },
+        { "id": 7, "type": "sentence_judge", "display": "Her student number is sixteen.", "answer": "same",
+          "transcript": [["n", "Her student number is sixteen."]], "audio": "static/audio/listening/W01D06/q07.mp3",
+          "tag": "4A M1U1·student number", "parent_note": "her + student number + sixteen整句输入" },
+        { "id": 8, "type": "sentence_judge", "display": "His name is Paul.", "answer": "different",
+          "transcript": [["n", "Her name is Paul."]], "audio": "static/audio/listening/W01D06/q08.mp3",
+          "tag": "旧坑复现·His/Her name", "parent_note": "只差his/her，要求听准物主代词" }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答",
+      "max_plays": 2,
+      "questions": [
+        { "id": 9, "type": "question_response",
+          "options": ["My name is Kitty.", "I'm ten.", "Nice to meet you."], "answer": 0,
+          "transcript": [["n", "What's your name?"]], "audio": "static/audio/listening/W01D06/q09.mp3",
+          "tag": "4A M1U1·name问答", "parent_note": "" },
+        { "id": 10, "type": "question_response",
+          "options": ["She's twelve.", "Her name is Sally.", "She can skip."], "answer": 0,
+          "transcript": [["n", "How old is Sally?"]], "audio": "static/audio/listening/W01D06/q10.mp3",
+          "tag": "4A M1U1·年龄问答", "parent_note": "" },
+        { "id": 11, "type": "question_response",
+          "options": ["It's sixteen.", "It's a classmate.", "Yes, she can."], "answer": 0,
+          "transcript": [["n", "What's her student number?"]], "audio": "static/audio/listening/W01D06/q11.mp3",
+          "tag": "4A M1U1·student number问答", "parent_note": "" },
+        { "id": 12, "type": "question_response",
+          "options": ["See you.", "Nice to meet you too.", "Good morning."], "answer": 1,
+          "transcript": [["n", "Nice to meet you."]], "audio": "static/audio/listening/W01D06/q12.mp3",
+          "tag": "4A M1U1·日常表达", "parent_note": "" }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        { "id": 13, "type": "dialogue_choice", "question_text": "Who is Sally?",
+          "options": ["Kitty's sister.", "Kitty's brother.", "Kitty's teacher."], "answer": 0,
+          "transcript": [["f", "This is my sister."], ["m", "What's her name?"], ["f", "Her name is Sally."], ["n", "Question: Who is Sally?"]],
+          "audio": "static/audio/listening/W01D06/q13.mp3",
+          "tag": "4A M1U1·介绍家人", "parent_note": "" },
+        { "id": 14, "type": "dialogue_choice", "question_text": "How old is Paul?",
+          "options": ["Six.", "Eleven.", "Twelve."], "answer": 0,
+          "transcript": [["f", "This is my brother."], ["m", "What's his name?"], ["f", "His name is Paul. He's only six."], ["n", "Question: How old is Paul?"]],
+          "audio": "static/audio/listening/W01D06/q14.mp3",
+          "tag": "4A M1U1·his/name/age", "parent_note": "" },
+        { "id": 15, "type": "dialogue_choice", "question_text": "What is Jill's student number?",
+          "options": ["Fifteen.", "Sixteen.", "Thirteen."], "answer": 1,
+          "transcript": [["m", "This is your new classmate. Her name is Jill."], ["f", "What's her student number?"], ["m", "Her student number is sixteen."], ["n", "Question: What is Jill's student number?"]],
+          "audio": "static/audio/listening/W01D06/q15.mp3",
+          "tag": "4A M1U1·new classmate", "parent_note": "" },
+        { "id": 16, "type": "dialogue_choice", "question_text": "What can Danny do?",
+          "options": ["Ride a bicycle.", "Skip.", "Write his name."], "answer": 0,
+          "transcript": [["f", "This is my friend. His name is Danny."], ["m", "What can he do?"], ["f", "He can ride a bicycle."], ["n", "Question: What can Danny do?"]],
+          "audio": "static/audio/listening/W01D06/q16.mp3",
+          "tag": "旧坑复现·can+动词原形", "parent_note": "He can ride，不加rides" }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [["n", "Good morning. This is my friend Ben. He is eleven. His student number is fifteen. He can ride a bicycle. This is my friend Alice. She is twelve. Her student number is sixteen. She can skip."]],
+      "passage_audio": "static/audio/listening/W01D06/p01.mp3",
+      "questions": [
+        { "id": 17, "type": "passage_judge", "statement": "Ben is eleven.", "answer": "true",
+          "tag": "短文·年龄细节", "parent_note": "" },
+        { "id": 18, "type": "passage_judge", "statement": "Ben's student number is sixteen.", "answer": "false",
+          "tag": "短文·student number细节", "parent_note": "原文是fifteen" },
+        { "id": 19, "type": "passage_judge", "statement": "Alice is twelve.", "answer": "true",
+          "tag": "短文·年龄细节", "parent_note": "" },
+        { "id": 20, "type": "passage_judge", "statement": "Alice can ride a bicycle.", "answer": "false",
+          "tag": "短文·能力细节", "parent_note": "原文是She can skip." }
+      ]
+    }
+  ]
+}

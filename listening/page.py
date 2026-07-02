@@ -15,7 +15,7 @@ from .audio import limited_audio, merge_plays
 from storage import progress
 
 ZH_NUM = "一二三四五六七八九"
-RECOMMENDED_COURSE = "W01D01"
+RECOMMENDED_COURSE = "W01D06"
 
 _CSS = """
 <style>
@@ -78,7 +78,7 @@ def listening_home(student_id):
     隐藏/删除/未到开放日期的课程不显示；关闭的显示但锁定。"""
     st.markdown(_CSS, unsafe_allow_html=True)
     st.markdown("## 🎧 听力练习")
-    st.info("⭐ 当前推荐：W01D01（6月28日听力诊断）")
+    st.info("⭐ 当前推荐：W01D06（4A M1U1 人物介绍 1）")
     today = progress.beijing_today()
     done = progress.completed_course_ids(
         progress.list_results(student_id=student_id)

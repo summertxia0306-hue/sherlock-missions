@@ -1,0 +1,120 @@
+{
+  "course_id": "W01D07",
+  "title": "听力练习 · M1U1 Jill 阅读",
+  "week": 1,
+  "day": 7,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "4A M1U1 Meeting new people",
+  "difficulty": "L1",
+  "open_date": "2026-07-02",
+  "scoring": { "per_question": 5, "total": 100 },
+  "test_audio": "static/audio/listening/W01D07/hello.mp3",
+  "test_transcript": [["n", "Hello! Can you hear me? Let's begin."]],
+  "sections": [
+    {
+      "id": "word_discrimination", "name": "听音选词",
+      "tip": "听录音，选出你听到的单词", "max_plays": 2,
+      "questions": [
+        { "id": 1, "type": "word_choice", "options": ["classmate", "classroom", "class"], "answer": 0,
+          "transcript": [["n", "classmate"]], "audio": "static/audio/listening/W01D07/q01.mp3",
+          "tag": "4A M1U1·classmate", "parent_note": "" },
+        { "id": 2, "type": "word_choice", "options": ["near", "new", "now"], "answer": 0,
+          "transcript": [["n", "near"]], "audio": "static/audio/listening/W01D07/q02.mp3",
+          "tag": "4A M1U1·near", "parent_note": "Jill lives near our school." },
+        { "id": 3, "type": "word_choice", "options": ["walk", "work", "wall"], "answer": 0,
+          "transcript": [["n", "walk"]], "audio": "static/audio/listening/W01D07/q03.mp3",
+          "tag": "4A M1U1·walk", "parent_note": "walks to school的基础词" },
+        { "id": 4, "type": "word_choice", "options": ["foot", "leg", "bag"], "answer": 1,
+          "transcript": [["n", "leg"]], "audio": "static/audio/listening/W01D07/q04.mp3",
+          "tag": "旧坑复现·foot/leg", "parent_note": "穿插旧坑，不扩大难度" }
+      ]
+    },
+    {
+      "id": "sentence_meaning", "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样", "max_plays": 2,
+      "questions": [
+        { "id": 5, "type": "sentence_judge", "display": "Jill is a new classmate.", "answer": "same",
+          "transcript": [["n", "Jill is a new classmate."]], "audio": "static/audio/listening/W01D07/q05.mp3",
+          "tag": "4A M1U1·Jill人物信息", "parent_note": "" },
+        { "id": 6, "type": "sentence_judge", "display": "She lives near our school.", "answer": "different",
+          "transcript": [["n", "She lives far from our school."]], "audio": "static/audio/listening/W01D07/q06.mp3",
+          "tag": "旧坑复现·三单lives", "parent_note": "near/far细节听辨，同时自然输入lives" },
+        { "id": 7, "type": "sentence_judge", "display": "She walks to school every day.", "answer": "same",
+          "transcript": [["n", "She walks to school every day."]], "audio": "static/audio/listening/W01D07/q07.mp3",
+          "tag": "旧坑复现·三单walks", "parent_note": "" },
+        { "id": 8, "type": "sentence_judge", "display": "She likes reading and dancing.", "answer": "same",
+          "transcript": [["n", "She likes reading and dancing."]], "audio": "static/audio/listening/W01D07/q08.mp3",
+          "tag": "旧坑复现·likes + V-ing", "parent_note": "likes reading/dancing 是4A原文，也是E25复现" }
+      ]
+    },
+    {
+      "id": "question_response", "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答", "max_plays": 2,
+      "questions": [
+        { "id": 9, "type": "question_response",
+          "options": ["Jill.", "Kitty.", "Sally."], "answer": 0,
+          "transcript": [["n", "Who is the new classmate?"]], "audio": "static/audio/listening/W01D07/q09.mp3",
+          "tag": "4A M1U1·Who问答", "parent_note": "" },
+        { "id": 10, "type": "question_response",
+          "options": ["She walks to school.", "She rides a bicycle.", "She runs to school."], "answer": 0,
+          "transcript": [["n", "How does Jill go to school?"]], "audio": "static/audio/listening/W01D07/q10.mp3",
+          "tag": "4A M1U1·walks to school", "parent_note": "" },
+        { "id": 11, "type": "question_response",
+          "options": ["She likes reading and dancing.", "She likes running.", "She likes sleeping."], "answer": 0,
+          "transcript": [["n", "What does Jill like?"]], "audio": "static/audio/listening/W01D07/q11.mp3",
+          "tag": "旧坑复现·like+V-ing", "parent_note": "" },
+        { "id": 12, "type": "question_response",
+          "options": ["She can play basketball well.", "She can play football well.", "She can fly high."], "answer": 0,
+          "transcript": [["n", "What can Jill do?"]], "audio": "static/audio/listening/W01D07/q12.mp3",
+          "tag": "4A M1U1·can play basketball", "parent_note": "can后用play原形" }
+      ]
+    },
+    {
+      "id": "dialogue", "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        { "id": 13, "type": "dialogue_choice", "question_text": "How old is Jill?",
+          "options": ["Nine.", "Ten.", "Twelve."], "answer": 1,
+          "transcript": [["m", "We have a new classmate, Jill."], ["f", "How old is she?"], ["m", "She's ten years old."], ["n", "Question: How old is Jill?"]],
+          "audio": "static/audio/listening/W01D07/q13.mp3",
+          "tag": "4A M1U1·年龄信息", "parent_note": "" },
+        { "id": 14, "type": "dialogue_choice", "question_text": "Where does Jill live?",
+          "options": ["Near school.", "Near the zoo.", "Near the park."], "answer": 0,
+          "transcript": [["f", "Does Jill live near the park?"], ["m", "No. She lives near our school."], ["n", "Question: Where does Jill live?"]],
+          "audio": "static/audio/listening/W01D07/q14.mp3",
+          "tag": "旧坑复现·lives", "parent_note": "先听到park是干扰项" },
+        { "id": 15, "type": "dialogue_choice", "question_text": "What sport can Jill play?",
+          "options": ["Basketball.", "Football.", "Table tennis."], "answer": 0,
+          "transcript": [["m", "Can Jill play football?"], ["f", "No, she can't. She can play basketball well."], ["n", "Question: What sport can Jill play?"]],
+          "audio": "static/audio/listening/W01D07/q15.mp3",
+          "tag": "4A M1U1·basketball细节", "parent_note": "football是干扰项，贴近原文判断题" },
+        { "id": 16, "type": "dialogue_choice", "question_text": "What does Jill have?",
+          "options": ["A book.", "A mask.", "A kite."], "answer": 0,
+          "transcript": [["f", "Jill likes reading."], ["m", "Yes. She has a book in her bag."], ["n", "Question: What does Jill have?"]],
+          "audio": "static/audio/listening/W01D07/q16.mp3",
+          "tag": "旧坑复现·三单has + a", "parent_note": "自然复现has与冠词a" }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [["n", "We have a new classmate, Jill. She is ten years old. She lives near our school. She walks to school every day. She likes reading and dancing. She can play basketball well."]],
+      "passage_audio": "static/audio/listening/W01D07/p01.mp3",
+      "questions": [
+        { "id": 17, "type": "passage_judge", "statement": "Jill is a new student.", "answer": "true",
+          "tag": "短文·主旨信息", "parent_note": "" },
+        { "id": 18, "type": "passage_judge", "statement": "Jill is twelve years old.", "answer": "false",
+          "tag": "短文·年龄细节", "parent_note": "原文是ten years old" },
+        { "id": 19, "type": "passage_judge", "statement": "Jill walks to school every day.", "answer": "true",
+          "tag": "短文·动作细节", "parent_note": "" },
+        { "id": 20, "type": "passage_judge", "statement": "Jill can play football well.", "answer": "false",
+          "tag": "短文·能力细节", "parent_note": "原文是basketball" }
+      ]
+    }
+  ]
+}

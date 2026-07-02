@@ -39,7 +39,7 @@ _CSS = """
 """
 
 TYPE_ZH = {"repeat": "跟读", "qa": "听话回答"}
-RECOMMENDED_COURSE = "S01D01"
+RECOMMENDED_COURSE = "S01D06"
 
 
 def _secret(name):
@@ -92,7 +92,7 @@ def get_last_result(student_id, course_id):
 def speaking_home(student_id):
     st.markdown(_CSS, unsafe_allow_html=True)
     st.markdown("## 🗣️ 口语练习")
-    st.info("⭐ 当前推荐：S01D01（完成 W01D01 且状态良好时体验）")
+    st.info("⭐ 当前推荐：S01D06（4A M1U1 人物介绍跟读）")
     today = progress.beijing_today()
     done = progress.completed_course_ids(
         progress.list_results(student_id=student_id)

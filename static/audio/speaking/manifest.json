@@ -179,6 +179,181 @@
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
    "text": "Can you draw a cat?"
+  },
+  "8ac5daeb7bc4e6f8": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Good morning, Miss Fang."
+  },
+  "e181b1936f1b683e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is my friend."
+  },
+  "d19ade21bfa122a3": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "His name is Paul."
+  },
+  "0e0af6417c6e2582": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Her name is Sally."
+  },
+  "4b52f8ca4e8d5397": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She's twelve."
+  },
+  "36a43e229438c89c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Her student number is sixteen."
+  },
+  "d1288221bb7dcc0e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What's his name?"
+  },
+  "5cb6ccf9d371194d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What's her student number?"
+  },
+  "262e09557b2c5155": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "We have a new classmate, Jill."
+  },
+  "95f941e992fa7d3f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She's ten years old."
+  },
+  "5a875560746afeb2": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She lives near our school."
+  },
+  "b059d307f82538ed": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She walks to school every day."
+  },
+  "2ba12e64102f23ec": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She likes reading and dancing."
+  },
+  "9a7c87472f5792ab": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She can play basketball well."
+  },
+  "543da57b9839fac6": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does Jill like?"
+  },
+  "606bb91d4bd2bf56": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can Jill do?"
+  },
+  "774a51c794372207": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I can draw."
+  },
+  "4d66ec9aa5305205": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I can read."
+  },
+  "147d4e1894f7f4f5": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I can write."
+  },
+  "1cfa0926b450fed6": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I can swim."
+  },
+  "859b7f9f606a9064": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can you do?"
+  },
+  "e85b06c35501bb97": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I can jump and run."
+  },
+  "39e2d811e65fc3a9": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Can you write?"
+  },
+  "c44cc21db9413670": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Can she swim?"
+  },
+  "48966555297321fd": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Yes, she can."
+  },
+  "89af93250edf6d8c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Can he fly?"
+  },
+  "a84717f825a94638": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "No, he can't."
+  },
+  "872f06c4c7af5c1b": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "A bird can fly high."
+  },
+  "ecd4fee8230d2449": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "A dolphin can swim well."
+  },
+  "4b04cff9c65e7e0a": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Can a bird fly?"
+  },
+  "ea1f4ac2e927efec": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Can a dolphin run fast?"
+  },
+  "8733ca1aba747983": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is my friend Jill."
+  },
+  "1bfb89d2b2effe22": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Her name is Jill."
+  },
+  "ed5afd0ac9e18649": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can your friend do?"
+  },
+  "9ba0133179e519cd": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does your friend like?"
   }
  },
  "courses": {
@@ -231,6 +406,56 @@
    "static/audio/speaking/S01D05/q06.mp3": "03baf6e93ec2f616",
    "static/audio/speaking/S01D05/q07.mp3": "b7eb7ecf318086fa",
    "static/audio/speaking/S01D05/q08.mp3": "d245ffb13c524671"
+  },
+  "S01D06": {
+   "static/audio/speaking/S01D06/q01.mp3": "8ac5daeb7bc4e6f8",
+   "static/audio/speaking/S01D06/q02.mp3": "e181b1936f1b683e",
+   "static/audio/speaking/S01D06/q03.mp3": "d19ade21bfa122a3",
+   "static/audio/speaking/S01D06/q04.mp3": "0e0af6417c6e2582",
+   "static/audio/speaking/S01D06/q05.mp3": "4b52f8ca4e8d5397",
+   "static/audio/speaking/S01D06/q06.mp3": "36a43e229438c89c",
+   "static/audio/speaking/S01D06/q07.mp3": "d1288221bb7dcc0e",
+   "static/audio/speaking/S01D06/q08.mp3": "5cb6ccf9d371194d"
+  },
+  "S01D07": {
+   "static/audio/speaking/S01D07/q01.mp3": "262e09557b2c5155",
+   "static/audio/speaking/S01D07/q02.mp3": "95f941e992fa7d3f",
+   "static/audio/speaking/S01D07/q03.mp3": "5a875560746afeb2",
+   "static/audio/speaking/S01D07/q04.mp3": "b059d307f82538ed",
+   "static/audio/speaking/S01D07/q05.mp3": "2ba12e64102f23ec",
+   "static/audio/speaking/S01D07/q06.mp3": "9a7c87472f5792ab",
+   "static/audio/speaking/S01D07/q07.mp3": "543da57b9839fac6",
+   "static/audio/speaking/S01D07/q08.mp3": "606bb91d4bd2bf56"
+  },
+  "S01D08": {
+   "static/audio/speaking/S01D08/q01.mp3": "774a51c794372207",
+   "static/audio/speaking/S01D08/q02.mp3": "4d66ec9aa5305205",
+   "static/audio/speaking/S01D08/q03.mp3": "147d4e1894f7f4f5",
+   "static/audio/speaking/S01D08/q04.mp3": "1cfa0926b450fed6",
+   "static/audio/speaking/S01D08/q05.mp3": "859b7f9f606a9064",
+   "static/audio/speaking/S01D08/q06.mp3": "e85b06c35501bb97",
+   "static/audio/speaking/S01D08/q07.mp3": "859b7f9f606a9064",
+   "static/audio/speaking/S01D08/q08.mp3": "39e2d811e65fc3a9"
+  },
+  "S01D09": {
+   "static/audio/speaking/S01D09/q01.mp3": "c44cc21db9413670",
+   "static/audio/speaking/S01D09/q02.mp3": "48966555297321fd",
+   "static/audio/speaking/S01D09/q03.mp3": "89af93250edf6d8c",
+   "static/audio/speaking/S01D09/q04.mp3": "a84717f825a94638",
+   "static/audio/speaking/S01D09/q05.mp3": "872f06c4c7af5c1b",
+   "static/audio/speaking/S01D09/q06.mp3": "ecd4fee8230d2449",
+   "static/audio/speaking/S01D09/q07.mp3": "4b04cff9c65e7e0a",
+   "static/audio/speaking/S01D09/q08.mp3": "ea1f4ac2e927efec"
+  },
+  "S01D10": {
+   "static/audio/speaking/S01D10/q01.mp3": "8733ca1aba747983",
+   "static/audio/speaking/S01D10/q02.mp3": "1bfb89d2b2effe22",
+   "static/audio/speaking/S01D10/q03.mp3": "95f941e992fa7d3f",
+   "static/audio/speaking/S01D10/q04.mp3": "36a43e229438c89c",
+   "static/audio/speaking/S01D10/q05.mp3": "9a7c87472f5792ab",
+   "static/audio/speaking/S01D10/q06.mp3": "2ba12e64102f23ec",
+   "static/audio/speaking/S01D10/q07.mp3": "ed5afd0ac9e18649",
+   "static/audio/speaking/S01D10/q08.mp3": "9ba0133179e519cd"
   }
  }
 }

@@ -2,6 +2,7 @@
 import unittest
 
 from streamlit.testing.v1 import AppTest
+from storage import progress
 
 
 class AccessRouteTests(unittest.TestCase):
@@ -37,7 +38,10 @@ class AccessRouteTests(unittest.TestCase):
         at.text_input[0].input("xlk2026").run()
 
         self.assertTrue(at.session_state["parent_authenticated"])
-        self.assertEqual(5, sum(b.label == "测试打开" for b in at.button))
+        self.assertEqual(
+            len(progress.all_courses()),
+            sum(b.label == "测试打开" for b in at.button),
+        )
 
         at.button[0].click().run()
 
