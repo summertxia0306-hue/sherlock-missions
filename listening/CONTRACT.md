@@ -29,6 +29,7 @@
 ```text
 sherlock-missions/
   app.py                      临时入口路由（统一首页接管后整体替换，无业务逻辑）
+                              2026-07-09 起入口 rerun 时会 reload 听力/口语页面模块，避免 Streamlit 热部署混用旧列表渲染器
   requirements.txt            线上运行依赖（仅 streamlit）
   .streamlit/config.toml      enableStaticServing=true（音频静态服务，勿删）
   本地体验.bat                 家长本地预览（streamlit run app.py）

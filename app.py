@@ -13,6 +13,8 @@
   /?mode=smoke               口语冒烟/运维自检页（家长密码）
   /?student_id=xxx           可选，默认 sherlock
 """
+import importlib
+
 import streamlit as st
 
 st.set_page_config(page_title="English Missions", page_icon="🌟",
@@ -22,6 +24,13 @@ from listening import page as lpage
 from speaking import page as spage
 from speaking import models as smodels
 from storage import progress
+
+# Streamlit Cloud can keep imported submodules alive across a hot rerun. Reload
+# page modules at the entry boundary so a deploy cannot mix new content with an
+# old list renderer.
+lpage = importlib.reload(lpage)
+spage = importlib.reload(spage)
+smodels = importlib.reload(smodels)
 
 qp = st.query_params
 student_id = qp.get("student_id", "sherlock")
