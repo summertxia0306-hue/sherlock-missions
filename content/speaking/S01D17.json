@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D17",
+  "title": "口语练习 · Do you have ...?",
+  "week": 2,
+  "day": 7,
+  "course_type": "training",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-07-09",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Do you have an uncle?",
+      "audio": "static/audio/speaking/S01D17/q01.mp3",
+      "tag": "M2U1·Do you have an uncle",
+      "parent_note": ""
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "Yes, I do.",
+      "audio": "static/audio/speaking/S01D17/q02.mp3",
+      "tag": "M2U1·Yes I do",
+      "parent_note": ""
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "No, I don't.",
+      "audio": "static/audio/speaking/S01D17/q03.mp3",
+      "tag": "M2U1·No I don't",
+      "parent_note": ""
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Do you have a cousin?",
+      "audio": "static/audio/speaking/S01D17/q04.mp3",
+      "tag": "M2U1·Do you have a cousin",
+      "parent_note": ""
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "I have a happy family.",
+      "audio": "static/audio/speaking/S01D17/q05.mp3",
+      "tag": "M2U1·family",
+      "parent_note": ""
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "We have a family photo.",
+      "audio": "static/audio/speaking/S01D17/q06.mp3",
+      "tag": "M2U1·family photo",
+      "parent_note": ""
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "Do you have an uncle?",
+      "expected": "Yes, I do.",
+      "hint": "用英语说：是的，我有。",
+      "audio": "static/audio/speaking/S01D17/q07.mp3",
+      "tag": "问答·Yes I do",
+      "parent_note": ""
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "Do you have a cousin?",
+      "expected": "No, I don't.",
+      "hint": "用英语说：不，我没有。",
+      "audio": "static/audio/speaking/S01D17/q08.mp3",
+      "tag": "问答·No I don't",
+      "parent_note": ""
+    }
+  ]
+}

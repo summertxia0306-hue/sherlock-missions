@@ -1,0 +1,444 @@
+{
+  "course_id": "W01D18",
+  "title": "听力练习 · M2U1 Jill's family reading",
+  "week": 2,
+  "day": 8,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "4A M2U1 reading",
+  "difficulty": "L1",
+  "open_date": "2026-07-09",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D18/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "family",
+            "fifteen",
+            "funny"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "family"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D18/q01.mp3",
+          "tag": "M2U1·family",
+          "parent_note": ""
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "cousin",
+            "classmate",
+            "cook"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "cousin"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D18/q02.mp3",
+          "tag": "M2U1·cousin",
+          "parent_note": ""
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "swim",
+            "swing",
+            "sweet"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "swim"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D18/q03.mp3",
+          "tag": "M1U2复现·swim",
+          "parent_note": ""
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "likes",
+            "lives",
+            "legs"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "likes"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D18/q04.mp3",
+          "tag": "旧坑复现·三单likes",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "My cousin can draw.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "My cousin can draw."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D18/q05.mp3",
+          "tag": "M2U1·family + can",
+          "parent_note": ""
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "My uncle can swims.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "My uncle can swim."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D18/q06.mp3",
+          "tag": "旧坑复现·can + 原形",
+          "parent_note": ""
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "She likes reading.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "She likes reading."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D18/q07.mp3",
+          "tag": "旧坑复现·likes + V-ing",
+          "parent_note": ""
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "He is ten years old.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "He is eleven years old."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D18/q08.mp3",
+          "tag": "M2U1·age细节",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "She can draw.",
+            "She likes drawing.",
+            "She is drawing."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can your cousin do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D18/q09.mp3",
+          "tag": "M2U1·ability",
+          "parent_note": ""
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "She likes reading.",
+            "She can read.",
+            "She is ten."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does she like?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D18/q10.mp3",
+          "tag": "旧坑复现·likes + V-ing",
+          "parent_note": ""
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "He is twelve.",
+            "His name is Ben.",
+            "He can swim."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "How old is he?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D18/q11.mp3",
+          "tag": "M2U1·age",
+          "parent_note": ""
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "My cousin.",
+            "My uncle.",
+            "My aunt."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who has a blue bag?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D18/q12.mp3",
+          "tag": "旧坑复现·has",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "question_text": "What can Alice do?",
+          "options": [
+            "Draw.",
+            "Swim.",
+            "Run."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "My cousin is Alice."
+            ],
+            [
+              "m",
+              "What can she do?"
+            ],
+            [
+              "f",
+              "She can draw very well."
+            ],
+            [
+              "n",
+              "Question: What can Alice do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D18/q13.mp3",
+          "tag": "M2U1·cousin ability",
+          "parent_note": ""
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "question_text": "What can the uncle do?",
+          "options": [
+            "Run fast.",
+            "Fly high.",
+            "Read well."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "My uncle is a police officer."
+            ],
+            [
+              "f",
+              "Can he run fast?"
+            ],
+            [
+              "m",
+              "Yes, he can."
+            ],
+            [
+              "n",
+              "Question: What can the uncle do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D18/q14.mp3",
+          "tag": "M2U1·uncle + can",
+          "parent_note": ""
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "question_text": "What does the aunt like?",
+          "options": [
+            "Reading.",
+            "Dancing.",
+            "Swimming."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "My aunt likes reading."
+            ],
+            [
+              "m",
+              "Does she like dancing?"
+            ],
+            [
+              "f",
+              "No, she doesn't."
+            ],
+            [
+              "n",
+              "Question: What does the aunt like?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D18/q15.mp3",
+          "tag": "旧坑复现·does/likes",
+          "parent_note": ""
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "question_text": "What can the cousin do?",
+          "options": [
+            "Draw.",
+            "Swim.",
+            "Fly."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "My cousin has a blue bag, but he can't swim."
+            ],
+            [
+              "f",
+              "Can he draw?"
+            ],
+            [
+              "m",
+              "Yes, he can."
+            ],
+            [
+              "n",
+              "Question: What can the cousin do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D18/q16.mp3",
+          "tag": "M2U1·but + can/can't",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [
+        [
+          "n",
+          "Jill has a big family. Her uncle is a police officer. He can run fast, but he can't swim. Her aunt likes reading. Her cousin Alice is eleven. Alice can draw well and has a blue bag."
+        ]
+      ],
+      "passage_audio": "static/audio/listening/W01D18/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "Jill's uncle can run fast.",
+          "answer": "true",
+          "tag": "短文·can",
+          "parent_note": ""
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "Jill's uncle can swim.",
+          "answer": "false",
+          "tag": "短文·can't",
+          "parent_note": "原文是can't swim"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "Jill's aunt likes reading.",
+          "answer": "true",
+          "tag": "短文·likes",
+          "parent_note": ""
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "Alice has a red bag.",
+          "answer": "false",
+          "tag": "短文·has + color",
+          "parent_note": "原文是blue bag"
+        }
+      ]
+    }
+  ]
+}

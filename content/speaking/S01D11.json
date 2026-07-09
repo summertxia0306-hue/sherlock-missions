@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D11",
+  "title": "口语练习 · M1U3 feelings 1",
+  "week": 2,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-07-09",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "I'm happy.",
+      "audio": "static/audio/speaking/S01D11/q01.mp3",
+      "tag": "M1U3·happy",
+      "parent_note": ""
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "I'm hungry.",
+      "audio": "static/audio/speaking/S01D11/q02.mp3",
+      "tag": "M1U3·hungry",
+      "parent_note": ""
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "I'm thirsty.",
+      "audio": "static/audio/speaking/S01D11/q03.mp3",
+      "tag": "M1U3·thirsty",
+      "parent_note": ""
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "I'm sad.",
+      "audio": "static/audio/speaking/S01D11/q04.mp3",
+      "tag": "M1U3·sad",
+      "parent_note": ""
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "How do you feel?",
+      "audio": "static/audio/speaking/S01D11/q05.mp3",
+      "tag": "M1U3·How do you feel",
+      "parent_note": ""
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "I'm tired.",
+      "audio": "static/audio/speaking/S01D11/q06.mp3",
+      "tag": "M1U3·tired",
+      "parent_note": ""
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "How do you feel?",
+      "expected": "I'm hungry.",
+      "hint": "用英语说：我饿了。",
+      "audio": "static/audio/speaking/S01D11/q07.mp3",
+      "tag": "问答·hungry",
+      "parent_note": ""
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "How do you feel?",
+      "expected": "I'm happy.",
+      "hint": "用英语说：我很开心。",
+      "audio": "static/audio/speaking/S01D11/q08.mp3",
+      "tag": "问答·happy",
+      "parent_note": ""
+    }
+  ]
+}

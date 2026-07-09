@@ -1,0 +1,436 @@
+{
+  "course_id": "W01D14",
+  "title": "听力练习 · M1U3 mixed training",
+  "week": 2,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "4A M1U3 mixed + old pits",
+  "difficulty": "L1",
+  "open_date": "2026-07-09",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D14/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "these",
+            "this",
+            "there"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "these"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D14/q01.mp3",
+          "tag": "旧坑复现·this/these",
+          "parent_note": ""
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "your",
+            "you",
+            "young"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "your"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D14/q02.mp3",
+          "tag": "旧坑复现·you/your",
+          "parent_note": ""
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "likes",
+            "legs",
+            "lives"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "likes"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D14/q03.mp3",
+          "tag": "旧坑复现·三单likes",
+          "parent_note": ""
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "butter",
+            "bitter",
+            "better"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "bitter"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D14/q04.mp3",
+          "tag": "旧坑复现·bitter/butter",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "She has a red bag.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "She has a red bag."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D14/q05.mp3",
+          "tag": "旧坑复现·has",
+          "parent_note": ""
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "These are biscuits.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "These are biscuits."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D14/q06.mp3",
+          "tag": "旧坑复现·these",
+          "parent_note": ""
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "This is my biscuits.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "These are my biscuits."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D14/q07.mp3",
+          "tag": "旧坑复现·this/these",
+          "parent_note": ""
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "You are thirsty.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Your brother is thirsty."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D14/q08.mp3",
+          "tag": "旧坑复现·you/your",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "She likes reading.",
+            "She can read.",
+            "She is reading."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does Jill like?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D14/q09.mp3",
+          "tag": "旧坑复现·like + V-ing",
+          "parent_note": ""
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "He can run fast.",
+            "He runs fast.",
+            "He likes running."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can Ben do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D14/q10.mp3",
+          "tag": "旧坑复现·can + 原形",
+          "parent_note": ""
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "I'm sad.",
+            "My name is Sam.",
+            "I can draw."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "How do you feel?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D14/q11.mp3",
+          "tag": "M1U3·feeling",
+          "parent_note": ""
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "Yes, she does.",
+            "Yes, she can.",
+            "Yes, she is."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Does Jill walk to school?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D14/q12.mp3",
+          "tag": "旧坑复现·walks/does",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "question_text": "What are these?",
+          "options": [
+            "Biscuits.",
+            "Presents.",
+            "Books."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "These are my biscuits."
+            ],
+            [
+              "m",
+              "They look good. Are you full?"
+            ],
+            [
+              "f",
+              "Yes, I am."
+            ],
+            [
+              "n",
+              "Question: What are these?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D14/q13.mp3",
+          "tag": "M1U3·these + biscuits",
+          "parent_note": ""
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "question_text": "How does Jill go to school?",
+          "options": [
+            "She walks.",
+            "She runs.",
+            "She swims."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Jill lives near school."
+            ],
+            [
+              "f",
+              "Does she walk to school?"
+            ],
+            [
+              "m",
+              "Yes, she walks every day."
+            ],
+            [
+              "n",
+              "Question: How does Jill go to school?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D14/q14.mp3",
+          "tag": "旧坑复现·lives/walks",
+          "parent_note": ""
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "question_text": "How does the cousin feel?",
+          "options": [
+            "Tired.",
+            "Hungry.",
+            "Full."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Your cousin looks tired."
+            ],
+            [
+              "m",
+              "Yes. He likes playing basketball."
+            ],
+            [
+              "n",
+              "Question: How does the cousin feel?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D14/q15.mp3",
+          "tag": "旧坑复现·your + likes V-ing",
+          "parent_note": ""
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "question_text": "What word does the girl say?",
+          "options": [
+            "Bitter.",
+            "Butter.",
+            "Better."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Is this butter?"
+            ],
+            [
+              "f",
+              "No. It is bitter medicine."
+            ],
+            [
+              "n",
+              "Question: What word does the girl say?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D14/q16.mp3",
+          "tag": "旧坑复现·bitter/butter",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [
+        [
+          "n",
+          "Jill lives near school and walks to school every day. She likes reading. Today she is thirsty and tired. Her friend Ben has some water. These are their biscuits."
+        ]
+      ],
+      "passage_audio": "static/audio/listening/W01D14/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "Jill walks to school every day.",
+          "answer": "true",
+          "tag": "短文·walks",
+          "parent_note": ""
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "Jill likes dancing today.",
+          "answer": "false",
+          "tag": "短文·likes reading",
+          "parent_note": "原文是reading"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "Ben has some water.",
+          "answer": "true",
+          "tag": "短文·has",
+          "parent_note": ""
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "These are their presents.",
+          "answer": "false",
+          "tag": "旧坑复现·these/present",
+          "parent_note": "原文是biscuits"
+        }
+      ]
+    }
+  ]
+}

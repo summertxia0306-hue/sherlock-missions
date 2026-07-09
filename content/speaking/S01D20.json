@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D20",
+  "title": "口语周复习 · M2U1 综合",
+  "week": 2,
+  "day": 10,
+  "course_type": "weekly_review",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-07-09",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "This is my aunt.",
+      "audio": "static/audio/speaking/S01D20/q01.mp3",
+      "tag": "M2U1·介绍家人",
+      "parent_note": ""
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "Her name is May.",
+      "audio": "static/audio/speaking/S01D20/q02.mp3",
+      "tag": "旧坑复现·her name",
+      "parent_note": ""
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "She is thirty years old.",
+      "audio": "static/audio/speaking/S01D20/q03.mp3",
+      "tag": "M2U1·age",
+      "parent_note": ""
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "She can cook.",
+      "audio": "static/audio/speaking/S01D20/q04.mp3",
+      "tag": "M2U1·can",
+      "parent_note": ""
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "She likes reading.",
+      "audio": "static/audio/speaking/S01D20/q05.mp3",
+      "tag": "旧坑复现·likes + V-ing",
+      "parent_note": ""
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "I have a happy family.",
+      "audio": "static/audio/speaking/S01D20/q06.mp3",
+      "tag": "M2U1·family",
+      "parent_note": ""
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "Who is she?",
+      "expected": "She is my aunt.",
+      "hint": "用英语说：她是我的阿姨。",
+      "audio": "static/audio/speaking/S01D20/q07.mp3",
+      "tag": "问答·family",
+      "parent_note": ""
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "What can she do?",
+      "expected": "She can cook.",
+      "hint": "用英语说：她会做饭。",
+      "audio": "static/audio/speaking/S01D20/q08.mp3",
+      "tag": "问答·can",
+      "parent_note": ""
+    }
+  ]
+}

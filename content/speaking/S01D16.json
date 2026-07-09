@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D16",
+  "title": "口语练习 · M2U1 family words",
+  "week": 2,
+  "day": 6,
+  "course_type": "training",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-07-09",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "This is my uncle.",
+      "audio": "static/audio/speaking/S01D16/q01.mp3",
+      "tag": "M2U1·uncle",
+      "parent_note": ""
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "This is my aunt.",
+      "audio": "static/audio/speaking/S01D16/q02.mp3",
+      "tag": "M2U1·aunt",
+      "parent_note": ""
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "This is my cousin.",
+      "audio": "static/audio/speaking/S01D16/q03.mp3",
+      "tag": "M2U1·cousin",
+      "parent_note": ""
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "He is a police officer.",
+      "audio": "static/audio/speaking/S01D16/q04.mp3",
+      "tag": "M2U1·police officer",
+      "parent_note": ""
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "I have a cousin.",
+      "audio": "static/audio/speaking/S01D16/q05.mp3",
+      "tag": "M2U1·have a cousin",
+      "parent_note": ""
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "I have an uncle.",
+      "audio": "static/audio/speaking/S01D16/q06.mp3",
+      "tag": "M2U1·have an uncle",
+      "parent_note": ""
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "Who is this?",
+      "expected": "This is my aunt.",
+      "hint": "用英语说：这是我的阿姨。",
+      "audio": "static/audio/speaking/S01D16/q07.mp3",
+      "tag": "问答·aunt",
+      "parent_note": ""
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "What do you have?",
+      "expected": "I have a cousin.",
+      "hint": "用英语说：我有一个表亲。",
+      "audio": "static/audio/speaking/S01D16/q08.mp3",
+      "tag": "问答·cousin",
+      "parent_note": ""
+    }
+  ]
+}

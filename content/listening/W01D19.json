@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D19",
+  "title": "听力练习 · M2U1 mixed dialogue",
+  "week": 2,
+  "day": 9,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "4A M2U1 mixed dialogue",
+  "difficulty": "L1",
+  "open_date": "2026-07-09",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D19/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "cousin",
+            "kitchen",
+            "classmate"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "cousin"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D19/q01.mp3",
+          "tag": "M2U1·cousin",
+          "parent_note": ""
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "doesn't",
+            "don't",
+            "does"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "doesn't"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D19/q02.mp3",
+          "tag": "旧坑复现·doesn't",
+          "parent_note": ""
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "can't",
+            "can",
+            "count"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "can't"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D19/q03.mp3",
+          "tag": "旧坑复现·can't",
+          "parent_note": ""
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "aunt",
+            "uncle",
+            "and"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "uncle"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D19/q04.mp3",
+          "tag": "M2U1·uncle/aunt听辨",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "Do you have a cousin?",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Do you have a cousin?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D19/q05.mp3",
+          "tag": "M2U1·Do you have",
+          "parent_note": ""
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "I have an uncle.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "I have an aunt."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D19/q06.mp3",
+          "tag": "M2U1·a/an + family",
+          "parent_note": ""
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "He doesn't have a football.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "He doesn't have a football."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D19/q07.mp3",
+          "tag": "旧坑复现·doesn't",
+          "parent_note": ""
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "She can swimming well.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "She can swim well."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D19/q08.mp3",
+          "tag": "旧坑复现·can + 原形",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "Yes, I do.",
+            "Yes, I can.",
+            "Yes, I am."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Do you have an aunt?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D19/q09.mp3",
+          "tag": "M2U1·Do you have",
+          "parent_note": ""
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "No, she can't.",
+            "No, she doesn't.",
+            "No, she isn't."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Can your cousin fly?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D19/q10.mp3",
+          "tag": "旧坑复现·can't",
+          "parent_note": ""
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "He can run fast.",
+            "He runs fast.",
+            "He likes running."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can he do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D19/q11.mp3",
+          "tag": "旧坑复现·can + 原形",
+          "parent_note": ""
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "She's my cousin.",
+            "He's my uncle.",
+            "It's my bag."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who is she?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D19/q12.mp3",
+          "tag": "M2U1·Who is she",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "question_text": "Who is May?",
+          "options": [
+            "His cousin.",
+            "His aunt.",
+            "His classmate."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Do you have a cousin?"
+            ],
+            [
+              "m",
+              "Yes, I do. Her name is May."
+            ],
+            [
+              "n",
+              "Question: Who is May?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D19/q13.mp3",
+          "tag": "M2U1·cousin dialogue",
+          "parent_note": ""
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "question_text": "What does the aunt have?",
+          "options": [
+            "A red bag.",
+            "An apple.",
+            "A present."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Who's she?"
+            ],
+            [
+              "f",
+              "She's my aunt. She has a red bag."
+            ],
+            [
+              "n",
+              "Question: What does the aunt have?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D19/q14.mp3",
+          "tag": "M2U1·has + a",
+          "parent_note": ""
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "question_text": "What can the uncle do?",
+          "options": [
+            "Swim well.",
+            "Fly high.",
+            "Draw well."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "What can your uncle do?"
+            ],
+            [
+              "m",
+              "He can swim well, but he can't fly."
+            ],
+            [
+              "n",
+              "Question: What can the uncle do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D19/q15.mp3",
+          "tag": "M2U1·can/can't",
+          "parent_note": ""
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "question_text": "What does the cousin like?",
+          "options": [
+            "Reading and dancing.",
+            "Running and swimming.",
+            "Writing and drawing."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Does your cousin like reading?"
+            ],
+            [
+              "f",
+              "Yes. She likes reading and dancing."
+            ],
+            [
+              "n",
+              "Question: What does the cousin like?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D19/q16.mp3",
+          "tag": "旧坑复现·likes V-ing",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [
+        [
+          "n",
+          "I have a cousin. Her name is May. She is twelve years old. She can swim well, but she can't fly. She likes reading and dancing. She doesn't have a football."
+        ]
+      ],
+      "passage_audio": "static/audio/listening/W01D19/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "May is the speaker's cousin.",
+          "answer": "true",
+          "tag": "短文·cousin",
+          "parent_note": ""
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "May is sixteen years old.",
+          "answer": "false",
+          "tag": "短文·age",
+          "parent_note": "原文是twelve"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "May can swim well.",
+          "answer": "true",
+          "tag": "短文·can",
+          "parent_note": ""
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "May has a football.",
+          "answer": "false",
+          "tag": "短文·doesn't have",
+          "parent_note": "原文是doesn't have"
+        }
+      ]
+    }
+  ]
+}

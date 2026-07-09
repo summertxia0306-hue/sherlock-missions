@@ -15,7 +15,6 @@ from .audio import limited_audio, merge_plays
 from storage import progress
 
 ZH_NUM = "一二三四五六七八九"
-RECOMMENDED_COURSE = "W01D06"
 
 _CSS = """
 <style>
@@ -72,18 +71,7 @@ def get_last_result(student_id, course_id):
     return rs[-1] if rs else None
 
 
-def listening_home(student_id):
-    """听力主界面（2026-06-12 家长定）：列出已开发课程；完成状态由"提交"
-    自动产生（提交过=已完成），非家长控制；已完成可重做；
-    隐藏/删除/未到开放日期的课程不显示；关闭的显示但锁定。"""
-    st.markdown(_CSS, unsafe_allow_html=True)
-    st.markdown("## 🎧 听力练习")
-    st.info("⭐ 当前推荐：W01D06（4A M1U1 人物介绍 1）")
-    today = progress.beijing_today()
-    done = progress.completed_course_ids(
-        progress.list_results(student_id=student_id)
-    )
-    metas = progress.all_courses()
+def _shown_courses(metas, today):
     shown = []
     for cid in sorted(metas):
         m = metas[cid]
@@ -92,12 +80,41 @@ def listening_home(student_id):
         if m.get("open_date") and m["open_date"] > today:
             continue
         shown.append((cid, m))
+    return shown
+
+
+def _recommended_course_id(shown, done):
+    for cid, meta in shown:
+        if meta["status"] == "closed":
+            continue
+        if cid not in done:
+            return cid
+    return None
+
+
+def listening_home(student_id):
+    """听力主界面（2026-06-12 家长定）：列出已开发课程；完成状态由"提交"
+    自动产生（提交过=已完成），非家长控制；已完成可重做；
+    隐藏/删除/未到开放日期的课程不显示；关闭的显示但锁定。"""
+    st.markdown(_CSS, unsafe_allow_html=True)
+    st.markdown("## 🎧 听力练习")
+    today = progress.beijing_today()
+    done = progress.completed_course_ids(
+        progress.list_results(student_id=student_id)
+    )
+    metas = progress.all_courses()
+    shown = _shown_courses(metas, today)
+    recommended = _recommended_course_id(shown, done)
+    if recommended:
+        st.info("⭐ 当前推荐：%s（%s）" % (recommended, metas[recommended]["title"]))
+    else:
+        st.info("本阶段已完成，请等下一批课程。")
     if not shown:
         st.info("今天还没有听力任务，请告诉爸爸妈妈。")
         return
     for cid, m in shown:
         c1, c2, c3 = st.columns([4, 2, 2])
-        recommendation = "　⭐ 当前推荐" if cid == RECOMMENDED_COURSE else ""
+        recommendation = "　⭐ 当前推荐" if cid == recommended else ""
         c1.markdown("**%s**%s" % (m["title"], recommendation))
         c1.caption("%s · 第%s周第%s天" % (cid, m["week"], m["day"]))
         c2.markdown("✅ 已完成" if cid in done else "⬜ 未完成")

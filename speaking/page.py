@@ -39,7 +39,6 @@ _CSS = """
 """
 
 TYPE_ZH = {"repeat": "跟读", "qa": "听话回答"}
-RECOMMENDED_COURSE = "S01D06"
 
 
 def _secret(name):
@@ -87,17 +86,7 @@ def get_last_result(student_id, course_id):
     return rs[-1] if rs else None
 
 
-# ---------------- 儿童端 ----------------
-
-def speaking_home(student_id):
-    st.markdown(_CSS, unsafe_allow_html=True)
-    st.markdown("## 🗣️ 口语练习")
-    st.info("⭐ 当前推荐：S01D06（4A M1U1 人物介绍跟读）")
-    today = progress.beijing_today()
-    done = progress.completed_course_ids(
-        progress.list_results(student_id=student_id)
-    )
-    metas = models.all_courses()
+def _shown_courses(metas, today):
     shown = []
     for cid in sorted(metas):
         m = metas[cid]
@@ -106,12 +95,40 @@ def speaking_home(student_id):
         if m.get("open_date") and m["open_date"] > today:
             continue
         shown.append((cid, m))
+    return shown
+
+
+def _recommended_course_id(shown, done):
+    for cid, meta in shown:
+        if meta["status"] == "closed":
+            continue
+        if cid not in done:
+            return cid
+    return None
+
+
+# ---------------- 儿童端 ----------------
+
+def speaking_home(student_id):
+    st.markdown(_CSS, unsafe_allow_html=True)
+    st.markdown("## 🗣️ 口语练习")
+    today = progress.beijing_today()
+    done = progress.completed_course_ids(
+        progress.list_results(student_id=student_id)
+    )
+    metas = models.all_courses()
+    shown = _shown_courses(metas, today)
+    recommended = _recommended_course_id(shown, done)
+    if recommended:
+        st.info("⭐ 当前推荐：%s（%s）" % (recommended, metas[recommended]["title"]))
+    else:
+        st.info("本阶段已完成，请等下一批课程。")
     if not shown:
         st.info("今天还没有口语任务，请告诉爸爸妈妈。")
         return
     for cid, m in shown:
         c1, c2, c3 = st.columns([4, 2, 2])
-        recommendation = "　⭐ 当前推荐" if cid == RECOMMENDED_COURSE else ""
+        recommendation = "　⭐ 当前推荐" if cid == recommended else ""
         c1.markdown("**%s**%s" % (m["title"], recommendation))
         c1.caption("%s · 第%s周第%s天" % (cid, m["week"], m["day"]))
         c2.markdown("✅ 已完成" if cid in done else "⬜ 未完成")

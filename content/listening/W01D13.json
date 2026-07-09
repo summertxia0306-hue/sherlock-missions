@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D13",
+  "title": "听力练习 · M1U3 story and idea",
+  "week": 2,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "4A M1U3 story",
+  "difficulty": "L1",
+  "open_date": "2026-07-09",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D13/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "idea",
+            "tiger",
+            "tired"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "idea"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D13/q01.mp3",
+          "tag": "4A M1U3·idea",
+          "parent_note": ""
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "Ginger",
+            "finger",
+            "danger"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Ginger"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D13/q02.mp3",
+          "tag": "4A M1U3·Ginger",
+          "parent_note": ""
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "biscuit",
+            "basketball",
+            "butter"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "biscuit"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D13/q03.mp3",
+          "tag": "M1U3·biscuit/旧坑butter干扰",
+          "parent_note": ""
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "there",
+            "these",
+            "three"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "there"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D13/q04.mp3",
+          "tag": "M1U3·There is/are",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "I have an idea.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "I have an idea."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D13/q05.mp3",
+          "tag": "M1U3·I have an idea",
+          "parent_note": ""
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "There is a biscuit.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "There is a biscuit."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D13/q06.mp3",
+          "tag": "M1U3·There is",
+          "parent_note": ""
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "There are two biscuits.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "There is one biscuit."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D13/q07.mp3",
+          "tag": "M1U3·There is/are",
+          "parent_note": ""
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "Are you hungry?",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Are you thirsty?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D13/q08.mp3",
+          "tag": "M1U3·Are you",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "I have an idea.",
+            "I'm an idea.",
+            "I can idea."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What do you have?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D13/q09.mp3",
+          "tag": "M1U3·idea问答",
+          "parent_note": ""
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "Yes, I am.",
+            "Yes, I do.",
+            "Yes, she is."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Are you hungry?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D13/q10.mp3",
+          "tag": "M1U3·Are you hungry",
+          "parent_note": ""
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "No, he isn't.",
+            "No, she can't.",
+            "Yes, it can."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Is Ginger thirsty?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D13/q11.mp3",
+          "tag": "M1U3·Ginger's feeling",
+          "parent_note": ""
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "Yes, he can.",
+            "Yes, he does.",
+            "No, it isn't."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Can Ginger eat a biscuit?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D13/q12.mp3",
+          "tag": "旧坑复现·can + 动词原形",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "question_text": "What is on the desk?",
+          "options": [
+            "A biscuit.",
+            "A present.",
+            "A book."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Ginger is hungry."
+            ],
+            [
+              "m",
+              "There is a biscuit on the desk."
+            ],
+            [
+              "n",
+              "Question: What is on the desk?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D13/q13.mp3",
+          "tag": "M1U3·story detail",
+          "parent_note": ""
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "question_text": "Who can they help?",
+          "options": [
+            "Ginger.",
+            "Jill.",
+            "Peter."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "I have an idea."
+            ],
+            [
+              "f",
+              "Great! We can help Ginger."
+            ],
+            [
+              "n",
+              "Question: Who can they help?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D13/q14.mp3",
+          "tag": "M1U3·idea + can",
+          "parent_note": ""
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "question_text": "How does Ginger feel?",
+          "options": [
+            "Hungry.",
+            "Thirsty.",
+            "Tired."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Are you thirsty, Ginger?"
+            ],
+            [
+              "m",
+              "No, I'm not. I'm hungry."
+            ],
+            [
+              "n",
+              "Question: How does Ginger feel?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D13/q15.mp3",
+          "tag": "M1U3·Are you",
+          "parent_note": ""
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "question_text": "How many biscuits are there?",
+          "options": [
+            "Two.",
+            "One.",
+            "Three."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "There are two biscuits."
+            ],
+            [
+              "f",
+              "Have one, Ginger."
+            ],
+            [
+              "n",
+              "Question: How many biscuits are there?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D13/q16.mp3",
+          "tag": "M1U3·There are",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [
+        [
+          "n",
+          "Ginger is hungry. There is a biscuit in the box. Kitty has an idea. She says, have a biscuit, Ginger. Ginger is full now. He is happy."
+        ]
+      ],
+      "passage_audio": "static/audio/listening/W01D13/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "Ginger is hungry at first.",
+          "answer": "true",
+          "tag": "短文·feeling order",
+          "parent_note": ""
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "There is a biscuit in the bag.",
+          "answer": "false",
+          "tag": "短文·There is",
+          "parent_note": "原文是box"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "Kitty has an idea.",
+          "answer": "true",
+          "tag": "短文·has + idea",
+          "parent_note": ""
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "Ginger is sad at the end.",
+          "answer": "false",
+          "tag": "短文·happy/sad",
+          "parent_note": "原文是happy"
+        }
+      ]
+    }
+  ]
+}

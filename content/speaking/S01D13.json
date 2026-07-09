@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D13",
+  "title": "口语练习 · M1U3 story sentences",
+  "week": 2,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-07-09",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Ginger is hungry.",
+      "audio": "static/audio/speaking/S01D13/q01.mp3",
+      "tag": "M1U3·Ginger",
+      "parent_note": ""
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "There is a biscuit.",
+      "audio": "static/audio/speaking/S01D13/q02.mp3",
+      "tag": "M1U3·There is",
+      "parent_note": ""
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "Are you thirsty?",
+      "audio": "static/audio/speaking/S01D13/q03.mp3",
+      "tag": "M1U3·Are you",
+      "parent_note": ""
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Yes, I am.",
+      "audio": "static/audio/speaking/S01D13/q04.mp3",
+      "tag": "M1U3·Yes I am",
+      "parent_note": ""
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "No, I'm not.",
+      "audio": "static/audio/speaking/S01D13/q05.mp3",
+      "tag": "M1U3·No I'm not",
+      "parent_note": ""
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "I can help you.",
+      "audio": "static/audio/speaking/S01D13/q06.mp3",
+      "tag": "旧坑复现·can + 原形",
+      "parent_note": ""
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "Are you thirsty?",
+      "expected": "Yes, I am.",
+      "hint": "用英语说：是的，我口渴。",
+      "audio": "static/audio/speaking/S01D13/q07.mp3",
+      "tag": "问答·Yes I am",
+      "parent_note": ""
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "Are you hungry?",
+      "expected": "No, I'm not.",
+      "hint": "用英语说：不，我不饿。",
+      "audio": "static/audio/speaking/S01D13/q08.mp3",
+      "tag": "问答·No I'm not",
+      "parent_note": ""
+    }
+  ]
+}

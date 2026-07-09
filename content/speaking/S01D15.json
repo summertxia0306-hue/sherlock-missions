@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D15",
+  "title": "口语周复习 · M1U3 综合",
+  "week": 2,
+  "day": 5,
+  "course_type": "weekly_review",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-07-09",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "How do you feel?",
+      "audio": "static/audio/speaking/S01D15/q01.mp3",
+      "tag": "M1U3·How do you feel",
+      "parent_note": ""
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "I'm hungry and thirsty.",
+      "audio": "static/audio/speaking/S01D15/q02.mp3",
+      "tag": "M1U3·feelings",
+      "parent_note": ""
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "Have some biscuits.",
+      "audio": "static/audio/speaking/S01D15/q03.mp3",
+      "tag": "M1U3·Have some",
+      "parent_note": ""
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Her name is Jill.",
+      "audio": "static/audio/speaking/S01D15/q04.mp3",
+      "tag": "M1U1复现·her name",
+      "parent_note": ""
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "She can swim well.",
+      "audio": "static/audio/speaking/S01D15/q05.mp3",
+      "tag": "M1U2复现·can",
+      "parent_note": ""
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "She likes reading.",
+      "audio": "static/audio/speaking/S01D15/q06.mp3",
+      "tag": "旧坑复现·likes + V-ing",
+      "parent_note": ""
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "What can she do?",
+      "expected": "She can swim.",
+      "hint": "用英语说：她会游泳。",
+      "audio": "static/audio/speaking/S01D15/q07.mp3",
+      "tag": "问答·can",
+      "parent_note": ""
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "What does she like?",
+      "expected": "She likes reading.",
+      "hint": "用英语说：她喜欢阅读。",
+      "audio": "static/audio/speaking/S01D15/q08.mp3",
+      "tag": "问答·likes reading",
+      "parent_note": ""
+    }
+  ]
+}

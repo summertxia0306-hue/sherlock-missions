@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D19",
+  "title": "口语练习 · family + ability",
+  "week": 2,
+  "day": 9,
+  "course_type": "training",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-07-09",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "My uncle can run fast.",
+      "audio": "static/audio/speaking/S01D19/q01.mp3",
+      "tag": "M2U1·uncle + can",
+      "parent_note": ""
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "My aunt can cook.",
+      "audio": "static/audio/speaking/S01D19/q02.mp3",
+      "tag": "M2U1·aunt + can",
+      "parent_note": ""
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "My cousin can draw.",
+      "audio": "static/audio/speaking/S01D19/q03.mp3",
+      "tag": "M2U1·cousin + can",
+      "parent_note": ""
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "He can swim well.",
+      "audio": "static/audio/speaking/S01D19/q04.mp3",
+      "tag": "旧坑复现·can + 原形",
+      "parent_note": ""
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "She likes reading.",
+      "audio": "static/audio/speaking/S01D19/q05.mp3",
+      "tag": "旧坑复现·likes + V-ing",
+      "parent_note": ""
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "He has a blue bag.",
+      "audio": "static/audio/speaking/S01D19/q06.mp3",
+      "tag": "旧坑复现·has",
+      "parent_note": ""
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "What can she do?",
+      "expected": "She can draw.",
+      "hint": "用英语说：她会画画。",
+      "audio": "static/audio/speaking/S01D19/q07.mp3",
+      "tag": "问答·can draw",
+      "parent_note": ""
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "What can he do?",
+      "expected": "He can swim.",
+      "hint": "用英语说：他会游泳。",
+      "audio": "static/audio/speaking/S01D19/q08.mp3",
+      "tag": "问答·can swim",
+      "parent_note": ""
+    }
+  ]
+}

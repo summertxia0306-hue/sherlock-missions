@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D17",
+  "title": "听力练习 · M2U1 family 2",
+  "week": 2,
+  "day": 7,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "4A M2U1 Who's that?",
+  "difficulty": "L1",
+  "open_date": "2026-07-09",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D17/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "man",
+            "men",
+            "mask"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "man"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D17/q01.mp3",
+          "tag": "M2U1·man",
+          "parent_note": ""
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "girl",
+            "goat",
+            "good"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "girl"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D17/q02.mp3",
+          "tag": "M2U1·girl",
+          "parent_note": ""
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "fourteen",
+            "forty",
+            "fifteen"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "fourteen"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D17/q03.mp3",
+          "tag": "M1U1复现·数字14",
+          "parent_note": ""
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "her",
+            "his",
+            "here"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "his"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D17/q04.mp3",
+          "tag": "旧坑复现·his/her",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "Who's that man?",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Who's that man?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D17/q05.mp3",
+          "tag": "M2U1·Who's that man",
+          "parent_note": ""
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "He's twelve years old.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "He's thirteen years old."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D17/q06.mp3",
+          "tag": "M2U1·age细节",
+          "parent_note": ""
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "This is my aunt.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "This is my aunt."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D17/q07.mp3",
+          "tag": "M2U1·This is",
+          "parent_note": ""
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "Her name is Kitty.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "His name is Kitty."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D17/q08.mp3",
+          "tag": "旧坑复现·his/her",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "He's my uncle.",
+            "She's my aunt.",
+            "It's a biscuit."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who's that man?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D17/q09.mp3",
+          "tag": "M2U1·Who's that man",
+          "parent_note": ""
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "She's eleven.",
+            "Her name is Alice.",
+            "She can run."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "How old is your cousin?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D17/q10.mp3",
+          "tag": "M2U1·How old",
+          "parent_note": ""
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "Her name is Alice.",
+            "His name is Alice.",
+            "She is a cousin."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What's her name?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D17/q11.mp3",
+          "tag": "旧坑复现·her name",
+          "parent_note": ""
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "It's fourteen.",
+            "I'm fourteen.",
+            "You're fourteen."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What's your student number?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D17/q12.mp3",
+          "tag": "M1U1复现·your + number",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "question_text": "Who is the man?",
+          "options": [
+            "His uncle.",
+            "His cousin.",
+            "His brother."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Who's that man?"
+            ],
+            [
+              "m",
+              "He's my uncle. He's thirty years old."
+            ],
+            [
+              "n",
+              "Question: Who is the man?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D17/q13.mp3",
+          "tag": "M2U1·family photo",
+          "parent_note": ""
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "question_text": "What is the girl's name?",
+          "options": [
+            "Alice.",
+            "Jill.",
+            "Kitty."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Who's that girl?"
+            ],
+            [
+              "f",
+              "She's my cousin. Her name is Alice."
+            ],
+            [
+              "n",
+              "Question: What is the girl's name?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D17/q14.mp3",
+          "tag": "M2U1·cousin + name",
+          "parent_note": ""
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "question_text": "What is Ben's student number?",
+          "options": [
+            "Fourteen.",
+            "Eleven.",
+            "Sixteen."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "How old is Ben?"
+            ],
+            [
+              "m",
+              "He is eleven. His student number is fourteen."
+            ],
+            [
+              "n",
+              "Question: What is Ben's student number?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D17/q15.mp3",
+          "tag": "M1U1复现·his + number",
+          "parent_note": ""
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "question_text": "What is in the photo?",
+          "options": [
+            "Her family.",
+            "Her school.",
+            "Her present."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "This is your family photo."
+            ],
+            [
+              "f",
+              "Yes. This is my aunt and this is my uncle."
+            ],
+            [
+              "n",
+              "Question: What is in the photo?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D17/q16.mp3",
+          "tag": "旧坑复现·your/my",
+          "parent_note": ""
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [
+        [
+          "n",
+          "This is Jill's family photo. That man is her uncle. He is thirty years old. That girl is her cousin Alice. Alice is eleven years old. Her student number is fourteen."
+        ]
+      ],
+      "passage_audio": "static/audio/listening/W01D17/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "The man is Jill's uncle.",
+          "answer": "true",
+          "tag": "短文·uncle",
+          "parent_note": ""
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "Jill's uncle is thirteen years old.",
+          "answer": "false",
+          "tag": "短文·age",
+          "parent_note": "原文是thirty"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "Alice is Jill's cousin.",
+          "answer": "true",
+          "tag": "短文·cousin",
+          "parent_note": ""
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "Alice's student number is sixteen.",
+          "answer": "false",
+          "tag": "短文·student number",
+          "parent_note": "原文是fourteen"
+        }
+      ]
+    }
+  ]
+}
