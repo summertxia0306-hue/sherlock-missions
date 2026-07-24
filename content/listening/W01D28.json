@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D28",
+  "title": "听力训练 · The lion and the mouse",
+  "week": 3,
+  "day": 8,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "4A M2U3 教材第29页 + 已学内容复现",
+  "difficulty": "L1",
+  "open_date": "2026-07-24",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D28/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "lion",
+            "line",
+            "leg"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "lion"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D28/q01.mp3",
+          "tag": "M2U3·lion",
+          "parent_note": "教材第29页"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "mouse",
+            "mouth",
+            "moon"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "mouse"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D28/q02.mp3",
+          "tag": "M2U3·mouse",
+          "parent_note": "教材第29页"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "teeth",
+            "tooth",
+            "feet"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "teeth"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D28/q03.mp3",
+          "tag": "旧坑复现·tooth/teeth",
+          "parent_note": "教材第29页"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "net",
+            "near",
+            "new"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "net"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D28/q04.mp3",
+          "tag": "M2U3·net",
+          "parent_note": "教材第29页"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "This is a lion.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "This is a lion."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D28/q05.mp3",
+          "tag": "M2U3·lion",
+          "parent_note": "教材第29页"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "The lion is big and strong.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The lion is big and strong."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D28/q06.mp3",
+          "tag": "M2U3·strong",
+          "parent_note": "教材第29页"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "The mouse has big teeth.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The mouse has small but sharp teeth."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D28/q07.mp3",
+          "tag": "M2U3·sharp teeth",
+          "parent_note": "教材第29页"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "The mouse can bite.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The mouse can bite."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D28/q08.mp3",
+          "tag": "M2U3·bite",
+          "parent_note": "教材第29页"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "The lion is.",
+            "The mouse is.",
+            "The firefighter is."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who is in the net?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D28/q09.mp3",
+          "tag": "M2U3·lion in net",
+          "parent_note": "教材第29页"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "Yes, it is.",
+            "Yes, it can.",
+            "Yes, it does."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Is the lion afraid?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D28/q10.mp3",
+          "tag": "M2U3·afraid",
+          "parent_note": "教材第29页"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "Yes, it can.",
+            "Yes, it is.",
+            "Yes, it does."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Can the mouse bite?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D28/q11.mp3",
+          "tag": "M2U3·can bite",
+          "parent_note": "教材第29页"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "Yes, they are.",
+            "No, they can't.",
+            "They are in the net."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Are they friends now?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D28/q12.mp3",
+          "tag": "M2U3·friends",
+          "parent_note": "教材第29页"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "question_text": "What is the lion like?",
+          "options": [
+            "Big and strong.",
+            "Small and thin.",
+            "Hungry and thirsty."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Look at the lion."
+            ],
+            [
+              "m",
+              "It is big and strong."
+            ],
+            [
+              "n",
+              "Question: What is the lion like?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D28/q13.mp3",
+          "tag": "M2U3·lion",
+          "parent_note": "教材第29页"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "question_text": "Where is the lion?",
+          "options": [
+            "In a net.",
+            "At a fire station.",
+            "In a garden."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "The lion is in a net."
+            ],
+            [
+              "f",
+              "It is afraid."
+            ],
+            [
+              "n",
+              "Question: Where is the lion?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D28/q14.mp3",
+          "tag": "M2U3·net",
+          "parent_note": "教材第29页"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "question_text": "How can the mouse help?",
+          "options": [
+            "It can bite the net.",
+            "It can fly high.",
+            "It can call 119."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Can the mouse help?"
+            ],
+            [
+              "m",
+              "Yes. It can bite the net."
+            ],
+            [
+              "n",
+              "Question: How can the mouse help?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D28/q15.mp3",
+          "tag": "M2U3·bite",
+          "parent_note": "教材第29页"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "question_text": "How do they feel?",
+          "options": [
+            "Happy.",
+            "Sad.",
+            "Tired."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "The lion is free now."
+            ],
+            [
+              "f",
+              "The lion and the mouse are happy."
+            ],
+            [
+              "n",
+              "Question: How do they feel?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D28/q16.mp3",
+          "tag": "M2U3·happy",
+          "parent_note": "教材第29页"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [
+        [
+          "n",
+          "This is a lion. It is big and strong. It has big teeth. This is a mouse. It is small and it has small but sharp teeth. The lion is in a net and it is afraid. The mouse can bite the net and help the lion. They are friends now."
+        ]
+      ],
+      "passage_audio": "static/audio/listening/W01D28/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "The lion is big and strong.",
+          "answer": "true",
+          "tag": "短文·lion",
+          "parent_note": "教材第29页"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "The mouse has big teeth.",
+          "answer": "false",
+          "tag": "短文·small teeth",
+          "parent_note": "教材第29页；原文是small but sharp teeth"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "The lion is in a net.",
+          "answer": "true",
+          "tag": "短文·net",
+          "parent_note": "教材第29页"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "The mouse helps the lion.",
+          "answer": "true",
+          "tag": "短文·help",
+          "parent_note": "教材第29页"
+        }
+      ]
+    }
+  ]
+}

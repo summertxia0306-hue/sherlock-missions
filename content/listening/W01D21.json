@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D21",
+  "title": "听力训练 · M2U2 Fire rhyme",
+  "week": 3,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "4A M2U2 教材第22页 + 已学内容复现",
+  "difficulty": "L1",
+  "open_date": "2026-07-24",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D21/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "fire",
+            "five",
+            "fine"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "fire"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D21/q01.mp3",
+          "tag": "M2U2·fire",
+          "parent_note": "教材第22页"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "station",
+            "student",
+            "question"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "station"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D21/q02.mp3",
+          "tag": "M2U2·station",
+          "parent_note": "教材第22页"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "engine",
+            "English",
+            "eleven"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "engine"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D21/q03.mp3",
+          "tag": "M2U2·engine",
+          "parent_note": "教材第22页"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "brave",
+            "bright",
+            "bring"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "brave"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D21/q04.mp3",
+          "tag": "M2U2·brave",
+          "parent_note": "教材第22页"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "Call the fire station.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Call the fire station."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D21/q05.mp3",
+          "tag": "M2U2·fire station",
+          "parent_note": "教材第22页"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "Bring the fire engine.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Bring the fire engine."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D21/q06.mp3",
+          "tag": "M2U2·fire engine",
+          "parent_note": "教材第22页"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "Put out the fire!",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Put out the fire!"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D21/q07.mp3",
+          "tag": "M2U2·put out",
+          "parent_note": "教材第22页"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "The fire engine is blue.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The fire engine is red."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D21/q08.mp3",
+          "tag": "已学复现·colours",
+          "parent_note": "教材第22页"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "I can see a fire.",
+            "I can hear a song.",
+            "I am full."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can you see?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D21/q09.mp3",
+          "tag": "已学复现·can see",
+          "parent_note": "教材第22页"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "One, one, nine.",
+            "Eleven.",
+            "Sixteen."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What number do you call?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D21/q10.mp3",
+          "tag": "M2U2·119",
+          "parent_note": "教材第22页"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "The firefighters.",
+            "The students.",
+            "The family."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who can put out the fire?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D21/q11.mp3",
+          "tag": "M2U2·firefighters",
+          "parent_note": "教材第22页"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "The fire engine.",
+            "The family photo.",
+            "The mooncake."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What do they bring?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D21/q12.mp3",
+          "tag": "M2U2·bring",
+          "parent_note": "教材第22页"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "question_text": "Where does the man call?",
+          "options": [
+            "The fire station.",
+            "The school.",
+            "The garden."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Look at the fire!"
+            ],
+            [
+              "m",
+              "Call the fire station."
+            ],
+            [
+              "n",
+              "Question: Where does the man call?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D21/q13.mp3",
+          "tag": "M2U2·fire station",
+          "parent_note": "教材第22页"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "question_text": "What number does the man call?",
+          "options": [
+            "119.",
+            "110.",
+            "120."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "What number do I call?"
+            ],
+            [
+              "f",
+              "One, one, nine."
+            ],
+            [
+              "n",
+              "Question: What number does the man call?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D21/q14.mp3",
+          "tag": "M2U2·119",
+          "parent_note": "教材第22页"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "question_text": "What is here?",
+          "options": [
+            "The fire engine.",
+            "The bus.",
+            "The family photo."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Bring the fire engine."
+            ],
+            [
+              "m",
+              "The fire engine is here."
+            ],
+            [
+              "n",
+              "Question: What is here?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D21/q15.mp3",
+          "tag": "M2U2·fire engine",
+          "parent_note": "教材第22页"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "question_text": "Can the firefighters help?",
+          "options": [
+            "Yes, they can.",
+            "No, they can't.",
+            "They are tired."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Can the firefighters help?"
+            ],
+            [
+              "m",
+              "Yes. They can put out the fire!"
+            ],
+            [
+              "n",
+              "Question: Can the firefighters help?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D21/q16.mp3",
+          "tag": "已学复现·can",
+          "parent_note": "教材第22页"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [
+        [
+          "n",
+          "Look at the fire. Fire, fire, fire! Call the fire station. One, one, nine! Bring the fire engine. The brave firefighters put out the fire!"
+        ]
+      ],
+      "passage_audio": "static/audio/listening/W01D21/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "There is a fire.",
+          "answer": "true",
+          "tag": "短文·fire",
+          "parent_note": "教材第22页"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "People call 116.",
+          "answer": "false",
+          "tag": "短文·119",
+          "parent_note": "教材第22页；原文是119"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "They bring the fire engine.",
+          "answer": "true",
+          "tag": "短文·engine",
+          "parent_note": "教材第22页"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "The firefighters put out the fire.",
+          "answer": "true",
+          "tag": "短文·firefighters",
+          "parent_note": "教材第22页"
+        }
+      ]
+    }
+  ]
+}

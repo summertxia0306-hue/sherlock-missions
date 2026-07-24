@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D30",
+  "title": "听力周测卷 · M2U3 I have a friend",
+  "week": 3,
+  "day": 10,
+  "course_type": "weekly_test",
+  "est_minutes": 20,
+  "scope": "4A M2U3 教材第27-31页综合 + M2U2轻复现",
+  "difficulty": "L1",
+  "open_date": "2026-07-24",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D30/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "bread",
+            "bright",
+            "brave"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "bread"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D30/q01.mp3",
+          "tag": "M2U3·br sound",
+          "parent_note": "教材第31页"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "cream",
+            "green",
+            "dream"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "cream"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D30/q02.mp3",
+          "tag": "M2U3·cr sound",
+          "parent_note": "教材第31页"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "friend",
+            "fire",
+            "full"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "friend"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D30/q03.mp3",
+          "tag": "M2U3·friend",
+          "parent_note": "教材第31页"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "blouse",
+            "blue",
+            "bus"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "blouse"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D30/q04.mp3",
+          "tag": "M2U3·clothes",
+          "parent_note": "教材第31页"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "I have a friend.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "I have a friend."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D30/q05.mp3",
+          "tag": "M2U3·friend",
+          "parent_note": "教材第31页"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "His name is Tom.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "His name is Tom."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D30/q06.mp3",
+          "tag": "旧坑复现·his",
+          "parent_note": "教材第31页"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "Tom has a blue T-shirt.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Tom has a green T-shirt."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D30/q07.mp3",
+          "tag": "M2U3·has",
+          "parent_note": "教材第31页"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "Bryan likes ice cream.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Bryan likes ice cream."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D30/q08.mp3",
+          "tag": "M2U3·cr sound",
+          "parent_note": "教材第31页"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "He has a green T-shirt.",
+            "He is a firefighter.",
+            "He can skate."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does Tom have?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D30/q09.mp3",
+          "tag": "M2U3·has",
+          "parent_note": "教材第31页"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "He can skate.",
+            "He has blue shorts.",
+            "He is tall."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can Tom do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D30/q10.mp3",
+          "tag": "M2U3·can",
+          "parent_note": "教材第31页"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "Yes, he does.",
+            "Yes, he is.",
+            "Yes, he can."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Does Bryan like ice cream?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D30/q11.mp3",
+          "tag": "M2U3·likes",
+          "parent_note": "教材第31页"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "He is a firefighter.",
+            "He has a sweater.",
+            "He can fly a kite."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does Jill's father do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D30/q12.mp3",
+          "tag": "M2U2复现·job",
+          "parent_note": "教材第31页"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "question_text": "What is Tom like?",
+          "options": [
+            "Tall and thin.",
+            "Short and strong.",
+            "Hungry and thirsty."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Tell me about your friend."
+            ],
+            [
+              "m",
+              "His name is Tom. He's tall and thin."
+            ],
+            [
+              "n",
+              "Question: What is Tom like?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D30/q13.mp3",
+          "tag": "M2U3·profile",
+          "parent_note": "教材第31页"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "question_text": "What does Tom have?",
+          "options": [
+            "A green T-shirt.",
+            "A pink blouse.",
+            "A red coat."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "What does Tom have?"
+            ],
+            [
+              "f",
+              "He has a green T-shirt and blue shorts."
+            ],
+            [
+              "n",
+              "Question: What does Tom have?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D30/q14.mp3",
+          "tag": "M2U3·clothes",
+          "parent_note": "教材第31页"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "question_text": "What two things does Bryan like?",
+          "options": [
+            "Ice cream and bread.",
+            "Butter and milk.",
+            "Water and biscuits."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Bryan likes ice cream."
+            ],
+            [
+              "m",
+              "He likes bread too."
+            ],
+            [
+              "n",
+              "Question: What two things does Bryan like?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D30/q15.mp3",
+          "tag": "M2U3·br/cr sounds",
+          "parent_note": "教材第31页"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "question_text": "What does the mother do?",
+          "options": [
+            "A teacher.",
+            "A nurse.",
+            "A doctor."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Is your mother a nurse?"
+            ],
+            [
+              "f",
+              "No, she isn't. She is a teacher."
+            ],
+            [
+              "n",
+              "Question: What does the mother do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D30/q16.mp3",
+          "tag": "M2U2复现·job guessing",
+          "parent_note": "教材第31页"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [
+        [
+          "n",
+          "I have a friend. His name is Tom. He is tall and thin. He has a green T-shirt and a pair of blue shorts. He can skate. Tom's friend Bryan likes ice cream. He likes bread too. Bryan puts some ice cream on the bread."
+        ]
+      ],
+      "passage_audio": "static/audio/listening/W01D30/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "Tom is tall and thin.",
+          "answer": "true",
+          "tag": "周测·appearance",
+          "parent_note": "教材第31页"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "Tom has a pink T-shirt.",
+          "answer": "false",
+          "tag": "周测·green T-shirt",
+          "parent_note": "教材第31页；原文是green"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "Tom can skate.",
+          "answer": "true",
+          "tag": "周测·can skate",
+          "parent_note": "教材第31页"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "Bryan likes ice cream and bread.",
+          "answer": "true",
+          "tag": "周测·br/cr",
+          "parent_note": "教材第31页"
+        }
+      ]
+    }
+  ]
+}

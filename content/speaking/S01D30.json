@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D30",
+  "title": "口语周复习 · I have a friend",
+  "week": 3,
+  "day": 10,
+  "course_type": "weekly_review",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-07-24",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "I have a friend.",
+      "audio": "static/audio/speaking/S01D30/q01.mp3",
+      "tag": "教材P31·跟读",
+      "parent_note": "教材第31页"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "His name is Tom.",
+      "audio": "static/audio/speaking/S01D30/q02.mp3",
+      "tag": "教材P31·跟读",
+      "parent_note": "教材第31页"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "He's tall and thin.",
+      "audio": "static/audio/speaking/S01D30/q03.mp3",
+      "tag": "教材P31·跟读",
+      "parent_note": "教材第31页"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "He has a green T-shirt and he can skate.",
+      "audio": "static/audio/speaking/S01D30/q04.mp3",
+      "tag": "教材P31·跟读",
+      "parent_note": "教材第31页"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "Bryan likes ice cream.",
+      "audio": "static/audio/speaking/S01D30/q05.mp3",
+      "tag": "教材P31·跟读",
+      "parent_note": "教材第31页"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "He likes bread too.",
+      "audio": "static/audio/speaking/S01D30/q06.mp3",
+      "tag": "教材P31·跟读",
+      "parent_note": "教材第31页"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "What does Tom have?",
+      "expected": "He has a green T-shirt.",
+      "hint": "用英语说：他有一件绿色T恤。",
+      "audio": "static/audio/speaking/S01D30/q07.mp3",
+      "tag": "教材P31·问答",
+      "parent_note": "教材第31页"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "What can Tom do?",
+      "expected": "He can skate.",
+      "hint": "用英语说：他会滑冰。",
+      "audio": "static/audio/speaking/S01D30/q08.mp3",
+      "tag": "教材P31·问答",
+      "parent_note": "教材第31页"
+    }
+  ]
+}

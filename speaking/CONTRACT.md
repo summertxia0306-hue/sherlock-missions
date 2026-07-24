@@ -1,6 +1,6 @@
 # 口语模块对接契约与功能清单
 
-> 版本 v1.6 · 2026-07-24（保留已有 formal 记录的 S01D16；S01D17–S01D20 按 4A M2U1 教材第17–21页重新对齐；课程模式、口语门控和 data_kind 规则不变）。
+> 版本 v1.7 · 2026-07-24（新增 S01D21–S01D30，与听力课严格同页对齐 4A M2U2 第22–26页和 M2U3 第27–31页；课程模式、口语门控和 data_kind 规则不变）。
 > 镜像 `listening/CONTRACT.md` 的体例；改接口先改本文件再改代码。
 
 ## 0. 范围
@@ -21,7 +21,7 @@ speaking/
   recorder.py    自研录音组件封装 + 录音上传/列出/取回私有库
   smoke.py       冒烟/运维自检页（?mode=smoke，家长密码）
   frontend/index.html  录音组件前端（大按钮/3-2-1倒计时/自动停止20s/回放/组件内重录/JS端wav编码）
-content/speaking/S01D01..20.json   课程数据（新课=新JSON+跑音频工具，零代码改动）
+content/speaking/S01D01..30.json   课程数据（新课=新JSON+跑音频工具，零代码改动）
 static/audio/speaking/             示范音（Ana，tools/make_audio_speaking.py 生成）
 tools/make_audio_speaking.py       示范音生成（镜像 make_audio_v2：哈希复用/增量/代理）
 ```
@@ -91,10 +91,12 @@ course_id 形如 `S01D01`；`questions` 题号 1..n 连续；题型：
 （W→听力 S→口语，默认 formal）｜`?mode=parent` 家长端（模块单选→各自密码页）｜
 `?mode=test&course_id=…` 已认证家长测试入口（默认拒绝直接访问）｜`?mode=smoke` 自检页。
 
-W01D01–D20、S01D01–D20 当前均保持可见，列表按编号排序；当前推荐自动选择首个已可见且 formal 未完成课程。
+W01D01–D30、S01D01–D30 当前均保持可见，列表按编号排序；当前推荐自动选择首个已可见且 formal 未完成课程。
 S01D06 人物介绍与数字，S01D07 Jill 阅读，S01D08 What can you do，S01D09 Can he/she/动物能力，S01D10 综合介绍朋友/家人。
 S01D11–D15 覆盖 M1U3 feelings / Have some ... / story / weekly review；S01D16 为已完成的 M2U1 family words，保持原课不改。
 S01D17–D20 依次对齐 4A M2U1 教材第17–18页 family questions、第19页 Photos of Jill's family、第20页 Mid-autumn Day、第21页 rhyme 与 `-sh` 语音复习。
+S01D21–D25 与听力同页对齐 M2U2 第22–26页：fire rhyme、jobs、job guessing、fire station、survey/`dr`/`pr`。
+S01D26–D30 与听力同页对齐 M2U3 第27–31页：friend descriptions、clothes、lion and mouse、clothes rhyme、friend profile/`br`/`cr`。
 3 星正常通关、未到 3 星可重试、第 3 次仍未到 3 星出现“先过这题”的口语门控规则保持不变。
 
 ## 6. 依赖与 Secrets

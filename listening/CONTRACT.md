@@ -1,6 +1,6 @@
 # 听力模块对接契约与功能清单（给统一架构 / Codex）
 
-> 版本 v3.6 · 2026-07-09。新增 W01D11–W01D20（4A M1U3/M2U1 同步段 + 旧坑复现）；当前推荐改为自动选择首个已可见且 formal 未完成的课程；字段或接口改动需同步本文件。
+> 版本 v3.7 · 2026-07-24。新增 W01D21–W01D30，与口语课严格同页对齐 4A M2U2 第22–26页和 M2U3 第27–31页；课程模式、推荐逻辑、评分及 data_kind 规则不变。
 > v2 变更：补全目录结构与功能清单；明确"跟读/口语不在听力模块范围"。
 > **v3 变更（两位 Codex 必读）**：
 > ① 新增儿童端听力主界面 `listening_home()`——**架构师**的统一首页"听力练习"
@@ -13,8 +13,8 @@
 >   result["corrections"] 与 result_text 备注；
 > ④ course_type 取值：diagnostic（无订正）/ training / weekly_test（后两者有订正）；
 > ⑤ 信息隔离红线增加唯一例外：订正环节展示错题原文（交卷后、仅错题）；
-> ⑥ 课程总数已 20 节（W01D01–05 为 3B 听说基线与旧坑复习周；W01D06–10 转入 4A M1U1/M1U2；W01D11–15 为 M1U3；W01D16–20 为 M2U1）；
-> ⑦ **发布员**注意：W01D11–D20 发布含新增听力成品音频 180 个 MP3，发布七步的"音频抽查"必须执行；
+> ⑥ 课程总数已 30 节（W01D01–05 为 3B 听说基线与旧坑复习周；W01D06–10 转入 4A M1U1/M1U2；W01D11–15 为 M1U3；W01D16–20 为 M2U1；W01D21–25 为 M2U2 第22–26页；W01D26–30 为 M2U3 第27–31页）；
+> ⑦ **发布员**注意：W01D21–D30 发布含新增听力成品音频 180 个 MP3，发布七步的"音频抽查"必须执行；
 > ⑧ 当前推荐课不再硬编码，列表页按编号找首个已可见且 formal 未完成课程；全部完成时提示“本阶段已完成，请等下一批课程”。
 
 ## 0. 范围声明（先读）
@@ -44,10 +44,10 @@ sherlock-missions/
     CONTRACT.md               本文件
 
   content/listening/          课程数据（每课一个 JSON；新课=加文件，零代码改动）
-    W01D01.json ... W01D20.json
+    W01D01.json ... W01D30.json
 
   static/audio/listening/     音频资产（GitHub 固定资产，网页端不可删）
-    W01D01/ ... W01D20/ q01..q16.mp3 p01.mp3 hello.mp3   每题一个成品 MP3（多角色已拼接）
+    W01D01/ ... W01D30/ q01..q16.mp3 p01.mp3 hello.mp3   每题一个成品 MP3（多角色已拼接）
     fragments/                分角色原始片段（sha1(role|text|rate) 命名，跨课复用）
     manifest.json             片段与成品的对应清单（归档课程的音频可据此人工清理）
 
@@ -92,13 +92,14 @@ sherlock-missions/
 | 15 | 听力主界面 listening_home（课程卡片/正式完成标记/再做一遍/锁定态；test 不产生完成） | page.listening_home |
 | 16 | 提交模型（提交才有记录、可重做多次提交、attempt 标记） | page._result_page |
 | 17 | **错题订正环节 v2**：第一遍盲订正（重听2遍+重做，零提示）→再错才显示仅原文+第二遍重做→结束；答案全程不展示；无提交按钮；结果（✓/✓²/✗）入 corrections+result_text 备注，不计判定 | page._correction_page |
-| 18 | 课程 W01D01–20（D01–05：3B 听说基线与旧坑复习周；D06–10：4A M1U1/M1U2；D11–15：4A M1U3；D16–20：4A M2U1；D10/D15/D20 为综合周测） | content/listening |
+| 18 | 课程 W01D01–30（D01–05：3B 基线；D06–10：4A M1U1/M1U2；D11–15：M1U3；D16–20：M2U1；D21–25：M2U2 第22–26页；D26–30：M2U3 第27–31页；D10/D15/D20/D25/D30 为综合周测） | content/listening |
 | 19 | GitHub 私有结果库持久化（成绩+课程状态，未配置自动退本地） | storage/progress |
 | 20 | `data_kind=test/formal` 隔离：旧无字段记录按 test，新提交默认 formal，家长端醒目标注 | storage/progress + page |
 | 21 | 安全家长测试入口：同一会话先过家长密码才能打开 test 课程；普通儿童入口固定 formal；test/formal 页面状态隔离 | app.py + page + storage/progress |
 | 22 | 课程按编号排序并标明当前推荐课；课程继续全部可见，不因发布新课隐藏旧课 | page |
 | 23 | 当前推荐课自动选择“第一个已可见且 formal 未完成的课程”；若孩子完成 W01D01–D09 而 W01D10 未完成，即使 W01D11–D20 已发布也仍推荐 W01D10 | page |
 | 24 | W01D11–D15 覆盖 M1U3 How do you feel?；W01D16–D20 覆盖 M2U1 Jill's family；继续复现 his/her、a/an、this/these、can+原形、like+V-ing、三单、foot/leg、bitter/butter、present | content/listening |
+| 25 | W01D21–D25 与 S01D21–D25 同页对齐 4A M2U2 第22–26页；W01D26–D30 与 S01D26–D30 同页对齐 M2U3 第27–31页；口语不提前引入后页新词 | content/listening + content/speaking |
 
 ### 计划中（听力模块侧）
 

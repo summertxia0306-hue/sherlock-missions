@@ -1,6 +1,6 @@
-# Sherlock English Missions · 听力模块
+# Sherlock English Missions · 听说模块
 
-小学英语听力训练 Streamlit 应用（沪教牛津版，三年级）。
+小学英语听说训练 Streamlit 应用（沪教牛津版）。
 
 - 部署/更新操作 → `00_部署指南_零基础版.md`
 - **与统一系统对接（Codex 必读）→ `listening/CONTRACT.md`**：完整目录结构注释、
@@ -8,7 +8,7 @@
 - 范围说明：本模块只做听力；跟读/口语/录音归口语模块（Codex）
 - 设计与决策记录 → 项目文件夹 `听力部分/10_Streamlit迁移设计_v1_待确认.md`
 - 新课开发流程：AI 写 `content/listening/W0xD0x.json` → `tools/生成音频_v2.bat` → commit+push
-- 当前课程：听力 `W01D01–W01D20`，口语 `S01D01–S01D20`；`01–05` 保留为 3B 听说基线与旧坑复习周，`06–10` 为 4A M1U1/M1U2 同步段，`11–15` 为 4A M1U3，`16–20` 为 4A M2U1。口语 S16 因已有 formal 记录保持原样；S17–S20 已按教材第17–21页依次优化为 family questions、Jill's family photos、Mid-autumn Day、rhyme/`-sh` 复习。
+- 当前课程：听力 `W01D01–W01D30`，口语 `S01D01–S01D30`；`01–05` 保留为 3B 听说基线与旧坑复习周，`06–10` 为 4A M1U1/M1U2，`11–15` 为 M1U3，`16–20` 为 M2U1。口语 S16 因已有 formal 记录保持原样，S17–S20 已按教材第17–21页优化。`21–25` 严格同页对齐 4A M2U2 第22–26页，`26–30` 严格同页对齐 M2U3 第27–31页。
 - 当前推荐：自动选择“第一个已可见且 formal 未完成的课程”；如果本阶段全部完成，则提示等待下一批课程。所有课程继续按编号顺序展示，不隐藏旧课。
 
 结构：`app.py` 临时入口（统一架构将替换）；`listening/` 引擎+页面+受限播放组件；

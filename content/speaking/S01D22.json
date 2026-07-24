@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D22",
+  "title": "口语练习 · Jobs",
+  "week": 3,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-07-24",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "What does your father do?",
+      "audio": "static/audio/speaking/S01D22/q01.mp3",
+      "tag": "教材P23·跟读",
+      "parent_note": "教材第23页"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "He is a firefighter.",
+      "audio": "static/audio/speaking/S01D22/q02.mp3",
+      "tag": "教材P23·跟读",
+      "parent_note": "教材第23页"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "What does your mother do?",
+      "audio": "static/audio/speaking/S01D22/q03.mp3",
+      "tag": "教材P23·跟读",
+      "parent_note": "教材第23页"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "She is a nurse.",
+      "audio": "static/audio/speaking/S01D22/q04.mp3",
+      "tag": "教材P23·跟读",
+      "parent_note": "教材第23页"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "He is a teacher.",
+      "audio": "static/audio/speaking/S01D22/q05.mp3",
+      "tag": "教材P23·跟读",
+      "parent_note": "教材第23页"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "She is a doctor.",
+      "audio": "static/audio/speaking/S01D22/q06.mp3",
+      "tag": "教材P23·跟读",
+      "parent_note": "教材第23页"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "What does Jill's father do?",
+      "expected": "He is a firefighter.",
+      "hint": "用英语说：他是一名消防员。",
+      "audio": "static/audio/speaking/S01D22/q07.mp3",
+      "tag": "教材P23·问答",
+      "parent_note": "教材第23页"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "What does Jill's mother do?",
+      "expected": "She is a nurse.",
+      "hint": "用英语说：她是一名护士。",
+      "audio": "static/audio/speaking/S01D22/q08.mp3",
+      "tag": "教材P23·问答",
+      "parent_note": "教材第23页"
+    }
+  ]
+}

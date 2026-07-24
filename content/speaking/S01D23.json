@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D23",
+  "title": "口语练习 · Job guessing",
+  "week": 3,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-07-24",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "What does Mrs White do?",
+      "audio": "static/audio/speaking/S01D23/q01.mp3",
+      "tag": "教材P24·跟读",
+      "parent_note": "教材第24页"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "Is she a nurse?",
+      "audio": "static/audio/speaking/S01D23/q02.mp3",
+      "tag": "教材P24·跟读",
+      "parent_note": "教材第24页"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "No, she isn't.",
+      "audio": "static/audio/speaking/S01D23/q03.mp3",
+      "tag": "教材P24·跟读",
+      "parent_note": "教材第24页"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "She is a teacher.",
+      "audio": "static/audio/speaking/S01D23/q04.mp3",
+      "tag": "教材P24·跟读",
+      "parent_note": "教材第24页"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "Is he a police officer?",
+      "audio": "static/audio/speaking/S01D23/q05.mp3",
+      "tag": "教材P24·跟读",
+      "parent_note": "教材第24页"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Yes, he is.",
+      "audio": "static/audio/speaking/S01D23/q06.mp3",
+      "tag": "教材P24·跟读",
+      "parent_note": "教材第24页"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "Is Mrs White a nurse?",
+      "expected": "No, she isn't.",
+      "hint": "用英语说：不，她不是。",
+      "audio": "static/audio/speaking/S01D23/q07.mp3",
+      "tag": "教材P24·问答",
+      "parent_note": "教材第24页"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "What does Mrs White do?",
+      "expected": "She is a teacher.",
+      "hint": "用英语说：她是一名老师。",
+      "audio": "static/audio/speaking/S01D23/q08.mp3",
+      "tag": "教材P24·问答",
+      "parent_note": "教材第24页"
+    }
+  ]
+}

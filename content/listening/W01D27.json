@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D27",
+  "title": "听力训练 · M2U3 Clothes",
+  "week": 3,
+  "day": 7,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "4A M2U3 教材第28页 + 已学内容复现",
+  "difficulty": "L1",
+  "open_date": "2026-07-24",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D27/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "coat",
+            "cook",
+            "kite"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "coat"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D27/q01.mp3",
+          "tag": "M2U3·coat",
+          "parent_note": "教材第28页"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "blouse",
+            "blue",
+            "bus"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "blouse"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D27/q02.mp3",
+          "tag": "M2U3·blouse",
+          "parent_note": "教材第28页"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "sweater",
+            "student",
+            "water"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "sweater"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D27/q03.mp3",
+          "tag": "M2U3·sweater",
+          "parent_note": "教材第28页"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "jeans",
+            "green",
+            "engine"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "jeans"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D27/q04.mp3",
+          "tag": "M2U3·jeans",
+          "parent_note": "教材第28页"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "This is a coat.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "This is a coat."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D27/q05.mp3",
+          "tag": "M2U3·coat",
+          "parent_note": "教材第28页"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "These are jeans.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "These are jeans."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D27/q06.mp3",
+          "tag": "M2U3·jeans",
+          "parent_note": "教材第28页"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "This is a pair of shorts.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "These are shorts."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D27/q07.mp3",
+          "tag": "旧坑复现·this/these",
+          "parent_note": "教材第28页"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "She has a purple skirt.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "She has a purple skirt."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D27/q08.mp3",
+          "tag": "M2U3·has skirt",
+          "parent_note": "教材第28页"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "She has a blouse.",
+            "He has a shirt.",
+            "She is a nurse."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does she have?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D27/q09.mp3",
+          "tag": "M2U3·has blouse",
+          "parent_note": "教材第28页"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "It's green and grey.",
+            "They're blue.",
+            "He's tall."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What colour is his T-shirt?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D27/q10.mp3",
+          "tag": "M2U3·colours",
+          "parent_note": "教材第28页"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "Yes, they are.",
+            "Yes, it is.",
+            "Yes, she does."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Are these jeans?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D27/q11.mp3",
+          "tag": "旧坑复现·these",
+          "parent_note": "教材第28页"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "Yes, she does.",
+            "Yes, she is.",
+            "Yes, she can."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Does she have a skirt?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D27/q12.mp3",
+          "tag": "M2U3·does + has",
+          "parent_note": "教材第28页"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "question_text": "What does the friend have?",
+          "options": [
+            "A dress.",
+            "A coat.",
+            "A sweater."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "What does your friend have?"
+            ],
+            [
+              "m",
+              "She has a red and white dress."
+            ],
+            [
+              "n",
+              "Question: What does the friend have?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D27/q13.mp3",
+          "tag": "M2U3·dress",
+          "parent_note": "教材第28页"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "question_text": "What colour is the T-shirt?",
+          "options": [
+            "Green and grey.",
+            "Blue and white.",
+            "Pink and red."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Does he have a T-shirt?"
+            ],
+            [
+              "f",
+              "Yes. It's green and grey."
+            ],
+            [
+              "n",
+              "Question: What colour is the T-shirt?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D27/q14.mp3",
+          "tag": "M2U3·T-shirt colours",
+          "parent_note": "教材第28页"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "question_text": "What colour are the jeans?",
+          "options": [
+            "Blue.",
+            "Green.",
+            "Pink."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Look at these jeans."
+            ],
+            [
+              "m",
+              "They are blue."
+            ],
+            [
+              "n",
+              "Question: What colour are the jeans?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D27/q15.mp3",
+          "tag": "M2U3·jeans",
+          "parent_note": "教材第28页"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "question_text": "What colour is the skirt?",
+          "options": [
+            "Purple.",
+            "Yellow.",
+            "Grey."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "She has a purple skirt."
+            ],
+            [
+              "f",
+              "Yes, and she has a yellow blouse."
+            ],
+            [
+              "n",
+              "Question: What colour is the skirt?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D27/q16.mp3",
+          "tag": "M2U3·skirt",
+          "parent_note": "教材第28页"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [
+        [
+          "n",
+          "Four children play a guessing game. May has a red and white dress. Ben has a green and grey T-shirt. Kitty has a purple skirt. Joe has a blue and white shirt. They also have coats, sweaters, jeans and shorts."
+        ]
+      ],
+      "passage_audio": "static/audio/listening/W01D27/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "May has a red and white dress.",
+          "answer": "true",
+          "tag": "短文·dress",
+          "parent_note": "教材第28页"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "Ben has a blue T-shirt.",
+          "answer": "false",
+          "tag": "短文·green T-shirt",
+          "parent_note": "教材第28页；原文是green and grey"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "Kitty has a purple skirt.",
+          "answer": "true",
+          "tag": "短文·skirt",
+          "parent_note": "教材第28页"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "Joe has a blue and white shirt.",
+          "answer": "true",
+          "tag": "短文·shirt",
+          "parent_note": "教材第28页"
+        }
+      ]
+    }
+  ]
+}

@@ -794,6 +794,366 @@
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
    "text": "Who is Bess?"
+  },
+  "7d8f7cef858f878d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Look at the fire."
+  },
+  "c5bea9444f901dbf": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Call the fire station."
+  },
+  "62c295cf24bcc7a4": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "One, one, nine!"
+  },
+  "7be2dc37eea482a0": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Bring the fire engine."
+  },
+  "a444681999ab4289": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The brave firefighters are here."
+  },
+  "a8098e057177efc9": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Put out the fire!"
+  },
+  "712110f6337f171e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can you see?"
+  },
+  "244190fee59a2534": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who can put out the fire?"
+  },
+  "3e1736b24f430a7f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does your father do?"
+  },
+  "7ce29dfb1b31344c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "He is a firefighter."
+  },
+  "fadaa3f8f3c656bc": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does your mother do?"
+  },
+  "53f9eec5b2237195": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She is a nurse."
+  },
+  "c147e2e0f3b5eb4f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "He is a teacher."
+  },
+  "fbc98c4003f434fd": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She is a doctor."
+  },
+  "f34fe4d474c12eea": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does Jill's father do?"
+  },
+  "19a2f1f43034763a": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does Jill's mother do?"
+  },
+  "fdc2f145d930d60b": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does Mrs White do?"
+  },
+  "7812eb891e4f6904": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is she a nurse?"
+  },
+  "c59c78cb593b4bc0": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "No, she isn't."
+  },
+  "03164513a2eed743": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She is a teacher."
+  },
+  "71181b76814efa02": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is he a police officer?"
+  },
+  "382f2f96cf128a55": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Yes, he is."
+  },
+  "097b53c35d56c24d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is Mrs White a nurse?"
+  },
+  "b8085d47f7519fc9": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is a fire station."
+  },
+  "0eed8e8379c15fee": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "You're welcome."
+  },
+  "b815b7ed54ef8522": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is a fire engine."
+  },
+  "91aedc900ad4f797": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Fire is dangerous."
+  },
+  "f595b42d668b23c4": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I'm a firefighter. I can help people."
+  },
+  "9511397d68fcf706": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Don't play with fire, children."
+  },
+  "2d0db475257fb2c3": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Are you afraid, Mr Xu?"
+  },
+  "04f6be69e57ed6b5": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Does Mr Xu like his job?"
+  },
+  "39508160dd8028bf": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The princess has a dream."
+  },
+  "2798c077c9df3d3a": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She buys a pretty dress."
+  },
+  "32e8ea3284be9db3": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She likes the dress."
+  },
+  "b401276cdab21b83": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She doesn't care about the price."
+  },
+  "d8b07def1510a947": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does the princess buy?"
+  },
+  "af5d584bc9263b5e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I have a friend."
+  },
+  "65dd08fcf753e8d4": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "His name's Tom."
+  },
+  "a25e0f7ad8898775": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "He's tall and thin."
+  },
+  "703700a7c8177524": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "He has a green T-shirt."
+  },
+  "fcdb9f40164f63f7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Peter can ride a bicycle."
+  },
+  "32de833360f2e70b": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Sally can fly a kite."
+  },
+  "ce0e346fdba1eec7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can Tom do?"
+  },
+  "6fe39ed9fecd26fd": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who has a pink skirt?"
+  },
+  "8b410f7caf4f92f2": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is a coat."
+  },
+  "af76655f9eef0c60": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is a blouse."
+  },
+  "ce1d47778a62afe7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She has a purple skirt."
+  },
+  "1ffbd1c9ce8e50ca": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "These are jeans."
+  },
+  "e9f0994a1c5903c4": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "These are shorts."
+  },
+  "bc53116a83dff44f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does she have?"
+  },
+  "c9cf7bb9ff783c5f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does he have?"
+  },
+  "bbdeb15ae13d99f4": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is a lion."
+  },
+  "2667eec4f6485a2c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It is big and strong."
+  },
+  "508e0dc530f2ad16": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It has big teeth."
+  },
+  "835925af0343400c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is a mouse."
+  },
+  "8630f4710084198b": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It has small but sharp teeth."
+  },
+  "e3c31f1d6c4a23b5": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The mouse can bite."
+  },
+  "25b965ad1f2143a0": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who is in the net?"
+  },
+  "67045f91092a150f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Can the mouse help the lion?"
+  },
+  "f4bffab61dedb9b8": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Short shorts today."
+  },
+  "13930a2763c01021": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "They're wearing short shorts today."
+  },
+  "203a5ce2832d0a56": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The girls are wearing long jackets."
+  },
+  "a370e019bf2e1979": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The girls are wearing white T-shirts."
+  },
+  "ed53eaedc6612ebb": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The boys are wearing black T-shirts."
+  },
+  "d52d220c4166372a": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The kids are wearing long socks."
+  },
+  "ae21e2c1ed9a17b6": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What are the girls wearing?"
+  },
+  "1ba3b1aef0f23290": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What are the boys wearing?"
+  },
+  "150c8c78b6e023cf": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "His name is Tom."
+  },
+  "1d7b36ab1a74ad52": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "He has a green T-shirt and he can skate."
+  },
+  "c5b39825c2c9bb7c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Bryan likes ice cream."
+  },
+  "0687f054dd11f841": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "He likes bread too."
+  },
+  "dcc8701f0c3746a3": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does Tom have?"
   }
  },
  "courses": {
@@ -996,6 +1356,106 @@
    "static/audio/speaking/S01D20/q06.mp3": "1a50659c52f4fab7",
    "static/audio/speaking/S01D20/q07.mp3": "22102a41caa246d3",
    "static/audio/speaking/S01D20/q08.mp3": "b01e242434d56dc1"
+  },
+  "S01D21": {
+   "static/audio/speaking/S01D21/q01.mp3": "7d8f7cef858f878d",
+   "static/audio/speaking/S01D21/q02.mp3": "c5bea9444f901dbf",
+   "static/audio/speaking/S01D21/q03.mp3": "62c295cf24bcc7a4",
+   "static/audio/speaking/S01D21/q04.mp3": "7be2dc37eea482a0",
+   "static/audio/speaking/S01D21/q05.mp3": "a444681999ab4289",
+   "static/audio/speaking/S01D21/q06.mp3": "a8098e057177efc9",
+   "static/audio/speaking/S01D21/q07.mp3": "712110f6337f171e",
+   "static/audio/speaking/S01D21/q08.mp3": "244190fee59a2534"
+  },
+  "S01D22": {
+   "static/audio/speaking/S01D22/q01.mp3": "3e1736b24f430a7f",
+   "static/audio/speaking/S01D22/q02.mp3": "7ce29dfb1b31344c",
+   "static/audio/speaking/S01D22/q03.mp3": "fadaa3f8f3c656bc",
+   "static/audio/speaking/S01D22/q04.mp3": "53f9eec5b2237195",
+   "static/audio/speaking/S01D22/q05.mp3": "c147e2e0f3b5eb4f",
+   "static/audio/speaking/S01D22/q06.mp3": "fbc98c4003f434fd",
+   "static/audio/speaking/S01D22/q07.mp3": "f34fe4d474c12eea",
+   "static/audio/speaking/S01D22/q08.mp3": "19a2f1f43034763a"
+  },
+  "S01D23": {
+   "static/audio/speaking/S01D23/q01.mp3": "fdc2f145d930d60b",
+   "static/audio/speaking/S01D23/q02.mp3": "7812eb891e4f6904",
+   "static/audio/speaking/S01D23/q03.mp3": "c59c78cb593b4bc0",
+   "static/audio/speaking/S01D23/q04.mp3": "03164513a2eed743",
+   "static/audio/speaking/S01D23/q05.mp3": "71181b76814efa02",
+   "static/audio/speaking/S01D23/q06.mp3": "382f2f96cf128a55",
+   "static/audio/speaking/S01D23/q07.mp3": "097b53c35d56c24d",
+   "static/audio/speaking/S01D23/q08.mp3": "fdc2f145d930d60b"
+  },
+  "S01D24": {
+   "static/audio/speaking/S01D24/q01.mp3": "b8085d47f7519fc9",
+   "static/audio/speaking/S01D24/q02.mp3": "0eed8e8379c15fee",
+   "static/audio/speaking/S01D24/q03.mp3": "b815b7ed54ef8522",
+   "static/audio/speaking/S01D24/q04.mp3": "91aedc900ad4f797",
+   "static/audio/speaking/S01D24/q05.mp3": "f595b42d668b23c4",
+   "static/audio/speaking/S01D24/q06.mp3": "9511397d68fcf706",
+   "static/audio/speaking/S01D24/q07.mp3": "2d0db475257fb2c3",
+   "static/audio/speaking/S01D24/q08.mp3": "04f6be69e57ed6b5"
+  },
+  "S01D25": {
+   "static/audio/speaking/S01D25/q01.mp3": "3e1736b24f430a7f",
+   "static/audio/speaking/S01D25/q02.mp3": "7ce29dfb1b31344c",
+   "static/audio/speaking/S01D25/q03.mp3": "39508160dd8028bf",
+   "static/audio/speaking/S01D25/q04.mp3": "2798c077c9df3d3a",
+   "static/audio/speaking/S01D25/q05.mp3": "32e8ea3284be9db3",
+   "static/audio/speaking/S01D25/q06.mp3": "b401276cdab21b83",
+   "static/audio/speaking/S01D25/q07.mp3": "f34fe4d474c12eea",
+   "static/audio/speaking/S01D25/q08.mp3": "d8b07def1510a947"
+  },
+  "S01D26": {
+   "static/audio/speaking/S01D26/q01.mp3": "af5d584bc9263b5e",
+   "static/audio/speaking/S01D26/q02.mp3": "65dd08fcf753e8d4",
+   "static/audio/speaking/S01D26/q03.mp3": "a25e0f7ad8898775",
+   "static/audio/speaking/S01D26/q04.mp3": "703700a7c8177524",
+   "static/audio/speaking/S01D26/q05.mp3": "fcdb9f40164f63f7",
+   "static/audio/speaking/S01D26/q06.mp3": "32de833360f2e70b",
+   "static/audio/speaking/S01D26/q07.mp3": "ce0e346fdba1eec7",
+   "static/audio/speaking/S01D26/q08.mp3": "6fe39ed9fecd26fd"
+  },
+  "S01D27": {
+   "static/audio/speaking/S01D27/q01.mp3": "8b410f7caf4f92f2",
+   "static/audio/speaking/S01D27/q02.mp3": "af76655f9eef0c60",
+   "static/audio/speaking/S01D27/q03.mp3": "703700a7c8177524",
+   "static/audio/speaking/S01D27/q04.mp3": "ce1d47778a62afe7",
+   "static/audio/speaking/S01D27/q05.mp3": "1ffbd1c9ce8e50ca",
+   "static/audio/speaking/S01D27/q06.mp3": "e9f0994a1c5903c4",
+   "static/audio/speaking/S01D27/q07.mp3": "bc53116a83dff44f",
+   "static/audio/speaking/S01D27/q08.mp3": "c9cf7bb9ff783c5f"
+  },
+  "S01D28": {
+   "static/audio/speaking/S01D28/q01.mp3": "bbdeb15ae13d99f4",
+   "static/audio/speaking/S01D28/q02.mp3": "2667eec4f6485a2c",
+   "static/audio/speaking/S01D28/q03.mp3": "508e0dc530f2ad16",
+   "static/audio/speaking/S01D28/q04.mp3": "835925af0343400c",
+   "static/audio/speaking/S01D28/q05.mp3": "8630f4710084198b",
+   "static/audio/speaking/S01D28/q06.mp3": "e3c31f1d6c4a23b5",
+   "static/audio/speaking/S01D28/q07.mp3": "25b965ad1f2143a0",
+   "static/audio/speaking/S01D28/q08.mp3": "67045f91092a150f"
+  },
+  "S01D29": {
+   "static/audio/speaking/S01D29/q01.mp3": "f4bffab61dedb9b8",
+   "static/audio/speaking/S01D29/q02.mp3": "13930a2763c01021",
+   "static/audio/speaking/S01D29/q03.mp3": "203a5ce2832d0a56",
+   "static/audio/speaking/S01D29/q04.mp3": "a370e019bf2e1979",
+   "static/audio/speaking/S01D29/q05.mp3": "ed53eaedc6612ebb",
+   "static/audio/speaking/S01D29/q06.mp3": "d52d220c4166372a",
+   "static/audio/speaking/S01D29/q07.mp3": "ae21e2c1ed9a17b6",
+   "static/audio/speaking/S01D29/q08.mp3": "1ba3b1aef0f23290"
+  },
+  "S01D30": {
+   "static/audio/speaking/S01D30/q01.mp3": "af5d584bc9263b5e",
+   "static/audio/speaking/S01D30/q02.mp3": "150c8c78b6e023cf",
+   "static/audio/speaking/S01D30/q03.mp3": "a25e0f7ad8898775",
+   "static/audio/speaking/S01D30/q04.mp3": "1d7b36ab1a74ad52",
+   "static/audio/speaking/S01D30/q05.mp3": "c5b39825c2c9bb7c",
+   "static/audio/speaking/S01D30/q06.mp3": "0687f054dd11f841",
+   "static/audio/speaking/S01D30/q07.mp3": "dcc8701f0c3746a3",
+   "static/audio/speaking/S01D30/q08.mp3": "ce0e346fdba1eec7"
   }
  }
 }

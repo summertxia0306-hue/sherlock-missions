@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D25",
+  "title": "听力周测卷 · M2U2 Jobs",
+  "week": 3,
+  "day": 5,
+  "course_type": "weekly_test",
+  "est_minutes": 20,
+  "scope": "4A M2U2 教材第22-26页综合",
+  "difficulty": "L1",
+  "open_date": "2026-07-24",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D25/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "dress",
+            "driver",
+            "dream"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "dress"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D25/q01.mp3",
+          "tag": "M2U2·dr sound",
+          "parent_note": "教材第26页"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "princess",
+            "present",
+            "police"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "princess"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D25/q02.mp3",
+          "tag": "M2U2·pr sound",
+          "parent_note": "教材第26页"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "dream",
+            "drink",
+            "driver"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "dream"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D25/q03.mp3",
+          "tag": "M2U2·dr sound",
+          "parent_note": "教材第26页"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "price",
+            "please",
+            "police"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "price"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D25/q04.mp3",
+          "tag": "M2U2·pr sound",
+          "parent_note": "教材第26页"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "The princess has a dream.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The princess has a dream."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D25/q05.mp3",
+          "tag": "M2U2·princess dream",
+          "parent_note": "教材第26页"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "She buys a pretty dress.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "She buys a pretty dress."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D25/q06.mp3",
+          "tag": "M2U2·pretty dress",
+          "parent_note": "教材第26页"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "She doesn't like the dress.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "She likes the dress."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D25/q07.mp3",
+          "tag": "M2U2·likes",
+          "parent_note": "教材第26页"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "Jill's father is a firefighter.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Jill's father is a firefighter."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D25/q08.mp3",
+          "tag": "M2U2·family job",
+          "parent_note": "教材第26页"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "He is a firefighter.",
+            "She is a nurse.",
+            "He has a dress."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does your father do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D25/q09.mp3",
+          "tag": "M2U2·What does",
+          "parent_note": "教材第26页"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "Yes, she does.",
+            "Yes, she is.",
+            "Yes, she can."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Does the princess like the dress?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D25/q10.mp3",
+          "tag": "M2U2·does",
+          "parent_note": "教材第26页"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "She buys a pretty dress.",
+            "She buys a fire engine.",
+            "She buys some water."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does the princess buy?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D25/q11.mp3",
+          "tag": "M2U2·pretty dress",
+          "parent_note": "教材第26页"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "No, she doesn't.",
+            "No, she isn't.",
+            "No, she can't."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Does she care about the price?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D25/q12.mp3",
+          "tag": "M2U2·doesn't",
+          "parent_note": "教材第26页"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "question_text": "What does Jill's father do?",
+          "options": [
+            "A firefighter.",
+            "A teacher.",
+            "A bus driver."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "What does Jill's father do?"
+            ],
+            [
+              "m",
+              "He is a firefighter."
+            ],
+            [
+              "n",
+              "Question: What does Jill's father do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D25/q13.mp3",
+          "tag": "M2U2·father job",
+          "parent_note": "教材第26页"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "question_text": "What does Mrs White do?",
+          "options": [
+            "A teacher.",
+            "A nurse.",
+            "A doctor."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Is Mrs White a nurse?"
+            ],
+            [
+              "f",
+              "No, she isn't. She is a teacher."
+            ],
+            [
+              "n",
+              "Question: What does Mrs White do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D25/q14.mp3",
+          "tag": "M2U2·job guessing",
+          "parent_note": "教材第26页"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "question_text": "What does she buy?",
+          "options": [
+            "A pretty dress.",
+            "A fire engine.",
+            "A family photo."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "The princess has a dream."
+            ],
+            [
+              "m",
+              "She buys a pretty dress in her dream."
+            ],
+            [
+              "n",
+              "Question: What does she buy?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D25/q15.mp3",
+          "tag": "M2U2·pretty dress",
+          "parent_note": "教材第26页"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "question_text": "What does the woman say?",
+          "options": [
+            "You're welcome.",
+            "I'm full.",
+            "Good morning."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Thank you, Mr Xu."
+            ],
+            [
+              "f",
+              "You're welcome."
+            ],
+            [
+              "n",
+              "Question: What does the woman say?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D25/q16.mp3",
+          "tag": "M2U2·You're welcome",
+          "parent_note": "教材第26页"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [
+        [
+          "n",
+          "Jill's father is a firefighter and her mother is a nurse. Jill asks her classmates about their families' jobs. At night, a princess has a dream. In her dream, she buys a pretty dress. She likes the dress and doesn't care about the price."
+        ]
+      ],
+      "passage_audio": "static/audio/listening/W01D25/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "Jill's father is a firefighter.",
+          "answer": "true",
+          "tag": "周测·firefighter",
+          "parent_note": "教材第26页"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "Jill's mother is a teacher.",
+          "answer": "false",
+          "tag": "周测·nurse",
+          "parent_note": "教材第26页；原文是nurse"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "The princess buys a pretty dress.",
+          "answer": "true",
+          "tag": "周测·pretty dress",
+          "parent_note": "教材第26页"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "The princess doesn't like the dress.",
+          "answer": "false",
+          "tag": "周测·likes",
+          "parent_note": "教材第26页；原文是likes"
+        }
+      ]
+    }
+  ]
+}

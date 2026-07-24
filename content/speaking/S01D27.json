@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D27",
+  "title": "口语练习 · Clothes",
+  "week": 3,
+  "day": 7,
+  "course_type": "training",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-07-24",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "This is a coat.",
+      "audio": "static/audio/speaking/S01D27/q01.mp3",
+      "tag": "教材P28·跟读",
+      "parent_note": "教材第28页"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "This is a blouse.",
+      "audio": "static/audio/speaking/S01D27/q02.mp3",
+      "tag": "教材P28·跟读",
+      "parent_note": "教材第28页"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "He has a green T-shirt.",
+      "audio": "static/audio/speaking/S01D27/q03.mp3",
+      "tag": "教材P28·跟读",
+      "parent_note": "教材第28页"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "She has a purple skirt.",
+      "audio": "static/audio/speaking/S01D27/q04.mp3",
+      "tag": "教材P28·跟读",
+      "parent_note": "教材第28页"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "These are jeans.",
+      "audio": "static/audio/speaking/S01D27/q05.mp3",
+      "tag": "教材P28·跟读",
+      "parent_note": "教材第28页"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "These are shorts.",
+      "audio": "static/audio/speaking/S01D27/q06.mp3",
+      "tag": "教材P28·跟读",
+      "parent_note": "教材第28页"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "What does she have?",
+      "expected": "She has a red and white dress.",
+      "hint": "用英语说：她有一条红白相间的裙子。",
+      "audio": "static/audio/speaking/S01D27/q07.mp3",
+      "tag": "教材P28·问答",
+      "parent_note": "教材第28页"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "What does he have?",
+      "expected": "He has a blue and white shirt.",
+      "hint": "用英语说：他有一件蓝白相间的衬衫。",
+      "audio": "static/audio/speaking/S01D27/q08.mp3",
+      "tag": "教材P28·问答",
+      "parent_note": "教材第28页"
+    }
+  ]
+}

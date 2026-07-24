@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D23",
+  "title": "听力训练 · M2U2 Job guessing",
+  "week": 3,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "4A M2U2 教材第24页 + 已学内容复现",
+  "difficulty": "L1",
+  "open_date": "2026-07-24",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D23/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "nurse",
+            "nice",
+            "name"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "nurse"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D23/q01.mp3",
+          "tag": "M2U2·nurse",
+          "parent_note": "教材第24页"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "teacher",
+            "thirsty",
+            "tired"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "teacher"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D23/q02.mp3",
+          "tag": "M2U2·teacher",
+          "parent_note": "教材第24页"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "police officer",
+            "bus driver",
+            "firefighter"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "police officer"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D23/q03.mp3",
+          "tag": "M2U2·police officer",
+          "parent_note": "教材第24页"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "firefighter",
+            "fire engine",
+            "fire station"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "firefighter"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D23/q04.mp3",
+          "tag": "M2U2·firefighter",
+          "parent_note": "教材第24页"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "Mrs White is a teacher.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Mrs White is a teacher."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D23/q05.mp3",
+          "tag": "M2U2·Mrs White",
+          "parent_note": "教材第24页"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "Mrs White is a nurse.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Mrs White is a teacher."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D23/q06.mp3",
+          "tag": "M2U2·not nurse",
+          "parent_note": "教材第24页"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "Is she a nurse?",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Is she a nurse?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D23/q07.mp3",
+          "tag": "M2U2·Is she",
+          "parent_note": "教材第24页"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "No, she isn't.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "No, she isn't."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D23/q08.mp3",
+          "tag": "M2U2·No she isn't",
+          "parent_note": "教材第24页"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "No, she isn't.",
+            "Yes, she does.",
+            "No, she can't."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Is Mrs White a nurse?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D23/q09.mp3",
+          "tag": "M2U2·Is she",
+          "parent_note": "教材第24页"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "She is a teacher.",
+            "He is a doctor.",
+            "She can draw."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does Mrs White do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D23/q10.mp3",
+          "tag": "M2U2·teacher",
+          "parent_note": "教材第24页"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "Yes, he is.",
+            "Yes, he does.",
+            "Yes, he can."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Is Mr Black a police officer?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D23/q11.mp3",
+          "tag": "M2U2·Is he",
+          "parent_note": "教材第24页"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "She is a doctor.",
+            "She has a cousin.",
+            "She is happy."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does Miss Wang do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D23/q12.mp3",
+          "tag": "M2U2·doctor",
+          "parent_note": "教材第24页"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "question_text": "What does Mrs White do?",
+          "options": [
+            "A teacher.",
+            "A nurse.",
+            "A cook."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "What does Mrs White do? Is she a nurse?"
+            ],
+            [
+              "m",
+              "No, she isn't. She is a teacher."
+            ],
+            [
+              "n",
+              "Question: What does Mrs White do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D23/q13.mp3",
+          "tag": "M2U2·job guessing",
+          "parent_note": "教材第24页"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "question_text": "Is Mr Zhang a teacher?",
+          "options": [
+            "No, he isn't.",
+            "Yes, he is.",
+            "He is a student."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Is Mr Zhang a teacher?"
+            ],
+            [
+              "f",
+              "No, he isn't. He is a doctor."
+            ],
+            [
+              "n",
+              "Question: Is Mr Zhang a teacher?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D23/q14.mp3",
+          "tag": "M2U2·No he isn't",
+          "parent_note": "教材第24页"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "question_text": "What does Mr Black do?",
+          "options": [
+            "A police officer.",
+            "A bus driver.",
+            "A nurse."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Is Mr Black a police officer?"
+            ],
+            [
+              "m",
+              "Yes, he is."
+            ],
+            [
+              "n",
+              "Question: What does Mr Black do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D23/q15.mp3",
+          "tag": "M2U2·police officer",
+          "parent_note": "教材第24页"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "question_text": "Who is a doctor?",
+          "options": [
+            "Miss Wang.",
+            "Mrs White.",
+            "Mr Black."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "What does Miss Wang do?"
+            ],
+            [
+              "f",
+              "She is a doctor."
+            ],
+            [
+              "n",
+              "Question: Who is a doctor?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D23/q16.mp3",
+          "tag": "M2U2·doctor",
+          "parent_note": "教材第24页"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [
+        [
+          "n",
+          "The children play a job game. Mrs White is a teacher. Mr Zhang is a doctor. Mr Black is a police officer. Miss Wang is a nurse."
+        ]
+      ],
+      "passage_audio": "static/audio/listening/W01D23/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "The children play a job game.",
+          "answer": "true",
+          "tag": "短文·job game",
+          "parent_note": "教材第24页"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "Mrs White is a nurse.",
+          "answer": "false",
+          "tag": "短文·teacher",
+          "parent_note": "教材第24页；原文是teacher"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "Mr Black is a police officer.",
+          "answer": "true",
+          "tag": "短文·police officer",
+          "parent_note": "教材第24页"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "Miss Wang is a nurse.",
+          "answer": "true",
+          "tag": "短文·nurse",
+          "parent_note": "教材第24页"
+        }
+      ]
+    }
+  ]
+}

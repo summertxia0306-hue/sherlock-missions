@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D22",
+  "title": "听力训练 · M2U2 Jobs",
+  "week": 3,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "4A M2U2 教材第23页 + 已学内容复现",
+  "difficulty": "L1",
+  "open_date": "2026-07-24",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D22/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "doctor",
+            "daughter",
+            "driver"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "doctor"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D22/q01.mp3",
+          "tag": "M2U2·doctor",
+          "parent_note": "教材第23页"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "nurse",
+            "number",
+            "name"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "nurse"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D22/q02.mp3",
+          "tag": "M2U2·nurse",
+          "parent_note": "教材第23页"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "teacher",
+            "thirsty",
+            "tired"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "teacher"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D22/q03.mp3",
+          "tag": "M2U2·teacher",
+          "parent_note": "教材第23页"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "bus driver",
+            "fire engine",
+            "police officer"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "bus driver"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D22/q04.mp3",
+          "tag": "M2U2·bus driver",
+          "parent_note": "教材第23页"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "He is a firefighter.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "He is a firefighter."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D22/q05.mp3",
+          "tag": "M2U2·father job",
+          "parent_note": "教材第23页"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "She is a nurse.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "She is a nurse."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D22/q06.mp3",
+          "tag": "M2U2·mother job",
+          "parent_note": "教材第23页"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "Peter's father is a cook.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Peter's father is a teacher."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D22/q07.mp3",
+          "tag": "M2U2·teacher",
+          "parent_note": "教材第23页"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "Peter's mother is a doctor.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Peter's mother is a doctor."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D22/q08.mp3",
+          "tag": "M2U2·doctor",
+          "parent_note": "教材第23页"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "He is a firefighter.",
+            "She is a nurse.",
+            "He can swim."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does your father do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D22/q09.mp3",
+          "tag": "M2U2·What does",
+          "parent_note": "教材第23页"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "She is a nurse.",
+            "He is a teacher.",
+            "She has a skirt."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does your mother do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D22/q10.mp3",
+          "tag": "M2U2·mother job",
+          "parent_note": "教材第23页"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "Yes, he is.",
+            "Yes, he does.",
+            "Yes, he can."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Is Jill's father a firefighter?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D22/q11.mp3",
+          "tag": "M2U2·Is he",
+          "parent_note": "教材第23页"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "Jill is.",
+            "Jill's father is.",
+            "Jill's mother is."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who is a student?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D22/q12.mp3",
+          "tag": "M2U2·student",
+          "parent_note": "教材第23页"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "question_text": "What does Jill's father do?",
+          "options": [
+            "A firefighter.",
+            "A teacher.",
+            "A doctor."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "What does your father do, Jill?"
+            ],
+            [
+              "m",
+              "He is a firefighter."
+            ],
+            [
+              "n",
+              "Question: What does Jill's father do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D22/q13.mp3",
+          "tag": "M2U2·Jill father",
+          "parent_note": "教材第23页"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "question_text": "What does the mother do?",
+          "options": [
+            "A nurse.",
+            "A cook.",
+            "A student."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "What does your mother do?"
+            ],
+            [
+              "f",
+              "She is a nurse."
+            ],
+            [
+              "n",
+              "Question: What does the mother do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D22/q14.mp3",
+          "tag": "M2U2·nurse",
+          "parent_note": "教材第23页"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "question_text": "Is Peter's father a teacher?",
+          "options": [
+            "Yes, he is.",
+            "No, he isn't.",
+            "He is a driver."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Is Peter's father a teacher?"
+            ],
+            [
+              "m",
+              "Yes, he is."
+            ],
+            [
+              "n",
+              "Question: Is Peter's father a teacher?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D22/q15.mp3",
+          "tag": "M2U2·teacher",
+          "parent_note": "教材第23页"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "question_text": "Who is the bus driver?",
+          "options": [
+            "Mr Li.",
+            "Mrs White.",
+            "Jill."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Who is the bus driver?"
+            ],
+            [
+              "f",
+              "Mr Li is the bus driver."
+            ],
+            [
+              "n",
+              "Question: Who is the bus driver?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D22/q16.mp3",
+          "tag": "M2U2·bus driver",
+          "parent_note": "教材第23页"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [
+        [
+          "n",
+          "Jill is a student. Her father is a firefighter and her mother is a nurse. Peter is Jill's classmate. His father is a teacher and his mother is a doctor."
+        ]
+      ],
+      "passage_audio": "static/audio/listening/W01D22/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "Jill is a student.",
+          "answer": "true",
+          "tag": "短文·student",
+          "parent_note": "教材第23页"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "Jill's mother is a doctor.",
+          "answer": "false",
+          "tag": "短文·nurse",
+          "parent_note": "教材第23页；原文是nurse"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "Peter's father is a teacher.",
+          "answer": "true",
+          "tag": "短文·teacher",
+          "parent_note": "教材第23页"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "Peter's mother is a doctor.",
+          "answer": "true",
+          "tag": "短文·doctor",
+          "parent_note": "教材第23页"
+        }
+      ]
+    }
+  ]
+}

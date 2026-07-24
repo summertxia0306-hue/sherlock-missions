@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D29",
+  "title": "口语练习 · Short shorts",
+  "week": 3,
+  "day": 9,
+  "course_type": "training",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-07-24",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Short shorts today.",
+      "audio": "static/audio/speaking/S01D29/q01.mp3",
+      "tag": "教材P30·跟读",
+      "parent_note": "教材第30页"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "They're wearing short shorts today.",
+      "audio": "static/audio/speaking/S01D29/q02.mp3",
+      "tag": "教材P30·跟读",
+      "parent_note": "教材第30页"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "The girls are wearing long jackets.",
+      "audio": "static/audio/speaking/S01D29/q03.mp3",
+      "tag": "教材P30·跟读",
+      "parent_note": "教材第30页"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "The girls are wearing white T-shirts.",
+      "audio": "static/audio/speaking/S01D29/q04.mp3",
+      "tag": "教材P30·跟读",
+      "parent_note": "教材第30页"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "The boys are wearing black T-shirts.",
+      "audio": "static/audio/speaking/S01D29/q05.mp3",
+      "tag": "教材P30·跟读",
+      "parent_note": "教材第30页"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "The kids are wearing long socks.",
+      "audio": "static/audio/speaking/S01D29/q06.mp3",
+      "tag": "教材P30·跟读",
+      "parent_note": "教材第30页"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "What are the girls wearing?",
+      "expected": "They're wearing white T-shirts.",
+      "hint": "用英语说：她们穿着白色T恤。",
+      "audio": "static/audio/speaking/S01D29/q07.mp3",
+      "tag": "教材P30·问答",
+      "parent_note": "教材第30页"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "What are the boys wearing?",
+      "expected": "They're wearing black T-shirts.",
+      "hint": "用英语说：他们穿着黑色T恤。",
+      "audio": "static/audio/speaking/S01D29/q08.mp3",
+      "tag": "教材P30·问答",
+      "parent_note": "教材第30页"
+    }
+  ]
+}

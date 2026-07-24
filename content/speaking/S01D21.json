@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D21",
+  "title": "口语练习 · Fire rhyme",
+  "week": 3,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-07-24",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Look at the fire.",
+      "audio": "static/audio/speaking/S01D21/q01.mp3",
+      "tag": "教材P22·跟读",
+      "parent_note": "教材第22页"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "Call the fire station.",
+      "audio": "static/audio/speaking/S01D21/q02.mp3",
+      "tag": "教材P22·跟读",
+      "parent_note": "教材第22页"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "One, one, nine!",
+      "audio": "static/audio/speaking/S01D21/q03.mp3",
+      "tag": "教材P22·跟读",
+      "parent_note": "教材第22页"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Bring the fire engine.",
+      "audio": "static/audio/speaking/S01D21/q04.mp3",
+      "tag": "教材P22·跟读",
+      "parent_note": "教材第22页"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "The brave firefighters are here.",
+      "audio": "static/audio/speaking/S01D21/q05.mp3",
+      "tag": "教材P22·跟读",
+      "parent_note": "教材第22页"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Put out the fire!",
+      "audio": "static/audio/speaking/S01D21/q06.mp3",
+      "tag": "教材P22·跟读",
+      "parent_note": "教材第22页"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "What can you see?",
+      "expected": "I can see a fire engine.",
+      "hint": "用英语说：我能看见一辆消防车。",
+      "audio": "static/audio/speaking/S01D21/q07.mp3",
+      "tag": "教材P22·问答",
+      "parent_note": "教材第22页"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "Who can put out the fire?",
+      "expected": "The firefighters can put out the fire.",
+      "hint": "用英语说：消防员能灭火。",
+      "audio": "static/audio/speaking/S01D21/q08.mp3",
+      "tag": "教材P22·问答",
+      "parent_note": "教材第22页"
+    }
+  ]
+}
