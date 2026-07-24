@@ -664,6 +664,136 @@
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
    "text": "Who is she?"
+  },
+  "f405973642ad6937": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I have one cousin."
+  },
+  "2905a1a5ba930f19": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Do you have uncles and aunts?"
+  },
+  "c37adf2fe26c8336": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I have one uncle and two aunts."
+  },
+  "8fc3d95786b2f492": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Do you have brothers and sisters?"
+  },
+  "6093a5e02ddc9f70": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Come and look at my new photos."
+  },
+  "555736955f31334b": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "He's my cousin."
+  },
+  "496c2ed252d744a6": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "His name is Wang Rong."
+  },
+  "4769233b5a4718c9": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "He's eleven years old."
+  },
+  "332970f962e536b8": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "He can swim very fast."
+  },
+  "778ada28302be715": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "He's my uncle. He can dive."
+  },
+  "e835f2a6668e54df": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who is Wang Rong?"
+  },
+  "d9d47dde58c882cf": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can Wang Rong do?"
+  },
+  "4147f353b993ce10": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Hello, Grandpa and Grandma!"
+  },
+  "a304afed5da468f9": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Come in, please."
+  },
+  "d917499cfe1df0e6": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Let's have some mooncakes."
+  },
+  "311b589b9fd17fa5": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Watch the beautiful moon in the garden."
+  },
+  "828da46a0265faf8": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I have a riddle for you."
+  },
+  "950b422f152b36d2": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It's big and bright in the sky."
+  },
+  "869450a3f4680484": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What is it?"
+  },
+  "b5add6d74107a469": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is the moon?"
+  },
+  "61cd4cba381f5dc0": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "That's my cousin, Bess."
+  },
+  "ebb8052f77d32b2b": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She's in the short black dress."
+  },
+  "7233e9393740563f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "That's my aunt in the long red skirt."
+  },
+  "ba6b14103f28c37c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "That's my uncle in the bright green shirt."
+  },
+  "1a50659c52f4fab7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Wash the fish."
+  },
+  "22102a41caa246d3": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who is Bess?"
   }
  },
  "courses": {
@@ -828,44 +958,44 @@
    "static/audio/speaking/S01D16/q08.mp3": "138be534af13235c"
   },
   "S01D17": {
-   "static/audio/speaking/S01D17/q01.mp3": "fc29381326a65ad7",
+   "static/audio/speaking/S01D17/q01.mp3": "5f947d7af36f5f90",
    "static/audio/speaking/S01D17/q02.mp3": "332ba5c9a7f87804",
    "static/audio/speaking/S01D17/q03.mp3": "8a8f306521df7fa1",
-   "static/audio/speaking/S01D17/q04.mp3": "5f947d7af36f5f90",
-   "static/audio/speaking/S01D17/q05.mp3": "c6ef8c67baee315c",
-   "static/audio/speaking/S01D17/q06.mp3": "e4566e25c237de24",
-   "static/audio/speaking/S01D17/q07.mp3": "fc29381326a65ad7",
-   "static/audio/speaking/S01D17/q08.mp3": "5f947d7af36f5f90"
+   "static/audio/speaking/S01D17/q04.mp3": "f405973642ad6937",
+   "static/audio/speaking/S01D17/q05.mp3": "2905a1a5ba930f19",
+   "static/audio/speaking/S01D17/q06.mp3": "c37adf2fe26c8336",
+   "static/audio/speaking/S01D17/q07.mp3": "2905a1a5ba930f19",
+   "static/audio/speaking/S01D17/q08.mp3": "8fc3d95786b2f492"
   },
   "S01D18": {
-   "static/audio/speaking/S01D18/q01.mp3": "b01e242434d56dc1",
-   "static/audio/speaking/S01D18/q02.mp3": "22df599dbb116836",
-   "static/audio/speaking/S01D18/q03.mp3": "e41191b278a97394",
-   "static/audio/speaking/S01D18/q04.mp3": "2c418eedfef1d2d7",
-   "static/audio/speaking/S01D18/q05.mp3": "68130c78f899c7a7",
-   "static/audio/speaking/S01D18/q06.mp3": "95f941e992fa7d3f",
-   "static/audio/speaking/S01D18/q07.mp3": "b01e242434d56dc1",
-   "static/audio/speaking/S01D18/q08.mp3": "68130c78f899c7a7"
+   "static/audio/speaking/S01D18/q01.mp3": "6093a5e02ddc9f70",
+   "static/audio/speaking/S01D18/q02.mp3": "555736955f31334b",
+   "static/audio/speaking/S01D18/q03.mp3": "496c2ed252d744a6",
+   "static/audio/speaking/S01D18/q04.mp3": "4769233b5a4718c9",
+   "static/audio/speaking/S01D18/q05.mp3": "332970f962e536b8",
+   "static/audio/speaking/S01D18/q06.mp3": "778ada28302be715",
+   "static/audio/speaking/S01D18/q07.mp3": "e835f2a6668e54df",
+   "static/audio/speaking/S01D18/q08.mp3": "d9d47dde58c882cf"
   },
   "S01D19": {
-   "static/audio/speaking/S01D19/q01.mp3": "07f00922d8e1bded",
-   "static/audio/speaking/S01D19/q02.mp3": "48b22fabfa77ace5",
-   "static/audio/speaking/S01D19/q03.mp3": "9170db5e3dcb9ceb",
-   "static/audio/speaking/S01D19/q04.mp3": "1c9919dbb2c0a6a7",
-   "static/audio/speaking/S01D19/q05.mp3": "77e1f493a29619d5",
-   "static/audio/speaking/S01D19/q06.mp3": "5e8f56bc62a9bfa7",
-   "static/audio/speaking/S01D19/q07.mp3": "cf86d613c55747ef",
-   "static/audio/speaking/S01D19/q08.mp3": "46d0ef2e6c852705"
+   "static/audio/speaking/S01D19/q01.mp3": "4147f353b993ce10",
+   "static/audio/speaking/S01D19/q02.mp3": "a304afed5da468f9",
+   "static/audio/speaking/S01D19/q03.mp3": "d917499cfe1df0e6",
+   "static/audio/speaking/S01D19/q04.mp3": "311b589b9fd17fa5",
+   "static/audio/speaking/S01D19/q05.mp3": "828da46a0265faf8",
+   "static/audio/speaking/S01D19/q06.mp3": "950b422f152b36d2",
+   "static/audio/speaking/S01D19/q07.mp3": "869450a3f4680484",
+   "static/audio/speaking/S01D19/q08.mp3": "b5add6d74107a469"
   },
   "S01D20": {
-   "static/audio/speaking/S01D20/q01.mp3": "6b96f3b1d65f73db",
-   "static/audio/speaking/S01D20/q02.mp3": "eaa543cbff457105",
-   "static/audio/speaking/S01D20/q03.mp3": "08808c7747438b04",
-   "static/audio/speaking/S01D20/q04.mp3": "4c8cdbccac3a64c7",
-   "static/audio/speaking/S01D20/q05.mp3": "77e1f493a29619d5",
-   "static/audio/speaking/S01D20/q06.mp3": "c6ef8c67baee315c",
-   "static/audio/speaking/S01D20/q07.mp3": "981db7c8126402a7",
-   "static/audio/speaking/S01D20/q08.mp3": "cf86d613c55747ef"
+   "static/audio/speaking/S01D20/q01.mp3": "e41191b278a97394",
+   "static/audio/speaking/S01D20/q02.mp3": "61cd4cba381f5dc0",
+   "static/audio/speaking/S01D20/q03.mp3": "ebb8052f77d32b2b",
+   "static/audio/speaking/S01D20/q04.mp3": "7233e9393740563f",
+   "static/audio/speaking/S01D20/q05.mp3": "ba6b14103f28c37c",
+   "static/audio/speaking/S01D20/q06.mp3": "1a50659c52f4fab7",
+   "static/audio/speaking/S01D20/q07.mp3": "22102a41caa246d3",
+   "static/audio/speaking/S01D20/q08.mp3": "b01e242434d56dc1"
   }
  }
 }

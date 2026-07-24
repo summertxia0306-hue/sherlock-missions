@@ -1,6 +1,6 @@
 {
   "course_id": "S01D17",
-  "title": "口语练习 · Do you have ...?",
+  "title": "口语练习 · M2U1 family questions",
   "week": 2,
   "day": 7,
   "course_type": "training",
@@ -11,10 +11,10 @@
     {
       "id": 1,
       "type": "repeat",
-      "text": "Do you have an uncle?",
+      "text": "Do you have a cousin?",
       "audio": "static/audio/speaking/S01D17/q01.mp3",
-      "tag": "M2U1·Do you have an uncle",
-      "parent_note": ""
+      "tag": "M2U1·Do you have a cousin",
+      "parent_note": "教材第17-18页"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "text": "Yes, I do.",
       "audio": "static/audio/speaking/S01D17/q02.mp3",
       "tag": "M2U1·Yes I do",
-      "parent_note": ""
+      "parent_note": "教材第17-18页"
     },
     {
       "id": 3,
@@ -30,51 +30,51 @@
       "text": "No, I don't.",
       "audio": "static/audio/speaking/S01D17/q03.mp3",
       "tag": "M2U1·No I don't",
-      "parent_note": ""
+      "parent_note": "教材第17-18页"
     },
     {
       "id": 4,
       "type": "repeat",
-      "text": "Do you have a cousin?",
+      "text": "I have one cousin.",
       "audio": "static/audio/speaking/S01D17/q04.mp3",
-      "tag": "M2U1·Do you have a cousin",
-      "parent_note": ""
+      "tag": "M2U1·one cousin",
+      "parent_note": "教材第18页"
     },
     {
       "id": 5,
       "type": "repeat",
-      "text": "I have a happy family.",
+      "text": "Do you have uncles and aunts?",
       "audio": "static/audio/speaking/S01D17/q05.mp3",
-      "tag": "M2U1·family",
-      "parent_note": ""
+      "tag": "M2U1·uncles and aunts",
+      "parent_note": "教材第17-18页"
     },
     {
       "id": 6,
       "type": "repeat",
-      "text": "We have a family photo.",
+      "text": "I have one uncle and two aunts.",
       "audio": "static/audio/speaking/S01D17/q06.mp3",
-      "tag": "M2U1·family photo",
-      "parent_note": ""
+      "tag": "M2U1·family quantities",
+      "parent_note": "教材第17-18页"
     },
     {
       "id": 7,
       "type": "qa",
-      "question": "Do you have an uncle?",
+      "question": "Do you have uncles and aunts?",
       "expected": "Yes, I do.",
       "hint": "用英语说：是的，我有。",
       "audio": "static/audio/speaking/S01D17/q07.mp3",
       "tag": "问答·Yes I do",
-      "parent_note": ""
+      "parent_note": "教材第17-18页"
     },
     {
       "id": 8,
       "type": "qa",
-      "question": "Do you have a cousin?",
+      "question": "Do you have brothers and sisters?",
       "expected": "No, I don't.",
       "hint": "用英语说：不，我没有。",
       "audio": "static/audio/speaking/S01D17/q08.mp3",
       "tag": "问答·No I don't",
-      "parent_note": ""
+      "parent_note": "教材第17页"
     }
   ]
 }

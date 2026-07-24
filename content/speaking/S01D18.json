@@ -1,6 +1,6 @@
 {
   "course_id": "S01D18",
-  "title": "口语练习 · Who's that?",
+  "title": "口语练习 · Photos of Jill's family",
   "week": 2,
   "day": 8,
   "course_type": "training",
@@ -11,70 +11,70 @@
     {
       "id": 1,
       "type": "repeat",
-      "text": "Who's that man?",
+      "text": "Come and look at my new photos.",
       "audio": "static/audio/speaking/S01D18/q01.mp3",
-      "tag": "M2U1·Who's that man",
-      "parent_note": ""
+      "tag": "M2U1·new photos",
+      "parent_note": "教材第19页"
     },
     {
       "id": 2,
       "type": "repeat",
-      "text": "He's my uncle.",
+      "text": "He's my cousin.",
       "audio": "static/audio/speaking/S01D18/q02.mp3",
-      "tag": "M2U1·uncle",
-      "parent_note": ""
+      "tag": "M2U1·cousin",
+      "parent_note": "教材第19页"
     },
     {
       "id": 3,
       "type": "repeat",
-      "text": "Who's that girl?",
+      "text": "His name is Wang Rong.",
       "audio": "static/audio/speaking/S01D18/q03.mp3",
-      "tag": "M2U1·Who's that girl",
-      "parent_note": ""
+      "tag": "M2U1·his name",
+      "parent_note": "教材第19页"
     },
     {
       "id": 4,
       "type": "repeat",
-      "text": "She's my cousin.",
+      "text": "He's eleven years old.",
       "audio": "static/audio/speaking/S01D18/q04.mp3",
-      "tag": "M2U1·cousin",
-      "parent_note": ""
+      "tag": "M2U1·age",
+      "parent_note": "教材第19页"
     },
     {
       "id": 5,
       "type": "repeat",
-      "text": "How old is she?",
+      "text": "He can swim very fast.",
       "audio": "static/audio/speaking/S01D18/q05.mp3",
-      "tag": "M2U1·How old",
-      "parent_note": ""
+      "tag": "M2U1·swim very fast",
+      "parent_note": "教材第19页"
     },
     {
       "id": 6,
       "type": "repeat",
-      "text": "She's ten years old.",
+      "text": "He's my uncle. He can dive.",
       "audio": "static/audio/speaking/S01D18/q06.mp3",
-      "tag": "M2U1·age",
-      "parent_note": ""
+      "tag": "M2U1·uncle can dive",
+      "parent_note": "教材第19页"
     },
     {
       "id": 7,
       "type": "qa",
-      "question": "Who's that man?",
-      "expected": "He's my uncle.",
-      "hint": "用英语说：他是我的叔叔。",
+      "question": "Who is Wang Rong?",
+      "expected": "He's my cousin.",
+      "hint": "用英语说：他是我的表兄。",
       "audio": "static/audio/speaking/S01D18/q07.mp3",
-      "tag": "问答·uncle",
-      "parent_note": ""
+      "tag": "问答·cousin",
+      "parent_note": "教材第19页"
     },
     {
       "id": 8,
       "type": "qa",
-      "question": "How old is she?",
-      "expected": "She's ten.",
-      "hint": "用英语说：她十岁。",
+      "question": "What can Wang Rong do?",
+      "expected": "He can swim very fast.",
+      "hint": "用英语说：他游泳游得很快。",
       "audio": "static/audio/speaking/S01D18/q08.mp3",
-      "tag": "问答·age",
-      "parent_note": ""
+      "tag": "问答·swim very fast",
+      "parent_note": "教材第19页"
     }
   ]
 }

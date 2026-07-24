@@ -1,6 +1,6 @@
 {
   "course_id": "S01D19",
-  "title": "口语练习 · family + ability",
+  "title": "口语练习 · Mid-autumn Day",
   "week": 2,
   "day": 9,
   "course_type": "training",
@@ -11,70 +11,70 @@
     {
       "id": 1,
       "type": "repeat",
-      "text": "My uncle can run fast.",
+      "text": "Hello, Grandpa and Grandma!",
       "audio": "static/audio/speaking/S01D19/q01.mp3",
-      "tag": "M2U1·uncle + can",
-      "parent_note": ""
+      "tag": "M2U1·Grandpa and Grandma",
+      "parent_note": "教材第20页"
     },
     {
       "id": 2,
       "type": "repeat",
-      "text": "My aunt can cook.",
+      "text": "Come in, please.",
       "audio": "static/audio/speaking/S01D19/q02.mp3",
-      "tag": "M2U1·aunt + can",
-      "parent_note": ""
+      "tag": "M2U1·Come in please",
+      "parent_note": "教材第20页"
     },
     {
       "id": 3,
       "type": "repeat",
-      "text": "My cousin can draw.",
+      "text": "Let's have some mooncakes.",
       "audio": "static/audio/speaking/S01D19/q03.mp3",
-      "tag": "M2U1·cousin + can",
-      "parent_note": ""
+      "tag": "M2U1·mooncakes",
+      "parent_note": "教材第20页"
     },
     {
       "id": 4,
       "type": "repeat",
-      "text": "He can swim well.",
+      "text": "Watch the beautiful moon in the garden.",
       "audio": "static/audio/speaking/S01D19/q04.mp3",
-      "tag": "旧坑复现·can + 原形",
-      "parent_note": ""
+      "tag": "M2U1·moon in the garden",
+      "parent_note": "教材第20页"
     },
     {
       "id": 5,
       "type": "repeat",
-      "text": "She likes reading.",
+      "text": "I have a riddle for you.",
       "audio": "static/audio/speaking/S01D19/q05.mp3",
-      "tag": "旧坑复现·likes + V-ing",
-      "parent_note": ""
+      "tag": "M2U1·riddle",
+      "parent_note": "教材第20页"
     },
     {
       "id": 6,
       "type": "repeat",
-      "text": "He has a blue bag.",
+      "text": "It's big and bright in the sky.",
       "audio": "static/audio/speaking/S01D19/q06.mp3",
-      "tag": "旧坑复现·has",
-      "parent_note": ""
+      "tag": "M2U1·moon description",
+      "parent_note": "教材第20页"
     },
     {
       "id": 7,
       "type": "qa",
-      "question": "What can she do?",
-      "expected": "She can draw.",
-      "hint": "用英语说：她会画画。",
+      "question": "What is it?",
+      "expected": "It's the moon.",
+      "hint": "用英语说：它是月亮。",
       "audio": "static/audio/speaking/S01D19/q07.mp3",
-      "tag": "问答·can draw",
-      "parent_note": ""
+      "tag": "问答·moon",
+      "parent_note": "教材第20页"
     },
     {
       "id": 8,
       "type": "qa",
-      "question": "What can he do?",
-      "expected": "He can swim.",
-      "hint": "用英语说：他会游泳。",
+      "question": "Where is the moon?",
+      "expected": "It's in the sky.",
+      "hint": "用英语说：它在天空中。",
       "audio": "static/audio/speaking/S01D19/q08.mp3",
-      "tag": "问答·can swim",
-      "parent_note": ""
+      "tag": "问答·in the sky",
+      "parent_note": "教材第20页"
     }
   ]
 }

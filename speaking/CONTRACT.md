@@ -1,6 +1,6 @@
 # 口语模块对接契约与功能清单
 
-> 版本 v1.5 · 2026-07-09（新增 S01D11–S01D20；当前推荐改为自动选择首个已可见且 formal 未完成课程；安全家长 test 入口与普通儿童 formal 规则不变）。
+> 版本 v1.6 · 2026-07-24（保留已有 formal 记录的 S01D16；S01D17–S01D20 按 4A M2U1 教材第17–21页重新对齐；课程模式、口语门控和 data_kind 规则不变）。
 > 镜像 `listening/CONTRACT.md` 的体例；改接口先改本文件再改代码。
 
 ## 0. 范围
@@ -93,7 +93,8 @@ course_id 形如 `S01D01`；`questions` 题号 1..n 连续；题型：
 
 W01D01–D20、S01D01–D20 当前均保持可见，列表按编号排序；当前推荐自动选择首个已可见且 formal 未完成课程。
 S01D06 人物介绍与数字，S01D07 Jill 阅读，S01D08 What can you do，S01D09 Can he/she/动物能力，S01D10 综合介绍朋友/家人。
-S01D11–D15 覆盖 M1U3 feelings / Have some ... / story / weekly review；S01D16–D20 覆盖 M2U1 family / Do you have ... / Who's that? / family + ability / weekly review。
+S01D11–D15 覆盖 M1U3 feelings / Have some ... / story / weekly review；S01D16 为已完成的 M2U1 family words，保持原课不改。
+S01D17–D20 依次对齐 4A M2U1 教材第17–18页 family questions、第19页 Photos of Jill's family、第20页 Mid-autumn Day、第21页 rhyme 与 `-sh` 语音复习。
 3 星正常通关、未到 3 星可重试、第 3 次仍未到 3 星出现“先过这题”的口语门控规则保持不变。
 
 ## 6. 依赖与 Secrets

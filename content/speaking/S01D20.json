@@ -1,6 +1,6 @@
 {
   "course_id": "S01D20",
-  "title": "口语周复习 · M2U1 综合",
+  "title": "口语周复习 · M2U1 textbook review",
   "week": 2,
   "day": 10,
   "course_type": "weekly_review",
@@ -11,70 +11,70 @@
     {
       "id": 1,
       "type": "repeat",
-      "text": "This is my aunt.",
+      "text": "Who's that girl?",
       "audio": "static/audio/speaking/S01D20/q01.mp3",
-      "tag": "M2U1·介绍家人",
-      "parent_note": ""
+      "tag": "M2U1·Who's that girl",
+      "parent_note": "教材第21页"
     },
     {
       "id": 2,
       "type": "repeat",
-      "text": "Her name is May.",
+      "text": "That's my cousin, Bess.",
       "audio": "static/audio/speaking/S01D20/q02.mp3",
-      "tag": "旧坑复现·her name",
-      "parent_note": ""
+      "tag": "M2U1·cousin Bess",
+      "parent_note": "教材第21页"
     },
     {
       "id": 3,
       "type": "repeat",
-      "text": "She is thirty years old.",
+      "text": "She's in the short black dress.",
       "audio": "static/audio/speaking/S01D20/q03.mp3",
-      "tag": "M2U1·age",
-      "parent_note": ""
+      "tag": "M2U1·short black dress",
+      "parent_note": "教材第21页"
     },
     {
       "id": 4,
       "type": "repeat",
-      "text": "She can cook.",
+      "text": "That's my aunt in the long red skirt.",
       "audio": "static/audio/speaking/S01D20/q04.mp3",
-      "tag": "M2U1·can",
-      "parent_note": ""
+      "tag": "M2U1·aunt red skirt",
+      "parent_note": "教材第21页"
     },
     {
       "id": 5,
       "type": "repeat",
-      "text": "She likes reading.",
+      "text": "That's my uncle in the bright green shirt.",
       "audio": "static/audio/speaking/S01D20/q05.mp3",
-      "tag": "旧坑复现·likes + V-ing",
-      "parent_note": ""
+      "tag": "M2U1·uncle green shirt",
+      "parent_note": "教材第21页"
     },
     {
       "id": 6,
       "type": "repeat",
-      "text": "I have a happy family.",
+      "text": "Wash the fish.",
       "audio": "static/audio/speaking/S01D20/q06.mp3",
-      "tag": "M2U1·family",
-      "parent_note": ""
+      "tag": "M2U1·-sh sound",
+      "parent_note": "教材第21页"
     },
     {
       "id": 7,
       "type": "qa",
-      "question": "Who is she?",
-      "expected": "She is my aunt.",
-      "hint": "用英语说：她是我的阿姨。",
+      "question": "Who is Bess?",
+      "expected": "She's my cousin.",
+      "hint": "用英语说：她是我的表妹。",
       "audio": "static/audio/speaking/S01D20/q07.mp3",
-      "tag": "问答·family",
-      "parent_note": ""
+      "tag": "问答·cousin",
+      "parent_note": "教材第21页"
     },
     {
       "id": 8,
       "type": "qa",
-      "question": "What can she do?",
-      "expected": "She can cook.",
-      "hint": "用英语说：她会做饭。",
+      "question": "Who's that man?",
+      "expected": "He's my uncle.",
+      "hint": "用英语说：他是我的叔叔。",
       "audio": "static/audio/speaking/S01D20/q08.mp3",
-      "tag": "问答·can",
-      "parent_note": ""
+      "tag": "问答·uncle",
+      "parent_note": "教材第21页"
     }
   ]
 }
