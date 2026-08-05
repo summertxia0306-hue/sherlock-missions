@@ -1,3 +1,4 @@
-streamlit>=1.40
-websocket-client>=1.6
-# 2026-06-25: force a clean Streamlit Cloud rebuild after storage contract changes.
+streamlit==1.55.0
+websocket-client==1.9.0
+# Pin the verified cloud runtime. An unconstrained rebuild resolved Streamlit
+# 1.61.0 with Starlette 1.4.0, whose GZip middleware interface returned HTTP 500.

@@ -1,6 +1,7 @@
 # 听力模块对接契约与功能清单（给统一架构 / Codex）
 
-> 版本 v3.7 · 2026-07-24。新增 W01D21–W01D30，与口语课严格同页对齐 4A M2U2 第22–26页和 M2U3 第27–31页；课程模式、推荐逻辑、评分及 data_kind 规则不变。
+> 版本 v3.8 · 2026-08-05。锁定 Streamlit 1.55.0 与 websocket-client 1.9.0，避免云端重建时解析到不兼容依赖；课程、评分及 data_kind 规则不变。
+> v3.7 · 2026-07-24：新增 W01D21–W01D30，与口语课严格同页对齐 4A M2U2 第22–26页和 M2U3 第27–31页。
 > v2 变更：补全目录结构与功能清单；明确"跟读/口语不在听力模块范围"。
 > **v3 变更（两位 Codex 必读）**：
 > ① 新增儿童端听力主界面 `listening_home()`——**架构师**的统一首页"听力练习"
@@ -30,7 +31,7 @@
 sherlock-missions/
   app.py                      临时入口路由（统一首页接管后整体替换，无业务逻辑）
                               2026-07-09 起入口 rerun 时会 reload 听力/口语页面模块，避免 Streamlit 热部署混用旧列表渲染器
-  requirements.txt            线上运行依赖（仅 streamlit）
+  requirements.txt            线上运行依赖（版本必须精确锁定，勿改回 >=）
   .streamlit/config.toml      enableStaticServing=true（音频静态服务，勿删）
   本地体验.bat                 家长本地预览（streamlit run app.py）
 

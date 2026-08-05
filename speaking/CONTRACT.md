@@ -1,6 +1,7 @@
 # 口语模块对接契约与功能清单
 
-> 版本 v1.7 · 2026-07-24（新增 S01D21–S01D30，与听力课严格同页对齐 4A M2U2 第22–26页和 M2U3 第27–31页；课程模式、口语门控和 data_kind 规则不变）。
+> 版本 v1.8 · 2026-08-05（锁定 Streamlit 1.55.0 与 websocket-client 1.9.0，避免云端重建时解析到不兼容依赖；课程、口语门控和 data_kind 规则不变）。
+> v1.7 · 2026-07-24：新增 S01D21–S01D30，与听力课严格同页对齐 4A M2U2 第22–26页和 M2U3 第27–31页。
 > 镜像 `listening/CONTRACT.md` 的体例；改接口先改本文件再改代码。
 
 ## 0. 范围
@@ -101,7 +102,7 @@ S01D26–D30 与听力同页对齐 M2U3 第27–31页：friend descriptions、cl
 
 ## 6. 依赖与 Secrets
 
-requirements：`streamlit>=1.40`（audio_input 已不用，但保留新版本）、`websocket-client>=1.6`。
+requirements：`streamlit==1.55.0`、`websocket-client==1.9.0`。这两个版本已通过本地完整页面验证；不得改回无上限的 `>=`，否则云端休眠重建可能自动升级并破坏启动。
 Secrets：XF_APPID / XF_API_KEY / XF_API_SECRET（讯飞）+ RESULTS_REPO / RESULTS_TOKEN（录音与成绩）。
 讯飞免费包 1 万次/90 天（约 2026-09-10 到期）；每次评分（含孩子每一录次）消耗 1 次。
 
