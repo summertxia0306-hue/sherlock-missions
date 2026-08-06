@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D32",
+  "title": "听力训练 · M3U1 In our school",
+  "week": 4,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "4A M3U1 教材第33页：There is/are、学校设施与用途 + likes轻复现",
+  "difficulty": "L1",
+  "open_date": "2026-08-06",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D32/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "building",
+            "bookshelf",
+            "biscuit"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "building"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D32/q01.mp3",
+          "tag": "M3U1·building",
+          "parent_note": "教材第33页"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "big",
+            "busy",
+            "behind"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "busy"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D32/q02.mp3",
+          "tag": "M3U1·busy",
+          "parent_note": "教材第33页"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "laboratory",
+            "playground",
+            "library"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "library"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D32/q03.mp3",
+          "tag": "M3U1·library",
+          "parent_note": "教材第33页"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "playground",
+            "computer lab",
+            "classroom"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "playground"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D32/q04.mp3",
+          "tag": "M3U1·playground",
+          "parent_note": "教材第33页"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "There is a library.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "There is a library."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D32/q05.mp3",
+          "tag": "M3U1·There is",
+          "parent_note": "教材第33页"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "There are some computers.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "There are some computers."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D32/q06.mp3",
+          "tag": "M3U1·There are",
+          "parent_note": "教材第33页"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "Miss Fang is busy.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Miss Fang is happy."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D32/q07.mp3",
+          "tag": "M3U1·busy",
+          "parent_note": "教材第33页；原文是happy"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "She likes reading in the library.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "She likes reading in the library."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D32/q08.mp3",
+          "tag": "旧坑复现·likes + V-ing",
+          "parent_note": "教材第33页"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "Some books.",
+            "Some computers.",
+            "Some flowers."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What is in the computer lab?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D32/q09.mp3",
+          "tag": "M3U1·computer lab",
+          "parent_note": "教材第33页"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "In the canteen.",
+            "In the gym.",
+            "In the office."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where do the children have lunch?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D32/q10.mp3",
+          "tag": "M3U1·have lunch",
+          "parent_note": "教材第33页"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "Behind the classroom building.",
+            "In the classroom building.",
+            "On the computer."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where is the playground?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D32/q11.mp3",
+          "tag": "M3U1·behind",
+          "parent_note": "教材第33页"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "Yes, she does.",
+            "Yes, she is.",
+            "Yes, she can."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Does Jill like reading?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D32/q12.mp3",
+          "tag": "旧坑复现·does",
+          "parent_note": "教材第33页"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "question_text": "What are they looking at?",
+          "options": [
+            "A garden.",
+            "A classroom building.",
+            "A playground."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "This is our classroom building."
+            ],
+            [
+              "m",
+              "It is big."
+            ],
+            [
+              "n",
+              "Question: What are they looking at?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D32/q13.mp3",
+          "tag": "M3U1·building",
+          "parent_note": "教材第33页"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "question_text": "Who is busy?",
+          "options": [
+            "Miss Fang.",
+            "Peter.",
+            "Mr Black."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "There is a teachers' office."
+            ],
+            [
+              "f",
+              "Miss Fang is busy there."
+            ],
+            [
+              "n",
+              "Question: Who is busy?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D32/q14.mp3",
+          "tag": "M3U1·office",
+          "parent_note": "教材第33页"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "question_text": "What is in the library?",
+          "options": [
+            "A lot of books.",
+            "Some computers.",
+            "A swing."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "There are a lot of books in the library."
+            ],
+            [
+              "m",
+              "I like reading there."
+            ],
+            [
+              "n",
+              "Question: What is in the library?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D32/q15.mp3",
+          "tag": "M3U1·library",
+          "parent_note": "教材第33页"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "question_text": "What can the children do there?",
+          "options": [
+            "Have lunch.",
+            "Run and play.",
+            "Read books."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "Can the children run in the playground?"
+            ],
+            [
+              "f",
+              "Yes, they can run and play there."
+            ],
+            [
+              "n",
+              "Question: What can the children do there?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D32/q16.mp3",
+          "tag": "旧坑复现·can + base verb",
+          "parent_note": "教材第33页"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [
+        [
+          "n",
+          "Welcome to Rainbow Primary School. There is a classroom building. There is a teachers' office, and Miss Fang is busy there. There are some computers in the computer lab and a lot of books in the library. The children have lunch in the canteen. The playground is behind the classroom building."
+        ]
+      ],
+      "passage_audio": "static/audio/listening/W01D32/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "There is a classroom building.",
+          "answer": "true",
+          "tag": "M3U1·There is",
+          "parent_note": "教材第33页"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "There are some books in the computer lab.",
+          "answer": "false",
+          "tag": "M3U1·computer lab",
+          "parent_note": "教材第33页；原文是computers"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "The children have lunch in the canteen.",
+          "answer": "true",
+          "tag": "M3U1·canteen",
+          "parent_note": "教材第33页"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "The playground is in front of the classroom building.",
+          "answer": "false",
+          "tag": "M3U1·behind",
+          "parent_note": "教材第33页；原文是behind"
+        }
+      ]
+    }
+  ]
+}

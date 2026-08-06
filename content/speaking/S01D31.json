@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D31",
+  "title": "口语练习 · M3U1 School places",
+  "week": 4,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-08-06",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "This is our canteen.",
+      "audio": "static/audio/speaking/S01D31/q01.mp3",
+      "tag": "教材P32·教材跟读",
+      "parent_note": "教材第32页"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "This is the computer lab.",
+      "audio": "static/audio/speaking/S01D31/q02.mp3",
+      "tag": "教材P32·教材跟读",
+      "parent_note": "教材第32页"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "This is the teachers' office.",
+      "audio": "static/audio/speaking/S01D31/q03.mp3",
+      "tag": "教材P32·教材跟读",
+      "parent_note": "教材第32页"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "This is our gym.",
+      "audio": "static/audio/speaking/S01D31/q04.mp3",
+      "tag": "教材P32·教材跟读",
+      "parent_note": "教材第32页"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "The gym is behind the office.",
+      "audio": "static/audio/speaking/S01D31/q05.mp3",
+      "tag": "教材P32·教材跟读",
+      "parent_note": "教材第32页"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "The computer lab is in front of the gym.",
+      "audio": "static/audio/speaking/S01D31/q06.mp3",
+      "tag": "教材P32·教材跟读",
+      "parent_note": "教材第32页"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "What is this?",
+      "expected": "It is a canteen.",
+      "hint": "用英语说：这是食堂。",
+      "audio": "static/audio/speaking/S01D31/q07.mp3",
+      "tag": "教材P32·教材问答",
+      "parent_note": "教材第32页"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "Where is the gym?",
+      "expected": "It is behind the office.",
+      "hint": "用英语说：它在办公室后面。",
+      "audio": "static/audio/speaking/S01D31/q08.mp3",
+      "tag": "教材P32·教材问答",
+      "parent_note": "教材第32页"
+    }
+  ]
+}

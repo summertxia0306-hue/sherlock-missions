@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D33",
+  "title": "口语练习 · A visit to Rainbow Primary School",
+  "week": 4,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-08-06",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Welcome to Rainbow Primary School.",
+      "audio": "static/audio/speaking/S01D33/q01.mp3",
+      "tag": "教材P34·教材跟读",
+      "parent_note": "教材第34页"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "The garden is in front of the classroom building.",
+      "audio": "static/audio/speaking/S01D33/q02.mp3",
+      "tag": "教材P34·教材跟读",
+      "parent_note": "教材第34页"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "What's on this floor?",
+      "audio": "static/audio/speaking/S01D33/q03.mp3",
+      "tag": "教材P34·教材跟读",
+      "parent_note": "教材第34页"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "There is a computer lab.",
+      "audio": "static/audio/speaking/S01D33/q04.mp3",
+      "tag": "教材P34·教材跟读",
+      "parent_note": "教材第34页"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "Our classroom is clean and tidy.",
+      "audio": "static/audio/speaking/S01D33/q05.mp3",
+      "tag": "教材P34·教材跟读",
+      "parent_note": "教材第34页"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Thank you. You're welcome.",
+      "audio": "static/audio/speaking/S01D33/q06.mp3",
+      "tag": "教材P34·教材跟读",
+      "parent_note": "教材第34页"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "What's in the garden?",
+      "expected": "There are some flowers and plants.",
+      "hint": "用英语说：有一些花和植物。",
+      "audio": "static/audio/speaking/S01D33/q07.mp3",
+      "tag": "教材P34·教材问答",
+      "parent_note": "教材第34页"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "How is your classroom?",
+      "expected": "It is clean and tidy.",
+      "hint": "用英语说：它干净又整洁。",
+      "audio": "static/audio/speaking/S01D33/q08.mp3",
+      "tag": "教材P34·教材问答",
+      "parent_note": "教材第34页"
+    }
+  ]
+}

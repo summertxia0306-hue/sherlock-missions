@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D35",
+  "title": "听力周测卷 · M3U1 In our school",
+  "week": 4,
+  "day": 5,
+  "course_type": "weekly_test",
+  "est_minutes": 20,
+  "scope": "4A M3U1 教材第32-36页综合：学校、There is/are、Animal School、fr/gr/tr + 已学旧坑复现",
+  "difficulty": "L1",
+  "open_date": "2026-08-06",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D35/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "fruit",
+            "floor",
+            "front"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "fruit"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D35/q01.mp3",
+          "tag": "M3U1·fr sound",
+          "parent_note": "教材第36页"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "garden",
+            "grandpa",
+            "grandma"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "grandpa"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D35/q02.mp3",
+          "tag": "M3U1·gr sound",
+          "parent_note": "教材第36页"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "try",
+            "tidy",
+            "tree"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "tree"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D35/q03.mp3",
+          "tag": "M3U1·tr sound",
+          "parent_note": "教材第36页"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "bookshelf",
+            "schoolbag",
+            "building"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "bookshelf"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D35/q04.mp3",
+          "tag": "M3U1·classroom",
+          "parent_note": "教材第36页"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "There is a hall in our school.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "There is a hall in our school."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D35/q05.mp3",
+          "tag": "M3U1·school survey",
+          "parent_note": "教材第36页"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "There are some desks in the classroom.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "There are some chairs in the classroom."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D35/q06.mp3",
+          "tag": "M3U1·There are",
+          "parent_note": "教材第36页；原文是chairs"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "Grandpa grows the fruit.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Grandpa grows the fruit."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D35/q07.mp3",
+          "tag": "M3U1·gr/fr sounds",
+          "parent_note": "教材第36页"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "These are my notebooks.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "This is my notebook."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D35/q08.mp3",
+          "tag": "旧坑复现·this/these",
+          "parent_note": "教材第36页；原文是This is"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "There is a hall.",
+            "It is a hall.",
+            "I can run."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What's in your school?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D35/q09.mp3",
+          "tag": "M3U1·school survey",
+          "parent_note": "教材第36页"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "There are some desks and chairs.",
+            "There are some pencils.",
+            "There is some fruit."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What's in your classroom?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D35/q10.mp3",
+          "tag": "M3U1·classroom survey",
+          "parent_note": "教材第36页"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "There are some notebooks.",
+            "There is a gym.",
+            "There are some trees."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What's in your schoolbag?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D35/q11.mp3",
+          "tag": "M3U1·schoolbag survey",
+          "parent_note": "教材第36页"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "Yes, it can.",
+            "Yes, it is.",
+            "Yes, it does."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Can Little Rabbit run fast?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D35/q12.mp3",
+          "tag": "旧坑复现·can question",
+          "parent_note": "教材第36页"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "question_text": "Is there a library?",
+          "options": [
+            "Yes, there is.",
+            "No, there isn't.",
+            "Yes, it can."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "What's in your school?"
+            ],
+            [
+              "m",
+              "There is a hall, a library and a playground."
+            ],
+            [
+              "n",
+              "Question: Is there a library?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D35/q13.mp3",
+          "tag": "M3U1·school survey",
+          "parent_note": "教材第36页"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "question_text": "What is in the classroom?",
+          "options": [
+            "A swing and a slide.",
+            "A cupboard and a bookshelf.",
+            "A canteen and a gym."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "What's in your classroom?"
+            ],
+            [
+              "f",
+              "There is a cupboard and a bookshelf."
+            ],
+            [
+              "n",
+              "Question: What is in the classroom?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D35/q14.mp3",
+          "tag": "M3U1·classroom survey",
+          "parent_note": "教材第36页"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "question_text": "Where is the playground?",
+          "options": [
+            "Behind the classroom building.",
+            "In front of the garden.",
+            "On this floor."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Where is the playground?"
+            ],
+            [
+              "m",
+              "It is behind the classroom building."
+            ],
+            [
+              "n",
+              "Question: Where is the playground?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D35/q15.mp3",
+          "tag": "M3U1·behind",
+          "parent_note": "教材第36页"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "question_text": "What can Little Rabbit do?",
+          "options": [
+            "Swim well.",
+            "Climb trees.",
+            "Run fast."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "m",
+              "What's the matter, Little Rabbit?"
+            ],
+            [
+              "f",
+              "I'm sad. I can't swim, but I can run fast."
+            ],
+            [
+              "n",
+              "Question: What can Little Rabbit do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D35/q16.mp3",
+          "tag": "旧坑复现·can/can't",
+          "parent_note": "教材第36页"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [
+        [
+          "n",
+          "Welcome to our school. There is a hall, a library and a playground. The playground is behind the classroom building. In our classroom, there is a cupboard and a bookshelf. There are some desks and chairs. In my schoolbag, there are some pencils and notebooks. Grandpa grows fruit on the trees. Little Rabbit can't swim, but it can run fast."
+        ]
+      ],
+      "passage_audio": "static/audio/listening/W01D35/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "There is a library in the school.",
+          "answer": "true",
+          "tag": "周测·school place",
+          "parent_note": "教材第36页"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "The playground is in front of the classroom building.",
+          "answer": "false",
+          "tag": "周测·behind",
+          "parent_note": "教材第36页；原文是behind"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "There are some pencils and notebooks in the schoolbag.",
+          "answer": "true",
+          "tag": "周测·schoolbag",
+          "parent_note": "教材第36页"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "Little Rabbit can swim well.",
+          "answer": "false",
+          "tag": "周测·can/can't",
+          "parent_note": "教材第36页；原文是can't swim"
+        }
+      ]
+    }
+  ]
+}

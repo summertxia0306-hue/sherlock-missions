@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D33",
+  "title": "听力训练 · A visit to Rainbow Primary School",
+  "week": 4,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "4A M3U1 教材第34页：参观学校、楼层、花园、clean and tidy + 礼貌表达复现",
+  "difficulty": "L1",
+  "open_date": "2026-08-06",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D33/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "flower",
+            "floor",
+            "forest"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "floor"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D33/q01.mp3",
+          "tag": "M3U1·floor",
+          "parent_note": "教材第34页"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "garden",
+            "canteen",
+            "building"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "garden"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D33/q02.mp3",
+          "tag": "M3U1·garden",
+          "parent_note": "教材第34页"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "computer",
+            "cupboard",
+            "classroom"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "cupboard"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D33/q03.mp3",
+          "tag": "M3U1·cupboard",
+          "parent_note": "教材第34页"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "thirsty",
+            "tired",
+            "tidy"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "tidy"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D33/q04.mp3",
+          "tag": "M3U1·tidy",
+          "parent_note": "教材第34页"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "The garden is in front of the classroom building.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The garden is in front of the classroom building."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D33/q05.mp3",
+          "tag": "M3U1·garden position",
+          "parent_note": "教材第34页"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "There is a swing and a slide.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "There is a swing and a slide."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D33/q06.mp3",
+          "tag": "M3U1·garden",
+          "parent_note": "教材第34页"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "The computer lab is on this floor.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The library is on this floor."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D33/q07.mp3",
+          "tag": "M3U1·floor",
+          "parent_note": "教材第34页；原文是library"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "The classroom is clean and tidy.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The classroom is clean and tidy."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D33/q08.mp3",
+          "tag": "M3U1·clean and tidy",
+          "parent_note": "教材第34页"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "There is a computer lab.",
+            "It is a clean floor.",
+            "The floor is behind us."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What's on this floor?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D33/q09.mp3",
+          "tag": "M3U1·floor",
+          "parent_note": "教材第34页"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "Some computers.",
+            "Some flowers and plants.",
+            "Some desks and chairs."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What's in the garden?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D33/q10.mp3",
+          "tag": "M3U1·garden",
+          "parent_note": "教材第34页"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "It is clean and tidy.",
+            "It is hungry and thirsty.",
+            "It is ten years old."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "How is the classroom?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D33/q11.mp3",
+          "tag": "M3U1·clean and tidy",
+          "parent_note": "教材第34页"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "I'm sorry.",
+            "You're welcome.",
+            "Have some water."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Thank you for showing me around."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D33/q12.mp3",
+          "tag": "旧坑复现·礼貌回应",
+          "parent_note": "教材第34页"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "question_text": "What does the man want to do?",
+          "options": [
+            "Have lunch.",
+            "See the school.",
+            "Read a story."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Welcome to Rainbow Primary School."
+            ],
+            [
+              "m",
+              "Thank you. Please show me around."
+            ],
+            [
+              "n",
+              "Question: What does the man want to do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D33/q13.mp3",
+          "tag": "M3U1·show around",
+          "parent_note": "教材第34页"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "question_text": "What is on this floor?",
+          "options": [
+            "A computer lab.",
+            "A canteen.",
+            "A gym."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "What's on this floor?"
+            ],
+            [
+              "f",
+              "There is a computer lab. We have computer lessons there."
+            ],
+            [
+              "n",
+              "Question: What is on this floor?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D33/q14.mp3",
+          "tag": "M3U1·floor",
+          "parent_note": "教材第34页"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "question_text": "What two things are tidy?",
+          "options": [
+            "The desks and chairs.",
+            "The swing and slide.",
+            "The cupboard and bookshelf."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "This is our classroom."
+            ],
+            [
+              "m",
+              "The cupboard and the bookshelf are tidy."
+            ],
+            [
+              "n",
+              "Question: What two things are tidy?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D33/q15.mp3",
+          "tag": "M3U1·classroom",
+          "parent_note": "教材第34页"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "question_text": "Is the classroom tidy?",
+          "options": [
+            "Yes, it is.",
+            "No, it isn't.",
+            "Yes, she is."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Is that your classroom?"
+            ],
+            [
+              "f",
+              "Yes, it is. It is clean and tidy."
+            ],
+            [
+              "n",
+              "Question: Is the classroom tidy?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D33/q16.mp3",
+          "tag": "旧坑复现·一般疑问句",
+          "parent_note": "教材第34页"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [
+        [
+          "n",
+          "Mr Black is visiting Rainbow Primary School. Peter and Alice show him around. There is a garden in front of the classroom building. There are flowers, plants, a swing and a slide in the garden. The computer lab is on this floor. Their classroom has a cupboard and a bookshelf. It is clean and tidy. Mr Black says thank you, and the children say, 'You're welcome.'"
+        ]
+      ],
+      "passage_audio": "static/audio/listening/W01D33/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "Mr Black visits Rainbow Primary School.",
+          "answer": "true",
+          "tag": "M3U1·school visit",
+          "parent_note": "教材第34页"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "The garden is behind the classroom building.",
+          "answer": "false",
+          "tag": "M3U1·in front of",
+          "parent_note": "教材第34页；原文是in front of"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "There is a computer lab on this floor.",
+          "answer": "true",
+          "tag": "M3U1·floor",
+          "parent_note": "教材第34页"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "The classroom is not tidy.",
+          "answer": "false",
+          "tag": "M3U1·clean and tidy",
+          "parent_note": "教材第34页；原文是clean and tidy"
+        }
+      ]
+    }
+  ]
+}

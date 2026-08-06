@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D35",
+  "title": "口语周复习 · M3U1 In our school",
+  "week": 4,
+  "day": 5,
+  "course_type": "weekly_review",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-08-06",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "What's in your school?",
+      "audio": "static/audio/speaking/S01D35/q01.mp3",
+      "tag": "教材P36·教材跟读",
+      "parent_note": "教材第36页"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "There is a hall and a library.",
+      "audio": "static/audio/speaking/S01D35/q02.mp3",
+      "tag": "教材P36·教材跟读",
+      "parent_note": "教材第36页"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "What's in your classroom?",
+      "audio": "static/audio/speaking/S01D35/q03.mp3",
+      "tag": "教材P36·教材跟读",
+      "parent_note": "教材第36页"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "There is a cupboard and a bookshelf.",
+      "audio": "static/audio/speaking/S01D35/q04.mp3",
+      "tag": "教材P36·教材跟读",
+      "parent_note": "教材第36页"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "Grandpa grows the fruit.",
+      "audio": "static/audio/speaking/S01D35/q05.mp3",
+      "tag": "教材P36·教材跟读",
+      "parent_note": "教材第36页"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "The fruit is on the trees.",
+      "audio": "static/audio/speaking/S01D35/q06.mp3",
+      "tag": "教材P36·教材跟读",
+      "parent_note": "教材第36页"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "What's in your schoolbag?",
+      "expected": "There are some pencils and notebooks.",
+      "hint": "用英语说：有一些铅笔和练习本。",
+      "audio": "static/audio/speaking/S01D35/q07.mp3",
+      "tag": "教材P36·教材问答",
+      "parent_note": "教材第36页"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "Where is the playground?",
+      "expected": "It is behind the classroom building.",
+      "hint": "用英语说：它在教学楼后面。",
+      "audio": "static/audio/speaking/S01D35/q08.mp3",
+      "tag": "教材P36·教材问答",
+      "parent_note": "教材第36页"
+    }
+  ]
+}
