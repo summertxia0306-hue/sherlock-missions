@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D40",
+  "title": "听力周测卷 · M3U2 Around my home",
+  "week": 5,
+  "day": 5,
+  "course_type": "weekly_test",
+  "est_minutes": 20,
+  "scope": "4A M3U2 教材第37-41页综合：地点、方位、问路、Nanjing Road、sl/sn/sw + 旧坑嵌入",
+  "difficulty": "L1",
+  "open_date": "2026-08-11",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D40/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "slide",
+            "snake",
+            "swing"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "slide"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D40/q01.mp3",
+          "tag": "M3U2·sl sound",
+          "parent_note": "教材第41页"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "swing",
+            "street",
+            "snake"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "snake"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D40/q02.mp3",
+          "tag": "M3U2·sn sound",
+          "parent_note": "教材第41页"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "slide",
+            "swing",
+            "shop"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "swing"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D40/q03.mp3",
+          "tag": "M3U2·sw sound",
+          "parent_note": "教材第41页"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "street",
+            "restaurant",
+            "centre"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "street"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D40/q04.mp3",
+          "tag": "M3U2·unit word",
+          "parent_note": "教材第41页"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "The home is next to the school.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The home is next to the school."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D40/q05.mp3",
+          "tag": "M3U2·rhyme",
+          "parent_note": "教材第41页"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "The school is behind the trees.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The school is in front of the trees."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D40/q06.mp3",
+          "tag": "M3U2·in front of",
+          "parent_note": "教材第41页；原文是in front of"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "The trees are behind the school.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The trees are behind the school."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D40/q07.mp3",
+          "tag": "M3U2·behind",
+          "parent_note": "教材第41页"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "This is a swing.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "These are two swings."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D40/q08.mp3",
+          "tag": "旧坑复现·this/these",
+          "parent_note": "教材第41页；原文是These are"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "It is on Green Street.",
+            "There are many shops.",
+            "It is a supermarket."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where is your home?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D40/q09.mp3",
+          "tag": "M3U2·rhyme",
+          "parent_note": "教材第41页"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "In front of the trees.",
+            "Behind the home.",
+            "Between two hotels."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where is the school?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D40/q10.mp3",
+          "tag": "M3U2·rhyme",
+          "parent_note": "教材第41页"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "Yes, there is.",
+            "Yes, it does.",
+            "Yes, they are."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Is there a post office near the restaurant?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D40/q11.mp3",
+          "tag": "M3U2·Is there review",
+          "parent_note": "教材第41页"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "They can visit the shops.",
+            "There are many shops.",
+            "The shops are busy."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can people do on Nanjing Road?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D40/q12.mp3",
+          "tag": "旧坑复现·can + base verb",
+          "parent_note": "教材第41页"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "question_text": "Where is the post office?",
+          "options": [
+            "Behind the restaurant.",
+            "Next to the school.",
+            "In front of the park."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Excuse me. Where is the post office?"
+            ],
+            [
+              "m",
+              "It is behind the restaurant."
+            ],
+            [
+              "n",
+              "Question: Where is the post office?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D40/q13.mp3",
+          "tag": "M3U2·asking the way",
+          "parent_note": "教材第41页"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "question_text": "What is next to the post office?",
+          "options": [
+            "A supermarket.",
+            "A bakery.",
+            "A hotel."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "Is there a bakery?"
+            ],
+            [
+              "f",
+              "Yes. It is next to the post office."
+            ],
+            [
+              "n",
+              "Question: What is next to the post office?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D40/q14.mp3",
+          "tag": "M3U2·next to review",
+          "parent_note": "教材第41页"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "question_text": "What is between two places?",
+          "options": [
+            "The supermarket.",
+            "The school.",
+            "The home."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Where is the supermarket?"
+            ],
+            [
+              "m",
+              "It is between the park and the restaurant."
+            ],
+            [
+              "n",
+              "Question: What is between two places?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D40/q15.mp3",
+          "tag": "M3U2·between review",
+          "parent_note": "教材第41页"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "question_text": "Why do people visit in the evening?",
+          "options": [
+            "To see the lights.",
+            "To go to school.",
+            "To find a snake."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Why do people visit Nanjing Road in the evening?"
+            ],
+            [
+              "f",
+              "The lights are bright and beautiful."
+            ],
+            [
+              "n",
+              "Question: Why do people visit in the evening?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D40/q16.mp3",
+          "tag": "M3U2·Nanjing Road review",
+          "parent_note": "教材第41页"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [
+        [
+          "n",
+          "My home is on Green Street, next to the school. The school is in front of some trees. There is a supermarket near my home. The post office is between the supermarket and a restaurant. The bakery is next to the post office. On Nanjing Road, people can visit many shops. In the evening, the lights are bright and beautiful. In the park, there are swings and a slide."
+        ]
+      ],
+      "passage_audio": "static/audio/listening/W01D40/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "The home is next to the school.",
+          "answer": "true",
+          "tag": "M3U2·rhyme",
+          "parent_note": "教材第41页"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "The post office is behind the supermarket.",
+          "answer": "false",
+          "tag": "M3U2·between",
+          "parent_note": "教材第41页；原文是between the supermarket and a restaurant"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "People can visit shops on Nanjing Road.",
+          "answer": "true",
+          "tag": "M3U2·Nanjing Road",
+          "parent_note": "教材第41页"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "There are no swings in the park.",
+          "answer": "false",
+          "tag": "M3U2·sw sound",
+          "parent_note": "教材第41页；原文说有swings"
+        }
+      ]
+    }
+  ]
+}

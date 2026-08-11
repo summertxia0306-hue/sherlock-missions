@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D39",
+  "title": "听力训练 · M3U2 Nanjing Road",
+  "week": 5,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "4A M3U2 教材第40页：Nanjing Road阅读、centre、busy、shops、hotels、evening lights + 旧坑嵌入",
+  "difficulty": "L1",
+  "open_date": "2026-08-11",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D39/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "centre",
+            "city",
+            "street"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "centre"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D39/q01.mp3",
+          "tag": "M3U2·centre",
+          "parent_note": "教材第40页"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "busy",
+            "bakery",
+            "bright"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "busy"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D39/q02.mp3",
+          "tag": "M3U2·busy",
+          "parent_note": "教材第40页"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "home",
+            "hotel",
+            "hall"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "hotel"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D39/q03.mp3",
+          "tag": "M3U2·hotel",
+          "parent_note": "教材第40页"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "lights",
+            "nights",
+            "shops"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "lights"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D39/q04.mp3",
+          "tag": "M3U2·lights",
+          "parent_note": "教材第40页"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "Nanjing Road is in the centre of Shanghai.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Nanjing Road is in the centre of Shanghai."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D39/q05.mp3",
+          "tag": "M3U2·Nanjing Road",
+          "parent_note": "教材第40页"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "Nanjing Road is very quiet.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Nanjing Road is very busy."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D39/q06.mp3",
+          "tag": "M3U2·busy",
+          "parent_note": "教材第40页；原文是busy"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "The lights are bright and beautiful.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The lights are bright and beautiful."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D39/q07.mp3",
+          "tag": "M3U2·evening lights",
+          "parent_note": "教材第40页"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "Nanjing Road has many shops.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Nanjing Road has many shops."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D39/q08.mp3",
+          "tag": "旧坑复现·third-person has",
+          "parent_note": "教材第40页"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问题，选出合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "It is in the centre of Shanghai.",
+            "It is behind a hotel.",
+            "There are many shops."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where is Nanjing Road?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D39/q09.mp3",
+          "tag": "M3U2·Where is",
+          "parent_note": "教材第40页"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "Yes, it is.",
+            "Yes, there are.",
+            "No, it can't."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Is Nanjing Road busy?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D39/q10.mp3",
+          "tag": "M3U2·Is question",
+          "parent_note": "教材第40页"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "The lights are bright and beautiful.",
+            "There are no shops.",
+            "The road is near a school."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Why do people visit Nanjing Road in the evening?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D39/q11.mp3",
+          "tag": "M3U2·evening",
+          "parent_note": "教材第40页"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "They can buy clothes and watches.",
+            "The lights are bright.",
+            "The hotels are busy."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can people buy there?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D39/q12.mp3",
+          "tag": "旧坑复现·can + base verb",
+          "parent_note": "教材第40页"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "question_text": "Where is Nanjing Road?",
+          "options": [
+            "In the centre of Shanghai.",
+            "Behind Shanghai.",
+            "Next to a school."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Where is Nanjing Road?"
+            ],
+            [
+              "f",
+              "It is in the centre of Shanghai."
+            ],
+            [
+              "n",
+              "Question: Where is Nanjing Road?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D39/q13.mp3",
+          "tag": "M3U2·centre",
+          "parent_note": "教材第40页"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "question_text": "What can people buy?",
+          "options": [
+            "Only postcards.",
+            "Clothes and watches.",
+            "Only bread."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "What can people buy there?"
+            ],
+            [
+              "m",
+              "They can buy clothes, clocks, watches and food."
+            ],
+            [
+              "n",
+              "Question: What can people buy?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D39/q14.mp3",
+          "tag": "M3U2·shops",
+          "parent_note": "教材第40页"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "question_text": "Where can people eat?",
+          "options": [
+            "In the hotels.",
+            "In the restaurants.",
+            "In the post office."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "Can people eat on Nanjing Road?"
+            ],
+            [
+              "f",
+              "Yes. They can eat in the restaurants."
+            ],
+            [
+              "n",
+              "Question: Where can people eat?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D39/q15.mp3",
+          "tag": "M3U2·restaurants",
+          "parent_note": "教材第40页"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "question_text": "What is bright?",
+          "options": [
+            "The hotels.",
+            "The shops.",
+            "The lights."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "Why is the road beautiful in the evening?"
+            ],
+            [
+              "m",
+              "The lights are bright then."
+            ],
+            [
+              "n",
+              "Question: What is bright?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D39/q16.mp3",
+          "tag": "M3U2·lights",
+          "parent_note": "教材第40页"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "听短文，判断下面的句子对不对（√ 对 / × 错）",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_transcript": [
+        [
+          "n",
+          "Nanjing Road is in the centre of Shanghai. It is very busy. Every day many people visit the shops. They can buy clothes, clocks, watches, food and many other things. They can eat in the restaurants or stay in the hotels. In the evening, many people visit the road because the lights are bright and beautiful."
+        ]
+      ],
+      "passage_audio": "static/audio/listening/W01D39/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "Nanjing Road is in Shanghai.",
+          "answer": "true",
+          "tag": "M3U2·Shanghai",
+          "parent_note": "教材第40页"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "People can only buy food there.",
+          "answer": "false",
+          "tag": "M3U2·shops",
+          "parent_note": "教材第40页；原文还有clothes、clocks、watches等"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "People can stay in the hotels.",
+          "answer": "true",
+          "tag": "M3U2·hotels",
+          "parent_note": "教材第40页"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "The lights are dark in the evening.",
+          "answer": "false",
+          "tag": "M3U2·lights",
+          "parent_note": "教材第40页；原文是bright and beautiful"
+        }
+      ]
+    }
+  ]
+}

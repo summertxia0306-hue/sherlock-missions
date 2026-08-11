@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D40",
+  "title": "口语周复习 · M3U2 Around my home",
+  "week": 5,
+  "day": 5,
+  "course_type": "weekly_review",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-08-11",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Where is your home?",
+      "audio": "static/audio/speaking/S01D40/q01.mp3",
+      "tag": "教材P41·教材跟读",
+      "parent_note": "教材第41页"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "It's on Green Street.",
+      "audio": "static/audio/speaking/S01D40/q02.mp3",
+      "tag": "教材P41·教材跟读",
+      "parent_note": "教材第41页"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "It's next to the school.",
+      "audio": "static/audio/speaking/S01D40/q03.mp3",
+      "tag": "教材P41·教材跟读",
+      "parent_note": "教材第41页"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Where is the school?",
+      "audio": "static/audio/speaking/S01D40/q04.mp3",
+      "tag": "教材P41·教材跟读",
+      "parent_note": "教材第41页"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "It is in front of the trees.",
+      "audio": "static/audio/speaking/S01D40/q05.mp3",
+      "tag": "教材P41·教材跟读",
+      "parent_note": "教材第41页"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Slide starts with sl, snake with sn, and swing with sw.",
+      "audio": "static/audio/speaking/S01D40/q06.mp3",
+      "tag": "教材P41·教材跟读",
+      "parent_note": "教材第41页"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "Where are the trees?",
+      "expected": "They are behind the school.",
+      "hint": "用英语说：它们在学校后面。",
+      "audio": "static/audio/speaking/S01D40/q07.mp3",
+      "tag": "教材P41·教材问答",
+      "parent_note": "教材第41页"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "Is there a slide near the school?",
+      "expected": "Yes, there is.",
+      "hint": "用英语说：是的，有。",
+      "audio": "static/audio/speaking/S01D40/q08.mp3",
+      "tag": "教材P41·教材问答",
+      "parent_note": "教材第41页"
+    }
+  ]
+}

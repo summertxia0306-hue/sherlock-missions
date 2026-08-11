@@ -1354,6 +1354,201 @@
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
    "text": "Where is the playground?"
+  },
+  "2d3c20870b2aa57f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is your home?"
+  },
+  "03b56956c3f03f1d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It's at No. 126, Garden Street."
+  },
+  "7ca381132ec73d85": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "There are many shops near my home."
+  },
+  "c786704f6157d7bc": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is there a park near your home?"
+  },
+  "51acd533d2c31d0d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Yes, there is."
+  },
+  "f9ffcbf9635269a1": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It's behind my home."
+  },
+  "ddce0fcfa24b69f2": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is Jill's home?"
+  },
+  "e1be035d1e00508e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Are there any shops near Jill's home?"
+  },
+  "970ee13f14d2e527": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is a supermarket."
+  },
+  "522c553efbbee443": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is a post office."
+  },
+  "4cc8083038e14586": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is a restaurant."
+  },
+  "7bafac8d1780065e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The post office is next to the restaurant."
+  },
+  "e9501c868db6b662": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The post office is between the supermarket and the restaurant."
+  },
+  "167f1e462794559f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is there a supermarket near your home?"
+  },
+  "29b89f88df387105": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is the post office?"
+  },
+  "e7889c15c098feaf": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Excuse me."
+  },
+  "d949f9e6b54c25f7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is there a post office here?"
+  },
+  "07107ddb3009c0e5": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I want to send a postcard."
+  },
+  "e42ec57fc380974f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It's behind the restaurant."
+  },
+  "ea8a39616a1e57e9": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "There's a bakery next to the post office."
+  },
+  "94c565a0d106bee7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "We can show you the way."
+  },
+  "7cbf6299a3975bda": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is there a bakery?"
+  },
+  "ea20c696ca4d4563": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do Jill and Kitty say?"
+  },
+  "7e87207a14e52a01": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Nanjing Road is in the centre of Shanghai."
+  },
+  "3d22170e125c8974": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It is very busy."
+  },
+  "d8f3f4112143e380": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Many people visit the shops."
+  },
+  "f654908321afa6b3": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "They can buy clothes and watches."
+  },
+  "fbd986d0645bce5e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "They can eat in the restaurants."
+  },
+  "b7e2c9a9df59ae2c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The lights are bright and beautiful."
+  },
+  "421f71e1020607ca": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is Nanjing Road?"
+  },
+  "28777c6b4accbf32": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can people buy there?"
+  },
+  "64d964ac40f32297": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It's on Green Street."
+  },
+  "e52664c38d17bdcf": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It's next to the school."
+  },
+  "9526eaf86dec0e29": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is the school?"
+  },
+  "349cee95d64776f4": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It is in front of the trees."
+  },
+  "4df1b04d9df83393": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Slide, snake and swing begin with s."
+  },
+  "81f0b720ab6026bf": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where are the trees?"
+  },
+  "d535c06dc3d057e8": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is there a slide near the school?"
+  },
+  "92a6e3b53cfa4e41": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Slide starts with sl, snake with sn, and swing with sw."
   }
  },
  "courses": {
@@ -1706,6 +1901,56 @@
    "static/audio/speaking/S01D35/q06.mp3": "c3c687a6a327d274",
    "static/audio/speaking/S01D35/q07.mp3": "51cb88faa066d7d6",
    "static/audio/speaking/S01D35/q08.mp3": "adfaa1eb448b4f8e"
+  },
+  "S01D36": {
+   "static/audio/speaking/S01D36/q01.mp3": "2d3c20870b2aa57f",
+   "static/audio/speaking/S01D36/q02.mp3": "03b56956c3f03f1d",
+   "static/audio/speaking/S01D36/q03.mp3": "7ca381132ec73d85",
+   "static/audio/speaking/S01D36/q04.mp3": "c786704f6157d7bc",
+   "static/audio/speaking/S01D36/q05.mp3": "51acd533d2c31d0d",
+   "static/audio/speaking/S01D36/q06.mp3": "f9ffcbf9635269a1",
+   "static/audio/speaking/S01D36/q07.mp3": "ddce0fcfa24b69f2",
+   "static/audio/speaking/S01D36/q08.mp3": "e1be035d1e00508e"
+  },
+  "S01D37": {
+   "static/audio/speaking/S01D37/q01.mp3": "970ee13f14d2e527",
+   "static/audio/speaking/S01D37/q02.mp3": "522c553efbbee443",
+   "static/audio/speaking/S01D37/q03.mp3": "4cc8083038e14586",
+   "static/audio/speaking/S01D37/q04.mp3": "7bafac8d1780065e",
+   "static/audio/speaking/S01D37/q05.mp3": "e9501c868db6b662",
+   "static/audio/speaking/S01D37/q06.mp3": "7ca381132ec73d85",
+   "static/audio/speaking/S01D37/q07.mp3": "167f1e462794559f",
+   "static/audio/speaking/S01D37/q08.mp3": "29b89f88df387105"
+  },
+  "S01D38": {
+   "static/audio/speaking/S01D38/q01.mp3": "e7889c15c098feaf",
+   "static/audio/speaking/S01D38/q02.mp3": "d949f9e6b54c25f7",
+   "static/audio/speaking/S01D38/q03.mp3": "07107ddb3009c0e5",
+   "static/audio/speaking/S01D38/q04.mp3": "e42ec57fc380974f",
+   "static/audio/speaking/S01D38/q05.mp3": "ea8a39616a1e57e9",
+   "static/audio/speaking/S01D38/q06.mp3": "94c565a0d106bee7",
+   "static/audio/speaking/S01D38/q07.mp3": "7cbf6299a3975bda",
+   "static/audio/speaking/S01D38/q08.mp3": "ea20c696ca4d4563"
+  },
+  "S01D39": {
+   "static/audio/speaking/S01D39/q01.mp3": "7e87207a14e52a01",
+   "static/audio/speaking/S01D39/q02.mp3": "3d22170e125c8974",
+   "static/audio/speaking/S01D39/q03.mp3": "d8f3f4112143e380",
+   "static/audio/speaking/S01D39/q04.mp3": "f654908321afa6b3",
+   "static/audio/speaking/S01D39/q05.mp3": "fbd986d0645bce5e",
+   "static/audio/speaking/S01D39/q06.mp3": "b7e2c9a9df59ae2c",
+   "static/audio/speaking/S01D39/q07.mp3": "421f71e1020607ca",
+   "static/audio/speaking/S01D39/q08.mp3": "28777c6b4accbf32"
+  },
+  "S01D40": {
+   "static/audio/speaking/S01D40/q01.mp3": "2d3c20870b2aa57f",
+   "static/audio/speaking/S01D40/q02.mp3": "64d964ac40f32297",
+   "static/audio/speaking/S01D40/q03.mp3": "e52664c38d17bdcf",
+   "static/audio/speaking/S01D40/q04.mp3": "9526eaf86dec0e29",
+   "static/audio/speaking/S01D40/q05.mp3": "349cee95d64776f4",
+   "static/audio/speaking/S01D40/q06.mp3": "92a6e3b53cfa4e41",
+   "static/audio/speaking/S01D40/q07.mp3": "81f0b720ab6026bf",
+   "static/audio/speaking/S01D40/q08.mp3": "d535c06dc3d057e8"
   }
  }
 }

@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D36",
+  "title": "口语练习 · M3U2 Around my home",
+  "week": 5,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-08-11",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Where is your home?",
+      "audio": "static/audio/speaking/S01D36/q01.mp3",
+      "tag": "教材P37·教材跟读",
+      "parent_note": "教材第37页"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "It's at No. 126, Garden Street.",
+      "audio": "static/audio/speaking/S01D36/q02.mp3",
+      "tag": "教材P37·教材跟读",
+      "parent_note": "教材第37页"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "There are many shops near my home.",
+      "audio": "static/audio/speaking/S01D36/q03.mp3",
+      "tag": "教材P37·教材跟读",
+      "parent_note": "教材第37页"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Is there a park near your home?",
+      "audio": "static/audio/speaking/S01D36/q04.mp3",
+      "tag": "教材P37·教材跟读",
+      "parent_note": "教材第37页"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "Yes, there is.",
+      "audio": "static/audio/speaking/S01D36/q05.mp3",
+      "tag": "教材P37·教材跟读",
+      "parent_note": "教材第37页"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "It's behind my home.",
+      "audio": "static/audio/speaking/S01D36/q06.mp3",
+      "tag": "教材P37·教材跟读",
+      "parent_note": "教材第37页"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "Where is Jill's home?",
+      "expected": "It's at No. 126, Garden Street.",
+      "hint": "用英语说：在花园街126号。",
+      "audio": "static/audio/speaking/S01D36/q07.mp3",
+      "tag": "教材P37·教材问答",
+      "parent_note": "教材第37页"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "Are there any shops near Jill's home?",
+      "expected": "Yes, there are.",
+      "hint": "用英语说：是的，有。",
+      "audio": "static/audio/speaking/S01D36/q08.mp3",
+      "tag": "教材P37·旧坑复现",
+      "parent_note": "教材第37页"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "course_id": "S01D39",
+  "title": "口语练习 · M3U2 Nanjing Road",
+  "week": 5,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 10,
+  "difficulty": "L1",
+  "open_date": "2026-08-11",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Nanjing Road is in the centre of Shanghai.",
+      "audio": "static/audio/speaking/S01D39/q01.mp3",
+      "tag": "教材P40·教材跟读",
+      "parent_note": "教材第40页"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "It is very busy.",
+      "audio": "static/audio/speaking/S01D39/q02.mp3",
+      "tag": "教材P40·教材跟读",
+      "parent_note": "教材第40页"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "Many people visit the shops.",
+      "audio": "static/audio/speaking/S01D39/q03.mp3",
+      "tag": "教材P40·教材跟读",
+      "parent_note": "教材第40页"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "They can buy clothes and watches.",
+      "audio": "static/audio/speaking/S01D39/q04.mp3",
+      "tag": "教材P40·旧坑复现",
+      "parent_note": "教材第40页"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "They can eat in the restaurants.",
+      "audio": "static/audio/speaking/S01D39/q05.mp3",
+      "tag": "教材P40·教材跟读",
+      "parent_note": "教材第40页"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "The lights are bright and beautiful.",
+      "audio": "static/audio/speaking/S01D39/q06.mp3",
+      "tag": "教材P40·教材跟读",
+      "parent_note": "教材第40页"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "Where is Nanjing Road?",
+      "expected": "It is in the centre of Shanghai.",
+      "hint": "用英语说：它在上海市中心。",
+      "audio": "static/audio/speaking/S01D39/q07.mp3",
+      "tag": "教材P40·教材问答",
+      "parent_note": "教材第40页"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "What can people buy there?",
+      "expected": "They can buy clothes and watches.",
+      "hint": "用英语说：他们可以买衣服和手表。",
+      "audio": "static/audio/speaking/S01D39/q08.mp3",
+      "tag": "教材P40·教材问答",
+      "parent_note": "教材第40页"
+    }
+  ]
+}
