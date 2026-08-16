@@ -26,8 +26,9 @@ from speaking import models as smodels
 from storage import progress
 
 # Streamlit Cloud can keep imported submodules alive across a hot rerun. Reload
-# page modules at the entry boundary so a deploy cannot mix new content with an
-# old list renderer.
+# shared progress first, then page/model modules, so a deploy cannot mix module
+# versions when a page starts using a new progress helper.
+progress = importlib.reload(progress)
 lpage = importlib.reload(lpage)
 spage = importlib.reload(spage)
 smodels = importlib.reload(smodels)
