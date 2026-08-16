@@ -1,0 +1,432 @@
+{
+  "course_id": "W01D43",
+  "title": "听力复习 · How do you feel?",
+  "week": 6,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "M1U3：感受、How do you feel和礼貌表达",
+  "difficulty": "L1",
+  "open_date": "2026-08-16",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D43/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "hungry",
+            "happy",
+            "thirsty"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "hungry"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D43/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "thirty",
+            "thirsty",
+            "tired"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "thirsty"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D43/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "sad",
+            "tired",
+            "full"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "tired"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D43/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "biscuit",
+            "basket",
+            "butter"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "biscuit"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D43/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "I'm hungry.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "I'm hungry."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D43/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "She's tired.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "She's thirsty."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D43/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "Have some water.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Have some water."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D43/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "We are hungry now.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "We are full now."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D43/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "I'm thirsty.",
+            "I can drink.",
+            "I have water."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "How do you feel?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D43/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "Thank you.",
+            "I'm sorry.",
+            "Yes, I am."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Have some biscuits."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D43/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "Yes, I am.",
+            "Yes, I do.",
+            "Yes, I can."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Are you tired?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D43/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "No, I'm not.",
+            "No, I don't.",
+            "No, I can't."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Are you hungry?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D43/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听短对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "What does the girl need?",
+          "options": [
+            "Water.",
+            "A book.",
+            "A ball."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "I'm thirsty."
+            ],
+            [
+              "m",
+              "Have some water."
+            ],
+            [
+              "f",
+              "Thank you."
+            ],
+            [
+              "n",
+              "Question: What does the girl need?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D43/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "How does Jill feel?",
+          "options": [
+            "Happy.",
+            "Tired.",
+            "Full."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "How do you feel, Jill?"
+            ],
+            [
+              "f",
+              "I'm tired."
+            ],
+            [
+              "n",
+              "Question: How does Jill feel?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D43/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "Is the boy hungry?",
+          "options": [
+            "Yes, he is.",
+            "No, he isn't.",
+            "We don't know."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Are you hungry?"
+            ],
+            [
+              "m",
+              "No. I'm full."
+            ],
+            [
+              "n",
+              "Question: Is the boy hungry?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D43/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "Who has an idea?",
+          "options": [
+            "The girl.",
+            "The boy.",
+            "Ginger."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Ginger is sad."
+            ],
+            [
+              "f",
+              "I have an idea. I can help."
+            ],
+            [
+              "n",
+              "Question: Who has an idea?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D43/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听短文，再判断四句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/W01D43/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Kitty is hungry, so she has a biscuit. Ben is thirsty, so he drinks some water. Now Kitty is full and Ben is happy."
+        ]
+      ],
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Kitty is hungry at first.",
+          "answer": "true"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Kitty has some water.",
+          "answer": "false"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Ben drinks water.",
+          "answer": "true"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "tag": "M1U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Ben is sad at the end.",
+          "answer": "false"
+        }
+      ]
+    }
+  ]
+}

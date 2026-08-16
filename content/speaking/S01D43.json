@@ -1,0 +1,81 @@
+{
+  "course_id": "S01D43",
+  "title": "口语复习 · How do you feel?",
+  "week": 6,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 8,
+  "scope": "M1U3：感受和礼貌表达",
+  "difficulty": "L1",
+  "open_date": "2026-08-16",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "I'm hungry.",
+      "audio": "static/audio/speaking/S01D43/q01.mp3",
+      "tag": "M1U3·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "She's thirsty.",
+      "audio": "static/audio/speaking/S01D43/q02.mp3",
+      "tag": "M1U3·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "He is tired.",
+      "audio": "static/audio/speaking/S01D43/q03.mp3",
+      "tag": "M1U3·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Have some water.",
+      "audio": "static/audio/speaking/S01D43/q04.mp3",
+      "tag": "M1U3·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "Thank you very much.",
+      "audio": "static/audio/speaking/S01D43/q05.mp3",
+      "tag": "M1U3·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "I have an idea.",
+      "audio": "static/audio/speaking/S01D43/q06.mp3",
+      "tag": "M1U3·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "How does Jill feel?",
+      "expected": "She's thirsty.",
+      "hint": "用英语说：她口渴。",
+      "audio": "static/audio/speaking/S01D43/q07.mp3",
+      "tag": "M1U3·综合复习",
+      "parent_note": "固定答案跟读式问答，不采集真实个人信息"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "Are you hungry?",
+      "expected": "No, I'm not.",
+      "hint": "用英语说：不，我不饿。",
+      "audio": "static/audio/speaking/S01D43/q08.mp3",
+      "tag": "M1U3·综合复习",
+      "parent_note": "固定答案跟读式问答，不采集真实个人信息"
+    }
+  ]
+}

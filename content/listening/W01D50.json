@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D50",
+  "title": "听力综合测评 · Full review",
+  "week": 6,
+  "day": 10,
+  "course_type": "weekly_test",
+  "est_minutes": 20,
+  "scope": "M1-M3U2：人物、能力、感受、家庭、学校和社区总复习",
+  "difficulty": "L1",
+  "open_date": "2026-08-16",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D50/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "present",
+            "parent",
+            "restaurant"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "present"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D50/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "bitter",
+            "butter",
+            "better"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "bitter"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D50/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "library",
+            "bakery",
+            "hospital"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "library"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D50/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "behind",
+            "between",
+            "next to"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "between"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D50/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "This is a aeroplane.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "This is an aeroplane."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D50/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "These are my books.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "These are my books."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D50/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "A dog have four legs.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "A dog has four legs."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D50/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "There are two shops near the school.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "There are two shops near the school."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D50/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "It's fourteen.",
+            "I'm fourteen.",
+            "She's fourteen."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What's your student number?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D50/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "Yes, it can.",
+            "Yes, it does.",
+            "Yes, it is."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Can the bird fly high?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D50/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "Yes, there are.",
+            "Yes, there is.",
+            "Yes, they are."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Are there any classrooms?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D50/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "It is next to the bakery.",
+            "There is one post office.",
+            "I can show you."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where is the post office?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D50/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听短对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "What is the girl's name?",
+          "options": [
+            "Alice.",
+            "Jill.",
+            "Kitty."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Who is that girl?"
+            ],
+            [
+              "m",
+              "She is my classmate. Her name is Alice."
+            ],
+            [
+              "n",
+              "Question: What is the girl's name?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D50/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "How does the girl feel?",
+          "options": [
+            "Thirsty.",
+            "Hungry.",
+            "Sad."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Are you hungry?"
+            ],
+            [
+              "f",
+              "No, I'm full, but I am thirsty."
+            ],
+            [
+              "n",
+              "Question: How does the girl feel?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D50/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "What is in front of the library?",
+          "options": [
+            "The hall.",
+            "The playground.",
+            "The office."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Where is the library?"
+            ],
+            [
+              "m",
+              "It is behind the hall."
+            ],
+            [
+              "n",
+              "Question: What is in front of the library?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D50/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "What is next to the supermarket?",
+          "options": [
+            "A restaurant.",
+            "A school.",
+            "A hospital."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Is there a supermarket near your home?"
+            ],
+            [
+              "f",
+              "Yes. It is next to a restaurant."
+            ],
+            [
+              "n",
+              "Question: What is next to the supermarket?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D50/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听短文，再判断四句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/W01D50/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Alice is my classmate. She is eleven and she can swim well. Her father is a teacher. Alice's school has a library and a big playground. There is a supermarket next to her home and a bakery near the park."
+        ]
+      ],
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Alice is eleven.",
+          "answer": "true"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Alice cannot swim.",
+          "answer": "false"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Her father is a teacher.",
+          "answer": "true"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "tag": "M1-M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "The bakery is next to her home.",
+          "answer": "false"
+        }
+      ]
+    }
+  ]
+}

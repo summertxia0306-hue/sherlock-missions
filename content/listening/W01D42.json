@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D42",
+  "title": "听力复习 · Abilities",
+  "week": 6,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "M1U2：能力动词、can加动词原形和一般疑问句",
+  "difficulty": "L1",
+  "open_date": "2026-08-16",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D42/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "draw",
+            "dance",
+            "drink"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "draw"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D42/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "read",
+            "ride",
+            "write"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "write"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D42/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "skip",
+            "swim",
+            "sing"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "swim"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D42/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "run",
+            "jump",
+            "paint"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "jump"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D42/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "I can paint a picture.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "I can paint a picture."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D42/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "She can swims well.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "She can swim well."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D42/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "He can run fast.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "He can run fast."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D42/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "The bird can jump high.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The bird can fly high."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D42/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "I can draw.",
+            "Yes, I can.",
+            "I like drawing."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can you do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D42/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "Yes, she does.",
+            "Yes, she can.",
+            "Yes, she is."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Can she swim?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D42/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "No, it can't.",
+            "No, it doesn't.",
+            "No, it isn't."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Can the fish fly?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D42/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "He can run.",
+            "She can run.",
+            "He likes running."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can he do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D42/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听短对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "What can Ben draw?",
+          "options": [
+            "A robot.",
+            "A flower.",
+            "A tree."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Can you draw, Ben?"
+            ],
+            [
+              "m",
+              "Yes. I can draw a robot."
+            ],
+            [
+              "n",
+              "Question: What can Ben draw?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D42/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "What can Jill do?",
+          "options": [
+            "Swim.",
+            "Jump.",
+            "Fly."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "Can Jill swim?"
+            ],
+            [
+              "f",
+              "No, but she can jump."
+            ],
+            [
+              "n",
+              "Question: What can Jill do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D42/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "Can Peter write?",
+          "options": [
+            "Yes, he can.",
+            "No, he can't.",
+            "We don't know."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "What can Peter do?"
+            ],
+            [
+              "m",
+              "He can read and write."
+            ],
+            [
+              "n",
+              "Question: Can Peter write?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D42/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "What can the bird do?",
+          "options": [
+            "Run fast.",
+            "Swim well.",
+            "Fly high."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "m",
+              "Can this bird run?"
+            ],
+            [
+              "f",
+              "No. It can fly high."
+            ],
+            [
+              "n",
+              "Question: What can the bird do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D42/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听短文，再判断四句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/W01D42/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Alice can read and write. She likes drawing. Ben can run fast, but he cannot swim. Their little bird can fly high."
+        ]
+      ],
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Alice can read.",
+          "answer": "true"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Alice likes swimming.",
+          "answer": "false"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Ben can swim.",
+          "answer": "false"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "tag": "M1U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "The bird can fly high.",
+          "answer": "true"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "course_id": "S01D50",
+  "title": "口语综合测评 · Full review",
+  "week": 6,
+  "day": 10,
+  "course_type": "weekly_review",
+  "est_minutes": 8,
+  "scope": "M1-M3U2：人物、能力、学校和社区综合表达",
+  "difficulty": "L1",
+  "open_date": "2026-08-16",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Alice is my classmate.",
+      "audio": "static/audio/speaking/S01D50/q01.mp3",
+      "tag": "M1-M3U2·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "She can swim well.",
+      "audio": "static/audio/speaking/S01D50/q02.mp3",
+      "tag": "M1-M3U2·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "Her father is a teacher.",
+      "audio": "static/audio/speaking/S01D50/q03.mp3",
+      "tag": "M1-M3U2·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "There is a library in her school.",
+      "audio": "static/audio/speaking/S01D50/q04.mp3",
+      "tag": "M1-M3U2·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "The playground is behind the hall.",
+      "audio": "static/audio/speaking/S01D50/q05.mp3",
+      "tag": "M1-M3U2·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "A supermarket is next to her home.",
+      "audio": "static/audio/speaking/S01D50/q06.mp3",
+      "tag": "M1-M3U2·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "Where is the playground?",
+      "expected": "It is behind the hall.",
+      "hint": "用英语说：它在礼堂后面。",
+      "audio": "static/audio/speaking/S01D50/q07.mp3",
+      "tag": "M1-M3U2·综合复习",
+      "parent_note": "固定答案跟读式问答，不采集真实个人信息"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "Is there a supermarket near her home?",
+      "expected": "Yes, there is.",
+      "hint": "用英语说：是的，有。",
+      "audio": "static/audio/speaking/S01D50/q08.mp3",
+      "tag": "M1-M3U2·综合复习",
+      "parent_note": "固定答案跟读式问答，不采集真实个人信息"
+    }
+  ]
+}

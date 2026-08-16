@@ -1,1475 +1,5 @@
 {
  "fragments": {
-  "93830c8a0cd44c8f": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I have a little cat."
-  },
-  "6e18574d58fee75a": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The panda is black and white."
-  },
-  "52a32431e6bedcd3": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I can see five birds."
-  },
-  "81bc484fc114bf7c": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "It's a rabbit."
-  },
-  "cbe67e00e238a236": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "How many cats can you see?"
-  },
-  "012347eddc300faf": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I like pandas."
-  },
-  "35894030823c591b": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Is this a tiger?"
-  },
-  "d24449749f119d0f": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The apple tastes sweet."
-  },
-  "a397e8711ba2556c": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The orange tastes sour."
-  },
-  "ad917173a308fa1c": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Smell the flower. It smells nice."
-  },
-  "3694ffaa0f4ef0e7": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The bread is soft."
-  },
-  "83f41e22e5b8de81": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "May I have some milk?"
-  },
-  "3292a7468b78bb21": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I like eating cakes."
-  },
-  "a749ecdaa755c164": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "How does the cake taste?"
-  },
-  "5f179c8b33ff4a5c": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Do you like apples?"
-  },
-  "e7fc0601dd278783": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I like flying kites."
-  },
-  "52122b1e293ac03f": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "My bag is big."
-  },
-  "7936257d38c31de2": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The ball is under the desk."
-  },
-  "aa48feaf262770f4": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I can ride a bicycle."
-  },
-  "8a335c850baf35dd": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Can you skip rope?"
-  },
-  "4c227b45506a9c71": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I play football on Sunday."
-  },
-  "7ae2a8f7862ba14d": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Can you swim?"
-  },
-  "610c87d959a7b5e7": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Where is the pencil?"
-  },
-  "5c4fa528049ddd80": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The tiger is big."
-  },
-  "40b9b32f2fb4b155": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I have an egg and some milk."
-  },
-  "1a20c375d9fb0cbe": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "My kite is red and yellow."
-  },
-  "4316544cd6202fc7": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The soup tastes salty."
-  },
-  "8634fe7ed6aeacdc": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I go to the park with my mother."
-  },
-  "95df27734af6c7fc": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What a happy day!"
-  },
-  "71dceeb031d9b761": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "How does the orange taste?"
-  },
-  "4e856b42a9552978": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Do you like swimming?"
-  },
-  "e560ac2ca363e5ef": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Happy Children's Day!"
-  },
-  "a05c68df7a655235": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is a present for you."
-  },
-  "03baf6e93ec2f616": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Look at that bird over there."
-  },
-  "b7eb7ecf318086fa": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What colour is the bird?"
-  },
-  "d245ffb13c524671": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Can you draw a cat?"
-  },
-  "8ac5daeb7bc4e6f8": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Good morning, Miss Fang."
-  },
-  "e181b1936f1b683e": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is my friend."
-  },
-  "d19ade21bfa122a3": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "His name is Paul."
-  },
-  "0e0af6417c6e2582": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Her name is Sally."
-  },
-  "4b52f8ca4e8d5397": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She's twelve."
-  },
-  "36a43e229438c89c": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Her student number is sixteen."
-  },
-  "d1288221bb7dcc0e": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What's his name?"
-  },
-  "5cb6ccf9d371194d": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What's her student number?"
-  },
-  "262e09557b2c5155": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "We have a new classmate, Jill."
-  },
-  "95f941e992fa7d3f": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She's ten years old."
-  },
-  "5a875560746afeb2": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She lives near our school."
-  },
-  "b059d307f82538ed": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She walks to school every day."
-  },
-  "2ba12e64102f23ec": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She likes reading and dancing."
-  },
-  "9a7c87472f5792ab": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She can play basketball well."
-  },
-  "543da57b9839fac6": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What does Jill like?"
-  },
-  "606bb91d4bd2bf56": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What can Jill do?"
-  },
-  "774a51c794372207": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I can draw."
-  },
-  "4d66ec9aa5305205": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I can read."
-  },
-  "147d4e1894f7f4f5": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I can write."
-  },
-  "1cfa0926b450fed6": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I can swim."
-  },
-  "859b7f9f606a9064": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What can you do?"
-  },
-  "e85b06c35501bb97": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I can jump and run."
-  },
-  "39e2d811e65fc3a9": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Can you write?"
-  },
-  "c44cc21db9413670": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Can she swim?"
-  },
-  "48966555297321fd": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Yes, she can."
-  },
-  "89af93250edf6d8c": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Can he fly?"
-  },
-  "a84717f825a94638": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "No, he can't."
-  },
-  "872f06c4c7af5c1b": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "A bird can fly high."
-  },
-  "ecd4fee8230d2449": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "A dolphin can swim well."
-  },
-  "4b04cff9c65e7e0a": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Can a bird fly?"
-  },
-  "ea1f4ac2e927efec": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Can a dolphin run fast?"
-  },
-  "8733ca1aba747983": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is my friend Jill."
-  },
-  "1bfb89d2b2effe22": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Her name is Jill."
-  },
-  "ed5afd0ac9e18649": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What can your friend do?"
-  },
-  "9ba0133179e519cd": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What does your friend like?"
-  },
-  "74077a62f3b60ac7": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I'm happy."
-  },
-  "effb882ee155c1dc": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I'm hungry."
-  },
-  "03c9764f0c655a9d": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I'm thirsty."
-  },
-  "41b4df7a50af95ff": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I'm sad."
-  },
-  "0ae38a00deff77e9": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "How do you feel?"
-  },
-  "38bd95bbe5a89c2a": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I'm tired."
-  },
-  "2f83940a655406e7": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Have some biscuits."
-  },
-  "f07988df2508050d": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Thank you."
-  },
-  "3647e6a0fd339cdf": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Sorry."
-  },
-  "e2bcd64cdc62ad7b": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I have an idea."
-  },
-  "482e8ff9b0085dbb": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I'm full."
-  },
-  "d06af42f25c1e2a4": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "We're happy."
-  },
-  "4b594a41a04d8b8f": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What can you say?"
-  },
-  "07e29adf50e84b96": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Ginger is hungry."
-  },
-  "c912b43d3dbf526f": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "There is a biscuit."
-  },
-  "0bb3ff48277cdafd": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Are you thirsty?"
-  },
-  "0e996c1803aca156": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Yes, I am."
-  },
-  "9864228a97ff41a6": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "No, I'm not."
-  },
-  "11ea764ba8cb3c9d": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I can help you."
-  },
-  "1c36fb2957d9d6f0": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Are you hungry?"
-  },
-  "24f669f63673a140": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "He's sad."
-  },
-  "bac5f18223ff3499": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She's happy."
-  },
-  "51c94249a8b90edf": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "We're tired."
-  },
-  "ecdf16d5eb41bbaf": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Have some water."
-  },
-  "fa5ff4b32a4dcc2f": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I have a new idea."
-  },
-  "108868c9ffc8bb96": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Ginger is full."
-  },
-  "fc4436f0709dcba8": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "How does she feel?"
-  },
-  "50e2ad47cb60b429": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "How does he feel?"
-  },
-  "01bb00ef517288bf": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I'm hungry and thirsty."
-  },
-  "ae5e39cdecbc04c0": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She can swim well."
-  },
-  "77e1f493a29619d5": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She likes reading."
-  },
-  "cf86d613c55747ef": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What can she do?"
-  },
-  "95447ee5b15bfb20": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What does she like?"
-  },
-  "1673bc96f65c092d": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is my uncle."
-  },
-  "6b96f3b1d65f73db": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is my aunt."
-  },
-  "3ba888b9786be8be": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is my cousin."
-  },
-  "da04a1ad6b761bab": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "He is a police officer."
-  },
-  "07ac1d28f84bdb2f": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I have a cousin."
-  },
-  "67395edf17d8e92b": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I have an uncle."
-  },
-  "cfaf5b5f0516f725": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Who is this?"
-  },
-  "138be534af13235c": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What do you have?"
-  },
-  "fc29381326a65ad7": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Do you have an uncle?"
-  },
-  "332ba5c9a7f87804": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Yes, I do."
-  },
-  "8a8f306521df7fa1": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "No, I don't."
-  },
-  "5f947d7af36f5f90": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Do you have a cousin?"
-  },
-  "c6ef8c67baee315c": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I have a happy family."
-  },
-  "e4566e25c237de24": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "We have a family photo."
-  },
-  "b01e242434d56dc1": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Who's that man?"
-  },
-  "22df599dbb116836": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "He's my uncle."
-  },
-  "e41191b278a97394": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Who's that girl?"
-  },
-  "2c418eedfef1d2d7": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She's my cousin."
-  },
-  "68130c78f899c7a7": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "How old is she?"
-  },
-  "07f00922d8e1bded": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "My uncle can run fast."
-  },
-  "48b22fabfa77ace5": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "My aunt can cook."
-  },
-  "9170db5e3dcb9ceb": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "My cousin can draw."
-  },
-  "1c9919dbb2c0a6a7": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "He can swim well."
-  },
-  "5e8f56bc62a9bfa7": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "He has a blue bag."
-  },
-  "46d0ef2e6c852705": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What can he do?"
-  },
-  "eaa543cbff457105": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Her name is May."
-  },
-  "08808c7747438b04": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She is thirty years old."
-  },
-  "4c8cdbccac3a64c7": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She can cook."
-  },
-  "981db7c8126402a7": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Who is she?"
-  },
-  "f405973642ad6937": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I have one cousin."
-  },
-  "2905a1a5ba930f19": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Do you have uncles and aunts?"
-  },
-  "c37adf2fe26c8336": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I have one uncle and two aunts."
-  },
-  "8fc3d95786b2f492": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Do you have brothers and sisters?"
-  },
-  "6093a5e02ddc9f70": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Come and look at my new photos."
-  },
-  "555736955f31334b": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "He's my cousin."
-  },
-  "496c2ed252d744a6": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "His name is Wang Rong."
-  },
-  "4769233b5a4718c9": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "He's eleven years old."
-  },
-  "332970f962e536b8": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "He can swim very fast."
-  },
-  "778ada28302be715": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "He's my uncle. He can dive."
-  },
-  "e835f2a6668e54df": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Who is Wang Rong?"
-  },
-  "d9d47dde58c882cf": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What can Wang Rong do?"
-  },
-  "4147f353b993ce10": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Hello, Grandpa and Grandma!"
-  },
-  "a304afed5da468f9": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Come in, please."
-  },
-  "d917499cfe1df0e6": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Let's have some mooncakes."
-  },
-  "311b589b9fd17fa5": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Watch the beautiful moon in the garden."
-  },
-  "828da46a0265faf8": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I have a riddle for you."
-  },
-  "950b422f152b36d2": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "It's big and bright in the sky."
-  },
-  "869450a3f4680484": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What is it?"
-  },
-  "b5add6d74107a469": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Where is the moon?"
-  },
-  "61cd4cba381f5dc0": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "That's my cousin, Bess."
-  },
-  "ebb8052f77d32b2b": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She's in the short black dress."
-  },
-  "7233e9393740563f": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "That's my aunt in the long red skirt."
-  },
-  "ba6b14103f28c37c": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "That's my uncle in the bright green shirt."
-  },
-  "1a50659c52f4fab7": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Wash the fish."
-  },
-  "22102a41caa246d3": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Who is Bess?"
-  },
-  "7d8f7cef858f878d": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Look at the fire."
-  },
-  "c5bea9444f901dbf": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Call the fire station."
-  },
-  "62c295cf24bcc7a4": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "One, one, nine!"
-  },
-  "7be2dc37eea482a0": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Bring the fire engine."
-  },
-  "a444681999ab4289": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The brave firefighters are here."
-  },
-  "a8098e057177efc9": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Put out the fire!"
-  },
-  "712110f6337f171e": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What can you see?"
-  },
-  "244190fee59a2534": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Who can put out the fire?"
-  },
-  "3e1736b24f430a7f": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What does your father do?"
-  },
-  "7ce29dfb1b31344c": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "He is a firefighter."
-  },
-  "fadaa3f8f3c656bc": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What does your mother do?"
-  },
-  "53f9eec5b2237195": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She is a nurse."
-  },
-  "c147e2e0f3b5eb4f": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "He is a teacher."
-  },
-  "fbc98c4003f434fd": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She is a doctor."
-  },
-  "f34fe4d474c12eea": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What does Jill's father do?"
-  },
-  "19a2f1f43034763a": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What does Jill's mother do?"
-  },
-  "fdc2f145d930d60b": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What does Mrs White do?"
-  },
-  "7812eb891e4f6904": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Is she a nurse?"
-  },
-  "c59c78cb593b4bc0": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "No, she isn't."
-  },
-  "03164513a2eed743": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She is a teacher."
-  },
-  "71181b76814efa02": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Is he a police officer?"
-  },
-  "382f2f96cf128a55": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Yes, he is."
-  },
-  "097b53c35d56c24d": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Is Mrs White a nurse?"
-  },
-  "b8085d47f7519fc9": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is a fire station."
-  },
-  "0eed8e8379c15fee": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "You're welcome."
-  },
-  "b815b7ed54ef8522": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is a fire engine."
-  },
-  "91aedc900ad4f797": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Fire is dangerous."
-  },
-  "f595b42d668b23c4": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I'm a firefighter. I can help people."
-  },
-  "9511397d68fcf706": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Don't play with fire, children."
-  },
-  "2d0db475257fb2c3": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Are you afraid, Mr Xu?"
-  },
-  "04f6be69e57ed6b5": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Does Mr Xu like his job?"
-  },
-  "39508160dd8028bf": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The princess has a dream."
-  },
-  "2798c077c9df3d3a": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She buys a pretty dress."
-  },
-  "32e8ea3284be9db3": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She likes the dress."
-  },
-  "b401276cdab21b83": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She doesn't care about the price."
-  },
-  "d8b07def1510a947": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What does the princess buy?"
-  },
-  "af5d584bc9263b5e": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I have a friend."
-  },
-  "65dd08fcf753e8d4": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "His name's Tom."
-  },
-  "a25e0f7ad8898775": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "He's tall and thin."
-  },
-  "703700a7c8177524": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "He has a green T-shirt."
-  },
-  "fcdb9f40164f63f7": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Peter can ride a bicycle."
-  },
-  "32de833360f2e70b": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Sally can fly a kite."
-  },
-  "ce0e346fdba1eec7": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What can Tom do?"
-  },
-  "6fe39ed9fecd26fd": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Who has a pink skirt?"
-  },
-  "8b410f7caf4f92f2": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is a coat."
-  },
-  "af76655f9eef0c60": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is a blouse."
-  },
-  "ce1d47778a62afe7": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "She has a purple skirt."
-  },
-  "1ffbd1c9ce8e50ca": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "These are jeans."
-  },
-  "e9f0994a1c5903c4": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "These are shorts."
-  },
-  "bc53116a83dff44f": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What does she have?"
-  },
-  "c9cf7bb9ff783c5f": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What does he have?"
-  },
-  "bbdeb15ae13d99f4": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is a lion."
-  },
-  "2667eec4f6485a2c": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "It is big and strong."
-  },
-  "508e0dc530f2ad16": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "It has big teeth."
-  },
-  "835925af0343400c": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is a mouse."
-  },
-  "8630f4710084198b": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "It has small but sharp teeth."
-  },
-  "e3c31f1d6c4a23b5": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The mouse can bite."
-  },
-  "25b965ad1f2143a0": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Who is in the net?"
-  },
-  "67045f91092a150f": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Can the mouse help the lion?"
-  },
-  "f4bffab61dedb9b8": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Short shorts today."
-  },
-  "13930a2763c01021": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "They're wearing short shorts today."
-  },
-  "203a5ce2832d0a56": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The girls are wearing long jackets."
-  },
-  "a370e019bf2e1979": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The girls are wearing white T-shirts."
-  },
-  "ed53eaedc6612ebb": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The boys are wearing black T-shirts."
-  },
-  "d52d220c4166372a": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The kids are wearing long socks."
-  },
-  "ae21e2c1ed9a17b6": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What are the girls wearing?"
-  },
-  "1ba3b1aef0f23290": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What are the boys wearing?"
-  },
-  "150c8c78b6e023cf": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "His name is Tom."
-  },
-  "1d7b36ab1a74ad52": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "He has a green T-shirt and he can skate."
-  },
-  "c5b39825c2c9bb7c": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Bryan likes ice cream."
-  },
-  "0687f054dd11f841": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "He likes bread too."
-  },
-  "dcc8701f0c3746a3": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What does Tom have?"
-  },
-  "68238d0d9183d41c": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is our canteen."
-  },
-  "8aa7f779add726c0": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is the computer lab."
-  },
-  "b1ff993c0ced19cc": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is the teachers' office."
-  },
-  "2b87f5e1780b266e": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is our gym."
-  },
-  "2833ff137c3ce7e1": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The gym is behind the office."
-  },
-  "c0ca969a1d121886": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The computer lab is in front of the gym."
-  },
-  "255e03248d068319": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What is this?"
-  },
-  "f0940575e6055e86": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Where is the gym?"
-  },
-  "e87a270c97686144": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is our classroom building."
-  },
-  "7b036f74e1542e46": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "There is a teachers' office."
-  },
-  "cbfe178c482b7f7d": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "There are some computers."
-  },
-  "5231dde03f6b28d1": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "There is a library."
-  },
-  "7f93f7817ad4e2dd": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "We have lunch in the canteen."
-  },
-  "fa69f17188cf156d": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The playground is behind the classroom building."
-  },
-  "37895082d2fb851b": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What's in the computer lab?"
-  },
-  "0e525c8209fbfe2c": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Where do you have lunch?"
-  },
-  "0458aefeea0db8eb": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Welcome to Rainbow Primary School."
-  },
-  "b55980a81fb683fc": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The garden is in front of the classroom building."
-  },
-  "7ae3bee9ce0fc17d": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What's on this floor?"
-  },
-  "cf000af5da7818e4": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "There is a computer lab."
-  },
-  "e7dc1273d773f601": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Our classroom is clean and tidy."
-  },
-  "35cab86f1ff94393": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Thank you. You're welcome."
-  },
-  "5342fa4af9534779": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What's in the garden?"
-  },
-  "b1b91d1873696578": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "How is your classroom?"
-  },
-  "25bd6bf485403ff2": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "There are no classrooms in Animal School."
-  },
-  "f4aea6170a97760b": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What's the matter?"
-  },
-  "3502eadc02cc86a0": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I'm sad. I can't swim."
-  },
-  "2b181c27ec42debf": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I don't think so."
-  },
-  "086de53dd225cd65": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Come on! Have a try!"
-  },
-  "0e31c3ea9c64b965": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Little Rabbit can run fast."
-  },
-  "55fbc0a7c3c20d6d": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Can Little Rabbit swim?"
-  },
-  "dbab56d6d4f971de": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What can Little Rabbit do?"
-  },
-  "07301ab076d0eb04": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What's in your school?"
-  },
-  "da393079f87fafda": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "There is a hall and a library."
-  },
-  "a10dd2192853b656": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What's in your classroom?"
-  },
-  "64d1936332790046": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "There is a cupboard and a bookshelf."
-  },
-  "dbe05e6823bb3650": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Grandpa grows the fruit."
-  },
-  "c3c687a6a327d274": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The fruit is on the trees."
-  },
-  "51cb88faa066d7d6": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What's in your schoolbag?"
-  },
-  "adfaa1eb448b4f8e": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Where is the playground?"
-  },
-  "2d3c20870b2aa57f": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Where is your home?"
-  },
-  "03b56956c3f03f1d": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "It's at No. 126, Garden Street."
-  },
-  "7ca381132ec73d85": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "There are many shops near my home."
-  },
-  "c786704f6157d7bc": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Is there a park near your home?"
-  },
-  "51acd533d2c31d0d": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Yes, there is."
-  },
-  "f9ffcbf9635269a1": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "It's behind my home."
-  },
-  "ddce0fcfa24b69f2": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Where is Jill's home?"
-  },
-  "e1be035d1e00508e": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Are there any shops near Jill's home?"
-  },
-  "970ee13f14d2e527": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is a supermarket."
-  },
-  "522c553efbbee443": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is a post office."
-  },
-  "4cc8083038e14586": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "This is a restaurant."
-  },
-  "7bafac8d1780065e": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The post office is next to the restaurant."
-  },
-  "e9501c868db6b662": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "The post office is between the supermarket and the restaurant."
-  },
-  "167f1e462794559f": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Is there a supermarket near your home?"
-  },
-  "29b89f88df387105": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Where is the post office?"
-  },
-  "e7889c15c098feaf": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Excuse me."
-  },
-  "d949f9e6b54c25f7": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Is there a post office here?"
-  },
-  "07107ddb3009c0e5": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "I want to send a postcard."
-  },
-  "e42ec57fc380974f": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "It's behind the restaurant."
-  },
-  "ea8a39616a1e57e9": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "There's a bakery next to the post office."
-  },
-  "94c565a0d106bee7": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "We can show you the way."
-  },
-  "7cbf6299a3975bda": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "Is there a bakery?"
-  },
-  "ea20c696ca4d4563": {
-   "voice": "en-US-AnaNeural",
-   "rate": "-10%",
-   "text": "What do Jill and Kitty say?"
-  },
   "7e87207a14e52a01": {
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
@@ -1510,6 +40,11 @@
    "rate": "-10%",
    "text": "What can people buy there?"
   },
+  "2d3c20870b2aa57f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is your home?"
+  },
   "64d964ac40f32297": {
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
@@ -1530,10 +65,10 @@
    "rate": "-10%",
    "text": "It is in front of the trees."
   },
-  "4df1b04d9df83393": {
+  "92a6e3b53cfa4e41": {
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
-   "text": "Slide, snake and swing begin with s."
+   "text": "Slide starts with sl, snake with sn, and swing with sw."
   },
   "81f0b720ab6026bf": {
    "voice": "en-US-AnaNeural",
@@ -1545,393 +80,378 @@
    "rate": "-10%",
    "text": "Is there a slide near the school?"
   },
-  "92a6e3b53cfa4e41": {
+  "cbdfad07a97435a8": {
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
-   "text": "Slide starts with sl, snake with sn, and swing with sw."
+   "text": "This is my new classmate."
+  },
+  "1bfb89d2b2effe22": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Her name is Jill."
+  },
+  "52322207afad7617": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "His name is Joe."
+  },
+  "9784374a0bebd803": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She is eleven years old."
+  },
+  "36a43e229438c89c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Her student number is sixteen."
+  },
+  "18466b2741f6b51e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Jill walks to school."
+  },
+  "7f69d1f8a9d62172": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What's her name?"
+  },
+  "5cb6ccf9d371194d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What's her student number?"
+  },
+  "799d274efc6d2422": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I can read and write."
+  },
+  "25af0047ecd0da1d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She can draw a flower."
+  },
+  "542d103c653e2db0": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "He can run fast."
+  },
+  "f2e856f2aa5ee8c5": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The fish can swim well."
+  },
+  "e631c322310495e2": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The bird can fly high."
+  },
+  "eabd1c91e1545890": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She cannot jump high."
+  },
+  "9fbc2f46ab293f99": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can Alice do?"
+  },
+  "0bf8d23bfccfa060": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Can the fish fly?"
+  },
+  "effb882ee155c1dc": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I'm hungry."
+  },
+  "4a3998d982932a04": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She's thirsty."
+  },
+  "b8f6c844fdcf9f1f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "He is tired."
+  },
+  "ecdf16d5eb41bbaf": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Have some water."
+  },
+  "063b8dfbf7f2ee65": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Thank you very much."
+  },
+  "e2bcd64cdc62ad7b": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I have an idea."
+  },
+  "100fba982055483f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How does Jill feel?"
+  },
+  "1c36fb2957d9d6f0": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Are you hungry?"
+  },
+  "1673bc96f65c092d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is my uncle."
+  },
+  "d169556aa218a9e1": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She is my aunt."
+  },
+  "07ac1d28f84bdb2f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I have a cousin."
+  },
+  "b4810c14e1195d8c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "My uncle is a police officer."
+  },
+  "dc602ba4889e9409": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "He is thirty-five years old."
+  },
+  "1dc6decf56821c85": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "My cousin can swim well."
+  },
+  "b5c4f6dd00a99448": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who's that woman?"
+  },
+  "5f947d7af36f5f90": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Do you have a cousin?"
+  },
+  "7ce29dfb1b31344c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "He is a firefighter."
+  },
+  "53f9eec5b2237195": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She is a nurse."
+  },
+  "a9e0f3a36e28eae4": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "My father is a teacher."
+  },
+  "5ef8a96518a062ea": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The doctor works in a hospital."
+  },
+  "da2841e938fe0d45": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Mr Li is a bus driver."
+  },
+  "844dd47bb5d87763": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Firefighters can put out a fire."
+  },
+  "19a2f1f43034763a": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does Jill's mother do?"
+  },
+  "41e363aeb0b9ebaa": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is Mr Black a firefighter?"
+  },
+  "dc3ef537db035f05": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I have a new friend."
+  },
+  "4700b0047fcc0af5": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Her name is Alice."
+  },
+  "78efb0be07632fe7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She has long hair."
+  },
+  "eb2239d2ddfd12b5": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She has a yellow dress."
+  },
+  "9680259f81eddb49": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She can draw well."
+  },
+  "77e1f493a29619d5": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She likes reading."
+  },
+  "ed9b2f5243a24ad4": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does Alice have?"
+  },
+  "b259f98a639dcbb6": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does she like doing?"
+  },
+  "6e8ecd98fa5dfb79": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "There is a library in our school."
+  },
+  "07c282d38c4c553b": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "There are twelve classrooms."
+  },
+  "44df2b96a55a4d14": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The playground is behind the hall."
+  },
+  "2e23822089242df5": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The office is on the first floor."
+  },
+  "6ba7b3205ade7619": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "We can read in the library."
+  },
+  "033485aab871923d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "We can run in the playground."
+  },
+  "c7cef126fec4cbe9": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is there a library?"
+  },
+  "adfaa1eb448b4f8e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is the playground?"
+  },
+  "ce8642def6bece35": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "There is a supermarket near my home."
+  },
+  "f43c7673aeb489b3": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The post office is next to the bakery."
+  },
+  "6f637832912564d8": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The restaurant is between two shops."
+  },
+  "e6f211231a3380ff": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Nanjing Road is very busy."
+  },
+  "7d600f02c1e3711b": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Can you show me the way?"
+  },
+  "7cbbda0a054bb9d4": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It is my pleasure."
+  },
+  "29b89f88df387105": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is the post office?"
+  },
+  "1748a2abc482dd83": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is there a restaurant?"
+  },
+  "8a0a4fa8cba97dc0": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Her mother is a nurse."
+  },
+  "bc750ea5c07231f9": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She has a cousin."
+  },
+  "606bb91d4bd2bf56": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can Jill do?"
+  },
+  "46408cbd7f6a2481": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does her mother do?"
+  },
+  "889db86ab43293af": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Alice is my classmate."
+  },
+  "ae5e39cdecbc04c0": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She can swim well."
+  },
+  "efaa723c53f07d1f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Her father is a teacher."
+  },
+  "54d3d482087475e9": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "There is a library in her school."
+  },
+  "e93de4bf91db1ae6": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "A supermarket is next to her home."
+  },
+  "8067d761bc5a2516": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is there a supermarket near her home?"
   }
  },
  "courses": {
-  "S01D01": {
-   "static/audio/speaking/S01D01/q01.mp3": "93830c8a0cd44c8f",
-   "static/audio/speaking/S01D01/q02.mp3": "6e18574d58fee75a",
-   "static/audio/speaking/S01D01/q03.mp3": "52a32431e6bedcd3",
-   "static/audio/speaking/S01D01/q04.mp3": "81bc484fc114bf7c",
-   "static/audio/speaking/S01D01/q05.mp3": "cbe67e00e238a236",
-   "static/audio/speaking/S01D01/q06.mp3": "012347eddc300faf",
-   "static/audio/speaking/S01D01/q07.mp3": "35894030823c591b",
-   "static/audio/speaking/S01D01/q08.mp3": "cbe67e00e238a236"
-  },
-  "S01D02": {
-   "static/audio/speaking/S01D02/q01.mp3": "d24449749f119d0f",
-   "static/audio/speaking/S01D02/q02.mp3": "a397e8711ba2556c",
-   "static/audio/speaking/S01D02/q03.mp3": "ad917173a308fa1c",
-   "static/audio/speaking/S01D02/q04.mp3": "3694ffaa0f4ef0e7",
-   "static/audio/speaking/S01D02/q05.mp3": "83f41e22e5b8de81",
-   "static/audio/speaking/S01D02/q06.mp3": "3292a7468b78bb21",
-   "static/audio/speaking/S01D02/q07.mp3": "a749ecdaa755c164",
-   "static/audio/speaking/S01D02/q08.mp3": "5f179c8b33ff4a5c"
-  },
-  "S01D03": {
-   "static/audio/speaking/S01D03/q01.mp3": "e7fc0601dd278783",
-   "static/audio/speaking/S01D03/q02.mp3": "52122b1e293ac03f",
-   "static/audio/speaking/S01D03/q03.mp3": "7936257d38c31de2",
-   "static/audio/speaking/S01D03/q04.mp3": "aa48feaf262770f4",
-   "static/audio/speaking/S01D03/q05.mp3": "8a335c850baf35dd",
-   "static/audio/speaking/S01D03/q06.mp3": "4c227b45506a9c71",
-   "static/audio/speaking/S01D03/q07.mp3": "7ae2a8f7862ba14d",
-   "static/audio/speaking/S01D03/q08.mp3": "610c87d959a7b5e7"
-  },
-  "S01D04": {
-   "static/audio/speaking/S01D04/q01.mp3": "5c4fa528049ddd80",
-   "static/audio/speaking/S01D04/q02.mp3": "40b9b32f2fb4b155",
-   "static/audio/speaking/S01D04/q03.mp3": "1a20c375d9fb0cbe",
-   "static/audio/speaking/S01D04/q04.mp3": "4316544cd6202fc7",
-   "static/audio/speaking/S01D04/q05.mp3": "8634fe7ed6aeacdc",
-   "static/audio/speaking/S01D04/q06.mp3": "95df27734af6c7fc",
-   "static/audio/speaking/S01D04/q07.mp3": "71dceeb031d9b761",
-   "static/audio/speaking/S01D04/q08.mp3": "4e856b42a9552978"
-  },
-  "S01D05": {
-   "static/audio/speaking/S01D05/q01.mp3": "81bc484fc114bf7c",
-   "static/audio/speaking/S01D05/q02.mp3": "d24449749f119d0f",
-   "static/audio/speaking/S01D05/q03.mp3": "e7fc0601dd278783",
-   "static/audio/speaking/S01D05/q04.mp3": "e560ac2ca363e5ef",
-   "static/audio/speaking/S01D05/q05.mp3": "a05c68df7a655235",
-   "static/audio/speaking/S01D05/q06.mp3": "03baf6e93ec2f616",
-   "static/audio/speaking/S01D05/q07.mp3": "b7eb7ecf318086fa",
-   "static/audio/speaking/S01D05/q08.mp3": "d245ffb13c524671"
-  },
-  "S01D06": {
-   "static/audio/speaking/S01D06/q01.mp3": "8ac5daeb7bc4e6f8",
-   "static/audio/speaking/S01D06/q02.mp3": "e181b1936f1b683e",
-   "static/audio/speaking/S01D06/q03.mp3": "d19ade21bfa122a3",
-   "static/audio/speaking/S01D06/q04.mp3": "0e0af6417c6e2582",
-   "static/audio/speaking/S01D06/q05.mp3": "4b52f8ca4e8d5397",
-   "static/audio/speaking/S01D06/q06.mp3": "36a43e229438c89c",
-   "static/audio/speaking/S01D06/q07.mp3": "d1288221bb7dcc0e",
-   "static/audio/speaking/S01D06/q08.mp3": "5cb6ccf9d371194d"
-  },
-  "S01D07": {
-   "static/audio/speaking/S01D07/q01.mp3": "262e09557b2c5155",
-   "static/audio/speaking/S01D07/q02.mp3": "95f941e992fa7d3f",
-   "static/audio/speaking/S01D07/q03.mp3": "5a875560746afeb2",
-   "static/audio/speaking/S01D07/q04.mp3": "b059d307f82538ed",
-   "static/audio/speaking/S01D07/q05.mp3": "2ba12e64102f23ec",
-   "static/audio/speaking/S01D07/q06.mp3": "9a7c87472f5792ab",
-   "static/audio/speaking/S01D07/q07.mp3": "543da57b9839fac6",
-   "static/audio/speaking/S01D07/q08.mp3": "606bb91d4bd2bf56"
-  },
-  "S01D08": {
-   "static/audio/speaking/S01D08/q01.mp3": "774a51c794372207",
-   "static/audio/speaking/S01D08/q02.mp3": "4d66ec9aa5305205",
-   "static/audio/speaking/S01D08/q03.mp3": "147d4e1894f7f4f5",
-   "static/audio/speaking/S01D08/q04.mp3": "1cfa0926b450fed6",
-   "static/audio/speaking/S01D08/q05.mp3": "859b7f9f606a9064",
-   "static/audio/speaking/S01D08/q06.mp3": "e85b06c35501bb97",
-   "static/audio/speaking/S01D08/q07.mp3": "859b7f9f606a9064",
-   "static/audio/speaking/S01D08/q08.mp3": "39e2d811e65fc3a9"
-  },
-  "S01D09": {
-   "static/audio/speaking/S01D09/q01.mp3": "c44cc21db9413670",
-   "static/audio/speaking/S01D09/q02.mp3": "48966555297321fd",
-   "static/audio/speaking/S01D09/q03.mp3": "89af93250edf6d8c",
-   "static/audio/speaking/S01D09/q04.mp3": "a84717f825a94638",
-   "static/audio/speaking/S01D09/q05.mp3": "872f06c4c7af5c1b",
-   "static/audio/speaking/S01D09/q06.mp3": "ecd4fee8230d2449",
-   "static/audio/speaking/S01D09/q07.mp3": "4b04cff9c65e7e0a",
-   "static/audio/speaking/S01D09/q08.mp3": "ea1f4ac2e927efec"
-  },
-  "S01D10": {
-   "static/audio/speaking/S01D10/q01.mp3": "8733ca1aba747983",
-   "static/audio/speaking/S01D10/q02.mp3": "1bfb89d2b2effe22",
-   "static/audio/speaking/S01D10/q03.mp3": "95f941e992fa7d3f",
-   "static/audio/speaking/S01D10/q04.mp3": "36a43e229438c89c",
-   "static/audio/speaking/S01D10/q05.mp3": "9a7c87472f5792ab",
-   "static/audio/speaking/S01D10/q06.mp3": "2ba12e64102f23ec",
-   "static/audio/speaking/S01D10/q07.mp3": "ed5afd0ac9e18649",
-   "static/audio/speaking/S01D10/q08.mp3": "9ba0133179e519cd"
-  },
-  "S01D11": {
-   "static/audio/speaking/S01D11/q01.mp3": "74077a62f3b60ac7",
-   "static/audio/speaking/S01D11/q02.mp3": "effb882ee155c1dc",
-   "static/audio/speaking/S01D11/q03.mp3": "03c9764f0c655a9d",
-   "static/audio/speaking/S01D11/q04.mp3": "41b4df7a50af95ff",
-   "static/audio/speaking/S01D11/q05.mp3": "0ae38a00deff77e9",
-   "static/audio/speaking/S01D11/q06.mp3": "38bd95bbe5a89c2a",
-   "static/audio/speaking/S01D11/q07.mp3": "0ae38a00deff77e9",
-   "static/audio/speaking/S01D11/q08.mp3": "0ae38a00deff77e9"
-  },
-  "S01D12": {
-   "static/audio/speaking/S01D12/q01.mp3": "2f83940a655406e7",
-   "static/audio/speaking/S01D12/q02.mp3": "f07988df2508050d",
-   "static/audio/speaking/S01D12/q03.mp3": "3647e6a0fd339cdf",
-   "static/audio/speaking/S01D12/q04.mp3": "e2bcd64cdc62ad7b",
-   "static/audio/speaking/S01D12/q05.mp3": "482e8ff9b0085dbb",
-   "static/audio/speaking/S01D12/q06.mp3": "d06af42f25c1e2a4",
-   "static/audio/speaking/S01D12/q07.mp3": "4b594a41a04d8b8f",
-   "static/audio/speaking/S01D12/q08.mp3": "4b594a41a04d8b8f"
-  },
-  "S01D13": {
-   "static/audio/speaking/S01D13/q01.mp3": "07e29adf50e84b96",
-   "static/audio/speaking/S01D13/q02.mp3": "c912b43d3dbf526f",
-   "static/audio/speaking/S01D13/q03.mp3": "0bb3ff48277cdafd",
-   "static/audio/speaking/S01D13/q04.mp3": "0e996c1803aca156",
-   "static/audio/speaking/S01D13/q05.mp3": "9864228a97ff41a6",
-   "static/audio/speaking/S01D13/q06.mp3": "11ea764ba8cb3c9d",
-   "static/audio/speaking/S01D13/q07.mp3": "0bb3ff48277cdafd",
-   "static/audio/speaking/S01D13/q08.mp3": "1c36fb2957d9d6f0"
-  },
-  "S01D14": {
-   "static/audio/speaking/S01D14/q01.mp3": "24f669f63673a140",
-   "static/audio/speaking/S01D14/q02.mp3": "bac5f18223ff3499",
-   "static/audio/speaking/S01D14/q03.mp3": "51c94249a8b90edf",
-   "static/audio/speaking/S01D14/q04.mp3": "ecdf16d5eb41bbaf",
-   "static/audio/speaking/S01D14/q05.mp3": "fa5ff4b32a4dcc2f",
-   "static/audio/speaking/S01D14/q06.mp3": "108868c9ffc8bb96",
-   "static/audio/speaking/S01D14/q07.mp3": "fc4436f0709dcba8",
-   "static/audio/speaking/S01D14/q08.mp3": "50e2ad47cb60b429"
-  },
-  "S01D15": {
-   "static/audio/speaking/S01D15/q01.mp3": "0ae38a00deff77e9",
-   "static/audio/speaking/S01D15/q02.mp3": "01bb00ef517288bf",
-   "static/audio/speaking/S01D15/q03.mp3": "2f83940a655406e7",
-   "static/audio/speaking/S01D15/q04.mp3": "1bfb89d2b2effe22",
-   "static/audio/speaking/S01D15/q05.mp3": "ae5e39cdecbc04c0",
-   "static/audio/speaking/S01D15/q06.mp3": "77e1f493a29619d5",
-   "static/audio/speaking/S01D15/q07.mp3": "cf86d613c55747ef",
-   "static/audio/speaking/S01D15/q08.mp3": "95447ee5b15bfb20"
-  },
-  "S01D16": {
-   "static/audio/speaking/S01D16/q01.mp3": "1673bc96f65c092d",
-   "static/audio/speaking/S01D16/q02.mp3": "6b96f3b1d65f73db",
-   "static/audio/speaking/S01D16/q03.mp3": "3ba888b9786be8be",
-   "static/audio/speaking/S01D16/q04.mp3": "da04a1ad6b761bab",
-   "static/audio/speaking/S01D16/q05.mp3": "07ac1d28f84bdb2f",
-   "static/audio/speaking/S01D16/q06.mp3": "67395edf17d8e92b",
-   "static/audio/speaking/S01D16/q07.mp3": "cfaf5b5f0516f725",
-   "static/audio/speaking/S01D16/q08.mp3": "138be534af13235c"
-  },
-  "S01D17": {
-   "static/audio/speaking/S01D17/q01.mp3": "5f947d7af36f5f90",
-   "static/audio/speaking/S01D17/q02.mp3": "332ba5c9a7f87804",
-   "static/audio/speaking/S01D17/q03.mp3": "8a8f306521df7fa1",
-   "static/audio/speaking/S01D17/q04.mp3": "f405973642ad6937",
-   "static/audio/speaking/S01D17/q05.mp3": "2905a1a5ba930f19",
-   "static/audio/speaking/S01D17/q06.mp3": "c37adf2fe26c8336",
-   "static/audio/speaking/S01D17/q07.mp3": "2905a1a5ba930f19",
-   "static/audio/speaking/S01D17/q08.mp3": "8fc3d95786b2f492"
-  },
-  "S01D18": {
-   "static/audio/speaking/S01D18/q01.mp3": "6093a5e02ddc9f70",
-   "static/audio/speaking/S01D18/q02.mp3": "555736955f31334b",
-   "static/audio/speaking/S01D18/q03.mp3": "496c2ed252d744a6",
-   "static/audio/speaking/S01D18/q04.mp3": "4769233b5a4718c9",
-   "static/audio/speaking/S01D18/q05.mp3": "332970f962e536b8",
-   "static/audio/speaking/S01D18/q06.mp3": "778ada28302be715",
-   "static/audio/speaking/S01D18/q07.mp3": "e835f2a6668e54df",
-   "static/audio/speaking/S01D18/q08.mp3": "d9d47dde58c882cf"
-  },
-  "S01D19": {
-   "static/audio/speaking/S01D19/q01.mp3": "4147f353b993ce10",
-   "static/audio/speaking/S01D19/q02.mp3": "a304afed5da468f9",
-   "static/audio/speaking/S01D19/q03.mp3": "d917499cfe1df0e6",
-   "static/audio/speaking/S01D19/q04.mp3": "311b589b9fd17fa5",
-   "static/audio/speaking/S01D19/q05.mp3": "828da46a0265faf8",
-   "static/audio/speaking/S01D19/q06.mp3": "950b422f152b36d2",
-   "static/audio/speaking/S01D19/q07.mp3": "869450a3f4680484",
-   "static/audio/speaking/S01D19/q08.mp3": "b5add6d74107a469"
-  },
-  "S01D20": {
-   "static/audio/speaking/S01D20/q01.mp3": "e41191b278a97394",
-   "static/audio/speaking/S01D20/q02.mp3": "61cd4cba381f5dc0",
-   "static/audio/speaking/S01D20/q03.mp3": "ebb8052f77d32b2b",
-   "static/audio/speaking/S01D20/q04.mp3": "7233e9393740563f",
-   "static/audio/speaking/S01D20/q05.mp3": "ba6b14103f28c37c",
-   "static/audio/speaking/S01D20/q06.mp3": "1a50659c52f4fab7",
-   "static/audio/speaking/S01D20/q07.mp3": "22102a41caa246d3",
-   "static/audio/speaking/S01D20/q08.mp3": "b01e242434d56dc1"
-  },
-  "S01D21": {
-   "static/audio/speaking/S01D21/q01.mp3": "7d8f7cef858f878d",
-   "static/audio/speaking/S01D21/q02.mp3": "c5bea9444f901dbf",
-   "static/audio/speaking/S01D21/q03.mp3": "62c295cf24bcc7a4",
-   "static/audio/speaking/S01D21/q04.mp3": "7be2dc37eea482a0",
-   "static/audio/speaking/S01D21/q05.mp3": "a444681999ab4289",
-   "static/audio/speaking/S01D21/q06.mp3": "a8098e057177efc9",
-   "static/audio/speaking/S01D21/q07.mp3": "712110f6337f171e",
-   "static/audio/speaking/S01D21/q08.mp3": "244190fee59a2534"
-  },
-  "S01D22": {
-   "static/audio/speaking/S01D22/q01.mp3": "3e1736b24f430a7f",
-   "static/audio/speaking/S01D22/q02.mp3": "7ce29dfb1b31344c",
-   "static/audio/speaking/S01D22/q03.mp3": "fadaa3f8f3c656bc",
-   "static/audio/speaking/S01D22/q04.mp3": "53f9eec5b2237195",
-   "static/audio/speaking/S01D22/q05.mp3": "c147e2e0f3b5eb4f",
-   "static/audio/speaking/S01D22/q06.mp3": "fbc98c4003f434fd",
-   "static/audio/speaking/S01D22/q07.mp3": "f34fe4d474c12eea",
-   "static/audio/speaking/S01D22/q08.mp3": "19a2f1f43034763a"
-  },
-  "S01D23": {
-   "static/audio/speaking/S01D23/q01.mp3": "fdc2f145d930d60b",
-   "static/audio/speaking/S01D23/q02.mp3": "7812eb891e4f6904",
-   "static/audio/speaking/S01D23/q03.mp3": "c59c78cb593b4bc0",
-   "static/audio/speaking/S01D23/q04.mp3": "03164513a2eed743",
-   "static/audio/speaking/S01D23/q05.mp3": "71181b76814efa02",
-   "static/audio/speaking/S01D23/q06.mp3": "382f2f96cf128a55",
-   "static/audio/speaking/S01D23/q07.mp3": "097b53c35d56c24d",
-   "static/audio/speaking/S01D23/q08.mp3": "fdc2f145d930d60b"
-  },
-  "S01D24": {
-   "static/audio/speaking/S01D24/q01.mp3": "b8085d47f7519fc9",
-   "static/audio/speaking/S01D24/q02.mp3": "0eed8e8379c15fee",
-   "static/audio/speaking/S01D24/q03.mp3": "b815b7ed54ef8522",
-   "static/audio/speaking/S01D24/q04.mp3": "91aedc900ad4f797",
-   "static/audio/speaking/S01D24/q05.mp3": "f595b42d668b23c4",
-   "static/audio/speaking/S01D24/q06.mp3": "9511397d68fcf706",
-   "static/audio/speaking/S01D24/q07.mp3": "2d0db475257fb2c3",
-   "static/audio/speaking/S01D24/q08.mp3": "04f6be69e57ed6b5"
-  },
-  "S01D25": {
-   "static/audio/speaking/S01D25/q01.mp3": "3e1736b24f430a7f",
-   "static/audio/speaking/S01D25/q02.mp3": "7ce29dfb1b31344c",
-   "static/audio/speaking/S01D25/q03.mp3": "39508160dd8028bf",
-   "static/audio/speaking/S01D25/q04.mp3": "2798c077c9df3d3a",
-   "static/audio/speaking/S01D25/q05.mp3": "32e8ea3284be9db3",
-   "static/audio/speaking/S01D25/q06.mp3": "b401276cdab21b83",
-   "static/audio/speaking/S01D25/q07.mp3": "f34fe4d474c12eea",
-   "static/audio/speaking/S01D25/q08.mp3": "d8b07def1510a947"
-  },
-  "S01D26": {
-   "static/audio/speaking/S01D26/q01.mp3": "af5d584bc9263b5e",
-   "static/audio/speaking/S01D26/q02.mp3": "65dd08fcf753e8d4",
-   "static/audio/speaking/S01D26/q03.mp3": "a25e0f7ad8898775",
-   "static/audio/speaking/S01D26/q04.mp3": "703700a7c8177524",
-   "static/audio/speaking/S01D26/q05.mp3": "fcdb9f40164f63f7",
-   "static/audio/speaking/S01D26/q06.mp3": "32de833360f2e70b",
-   "static/audio/speaking/S01D26/q07.mp3": "ce0e346fdba1eec7",
-   "static/audio/speaking/S01D26/q08.mp3": "6fe39ed9fecd26fd"
-  },
-  "S01D27": {
-   "static/audio/speaking/S01D27/q01.mp3": "8b410f7caf4f92f2",
-   "static/audio/speaking/S01D27/q02.mp3": "af76655f9eef0c60",
-   "static/audio/speaking/S01D27/q03.mp3": "703700a7c8177524",
-   "static/audio/speaking/S01D27/q04.mp3": "ce1d47778a62afe7",
-   "static/audio/speaking/S01D27/q05.mp3": "1ffbd1c9ce8e50ca",
-   "static/audio/speaking/S01D27/q06.mp3": "e9f0994a1c5903c4",
-   "static/audio/speaking/S01D27/q07.mp3": "bc53116a83dff44f",
-   "static/audio/speaking/S01D27/q08.mp3": "c9cf7bb9ff783c5f"
-  },
-  "S01D28": {
-   "static/audio/speaking/S01D28/q01.mp3": "bbdeb15ae13d99f4",
-   "static/audio/speaking/S01D28/q02.mp3": "2667eec4f6485a2c",
-   "static/audio/speaking/S01D28/q03.mp3": "508e0dc530f2ad16",
-   "static/audio/speaking/S01D28/q04.mp3": "835925af0343400c",
-   "static/audio/speaking/S01D28/q05.mp3": "8630f4710084198b",
-   "static/audio/speaking/S01D28/q06.mp3": "e3c31f1d6c4a23b5",
-   "static/audio/speaking/S01D28/q07.mp3": "25b965ad1f2143a0",
-   "static/audio/speaking/S01D28/q08.mp3": "67045f91092a150f"
-  },
-  "S01D29": {
-   "static/audio/speaking/S01D29/q01.mp3": "f4bffab61dedb9b8",
-   "static/audio/speaking/S01D29/q02.mp3": "13930a2763c01021",
-   "static/audio/speaking/S01D29/q03.mp3": "203a5ce2832d0a56",
-   "static/audio/speaking/S01D29/q04.mp3": "a370e019bf2e1979",
-   "static/audio/speaking/S01D29/q05.mp3": "ed53eaedc6612ebb",
-   "static/audio/speaking/S01D29/q06.mp3": "d52d220c4166372a",
-   "static/audio/speaking/S01D29/q07.mp3": "ae21e2c1ed9a17b6",
-   "static/audio/speaking/S01D29/q08.mp3": "1ba3b1aef0f23290"
-  },
-  "S01D30": {
-   "static/audio/speaking/S01D30/q01.mp3": "af5d584bc9263b5e",
-   "static/audio/speaking/S01D30/q02.mp3": "150c8c78b6e023cf",
-   "static/audio/speaking/S01D30/q03.mp3": "a25e0f7ad8898775",
-   "static/audio/speaking/S01D30/q04.mp3": "1d7b36ab1a74ad52",
-   "static/audio/speaking/S01D30/q05.mp3": "c5b39825c2c9bb7c",
-   "static/audio/speaking/S01D30/q06.mp3": "0687f054dd11f841",
-   "static/audio/speaking/S01D30/q07.mp3": "dcc8701f0c3746a3",
-   "static/audio/speaking/S01D30/q08.mp3": "ce0e346fdba1eec7"
-  },
-  "S01D31": {
-   "static/audio/speaking/S01D31/q01.mp3": "68238d0d9183d41c",
-   "static/audio/speaking/S01D31/q02.mp3": "8aa7f779add726c0",
-   "static/audio/speaking/S01D31/q03.mp3": "b1ff993c0ced19cc",
-   "static/audio/speaking/S01D31/q04.mp3": "2b87f5e1780b266e",
-   "static/audio/speaking/S01D31/q05.mp3": "2833ff137c3ce7e1",
-   "static/audio/speaking/S01D31/q06.mp3": "c0ca969a1d121886",
-   "static/audio/speaking/S01D31/q07.mp3": "255e03248d068319",
-   "static/audio/speaking/S01D31/q08.mp3": "f0940575e6055e86"
-  },
-  "S01D32": {
-   "static/audio/speaking/S01D32/q01.mp3": "e87a270c97686144",
-   "static/audio/speaking/S01D32/q02.mp3": "7b036f74e1542e46",
-   "static/audio/speaking/S01D32/q03.mp3": "cbfe178c482b7f7d",
-   "static/audio/speaking/S01D32/q04.mp3": "5231dde03f6b28d1",
-   "static/audio/speaking/S01D32/q05.mp3": "7f93f7817ad4e2dd",
-   "static/audio/speaking/S01D32/q06.mp3": "fa69f17188cf156d",
-   "static/audio/speaking/S01D32/q07.mp3": "37895082d2fb851b",
-   "static/audio/speaking/S01D32/q08.mp3": "0e525c8209fbfe2c"
-  },
-  "S01D33": {
-   "static/audio/speaking/S01D33/q01.mp3": "0458aefeea0db8eb",
-   "static/audio/speaking/S01D33/q02.mp3": "b55980a81fb683fc",
-   "static/audio/speaking/S01D33/q03.mp3": "7ae3bee9ce0fc17d",
-   "static/audio/speaking/S01D33/q04.mp3": "cf000af5da7818e4",
-   "static/audio/speaking/S01D33/q05.mp3": "e7dc1273d773f601",
-   "static/audio/speaking/S01D33/q06.mp3": "35cab86f1ff94393",
-   "static/audio/speaking/S01D33/q07.mp3": "5342fa4af9534779",
-   "static/audio/speaking/S01D33/q08.mp3": "b1b91d1873696578"
-  },
-  "S01D34": {
-   "static/audio/speaking/S01D34/q01.mp3": "25bd6bf485403ff2",
-   "static/audio/speaking/S01D34/q02.mp3": "f4aea6170a97760b",
-   "static/audio/speaking/S01D34/q03.mp3": "3502eadc02cc86a0",
-   "static/audio/speaking/S01D34/q04.mp3": "2b181c27ec42debf",
-   "static/audio/speaking/S01D34/q05.mp3": "086de53dd225cd65",
-   "static/audio/speaking/S01D34/q06.mp3": "0e31c3ea9c64b965",
-   "static/audio/speaking/S01D34/q07.mp3": "55fbc0a7c3c20d6d",
-   "static/audio/speaking/S01D34/q08.mp3": "dbab56d6d4f971de"
-  },
-  "S01D35": {
-   "static/audio/speaking/S01D35/q01.mp3": "07301ab076d0eb04",
-   "static/audio/speaking/S01D35/q02.mp3": "da393079f87fafda",
-   "static/audio/speaking/S01D35/q03.mp3": "a10dd2192853b656",
-   "static/audio/speaking/S01D35/q04.mp3": "64d1936332790046",
-   "static/audio/speaking/S01D35/q05.mp3": "dbe05e6823bb3650",
-   "static/audio/speaking/S01D35/q06.mp3": "c3c687a6a327d274",
-   "static/audio/speaking/S01D35/q07.mp3": "51cb88faa066d7d6",
-   "static/audio/speaking/S01D35/q08.mp3": "adfaa1eb448b4f8e"
-  },
-  "S01D36": {
-   "static/audio/speaking/S01D36/q01.mp3": "2d3c20870b2aa57f",
-   "static/audio/speaking/S01D36/q02.mp3": "03b56956c3f03f1d",
-   "static/audio/speaking/S01D36/q03.mp3": "7ca381132ec73d85",
-   "static/audio/speaking/S01D36/q04.mp3": "c786704f6157d7bc",
-   "static/audio/speaking/S01D36/q05.mp3": "51acd533d2c31d0d",
-   "static/audio/speaking/S01D36/q06.mp3": "f9ffcbf9635269a1",
-   "static/audio/speaking/S01D36/q07.mp3": "ddce0fcfa24b69f2",
-   "static/audio/speaking/S01D36/q08.mp3": "e1be035d1e00508e"
-  },
-  "S01D37": {
-   "static/audio/speaking/S01D37/q01.mp3": "970ee13f14d2e527",
-   "static/audio/speaking/S01D37/q02.mp3": "522c553efbbee443",
-   "static/audio/speaking/S01D37/q03.mp3": "4cc8083038e14586",
-   "static/audio/speaking/S01D37/q04.mp3": "7bafac8d1780065e",
-   "static/audio/speaking/S01D37/q05.mp3": "e9501c868db6b662",
-   "static/audio/speaking/S01D37/q06.mp3": "7ca381132ec73d85",
-   "static/audio/speaking/S01D37/q07.mp3": "167f1e462794559f",
-   "static/audio/speaking/S01D37/q08.mp3": "29b89f88df387105"
-  },
-  "S01D38": {
-   "static/audio/speaking/S01D38/q01.mp3": "e7889c15c098feaf",
-   "static/audio/speaking/S01D38/q02.mp3": "d949f9e6b54c25f7",
-   "static/audio/speaking/S01D38/q03.mp3": "07107ddb3009c0e5",
-   "static/audio/speaking/S01D38/q04.mp3": "e42ec57fc380974f",
-   "static/audio/speaking/S01D38/q05.mp3": "ea8a39616a1e57e9",
-   "static/audio/speaking/S01D38/q06.mp3": "94c565a0d106bee7",
-   "static/audio/speaking/S01D38/q07.mp3": "7cbf6299a3975bda",
-   "static/audio/speaking/S01D38/q08.mp3": "ea20c696ca4d4563"
-  },
   "S01D39": {
    "static/audio/speaking/S01D39/q01.mp3": "7e87207a14e52a01",
    "static/audio/speaking/S01D39/q02.mp3": "3d22170e125c8974",
@@ -1951,6 +471,106 @@
    "static/audio/speaking/S01D40/q06.mp3": "92a6e3b53cfa4e41",
    "static/audio/speaking/S01D40/q07.mp3": "81f0b720ab6026bf",
    "static/audio/speaking/S01D40/q08.mp3": "d535c06dc3d057e8"
+  },
+  "S01D41": {
+   "static/audio/speaking/S01D41/q01.mp3": "cbdfad07a97435a8",
+   "static/audio/speaking/S01D41/q02.mp3": "1bfb89d2b2effe22",
+   "static/audio/speaking/S01D41/q03.mp3": "52322207afad7617",
+   "static/audio/speaking/S01D41/q04.mp3": "9784374a0bebd803",
+   "static/audio/speaking/S01D41/q05.mp3": "36a43e229438c89c",
+   "static/audio/speaking/S01D41/q06.mp3": "18466b2741f6b51e",
+   "static/audio/speaking/S01D41/q07.mp3": "7f69d1f8a9d62172",
+   "static/audio/speaking/S01D41/q08.mp3": "5cb6ccf9d371194d"
+  },
+  "S01D42": {
+   "static/audio/speaking/S01D42/q01.mp3": "799d274efc6d2422",
+   "static/audio/speaking/S01D42/q02.mp3": "25af0047ecd0da1d",
+   "static/audio/speaking/S01D42/q03.mp3": "542d103c653e2db0",
+   "static/audio/speaking/S01D42/q04.mp3": "f2e856f2aa5ee8c5",
+   "static/audio/speaking/S01D42/q05.mp3": "e631c322310495e2",
+   "static/audio/speaking/S01D42/q06.mp3": "eabd1c91e1545890",
+   "static/audio/speaking/S01D42/q07.mp3": "9fbc2f46ab293f99",
+   "static/audio/speaking/S01D42/q08.mp3": "0bf8d23bfccfa060"
+  },
+  "S01D43": {
+   "static/audio/speaking/S01D43/q01.mp3": "effb882ee155c1dc",
+   "static/audio/speaking/S01D43/q02.mp3": "4a3998d982932a04",
+   "static/audio/speaking/S01D43/q03.mp3": "b8f6c844fdcf9f1f",
+   "static/audio/speaking/S01D43/q04.mp3": "ecdf16d5eb41bbaf",
+   "static/audio/speaking/S01D43/q05.mp3": "063b8dfbf7f2ee65",
+   "static/audio/speaking/S01D43/q06.mp3": "e2bcd64cdc62ad7b",
+   "static/audio/speaking/S01D43/q07.mp3": "100fba982055483f",
+   "static/audio/speaking/S01D43/q08.mp3": "1c36fb2957d9d6f0"
+  },
+  "S01D44": {
+   "static/audio/speaking/S01D44/q01.mp3": "1673bc96f65c092d",
+   "static/audio/speaking/S01D44/q02.mp3": "d169556aa218a9e1",
+   "static/audio/speaking/S01D44/q03.mp3": "07ac1d28f84bdb2f",
+   "static/audio/speaking/S01D44/q04.mp3": "b4810c14e1195d8c",
+   "static/audio/speaking/S01D44/q05.mp3": "dc602ba4889e9409",
+   "static/audio/speaking/S01D44/q06.mp3": "1dc6decf56821c85",
+   "static/audio/speaking/S01D44/q07.mp3": "b5c4f6dd00a99448",
+   "static/audio/speaking/S01D44/q08.mp3": "5f947d7af36f5f90"
+  },
+  "S01D45": {
+   "static/audio/speaking/S01D45/q01.mp3": "7ce29dfb1b31344c",
+   "static/audio/speaking/S01D45/q02.mp3": "53f9eec5b2237195",
+   "static/audio/speaking/S01D45/q03.mp3": "a9e0f3a36e28eae4",
+   "static/audio/speaking/S01D45/q04.mp3": "5ef8a96518a062ea",
+   "static/audio/speaking/S01D45/q05.mp3": "da2841e938fe0d45",
+   "static/audio/speaking/S01D45/q06.mp3": "844dd47bb5d87763",
+   "static/audio/speaking/S01D45/q07.mp3": "19a2f1f43034763a",
+   "static/audio/speaking/S01D45/q08.mp3": "41e363aeb0b9ebaa"
+  },
+  "S01D46": {
+   "static/audio/speaking/S01D46/q01.mp3": "dc3ef537db035f05",
+   "static/audio/speaking/S01D46/q02.mp3": "4700b0047fcc0af5",
+   "static/audio/speaking/S01D46/q03.mp3": "78efb0be07632fe7",
+   "static/audio/speaking/S01D46/q04.mp3": "eb2239d2ddfd12b5",
+   "static/audio/speaking/S01D46/q05.mp3": "9680259f81eddb49",
+   "static/audio/speaking/S01D46/q06.mp3": "77e1f493a29619d5",
+   "static/audio/speaking/S01D46/q07.mp3": "ed9b2f5243a24ad4",
+   "static/audio/speaking/S01D46/q08.mp3": "b259f98a639dcbb6"
+  },
+  "S01D47": {
+   "static/audio/speaking/S01D47/q01.mp3": "6e8ecd98fa5dfb79",
+   "static/audio/speaking/S01D47/q02.mp3": "07c282d38c4c553b",
+   "static/audio/speaking/S01D47/q03.mp3": "44df2b96a55a4d14",
+   "static/audio/speaking/S01D47/q04.mp3": "2e23822089242df5",
+   "static/audio/speaking/S01D47/q05.mp3": "6ba7b3205ade7619",
+   "static/audio/speaking/S01D47/q06.mp3": "033485aab871923d",
+   "static/audio/speaking/S01D47/q07.mp3": "c7cef126fec4cbe9",
+   "static/audio/speaking/S01D47/q08.mp3": "adfaa1eb448b4f8e"
+  },
+  "S01D48": {
+   "static/audio/speaking/S01D48/q01.mp3": "ce8642def6bece35",
+   "static/audio/speaking/S01D48/q02.mp3": "f43c7673aeb489b3",
+   "static/audio/speaking/S01D48/q03.mp3": "6f637832912564d8",
+   "static/audio/speaking/S01D48/q04.mp3": "e6f211231a3380ff",
+   "static/audio/speaking/S01D48/q05.mp3": "7d600f02c1e3711b",
+   "static/audio/speaking/S01D48/q06.mp3": "7cbbda0a054bb9d4",
+   "static/audio/speaking/S01D48/q07.mp3": "29b89f88df387105",
+   "static/audio/speaking/S01D48/q08.mp3": "1748a2abc482dd83"
+  },
+  "S01D49": {
+   "static/audio/speaking/S01D49/q01.mp3": "1bfb89d2b2effe22",
+   "static/audio/speaking/S01D49/q02.mp3": "9784374a0bebd803",
+   "static/audio/speaking/S01D49/q03.mp3": "9680259f81eddb49",
+   "static/audio/speaking/S01D49/q04.mp3": "77e1f493a29619d5",
+   "static/audio/speaking/S01D49/q05.mp3": "8a0a4fa8cba97dc0",
+   "static/audio/speaking/S01D49/q06.mp3": "bc750ea5c07231f9",
+   "static/audio/speaking/S01D49/q07.mp3": "606bb91d4bd2bf56",
+   "static/audio/speaking/S01D49/q08.mp3": "46408cbd7f6a2481"
+  },
+  "S01D50": {
+   "static/audio/speaking/S01D50/q01.mp3": "889db86ab43293af",
+   "static/audio/speaking/S01D50/q02.mp3": "ae5e39cdecbc04c0",
+   "static/audio/speaking/S01D50/q03.mp3": "efaa723c53f07d1f",
+   "static/audio/speaking/S01D50/q04.mp3": "54d3d482087475e9",
+   "static/audio/speaking/S01D50/q05.mp3": "44df2b96a55a4d14",
+   "static/audio/speaking/S01D50/q06.mp3": "e93de4bf91db1ae6",
+   "static/audio/speaking/S01D50/q07.mp3": "adfaa1eb448b4f8e",
+   "static/audio/speaking/S01D50/q08.mp3": "8067d761bc5a2516"
   }
  }
 }

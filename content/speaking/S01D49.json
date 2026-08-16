@@ -1,0 +1,81 @@
+{
+  "course_id": "S01D49",
+  "title": "口语综合测评 · People and families",
+  "week": 6,
+  "day": 9,
+  "course_type": "weekly_review",
+  "est_minutes": 8,
+  "scope": "M1-M2：人物、家庭、职业、感受和能力",
+  "difficulty": "L1",
+  "open_date": "2026-08-16",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Her name is Jill.",
+      "audio": "static/audio/speaking/S01D49/q01.mp3",
+      "tag": "M1-M2·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "She is eleven years old.",
+      "audio": "static/audio/speaking/S01D49/q02.mp3",
+      "tag": "M1-M2·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "She can draw well.",
+      "audio": "static/audio/speaking/S01D49/q03.mp3",
+      "tag": "M1-M2·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "She likes reading.",
+      "audio": "static/audio/speaking/S01D49/q04.mp3",
+      "tag": "M1-M2·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "Her mother is a nurse.",
+      "audio": "static/audio/speaking/S01D49/q05.mp3",
+      "tag": "M1-M2·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "She has a cousin.",
+      "audio": "static/audio/speaking/S01D49/q06.mp3",
+      "tag": "M1-M2·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "What can Jill do?",
+      "expected": "She can draw well.",
+      "hint": "用英语说：她画画画得很好。",
+      "audio": "static/audio/speaking/S01D49/q07.mp3",
+      "tag": "M1-M2·综合复习",
+      "parent_note": "固定答案跟读式问答，不采集真实个人信息"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "What does her mother do?",
+      "expected": "She is a nurse.",
+      "hint": "用英语说：她是一名护士。",
+      "audio": "static/audio/speaking/S01D49/q08.mp3",
+      "tag": "M1-M2·综合复习",
+      "parent_note": "固定答案跟读式问答，不采集真实个人信息"
+    }
+  ]
+}

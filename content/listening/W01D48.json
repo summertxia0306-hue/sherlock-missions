@@ -1,0 +1,436 @@
+{
+  "course_id": "W01D48",
+  "title": "听力复习 · Around my home",
+  "week": 6,
+  "day": 8,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "M3U2：社区地点、next to/between和位置问答",
+  "difficulty": "L1",
+  "open_date": "2026-08-16",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D48/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "supermarket",
+            "restaurant",
+            "post office"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "supermarket"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D48/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "restaurant",
+            "supermarket",
+            "bakery"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "restaurant"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D48/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "police office",
+            "post office",
+            "teachers' office"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "post office"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D48/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "behind",
+            "between",
+            "in front of"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "between"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D48/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "There is a supermarket near my home.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "There is a supermarket near my home."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D48/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "The bakery is behind the post office.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The bakery is next to the post office."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D48/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "The restaurant is between the hotel and the shop.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The restaurant is between the hotel and the shop."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D48/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "Nanjing Road is very quiet.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Nanjing Road is very busy."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D48/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "It is next to the park.",
+            "There is a supermarket.",
+            "I go there."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where is the supermarket?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D48/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "Yes, there is.",
+            "Yes, it is.",
+            "Yes, there are."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Is there a post office near here?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D48/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "Yes, there are.",
+            "Yes, there is.",
+            "Yes, they are."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Are there any restaurants?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D48/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "It is between two shops.",
+            "It has bread.",
+            "I like the bakery."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where is the bakery?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D48/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听短对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "Where is the post office?",
+          "options": [
+            "Next to the supermarket.",
+            "Behind the school.",
+            "Between two parks."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Excuse me. Where is the post office?"
+            ],
+            [
+              "m",
+              "It is next to the supermarket."
+            ],
+            [
+              "n",
+              "Question: Where is the post office?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D48/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "What is on Garden Street?",
+          "options": [
+            "A restaurant.",
+            "A school.",
+            "A library."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Is there a restaurant near your home?"
+            ],
+            [
+              "f",
+              "Yes. It is on Garden Street."
+            ],
+            [
+              "n",
+              "Question: What is on Garden Street?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D48/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "What is next to the bakery?",
+          "options": [
+            "A hotel and a clothes shop.",
+            "A school and a park.",
+            "Two supermarkets."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Where is the bakery?"
+            ],
+            [
+              "m",
+              "It is between the hotel and the clothes shop."
+            ],
+            [
+              "n",
+              "Question: What is next to the bakery?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D48/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "Where does the man want to go?",
+          "options": [
+            "The supermarket.",
+            "The library.",
+            "The school."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Can you show me the way?"
+            ],
+            [
+              "f",
+              "Yes. The supermarket is over there."
+            ],
+            [
+              "m",
+              "Thank you."
+            ],
+            [
+              "f",
+              "It's my pleasure."
+            ],
+            [
+              "n",
+              "Question: Where does the man want to go?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D48/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听短文，再判断四句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/W01D48/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "I live on Garden Street. There is a supermarket next to my home. A bakery is between the supermarket and a post office. There are two restaurants near the park."
+        ]
+      ],
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "The child lives on Garden Street.",
+          "answer": "true"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "The supermarket is far from the home.",
+          "answer": "false"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "The bakery is between two places.",
+          "answer": "true"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "tag": "M3U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "There is only one restaurant near the park.",
+          "answer": "false"
+        }
+      ]
+    }
+  ]
+}

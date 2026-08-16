@@ -1,6 +1,7 @@
 # 口语模块对接契约与功能清单
 
-> 版本 v2.0 · 2026-08-11（新增 S01D36–S01D40，与听力课严格同页对齐 4A M3U2 第37–41页；约90% M3U2 + 约10%已学旧坑，不进入 M3U3）。
+> 版本 v2.1 · 2026-08-16（保留 S01D39–S01D40，新增 S01D41–S01D50 综合复习 M1U1–M3U2；学生端改为首个 formal 未完成课周围最多 5 课，历史 01–38 公共课件资产下线但学习记录、录音与 Git 历史保留）。
+> v2.0 · 2026-08-11：新增 S01D36–S01D40，与听力课严格同页对齐 4A M3U2 第37–41页；约90% M3U2 + 约10%已学旧坑，不进入 M3U3。
 > v1.9 · 2026-08-06：新增 S01D31–S01D35，与听力课严格同页对齐 4A M3U1 第32–36页；不进入 M3U2。
 > v1.8 · 2026-08-05：锁定 Streamlit 1.55.0 与 websocket-client 1.9.0，避免云端重建时解析到不兼容依赖；课程、口语门控和 data_kind 规则不变。
 > v1.7 · 2026-07-24：新增 S01D21–S01D30，与听力课严格同页对齐 4A M2U2 第22–26页和 M2U3 第27–31页。
@@ -24,7 +25,7 @@ speaking/
   recorder.py    自研录音组件封装 + 录音上传/列出/取回私有库
   smoke.py       冒烟/运维自检页（?mode=smoke，家长密码）
   frontend/index.html  录音组件前端（大按钮/3-2-1倒计时/自动停止20s/回放/组件内重录/JS端wav编码）
-content/speaking/S01D01..40.json   课程数据（新课=新JSON+跑音频工具，零代码改动）
+content/speaking/S01D39..50.json   当前公共课程数据（新课=新JSON+跑音频工具，零代码改动）
 static/audio/speaking/             示范音（Ana，tools/make_audio_speaking.py 生成）
 tools/make_audio_speaking.py       示范音生成（镜像 make_audio_v2：哈希复用/增量/代理）
 ```
@@ -94,14 +95,10 @@ course_id 形如 `S01D01`；`questions` 题号 1..n 连续；题型：
 （W→听力 S→口语，默认 formal）｜`?mode=parent` 家长端（模块单选→各自密码页）｜
 `?mode=test&course_id=…` 已认证家长测试入口（默认拒绝直接访问）｜`?mode=smoke` 自检页。
 
-W01D01–D40、S01D01–D40 当前均保持可见，列表按编号排序；当前推荐自动选择首个已可见且 formal 未完成课程。
-S01D06 人物介绍与数字，S01D07 Jill 阅读，S01D08 What can you do，S01D09 Can he/she/动物能力，S01D10 综合介绍朋友/家人。
-S01D11–D15 覆盖 M1U3 feelings / Have some ... / story / weekly review；S01D16 为已完成的 M2U1 family words，保持原课不改。
-S01D17–D20 依次对齐 4A M2U1 教材第17–18页 family questions、第19页 Photos of Jill's family、第20页 Mid-autumn Day、第21页 rhyme 与 `-sh` 语音复习。
-S01D21–D25 与听力同页对齐 M2U2 第22–26页：fire rhyme、jobs、job guessing、fire station、survey/`dr`/`pr`。
-S01D26–D30 与听力同页对齐 M2U3 第27–31页：friend descriptions、clothes、lion and mouse、clothes rhyme、friend profile/`br`/`cr`。
-S01D31–D35 与听力同页对齐 M3U1 第32–36页：school places、`There is/are`、school visit、Animal School、school/classroom/schoolbag review 与 `fr`/`gr`/`tr`；不进入 M3U2。
-S01D36–D40 与听力同页对齐 M3U2 第37–41页：Around my home、地点与方位、street-corner问路、Nanjing Road阅读、位置歌谣与 `sl`/`sn`/`sw`；不进入 M3U3，地址题只使用教材虚构地址。
+当前公共课程为 W01D39–D50、S01D39–D50，均按编号排序。儿童端围绕首个 formal 未完成课程显示最多 5 课；全部完成时显示最后 5 课。家长端仍列出全部现存公共课件。
+S01D39–D40 保持原 M3U2 课程不变。S01D41–D48 依次综合复习 M1U1 Meeting new people、M1U2 Abilities、M1U3 How do you feel、M2U1 Jill's family、M2U2 Jobs、M2U3 Friends、M3U1 In our school、M3U2 Around my home。
+S01D49 为 M1–M2 综合复习，S01D50 为 M1–M3U2 全范围综合复习；均不进入 M3U3。
+S01D01–D38 的公共 JSON、示范音和构建片段已下线；正式成绩、逐题星级、weak_words、passed_by_safety、录音、私有结果库数据与 Git 历史保留。
 3 星正常通关、未到 3 星可重试、第 3 次仍未到 3 星出现“先过这题”的口语门控规则保持不变。
 
 ## 6. 依赖与 Secrets

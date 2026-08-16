@@ -1,0 +1,81 @@
+{
+  "course_id": "S01D44",
+  "title": "口语复习 · Jill's family",
+  "week": 6,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 8,
+  "scope": "M2U1：家庭成员、年龄和能力",
+  "difficulty": "L1",
+  "open_date": "2026-08-16",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "This is my uncle.",
+      "audio": "static/audio/speaking/S01D44/q01.mp3",
+      "tag": "M2U1·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "She is my aunt.",
+      "audio": "static/audio/speaking/S01D44/q02.mp3",
+      "tag": "M2U1·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "I have a cousin.",
+      "audio": "static/audio/speaking/S01D44/q03.mp3",
+      "tag": "M2U1·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "My uncle is a police officer.",
+      "audio": "static/audio/speaking/S01D44/q04.mp3",
+      "tag": "M2U1·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "He is thirty-five years old.",
+      "audio": "static/audio/speaking/S01D44/q05.mp3",
+      "tag": "M2U1·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "My cousin can swim well.",
+      "audio": "static/audio/speaking/S01D44/q06.mp3",
+      "tag": "M2U1·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "Who's that woman?",
+      "expected": "She's my aunt.",
+      "hint": "用英语说：她是我的阿姨。",
+      "audio": "static/audio/speaking/S01D44/q07.mp3",
+      "tag": "M2U1·综合复习",
+      "parent_note": "固定答案跟读式问答，不采集真实个人信息"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "Do you have a cousin?",
+      "expected": "Yes, I do.",
+      "hint": "用英语说：是的，我有。",
+      "audio": "static/audio/speaking/S01D44/q08.mp3",
+      "tag": "M2U1·综合复习",
+      "parent_note": "固定答案跟读式问答，不采集真实个人信息"
+    }
+  ]
+}

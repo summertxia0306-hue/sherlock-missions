@@ -1,0 +1,81 @@
+{
+  "course_id": "S01D41",
+  "title": "口语复习 · Meeting new people",
+  "week": 6,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 8,
+  "scope": "M1U1：人物介绍、姓名、年龄和学号",
+  "difficulty": "L1",
+  "open_date": "2026-08-16",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "This is my new classmate.",
+      "audio": "static/audio/speaking/S01D41/q01.mp3",
+      "tag": "M1U1·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "Her name is Jill.",
+      "audio": "static/audio/speaking/S01D41/q02.mp3",
+      "tag": "M1U1·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "His name is Joe.",
+      "audio": "static/audio/speaking/S01D41/q03.mp3",
+      "tag": "M1U1·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "She is eleven years old.",
+      "audio": "static/audio/speaking/S01D41/q04.mp3",
+      "tag": "M1U1·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "Her student number is sixteen.",
+      "audio": "static/audio/speaking/S01D41/q05.mp3",
+      "tag": "M1U1·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Jill walks to school.",
+      "audio": "static/audio/speaking/S01D41/q06.mp3",
+      "tag": "M1U1·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "What's her name?",
+      "expected": "Her name is Jill.",
+      "hint": "用英语说：她的名字叫 Jill。",
+      "audio": "static/audio/speaking/S01D41/q07.mp3",
+      "tag": "M1U1·综合复习",
+      "parent_note": "固定答案跟读式问答，不采集真实个人信息"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "What's her student number?",
+      "expected": "Her student number is sixteen.",
+      "hint": "用英语说：她的学号是十六。",
+      "audio": "static/audio/speaking/S01D41/q08.mp3",
+      "tag": "M1U1·综合复习",
+      "parent_note": "固定答案跟读式问答，不采集真实个人信息"
+    }
+  ]
+}

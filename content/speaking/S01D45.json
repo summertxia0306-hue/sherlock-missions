@@ -1,0 +1,81 @@
+{
+  "course_id": "S01D45",
+  "title": "口语复习 · Jobs",
+  "week": 6,
+  "day": 5,
+  "course_type": "training",
+  "est_minutes": 8,
+  "scope": "M2U2：职业和工作地点",
+  "difficulty": "L1",
+  "open_date": "2026-08-16",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "He is a firefighter.",
+      "audio": "static/audio/speaking/S01D45/q01.mp3",
+      "tag": "M2U2·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "She is a nurse.",
+      "audio": "static/audio/speaking/S01D45/q02.mp3",
+      "tag": "M2U2·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "My father is a teacher.",
+      "audio": "static/audio/speaking/S01D45/q03.mp3",
+      "tag": "M2U2·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "The doctor works in a hospital.",
+      "audio": "static/audio/speaking/S01D45/q04.mp3",
+      "tag": "M2U2·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "Mr Li is a bus driver.",
+      "audio": "static/audio/speaking/S01D45/q05.mp3",
+      "tag": "M2U2·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Firefighters can put out a fire.",
+      "audio": "static/audio/speaking/S01D45/q06.mp3",
+      "tag": "M2U2·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "What does Jill's mother do?",
+      "expected": "She is a nurse.",
+      "hint": "用英语说：她是一名护士。",
+      "audio": "static/audio/speaking/S01D45/q07.mp3",
+      "tag": "M2U2·综合复习",
+      "parent_note": "固定答案跟读式问答，不采集真实个人信息"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "Is Mr Black a firefighter?",
+      "expected": "Yes, he is.",
+      "hint": "用英语说：是的，他是。",
+      "audio": "static/audio/speaking/S01D45/q08.mp3",
+      "tag": "M2U2·综合复习",
+      "parent_note": "固定答案跟读式问答，不采集真实个人信息"
+    }
+  ]
+}

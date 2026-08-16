@@ -26,7 +26,7 @@ class _Response:
 
 class RegressionTests(unittest.TestCase):
     def test_limited_audio_uses_cdn_with_raw_fallback(self):
-        path = "static/audio/listening/W01D01/q13.mp3"
+        path = "static/audio/listening/W01D39/q13.mp3"
         sources = listening_audio.audio_sources(path)
         self.assertEqual(2, len(sources))
         self.assertTrue(sources[0].startswith("https://cdn.jsdelivr.net/gh/"))
@@ -48,7 +48,7 @@ class RegressionTests(unittest.TestCase):
             self.assertTrue(course["questions"])
 
     def test_listening_scoring_and_correction_logic_are_unchanged(self):
-        course = listening_models.load_course("W01D01")
+        course = listening_models.load_course("W01D39")
         answers = {q["id"]: q["answer"] for q in course["_questions"]}
         result = listening_results.build_result(
             course, answers, {}, "sherlock", time.time() - 60, time.time()
@@ -59,7 +59,7 @@ class RegressionTests(unittest.TestCase):
         self.assertTrue(listening_engine.is_correct(first, first["answer"]))
 
     def test_speaking_result_keeps_first_last_best_and_each_take_stars(self):
-        course = speaking_models.load_course("S01D01")
+        course = speaking_models.load_course("S01D39")
         qstates = {}
         for q in course["questions"]:
             qstates[q["id"]] = {
@@ -83,7 +83,7 @@ class RegressionTests(unittest.TestCase):
         self.assertEqual([2, 3, 2], first["take_stars"])
 
     def test_test_entry_identity_reaches_listening_result(self):
-        course = listening_models.load_course("W01D01")
+        course = listening_models.load_course("W01D39")
         state = {
             "result": None,
             "answers": {q["id"]: q["answer"] for q in course["_questions"]},
@@ -96,14 +96,14 @@ class RegressionTests(unittest.TestCase):
         self.assertEqual("test", state["result"]["data_kind"])
 
     def test_test_entry_identity_reaches_speaking_result_and_recordings(self):
-        course = speaking_models.load_course("S01D01")
+        course = speaking_models.load_course("S01D39")
         qstates = {}
         for q in course["questions"]:
             qstates[q["id"]] = {
                 "takes": [{"total": 80, "is_rejected": False, "words": []}],
-                "recordings": ["recordings/S01D01/test.wav"],
+                "recordings": ["recordings/S01D39/test.wav"],
                 "recording_records": [{
-                    "path": "recordings/S01D01/test.wav",
+                    "path": "recordings/S01D39/test.wav",
                     "data_kind": "test",
                 }],
                 "passed_by_safety": False,
@@ -132,9 +132,9 @@ class RegressionTests(unittest.TestCase):
             return_value=_Response(),
         ) as urlopen:
             path, seconds = recorder.upload_recording(
-                b"RIFF-test", "S01D01", 1, 1, secrets.get
+                b"RIFF-test", "S01D39", 1, 1, secrets.get
             )
-        self.assertTrue(path.startswith("recordings/S01D01/"))
+        self.assertTrue(path.startswith("recordings/S01D39/"))
         self.assertTrue(path.endswith("_q01_t1.wav"))
         self.assertGreaterEqual(seconds, 0)
         request = urlopen.call_args.args[0]

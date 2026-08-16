@@ -1,0 +1,436 @@
+{
+  "course_id": "W01D49",
+  "title": "听力综合测评 · People and families",
+  "week": 6,
+  "day": 9,
+  "course_type": "weekly_test",
+  "est_minutes": 20,
+  "scope": "M1-M2：人物、感受、家庭、职业和能力综合复习",
+  "difficulty": "L1",
+  "open_date": "2026-08-16",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D49/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "classmate",
+            "cousin",
+            "teacher"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "classmate"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D49/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "thirsty",
+            "thirty",
+            "tired"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "thirsty"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D49/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "firefighter",
+            "police officer",
+            "bus driver"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "firefighter"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D49/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "uncle",
+            "cousin",
+            "friend"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "cousin"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D49/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "His name is Jill.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Her name is Jill."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D49/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "He can swim well.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "He can swim well."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D49/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "My aunt likes read.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "My aunt likes reading."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D49/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "Peter has a blue shirt.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Peter has a blue shirt."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D49/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "I'm hungry.",
+            "I can cook.",
+            "I have a biscuit."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "How do you feel?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D49/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "She can draw.",
+            "She is a nurse.",
+            "She likes drawing."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can she do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D49/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "He is a doctor.",
+            "He can help people.",
+            "He works in a hospital."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does his father do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D49/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "Yes, I do.",
+            "Yes, I am.",
+            "Yes, I can."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Do you have a cousin?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D49/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听短对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "How old is Joe?",
+          "options": [
+            "Eleven.",
+            "Twelve.",
+            "Thirteen."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "This is my cousin, Joe."
+            ],
+            [
+              "m",
+              "How old is he?"
+            ],
+            [
+              "f",
+              "He is twelve."
+            ],
+            [
+              "n",
+              "Question: How old is Joe?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D49/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "Can Alice draw?",
+          "options": [
+            "Yes, she can.",
+            "No, she can't.",
+            "We don't know."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "What can Alice do?"
+            ],
+            [
+              "f",
+              "She can paint and draw."
+            ],
+            [
+              "n",
+              "Question: Can Alice draw?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D49/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "What does Ben need?",
+          "options": [
+            "Water.",
+            "A shirt.",
+            "A book."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "How does Ben feel?"
+            ],
+            [
+              "m",
+              "He is thirsty."
+            ],
+            [
+              "f",
+              "Have some water, Ben."
+            ],
+            [
+              "n",
+              "Question: What does Ben need?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D49/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "Where does Jill's mother work?",
+          "options": [
+            "In a hospital.",
+            "At a school.",
+            "On a bus."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "What does Jill's mother do?"
+            ],
+            [
+              "f",
+              "She is a nurse and she works in a hospital."
+            ],
+            [
+              "n",
+              "Question: Where does Jill's mother work?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D49/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听短文，再判断四句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/W01D49/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "This is my friend Jill. She is eleven and her student number is sixteen. She can draw well and she likes reading. Her mother is a nurse. Jill has a cousin. His name is Dan."
+        ]
+      ],
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Jill is eleven.",
+          "answer": "true"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Her student number is fifteen.",
+          "answer": "false"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Jill likes reading.",
+          "answer": "true"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "tag": "M1-M2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Jill's mother is a teacher.",
+          "answer": "false"
+        }
+      ]
+    }
+  ]
+}

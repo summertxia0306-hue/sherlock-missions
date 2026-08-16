@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D46",
+  "title": "听力复习 · Friends",
+  "week": 6,
+  "day": 6,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "M2U3：朋友、衣着、外貌和has/can/likes",
+  "difficulty": "L1",
+  "open_date": "2026-08-16",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D46/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "shirt",
+            "skirt",
+            "shorts"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "shirt"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D46/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "dress",
+            "draw",
+            "driver"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "dress"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D46/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "shirt",
+            "shorts",
+            "shoes"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "shorts"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D46/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "friend",
+            "front",
+            "fireman"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "friend"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D46/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "My friend has a blue T-shirt.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "My friend has a blue T-shirt."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D46/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "She has short hair.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "She has long hair."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D46/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "He can ride a bicycle.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "He can ride a bicycle."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D46/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "Kitty likes dance.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Kitty likes dancing."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D46/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "Peter is my friend.",
+            "He is tall.",
+            "He can swim."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who is your friend?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D46/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "She has a red dress.",
+            "She is in red.",
+            "She likes red."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does she have?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D46/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "He can ride a bicycle.",
+            "He has a bicycle.",
+            "He likes bicycles."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can he do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D46/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "She likes dancing.",
+            "She can dance.",
+            "She has a dress."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does Kitty like doing?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D46/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听短对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "What is the boy's name?",
+          "options": [
+            "Tom.",
+            "Ben.",
+            "Joe."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Who is that boy?"
+            ],
+            [
+              "m",
+              "He is my friend, Tom."
+            ],
+            [
+              "n",
+              "Question: What is the boy's name?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D46/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "What colour is Alice's dress?",
+          "options": [
+            "Red.",
+            "Green.",
+            "Blue."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "What does Alice have?"
+            ],
+            [
+              "f",
+              "She has a green dress."
+            ],
+            [
+              "n",
+              "Question: What colour is Alice's dress?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D46/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "What can the friend do?",
+          "options": [
+            "Swim.",
+            "Run fast.",
+            "Fly."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Can your friend swim?"
+            ],
+            [
+              "m",
+              "No, but he can run fast."
+            ],
+            [
+              "n",
+              "Question: What can the friend do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D46/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "What does Jill like doing?",
+          "options": [
+            "Reading.",
+            "Dancing.",
+            "Swimming."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Does Jill like reading?"
+            ],
+            [
+              "f",
+              "Yes. She reads every evening."
+            ],
+            [
+              "n",
+              "Question: What does Jill like doing?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D46/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听短文，再判断四句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/W01D46/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "I have a friend. Her name is Alice. She has long hair and a yellow dress. She can draw well and she likes reading. She walks to school with me."
+        ]
+      ],
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "The friend's name is Alice.",
+          "answer": "true"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Alice has short hair.",
+          "answer": "false"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Alice can draw well.",
+          "answer": "true"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "tag": "M2U3·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Alice likes swimming.",
+          "answer": "false"
+        }
+      ]
+    }
+  ]
+}

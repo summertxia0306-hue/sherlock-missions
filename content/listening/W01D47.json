@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D47",
+  "title": "听力复习 · In our school",
+  "week": 6,
+  "day": 7,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "M3U1：学校地点、There is/are和方位表达",
+  "difficulty": "L1",
+  "open_date": "2026-08-16",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D47/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "library",
+            "classroom",
+            "playground"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "library"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D47/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "office",
+            "hall",
+            "toilet"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "office"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D47/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "classroom",
+            "playground",
+            "school"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "playground"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D47/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "behind",
+            "between",
+            "beside"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "behind"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D47/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "There is a library in our school.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "There is a library in our school."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D47/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "The playground is in front of the classroom building.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The playground is behind the classroom building."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D47/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "There are many books in the library.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "There are many books in the library."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D47/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "The teachers' office is on the second floor.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The teachers' office is on the first floor."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D47/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "Yes, there is.",
+            "Yes, it is.",
+            "Yes, there are."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Is there a library in your school?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D47/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "Yes, there are.",
+            "Yes, there is.",
+            "Yes, they are."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Are there any classrooms?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D47/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "It is behind the hall.",
+            "There are two playgrounds.",
+            "I can run there."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where is the playground?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D47/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "I can read books.",
+            "I can play football.",
+            "I can swim."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can you do in the library?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D47/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听短对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "Where is the library?",
+          "options": [
+            "Behind the classroom building.",
+            "In front of the gate.",
+            "Next to the playground."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Where is the library?"
+            ],
+            [
+              "m",
+              "It is behind the classroom building."
+            ],
+            [
+              "n",
+              "Question: Where is the library?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D47/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "Where is the computer room?",
+          "options": [
+            "On the first floor.",
+            "On the second floor.",
+            "Behind the school."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "Is there a computer room?"
+            ],
+            [
+              "f",
+              "Yes. It is on the second floor."
+            ],
+            [
+              "n",
+              "Question: Where is the computer room?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D47/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "How many classrooms are there?",
+          "options": [
+            "Ten.",
+            "Eleven.",
+            "Twelve."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "How many classrooms are there?"
+            ],
+            [
+              "m",
+              "There are twelve classrooms."
+            ],
+            [
+              "n",
+              "Question: How many classrooms are there?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D47/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "Can the children run there?",
+          "options": [
+            "Yes, they can.",
+            "No, they can't.",
+            "We don't know."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "What can you do in the playground?"
+            ],
+            [
+              "f",
+              "We can run and play football."
+            ],
+            [
+              "n",
+              "Question: Can the children run there?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D47/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听短文，再判断四句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/W01D47/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Our school is big. There is a library behind the classroom building. There are many books in it. The playground is in front of the hall. We can run and play there."
+        ]
+      ],
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "The school is big.",
+          "answer": "true"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "The library is in front of the classroom building.",
+          "answer": "false"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "There are many books in the library.",
+          "answer": "true"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "tag": "M3U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "The playground is behind the hall.",
+          "answer": "false"
+        }
+      ]
+    }
+  ]
+}

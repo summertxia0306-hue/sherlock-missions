@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D41",
+  "title": "听力复习 · Meeting new people",
+  "week": 6,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "M1U1：人物介绍、姓名、年龄、学号和my/your/his/her",
+  "difficulty": "L1",
+  "open_date": "2026-08-16",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D41/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "classmate",
+            "classroom",
+            "teacher"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "classmate"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D41/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "seven",
+            "eleven",
+            "twelve"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "eleven"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D41/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "student",
+            "street",
+            "school"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "student"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D41/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "name",
+            "number",
+            "mother"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "number"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D41/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "This is my new classmate.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "This is my new classmate."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D41/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "His name is Jill.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Her name is Jill."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D41/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "My student number is fourteen.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "My student number is fourteen."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D41/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "Jill lives far from our school.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Jill lives near our school."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D41/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "My name is Alice.",
+            "I'm ten.",
+            "It's twelve."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What's your name?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D41/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "I'm a student.",
+            "I'm ten.",
+            "I'm Alice."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "How old are you?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D41/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "It's thirteen.",
+            "I'm thirteen.",
+            "He's thirteen."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What's your student number?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D41/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "She's my classmate.",
+            "He's my classmate.",
+            "I'm her classmate."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who is she?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D41/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听短对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "Who is Jill?",
+          "options": [
+            "A friend.",
+            "A teacher.",
+            "A doctor."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "This is my friend, Jill."
+            ],
+            [
+              "m",
+              "Hello, Jill."
+            ],
+            [
+              "n",
+              "Question: Who is Jill?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D41/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "What is the boy's name?",
+          "options": [
+            "Jill.",
+            "Joe.",
+            "Peter."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "What's his name?"
+            ],
+            [
+              "m",
+              "His name is Joe."
+            ],
+            [
+              "n",
+              "Question: What is the boy's name?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D41/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "How old is Kitty?",
+          "options": [
+            "Ten.",
+            "Eleven.",
+            "Twelve."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "How old is Kitty?"
+            ],
+            [
+              "f",
+              "She is eleven."
+            ],
+            [
+              "n",
+              "Question: How old is Kitty?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D41/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "How does Jill go to school?",
+          "options": [
+            "She walks.",
+            "She runs.",
+            "She swims."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Does Jill walk to school?"
+            ],
+            [
+              "m",
+              "Yes, she does."
+            ],
+            [
+              "n",
+              "Question: How does Jill go to school?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D41/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听短文，再判断四句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/W01D41/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "This is Alice. She is ten. Her student number is fifteen. Peter is her classmate. He is eleven. His student number is twelve."
+        ]
+      ],
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Alice is ten.",
+          "answer": "true"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Alice's student number is twelve.",
+          "answer": "false"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Peter is Alice's classmate.",
+          "answer": "true"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "tag": "M1U1·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Peter is eleven.",
+          "answer": "true"
+        }
+      ]
+    }
+  ]
+}

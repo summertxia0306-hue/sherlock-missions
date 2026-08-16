@@ -1,0 +1,428 @@
+{
+  "course_id": "W01D45",
+  "title": "听力复习 · Jobs",
+  "week": 6,
+  "day": 5,
+  "course_type": "training",
+  "est_minutes": 20,
+  "scope": "M2U2：职业、What does ... do和职业地点",
+  "difficulty": "L1",
+  "open_date": "2026-08-16",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/W01D45/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "firefighter",
+            "teacher",
+            "doctor"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "firefighter"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D45/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "nurse",
+            "teacher",
+            "driver"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "nurse"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D45/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "doctor",
+            "daughter",
+            "driver"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "doctor"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D45/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "police officer",
+            "bus driver",
+            "firefighter"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "bus driver"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D45/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕上句子的意思是不是一样",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "Her father is a firefighter.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Her father is a firefighter."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D45/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "Mrs White is a nurse.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Mrs White is a teacher."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D45/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "The doctor works in a hospital.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The doctor works in a hospital."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D45/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "display": "Mr Li drives a fire engine.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Mr Li drives a bus."
+            ]
+          ],
+          "audio": "static/audio/listening/W01D45/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "She is a nurse.",
+            "She can help.",
+            "She likes reading."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does your mother do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D45/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "Yes, he is.",
+            "Yes, he does.",
+            "Yes, he can."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Is he a firefighter?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D45/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "At a school.",
+            "In a fire station.",
+            "On a bus."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where does the teacher work?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D45/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "options": [
+            "Put out a fire.",
+            "Teach English.",
+            "Drive a school bus."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can a firefighter do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D45/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听短对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "What is Jill's mother's job?",
+          "options": [
+            "A nurse.",
+            "A teacher.",
+            "A doctor."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "What does Jill's mother do?"
+            ],
+            [
+              "m",
+              "She is a nurse."
+            ],
+            [
+              "n",
+              "Question: What is Jill's mother's job?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D45/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "What does Mr Black do?",
+          "options": [
+            "He is a police officer.",
+            "He is a firefighter.",
+            "He is a doctor."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "Is Mr Black a police officer?"
+            ],
+            [
+              "f",
+              "No. He is a firefighter."
+            ],
+            [
+              "n",
+              "Question: What does Mr Black do?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D45/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "Who drives the bus?",
+          "options": [
+            "Mr Li.",
+            "Mrs Li.",
+            "Jill."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Who is the bus driver?"
+            ],
+            [
+              "m",
+              "Mr Li is the bus driver."
+            ],
+            [
+              "n",
+              "Question: Who drives the bus?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D45/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "question_text": "Where does the father work?",
+          "options": [
+            "At a school.",
+            "At a hospital.",
+            "At a fire station."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Does your father work at a school?"
+            ],
+            [
+              "f",
+              "Yes. He is a teacher."
+            ],
+            [
+              "n",
+              "Question: Where does the father work?"
+            ]
+          ],
+          "audio": "static/audio/listening/W01D45/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听短文，再判断四句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/W01D45/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Peter's father is a teacher. He works at a school. His mother is a doctor. She works in a hospital. Jill's father is a firefighter and her mother is a nurse."
+        ]
+      ],
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Peter's father is a teacher.",
+          "answer": "true"
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Peter's mother is a nurse.",
+          "answer": "false"
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Jill's father is a firefighter.",
+          "answer": "true"
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "tag": "M2U2·综合复习",
+          "parent_note": "4A M1U1-M3U2 已学内容复现",
+          "statement": "Jill's mother is a doctor.",
+          "answer": "false"
+        }
+      ]
+    }
+  ]
+}

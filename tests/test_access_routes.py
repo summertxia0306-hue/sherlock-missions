@@ -12,7 +12,7 @@ class AccessRouteTests(unittest.TestCase):
     def test_direct_test_query_is_denied_without_parent_session(self):
         at = self._app()
         at.query_params["mode"] = "test"
-        at.query_params["course_id"] = "W01D01"
+        at.query_params["course_id"] = "W01D39"
         at.run()
 
         self.assertFalse(at.exception)
@@ -20,16 +20,16 @@ class AccessRouteTests(unittest.TestCase):
             "家长测试入口未授权。请先进入家长端并通过密码验证。",
             [item.value for item in at.error],
         )
-        self.assertNotIn("L_test_W01D01", at.session_state.filtered_state)
+        self.assertNotIn("L_test_W01D39", at.session_state.filtered_state)
 
     def test_normal_course_entry_uses_formal_session(self):
         at = self._app()
-        at.query_params["course_id"] = "W01D01"
+        at.query_params["course_id"] = "W01D39"
         at.run()
 
         self.assertFalse(at.exception)
-        self.assertIn("L_formal_W01D01", at.session_state.filtered_state)
-        self.assertNotIn("L_test_W01D01", at.session_state.filtered_state)
+        self.assertIn("L_formal_W01D39", at.session_state.filtered_state)
+        self.assertNotIn("L_test_W01D39", at.session_state.filtered_state)
 
     def test_authenticated_parent_launcher_opens_test_session(self):
         at = self._app()
@@ -47,8 +47,8 @@ class AccessRouteTests(unittest.TestCase):
 
         self.assertFalse(at.exception)
         self.assertEqual(["test"], at.query_params["mode"])
-        self.assertEqual(["W01D01"], at.query_params["course_id"])
-        self.assertIn("L_test_W01D01", at.session_state.filtered_state)
+        self.assertEqual(["W01D39"], at.query_params["course_id"])
+        self.assertIn("L_test_W01D39", at.session_state.filtered_state)
         self.assertIn(
             "🧪 家长测试模式：本次成绩和录音标记为 test，不计入孩子完成状态。",
             [item.value for item in at.warning],

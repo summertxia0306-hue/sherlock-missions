@@ -119,14 +119,15 @@ def speaking_home(student_id):
     metas = models.all_courses()
     shown = _shown_courses(metas, today)
     recommended = _recommended_course_id(shown, done)
+    student_window = progress.course_window(shown, done)
     if recommended:
         st.info("⭐ 当前推荐：%s（%s）" % (recommended, metas[recommended]["title"]))
     else:
         st.info("本阶段已完成，请等下一批课程。")
-    if not shown:
+    if not student_window:
         st.info("今天还没有口语任务，请告诉爸爸妈妈。")
         return
-    for cid, m in shown:
+    for cid, m in student_window:
         c1, c2, c3 = st.columns([4, 2, 2])
         recommendation = "　⭐ 当前推荐" if cid == recommended else ""
         c1.markdown("**%s**%s" % (m["title"], recommendation))

@@ -1,0 +1,81 @@
+{
+  "course_id": "S01D47",
+  "title": "口语复习 · In our school",
+  "week": 6,
+  "day": 7,
+  "course_type": "training",
+  "est_minutes": 8,
+  "scope": "M3U1：学校地点和there be",
+  "difficulty": "L1",
+  "open_date": "2026-08-16",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "There is a library in our school.",
+      "audio": "static/audio/speaking/S01D47/q01.mp3",
+      "tag": "M3U1·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "There are twelve classrooms.",
+      "audio": "static/audio/speaking/S01D47/q02.mp3",
+      "tag": "M3U1·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "The playground is behind the hall.",
+      "audio": "static/audio/speaking/S01D47/q03.mp3",
+      "tag": "M3U1·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "The office is on the first floor.",
+      "audio": "static/audio/speaking/S01D47/q04.mp3",
+      "tag": "M3U1·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "We can read in the library.",
+      "audio": "static/audio/speaking/S01D47/q05.mp3",
+      "tag": "M3U1·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "We can run in the playground.",
+      "audio": "static/audio/speaking/S01D47/q06.mp3",
+      "tag": "M3U1·综合复习",
+      "parent_note": "4A M1U1-M3U2 已学内容复现"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "question": "Is there a library?",
+      "expected": "Yes, there is.",
+      "hint": "用英语说：是的，有。",
+      "audio": "static/audio/speaking/S01D47/q07.mp3",
+      "tag": "M3U1·综合复习",
+      "parent_note": "固定答案跟读式问答，不采集真实个人信息"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "question": "Where is the playground?",
+      "expected": "It is behind the hall.",
+      "hint": "用英语说：它在礼堂后面。",
+      "audio": "static/audio/speaking/S01D47/q08.mp3",
+      "tag": "M3U1·综合复习",
+      "parent_note": "固定答案跟读式问答，不采集真实个人信息"
+    }
+  ]
+}

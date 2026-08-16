@@ -133,6 +133,23 @@ def completed_course_ids(results):
     }
 
 
+def course_window(shown, done, limit=5):
+    """Return a rolling student catalogue around the first incomplete course."""
+    if limit <= 0 or not shown:
+        return []
+    recommended_index = None
+    for index, (course_id, meta) in enumerate(shown):
+        if meta.get("status") != "closed" and course_id not in done:
+            recommended_index = index
+            break
+    if recommended_index is None:
+        return shown[-limit:]
+    start = max(0, recommended_index - (limit // 2))
+    end = min(len(shown), start + limit)
+    start = max(0, end - limit)
+    return shown[start:end]
+
+
 def _gh_request(method, url, token, payload=None):
     req = urllib.request.Request(url, method=method)
     req.add_header("Authorization", "Bearer " + token)
