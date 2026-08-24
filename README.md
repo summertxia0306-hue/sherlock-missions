@@ -1,20 +1,52 @@
-# Sherlock English Missions · 听说模块
+# 夏洛恪英语数字练习系统
 
-小学英语听说训练 Streamlit 应用（沪教牛津版）。
+本目录是夏洛恪英语项目迁移后的唯一活跃开发根目录，目标是建设一个面向 iPad 的 CloudBase 原生 PWA。
 
-- 部署/更新操作 → `00_部署指南_零基础版.md`
-- **与统一系统对接（Codex 必读）→ `listening/CONTRACT.md`**：完整目录结构注释、
-  功能清单（已实现/计划中/明确不做）、接口契约、结果结构、信息隔离红线
-- 范围说明：本模块只做听力；跟读/口语/录音归口语模块（Codex）
-- 设计与决策记录 → 项目文件夹 `听力部分/10_Streamlit迁移设计_v1_待确认.md`
-- 新课开发流程：AI 写 `content/listening/W0xD0x.json` → `tools/生成音频_v2.bat` → commit+push
-- 当前公共课件：听力 `W01D39–W01D50`，口语 `S01D39–S01D50`。`39–40` 保持原 M3U2 课程不变；`41–48` 依次综合复习 4A M1U1–M3U2，`49` 为 M1–M2 综合复习，`50` 为 M1–M3U2 全范围复习；不进入 M3U3。
-- 历史保留：`01–38` 的公开课程 JSON、示范音和构建片段不再部署；正式成绩、错题、订正、口语明细、录音、私有结果库数据与 Git 历史均保留。
-- 当前推荐：自动选择“第一个已可见且 formal 未完成的课程”。儿童列表以它为中心滚动显示最多 5 课；全部完成时显示最后 5 课。家长端仍可查看全部现存公共课件。
-- 云端依赖：`streamlit==1.55.0`、`websocket-client==1.9.0` 已精确锁定；更新前必须先在干净环境验证健康检查和听力/口语入口。
-- 热部署兼容：入口会同步 reload `storage.progress` 与页面模块，避免云端进程混用新页面和旧共享模块。
+当前只实现两个正式模块：
 
-结构：`app.py` 临时入口（统一架构将替换）；`listening/` 引擎+页面+受限播放组件；
-`content/` 课程数据；`static/audio/` 音频资产；`storage/` 进度接口（v1 运行目录存储）；
-`tools/` 开发期课程与音频生成（`build_courses_41_50.py` 可重建本批综合复习 JSON，
-`build_parent_docs_41_50.py` 可重建家长文档，`prune_public_courses.py` 负责受限清理历史公共资产）。
+- 听力训练
+- 跟读与口语训练
+
+单词复习等能力只预留模块接口，未获单独立项前不开发。互动课件、纸质练习、ChatGPT 陪练和历史作业材料不属于本项目的活跃范围。
+
+## 当前状态
+
+- 日期：2026-08-24
+- 阶段：P0 已验收通过并获授权形成独立提交、推送；P1 在推送后工作区干净时开始
+- 新项目根目录：`D:\ObsidianVaults\Education\Sherlock\English-Learning`
+- 当前线上正式入口：Streamlit
+- 目标正式入口：CloudBase 原生 PWA
+- 当前唯一开发根：`D:\ObsidianVaults\Education\Sherlock\English-Learning`
+- 旧代码源：`D:\project_antigravity\education_english\听力部分\sherlock-missions`（原地保留，只读参考）
+- 当前 Git 基线：`main` / `14d4d659ebc71832cc1a388f79f9bb80c9a974e1`
+- P0 迁移结果在验收后形成独立提交并推送 `main`；未部署，P1 只在推送后工作区干净时开始
+
+## 新窗口开始前必读
+
+1. `AGENTS.md`
+2. `docs/00_项目总计划.md`
+3. `docs/01_已确认决策.md`
+4. `docs/02_PROJECT_STATUS.md`
+5. 与本次任务对应的阶段计划或窗口指令
+
+## 文档入口
+
+- 总计划：`docs/00_项目总计划.md`
+- 已确认决策：`docs/01_已确认决策.md`
+- 当前状态：`docs/02_PROJECT_STATUS.md`
+- 数据治理：`docs/03_DATA_GOVERNANCE.md`
+- 目标架构：`docs/04_目标架构.md`
+- 路线图：`docs/05_ROADMAP.md`
+- Codex 窗口架构：`docs/06_Codex窗口架构.md`
+- 文档清单与开工顺序：`docs/07_文档清单与开工顺序.md`
+- 分阶段实施：`docs/阶段计划/`
+- 新窗口启动指令：`docs/窗口指令/`
+
+## 关键边界
+
+- 普通儿童入口提交默认是 `formal`。
+- 家长测试必须经过认证并写为 `test`。
+- `test` 不产生儿童完成状态，也不进入学情分析。
+- 不删除成绩、错题、订正、录音、私有结果或 Git 历史。
+- 迁移验收完成后，所有新增内容只写入本目录。
+- 对孩子掌握程度的结论只能基于正式学习证据，不能由开发测试推断。

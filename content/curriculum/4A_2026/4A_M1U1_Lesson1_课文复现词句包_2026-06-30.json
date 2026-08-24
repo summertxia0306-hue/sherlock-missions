@@ -1,0 +1,174 @@
+{
+  "metadata": {
+    "title": "4A M1U1 Lesson 1 Meeting new people",
+    "created_at": "2026-06-30",
+    "source_pdf": "暑期W1/教材校对/四年级上册英语上海牛津版电子课本.pdf",
+    "textbook_pages": "2-6",
+    "unit": "M1U1",
+    "module": "M1 Getting to know you",
+    "note": "PDF has no text layer. This package was manually extracted from rendered textbook pages."
+  },
+  "core_tasks": [
+    "introduce yourself",
+    "introduce a friend or family member",
+    "say age",
+    "say one ability"
+  ],
+  "core_patterns": [
+    "This is ...",
+    "His name is ...",
+    "Her name is ...",
+    "My name is ...",
+    "He's ...",
+    "She's ...",
+    "He can ...",
+    "She can ...",
+    "Nice to meet you.",
+    "Nice to meet you too."
+  ],
+  "grammar_points": [
+    "possessive adjectives: my, his, her",
+    "possessive case: Peter's",
+    "verb to be: am, is, He's, She's",
+    "modal verb: can + base verb",
+    "age expression: He's/She's + age; ten years old"
+  ],
+  "page_extracts": [
+    {
+      "page": 2,
+      "section": "Look and say",
+      "focus": "meeting, introducing sister/brother, saying goodbye",
+      "sentences": [
+        "Good morning, Peter.",
+        "Good morning, Kitty.",
+        "This is my sister.",
+        "Her name is Sally.",
+        "She's twelve.",
+        "This is my brother.",
+        "His name is Paul.",
+        "He's only six.",
+        "My name is Kitty.",
+        "I'm Peter's classmate.",
+        "We are going to the park.",
+        "Goodbye, Kitty.",
+        "See you."
+      ]
+    },
+    {
+      "page": 3,
+      "section": "Look and learn / Ask and answer",
+      "focus": "numbers 11-16; introduce friend, age and ability",
+      "sentences": [
+        "This is my friend.",
+        "His name's Danny.",
+        "He's nine.",
+        "He can ride a bicycle.",
+        "Her name's Tracy.",
+        "She's thirteen.",
+        "She can skip."
+      ]
+    },
+    {
+      "page": 4,
+      "section": "Say and act: A new classmate",
+      "focus": "new classmate, student number, classroom greeting",
+      "sentences": [
+        "Good morning, class.",
+        "Good morning, Miss Fang.",
+        "This is your new classmate.",
+        "Her name's Jill.",
+        "She's ten years old.",
+        "Her student number is sixteen.",
+        "Hi, I'm Jill.",
+        "You can sit here, Jill.",
+        "OK. Thank you, Miss Fang.",
+        "Nice to meet you, Jill.",
+        "My name's Kitty.",
+        "I'm nine.",
+        "My student number is fifteen.",
+        "Hi, Kitty. Nice to meet you too."
+      ]
+    },
+    {
+      "page": 5,
+      "section": "Look and read: Jill",
+      "focus": "short reading about Jill",
+      "sentences": [
+        "We have a new classmate, Jill.",
+        "She's ten years old.",
+        "She lives near our school.",
+        "She walks to school every day.",
+        "She likes reading.",
+        "She can play basketball well.",
+        "She can dance too.",
+        "She likes dancing."
+      ],
+      "true_false": [
+        { "item": "Jill is a new student.", "answer": true },
+        { "item": "Jill's home is near the school.", "answer": true },
+        { "item": "Jill likes reading and dancing.", "answer": true },
+        { "item": "Jill can play football.", "answer": false }
+      ]
+    },
+    {
+      "page": 6,
+      "section": "Listen and enjoy / Learn the sound",
+      "focus": "name spelling and -sk sound",
+      "sentences": [
+        "My name is Joe.",
+        "J-O-E, Joe.",
+        "What about you?",
+        "My name's Rose.",
+        "R-O-S-E, Rose.",
+        "Nice to meet you, Joe.",
+        "Martin sits at his desk.",
+        "Making a funny mask.",
+        "His grandma asks.",
+        "She puts on the mask."
+      ],
+      "sound": {
+        "pattern": "-sk",
+        "words": ["desk", "mask"]
+      }
+    }
+  ],
+  "word_station": {
+    "must_cover": [
+      { "word": "eleven", "meaning": "十一", "source": "p.3 / Word list" },
+      { "word": "twelve", "meaning": "十二", "source": "p.2-p.3 / Word list" },
+      { "word": "thirteen", "meaning": "十三", "source": "p.3 / Word list" },
+      { "word": "fourteen", "meaning": "十四", "source": "p.3 / Word list" },
+      { "word": "fifteen", "meaning": "十五", "source": "p.3-p.4 / Word list" },
+      { "word": "sixteen", "meaning": "十六", "source": "p.3-p.4 / Word list" },
+      { "word": "classmate", "meaning": "同学", "source": "p.2-p.4 / Word list" },
+      { "word": "student", "meaning": "学生", "source": "p.4 / Word list" },
+      { "word": "number", "meaning": "号码", "source": "p.4 / Word list" },
+      { "word": "his", "meaning": "他的", "source": "p.2-p.3 / Word list" },
+      { "word": "her", "meaning": "她的", "source": "p.2-p.4 / Word list" },
+      { "word": "meet", "meaning": "遇见", "source": "p.4-p.6 / Word list" },
+      { "word": "skip", "meaning": "跳绳", "source": "p.3 / Word list" },
+      { "word": "walk", "meaning": "走；步行", "source": "p.5 / Word list" }
+    ],
+    "textbook_phrases": [
+      { "phrase": "ride a bicycle", "meaning": "骑自行车", "source": "p.3" },
+      { "phrase": "student number", "meaning": "学生号码", "source": "p.4" },
+      { "phrase": "ten years old", "meaning": "十岁", "source": "p.4-p.5" },
+      { "phrase": "sit here", "meaning": "坐这里", "source": "p.4" },
+      { "phrase": "live near our school", "meaning": "住在我们学校附近", "source": "p.5" },
+      { "phrase": "walk to school every day", "meaning": "每天步行上学", "source": "p.5" },
+      { "phrase": "play basketball well", "meaning": "篮球打得好", "source": "p.5" },
+      { "phrase": "like reading", "meaning": "喜欢阅读", "source": "p.5" },
+      { "phrase": "like dancing", "meaning": "喜欢跳舞", "source": "p.5" }
+    ],
+    "sound_words": [
+      { "word": "desk", "sound": "-sk" },
+      { "word": "mask", "sound": "-sk" }
+    ]
+  },
+  "recommended_html_scope_v1": {
+    "numbers": ["eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen"],
+    "identity_words": ["classmate", "student", "number", "friend"],
+    "ability_phrases": ["ride a bicycle", "skip", "play basketball"],
+    "patterns": ["This is ...", "His/Her name is ...", "He/She can ..."]
+  }
+}
