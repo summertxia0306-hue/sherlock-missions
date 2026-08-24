@@ -6,9 +6,12 @@ tools/proxy.txt
 web/node_modules/
 web/dist/
 web/coverage/
+web/public/audio/listening/
+web/public/content/listening/
 web/*.tsbuildinfo
 cloudfunctions/sherlock-api/node_modules/
 cloudfunctions/sherlock-api/coverage/
+cloudfunctions/sherlock-api/content/listening/
 .env
 .env.*
 !.env.example

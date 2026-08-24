@@ -7,8 +7,8 @@ export function HomePage() {
       <section className="hero">
         <p className="eyebrow">SHERLOCK · ENGLISH LAB</p>
         <h1>本周任务</h1>
-        <p className="hero-copy">新的学习空间正在搭建。本阶段只验证基础设施，不会写入正式学习记录。</p>
-        <div className="stage-pill">P1 仅开放家长 test 验收</div>
+        <p className="hero-copy">听力模块正在 P2 验收。本阶段只保存 test，不会写入正式学习记录。</p>
+        <div className="stage-pill">P2 听力 · 仅开放家长 test 验收</div>
       </section>
       <section className="module-grid" aria-label="功能模块">
         {visibleModules().map((module) => (
@@ -25,4 +25,3 @@ export function HomePage() {
     </main>
   )
 }
-

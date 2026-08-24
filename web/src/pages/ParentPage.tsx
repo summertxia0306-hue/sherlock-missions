@@ -1,7 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { Link } from 'react-router-dom'
 import type { SherlockApi } from '../core/cloudbase-api'
-import { resultSubmissionSchema } from '../core/result-schema'
 
 function errorMessage(error: unknown): string {
   const code = error instanceof Error ? error.message : 'UNKNOWN'
@@ -15,11 +14,12 @@ function errorMessage(error: unknown): string {
   return messages[code] || '暂时无法完成操作，请稍后再试。'
 }
 
-export function ParentPage({ api }: { api: SherlockApi }) {
+export function ParentPage({ api, onAuthenticated = () => undefined }: { api: SherlockApi; onAuthenticated?: (token: string) => void }) {
   const [password, setPassword] = useState('')
   const [token, setToken] = useState('')
   const [message, setMessage] = useState('')
   const [busy, setBusy] = useState(false)
+  const [results, setResults] = useState<Awaited<ReturnType<SherlockApi['listListeningTestResults']>>['results']>([])
 
   async function onLogin(event: FormEvent) {
     event.preventDefault()
@@ -32,6 +32,7 @@ export function ParentPage({ api }: { api: SherlockApi }) {
     try {
       const result = await api.authenticate(password)
       setToken(result.session_token)
+      onAuthenticated(result.session_token)
       setPassword('')
       setMessage('认证成功：当前会话只能写 test。')
     } catch (error) {
@@ -41,25 +42,13 @@ export function ParentPage({ api }: { api: SherlockApi }) {
     }
   }
 
-  async function writeSmokeResult() {
+  async function refreshListeningResults() {
     setBusy(true)
     setMessage('')
-    const now = new Date().toISOString()
-    const result = resultSubmissionSchema.parse({
-      student_id: 'p1-parent-acceptance',
-      module_type: 'listening',
-      course_id: 'P1-SMOKE',
-      course_version: 'p1',
-      started_at: now,
-      submitted_at: now,
-      duration_seconds: 0,
-      data_kind: 'formal',
-      device_info: { platform: navigator.platform || 'unknown' },
-      payload: { check: 'p1-cloudbase-test-write' }
-    })
     try {
-      const response = await api.submitResult(token, result)
-      setMessage(`test 写入成功：${response.result_id}`)
+      const response = await api.listListeningTestResults(token)
+      setResults(response.results)
+      setMessage(response.results.length ? '已刷新听力 test 明细。' : '目前还没有听力 test 记录。')
     } catch (error) {
       setMessage(errorMessage(error))
     } finally {
@@ -86,13 +75,25 @@ export function ParentPage({ api }: { api: SherlockApi }) {
           <button type="submit" disabled={busy}>{busy ? '认证中…' : '进入 test 验收'}</button>
         </form>
       ) : (
-        <button type="button" disabled={busy} onClick={writeSmokeResult}>
-          {busy ? '写入中…' : '写入一条 test 验收记录'}
-        </button>
+        <div className="parent-actions">
+          <Link className="primary-link" to="/listening">进入听力 test 验收</Link>
+          <button type="button" disabled={busy} onClick={refreshListeningResults}>刷新听力 test 明细</button>
+        </div>
       )}
       {message && <p className="form-message" role="status">{message}</p>}
+      {results.map((result) => (
+        <details className="parent-result" key={result.result_id}>
+          <summary>{result.course_id} · test · {result.score} 分</summary>
+          <dl>
+            <dt>score</dt><dd>{result.score}</dd>
+            <dt>section_scores</dt><dd><pre>{JSON.stringify(result.section_scores, null, 2)}</pre></dd>
+            <dt>wrong_answers</dt><dd><pre>{JSON.stringify(result.wrong_answers, null, 2)}</pre></dd>
+            <dt>corrections</dt><dd><pre>{JSON.stringify(result.corrections, null, 2)}</pre></dd>
+            <dt>question_results</dt><dd><pre>{JSON.stringify(result.question_results, null, 2)}</pre></dd>
+          </dl>
+        </details>
+      ))}
       <Link className="back-link" to="/">← 返回本周任务</Link>
     </main>
   )
 }
-

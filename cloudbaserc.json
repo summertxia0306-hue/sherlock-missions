@@ -10,8 +10,7 @@
       "timeout": 10,
       "memorySize": 256,
       "installDependency": true,
-      "description": "sherlock-english P1 test-only API"
+      "description": "sherlock-english P2 listening test-only API"
     }
   ]
 }
-

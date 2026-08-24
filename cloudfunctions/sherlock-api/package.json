@@ -4,7 +4,9 @@
   "private": true,
   "main": "index.js",
   "scripts": {
+    "pretest": "node ../../tools/sync-p2-assets.mjs --function-only",
     "test": "node --test",
+    "pretest:coverage": "node ../../tools/sync-p2-assets.mjs --function-only",
     "test:coverage": "node --test --experimental-test-coverage --test-coverage-lines=80 --test-coverage-functions=80 --test-coverage-branches=75"
   },
   "dependencies": {
@@ -14,4 +16,3 @@
     "node": ">=18"
   }
 }
-

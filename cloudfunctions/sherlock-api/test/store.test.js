@@ -37,6 +37,17 @@ function createDatabaseMock() {
               },
               async remove() {}
             }
+          },
+          doc(id) {
+            return {
+              async set(value) {
+                const values = writes.get(name) || []
+                values.push(value)
+                writes.set(name, values)
+              },
+              async get() { return { data: [] } },
+              async update() {}
+            }
           }
         }
       }

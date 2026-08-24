@@ -4,7 +4,7 @@ vi.mock('@cloudbase/js-sdk', () => ({
   default: {
     init: () => ({
       auth: () => ({ hasLoginState: () => true, signInAnonymously: vi.fn() }),
-      callFunction: async () => ({ result: { ok: true, service: 'sherlock-api', stage: 'P1', formal_enabled: false, writes: 'test-only' } })
+      callFunction: async () => ({ result: { ok: true, service: 'sherlock-api', stage: 'P2', formal_enabled: false, writes: 'test-only' } })
     })
   }
 }))
@@ -14,7 +14,7 @@ import { cloudbaseApi, createCloudbaseApi } from './cloudbase-api'
 function fakeApp(options: { loggedIn?: boolean; authError?: boolean; result?: unknown; functions?: boolean } = {}) {
   const signInAnonymously = vi.fn().mockResolvedValue(options.authError ? { error: new Error('denied') } : {})
   const callFunction = vi.fn().mockResolvedValue({
-    result: options.result ?? { ok: true, service: 'sherlock-api', stage: 'P1', formal_enabled: false, writes: 'test-only' }
+    result: options.result ?? { ok: true, service: 'sherlock-api', stage: 'P2', formal_enabled: false, writes: 'test-only' }
   })
   return {
     app: {
@@ -53,6 +53,29 @@ describe('CloudBase browser adapter', () => {
     })
     expect(response.data_kind).toBe('test')
     expect(fake.signInAnonymously).not.toHaveBeenCalled()
+  })
+
+  it('forwards P2 listening submit, correction, and authenticated parent detail actions', async () => {
+    const fake = fakeApp({ loggedIn: true, result: { ok: true, results: [] } })
+    const api = createCloudbaseApi(fake.app)
+    const submission = {
+      result_id: '123e4567-e89b-42d3-a456-426614174000', student_id: 'sherlock', course_id: 'W01D39',
+      course_version: 'version1', started_at: '2026-08-24T10:00:00.000Z',
+      submitted_at: '2026-08-24T10:02:00.000Z', duration_seconds: 120,
+      answers: { '1': 0 as const }, play_counts: { '1': 1 }, device_info: {}
+    }
+    await api.submitListeningResult('token', submission)
+    expect(fake.callFunction).toHaveBeenLastCalledWith(expect.objectContaining({
+      data: { action: 'submitListeningResult', session_token: 'token', submission }
+    }))
+    await api.checkListeningCorrection('token', submission.result_id, 1, 1, 0)
+    expect(fake.callFunction).toHaveBeenLastCalledWith(expect.objectContaining({
+      data: expect.objectContaining({ action: 'checkListeningCorrection', question_id: 1, attempt: 1 })
+    }))
+    await api.listListeningTestResults('token')
+    expect(fake.callFunction).toHaveBeenLastCalledWith(expect.objectContaining({
+      data: { action: 'listListeningTestResults', session_token: 'token' }
+    }))
   })
 
   it('maps authentication, capability, and service failures to stable codes', async () => {

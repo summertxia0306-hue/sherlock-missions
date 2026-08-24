@@ -30,7 +30,18 @@ export default defineConfig(({ mode }) => ({
       },
       workbox: {
         navigateFallback: '/sherlock-english/index.html',
-        globPatterns: ['**/*.{js,css,html,svg,woff2}']
+        globPatterns: ['**/*.{js,css,html,svg,woff2,json}'],
+        runtimeCaching: [
+          {
+            urlPattern: ({ url }) => url.pathname.includes('/sherlock-english/audio/listening/'),
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'sherlock-listening-audio-v1',
+              expiration: { maxEntries: 240, maxAgeSeconds: 60 * 60 * 24 * 30 },
+              cacheableResponse: { statuses: [0, 200] }
+            }
+          }
+        ]
       }
     })
   ].filter(Boolean),

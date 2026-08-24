@@ -13,7 +13,7 @@ const registry: readonly ModuleRegistration[] = [
   {
     id: 'listening',
     title: '听力训练',
-    description: '课程将在 P2 迁移，当前入口只用于基础架构验收。',
+    description: 'W01D39–50 已接入，须经家长认证后进行 test 验收。',
     route: '/listening',
     visible: true,
     icon: '🎧'
@@ -51,4 +51,3 @@ export function visibleModules(): readonly ModuleRegistration[] {
 export function getModule(id: ModuleId): ModuleRegistration | undefined {
   return registry.find((item) => item.id === id)
 }
-

@@ -44,12 +44,12 @@ function validResult(overrides = {}) {
 }
 
 describe('sherlock-api service', () => {
-  it('reports P1 health with formal disabled', async () => {
+  it('reports P2 health with formal disabled', async () => {
     const service = createService({ store: memoryStore(), passwordHash: 'unused', hmacKey: '1234567890abcdef' })
     assert.deepEqual(await service.handle({ action: 'health' }, { callerId: 'a' }), {
       ok: true,
       service: 'sherlock-api',
-      stage: 'P1',
+      stage: 'P2',
       formal_enabled: false,
       writes: 'test-only'
     })

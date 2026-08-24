@@ -1,4 +1,5 @@
 import type { ResultSubmission } from './result-schema'
+import type { ListeningPick, ListeningSubmission } from '../listening/session'
 
 interface ApiErrorResult {
   ok: false
@@ -22,7 +23,7 @@ interface SubmitResultResponse {
 export interface HealthResult {
   ok: true
   service: 'sherlock-api'
-  stage: 'P1'
+  stage: 'P2'
   formal_enabled: false
   writes: 'test-only'
 }
@@ -31,6 +32,46 @@ export interface SherlockApi {
   health(): Promise<HealthResult>
   authenticate(password: string): Promise<ParentAuthResult>
   submitResult(sessionToken: string, result: ResultSubmission): Promise<SubmitResultResponse>
+  submitListeningResult(sessionToken: string, submission: ListeningSubmission): Promise<ListeningSubmitResponse>
+  checkListeningCorrection(sessionToken: string, resultId: string, questionId: number, attempt: 1 | 2, pick: ListeningPick): Promise<ListeningCorrectionResponse>
+  listListeningTestResults(sessionToken: string): Promise<ListeningResultsResponse>
+}
+
+export interface ListeningSubmitResponse {
+  ok: true
+  result_id: string
+  data_kind: 'test'
+  formal_completion_eligible: false
+  wrong_question_ids: number[]
+  idempotent: boolean
+}
+
+export interface ListeningCorrectionResponse {
+  ok: true
+  correct: boolean
+  marker?: '✓' | '✓²' | '✗'
+  reveal_transcript?: string[]
+  next_attempt?: 2
+  done: boolean
+}
+
+export interface ListeningResultDetail {
+  result_id: string
+  course_id: string
+  data_kind: 'test'
+  score: number
+  duration_seconds: number
+  section_scores: Record<string, number>
+  wrong_answers: Array<Record<string, unknown>>
+  corrections: Record<string, unknown>
+  question_results: Array<Record<string, unknown>>
+  submitted_at: string
+}
+
+export interface ListeningResultsResponse {
+  ok: true
+  data_kind: 'test'
+  results: ListeningResultDetail[]
 }
 
 interface CloudbaseAppLike {
@@ -99,6 +140,16 @@ export function createCloudbaseApi(
       action: 'submitResult',
       session_token: sessionToken,
       result
+    }),
+    submitListeningResult: (sessionToken, submission) => call<ListeningSubmitResponse>({
+      action: 'submitListeningResult', session_token: sessionToken, submission
+    }),
+    checkListeningCorrection: (sessionToken, resultId, questionId, attempt, pick) => call<ListeningCorrectionResponse>({
+      action: 'checkListeningCorrection', session_token: sessionToken,
+      result_id: resultId, question_id: questionId, attempt, pick
+    }),
+    listListeningTestResults: (sessionToken) => call<ListeningResultsResponse>({
+      action: 'listListeningTestResults', session_token: sessionToken
     })
   }
 }
@@ -119,5 +170,9 @@ async function getDefaultApi(): Promise<SherlockApi> {
 export const cloudbaseApi: SherlockApi = {
   health: async () => (await getDefaultApi()).health(),
   authenticate: async (password) => (await getDefaultApi()).authenticate(password),
-  submitResult: async (sessionToken, result) => (await getDefaultApi()).submitResult(sessionToken, result)
+  submitResult: async (sessionToken, result) => (await getDefaultApi()).submitResult(sessionToken, result),
+  submitListeningResult: async (sessionToken, submission) => (await getDefaultApi()).submitListeningResult(sessionToken, submission),
+  checkListeningCorrection: async (sessionToken, resultId, questionId, attempt, pick) => (
+    await getDefaultApi()).checkListeningCorrection(sessionToken, resultId, questionId, attempt, pick),
+  listListeningTestResults: async (sessionToken) => (await getDefaultApi()).listListeningTestResults(sessionToken)
 }

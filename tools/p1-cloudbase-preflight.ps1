@@ -73,6 +73,33 @@ if ($Family24Response.StatusCode -ne 200) {
     throw 'The Family24 site is unavailable. P1 refuses to continue.'
 }
 
+$Apps = ConvertFrom-TcbOutput @(npx --yes --package=@cloudbase/cli@3.8.0 tcb -e $EnvId app list --json)
+$Family24App = @($Apps.data | Where-Object { $_.serviceName -eq 'family24-web' })
+if ($Family24App.Count -ne 1 -or $Family24App[0].latestVersionName -ne 'family24-web-003' -or $Family24App[0].latestStatus -ne 'SUCCESS') {
+    throw 'The Family24 app version or status changed. P1 refuses to continue.'
+}
+
+$Family24Dist = 'D:\project_antigravity\24\dist'
+if (-not (Test-Path -LiteralPath $Family24Dist -PathType Container)) {
+    throw 'The Family24 local verification baseline is unavailable. P1 refuses to continue.'
+}
+$Hosting = ConvertFrom-TcbOutput @(npx --yes --package=@cloudbase/cli@3.8.0 tcb -e $EnvId hosting list --json)
+$CloudFiles = @{}
+foreach ($Item in $Hosting.data) { $CloudFiles[$Item.key] = $Item }
+$LocalFiles = @(Get-ChildItem -LiteralPath $Family24Dist -Recurse -File)
+$Mismatches = @()
+foreach ($File in $LocalFiles) {
+    $Key = $File.FullName.Substring($Family24Dist.Length + 1).Replace('\', '/')
+    $Entry = $CloudFiles[$Key]
+    $Md5 = (Get-FileHash -LiteralPath $File.FullName -Algorithm MD5).Hash.ToLowerInvariant()
+    if ($null -eq $Entry -or [int64]$Entry.size -ne $File.Length -or $Entry.eTag.Trim('"') -ne $Md5) {
+        $Mismatches += $Key
+    }
+}
+if ($LocalFiles.Count -ne 11 -or $Mismatches.Count -ne 0) {
+    throw "The Family24 static baseline changed: local=$($LocalFiles.Count), mismatches=$($Mismatches -join ',')"
+}
+
 [pscustomobject]@{
     EnvId = $EnvId
     PackageName = $BillingItem[0].PackageName
@@ -83,4 +110,7 @@ if ($Family24Response.StatusCode -ne 200) {
     UsedCredits = $Summary.usedCredits
     RemainingCredits = [math]::Round([double]$Summary.totalCredits - [double]$Summary.usedCredits, 2)
     Family24HttpStatus = [int]$Family24Response.StatusCode
+    Family24AppVersion = $Family24App[0].latestVersionName
+    Family24AppStatus = $Family24App[0].latestStatus
+    Family24FilesMatch = "$($LocalFiles.Count)/$($LocalFiles.Count)"
 } | Format-List

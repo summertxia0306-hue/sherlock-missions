@@ -1,6 +1,7 @@
 # 听力模块对接契约与功能清单（给统一架构 / Codex）
 
-> 版本 v4.1 · 2026-08-16。保留 W01D39–W01D40，新增 W01D41–W01D50 综合复习 4A M1U1–M3U2；学生端改为首个 formal 未完成课周围最多 5 课，历史 01–38 公共课件资产下线但学习记录与 Git 历史保留。
+> 版本 v4.2 · 2026-08-24。新增 CloudBase P2 test 适配层：复用 W01D39–W01D50 与现有音频，不改课程事实；服务端计分、幂等提交、订正和家长完整明细已接入，formal 仍关闭。
+> v4.1 · 2026-08-16。保留 W01D39–W01D40，新增 W01D41–W01D50 综合复习 4A M1U1–M3U2；学生端改为首个 formal 未完成课周围最多 5 课，历史 01–38 公共课件资产下线但学习记录与 Git 历史保留。
 > v4.0 · 2026-08-11：新增 W01D36–W01D40，与口语课严格同页对齐 4A M3U2 第37–41页；约90% M3U2 + 约10%已学旧坑，不进入 M3U3。
 > v3.9 · 2026-08-06：新增 W01D31–W01D35，与口语课严格同页对齐 4A M3U1 第32–36页；不进入 M3U2。
 > v3.8 · 2026-08-05：锁定 Streamlit 1.55.0 与 websocket-client 1.9.0，避免云端重建时解析到不兼容依赖；课程、评分及 data_kind 规则不变。
@@ -170,6 +171,16 @@ v1.2（2026-06-25）起：
 
 ## 4. 结果结构（progress.save_result 入参 / render_course 返回）
 
+### 4.1 CloudBase P2 test 适配（2026-08-24）
+
+- 内容源仍是 `content/listening/W01D39.json` 至 `W01D50.json`；`tools/sync-p2-assets.mjs` 生成儿童安全副本、课程目录和音频路径清单，新增课程不需要修改核心页面。
+- 儿童浏览器只取得题目、选项和音频路径；`answer`、`transcript`、`tag`、`parent_note` 只保留在云函数内容副本中。
+- `submitListeningResult` 在云函数端依据课程版本重新校验全部答案和播放次数并计分；客户端提交的分数或完成标记不被信任。
+- `result_id` 由客户端稳定生成，云端按该 ID 幂等保存；网络重试不会产生第二条 test 结果。
+- `checkListeningCorrection` 第一遍盲订正；第一遍错误后仅返回该题原文，再进行第二遍；任何阶段均不返回正确答案。
+- `listListeningTestResults` 只对有效家长 test 会话返回完整 `score`、`wrong_answers`、`section_scores`、`corrections` 与 `question_results`。
+- P2 CloudBase 入口只接受 `data_kind=test`，`formal_enabled=false`；test 不推进推荐课、完成状态或正式学情。正式数据与历史结果迁移留到 P4。
+
 ```json
 {
   "student_id": "sherlock",
@@ -199,7 +210,7 @@ v1.2（2026-06-25）起：
 - data_kind 仅允许 `test` / `formal`。历史无字段记录按 test。
 - play_counts 键：普通题 = 题号字符串；短文 = section id。
 - wrong_answers.tag 是教学诊断标签，**只可在家长端展示**。
-- 训练课（P1 交付后）会追加 `"corrections"` 字段记录订正结果，结构届时同步本文件。
+- 训练课与周测课可追加 `"corrections"` 字段记录订正结果；CloudBase P2 由服务端逐题更新，诊断课不进入订正。
 
 ## 5. URL 参数（当前临时入口；统一首页可沿用或替换）
 

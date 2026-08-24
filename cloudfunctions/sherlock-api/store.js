@@ -28,8 +28,23 @@ function createCloudbaseStore(db) {
       return response.data[0] || null
     },
     async saveResult(value) {
-      await collections.results.add(value)
+      if (value.result_id) {
+        await collections.results.doc(value.result_id).set(value)
+      } else {
+        await collections.results.add(value)
+      }
       return value.result_id
+    },
+    async getResult(resultId) {
+      const response = await collections.results.doc(resultId).get()
+      return response.data?.[0] || null
+    },
+    async updateResult(resultId, patch) {
+      await collections.results.doc(resultId).update(patch)
+    },
+    async listResults() {
+      const response = await collections.results.where({ data_kind: 'test', module_type: 'listening' }).limit(50).get()
+      return response.data
     },
     async saveAudit(value) {
       await collections.audits.add(value)

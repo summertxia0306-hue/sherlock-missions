@@ -1,21 +1,22 @@
 # PROJECT STATUS
 
 > 最后更新：2026-08-24  
-> 当前阶段：P1 CloudBase 基础架构验收通过；用户已授权形成独立提交并推送 `main`，不进入 P2
+> 当前阶段：P2 听力模块真实 iPad 验收通过；停留在 P2，不自动进入 P3
 
 ## 当前事实
 
 - 新根目录已经接入原仓库完整 Git 对象库和工作树，是当前唯一活跃开发根：`D:\ObsidianVaults\Education\Sherlock\English-Learning`。
 - 旧源仓库仍在：`D:\project_antigravity\education_english\听力部分\sherlock-missions`，迁移前后均保持干净，当前只作只读参考。
 - 当前仓库分支：`main`。
-- 当前核验 HEAD：`eb00a38298e2e76b8c2b5c6c62b5319a11303d38`；本地、`origin/main` 与实时远端一致。
+- 当前 Git 基线：`2e7370fc813531702b6388f90ceb3b19188f468f`；P1 独立提交已推送，`main` 与 `origin/main` 一致。P2 已验收并获用户授权形成独立提交推送 `main`，本记录由该 P2 提交承载。
 - 当前远端：`https://github.com/summertxia0306-hue/sherlock-missions.git`。
 - 原仓库 770 个跟踪文件均已迁入；根 README 同名冲突以治理 README 为主，旧 README 原样归档到 `docs/legacy-streamlit/README_streamlit_legacy.md`。
 - 当前公开课程：听力和口语各 12 个 JSON，共 24 个；成品 MP3 312 个，fragments MP3 380 个。
 - 当前线上正式入口仍是 Streamlit；2026-08-24 已从休眠页成功唤醒到任务首页，未执行课程提交或正式学习写入。
-- CloudBase `family24` 发布后实时核验仍为体验版，到期 `2027-02-04 23:59:59`，超额付费关闭；当前周期 `2026-08-04` 至 `2026-09-04`，3000 点中已用 0.82 点、剩余 2999.18 点。
+- CloudBase `family24` 在 P2 验收后实时核验仍为体验版，到期 `2027-02-04 23:59:59`，超额付费关闭；当前周期 `2026-08-04` 至 `2026-09-04`，3000 点中已用 1.68 点、剩余 2998.32 点。
 - P1 已创建隔离资源：Event 云函数 `sherlock-api`、4 个 `ADMINONLY` 的 `sherlock_*` 集合、`sherlock-english/test/README.txt` 存储标记和前端 `publish_key`；匿名登录仅对 `sherlock-api` 放行，其他函数保留原匿名禁用规则。
-- `sherlock-api` 已配置家长密码 scrypt 哈希和会话 HMAC 环境变量；在线健康检查返回 `formal_enabled=false` 和 `writes=test-only`。静态 test 站点已发布到 `https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/`。
+- `sherlock-api` 已配置家长密码 scrypt 哈希和会话 HMAC 环境变量；P2 使用代码更新保留这些环境变量。在线健康检查返回 `stage=P2`、`formal_enabled=false` 和 `writes=test-only`。静态 test 站点已发布到 `https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/`。
+- P2 已上线 W01D39–W01D50 共 12 门听力课；儿童副本 12/12 无答案、原文、考点标签或家长备注；216/216 段线上 MP3 与本地发布文件 SHA-256 一致。
 - P1 真实验收结果 `58d7621e-0fd7-4abb-aaf8-a6ab65e9a5fd` 已落入 `sherlock_results`，云端核对为 `data_kind=test`、`formal_completion_eligible=false`；未认证写入返回 `UNAUTHORIZED`，formal 动作返回 `FORMAL_DISABLED`。
 - 发布后 24 点仍为 `family24-web-003` / `SUCCESS`；公开首页 HTTP 200，11/11 个当前静态文件与 `D:\project_antigravity\24\dist` 的大小和 MD5 精确匹配。
 - `_runtime`、本机代理配置、`__pycache__` 和私有结果库数据均未迁入；旧位置未删除或改写。
@@ -39,16 +40,23 @@
 - P1 React + TypeScript + Vite PWA、路由、离线/更新提示、错误边界、课程目录/推荐接口、通用结果 schema 与 test-only 云函数已完成本地实现。
 - P1 本地验证：前端 19/19、服务端 9/9、旧版 Python 40/40；前端 statements 90.43% / lines 91.66%，服务端 lines 91.20%；类型检查和生产构建通过。
 - P1 云端与桌面验证：12/12 静态文件上传；首页、`listening`、`speaking`、`parent`、manifest 和 Service Worker 均 HTTP 200；桌面浏览器实际加载首页、三个模块入口且无控制台错误。
+- P1 独立提交 `2e7370fc813531702b6388f90ceb3b19188f468f` 已推送 `main`，推送后工作区确认干净。
+- P2 听力目录、试音、五类题型、限次播放、服务端计分、幂等提交、两遍订正与家长完整 test 明细已完成；正式入口继续关闭。
+- P2 本地验证：Web 34/34、云函数 16/16、旧版 Python 40/40；类型检查、生产构建和覆盖率门通过；216/216 本地 MP3 完整解码。
+- P2 云端验证：242/242 静态文件上传；12/12 儿童课件信息隔离及 216/216 线上音频字节哈希通过；未认证写入和 formal 动作均被拒绝。
+- P2 音频首轮真机反馈已修复并发布：试音完整播放后才允许开始；任一音频播放期间锁定其他播放/提交/订正确认；未缓存音频离线失败会立即显示加载状态并给出可重试提示。
+- 修复发布后结果库只读计数：formal 为 0；listening test 为 4（含 1 条既有 P1 smoke 和本轮真机验收新增 test）。
+- 用户完成针对性复验并于 2026-08-24 明确确认 P2 验收通过；锁屏、断网恢复、状态保持、布局、试音完整播放和单音频互斥均纳入真机结论。
 
 ## 下一步
 
-P1 已由用户在真实 iPad 上验收通过，并已明确授权形成独立 Git 提交、推送 `main`。提交推送完成后停留在 P1 完成态，不得自动进入 P2。同级临时克隆和迁移前治理快照继续保留到 P5。
+P2 已验收通过，并获用户授权形成独立提交推送 `main`；推送后须确认新根目录工作区干净。是否进入 P3 仍须用户另行明确授权，当前不进入。同级临时克隆和迁移前治理快照继续保留到 P5。
 
-当前阶段指令：`docs/阶段计划/P1_CloudBase基础架构.md`（验收通过）。
+当前阶段指令：`docs/阶段计划/P2_听力模块迁移.md`（验收通过）。
 
 ## 当前阻塞
 
-无 P1 实施阻塞。P1 独立提交与推送已获用户授权；完成后不得据此自动进入 P2。
+无 P2 验收或提交阻塞。P2 已获提交和推送授权；P3 尚未获授权进入。
 
 ## 尚未实时确认但不阻塞
 
@@ -109,4 +117,17 @@ P1 已由用户在真实 iPad 上验收通过，并已明确授权形成独立 G
 线上地址：https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/
 遗留问题：SDK 传递依赖安全公告待单独评估；真实 iPad 断网重启未单独留存证据
 下一步：P1 独立提交推送并确认工作区干净后，停留在 P1 完成态；不进入 P2
+```
+
+## 2026-08-24 P2 验收登记
+
+```text
+日期：2026-08-24
+阶段：P2 听力模块迁移（验收通过）
+完成：W01D39–W01D50 目录、试音、五类题型、限次播放、答题暂存、服务端计分、幂等提交、两遍订正、家长 test 明细；242 个静态文件发布
+验证：Web 34/34；云函数 16/16；旧版 Python 40/40；类型检查与构建通过；本地 MP3 216/216 解码；线上儿童课件 12/12 信息隔离；线上 MP3 216/216 SHA-256 一致；UNAUTHORIZED 与 FORMAL_DISABLED 生效；结果库 formal=0；首轮 iPad 发现的试音提前放行和跨题叠音已修复，用户复验后确认通过
+提交/版本：P1 基线 2e7370fc813531702b6388f90ceb3b19188f468f；P2 独立提交由本记录所在的 main 提交承载
+线上地址：https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/
+遗留问题：CloudBase SDK 传递依赖仍有 4 high / 1 moderate 公告，未执行破坏性降级
+下一步：完成 P2 独立提交和推送并确认工作区干净后停止；不自动进入 P3
 ```

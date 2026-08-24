@@ -4,7 +4,10 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "prepare:p2": "node ../tools/sync-p2-assets.mjs",
+    "predev": "npm run prepare:p2",
     "dev": "vite",
+    "prebuild": "npm run prepare:p2",
     "build": "tsc -b && vite build && node scripts/create-route-fallbacks.mjs",
     "typecheck": "tsc -b --pretty false",
     "test": "vitest run",
