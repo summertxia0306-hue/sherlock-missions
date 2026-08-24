@@ -1,19 +1,23 @@
 # PROJECT STATUS
 
 > 最后更新：2026-08-24  
-> 当前阶段：P0 已验收通过；P0 独立提交和推送已获授权，完成并确认工作区干净后进入 P1
+> 当前阶段：P1 CloudBase 基础架构验收通过；用户已授权形成独立提交并推送 `main`，不进入 P2
 
 ## 当前事实
 
 - 新根目录已经接入原仓库完整 Git 对象库和工作树，是当前唯一活跃开发根：`D:\ObsidianVaults\Education\Sherlock\English-Learning`。
 - 旧源仓库仍在：`D:\project_antigravity\education_english\听力部分\sherlock-missions`，迁移前后均保持干净，当前只作只读参考。
 - 当前仓库分支：`main`。
-- 当前核验 HEAD：`14d4d659ebc71832cc1a388f79f9bb80c9a974e1`。
+- 当前核验 HEAD：`eb00a38298e2e76b8c2b5c6c62b5319a11303d38`；本地、`origin/main` 与实时远端一致。
 - 当前远端：`https://github.com/summertxia0306-hue/sherlock-missions.git`。
 - 原仓库 770 个跟踪文件均已迁入；根 README 同名冲突以治理 README 为主，旧 README 原样归档到 `docs/legacy-streamlit/README_streamlit_legacy.md`。
 - 当前公开课程：听力和口语各 12 个 JSON，共 24 个；成品 MP3 312 个，fragments MP3 380 个。
 - 当前线上正式入口仍是 Streamlit；2026-08-24 已从休眠页成功唤醒到任务首页，未执行课程提交或正式学习写入。
-- CloudBase `family24` 环境已存在，但本项目尚未创建任何资源。
+- CloudBase `family24` 发布后实时核验仍为体验版，到期 `2027-02-04 23:59:59`，超额付费关闭；当前周期 `2026-08-04` 至 `2026-09-04`，3000 点中已用 0.82 点、剩余 2999.18 点。
+- P1 已创建隔离资源：Event 云函数 `sherlock-api`、4 个 `ADMINONLY` 的 `sherlock_*` 集合、`sherlock-english/test/README.txt` 存储标记和前端 `publish_key`；匿名登录仅对 `sherlock-api` 放行，其他函数保留原匿名禁用规则。
+- `sherlock-api` 已配置家长密码 scrypt 哈希和会话 HMAC 环境变量；在线健康检查返回 `formal_enabled=false` 和 `writes=test-only`。静态 test 站点已发布到 `https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/`。
+- P1 真实验收结果 `58d7621e-0fd7-4abb-aaf8-a6ab65e9a5fd` 已落入 `sherlock_results`，云端核对为 `data_kind=test`、`formal_completion_eligible=false`；未认证写入返回 `UNAUTHORIZED`，formal 动作返回 `FORMAL_DISABLED`。
+- 发布后 24 点仍为 `family24-web-003` / `SUCCESS`；公开首页 HTTP 200，11/11 个当前静态文件与 `D:\project_antigravity\24\dist` 的大小和 MD5 精确匹配。
 - `_runtime`、本机代理配置、`__pycache__` 和私有结果库数据均未迁入；旧位置未删除或改写。
 - 原拟目录 `English-Listen-Speak` 为空，本轮未删除。
 
@@ -31,25 +35,23 @@
 - 已建立 `docs/迁移清单_2026-08-24.md`、`docs/硬编码路径适配清单_2026-08-24.md` 和 `docs/P0_资产SHA256清单_2026-08-24.tsv`；
 - 迁移前后单元测试均为 40/40 通过，目标根 32 个项目 Python 文件编译通过，312/312 成品 MP3 可解码；
 - P0 验证门达到；初次 P0 窗口按当时边界没有提交、推送、部署或提前进入 P1；2026-08-24 验收后，用户已明确授权形成独立 P0 提交并推送 `main`。
+- P0 独立提交 `eb00a38298e2e76b8c2b5c6c62b5319a11303d38` 已推送 `main`，推送后工作区曾确认干净；临时克隆和迁移前快照继续保留到 P5。
+- P1 React + TypeScript + Vite PWA、路由、离线/更新提示、错误边界、课程目录/推荐接口、通用结果 schema 与 test-only 云函数已完成本地实现。
+- P1 本地验证：前端 19/19、服务端 9/9、旧版 Python 40/40；前端 statements 90.43% / lines 91.66%，服务端 lines 91.20%；类型检查和生产构建通过。
+- P1 云端与桌面验证：12/12 静态文件上传；首页、`listening`、`speaking`、`parent`、manifest 和 Service Worker 均 HTTP 200；桌面浏览器实际加载首页、三个模块入口且无控制台错误。
 
 ## 下一步
 
-先完成 P0 独立提交并推送 `main`，确认新根工作区干净；然后按用户授权启动 P1。创建任何 CloudBase 资源前：
+P1 已由用户在真实 iPad 上验收通过，并已明确授权形成独立 Git 提交、推送 `main`。提交推送完成后停留在 P1 完成态，不得自动进入 P2。同级临时克隆和迁移前治理快照继续保留到 P5。
 
-1. 实时确认 CloudBase `family24` 环境的套餐、到期时间、剩余额度和现有 24 点资源，且不得影响 24 点项目；
-2. 不开启付费；P1 验证只能写 `test`，Streamlit 继续作为唯一 `formal` 入口；
-3. 如腾讯云需要登录或授权，停止实施并明确告知用户所需操作；
-4. 同级临时克隆和迁移前治理快照保留到 P5 正式切换验收完成，不删除。
-
-下一阶段指令：`阶段计划/P1_CloudBase基础架构.md`（未执行）。
+当前阶段指令：`docs/阶段计划/P1_CloudBase基础架构.md`（验收通过）。
 
 ## 当前阻塞
 
-P0 无阻塞。P1 已获授权，但必须先完成 P0 推送和 CloudBase 资源只读核验。
+无 P1 实施阻塞。P1 独立提交与推送已获用户授权；完成后不得据此自动进入 P2。
 
 ## 尚未实时确认但不阻塞
 
-- CloudBase 控制台当前套餐到期日；历史创建记录为 2027-02-04，实施前应再次读取控制台。
 - 讯飞当前应用免费授权的精确到期日和剩余额度。
 - 开学后第一批课程的学校实际页段。
 
@@ -82,3 +84,29 @@ P0 无阻塞。P1 已获授权，但必须先完成 P0 推送和 CloudBase 资�
 ```
 
 验收后决定：用户已授权把 P0 迁移结果形成一个独立 Git 提交并推送 `main`；推送后确认新根工作区干净，再进入 `docs/阶段计划/P1_CloudBase基础架构.md`。临时克隆和迁移前快照保留到 P5 正式切换验收完成。
+
+## 2026-08-24 P1 进行中状态登记
+
+```text
+日期：2026-08-24
+阶段：P1 CloudBase 基础架构（验收通过）
+完成：PWA 和 test-only 云函数实现；4 个私有集合、存储前缀、publish key、匿名身份和 sherlock-api；密码哈希配置；真实 test 写入；/sherlock-english/ 静态发布
+验证：前端 19/19、服务端 9/9、旧版 Python 40/40；类型检查和构建通过；云函数 health 正常；真实结果固定为 test 且不具备 formal 完成资格；未认证写入和 formal 动作均被拒绝；12 个静态文件及深链接在线；24 点 11/11 文件未变化；超额付费仍关闭
+提交/版本：P1 独立提交由本记录所在 main 提交承载；P0 main 基线 eb00a38298e2e76b8c2b5c6c62b5319a11303d38
+线上地址：https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/；24 点原 URL 正常
+遗留问题：真实 iPad 断网重启未单独留存截图；CloudBase SDK 传递依赖的 npm audit 高危公告需单独评估，不能直接强制降级
+下一步：P1 独立提交推送并确认工作区干净后，停留在 P1 完成态；不得进入 P2
+```
+
+## 2026-08-24 P1 iPad 验收登记
+
+```text
+日期：2026-08-24
+阶段：P1 CloudBase 基础架构
+完成：真实 iPad 启动 PWA，进入听力和跟读口语基础入口；两个入口均显示 P1 预期占位状态和 formal 入口关闭
+验证：听力页面明确课程将在 P2 迁移；跟读口语页面明确课程将在 P3 迁移；页面可返回本周任务；用户确认 P1 验收通过
+提交/版本：P1 独立提交由本记录所在 main 提交承载；P0 main 基线 eb00a38298e2e76b8c2b5c6c62b5319a11303d38
+线上地址：https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/
+遗留问题：SDK 传递依赖安全公告待单独评估；真实 iPad 断网重启未单独留存证据
+下一步：P1 独立提交推送并确认工作区干净后，停留在 P1 完成态；不进入 P2
+```

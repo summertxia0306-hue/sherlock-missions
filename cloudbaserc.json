@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.cloudbase.net/cli/cloudbaserc.schema.json",
+  "envId": "family24-d7gqb6r6m2d722f7a",
+  "functionRoot": "cloudfunctions",
+  "functions": [
+    {
+      "name": "sherlock-api",
+      "runtime": "Nodejs20.19",
+      "handler": "index.main",
+      "timeout": 10,
+      "memorySize": 256,
+      "installDependency": true,
+      "description": "sherlock-english P1 test-only API"
+    }
+  ]
+}
+

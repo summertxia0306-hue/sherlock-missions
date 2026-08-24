@@ -1,0 +1,17 @@
+{
+  "name": "sherlock-api",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage --test-coverage-lines=80 --test-coverage-functions=80 --test-coverage-branches=75"
+  },
+  "dependencies": {
+    "@cloudbase/node-sdk": "3.18.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+

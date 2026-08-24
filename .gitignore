@@ -3,3 +3,14 @@ __pycache__/
 _runtime/
 .streamlit/secrets.toml
 tools/proxy.txt
+web/node_modules/
+web/dist/
+web/coverage/
+web/*.tsbuildinfo
+cloudfunctions/sherlock-api/node_modules/
+cloudfunctions/sherlock-api/coverage/
+.env
+.env.*
+!.env.example
+*.local
+.cloudbaserc.p1.*.json
