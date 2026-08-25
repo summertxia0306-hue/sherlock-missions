@@ -6,7 +6,8 @@ function createCloudbaseStore(db) {
     sessions: db.collection('sherlock_parent_sessions'),
     results: db.collection('sherlock_results'),
     audits: db.collection('sherlock_audit_logs'),
-    failures: db.collection('sherlock_auth_attempts')
+    failures: db.collection('sherlock_auth_attempts'),
+    speakingTakes: db.collection('sherlock_speaking_takes')
   }
 
   return {
@@ -42,9 +43,16 @@ function createCloudbaseStore(db) {
     async updateResult(resultId, patch) {
       await collections.results.doc(resultId).update(patch)
     },
-    async listResults() {
-      const response = await collections.results.where({ data_kind: 'test', module_type: 'listening' }).limit(50).get()
+    async listResults(moduleType = 'listening') {
+      const response = await collections.results.where({ data_kind: 'test', module_type: moduleType }).limit(50).get()
       return response.data
+    },
+    async getSpeakingTake(takeId) {
+      const response = await collections.speakingTakes.where({ take_id: takeId }).limit(1).get()
+      return response.data?.[0] || null
+    },
+    async saveSpeakingTake(value) {
+      await collections.speakingTakes.doc(value.take_id).set(value)
     },
     async saveAudit(value) {
       await collections.audits.add(value)

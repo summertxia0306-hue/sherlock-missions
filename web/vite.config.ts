@@ -30,13 +30,13 @@ export default defineConfig(({ mode }) => ({
       },
       workbox: {
         navigateFallback: '/sherlock-english/index.html',
-        globPatterns: ['**/*.{js,css,html,svg,woff2,json}'],
+        globPatterns: ['**/*.{js,css,html,svg,woff2}'],
         runtimeCaching: [
           {
-            urlPattern: ({ url }) => url.pathname.includes('/sherlock-english/audio/listening/'),
+            urlPattern: ({ url }) => /\/sherlock-english\/audio\/(?:listening|speaking)\//.test(url.pathname),
             handler: 'CacheFirst',
             options: {
-              cacheName: 'sherlock-listening-audio-v1',
+              cacheName: 'sherlock-course-audio-v2',
               expiration: { maxEntries: 240, maxAgeSeconds: 60 * 60 * 24 * 30 },
               cacheableResponse: { statuses: [0, 200] }
             }

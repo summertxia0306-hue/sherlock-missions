@@ -7,8 +7,8 @@ export function HomePage() {
       <section className="hero">
         <p className="eyebrow">SHERLOCK · ENGLISH LAB</p>
         <h1>本周任务</h1>
-        <p className="hero-copy">听力模块正在 P2 验收。本阶段只保存 test，不会写入正式学习记录。</p>
-        <div className="stage-pill">P2 听力 · 仅开放家长 test 验收</div>
+        <p className="hero-copy">跟读口语正在 P3 验收。听力继续可用，本阶段仍只保存 test，不写正式学习记录。</p>
+        <div className="stage-pill">P3 口语 · 仅开放家长 test 验收</div>
       </section>
       <section className="module-grid" aria-label="功能模块">
         {visibleModules().map((module) => (

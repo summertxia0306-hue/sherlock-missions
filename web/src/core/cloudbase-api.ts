@@ -23,7 +23,7 @@ interface SubmitResultResponse {
 export interface HealthResult {
   ok: true
   service: 'sherlock-api'
-  stage: 'P2'
+  stage: 'P3'
   formal_enabled: false
   writes: 'test-only'
 }
@@ -35,7 +35,66 @@ export interface SherlockApi {
   submitListeningResult(sessionToken: string, submission: ListeningSubmission): Promise<ListeningSubmitResponse>
   checkListeningCorrection(sessionToken: string, resultId: string, questionId: number, attempt: 1 | 2, pick: ListeningPick): Promise<ListeningCorrectionResponse>
   listListeningTestResults(sessionToken: string): Promise<ListeningResultsResponse>
+  scoreSpeakingTake(sessionToken: string, request: SpeakingScoreRequest): Promise<SpeakingScoreResponse>
+  submitSpeakingResult(sessionToken: string, submission: SpeakingSubmission): Promise<SpeakingSubmitResponse>
+  listSpeakingTestResults(sessionToken: string): Promise<SpeakingResultsResponse>
+  getSpeakingRecordingUrl(sessionToken: string, resultId: string, questionId: number, attempt: number): Promise<{ ok: true; url: string; expires_in: number }>
 }
+
+export interface SpeakingScoreRequest {
+  result_id: string
+  course_id: string
+  course_version: string
+  question_id: number
+  attempt: number
+  wav_base64: string
+}
+
+export interface SpeakingScoreResponse {
+  ok: true
+  stars: 0 | 1 | 2 | 3
+  proof: string
+  child_feedback: string
+  weak_words: string[]
+  word_lights: Array<{ word: string; light: 'good' | 'weak' | 'miss' }>
+  can_retry: boolean
+  can_skip: boolean
+  idempotent?: boolean
+}
+
+export interface SpeakingSubmission {
+  result_id: string
+  student_id: string
+  course_id: string
+  course_version: string
+  started_at: string
+  submitted_at: string
+  duration_seconds: number
+  questions: Array<{ id: number; proofs: string[]; passed_by_safety: boolean }>
+}
+
+export interface SpeakingSubmitResponse {
+  ok: true
+  result_id: string
+  data_kind: 'test'
+  formal_completion_eligible: false
+  idempotent: boolean
+}
+
+export interface SpeakingResultDetail {
+  result_id: string
+  course_id: string
+  score: number
+  stars_total: number
+  stars_max: number
+  duration_seconds: number
+  question_results: Array<{
+    id: number; text: string; stars: number; take_stars: number[]; first_total: number | null
+    last_total: number | null; best_total: number | null; weak_words: string[]; passed_by_safety: boolean
+  }>
+}
+
+export interface SpeakingResultsResponse { ok: true; data_kind: 'test'; results: SpeakingResultDetail[] }
 
 export interface ListeningSubmitResponse {
   ok: true
@@ -150,6 +209,12 @@ export function createCloudbaseApi(
     }),
     listListeningTestResults: (sessionToken) => call<ListeningResultsResponse>({
       action: 'listListeningTestResults', session_token: sessionToken
+    }),
+    scoreSpeakingTake: (sessionToken, request) => call<SpeakingScoreResponse>({ action: 'scoreSpeakingTake', session_token: sessionToken, request }),
+    submitSpeakingResult: (sessionToken, submission) => call<SpeakingSubmitResponse>({ action: 'submitSpeakingResult', session_token: sessionToken, submission }),
+    listSpeakingTestResults: (sessionToken) => call<SpeakingResultsResponse>({ action: 'listSpeakingTestResults', session_token: sessionToken }),
+    getSpeakingRecordingUrl: (sessionToken, resultId, questionId, attempt) => call({
+      action: 'getSpeakingRecordingUrl', session_token: sessionToken, result_id: resultId, question_id: questionId, attempt
     })
   }
 }
@@ -174,5 +239,9 @@ export const cloudbaseApi: SherlockApi = {
   submitListeningResult: async (sessionToken, submission) => (await getDefaultApi()).submitListeningResult(sessionToken, submission),
   checkListeningCorrection: async (sessionToken, resultId, questionId, attempt, pick) => (
     await getDefaultApi()).checkListeningCorrection(sessionToken, resultId, questionId, attempt, pick),
-  listListeningTestResults: async (sessionToken) => (await getDefaultApi()).listListeningTestResults(sessionToken)
+  listListeningTestResults: async (sessionToken) => (await getDefaultApi()).listListeningTestResults(sessionToken),
+  scoreSpeakingTake: async (sessionToken, request) => (await getDefaultApi()).scoreSpeakingTake(sessionToken, request),
+  submitSpeakingResult: async (sessionToken, submission) => (await getDefaultApi()).submitSpeakingResult(sessionToken, submission),
+  listSpeakingTestResults: async (sessionToken) => (await getDefaultApi()).listSpeakingTestResults(sessionToken),
+  getSpeakingRecordingUrl: async (sessionToken, resultId, questionId, attempt) => (await getDefaultApi()).getSpeakingRecordingUrl(sessionToken, resultId, questionId, attempt)
 }

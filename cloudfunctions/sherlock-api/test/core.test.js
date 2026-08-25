@@ -44,15 +44,18 @@ function validResult(overrides = {}) {
 }
 
 describe('sherlock-api service', () => {
-  it('reports P2 health with formal disabled', async () => {
+  it('reports P3 health with formal disabled', async () => {
     const service = createService({ store: memoryStore(), passwordHash: 'unused', hmacKey: '1234567890abcdef' })
-    assert.deepEqual(await service.handle({ action: 'health' }, { callerId: 'a' }), {
+    const health = await service.handle({ action: 'health' }, { callerId: 'a' })
+    assert.deepEqual({ ...health, speaking_course_versions: undefined }, {
       ok: true,
       service: 'sherlock-api',
-      stage: 'P2',
+      stage: 'P3',
       formal_enabled: false,
-      writes: 'test-only'
+      writes: 'test-only',
+      speaking_course_versions: undefined
     })
+    assert.match(health.speaking_course_versions.S01D39, /^[a-f0-9]{16}$/)
   })
 
   it('authenticates a parent without returning or storing the password', async () => {

@@ -21,7 +21,7 @@ const registry: readonly ModuleRegistration[] = [
   {
     id: 'speaking',
     title: '跟读口语',
-    description: '录音和评分将在 P3 迁移，当前入口只用于基础架构验收。',
+    description: 'S01D39–50 已接入录音、讯飞评分与三次门控，须经家长认证验收。',
     route: '/speaking',
     visible: true,
     icon: '🎙️'

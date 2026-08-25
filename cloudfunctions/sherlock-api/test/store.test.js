@@ -89,3 +89,15 @@ test('session lookup queries the same root-level fields that saveSession writes'
   assert.equal(mock.queries[0].filter.expires_at.operator, 'gt')
   assert.ok(mock.queries[0].filter.expires_at.value instanceof Date)
 })
+
+test('a first speaking take uses an empty-safe query instead of a missing document read', async () => {
+  const mock = createDatabaseMock()
+  const store = createCloudbaseStore(mock.db)
+
+  const take = await store.getSpeakingTake('take-1')
+
+  assert.equal(take, null)
+  assert.equal(mock.queries.length, 1)
+  assert.equal(mock.queries[0].name, 'sherlock_speaking_takes')
+  assert.equal(mock.queries[0].filter.take_id, 'take-1')
+})

@@ -89,10 +89,24 @@ button:disabled { opacity: .6; cursor: wait; }
 .parent-result dl { display: grid; grid-template-columns: 140px 1fr; gap: 8px; overflow: auto; }
 .parent-result dt { font-weight: 800; }
 .parent-result pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+.parent-speaking-question { padding: 13px 0; border-top: 1px solid #dbe4de; }
+.recording-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+.recording-buttons button { min-height: 40px; padding: 7px 11px; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .status-banner { position: sticky; top: env(safe-area-inset-top); z-index: 10; max-width: 980px; margin: 0 auto; padding: 10px 14px; border-radius: 0 0 14px 14px; background: #f4c95d; color: #3c2d06; font-weight: 750; text-align: center; }
 .status-banner button { min-height: auto; margin-left: 10px; padding: 5px 9px; }
 .status-banner .quiet { background: transparent; color: #3c2d06; }
+.speaking-card { display: grid; gap: 14px; margin-top: 24px; padding: 28px; border-radius: 28px; background: rgba(255,255,255,.72); border: 1px solid rgba(18,55,42,.1); }
+.speaking-prompt { margin: 0 0 8px; font-size: clamp(1.45rem, 5vw, 2.35rem); line-height: 1.45; font-weight: 850; color: #12372a; }
+.recording-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.countdown { font-size: 4rem; line-height: 1; font-weight: 900; color: #c26f00; }
+.speaking-feedback { padding: 18px; border-radius: 18px; background: #eef4ef; }
+.stars { min-height: 36px; font-size: 1.7rem; font-weight: 850; color: #315848; }
+.word-lights { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.word-lights span { padding: 5px 9px; border-radius: 9px; font-weight: 800; }
+.word-good { background: #d9f2df; color: #175c2d; }
+.word-weak { background: #fff0bd; color: #745400; }
+.word-miss { background: #ffd9d2; color: #8a2618; }
 
 @media (max-width: 760px) {
   .app-shell { padding-left: 18px; padding-right: 18px; }
@@ -105,6 +119,7 @@ button:disabled { opacity: .6; cursor: wait; }
   .course-row button { grid-column: 1 / -1; }
   .question-section { padding: 18px; }
   .parent-result dl { grid-template-columns: 1fr; }
+  .recording-actions { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {

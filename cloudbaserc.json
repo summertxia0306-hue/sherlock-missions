@@ -7,10 +7,19 @@
       "name": "sherlock-api",
       "runtime": "Nodejs20.19",
       "handler": "index.main",
-      "timeout": 10,
+      "timeout": 60,
       "memorySize": 256,
       "installDependency": true,
-      "description": "sherlock-english P2 listening test-only API"
+      "description": "sherlock-english P3 listening and speaking test-only API"
+    },
+    {
+      "name": "score-speaking",
+      "runtime": "Nodejs20.19",
+      "handler": "index.main",
+      "timeout": 60,
+      "memorySize": 256,
+      "installDependency": true,
+      "description": "sherlock-english P3 private Xunfei ISE scorer"
     }
   ]
 }

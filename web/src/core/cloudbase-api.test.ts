@@ -4,7 +4,7 @@ vi.mock('@cloudbase/js-sdk', () => ({
   default: {
     init: () => ({
       auth: () => ({ hasLoginState: () => true, signInAnonymously: vi.fn() }),
-      callFunction: async () => ({ result: { ok: true, service: 'sherlock-api', stage: 'P2', formal_enabled: false, writes: 'test-only' } })
+      callFunction: async () => ({ result: { ok: true, service: 'sherlock-api', stage: 'P3', formal_enabled: false, writes: 'test-only' } })
     })
   }
 }))
@@ -14,7 +14,7 @@ import { cloudbaseApi, createCloudbaseApi } from './cloudbase-api'
 function fakeApp(options: { loggedIn?: boolean; authError?: boolean; result?: unknown; functions?: boolean } = {}) {
   const signInAnonymously = vi.fn().mockResolvedValue(options.authError ? { error: new Error('denied') } : {})
   const callFunction = vi.fn().mockResolvedValue({
-    result: options.result ?? { ok: true, service: 'sherlock-api', stage: 'P2', formal_enabled: false, writes: 'test-only' }
+    result: options.result ?? { ok: true, service: 'sherlock-api', stage: 'P3', formal_enabled: false, writes: 'test-only' }
   })
   return {
     app: {
@@ -76,6 +76,20 @@ describe('CloudBase browser adapter', () => {
     expect(fake.callFunction).toHaveBeenLastCalledWith(expect.objectContaining({
       data: { action: 'listListeningTestResults', session_token: 'token' }
     }))
+  })
+
+  it('forwards P3 scoring, proof-only submission, parent detail, and recording URL actions', async () => {
+    const fake = fakeApp({ loggedIn: true, result: { ok: true, proof: 'opaque', stars: 3 } })
+    const api = createCloudbaseApi(fake.app)
+    const request = { result_id: 'r1', course_id: 'S01D39', course_version: 'version1', question_id: 1, attempt: 1, wav_base64: 'base64' }
+    await api.scoreSpeakingTake('token', request)
+    expect(fake.callFunction).toHaveBeenLastCalledWith(expect.objectContaining({ data: { action: 'scoreSpeakingTake', session_token: 'token', request } }))
+    const submission = { result_id: 'r1', student_id: 'sherlock', course_id: 'S01D39', course_version: 'version1', started_at: '2026-08-24T10:00:00.000Z', submitted_at: '2026-08-24T10:02:00.000Z', duration_seconds: 120, questions: [{ id: 1, proofs: ['opaque'], passed_by_safety: false }] }
+    await api.submitSpeakingResult('token', submission)
+    expect(fake.callFunction).toHaveBeenLastCalledWith(expect.objectContaining({ data: { action: 'submitSpeakingResult', session_token: 'token', submission } }))
+    await api.listSpeakingTestResults('token')
+    await api.getSpeakingRecordingUrl('token', 'r1', 1, 1)
+    expect(fake.callFunction).toHaveBeenLastCalledWith(expect.objectContaining({ data: expect.objectContaining({ action: 'getSpeakingRecordingUrl', result_id: 'r1' }) }))
   })
 
   it('maps authentication, capability, and service failures to stable codes', async () => {

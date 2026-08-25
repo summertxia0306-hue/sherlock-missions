@@ -12,15 +12,15 @@
 ## 当前状态
 
 - 日期：2026-08-24
-- 阶段：P2 听力模块已通过真实 iPad 验收；停留在 P2，不自动进入 P3
+- 阶段：P3 跟读与口语模块已部署到 test，等待真实 iPad 验收；不自动进入 P4
 - 新项目根目录：`D:\ObsidianVaults\Education\Sherlock\English-Learning`
 - 当前线上正式入口：Streamlit
 - 目标正式入口：CloudBase 原生 PWA
 - 当前唯一开发根：`D:\ObsidianVaults\Education\Sherlock\English-Learning`
 - 旧代码源：`D:\project_antigravity\education_english\听力部分\sherlock-missions`（原地保留，只读参考）
-- 当前 Git 基线：`main` / `2e7370fc813531702b6388f90ceb3b19188f468f`（P1 独立提交，已推送）
-- P2 当前只开放经家长认证的 test 听力验收；formal 入口关闭，不产生正式完成状态或学情结论
-- P2 test 地址：`https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/`
+- 当前 Git 基线：`main` / `954c02400a69ad7aed22574baa742500dfc15d1a`（P2 独立提交，已推送）；P3 尚未提交
+- P3 仅允许在家长认证后的 test 环境验收听力与口语；formal 入口关闭，不产生正式完成状态或学情结论
+- CloudBase P3 test 地址：`https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/`
 
 ## 新窗口开始前必读
 

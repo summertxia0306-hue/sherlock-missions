@@ -13,7 +13,8 @@ const catalog = parseListeningCatalog([
 
 const api = {
   health: vi.fn(), authenticate: vi.fn(), submitResult: vi.fn(),
-  submitListeningResult: vi.fn(), checkListeningCorrection: vi.fn(), listListeningTestResults: vi.fn()
+  submitListeningResult: vi.fn(), checkListeningCorrection: vi.fn(), listListeningTestResults: vi.fn(),
+  scoreSpeakingTake: vi.fn(), submitSpeakingResult: vi.fn(), listSpeakingTestResults: vi.fn(), getSpeakingRecordingUrl: vi.fn()
 } as SherlockApi
 const loadCatalog = async () => catalog
 

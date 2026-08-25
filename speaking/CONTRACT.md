@@ -1,11 +1,31 @@
 # 口语模块对接契约与功能清单
 
+> 版本 v3.1 · 2026-08-25：P3 课程版本一致性修复。静态儿童课与 API 必须共用语义版本算法；口语 JSON 不进入 Service Worker 预缓存，客户端每次进课强制实时取目录和课件。
+
+> 版本 v3.0 · 2026-08-24：P3 CloudBase test-only 迁移。新增 React iPad 录音状态机、`sherlock-api` 可信门控、私有 `score-speaking` 讯飞适配、私有录音临时回放；P5 前 formal 入口继续关闭。
+
 > 版本 v2.1 · 2026-08-16（保留 S01D39–S01D40，新增 S01D41–S01D50 综合复习 M1U1–M3U2；学生端改为首个 formal 未完成课周围最多 5 课，历史 01–38 公共课件资产下线但学习记录、录音与 Git 历史保留）。
 > v2.0 · 2026-08-11：新增 S01D36–S01D40，与听力课严格同页对齐 4A M3U2 第37–41页；约90% M3U2 + 约10%已学旧坑，不进入 M3U3。
 > v1.9 · 2026-08-06：新增 S01D31–S01D35，与听力课严格同页对齐 4A M3U1 第32–36页；不进入 M3U2。
 > v1.8 · 2026-08-05：锁定 Streamlit 1.55.0 与 websocket-client 1.9.0，避免云端重建时解析到不兼容依赖；课程、口语门控和 data_kind 规则不变。
 > v1.7 · 2026-07-24：新增 S01D21–S01D30，与听力课严格同页对齐 4A M2U2 第22–26页和 M2U3 第27–31页。
 > 镜像 `listening/CONTRACT.md` 的体例；改接口先改本文件再改代码。
+
+## P3 CloudBase 迁移覆盖条款（当前生效）
+
+- 当前公开课程仍为 S01D39–S01D50，每课 6 repeat + 2 QA；儿童副本不含 `expected`、题目原文、考点或家长备注。
+- P3 仅允许经家长认证的 `test`：浏览器不能写 formal，test 不点亮儿童正式完成、不生成正式学情结论。
+- 浏览器只调用 `sherlock-api`；后者校验会话、课程版本、题号和录次，再以内部 HMAC 调用 `score-speaking`。讯飞密钥只存在于评分云函数环境变量。
+- 静态儿童课 `course_version` 与 API 课程版本必须统一由解析后课程对象的 `stableVersion(course)` 生成；发布测试必须逐课验证 12/12 一致。口语目录和课件请求使用 `cache: no-store` 加新鲜查询参数，且不得进入 Service Worker 预缓存，避免旧 JSON 与新 API 混用。
+- 函数间 HMAC 必须签署递归字段排序后的规范化 JSON，不得直接签署依赖对象插入顺序的 `JSON.stringify(payload)`；CloudBase 传输重排字段后仍须验签通过。
+- 录音为单声道 16 kHz、16 bit PCM/WAV；静音、过短和格式不符在调用讯飞前拒绝，不消耗有效录次。
+- 评分成功才生成不可篡改的加密 proof。最终提交只携带 proof；服务端重建分数、首读/末读/最高分、`take_stars`、`weak_words` 和 `passed_by_safety`。
+- 同一 result/question/attempt 重复请求使用服务端幂等缓存；评分服务或网络失败不产生 proof、不占三次有效评分。
+- 首次评分的幂等缓存读取必须使用 `take_id` 条件查询并把空结果视为未评分，不得对尚不存在的文档执行会抛错的直读；线上验收必须从公开 SDK 经 `sherlock-api` 走完整评分链路，不能再用直接调用私有评分函数代替。
+- 录音只由评分函数服务端上传到 `sherlock-english/test/test/{course_id}/{result_id}/qNN-takeN.wav`；家长认证后按题次取得 10 分钟临时 URL，儿童端只回放当前浏览器内的录音 Blob。
+- 讯飞配额策略：不购买、不自动付费；当前授权到期前使用现有免费额度，到期后先验证每日免费额度是否继续；供应商不可用时保留录音和重试能力，不伪造分数。
+- CloudBase 英文 ISE 适配器与已验证的 Streamlit 契约保持一致：参考文本为 BOM 加原文、`group=pupil`、10 ms 音频帧节奏，最后一个实际音频帧携带 `aus=4/status=2`；调用超时上限 20 秒并允许一次瞬时失败重试。外层 `sherlock-api` 与私有评分函数均配置 60 秒函数超时。
+- 本节与下文旧 Streamlit formal 描述冲突时，以本节为准；旧规则保留作 P5 正式迁移依据，不在 P3 提前启用。
 
 ## 0. 范围
 
