@@ -12,12 +12,12 @@
 ## 当前状态
 
 - 日期：2026-08-26
-- 阶段：P5 正式切换窗口进行中；切换包已通过本地验证，CloudBase formal 仅在 Streamlit 只读在线确认后开启
+- 阶段：P5 正式切换已上线；等待真实 iPad 一对正式课程、即时对账和 24 小时持久化复核
 - 新项目根目录：`D:\ObsidianVaults\Education\Sherlock\English-Learning`
 - 切换目标：CloudBase 原生 PWA 成为唯一正式入口，Streamlit 仅保留只读迁移提示
 - 当前唯一开发根：`D:\ObsidianVaults\Education\Sherlock\English-Learning`
 - 旧代码源：`D:\project_antigravity\education_english\听力部分\sherlock-missions`（原地保留，只读参考）
-- 当前 Git 基线：`main` / `355b35b`（P4 已提交并推送）
+- P5 主切换提交：`e2bc8fa`（已推送 `main`）
 - P5 服务端以 `FORMAL_ENABLED` 为唯一正式写入开关；普通入口使用服务端 formal 会话，家长验收仍独立写 test
 - CloudBase 地址：`https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/`
 

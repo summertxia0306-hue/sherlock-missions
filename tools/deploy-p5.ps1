@@ -39,6 +39,22 @@ function Invoke-Function([string]$Name, [hashtable]$Event) {
     return $Response.data.RetMsg | ConvertFrom-Json
 }
 
+function Wait-ForHealth([bool]$FormalEnabled, [string]$Writes) {
+    for ($Attempt = 1; $Attempt -le 10; $Attempt++) {
+        try {
+            $Health = Invoke-Function 'sherlock-api' @{ action = 'health' }
+            if ($Health.ok -and $Health.stage -eq 'P5' -and [bool]$Health.formal_enabled -eq $FormalEnabled -and $Health.writes -eq $Writes) {
+                return $Health
+            }
+        }
+        catch {
+            if ($Attempt -eq 10) { throw }
+        }
+        if ($Attempt -lt 10) { Start-Sleep -Seconds 3 }
+    }
+    throw "P5 health state did not propagate: formal_enabled=$FormalEnabled, writes=$Writes"
+}
+
 function Get-ExistingPublishKey {
     $Html = (Invoke-WebRequest -Uri $CloudBaseUrl -UseBasicParsing -TimeoutSec 30).Content
     $ScriptPath = [regex]::Match($Html, 'src="([^"]+\.js)"').Groups[1].Value
@@ -102,10 +118,7 @@ try {
         npx --yes --package=@cloudbase/cli@3.8.0 tcb -e $EnvId fn code update sherlock-api --dir (Join-Path $ProjectRoot 'cloudfunctions\sherlock-api') --json
         if ($LASTEXITCODE -ne 0) { throw 'sherlock-api P5 code update failed.' }
 
-        $Health = Invoke-Function 'sherlock-api' @{ action = 'health' }
-        if (-not $Health.ok -or $Health.stage -ne 'P5' -or $Health.formal_enabled -or $Health.writes -ne 'test-only') {
-            throw 'P5 pre-cutover health boundary verification failed.'
-        }
+        $Health = Wait-ForHealth $false 'test-only'
 
         $env:VITE_CLOUDBASE_ENV_ID = $EnvId
         $env:VITE_CLOUDBASE_ACCESS_KEY = Get-ExistingPublishKey
@@ -140,10 +153,7 @@ try {
         npx --yes --package=@cloudbase/cli@3.8.0 tcb --config-file $TemporaryConfig fn deploy sherlock-api --force --install-dependency true
         if ($LASTEXITCODE -ne 0) { throw 'P5 formal switch deployment failed.' }
 
-        $Health = Invoke-Function 'sherlock-api' @{ action = 'health' }
-        if (-not $Health.ok -or $Health.stage -ne 'P5' -or -not $Health.formal_enabled -or $Health.writes -ne 'formal-and-test') {
-            throw 'P5 formal health verification failed.'
-        }
+        $Health = Wait-ForHealth $true 'formal-and-test'
         $FormalSession = Invoke-Function 'sherlock-api' @{ action = 'startChildSession' }
         if (-not $FormalSession.ok -or $FormalSession.data_kind -ne 'formal' -or [string]::IsNullOrWhiteSpace($FormalSession.session_token)) {
             throw 'P5 formal child session verification failed.'

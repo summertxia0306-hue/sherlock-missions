@@ -1,7 +1,7 @@
 # PROJECT STATUS
 
 > 最后更新：2026-08-26
-> 当前阶段：P5 正式切换窗口进行中；切换代码与回滚开关本地验证通过，线上 formal 尚未开启
+> 当前阶段：P5 正式切换已上线，等待真实 iPad 一对正式课程、即时对账和 24 小时复核
 
 ## 当前事实
 
@@ -12,10 +12,10 @@
 - 当前远端：`https://github.com/summertxia0306-hue/sherlock-missions.git`。
 - 原仓库 770 个跟踪文件均已迁入；根 README 同名冲突以治理 README 为主，旧 README 原样归档到 `docs/legacy-streamlit/README_streamlit_legacy.md`。
 - 当前公开课程：听力和口语各 12 个 JSON，共 24 个；成品 MP3 312 个，fragments MP3 380 个。
-- 当前线上正式入口仍是 Streamlit；2026-08-24 已从休眠页成功唤醒到任务首页，未执行课程提交或正式学习写入。
-- CloudBase `family24` 在 P4 验收后实时核验仍为体验版，到期 `2027-02-04 23:59:59`，超额付费关闭；当前周期 `2026-08-04` 至 `2026-09-04`，3000 点中已用 24.57 点、剩余 2975.43 点。
+- 当前唯一正式入口已切换为 CloudBase；Streamlit 真实浏览器渲染确认仅保留只读迁移提示，不再接受课程、家长测试或学习记录提交。
+- CloudBase `family24` 在 P5 切换前后实时核验仍为体验版，到期 `2027-02-04 23:59:59`，超额付费关闭；当前周期 `2026-08-04` 至 `2026-09-04`，切换部署前 3000 点中已用 27.13 点、剩余 2972.87 点。
 - P1 已创建隔离资源：Event 云函数 `sherlock-api`、4 个 `ADMINONLY` 的 `sherlock_*` 集合、`sherlock-english/test/README.txt` 存储标记和前端 `publish_key`；匿名登录仅对 `sherlock-api` 放行，其他函数保留原匿名禁用规则。
-- `sherlock-api` 已配置家长密码 scrypt 哈希、会话 HMAC 和口语内部 HMAC；P3 私有 `score-speaking` 继续使用。P4 采用代码更新保留全部既有密钥；在线健康检查返回 `stage=P4`、`formal_enabled=false` 和 `writes=test-only`。静态 test 站点已发布到 `https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/`。
+- `sherlock-api` 已配置家长密码 scrypt 哈希、会话 HMAC 和口语内部 HMAC；P3 私有 `score-speaking` 继续使用。P5 保留全部既有密钥并仅新增 `FORMAL_ENABLED=true`；在线健康检查返回 `stage=P5`、`formal_enabled=true` 和 `writes=formal-and-test`。正式站点为 `https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/`。
 - P2 已上线 W01D39–W01D50 共 12 门听力课；儿童副本 12/12 无答案、原文、考点标签或家长备注；216/216 段线上 MP3 与本地发布文件 SHA-256 一致。
 - P3 已完成 React 口语页面、单实例 iPad PCM/WAV 录音、试录/回放/自动停止、示范音互斥、讯飞评分适配、3 星/三次门控、加密 proof、幂等评分、私有录音和家长临时回放实现，并已部署 test。
 - P3 本地验证：Web 51/51、`sherlock-api` 31/31、`score-speaking` 11/11、旧版 Python 40/40；覆盖率门、TypeScript 构建和 PWA 构建均通过。口语页面定向用例已实际点击“就用这个，开始评分”并进入评分结果态。
@@ -63,13 +63,13 @@
 
 ## 下一步
 
-先推送 P5 只读迁移提示并在线确认 Streamlit 不再接受提交；随后依次发布两支云函数、PWA，并在服务端开启 `FORMAL_ENABLED=true`。切换后由家长在真实 iPad 完成一门新的正式听力课和一门新的正式口语课，再做即时与 24 小时复核。P0 与 P4 的临时克隆、迁移前备份和原始快照继续保留到 P5 完整验收通过。
+在真实 iPad 的 CloudBase 新入口完成 W01D46 与 S01D46 两门新的正式课程；完成后立即核对 formal 结果、录音与推荐进度，24 小时后再次复核持久化。P0、P4 与 P5 的临时克隆、迁移前备份和原始快照继续保留到 P5 完整验收通过。
 
 当前阶段指令：`docs/阶段计划/P5_上线切换与验收.md`。
 
 ## 当前阻塞
 
-无开发阻塞；线上切换和真实 iPad formal 验收尚未执行。
+无开发阻塞；线上切换已完成，真实 iPad formal 验收与 24 小时复核尚未执行。
 
 ## 尚未实时确认但不阻塞
 
@@ -183,4 +183,19 @@
 线上地址：https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/
 遗留问题：线上 formal 尚未开启；一对真实 formal 课程、即时对账和 24 小时复核尚未执行
 下一步：推送 Streamlit 只读版本并在线确认；在不影响 24 点且不启用付费的前提下执行 CloudBase 原子切换
+```
+
+## 2026-08-26 P5 正式切换登记
+
+```text
+日期：2026-08-26
+阶段：P5 上线切换与验收（线上切换完成，真机持久化验收待完成）
+完成：基于结果仓库 cb9bc864 创建独立 P5 最终快照；追加迁移 W01D44、W01D45、S01D44、S01D45 的 8 条正式结果及 17 个录音；Streamlit 只读上线并关闭旧写入口；CloudBase 两支云函数、PWA 和 FORMAL_ENABLED=true 已发布
+迁移验证：151/151 源结果完成对账（新增 8、跳过 143、冲突 0），151/151 字段匹配；439/439 录音路径与大小匹配，6 个 formal/test 云端下载样本 SHA-256 一致；旧仓库在只读上线后仍为 cb9bc864，无切换窗口漏项
+应用验证：sherlock-api 37/37、score-speaking 12/12、Web 57/57、旧 Python 40/40、迁移单测 9/9；覆盖率门、类型检查和生产构建通过；真实浏览器确认首页、听力、口语均为 FORMAL，W44/W45 与 S44/S45 已完成，当前推荐 W46/S46，窗口显示 44–48
+安全验证：线上 health 为 stage=P5 / formal_enabled=true / writes=formal-and-test；未认证写入仍被拒绝；family24 仍为 family24-web-003 / SUCCESS / 11/11；体验版、2027-02-04 到期、超额付费关闭均未改变
+提交/版本：P5 主切换提交 e2bc8fa 已推送 main；部署传播等待修复与本登记由后续状态提交承载
+保留项：P0、P4、P5 最终快照、迁移产物及失败网络克隆目录均保留，不删除
+遗留问题：需在真实 iPad 完成新的正式 W01D46 与 S01D46，随后即时对账；24 小时后复核结果和私有录音仍存在，方可宣布 P5 完整验收通过并清理保留项
+下一步：家长打开 CloudBase 新地址完成 W01D46 和 S01D46；不要回旧 Streamlit 做课
 ```
