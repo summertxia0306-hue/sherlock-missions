@@ -23,7 +23,7 @@ interface SubmitResultResponse {
 export interface HealthResult {
   ok: true
   service: 'sherlock-api'
-  stage: 'P3'
+  stage: 'P4'
   formal_enabled: false
   writes: 'test-only'
 }
@@ -39,6 +39,8 @@ export interface SherlockApi {
   submitSpeakingResult(sessionToken: string, submission: SpeakingSubmission): Promise<SpeakingSubmitResponse>
   listSpeakingTestResults(sessionToken: string): Promise<SpeakingResultsResponse>
   getSpeakingRecordingUrl(sessionToken: string, resultId: string, questionId: number, attempt: number): Promise<{ ok: true; url: string; expires_in: number }>
+  listParentResults(sessionToken: string, filters: ParentResultFilters): Promise<ParentResultsResponse>
+  getParentRecordingUrl(sessionToken: string, resultId: string, questionId: number, attempt: number): Promise<{ ok: true; url: string; expires_in: number }>
 }
 
 export interface SpeakingScoreRequest {
@@ -92,6 +94,49 @@ export interface SpeakingResultDetail {
     id: number; text: string; stars: number; take_stars: number[]; first_total: number | null
     last_total: number | null; best_total: number | null; weak_words: string[]; passed_by_safety: boolean
   }>
+}
+
+export interface ParentResultFilters {
+  data_kind?: 'formal' | 'test'
+  module_type?: 'listening' | 'speaking'
+  course_id?: string
+  date_from?: string
+  date_to?: string
+}
+
+export interface ParentResultDetail {
+  result_id: string
+  course_id: string
+  module_type: 'listening' | 'speaking'
+  data_kind: 'formal' | 'test'
+  status?: string
+  score: number
+  duration_seconds: number
+  submitted_at: string
+  section_scores?: Record<string, number>
+  wrong_answers?: Array<Record<string, unknown>>
+  corrections?: Record<string, unknown>
+  stars_total?: number
+  stars_max?: number
+  question_results: Array<Record<string, unknown> & {
+    id: number
+    text?: string
+    stars?: number
+    take_stars?: number[]
+    first_total?: number | null
+    last_total?: number | null
+    best_total?: number | null
+    weak_words?: string[]
+    passed_by_safety?: boolean
+    recording_records?: Array<{ file_id?: string; data_kind?: 'formal' | 'test' }>
+  }>
+}
+
+export interface ParentResultsResponse {
+  ok: true
+  data_kind: 'formal' | 'test'
+  summary: { result_count: number; completed_course_count: number; formal_completion_count: number }
+  results: ParentResultDetail[]
 }
 
 export interface SpeakingResultsResponse { ok: true; data_kind: 'test'; results: SpeakingResultDetail[] }
@@ -215,6 +260,10 @@ export function createCloudbaseApi(
     listSpeakingTestResults: (sessionToken) => call<SpeakingResultsResponse>({ action: 'listSpeakingTestResults', session_token: sessionToken }),
     getSpeakingRecordingUrl: (sessionToken, resultId, questionId, attempt) => call({
       action: 'getSpeakingRecordingUrl', session_token: sessionToken, result_id: resultId, question_id: questionId, attempt
+    }),
+    listParentResults: (sessionToken, filters) => call<ParentResultsResponse>({ action: 'listParentResults', session_token: sessionToken, filters }),
+    getParentRecordingUrl: (sessionToken, resultId, questionId, attempt) => call({
+      action: 'getParentRecordingUrl', session_token: sessionToken, result_id: resultId, question_id: questionId, attempt
     })
   }
 }
@@ -243,5 +292,7 @@ export const cloudbaseApi: SherlockApi = {
   scoreSpeakingTake: async (sessionToken, request) => (await getDefaultApi()).scoreSpeakingTake(sessionToken, request),
   submitSpeakingResult: async (sessionToken, submission) => (await getDefaultApi()).submitSpeakingResult(sessionToken, submission),
   listSpeakingTestResults: async (sessionToken) => (await getDefaultApi()).listSpeakingTestResults(sessionToken),
-  getSpeakingRecordingUrl: async (sessionToken, resultId, questionId, attempt) => (await getDefaultApi()).getSpeakingRecordingUrl(sessionToken, resultId, questionId, attempt)
+  getSpeakingRecordingUrl: async (sessionToken, resultId, questionId, attempt) => (await getDefaultApi()).getSpeakingRecordingUrl(sessionToken, resultId, questionId, attempt),
+  listParentResults: async (sessionToken, filters) => (await getDefaultApi()).listParentResults(sessionToken, filters),
+  getParentRecordingUrl: async (sessionToken, resultId, questionId, attempt) => (await getDefaultApi()).getParentRecordingUrl(sessionToken, resultId, questionId, attempt)
 }

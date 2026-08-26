@@ -11,6 +11,7 @@ const {
 const scryptAsync = promisify(crypto.scrypt)
 const ALLOWED_MODULES = new Set(['listening', 'speaking', 'vocabulary'])
 const SAFE_SPEAKING_SCORE_ERRORS = new Set(['SILENT_AUDIO', 'INVALID_AUDIO', 'RECORDING_UPLOAD_FAILED', 'SCORE_UNAVAILABLE'])
+const PARENT_RESULT_MODULES = new Set(['listening', 'speaking'])
 
 class ServiceError extends Error {
   constructor(code, message = code) {
@@ -345,14 +346,53 @@ function createService(options) {
     return { ok: true, data_kind: 'test', results: rows.filter((item) => item.module_type === 'speaking' && item.data_kind === 'test').sort((a, b) => new Date(b.created_at) - new Date(a.created_at)) }
   }
 
-  async function getSpeakingRecordingUrl(event, requestContext) {
+  function parentFilters(value) {
+    const filters = value && typeof value === 'object' && !Array.isArray(value) ? value : {}
+    const dataKind = filters.data_kind === undefined ? 'formal' : filters.data_kind
+    if (!['formal', 'test'].includes(dataKind)
+      || (filters.module_type !== undefined && !PARENT_RESULT_MODULES.has(filters.module_type))
+      || (filters.course_id !== undefined && !/^[WS]\d{2}D\d{2}$/.test(filters.course_id))
+      || (filters.date_from !== undefined && !isIsoDate(filters.date_from))
+      || (filters.date_to !== undefined && !isIsoDate(filters.date_to))) throw new ServiceError('INVALID_FILTER')
+    if (filters.date_from && filters.date_to && Date.parse(filters.date_from) > Date.parse(filters.date_to)) throw new ServiceError('INVALID_FILTER')
+    return {
+      data_kind: dataKind,
+      ...(filters.module_type ? { module_type: filters.module_type } : {}),
+      ...(filters.course_id ? { course_id: filters.course_id } : {}),
+      ...(filters.date_from ? { date_from: filters.date_from } : {}),
+      ...(filters.date_to ? { date_to: filters.date_to } : {})
+    }
+  }
+
+  async function listParentResults(event, requestContext) {
+    await requireTestSession(event, requestContext)
+    const filters = parentFilters(event.filters)
+    let rows = await store.listParentResults(filters)
+    if (filters.date_from) rows = rows.filter((item) => Date.parse(item.submitted_at || item.created_at) >= Date.parse(filters.date_from))
+    if (filters.date_to) rows = rows.filter((item) => Date.parse(item.submitted_at || item.created_at) <= Date.parse(filters.date_to))
+    rows.sort((left, right) => Date.parse(right.submitted_at || right.created_at) - Date.parse(left.submitted_at || left.created_at))
+    const completedCourses = new Set(rows.filter((item) => item.status === 'completed').map((item) => item.course_id))
+    return {
+      ok: true,
+      data_kind: filters.data_kind,
+      filters,
+      summary: {
+        result_count: rows.length,
+        completed_course_count: completedCourses.size,
+        formal_completion_count: filters.data_kind === 'formal' ? completedCourses.size : 0
+      },
+      results: rows
+    }
+  }
+
+  async function getParentRecordingUrl(event, requestContext, testOnly = false) {
     await requireTestSession(event, requestContext)
     const result = await store.getResult(event.result_id)
-    if (!result || result.module_type !== 'speaking' || result.data_kind !== 'test' || typeof speakingRecordingUrl !== 'function') throw new ServiceError('RECORDING_NOT_FOUND')
+    if (!result || result.module_type !== 'speaking' || (testOnly && result.data_kind !== 'test') || typeof speakingRecordingUrl !== 'function') throw new ServiceError('RECORDING_NOT_FOUND')
     const question = result.question_results?.find((item) => item.id === event.question_id)
     const record = question?.recording_records?.[Number(event.attempt) - 1]
     const fileId = record?.file_id || question?.recordings?.[Number(event.attempt) - 1]
-    if (!fileId) throw new ServiceError('RECORDING_NOT_FOUND')
+    if (!fileId || (record?.data_kind && record.data_kind !== result.data_kind)) throw new ServiceError('RECORDING_NOT_FOUND')
     try {
       const url = await speakingRecordingUrl(fileId)
       if (!boundedString(url, 8, 4096)) throw new Error('invalid')
@@ -360,11 +400,15 @@ function createService(options) {
     } catch { throw new ServiceError('RECORDING_UNAVAILABLE') }
   }
 
+  async function getSpeakingRecordingUrl(event, requestContext) {
+    return getParentRecordingUrl(event, requestContext, true)
+  }
+
   return {
     async handle(event = {}, requestContext = { callerId: 'unknown' }) {
       if (event.action === 'health') {
         return {
-          ok: true, service: 'sherlock-api', stage: 'P3', formal_enabled: false, writes: 'test-only',
+          ok: true, service: 'sherlock-api', stage: 'P4', formal_enabled: false, writes: 'test-only',
           speaking_course_versions: Object.fromEntries(speakingCourseProvider.catalog().map((item) => [item.course_id, item.course_version]))
         }
       }
@@ -387,6 +431,8 @@ function createService(options) {
       if (event.action === 'submitSpeakingResult') return submitSpeakingResult(event, requestContext)
       if (event.action === 'listSpeakingTestResults') return listSpeakingTestResults(event, requestContext)
       if (event.action === 'getSpeakingRecordingUrl') return getSpeakingRecordingUrl(event, requestContext)
+      if (event.action === 'listParentResults') return listParentResults(event, requestContext)
+      if (event.action === 'getParentRecordingUrl') return getParentRecordingUrl(event, requestContext)
       if (typeof event.action === 'string' && event.action.toLowerCase().includes('formal')) {
         throw new ServiceError('FORMAL_DISABLED')
       }

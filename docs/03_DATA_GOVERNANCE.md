@@ -113,6 +113,14 @@ recording_refs
 
 任何一步失败都不得以删除原数据作为修复方式。
 
+P4 实施补充：
+
+- 历史导入采用 `legacy_source_id`、`legacy_source_record_sha256` 和 `migration_batch_id` 保证可追溯与幂等；
+- 旧课只标记为 `current-equivalent` 或 `legacy-only`，不得凭 ID 重叠推断为新学期新完成；
+- 缺失 `data_kind` 的结果和无可验证分类的录音默认 test；
+- 原始 Streamlit 展示文本可留在受控原始快照，不需要复制进业务数据库；
+- 管理迁移历史 formal 不改变在线儿童入口 `formal_enabled=false / writes=test-only` 的阶段边界。
+
 ## 7. 学情边界
 
 - 开发、测试和线上可用性不等于掌握。

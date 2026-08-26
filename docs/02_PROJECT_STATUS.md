@@ -1,7 +1,7 @@
 # PROJECT STATUS
 
-> 最后更新：2026-08-25
-> 当前阶段：P3 跟读口语与讯飞迁移验收通过并形成独立提交；不进入 P4
+> 最后更新：2026-08-26
+> 当前阶段：P4 数据迁移与家长端验收通过；形成独立提交并推送后停留在 P4，不进入 P5
 
 ## 当前事实
 
@@ -13,9 +13,9 @@
 - 原仓库 770 个跟踪文件均已迁入；根 README 同名冲突以治理 README 为主，旧 README 原样归档到 `docs/legacy-streamlit/README_streamlit_legacy.md`。
 - 当前公开课程：听力和口语各 12 个 JSON，共 24 个；成品 MP3 312 个，fragments MP3 380 个。
 - 当前线上正式入口仍是 Streamlit；2026-08-24 已从休眠页成功唤醒到任务首页，未执行课程提交或正式学习写入。
-- CloudBase `family24` 在 P3 主 API 完整评分修复发布后实时核验仍为体验版，到期 `2027-02-04 23:59:59`，超额付费关闭；当前周期 `2026-08-04` 至 `2026-09-04`，3000 点中已用 5.85 点、剩余 2994.15 点。
+- CloudBase `family24` 在 P4 验收后实时核验仍为体验版，到期 `2027-02-04 23:59:59`，超额付费关闭；当前周期 `2026-08-04` 至 `2026-09-04`，3000 点中已用 24.57 点、剩余 2975.43 点。
 - P1 已创建隔离资源：Event 云函数 `sherlock-api`、4 个 `ADMINONLY` 的 `sherlock_*` 集合、`sherlock-english/test/README.txt` 存储标记和前端 `publish_key`；匿名登录仅对 `sherlock-api` 放行，其他函数保留原匿名禁用规则。
-- `sherlock-api` 已配置家长密码 scrypt 哈希、会话 HMAC 和口语内部 HMAC；P3 新增私有 `score-speaking` 评分函数。两个函数均为 Nodejs20.19 / `Deployment completed`；在线健康检查返回 `stage=P3`、`formal_enabled=false` 和 `writes=test-only`。静态 test 站点已发布到 `https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/`。
+- `sherlock-api` 已配置家长密码 scrypt 哈希、会话 HMAC 和口语内部 HMAC；P3 私有 `score-speaking` 继续使用。P4 采用代码更新保留全部既有密钥；在线健康检查返回 `stage=P4`、`formal_enabled=false` 和 `writes=test-only`。静态 test 站点已发布到 `https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/`。
 - P2 已上线 W01D39–W01D50 共 12 门听力课；儿童副本 12/12 无答案、原文、考点标签或家长备注；216/216 段线上 MP3 与本地发布文件 SHA-256 一致。
 - P3 已完成 React 口语页面、单实例 iPad PCM/WAV 录音、试录/回放/自动停止、示范音互斥、讯飞评分适配、3 星/三次门控、加密 proof、幂等评分、私有录音和家长临时回放实现，并已部署 test。
 - P3 本地验证：Web 51/51、`sherlock-api` 31/31、`score-speaking` 11/11、旧版 Python 40/40；覆盖率门、TypeScript 构建和 PWA 构建均通过。口语页面定向用例已实际点击“就用这个，开始评分”并进入评分结果态。
@@ -63,13 +63,13 @@
 
 ## 下一步
 
-P3 已由用户确认验收通过并明确授权形成独立提交、推送 `main`。提交推送后停留在 P3 完成态，不自动进入 P4。同级临时克隆和迁移前治理快照继续保留到 P5。
+形成 P4 独立提交并推送 `main`，确认新根目录工作区干净；随后停留在 P4 完成态，等待用户另行授权进入 P5。P0 与 P4 的临时克隆、迁移前备份和原始快照继续保留到 P5。
 
-当前阶段指令：`docs/阶段计划/P3_跟读口语与讯飞迁移.md`（验收通过）。
+当前阶段指令：`docs/阶段计划/P4_数据迁移与家长端.md`（验收通过）。
 
 ## 当前阻塞
 
-无开发、部署或验收阻塞；P3 提交推送完成后等待用户明确授权进入 P4。
+无开发、部署或验收阻塞；等待用户另行授权进入 P5。
 
 ## 尚未实时确认但不阻塞
 
@@ -157,4 +157,17 @@ P3 已由用户确认验收通过并明确授权形成独立提交、推送 `mai
 线上地址：https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/
 遗留问题：讯飞当前授权到期后每日免费额度是否延续仍待到期前实时核验；CloudBase SDK 传递依赖公告未执行破坏性强制升级
 下一步：P3 提交推送并确认工作区干净后停止；等待用户明确授权进入 P4
+```
+
+## 2026-08-25 P4 自动迁移与部署登记
+
+```text
+日期：2026-08-25
+阶段：P4 数据迁移与家长端（验收通过）
+完成：固定原私有库提交并生成外部原始快照、逐文件 SHA-256 和课程映射；143 条历史结果及 422 个 WAV 以只追加幂等方式迁入 CloudBase；家长端默认 formal 并提供独立 test、模块/课程/日期筛选、听力/口语明细及 600 秒录音临时回放；旧库、外部快照和导入前 CloudBase 备份均保留
+验证：历史结果 143/143 全字段匹配、formal=142/test=1、listening=63/speaking=80；验收后线上总数 150、formal 仍为 142、test 为 8；录音 422/422 路径与大小一致，formal=382/test=40，6/6 云端下载样本 SHA-256 一致；再次干跑结果跳过 143、录音跳过 422、异常 0；迁移测试 8/8、sherlock-api 33/33、Web 52/52，类型检查/覆盖率/生产构建通过；线上 API stage=P4、formal_enabled=false、writes=test-only，未认证家长查询被拒绝；24 点仍为 family24-web-003 / SUCCESS / 11/11，超额付费关闭
+提交/版本：P3 main 基线 9f18f37；P4 独立提交由本记录所在的 main 提交承载并推送
+线上地址：https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/
+遗留问题：无 P4 验收阻塞；PWA 若出现“新版本已就绪”仍应点“立即更新”；讯飞到期后免费额度与 SDK 传递依赖公告继续按原边界处理
+下一步：完成 P4 独立提交、推送并确认工作区干净；停留在 P4，等待用户另行授权进入 P5
 ```

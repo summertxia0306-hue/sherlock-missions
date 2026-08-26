@@ -36,7 +36,7 @@ function api(score: (request: { question_id: number; attempt: number }) => Promi
     checkListeningCorrection: vi.fn(), listListeningTestResults: vi.fn(),
     scoreSpeakingTake: vi.fn((_token, request) => score(request)),
     submitSpeakingResult: vi.fn(async () => ({ ok: true as const, result_id: 'r1', data_kind: 'test' as const, formal_completion_eligible: false as const, idempotent: false })),
-    listSpeakingTestResults: vi.fn(), getSpeakingRecordingUrl: vi.fn()
+    listSpeakingTestResults: vi.fn(), getSpeakingRecordingUrl: vi.fn(), listParentResults: vi.fn(), getParentRecordingUrl: vi.fn()
   }
 }
 

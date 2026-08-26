@@ -28,8 +28,8 @@ const registry: readonly ModuleRegistration[] = [
   },
   {
     id: 'parent',
-    title: '家长验收',
-    description: '认证后可写入隔离的 test 验收记录。',
+    title: '家长端',
+    description: '认证后独立查询 formal/test 历史，并进入隔离的 test 验收。',
     route: '/parent',
     visible: true,
     icon: '🔐'

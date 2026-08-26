@@ -5,17 +5,21 @@ import { describe, expect, it, vi } from 'vitest'
 import { App } from './App'
 import { setRefreshReadyForTest } from './test/pwa-register'
 
-const speakingApi = { scoreSpeakingTake: vi.fn(), submitSpeakingResult: vi.fn(), listSpeakingTestResults: vi.fn(), getSpeakingRecordingUrl: vi.fn() }
+const speakingApi = {
+  scoreSpeakingTake: vi.fn(), submitSpeakingResult: vi.fn(), listSpeakingTestResults: vi.fn(), getSpeakingRecordingUrl: vi.fn(),
+  listParentResults: vi.fn(async () => ({ ok: true as const, data_kind: 'formal' as const, summary: { result_count: 0, completed_course_count: 0, formal_completion_count: 0 }, results: [] })),
+  getParentRecordingUrl: vi.fn()
+}
 
-describe('P3 application shell', () => {
+describe('P4 application shell', () => {
   it('shows only the approved visible modules and keeps formal learning closed', () => {
     render(<MemoryRouter><App /></MemoryRouter>)
     expect(screen.getByRole('heading', { name: '本周任务' })).toBeInTheDocument()
     expect(screen.getByText('听力训练')).toBeInTheDocument()
     expect(screen.getByText('跟读口语')).toBeInTheDocument()
-    expect(screen.getByText('家长验收')).toBeInTheDocument()
+    expect(screen.getByText('家长端')).toBeInTheDocument()
     expect(screen.queryByText('单词训练')).not.toBeInTheDocument()
-    expect(screen.getByText('P3 口语 · 仅开放家长 test 验收')).toBeInTheDocument()
+    expect(screen.getByText('P4 历史迁移 · formal/test 独立查询')).toBeInTheDocument()
   })
 
   it('does not authenticate with an empty password', async () => {
@@ -25,7 +29,7 @@ describe('P3 application shell', () => {
         <App api={{ authenticate, submitResult: vi.fn(), health: vi.fn(), submitListeningResult: vi.fn(), checkListeningCorrection: vi.fn(), listListeningTestResults: vi.fn(), ...speakingApi }} />
       </MemoryRouter>
     )
-    await userEvent.click(screen.getByRole('button', { name: '进入 test 验收' }))
+    await userEvent.click(screen.getByRole('button', { name: '进入家长端' }))
     expect(authenticate).not.toHaveBeenCalled()
     expect(screen.getByText('请输入家长验收密码')).toBeInTheDocument()
   })
@@ -43,12 +47,12 @@ describe('P3 application shell', () => {
       </MemoryRouter>
     )
     await userEvent.type(screen.getByLabelText('家长验收密码'), 'valid-password')
-    await userEvent.click(screen.getByRole('button', { name: '进入 test 验收' }))
-    expect(await screen.findByText('认证成功：当前会话只能写 test。')).toBeInTheDocument()
+    await userEvent.click(screen.getByRole('button', { name: '进入家长端' }))
+    expect(await screen.findByText('没有符合条件的 formal 记录。')).toBeInTheDocument()
     expect(screen.queryByLabelText('家长验收密码')).not.toBeInTheDocument()
     expect(screen.getByRole('link', { name: '进入听力 test 验收' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: '进入口语 test 验收' })).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: '刷新听力 test 明细' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: '查询' })).toBeInTheDocument()
     expect(screen.queryByText(/smoke/i)).not.toBeInTheDocument()
   })
 
@@ -60,7 +64,7 @@ describe('P3 application shell', () => {
       </MemoryRouter>
     )
     await userEvent.type(screen.getByLabelText('家长验收密码'), 'wrong-password')
-    await userEvent.click(screen.getByRole('button', { name: '进入 test 验收' }))
+    await userEvent.click(screen.getByRole('button', { name: '进入家长端' }))
     expect(await screen.findByText('密码不正确，请重试。')).toBeInTheDocument()
   })
 

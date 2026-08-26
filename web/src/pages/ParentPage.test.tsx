@@ -24,27 +24,51 @@ function api(): SherlockApi {
       result_id: 's1', course_id: 'S01D39', score: 78, stars_total: 22, stars_max: 24, duration_seconds: 120,
       question_results: [{ id: 1, text: 'It is bright.', stars: 3, take_stars: [2, 3], first_total: 60, last_total: 80, best_total: 80, weak_words: ['bright'], passed_by_safety: false }]
     }] })),
-    getSpeakingRecordingUrl: vi.fn(async () => ({ ok: true as const, url: 'https://private.test/recording.wav', expires_in: 600 }))
+    getSpeakingRecordingUrl: vi.fn(async () => ({ ok: true as const, url: 'https://private.test/recording.wav', expires_in: 600 })),
+    listParentResults: vi.fn(), getParentRecordingUrl: vi.fn()
   }
 }
 
-describe('P3 parent acceptance details', () => {
+function p4Api(): SherlockApi {
+  const service = api()
+  service.listParentResults = vi.fn(async (_token, filters) => ({
+    ok: true as const,
+    data_kind: filters.data_kind || 'formal',
+    summary: { result_count: 1, completed_course_count: filters.data_kind === 'test' ? 0 : 1, formal_completion_count: filters.data_kind === 'test' ? 0 : 1 },
+    results: filters.data_kind === 'test' ? [{
+      result_id: 't1', course_id: 'W01D02', module_type: 'listening' as const, data_kind: 'test' as const,
+      score: 80, duration_seconds: 70, submitted_at: '2026-06-12T13:00:00.000Z', section_scores: {}, wrong_answers: [], corrections: {}, question_results: []
+    }] : [{
+      result_id: 'f1', course_id: 'S01D01', module_type: 'speaking' as const, data_kind: 'formal' as const,
+      score: 99, stars_total: 24, stars_max: 24, duration_seconds: 334, submitted_at: '2026-06-27T07:01:00.000Z',
+      question_results: [{ id: 1, text: 'I have a little cat.', stars: 3, take_stars: [3], first_total: 99, last_total: 99, best_total: 99, weak_words: [], passed_by_safety: false }]
+    }]
+  }))
+  service.getParentRecordingUrl = vi.fn(async () => ({ ok: true as const, url: 'https://private.test/history.wav', expires_in: 600 }))
+  return service
+}
+
+describe('P4 parent history', () => {
   afterEach(() => vi.unstubAllGlobals())
 
-  it('loads listening and numeric speaking detail, then obtains a temporary private recording URL', async () => {
+  it('shows formal by default and only includes test after the parent selects the test filter', async () => {
     vi.stubGlobal('Audio', FakeAudio)
-    const service = api()
+    const service = p4Api()
     render(<MemoryRouter><ParentPage api={service} /></MemoryRouter>)
     const user = userEvent.setup()
     await user.type(screen.getByLabelText('家长验收密码'), 'parent-password')
-    await user.click(screen.getByRole('button', { name: '进入 test 验收' }))
-    await user.click(screen.getByRole('button', { name: '刷新听力 test 明细' }))
-    expect(await screen.findByText('W01D39 · test · 10 分')).toBeInTheDocument()
-    await user.click(screen.getByRole('button', { name: '刷新口语 test 明细' }))
-    expect(await screen.findByText('S01D39 · test · 22/24 星 · 78 分')).toBeInTheDocument()
-    expect(screen.getByText(/首 60 → 末 80/)).toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: '进入家长端' }))
+
+    expect(await screen.findByText('正式记录 1 条')).toBeInTheDocument()
+    expect(screen.getByText('S01D01 · formal · 24/24 星 · 99 分')).toBeInTheDocument()
+    expect(screen.queryByText(/W01D02/)).not.toBeInTheDocument()
     await user.click(screen.getByRole('button', { name: '播放第 1 次' }))
-    await waitFor(() => expect(service.getSpeakingRecordingUrl).toHaveBeenCalledWith('token', 's1', 1, 1))
+    await waitFor(() => expect(service.getParentRecordingUrl).toHaveBeenCalledWith('token', 'f1', 1, 1))
     expect(await screen.findByText('录音播放完成。')).toBeInTheDocument()
+
+    await user.selectOptions(screen.getByLabelText('数据类型'), 'test')
+    await user.click(screen.getByRole('button', { name: '查询' }))
+    expect(await screen.findByText('W01D02 · test · 80 分')).toBeInTheDocument()
+    expect(service.listParentResults).toHaveBeenLastCalledWith('token', expect.objectContaining({ data_kind: 'test' }))
   })
 })

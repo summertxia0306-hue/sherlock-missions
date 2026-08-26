@@ -47,6 +47,18 @@ function createCloudbaseStore(db) {
       const response = await collections.results.where({ data_kind: 'test', module_type: moduleType }).limit(50).get()
       return response.data
     },
+    async listParentResults(filters) {
+      const query = { data_kind: filters.data_kind }
+      if (filters.module_type) query.module_type = filters.module_type
+      if (filters.course_id) query.course_id = filters.course_id
+      const rows = []
+      for (let offset = 0; offset < 2000; offset += 100) {
+        const response = await collections.results.where(query).skip(offset).limit(100).get()
+        rows.push(...response.data)
+        if (response.data.length < 100) break
+      }
+      return rows
+    },
     async getSpeakingTake(takeId) {
       const response = await collections.speakingTakes.where({ take_id: takeId }).limit(1).get()
       return response.data?.[0] || null

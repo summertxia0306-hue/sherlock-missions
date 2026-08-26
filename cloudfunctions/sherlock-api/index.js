@@ -53,7 +53,8 @@ exports.main = async (event, context) => {
       INVALID_SPEAKING_RESULT: '口语结果格式无效',
       RESULT_ID_CONFLICT: '结果编号冲突',
       RECORDING_NOT_FOUND: '录音不存在',
-      RECORDING_UNAVAILABLE: '录音暂不可播放'
+      RECORDING_UNAVAILABLE: '录音暂不可播放',
+      INVALID_FILTER: '查询条件无效'
     }
     return { ok: false, error: { code, message: safeMessages[code] || '服务暂不可用' } }
   }

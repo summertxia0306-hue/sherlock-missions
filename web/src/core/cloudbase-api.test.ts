@@ -4,7 +4,7 @@ vi.mock('@cloudbase/js-sdk', () => ({
   default: {
     init: () => ({
       auth: () => ({ hasLoginState: () => true, signInAnonymously: vi.fn() }),
-      callFunction: async () => ({ result: { ok: true, service: 'sherlock-api', stage: 'P3', formal_enabled: false, writes: 'test-only' } })
+      callFunction: async () => ({ result: { ok: true, service: 'sherlock-api', stage: 'P4', formal_enabled: false, writes: 'test-only' } })
     })
   }
 }))
@@ -14,7 +14,7 @@ import { cloudbaseApi, createCloudbaseApi } from './cloudbase-api'
 function fakeApp(options: { loggedIn?: boolean; authError?: boolean; result?: unknown; functions?: boolean } = {}) {
   const signInAnonymously = vi.fn().mockResolvedValue(options.authError ? { error: new Error('denied') } : {})
   const callFunction = vi.fn().mockResolvedValue({
-    result: options.result ?? { ok: true, service: 'sherlock-api', stage: 'P3', formal_enabled: false, writes: 'test-only' }
+    result: options.result ?? { ok: true, service: 'sherlock-api', stage: 'P4', formal_enabled: false, writes: 'test-only' }
   })
   return {
     app: {
@@ -92,6 +92,21 @@ describe('CloudBase browser adapter', () => {
     expect(fake.callFunction).toHaveBeenLastCalledWith(expect.objectContaining({ data: expect.objectContaining({ action: 'getSpeakingRecordingUrl', result_id: 'r1' }) }))
   })
 
+  it('forwards isolated P4 parent filters and temporary legacy recording URL actions', async () => {
+    const fake = fakeApp({ loggedIn: true, result: { ok: true, results: [], summary: { result_count: 0, completed_course_count: 0, formal_completion_count: 0 } } })
+    const api = createCloudbaseApi(fake.app)
+    const filters = { data_kind: 'formal' as const, module_type: 'speaking' as const, course_id: 'S01D01' }
+
+    await api.listParentResults('token', filters)
+    expect(fake.callFunction).toHaveBeenLastCalledWith(expect.objectContaining({
+      data: { action: 'listParentResults', session_token: 'token', filters }
+    }))
+    await api.getParentRecordingUrl('token', 'legacy-result', 1, 2)
+    expect(fake.callFunction).toHaveBeenLastCalledWith(expect.objectContaining({
+      data: { action: 'getParentRecordingUrl', session_token: 'token', result_id: 'legacy-result', question_id: 1, attempt: 2 }
+    }))
+  })
+
   it('maps authentication, capability, and service failures to stable codes', async () => {
     await expect(createCloudbaseApi(fakeApp({ authError: true }).app).health()).rejects.toThrow('CLOUDBASE_ANONYMOUS_LOGIN_FAILED')
     await expect(createCloudbaseApi(fakeApp({ loggedIn: true, functions: false }).app).health()).rejects.toThrow('CLOUDBASE_FUNCTIONS_UNAVAILABLE')
@@ -102,6 +117,8 @@ describe('CloudBase browser adapter', () => {
   it('lazily initializes the production adapter from public environment values', async () => {
     vi.stubEnv('VITE_CLOUDBASE_ENV_ID', 'test-env')
     expect((await cloudbaseApi.health()).writes).toBe('test-only')
+    await cloudbaseApi.listParentResults('token', { data_kind: 'formal' })
+    await cloudbaseApi.getParentRecordingUrl('token', 'legacy-result', 1, 1)
     vi.unstubAllEnvs()
   })
 })

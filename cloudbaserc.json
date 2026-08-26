@@ -10,7 +10,7 @@
       "timeout": 60,
       "memorySize": 256,
       "installDependency": true,
-      "description": "sherlock-english P3 listening and speaking test-only API"
+      "description": "sherlock-english P4 parent history and test-only child API"
     },
     {
       "name": "score-speaking",
