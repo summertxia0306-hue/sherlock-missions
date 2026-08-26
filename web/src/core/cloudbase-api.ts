@@ -13,23 +13,37 @@ interface ParentAuthResult {
   data_kind: 'test'
 }
 
+interface ChildSessionResult {
+  ok: true
+  session_token: string
+  expires_at: string
+  data_kind: 'formal'
+}
+
+export interface FormalProgressResult {
+  ok: true
+  completed_course_ids: { listening: string[]; speaking: string[] }
+}
+
 interface SubmitResultResponse {
   ok: true
   result_id: string
-  data_kind: 'test'
-  formal_completion_eligible: false
+  data_kind: 'formal' | 'test'
+  formal_completion_eligible: boolean
 }
 
 export interface HealthResult {
   ok: true
   service: 'sherlock-api'
-  stage: 'P4'
-  formal_enabled: false
-  writes: 'test-only'
+  stage: 'P5'
+  formal_enabled: boolean
+  writes: 'test-only' | 'formal-and-test'
 }
 
 export interface SherlockApi {
   health(): Promise<HealthResult>
+  startChildSession(): Promise<ChildSessionResult>
+  getFormalProgress(sessionToken: string): Promise<FormalProgressResult>
   authenticate(password: string): Promise<ParentAuthResult>
   submitResult(sessionToken: string, result: ResultSubmission): Promise<SubmitResultResponse>
   submitListeningResult(sessionToken: string, submission: ListeningSubmission): Promise<ListeningSubmitResponse>
@@ -78,8 +92,8 @@ export interface SpeakingSubmission {
 export interface SpeakingSubmitResponse {
   ok: true
   result_id: string
-  data_kind: 'test'
-  formal_completion_eligible: false
+  data_kind: 'formal' | 'test'
+  formal_completion_eligible: boolean
   idempotent: boolean
 }
 
@@ -144,8 +158,8 @@ export interface SpeakingResultsResponse { ok: true; data_kind: 'test'; results:
 export interface ListeningSubmitResponse {
   ok: true
   result_id: string
-  data_kind: 'test'
-  formal_completion_eligible: false
+  data_kind: 'formal' | 'test'
+  formal_completion_eligible: boolean
   wrong_question_ids: number[]
   idempotent: boolean
 }
@@ -239,6 +253,8 @@ export function createCloudbaseApi(
 
   return {
     health: () => call<HealthResult>({ action: 'health' }),
+    startChildSession: () => call<ChildSessionResult>({ action: 'startChildSession' }),
+    getFormalProgress: (sessionToken) => call<FormalProgressResult>({ action: 'getFormalProgress', session_token: sessionToken }),
     authenticate: (password) => call<ParentAuthResult>({ action: 'parentAuth', password }),
     submitResult: (sessionToken, result) => call<SubmitResultResponse>({
       action: 'submitResult',
@@ -283,6 +299,8 @@ async function getDefaultApi(): Promise<SherlockApi> {
 
 export const cloudbaseApi: SherlockApi = {
   health: async () => (await getDefaultApi()).health(),
+  startChildSession: async () => (await getDefaultApi()).startChildSession(),
+  getFormalProgress: async (sessionToken) => (await getDefaultApi()).getFormalProgress(sessionToken),
   authenticate: async (password) => (await getDefaultApi()).authenticate(password),
   submitResult: async (sessionToken, result) => (await getDefaultApi()).submitResult(sessionToken, result),
   submitListeningResult: async (sessionToken, submission) => (await getDefaultApi()).submitListeningResult(sessionToken, submission),

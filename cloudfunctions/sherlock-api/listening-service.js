@@ -69,8 +69,9 @@ function validateSubmission(course, submission, version) {
   }
 }
 
-function scoreListeningSubmission(course, submission, version) {
+function scoreListeningSubmission(course, submission, version, dataKind = 'test') {
   validateSubmission(course, submission, version)
+  if (!['formal', 'test'].includes(dataKind)) throw new Error('INVALID_LISTENING_RESULT')
   if (submission.student_id !== 'sherlock') throw new Error('INVALID_LISTENING_RESULT')
   const per = course.scoring.per_question
   const sectionScores = {}
@@ -110,7 +111,7 @@ function scoreListeningSubmission(course, submission, version) {
     student_id: submission.student_id,
     module_type: 'listening',
     course_id: course.course_id,
-    data_kind: 'test',
+    data_kind: dataKind,
     course_version: version,
     started_at: new Date(submission.started_at),
     submitted_at: new Date(submission.submitted_at),
@@ -123,7 +124,7 @@ function scoreListeningSubmission(course, submission, version) {
     play_counts: submission.play_counts,
     corrections: {},
     question_results: questionResults,
-    formal_completion_eligible: false
+    formal_completion_eligible: dataKind === 'formal'
   }
 }
 

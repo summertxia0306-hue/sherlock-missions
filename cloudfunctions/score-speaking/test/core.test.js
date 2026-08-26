@@ -20,7 +20,7 @@ function request(overrides = {}) {
   return {
     result_id: '123e4567-e89b-42d3-a456-426614174000', course_id: 'S01D39', course_version: 'version1',
     question_id: 1, attempt: 1, target_text: 'It is bright.', session_marker: '0123456789abcdef',
-    wav_base64: wav().toString('base64'), ...overrides
+    data_kind: 'test', wav_base64: wav().toString('base64'), ...overrides
   }
 }
 
@@ -44,7 +44,7 @@ describe('private speaking scorer', () => {
     assert.throws(() => signInternalRequest({}, 'short'), /CONFIG_ERROR/)
     const invalids = [
       { result_id: '../bad' }, { course_id: 'S01D38' }, { course_version: '' }, { question_id: 9 },
-      { attempt: 0 }, { target_text: '' }, { session_marker: 'bad' }, { wav_base64: 'tiny' }
+      { attempt: 0 }, { target_text: '' }, { session_marker: 'bad' }, { data_kind: 'production' }, { wav_base64: 'tiny' }
     ]
     for (const patch of invalids) {
       const payload = request(patch)
@@ -64,7 +64,7 @@ describe('private speaking scorer', () => {
     assert.equal(result.total, 80)
   })
 
-  it('evaluates then uploads to a private test-only path', async () => {
+  it('evaluates then uploads to the private path for the authenticated data kind', async () => {
     const uploads = []
     const payload = request()
     const service = createService({
@@ -82,6 +82,18 @@ describe('private speaking scorer', () => {
     assert.equal(uploads[0].path, 'sherlock-english/test/test/S01D39/123e4567-e89b-42d3-a456-426614174000/q01-take1.wav')
     assert.equal(response.recording_path, uploads[0].path)
     assert.equal(response.recording_file_id, uploads[0].path)
+  })
+
+  it('keeps formal recordings isolated from test recordings', async () => {
+    const uploads = []
+    const payload = request({ data_kind: 'formal' })
+    const service = createService({
+      internalKey: '1234567890abcdef',
+      evaluator: async () => ({ total: 80, accuracy: 79, fluency: 78, integrity: 81, is_rejected: false, words: [] }),
+      uploader: async (path) => { uploads.push(path) }
+    })
+    await service.handle({ payload, signature: signInternalRequest(payload, '1234567890abcdef') })
+    assert.deepEqual(uploads, ['sherlock-english/formal/formal/S01D39/123e4567-e89b-42d3-a456-426614174000/q01-take1.wav'])
   })
 
   it('does not upload or turn provider failures into scored attempts', async () => {

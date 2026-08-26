@@ -16,18 +16,22 @@ async function blobBase64(blob: Blob): Promise<string> {
   return btoa(binary)
 }
 
-function scoreFailureMessage(code: string): string {
+function scoreFailureMessage(code: string, dataKind: 'formal' | 'test'): string {
   if (code === 'SILENT_AUDIO') return '没有录到清楚的声音，请重新录。'
   if (code === 'INVALID_AUDIO') return '录音格式没有通过检查，请重新录。'
-  if (code === 'UNAUTHORIZED') return '家长 TEST 会话已失效，请返回家长验收入口重新认证。'
+  if (code === 'UNAUTHORIZED') return dataKind === 'formal' ? '正式会话已失效，请刷新页面后重试。' : '家长 TEST 会话已失效，请返回家长验收入口重新认证。'
   if (code === 'COURSE_VERSION_MISMATCH') return '课程刚刚更新，请返回列表后重新进入。'
-  if (code === 'RECORDING_UPLOAD_FAILED') return '评分已返回，但测试录音保存失败；本次不计次数，请重试。'
+  if (code === 'RECORDING_UPLOAD_FAILED') return `评分已返回，但${dataKind === 'formal' ? '正式' : '测试'}录音保存失败；本次不计次数，请重试。`
   const diagnostic = code || 'NETWORK_OR_CLIENT'
   return `评分暂时没有完成。本次不计次数，录音仍保留，可再次评分。（诊断码：${diagnostic}）`
 }
 
-export function SpeakingPage({ api, sessionToken, loadCatalog = loadSpeakingCatalog, loadCourse = loadSpeakingCourse, recorder = sharedPcmRecorder }: {
-  api: SherlockApi; sessionToken: string; loadCatalog?: () => Promise<SpeakingCatalog>; loadCourse?: (id: string) => Promise<SpeakingCourse>; recorder?: PcmRecorder
+export function SpeakingPage({
+  api, sessionToken, dataKind = 'test', completedCourseIds = new Set<string>(), onFormalCompleted = () => undefined,
+  loadCatalog = loadSpeakingCatalog, loadCourse = loadSpeakingCourse, recorder = sharedPcmRecorder
+}: {
+  api: SherlockApi; sessionToken: string; dataKind?: 'formal' | 'test'; completedCourseIds?: ReadonlySet<string>;
+  onFormalCompleted?: (courseId: string) => void; loadCatalog?: () => Promise<SpeakingCatalog>; loadCourse?: (id: string) => Promise<SpeakingCourse>; recorder?: PcmRecorder
 }) {
   const [catalog, setCatalog] = useState<SpeakingCatalog>()
   const [course, setCourse] = useState<SpeakingCourse>()
@@ -46,8 +50,8 @@ export function SpeakingPage({ api, sessionToken, loadCatalog = loadSpeakingCata
 
   useEffect(() => { loadCatalog().then(setCatalog).catch(() => setMessage('口语课程目录暂时无法加载。')) }, [loadCatalog])
   useEffect(() => {
-    if (session) sessionStorage.setItem(`sherlock-speaking-test-${session.course_id}`, JSON.stringify(session))
-  }, [session])
+    if (session) sessionStorage.setItem(`sherlock-speaking-${dataKind}-${session.course_id}`, JSON.stringify(session))
+  }, [dataKind, session])
   useEffect(() => () => {
     audioRef.current?.pause()
     recorder.release()
@@ -66,7 +70,7 @@ export function SpeakingPage({ api, sessionToken, loadCatalog = loadSpeakingCata
     setMessage('')
     try {
       const loaded = await loadCourse(courseId)
-      const saved = sessionStorage.getItem(`sherlock-speaking-test-${courseId}`)
+      const saved = sessionStorage.getItem(`sherlock-speaking-${dataKind}-${courseId}`)
       const restored = saved ? JSON.parse(saved) as SpeakingSession : createSpeakingSession(courseId, newResultId())
       setCourse(loaded); setSession(restored); setTrialDone(false); setSubmitted(false)
       setQuestionIndex(Math.min(7, Array.from({ length: 8 }, (_, index) => index).find((index) => !restored.questions[String(index + 1)]?.complete) ?? 0))
@@ -134,7 +138,7 @@ export function SpeakingPage({ api, sessionToken, loadCatalog = loadSpeakingCata
       setMessage(response.child_feedback)
     } catch (error) {
       const code = error instanceof Error ? error.message : ''
-      setMessage(scoreFailureMessage(code))
+      setMessage(scoreFailureMessage(code, dataKind))
     } finally { setActivity('idle') }
   }
 
@@ -157,9 +161,10 @@ export function SpeakingPage({ api, sessionToken, loadCatalog = loadSpeakingCata
     if (!course || !session || activity !== 'idle') return
     setActivity('submitting')
     try {
-      await api.submitSpeakingResult(sessionToken, buildSpeakingSubmission(session, course.course_version))
-      setSubmitted(true); sessionStorage.removeItem(`sherlock-speaking-test-${course.course_id}`)
-      setMessage('TEST 结果已安全提交，不计正式完成。')
+      const response = await api.submitSpeakingResult(sessionToken, buildSpeakingSubmission(session, course.course_version))
+      setSubmitted(true); sessionStorage.removeItem(`sherlock-speaking-${dataKind}-${course.course_id}`)
+      if (response.data_kind === 'formal') onFormalCompleted(course.course_id)
+      setMessage(response.data_kind === 'formal' ? '正式结果已安全提交。' : 'TEST 结果已安全提交，不计正式完成。')
     } catch { setMessage('提交没有完成。联网后可再次提交，不会重复写入。') }
     finally { setActivity('idle') }
   }
@@ -167,16 +172,16 @@ export function SpeakingPage({ api, sessionToken, loadCatalog = loadSpeakingCata
   if (!catalog) return <main className="center-card"><h1>跟读口语</h1><p>{message || '正在加载课程…'}</p></main>
   if (!course || !session) return (
     <main>
-      <section className="hero compact-hero"><p className="eyebrow">SPEAKING · TEST ONLY</p><h1>跟读口语</h1><p className="hero-copy">P3 验收只写 test；不会点亮正式完成，也不会形成学情结论。</p></section>
-      {!sessionToken && <p className="notice warning">请先从家长验收完成认证，再进入口语 test。</p>}
+      <section className="hero compact-hero"><p className="eyebrow">SPEAKING · {dataKind === 'formal' ? 'FORMAL' : 'TEST ONLY'}</p><h1>跟读口语</h1><p className="hero-copy">{dataKind === 'formal' ? '正式课程结果和私有录音会保存并衔接既有学习进度。' : '家长验收只保存 test，不计入正式完成。'}</p>{catalog.firstFormalIncomplete(completedCourseIds) && <div className="stage-pill">当前推荐 · {catalog.firstFormalIncomplete(completedCourseIds)?.course_id}</div>}</section>
+      {!sessionToken && <p className="notice warning">{dataKind === 'formal' ? '正式入口正在连接，请稍后重试。' : '请先从家长验收完成认证，再进入口语 test。'}</p>}
       {message && <p className="notice" role="status">{message}</p>}
-      <section className="course-list" aria-label="口语课程">{catalog.window(new Set(), 5).map((item) => (
-        <article className="course-row" key={item.course_id}><div><strong>{item.title}</strong><small>{item.course_id} · 第 {item.week} 周第 {item.day} 天</small></div><span className="course-state">未完成</span><button type="button" disabled={!sessionToken} onClick={() => startCourse(item.course_id)}>开始</button></article>
+      <section className="course-list" aria-label="口语课程">{catalog.window(completedCourseIds, 5).map((item) => (
+        <article className="course-row" key={item.course_id}><div><strong>{item.title}</strong><small>{item.course_id} · 第 {item.week} 周第 {item.day} 天</small></div><span className="course-state">{completedCourseIds.has(item.course_id) ? '已完成' : '未完成'}</span><button type="button" disabled={!sessionToken} onClick={() => startCourse(item.course_id)}>开始</button></article>
       ))}</section><Link className="back-link" to="/">← 返回本周任务</Link>
     </main>
   )
 
-  if (submitted) return <main className="center-card result-card"><p className="eyebrow">TEST RESULT SAVED</p><h1>完成啦</h1><p>{message}</p><button type="button" onClick={() => { setCourse(undefined); setSession(undefined); setSubmitted(false) }}>返回课程列表</button></main>
+  if (submitted) return <main className="center-card result-card"><p className="eyebrow">{dataKind === 'formal' ? 'FORMAL RESULT SAVED' : 'TEST RESULT SAVED'}</p><h1>完成啦</h1><p>{message}</p><button type="button" onClick={() => { setCourse(undefined); setSession(undefined); setSubmitted(false) }}>返回课程列表</button></main>
 
   if (!trialDone) return (
     <main className="center-card"><p className="eyebrow">{course.course_id} · 麦克风试音</p><h1>先试录</h1><p>每节课只申请一次麦克风权限。录一句、回放听清楚后再开始。</p>
@@ -194,7 +199,7 @@ export function SpeakingPage({ api, sessionToken, loadCatalog = loadSpeakingCata
   const used = demoPlays[String(question.id)] || 0
   const allComplete = course.questions.every((item) => session.questions[String(item.id)]?.complete)
   return (
-    <main className="exercise-shell speaking-shell"><p className="eyebrow">{course.course_id} · 第 {questionIndex + 1} / {course.questions.length} 题 · TEST</p><h1 className="exercise-title">{question.type === 'repeat' ? '跟着读' : '看提示回答'}</h1>
+    <main className="exercise-shell speaking-shell"><p className="eyebrow">{course.course_id} · 第 {questionIndex + 1} / {course.questions.length} 题 · {dataKind === 'formal' ? 'FORMAL' : 'TEST'}</p><h1 className="exercise-title">{question.type === 'repeat' ? '跟着读' : '看提示回答'}</h1>
       <section className="speaking-card"><p className="speaking-prompt">{question.type === 'repeat' ? question.text : question.hint}</p>
         <button type="button" disabled={activity !== 'idle' || used >= 2} onClick={playDemo}>{activity === 'demo' ? '正在播放示范…' : `▶ 听示范（还可 ${2 - used} 次）`}</button>
         <button type="button" disabled={activity !== 'idle' || Boolean(questionState?.complete)} onClick={startRecording}>🎙️ {recording ? '重新录音' : '开始录音'}</button>
@@ -204,7 +209,7 @@ export function SpeakingPage({ api, sessionToken, loadCatalog = loadSpeakingCata
         {questionState && <div className="speaking-feedback"><div className="stars" aria-label={`${questionState.stars} 星`}>{'⭐'.repeat(questionState.stars) || '再试一次'}</div><p>{message || questionState.child_feedback}</p><div className="word-lights">{questionState.word_lights.map((item, index) => <span className={`word-${item.light}`} key={`${item.word}-${index}`}>{item.word}</span>)}</div><small>各次星级：{questionState.take_stars.map((value) => '⭐'.repeat(value) || '未识别').join(' / ')}</small></div>}
         {!questionState && message && <p className="notice" role="status">{message}</p>}
         {questionState && !questionState.complete && questionState.proofs.length === 3 && <button type="button" className="quiet-button" disabled={activity !== 'idle'} onClick={safetyPass}>先过这题</button>}
-        {questionState?.complete && (questionIndex < 7 ? <button type="button" disabled={activity !== 'idle'} onClick={nextQuestion}>下一题</button> : <button type="button" disabled={!allComplete || activity !== 'idle'} onClick={submit}>全部完成，提交 TEST</button>)}
+        {questionState?.complete && (questionIndex < 7 ? <button type="button" disabled={activity !== 'idle'} onClick={nextQuestion}>下一题</button> : <button type="button" disabled={!allComplete || activity !== 'idle'} onClick={submit}>全部完成，提交{dataKind === 'formal' ? '正式结果' : ' TEST'}</button>)}
       </section><p className="notice">播放、录音、评分时不能切题，避免两个声音叠加。</p>
     </main>
   )

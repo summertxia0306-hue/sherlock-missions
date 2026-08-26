@@ -13,6 +13,7 @@ class FakeAudio {
 
 function api(): SherlockApi {
   return {
+    startChildSession: vi.fn(), getFormalProgress: vi.fn(),
     health: vi.fn(), submitResult: vi.fn(), submitListeningResult: vi.fn(), checkListeningCorrection: vi.fn(),
     authenticate: vi.fn(async () => ({ ok: true as const, session_token: 'token', expires_at: '2026-08-24T12:00:00.000Z', data_kind: 'test' as const })),
     listListeningTestResults: vi.fn(async () => ({ ok: true as const, data_kind: 'test' as const, results: [{

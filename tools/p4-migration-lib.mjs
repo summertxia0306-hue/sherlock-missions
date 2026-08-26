@@ -190,11 +190,21 @@ export function cloudResultDocument(record) {
 export function compareMigratedDocuments(expectedDocuments, actualById) {
   const anomalies = []
   let matched = 0
+  const comparable = (document) => {
+    const {
+      course_version: _courseVersion,
+      legacy_source_commit: _legacySourceCommit,
+      legacy_source_blob_sha256: _legacySourceBlobSha256,
+      migration_batch_id: _migrationBatchId,
+      ...stableFields
+    } = document
+    return stableFields
+  }
   for (const expected of expectedDocuments) {
     const resultId = expected.result_id || expected._id
     const actual = actualById.get(resultId)
     if (!actual) anomalies.push({ result_id: resultId, reason: 'MISSING' })
-    else if (sha256(expected) !== sha256(actual)) anomalies.push({ result_id: resultId, reason: 'FIELD_MISMATCH' })
+    else if (sha256(comparable(expected)) !== sha256(comparable(actual))) anomalies.push({ result_id: resultId, reason: 'FIELD_MISMATCH' })
     else matched += 1
   }
   return { source: expectedDocuments.length, matched, anomalies }

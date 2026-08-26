@@ -137,4 +137,33 @@ describe('P4 recording classification and reconciliation', () => {
       { result_id: 'missing', reason: 'MISSING' }
     ])
   })
+
+  it('accepts an unchanged legacy result imported by an earlier migration batch', () => {
+    const expected = [{
+      _id: 'same-result',
+      result_id: 'same-result',
+      score: 90,
+      data_kind: 'formal',
+      course_version: 'legacy-streamlit@new',
+      legacy_source_commit: 'new-snapshot',
+      legacy_source_blob_sha256: 'new-blob',
+      migration_batch_id: 'new-batch'
+    }]
+    const actual = new Map([['same-result', {
+      _id: 'same-result',
+      result_id: 'same-result',
+      score: 90,
+      data_kind: 'formal',
+      course_version: 'legacy-streamlit@old',
+      legacy_source_commit: 'old-snapshot',
+      legacy_source_blob_sha256: 'old-blob',
+      migration_batch_id: 'old-batch'
+    }]])
+
+    assert.deepEqual(compareMigratedDocuments(expected, actual), {
+      source: 1,
+      matched: 1,
+      anomalies: []
+    })
+  })
 })

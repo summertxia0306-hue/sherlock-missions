@@ -22,6 +22,7 @@ function memoryStore() {
     async saveSession(value) { sessions.set(value.token_hash, value) },
     async getSession(tokenHash) { return sessions.get(tokenHash) || null },
     async saveResult(value) { results.push(value); return value.result_id },
+    async listParentResults(filters) { return results.filter((item) => item.data_kind === filters.data_kind) },
     async saveAudit(value) { audits.push(value) }
   }
 }
@@ -44,18 +45,45 @@ function validResult(overrides = {}) {
 }
 
 describe('sherlock-api service', () => {
-  it('reports P4 health with formal disabled', async () => {
+  it('reports P5 code with formal disabled until the cutover flag is enabled', async () => {
     const service = createService({ store: memoryStore(), passwordHash: 'unused', hmacKey: '1234567890abcdef' })
     const health = await service.handle({ action: 'health' }, { callerId: 'a' })
     assert.deepEqual({ ...health, speaking_course_versions: undefined }, {
       ok: true,
       service: 'sherlock-api',
-      stage: 'P4',
+      stage: 'P5',
       formal_enabled: false,
       writes: 'test-only',
       speaking_course_versions: undefined
     })
     assert.match(health.speaking_course_versions.S01D39, /^[a-f0-9]{16}$/)
+  })
+
+  it('creates a caller-bound formal child session and returns formal completion only', async () => {
+    const store = memoryStore()
+    store.results.push(
+      { student_id: 'sherlock', course_id: 'W01D43', module_type: 'listening', data_kind: 'formal', status: 'completed' },
+      { student_id: 'sherlock', course_id: 'W01D44', module_type: 'listening', data_kind: 'test', status: 'completed' },
+      { student_id: 'sherlock', course_id: 'S01D43', module_type: 'speaking', data_kind: 'formal', status: 'completed' },
+      { student_id: 'someone-else', course_id: 'W01D50', module_type: 'listening', data_kind: 'formal', status: 'completed' }
+    )
+    const service = createService({
+      store, passwordHash: 'unused', hmacKey: '1234567890abcdef', formalEnabled: true,
+      now: () => 1_777_000_000_000, randomToken: () => 'formal-token'
+    })
+    const session = await service.handle({ action: 'startChildSession' }, { callerId: 'child-1' })
+    assert.equal(session.data_kind, 'formal')
+    const progress = await service.handle({ action: 'getFormalProgress', session_token: session.session_token }, { callerId: 'child-1' })
+    assert.deepEqual(progress.completed_course_ids, { listening: ['W01D43'], speaking: ['S01D43'] })
+    await assert.rejects(
+      service.handle({ action: 'getFormalProgress', session_token: session.session_token }, { callerId: 'other-child' }),
+      /UNAUTHORIZED/
+    )
+  })
+
+  it('does not create a formal child session before the cutover flag is enabled', async () => {
+    const service = createService({ store: memoryStore(), passwordHash: 'unused', hmacKey: '1234567890abcdef' })
+    await assert.rejects(service.handle({ action: 'startChildSession' }, { callerId: 'child' }), /FORMAL_DISABLED/)
   })
 
   it('authenticates a parent without returning or storing the password', async () => {

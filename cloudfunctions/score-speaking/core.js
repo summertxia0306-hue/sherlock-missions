@@ -65,6 +65,7 @@ function validatePayload(payload) {
     || !Number.isInteger(payload.attempt) || payload.attempt < 1 || payload.attempt > 3
     || typeof payload.target_text !== 'string' || payload.target_text.length < 1 || payload.target_text.length > 500
     || !safeSegment(payload.session_marker, /^[a-f0-9]{16}$/)
+    || !['formal', 'test'].includes(payload.data_kind)
     || typeof payload.wav_base64 !== 'string' || payload.wav_base64.length < 1024 || payload.wav_base64.length > 900000) throw new ScoreError('INVALID_REQUEST')
 }
 
@@ -84,12 +85,12 @@ function createService({ internalKey, evaluator, uploader }) {
       }
       if (!evaluation || (!Number.isFinite(evaluation.total) && !evaluation.is_rejected)) throw new ScoreError('SCORE_UNAVAILABLE')
       const qid = String(event.payload.question_id).padStart(2, '0')
-      const recordingPath = `sherlock-english/test/test/${event.payload.course_id}/${event.payload.result_id}/q${qid}-take${event.payload.attempt}.wav`
+      const recordingPath = `sherlock-english/${event.payload.data_kind}/${event.payload.data_kind}/${event.payload.course_id}/${event.payload.result_id}/q${qid}-take${event.payload.attempt}.wav`
       let uploaded
       try { uploaded = await uploader(recordingPath, wav) } catch { throw new ScoreError('RECORDING_UPLOAD_FAILED') }
       return {
         course_id: event.payload.course_id, course_version: event.payload.course_version,
-        question_id: event.payload.question_id, attempt: event.payload.attempt,
+        question_id: event.payload.question_id, attempt: event.payload.attempt, data_kind: event.payload.data_kind,
         total: evaluation.total ?? null, accuracy: evaluation.accuracy ?? null, fluency: evaluation.fluency ?? null,
         integrity: evaluation.integrity ?? null, is_rejected: Boolean(evaluation.is_rejected),
         words: Array.isArray(evaluation.words) ? evaluation.words.slice(0, 80) : [], recording_path: recordingPath,

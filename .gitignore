@@ -23,3 +23,5 @@ cloudfunctions/score-speaking/coverage/
 *.local
 .cloudbaserc.p1.*.json
 .cloudbaserc.p3.*.json
+.cloudbaserc.p5.*.json
+.p5-env.*.tmp

@@ -70,6 +70,22 @@ describe('P2 listening API', () => {
     assert.equal(store.results.get(first.result_id).data_kind, 'test')
   })
 
+  it('stores a formal child result and makes it eligible for completion', async () => {
+    const store = memoryStore()
+    const service = createService({
+      store, passwordHash: 'unused', hmacKey: '1234567890abcdef', formalEnabled: true,
+      randomToken: () => 'formal-token',
+      courseProvider: { get: () => ({ course: fixtureCourse(), version: 'version1' }) }
+    })
+    const auth = await service.handle({ action: 'startChildSession' }, { callerId: 'child' })
+    const response = await service.handle({
+      action: 'submitListeningResult', session_token: auth.session_token, submission: submission()
+    }, { callerId: 'child' })
+    assert.equal(response.data_kind, 'formal')
+    assert.equal(response.formal_completion_eligible, true)
+    assert.equal(store.results.get(response.result_id).data_kind, 'formal')
+  })
+
   it('keeps correction one blind and reveals transcript only after it is wrong', async () => {
     const { store, service, token } = await authenticatedService()
     await service.handle({ action: 'submitListeningResult', session_token: token, submission: submission() }, { callerId: 'parent' })

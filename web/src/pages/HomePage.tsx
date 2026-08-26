@@ -7,8 +7,8 @@ export function HomePage() {
       <section className="hero">
         <p className="eyebrow">SHERLOCK · ENGLISH LAB</p>
         <h1>本周任务</h1>
-        <p className="hero-copy">P4 正在迁移历史学习证据。家长端可独立查询 formal/test；儿童正式入口仍关闭，新操作只保存 test。</p>
-        <div className="stage-pill">P4 历史迁移 · formal/test 独立查询</div>
+        <p className="hero-copy">正式课程已迁移到当前地址；历史完成进度会自动衔接。家长验收入口继续独立保存 test。</p>
+        <div className="stage-pill">P5 正式入口 · 历史进度已衔接</div>
       </section>
       <section className="module-grid" aria-label="功能模块">
         {visibleModules().map((module) => (

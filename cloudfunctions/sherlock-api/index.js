@@ -14,6 +14,7 @@ const service = createService({
   sessionTtlSeconds: Number(process.env.SESSION_TTL_SECONDS || 7200),
   authWindowSeconds: Number(process.env.AUTH_WINDOW_SECONDS || 900),
   maxFailures: Number(process.env.AUTH_MAX_FAILURES || 5),
+  formalEnabled: String(process.env.FORMAL_ENABLED || '').toLowerCase() === 'true',
   speakingScorer: createSpeakingScorer(app, process.env.SPEAKING_INTERNAL_HMAC_KEY),
   speakingRecordingUrl: createRecordingUrlProvider(app)
 })
@@ -43,7 +44,7 @@ exports.main = async (event, context) => {
       RATE_LIMITED: '请求过于频繁',
       UNAUTHORIZED: '未授权',
       INVALID_RESULT: '结果格式无效',
-      FORMAL_DISABLED: 'P1 正式入口未开放',
+      FORMAL_DISABLED: '正式入口尚未开放',
       UNKNOWN_ACTION: '未知操作',
       CONFIG_ERROR: '服务配置未完成',
       INVALID_SPEAKING_TAKE: '口语录音格式无效',

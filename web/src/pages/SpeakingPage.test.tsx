@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from '@testing-library/react'
+import { render, screen, waitFor, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { MemoryRouter } from 'react-router-dom'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
@@ -32,6 +32,7 @@ function fakeRecorder(): PcmRecorder {
 
 function api(score: (request: { question_id: number; attempt: number }) => Promise<SpeakingScoreResponse>): SherlockApi {
   return {
+    startChildSession: vi.fn(), getFormalProgress: vi.fn(),
     health: vi.fn(), authenticate: vi.fn(), submitResult: vi.fn(), submitListeningResult: vi.fn(),
     checkListeningCorrection: vi.fn(), listListeningTestResults: vi.fn(),
     scoreSpeakingTake: vi.fn((_token, request) => score(request)),
@@ -68,6 +69,21 @@ describe('P3 speaking page', () => {
     await user.click(await screen.findByRole('button', { name: '■ 读完了' }))
     await user.click(screen.getByRole('button', { name: '就用这个，开始评分' }))
   }
+
+  it('shows the five-course formal window around the first incomplete migrated course', async () => {
+    const formalCatalog = parseSpeakingCatalog(Array.from({ length: 8 }, (_, index) => ({
+      course_id: `S01D${index + 39}`, course_version: `version-${index}`, title: `Course ${index + 39}`,
+      course_type: 'training', week: 5, day: index + 1, visible: true
+    })))
+    render(<MemoryRouter><SpeakingPage api={api(async (request) => scored(3, request.question_id, request.attempt))}
+      sessionToken="formal-token" dataKind="formal" completedCourseIds={new Set(['S01D39', 'S01D40', 'S01D41', 'S01D42', 'S01D43'])}
+      loadCatalog={async () => formalCatalog} loadCourse={async () => course} recorder={fakeRecorder()} /></MemoryRouter>)
+    expect(await screen.findByText(/当前推荐.*S01D44/)).toBeInTheDocument()
+    const courseList = screen.getByRole('region', { name: '口语课程' })
+    for (const id of ['S01D42', 'S01D43', 'S01D44', 'S01D45', 'S01D46']) expect(within(courseList).getByText(new RegExp(id))).toBeInTheDocument()
+    expect(screen.getAllByText('已完成')).toHaveLength(2)
+    expect(screen.getAllByText('未完成')).toHaveLength(3)
+  })
 
   it('keeps unauthenticated access read-only', async () => {
     render(<MemoryRouter><SpeakingPage api={api(async (request) => scored(3, request.question_id, request.attempt))} sessionToken="" loadCatalog={async () => catalog} loadCourse={async () => course} recorder={fakeRecorder()} /></MemoryRouter>)

@@ -104,18 +104,56 @@ function createService(options) {
   const speakingCourseProvider = options.speakingCourseProvider || createFileSpeakingCourseProvider()
   const speakingScorer = options.speakingScorer
   const speakingRecordingUrl = options.speakingRecordingUrl
+  const formalEnabled = options.formalEnabled === true
 
-  async function requireTestSession(event, requestContext) {
+  async function requireSession(event, requestContext, expectedKind) {
     if (!boundedString(hmacKey, 16, 512) || !boundedString(event.session_token, 1, 512)) {
       throw new ServiceError('UNAUTHORIZED')
     }
     const hash = tokenHash(event.session_token, hmacKey)
     const session = await store.getSession(hash)
     const expiresAt = session?.expires_at instanceof Date ? session.expires_at.getTime() : Date.parse(session?.expires_at)
-    if (!session || session.caller_id !== requestContext.callerId || !Number.isFinite(expiresAt) || expiresAt <= now() || session.data_kind !== 'test') {
+    if (!session || session.caller_id !== requestContext.callerId || !Number.isFinite(expiresAt) || expiresAt <= now()
+      || !['formal', 'test'].includes(session.data_kind) || (expectedKind && session.data_kind !== expectedKind)) {
       throw new ServiceError('UNAUTHORIZED')
     }
     return { ...session, token_hash: session.token_hash || hash }
+  }
+
+  async function requireTestSession(event, requestContext) {
+    return requireSession(event, requestContext, 'test')
+  }
+
+  async function startChildSession(_event, requestContext) {
+    if (!formalEnabled) throw new ServiceError('FORMAL_DISABLED')
+    if (!boundedString(hmacKey, 16, 512) || !boundedString(requestContext.callerId, 1, 512)) throw new ServiceError('CONFIG_ERROR')
+    const timestamp = now()
+    const token = randomToken()
+    const expiresAt = timestamp + sessionTtlMs
+    await store.saveSession({
+      token_hash: tokenHash(token, hmacKey), caller_id: requestContext.callerId, data_kind: 'formal',
+      created_at: new Date(timestamp), expires_at: new Date(expiresAt)
+    })
+    await store.saveAudit({ action: 'formal_child_session_started', caller_id: requestContext.callerId, occurred_at: new Date(timestamp), log_tag: 'sherlock-english' })
+    return { ok: true, session_token: token, expires_at: new Date(expiresAt).toISOString(), data_kind: 'formal' }
+  }
+
+  async function getFormalProgress(event, requestContext) {
+    await requireSession(event, requestContext, 'formal')
+    const rows = await store.listParentResults({ data_kind: 'formal' })
+    const completed = { listening: new Set(), speaking: new Set() }
+    for (const item of rows) {
+      if (item?.student_id === 'sherlock' && item.data_kind === 'formal' && item.status === 'completed' && completed[item.module_type]) {
+        completed[item.module_type].add(item.course_id)
+      }
+    }
+    return {
+      ok: true,
+      completed_course_ids: {
+        listening: [...completed.listening].sort(),
+        speaking: [...completed.speaking].sort()
+      }
+    }
   }
 
   async function authenticate(event, requestContext) {
@@ -151,7 +189,7 @@ function createService(options) {
   }
 
   async function submitResult(event, requestContext) {
-    const session = await requireTestSession(event, requestContext)
+    const session = await requireSession(event, requestContext)
     validateResult(event.result)
     const resultId = crypto.randomUUID()
     const submitted = {
@@ -160,33 +198,33 @@ function createService(options) {
       module_type: event.result.module_type,
       course_id: event.result.course_id,
       ...(event.result.pair_id ? { pair_id: event.result.pair_id } : {}),
-      data_kind: 'test',
+      data_kind: session.data_kind,
       course_version: event.result.course_version,
       started_at: new Date(event.result.started_at),
       submitted_at: new Date(event.result.submitted_at),
       duration_seconds: event.result.duration_seconds,
       device_info: event.result.device_info || {},
       payload: event.result.payload,
-      formal_completion_eligible: false,
+      formal_completion_eligible: session.data_kind === 'formal',
       created_at: new Date(now()),
       created_by_session: session.token_hash.slice(0, 16)
     }
     await store.saveResult(submitted)
-    await store.saveAudit({ action: 'test_result_created', caller_id: requestContext.callerId, result_id: resultId, occurred_at: new Date(now()), log_tag: 'sherlock-english' })
-    return { ok: true, result_id: resultId, data_kind: 'test', formal_completion_eligible: false }
+    await store.saveAudit({ action: `${session.data_kind}_result_created`, caller_id: requestContext.callerId, result_id: resultId, occurred_at: new Date(now()), log_tag: 'sherlock-english' })
+    return { ok: true, result_id: resultId, data_kind: session.data_kind, formal_completion_eligible: session.data_kind === 'formal' }
   }
 
   async function submitListeningResult(event, requestContext) {
-    const session = await requireTestSession(event, requestContext)
+    const session = await requireSession(event, requestContext)
     const requestedId = event.submission?.result_id
     if (!boundedString(requestedId, 1, 80)) throw new ServiceError('INVALID_LISTENING_RESULT')
     const existing = await store.getResult(requestedId)
     if (existing) {
-      if (existing.created_by_session !== session.token_hash.slice(0, 16) || existing.module_type !== 'listening') {
+      if (existing.created_by_session !== session.token_hash.slice(0, 16) || existing.module_type !== 'listening' || existing.data_kind !== session.data_kind) {
         throw new ServiceError('RESULT_ID_CONFLICT')
       }
       return {
-        ok: true, result_id: existing.result_id, data_kind: 'test', formal_completion_eligible: false,
+        ok: true, result_id: existing.result_id, data_kind: session.data_kind, formal_completion_eligible: session.data_kind === 'formal',
         wrong_question_ids: (existing.wrong_answers || []).map((item) => item.id), idempotent: true
       }
     }
@@ -198,16 +236,16 @@ function createService(options) {
     }
     let submitted
     try {
-      submitted = scoreListeningSubmission(loaded.course, event.submission, loaded.version)
+      submitted = scoreListeningSubmission(loaded.course, event.submission, loaded.version, session.data_kind)
     } catch {
       throw new ServiceError('INVALID_LISTENING_RESULT')
     }
     submitted.created_at = new Date(now())
     submitted.created_by_session = session.token_hash.slice(0, 16)
     await store.saveResult(submitted)
-    await store.saveAudit({ action: 'listening_test_result_created', caller_id: requestContext.callerId, result_id: submitted.result_id, occurred_at: new Date(now()), log_tag: 'sherlock-english' })
+    await store.saveAudit({ action: `listening_${session.data_kind}_result_created`, caller_id: requestContext.callerId, result_id: submitted.result_id, occurred_at: new Date(now()), log_tag: 'sherlock-english' })
     return {
-      ok: true, result_id: submitted.result_id, data_kind: 'test', formal_completion_eligible: false,
+      ok: true, result_id: submitted.result_id, data_kind: session.data_kind, formal_completion_eligible: session.data_kind === 'formal',
       wrong_question_ids: submitted.wrong_answers.map((item) => item.id), idempotent: false
     }
   }
@@ -219,9 +257,9 @@ function createService(options) {
   }
 
   async function checkListeningCorrection(event, requestContext) {
-    await requireTestSession(event, requestContext)
+    const session = await requireSession(event, requestContext)
     const result = await store.getResult(event.result_id)
-    if (!result || result.module_type !== 'listening' || result.data_kind !== 'test') throw new ServiceError('RESULT_NOT_FOUND')
+    if (!result || result.module_type !== 'listening' || result.data_kind !== session.data_kind) throw new ServiceError('RESULT_NOT_FOUND')
     const wrong = result.wrong_answers.find((item) => item.id === event.question_id)
     if (!wrong || ![1, 2].includes(event.attempt)) throw new ServiceError('INVALID_CORRECTION')
     let loaded
@@ -258,7 +296,7 @@ function createService(options) {
   }
 
   async function scoreSpeakingTake(event, requestContext) {
-    const session = await requireTestSession(event, requestContext)
+    const session = await requireSession(event, requestContext)
     const request = event.request
     if (!request || !boundedString(request.result_id, 1, 80)
       || !boundedString(request.course_id, 1, 80) || !boundedString(request.course_version, 1, 40)
@@ -272,10 +310,10 @@ function createService(options) {
     if (loaded.version !== request.course_version) throw new ServiceError('COURSE_VERSION_MISMATCH')
     const question = loaded.course.questions.find((item) => item.id === request.question_id)
     if (!question) throw new ServiceError('INVALID_SPEAKING_TAKE')
-    const takeId = crypto.createHash('sha256').update(`${request.result_id}:${request.course_id}:${request.question_id}:${request.attempt}`).digest('hex')
+    const takeId = crypto.createHash('sha256').update(`${session.data_kind}:${request.result_id}:${request.course_id}:${request.question_id}:${request.attempt}`).digest('hex')
     const cached = typeof store.getSpeakingTake === 'function' ? await store.getSpeakingTake(takeId) : null
     if (cached) {
-      if (cached.created_by_session !== session.token_hash.slice(0, 16)) throw new ServiceError('RESULT_ID_CONFLICT')
+      if (cached.created_by_session !== session.token_hash.slice(0, 16) || cached.data_kind !== session.data_kind) throw new ServiceError('RESULT_ID_CONFLICT')
       return { ...cached.response, idempotent: true }
     }
     if (typeof speakingScorer !== 'function') throw new ServiceError('SPEAKING_SCORE_UNAVAILABLE')
@@ -285,20 +323,20 @@ function createService(options) {
         result_id: request.result_id, course_id: request.course_id, course_version: request.course_version,
         question_id: request.question_id, attempt: request.attempt,
         target_text: question.text || question.expected, wav_base64: request.wav_base64,
-        session_marker: session.token_hash.slice(0, 16)
+        session_marker: session.token_hash.slice(0, 16), data_kind: session.data_kind
       })
     } catch (error) {
       throw new ServiceError(safeSpeakingScoreError(error))
     }
     if (!scored || scored.course_id !== request.course_id || scored.course_version !== request.course_version
-      || scored.question_id !== request.question_id || scored.attempt !== request.attempt
+      || scored.question_id !== request.question_id || scored.attempt !== request.attempt || scored.data_kind !== session.data_kind
       || (!Number.isFinite(scored.total) && !scored.is_rejected)
       || !boundedString(scored.recording_path, 1, 512)) {
       throw new ServiceError('SPEAKING_SCORE_UNAVAILABLE')
     }
     const trusted = {
       course_id: request.course_id, course_version: request.course_version,
-      question_id: request.question_id, attempt: request.attempt,
+      question_id: request.question_id, attempt: request.attempt, data_kind: session.data_kind,
       total: scored.total ?? null, accuracy: scored.accuracy ?? null, fluency: scored.fluency ?? null,
       integrity: scored.integrity ?? null, is_rejected: Boolean(scored.is_rejected),
       words: Array.isArray(scored.words) ? scored.words.slice(0, 80) : [],
@@ -307,7 +345,7 @@ function createService(options) {
     }
     const feedback = feedbackForTake(trusted)
     const stars = scoreToStars(trusted.total, trusted.is_rejected)
-    await store.saveAudit({ action: 'speaking_test_take_scored', caller_id: requestContext.callerId, course_id: request.course_id, question_id: request.question_id, occurred_at: new Date(now()), log_tag: 'sherlock-english' })
+    await store.saveAudit({ action: `speaking_${session.data_kind}_take_scored`, caller_id: requestContext.callerId, course_id: request.course_id, question_id: request.question_id, occurred_at: new Date(now()), log_tag: 'sherlock-english' })
     const response = {
       ok: true, stars, child_feedback: feedback.child_feedback,
       weak_words: feedback.weak_words, word_lights: feedback.word_lights,
@@ -315,29 +353,29 @@ function createService(options) {
       can_skip: stars < 3 && request.attempt >= 3
     }
     if (typeof store.saveSpeakingTake === 'function') {
-      await store.saveSpeakingTake({ take_id: takeId, response, created_by_session: session.token_hash.slice(0, 16), created_at: new Date(now()), data_kind: 'test' })
+      await store.saveSpeakingTake({ take_id: takeId, response, created_by_session: session.token_hash.slice(0, 16), created_at: new Date(now()), data_kind: session.data_kind })
     }
     return { ...response, idempotent: false }
   }
 
   async function submitSpeakingResult(event, requestContext) {
-    const session = await requireTestSession(event, requestContext)
+    const session = await requireSession(event, requestContext)
     const requestedId = event.submission?.result_id
     if (!boundedString(requestedId, 1, 80)) throw new ServiceError('INVALID_SPEAKING_RESULT')
     const existing = await store.getResult(requestedId)
     if (existing) {
-      if (existing.created_by_session !== session.token_hash.slice(0, 16) || existing.module_type !== 'speaking') throw new ServiceError('RESULT_ID_CONFLICT')
-      return { ok: true, result_id: existing.result_id, data_kind: 'test', formal_completion_eligible: false, idempotent: true }
+      if (existing.created_by_session !== session.token_hash.slice(0, 16) || existing.module_type !== 'speaking' || existing.data_kind !== session.data_kind) throw new ServiceError('RESULT_ID_CONFLICT')
+      return { ok: true, result_id: existing.result_id, data_kind: session.data_kind, formal_completion_eligible: session.data_kind === 'formal', idempotent: true }
     }
     let loaded
     try { loaded = speakingCourseProvider.get(event.submission?.course_id) } catch { throw new ServiceError('COURSE_NOT_FOUND') }
     let submitted
-    try { submitted = buildSpeakingResult(loaded.course, event.submission, loaded.version, hmacKey) } catch { throw new ServiceError('INVALID_SPEAKING_RESULT') }
+    try { submitted = buildSpeakingResult(loaded.course, event.submission, loaded.version, hmacKey, session.data_kind) } catch { throw new ServiceError('INVALID_SPEAKING_RESULT') }
     submitted.created_at = new Date(now())
     submitted.created_by_session = session.token_hash.slice(0, 16)
     await store.saveResult(submitted)
-    await store.saveAudit({ action: 'speaking_test_result_created', caller_id: requestContext.callerId, result_id: submitted.result_id, occurred_at: new Date(now()), log_tag: 'sherlock-english' })
-    return { ok: true, result_id: submitted.result_id, data_kind: 'test', formal_completion_eligible: false, idempotent: false }
+    await store.saveAudit({ action: `speaking_${session.data_kind}_result_created`, caller_id: requestContext.callerId, result_id: submitted.result_id, occurred_at: new Date(now()), log_tag: 'sherlock-english' })
+    return { ok: true, result_id: submitted.result_id, data_kind: session.data_kind, formal_completion_eligible: session.data_kind === 'formal', idempotent: false }
   }
 
   async function listSpeakingTestResults(event, requestContext) {
@@ -408,10 +446,13 @@ function createService(options) {
     async handle(event = {}, requestContext = { callerId: 'unknown' }) {
       if (event.action === 'health') {
         return {
-          ok: true, service: 'sherlock-api', stage: 'P4', formal_enabled: false, writes: 'test-only',
+          ok: true, service: 'sherlock-api', stage: 'P5', formal_enabled: formalEnabled,
+          writes: formalEnabled ? 'formal-and-test' : 'test-only',
           speaking_course_versions: Object.fromEntries(speakingCourseProvider.catalog().map((item) => [item.course_id, item.course_version]))
         }
       }
+      if (event.action === 'startChildSession') return startChildSession(event, requestContext)
+      if (event.action === 'getFormalProgress') return getFormalProgress(event, requestContext)
       if (event.action === 'parentAuth') {
         return authenticate(event, requestContext)
       }

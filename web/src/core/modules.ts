@@ -13,7 +13,7 @@ const registry: readonly ModuleRegistration[] = [
   {
     id: 'listening',
     title: '听力训练',
-    description: 'W01D39–50 已接入，须经家长认证后进行 test 验收。',
+    description: 'W01D39–50 正式课程，自动衔接历史完成进度。',
     route: '/listening',
     visible: true,
     icon: '🎧'
@@ -21,7 +21,7 @@ const registry: readonly ModuleRegistration[] = [
   {
     id: 'speaking',
     title: '跟读口语',
-    description: 'S01D39–50 已接入录音、讯飞评分与三次门控，须经家长认证验收。',
+    description: 'S01D39–50 正式课程，含私有录音、讯飞评分与三次门控。',
     route: '/speaking',
     visible: true,
     icon: '🎙️'

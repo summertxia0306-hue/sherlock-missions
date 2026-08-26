@@ -12,6 +12,7 @@ const catalog = parseListeningCatalog([
 ])
 
 const api = {
+  startChildSession: vi.fn(), getFormalProgress: vi.fn(),
   health: vi.fn(), authenticate: vi.fn(), submitResult: vi.fn(),
   submitListeningResult: vi.fn(), checkListeningCorrection: vi.fn(), listListeningTestResults: vi.fn(),
   scoreSpeakingTake: vi.fn(), submitSpeakingResult: vi.fn(), listSpeakingTestResults: vi.fn(), getSpeakingRecordingUrl: vi.fn(),
@@ -85,6 +86,21 @@ afterEach(() => {
 })
 
 describe('P2 listening page', () => {
+  it('shows the five-course formal window around the first incomplete migrated course', async () => {
+    const formalCatalog = parseListeningCatalog(Array.from({ length: 8 }, (_, index) => ({
+      course_id: `W01D${index + 39}`, course_version: `version-${index}`, title: `Course ${index + 39}`,
+      course_type: 'training', week: 5, day: index + 1, visible: true
+    })))
+    render(<MemoryRouter><ListeningPage api={api} sessionToken="formal-token" dataKind="formal"
+      completedCourseIds={new Set(['W01D39', 'W01D40', 'W01D41', 'W01D42', 'W01D43'])}
+      loadCatalog={async () => formalCatalog} /></MemoryRouter>)
+    expect(await screen.findByText(/当前推荐.*W01D44/)).toBeInTheDocument()
+    const courseList = screen.getByRole('region', { name: '听力课程' })
+    for (const id of ['W01D42', 'W01D43', 'W01D44', 'W01D45', 'W01D46']) expect(within(courseList).getByText(new RegExp(id))).toBeInTheDocument()
+    expect(screen.getAllByText('已完成')).toHaveLength(2)
+    expect(screen.getAllByText('未完成')).toHaveLength(3)
+  })
+
   it('shows the first formal incomplete course and never treats test as completed', async () => {
     render(<MemoryRouter><ListeningPage api={api} sessionToken="token" loadCatalog={loadCatalog} /></MemoryRouter>)
     expect(await screen.findByText(/当前推荐.*W01D39/)).toBeInTheDocument()

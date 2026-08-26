@@ -32,17 +32,21 @@ function memoryStore() {
   }
 }
 
-async function setup(scorer) {
+async function setup(scorer, { formal = false } = {}) {
   const store = memoryStore()
   const passwordHash = await hashPassword('right-password', '00112233445566778899aabbccddeeff')
   const service = createService({
     store, passwordHash, hmacKey: '1234567890abcdef', randomToken: () => 'test-token',
+    formalEnabled: formal,
     speakingCourseProvider: { get: () => ({ course: fixtureCourse(), version: 'version1' }) },
     speakingScorer: scorer,
     speakingRecordingUrl: async () => 'https://private.example.test/recording.wav'
   })
-  const auth = await service.handle({ action: 'parentAuth', password: 'right-password' }, { callerId: 'parent' })
-  return { store, service, token: auth.session_token }
+  const callerId = formal ? 'child' : 'parent'
+  const auth = formal
+    ? await service.handle({ action: 'startChildSession' }, { callerId })
+    : await service.handle({ action: 'parentAuth', password: 'right-password' }, { callerId })
+  return { store, service, token: auth.session_token, callerId }
 }
 
 describe('P3 speaking API', () => {
@@ -101,8 +105,8 @@ describe('P3 speaking API', () => {
       await assert.rejects(service.handle({ action: 'scoreSpeakingTake', session_token: token, request: { ...base, ...patch } }, { callerId: 'parent' }), /INVALID_SPEAKING_TAKE/)
     }
     await assert.rejects(service.handle({ action: 'scoreSpeakingTake', session_token: token, request: { ...base, course_version: 'stale' } }, { callerId: 'parent' }), /COURSE_VERSION_MISMATCH/)
-    const takeId = require('node:crypto').createHash('sha256').update('r1:S01D39:1:1').digest('hex')
-    store.takes.set(takeId, { created_by_session: 'another-session', response: { ok: true } })
+    const takeId = require('node:crypto').createHash('sha256').update('test:r1:S01D39:1:1').digest('hex')
+    store.takes.set(takeId, { created_by_session: 'another-session', data_kind: 'test', response: { ok: true } })
     await assert.rejects(service.handle({ action: 'scoreSpeakingTake', session_token: token, request: base }, { callerId: 'parent' }), /RESULT_ID_CONFLICT/)
   })
 
@@ -137,5 +141,33 @@ describe('P3 speaking API', () => {
     assert.equal(listed.results[0].question_results[0].best_total, 80)
     const url = await service.handle({ action: 'getSpeakingRecordingUrl', session_token: token, result_id: submission.result_id, question_id: 1, attempt: 1 }, { callerId: 'parent' })
     assert.match(url.url, /^https:\/\//)
+  })
+
+  it('scores and stores a formal result only through a formal child session', async () => {
+    const scorer = async (request) => ({
+      ...request, total: 80, accuracy: 79, fluency: 78, integrity: 81, is_rejected: false, words: [],
+      recording_path: `sherlock-english/${request.data_kind}/${request.data_kind}/S01D39/r1/q01-take1.wav`
+    })
+    const { store, service, token, callerId } = await setup(scorer, { formal: true })
+    const scored = []
+    for (let questionId = 1; questionId <= 8; questionId += 1) {
+      scored.push(await service.handle({
+        action: 'scoreSpeakingTake', session_token: token,
+        request: { result_id: '123e4567-e89b-42d3-a456-426614174000', course_id: 'S01D39', course_version: 'version1', question_id: questionId, attempt: 1, wav_base64: Buffer.alloc(5000).toString('base64') }
+      }, { callerId }))
+    }
+    const response = await service.handle({
+      action: 'submitSpeakingResult', session_token: token,
+      submission: {
+        result_id: '123e4567-e89b-42d3-a456-426614174000', student_id: 'sherlock', course_id: 'S01D39', course_version: 'version1',
+        started_at: '2026-08-24T10:00:00.000Z', submitted_at: '2026-08-24T10:02:00.000Z', duration_seconds: 120,
+        questions: scored.map((item, index) => ({ id: index + 1, proofs: [item.proof], passed_by_safety: false }))
+      }
+    }, { callerId })
+    assert.equal(response.data_kind, 'formal')
+    assert.equal(response.formal_completion_eligible, true)
+    const stored = store.results.get(response.result_id)
+    assert.equal(stored.data_kind, 'formal')
+    assert.equal(stored.question_results[0].recording_records[0].data_kind, 'formal')
   })
 })

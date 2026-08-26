@@ -1,5 +1,7 @@
 # 口语模块对接契约与功能清单
 
+> 版本 v4.0 · 2026-08-26：P5 普通 CloudBase 儿童入口由服务端 formal 会话写正式结果和私有录音；评分函数仅接受服务端 HMAC 签署的 `data_kind=formal|test`，录音路径固定隔离为 `sherlock-english/{data_kind}/{data_kind}/{course_id}/{result_id}/`。家长验收继续独立写 test，Streamlit 仅保留只读迁移提示。
+
 > 版本 v3.1 · 2026-08-25：P3 课程版本一致性修复。静态儿童课与 API 必须共用语义版本算法；口语 JSON 不进入 Service Worker 预缓存，客户端每次进课强制实时取目录和课件。
 
 > 版本 v3.0 · 2026-08-24：P3 CloudBase test-only 迁移。新增 React iPad 录音状态机、`sherlock-api` 可信门控、私有 `score-speaking` 讯飞适配、私有录音临时回放；P5 前 formal 入口继续关闭。

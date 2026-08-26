@@ -25,6 +25,7 @@ function fixtureCourse() {
 function take(questionId, attempt, total, overrides = {}) {
   return {
     course_id: 'S01D39', course_version: 'version1', question_id: questionId, attempt,
+    data_kind: 'test',
     total, accuracy: total - 2, fluency: total - 1, integrity: total,
     is_rejected: false, words: [{ word: 'bright', score: total }],
     recording_path: `sherlock-english/test/test/S01D39/r1/q${questionId}-take${attempt}.wav`,

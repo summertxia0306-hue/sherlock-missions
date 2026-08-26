@@ -128,8 +128,9 @@ function verifyTakeProof(proof, secret) {
 
 function validIso(value) { return typeof value === 'string' && Number.isFinite(Date.parse(value)) }
 
-function buildSpeakingResult(course, submission, expectedVersion, secret) {
+function buildSpeakingResult(course, submission, expectedVersion, secret, dataKind = 'test') {
   validateCourse(course)
+  if (!['formal', 'test'].includes(dataKind)) fail()
   if (!submission || submission.course_id !== course.course_id || submission.course_version !== expectedVersion
     || typeof submission.result_id !== 'string' || submission.result_id.length > 80
     || typeof submission.student_id !== 'string' || !submission.student_id
@@ -142,7 +143,7 @@ function buildSpeakingResult(course, submission, expectedVersion, secret) {
     if (!state || !Array.isArray(state.proofs) || state.proofs.length < 1 || state.proofs.length > 3) fail()
     const takes = state.proofs.map((proof, index) => {
       const value = verifyTakeProof(proof, secret)
-      if (value.course_id !== course.course_id || value.course_version !== expectedVersion || value.question_id !== question.id || value.attempt !== index + 1) fail()
+      if (value.course_id !== course.course_id || value.course_version !== expectedVersion || value.question_id !== question.id || value.attempt !== index + 1 || value.data_kind !== dataKind) fail()
       return value
     })
     const stars = takes.map((item) => scoreToStars(item.total, item.is_rejected))
@@ -163,19 +164,19 @@ function buildSpeakingResult(course, submission, expectedVersion, secret) {
       take_stars: stars, is_rejected: Boolean(best.is_rejected), takes: takes.length,
       weak_words: feedback.weak_words,
       recordings: takes.map((item) => item.recording_path).filter(Boolean),
-      recording_records: takes.filter((item) => item.recording_path).map((item) => ({ path: item.recording_path, file_id: item.recording_file_id || item.recording_path, data_kind: 'test' })),
+      recording_records: takes.filter((item) => item.recording_path).map((item) => ({ path: item.recording_path, file_id: item.recording_file_id || item.recording_path, data_kind: dataKind })),
       tag: question.tag || ''
     }
   })
   const scored = questionResults.filter((item) => Number.isFinite(item.best_total))
   return {
     result_id: submission.result_id, student_id: submission.student_id, module_type: 'speaking', module: 'speaking',
-    course_id: course.course_id, data_kind: 'test', course_version: expectedVersion, status: 'completed',
+    course_id: course.course_id, data_kind: dataKind, course_version: expectedVersion, status: 'completed',
     score: scored.length ? Math.round(scored.reduce((sum, item) => sum + item.best_total, 0) / scored.length) : 0,
     stars_total: questionResults.reduce((sum, item) => sum + item.stars, 0), stars_max: questionResults.length * 3,
     question_results: questionResults, duration_seconds: submission.duration_seconds,
     started_at: new Date(submission.started_at), submitted_at: new Date(submission.submitted_at),
-    section_scores: {}, wrong_answers: [], play_counts: {}, formal_completion_eligible: false
+    section_scores: {}, wrong_answers: [], play_counts: {}, formal_completion_eligible: dataKind === 'formal'
   }
 }
 

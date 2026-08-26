@@ -74,7 +74,7 @@ export function ParentPage({ api, onAuthenticated = () => undefined }: { api: Sh
     <main className="center-card parent-card">
       <p className="eyebrow">PARENT HISTORY · FORMAL / TEST ISOLATED</p>
       <h1>家长端</h1>
-      <p>默认只查询正式记录；test 必须单独选择，永不计入正式完成和汇总。儿童正式入口仍保持关闭。</p>
+      <p>默认只查询正式记录；test 必须单独选择，永不计入正式完成和汇总。</p>
       {!token ? (
         <form onSubmit={onLogin}>
           <label htmlFor="parent-password">家长验收密码</label>
@@ -103,7 +103,7 @@ export function ParentPage({ api, onAuthenticated = () => undefined }: { api: Sh
             <span>完成课程 {summary.completed_course_count} 门</span>
             <span>计入正式完成 {summary.formal_completion_count} 门</span>
           </div>
-          <div className="parent-actions"><Link className="primary-link" to="/listening">进入听力 test 验收</Link><Link className="primary-link" to="/speaking">进入口语 test 验收</Link></div>
+          <div className="parent-actions"><Link className="primary-link" to="/listening?mode=test">进入听力 test 验收</Link><Link className="primary-link" to="/speaking?mode=test">进入口语 test 验收</Link></div>
         </>
       )}
       {message && <p className="form-message" role="status">{message}</p>}

@@ -24,6 +24,9 @@ import {
 interface ListeningPageProps {
   api: SherlockApi
   sessionToken: string
+  dataKind?: 'formal' | 'test'
+  completedCourseIds?: ReadonlySet<string>
+  onFormalCompleted?: (courseId: string) => void
   loadCatalog?: () => Promise<ListeningCatalog>
   loadCourse?: (courseId: string) => Promise<ListeningCourse>
 }
@@ -69,7 +72,10 @@ function QuestionChoices({ question, value, onChange }: {
   )
 }
 
-export function ListeningPage({ api, sessionToken, loadCatalog = loadListeningCatalog, loadCourse = loadListeningCourse }: ListeningPageProps) {
+export function ListeningPage({
+  api, sessionToken, dataKind = 'test', completedCourseIds = new Set<string>(), onFormalCompleted = () => undefined,
+  loadCatalog = loadListeningCatalog, loadCourse = loadListeningCourse
+}: ListeningPageProps) {
   const [catalog, setCatalog] = useState<ListeningCatalog>()
   const [course, setCourse] = useState<ListeningCourse>()
   const [session, setSession] = useState<ListeningSession>()
@@ -142,11 +148,11 @@ export function ListeningPage({ api, sessionToken, loadCatalog = loadListeningCa
   }, [loadCatalog])
 
   useEffect(() => {
-    if (session) sessionStorage.setItem(`sherlock-listening-test-${session.course_id}`, JSON.stringify(session))
-  }, [session])
+    if (session) sessionStorage.setItem(`sherlock-listening-${dataKind}-${session.course_id}`, JSON.stringify(session))
+  }, [dataKind, session])
 
-  const shownCourses = catalog?.window(new Set<string>(), 5) || []
-  const recommended = catalog?.firstFormalIncomplete(new Set<string>())
+  const shownCourses = catalog?.window(completedCourseIds, 5) || []
+  const recommended = catalog?.firstFormalIncomplete(completedCourseIds)
   const allQuestions = useMemo(() => course?.sections.flatMap((section) => section.questions) || [], [course])
   const allAnswered = Boolean(session && allQuestions.length && allQuestions.every((question) => session.answers[String(question.id)] !== undefined))
 
@@ -157,7 +163,7 @@ export function ListeningPage({ api, sessionToken, loadCatalog = loadListeningCa
     try {
       const loaded = await loadCourse(courseId)
       setCourse(loaded)
-      const stored = sessionStorage.getItem(`sherlock-listening-test-${courseId}`)
+      const stored = sessionStorage.getItem(`sherlock-listening-${dataKind}-${courseId}`)
       setSession(stored ? JSON.parse(stored) as ListeningSession : createListeningSession(courseId, newResultId()))
       setTrialDone(false)
       setTrialHeard(false)
@@ -190,7 +196,9 @@ export function ListeningPage({ api, sessionToken, loadCatalog = loadListeningCa
       }))
       setWrongIds(response.wrong_question_ids)
       setCorrection(createCorrectionState(response.wrong_question_ids))
-      setMessage(response.idempotent ? '已恢复此前提交的同一条 TEST 结果。' : 'TEST 结果已安全提交。')
+      if (response.data_kind === 'formal') onFormalCompleted(course.course_id)
+      const kindLabel = response.data_kind === 'formal' ? '正式' : 'TEST'
+      setMessage(response.idempotent ? `已恢复此前提交的同一条${kindLabel}结果。` : `${kindLabel}结果已安全提交。`)
     } catch {
       setMessage('提交没有完成。网络恢复后可再次点击，系统会沿用同一 result_id 防止重复。')
     } finally {
@@ -228,18 +236,18 @@ export function ListeningPage({ api, sessionToken, loadCatalog = loadListeningCa
     return (
       <main>
         <section className="hero compact-hero">
-          <p className="eyebrow">LISTENING · TEST ONLY</p>
+          <p className="eyebrow">LISTENING · {dataKind === 'formal' ? 'FORMAL' : 'TEST ONLY'}</p>
           <h1>听力训练</h1>
-          <p className="hero-copy">P2 验收期间只保存 test；不会点亮正式完成状态，也不会生成学情结论。</p>
+          <p className="hero-copy">{dataKind === 'formal' ? '正式课程结果会保存并衔接既有学习进度。' : '家长验收只保存 test，不计入正式完成。'}</p>
           {recommended && <div className="stage-pill">当前推荐 · {recommended.course_id}</div>}
         </section>
-        {!sessionToken && <p className="notice warning">请先从家长验收完成认证，再进入听力 test。</p>}
+        {!sessionToken && <p className="notice warning">{dataKind === 'formal' ? '正式入口正在连接，请稍后重试。' : '请先从家长验收完成认证，再进入听力 test。'}</p>}
         {message && <p className="notice" role="status">{message}</p>}
         <section className="course-list" aria-label="听力课程">
           {shownCourses.map((item) => (
             <article className="course-row" key={item.course_id}>
               <div><strong>{item.title}</strong><small>{item.course_id} · 第 {item.week} 周第 {item.day} 天</small></div>
-              <span className="course-state">未完成</span>
+              <span className="course-state">{completedCourseIds.has(item.course_id) ? '已完成' : '未完成'}</span>
               <button type="button" disabled={!sessionToken || busy} onClick={() => startCourse(item.course_id)} aria-label={`开始 ${item.course_id}`}>开始</button>
             </article>
           ))}
@@ -280,12 +288,12 @@ export function ListeningPage({ api, sessionToken, loadCatalog = loadListeningCa
   if (wrongIds) {
     return (
       <main className="center-card result-card">
-        <p className="eyebrow">TEST RESULT SAVED</p>
+        <p className="eyebrow">{dataKind === 'formal' ? 'FORMAL RESULT SAVED' : 'TEST RESULT SAVED'}</p>
         <h1>完成啦</h1>
         <p>{wrongIds.length ? '有几题需要以后再复习，本次订正已经记录。' : '本次全部答对。'}</p>
-        <div className="stage-pill">只写 test · 不计正式完成</div>
+        <div className="stage-pill">{dataKind === 'formal' ? '正式结果已保存' : '只写 test · 不计正式完成'}</div>
         <button type="button" onClick={() => {
-          sessionStorage.removeItem(`sherlock-listening-test-${session.course_id}`)
+          sessionStorage.removeItem(`sherlock-listening-${dataKind}-${session.course_id}`)
           setCourse(undefined); setSession(undefined); setWrongIds(undefined)
         }}>返回课程列表</button>
       </main>
@@ -295,7 +303,7 @@ export function ListeningPage({ api, sessionToken, loadCatalog = loadListeningCa
   if (!trialDone) {
     return (
       <main className="center-card">
-        <p className="eyebrow">{course.course_id} · TEST</p>
+        <p className="eyebrow">{course.course_id} · {dataKind === 'formal' ? 'FORMAL' : 'TEST'}</p>
         <h1>{course.title}</h1>
         <p>先试音。试音不限次数，听到声音后再开始答题。</p>
         <button type="button" disabled={Boolean(activeAudio)} onClick={playTrial}>{activeAudio?.id === 'trial' ? activeAudio.phase === 'loading' ? '正在加载…' : '正在播放…' : '播放试音'}</button>
@@ -308,7 +316,7 @@ export function ListeningPage({ api, sessionToken, loadCatalog = loadListeningCa
 
   return (
     <main className="exercise-shell">
-      <p className="eyebrow">{course.course_id} · TEST ONLY</p>
+      <p className="eyebrow">{course.course_id} · {dataKind === 'formal' ? 'FORMAL' : 'TEST ONLY'}</p>
       <h1 className="exercise-title">{course.title}</h1>
       <p className="notice">交卷前不显示对错。短文四题共用同一个播放次数。</p>
       {course.sections.map((section, sectionIndex) => (
@@ -332,7 +340,7 @@ export function ListeningPage({ api, sessionToken, loadCatalog = loadListeningCa
         </section>
       ))}
       <button className="submit-course" type="button" disabled={!allAnswered || busy || Boolean(activeAudio)} onClick={submit}>
-        {busy ? '正在安全提交…' : '全部完成，提交 TEST'}
+        {busy ? '正在安全提交…' : `全部完成，提交${dataKind === 'formal' ? '正式结果' : ' TEST'}`}
       </button>
       {!allAnswered && <p className="notice">答完全部题目后才能提交。</p>}
       {message && <p className="notice" role="status">{message}</p>}
