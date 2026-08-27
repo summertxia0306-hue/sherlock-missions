@@ -83,6 +83,9 @@ describe('P3 speaking page', () => {
     for (const id of ['S01D42', 'S01D43', 'S01D44', 'S01D45', 'S01D46']) expect(within(courseList).getByText(new RegExp(id))).toBeInTheDocument()
     expect(screen.getAllByText('已完成')).toHaveLength(2)
     expect(screen.getAllByText('未完成')).toHaveLength(3)
+    expect(within(courseList).getByText('推荐')).toBeInTheDocument()
+    expect(within(courseList).getByText('Course 42').closest('.course-row')).toHaveClass('course-completed')
+    expect(within(courseList).getByText('Course 44').closest('.course-row')).toHaveClass('course-recommended')
   })
 
   it('keeps unauthenticated access read-only', async () => {
@@ -111,6 +114,8 @@ describe('P3 speaking page', () => {
     expect(service.submitSpeakingResult).toHaveBeenCalledTimes(1)
     const submission = vi.mocked(service.submitSpeakingResult).mock.calls[0][1]
     expect(JSON.stringify(submission)).not.toMatch(/score|total|accuracy|fluency|integrity/)
+    await user.click(screen.getByRole('button', { name: '返回课程列表' }))
+    expect(await screen.findByRole('heading', { name: '跟读口语' })).toBeInTheDocument()
   })
 
   it('keeps the local recording when scoring fails so the retry does not consume a take', async () => {

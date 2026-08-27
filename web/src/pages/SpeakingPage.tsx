@@ -170,14 +170,18 @@ export function SpeakingPage({
   }
 
   if (!catalog) return <main className="center-card"><h1>跟读口语</h1><p>{message || '正在加载课程…'}</p></main>
+  const recommended = catalog.firstFormalIncomplete(completedCourseIds)
+  const shownCourses = catalog.window(completedCourseIds, 5)
   if (!course || !session) return (
     <main>
-      <section className="hero compact-hero"><p className="eyebrow">SPEAKING · {dataKind === 'formal' ? 'FORMAL' : 'TEST ONLY'}</p><h1>跟读口语</h1><p className="hero-copy">{dataKind === 'formal' ? '正式课程结果和私有录音会保存并衔接既有学习进度。' : '家长验收只保存 test，不计入正式完成。'}</p>{catalog.firstFormalIncomplete(completedCourseIds) && <div className="stage-pill">当前推荐 · {catalog.firstFormalIncomplete(completedCourseIds)?.course_id}</div>}</section>
+      <section className="hero compact-hero"><p className="eyebrow">SPEAKING · {dataKind === 'formal' ? 'FORMAL' : 'TEST ONLY'}</p><h1>跟读口语</h1><p className="hero-copy">{dataKind === 'formal' ? '正式课程结果和私有录音会保存并衔接既有学习进度。' : '家长验收只保存 test，不计入正式完成。'}</p>{recommended && <div className="stage-pill">当前推荐 · {recommended.course_id}</div>}</section>
       {!sessionToken && <p className="notice warning">{dataKind === 'formal' ? '正式入口正在连接，请稍后重试。' : '请先从家长验收完成认证，再进入口语 test。'}</p>}
       {message && <p className="notice" role="status">{message}</p>}
-      <section className="course-list" aria-label="口语课程">{catalog.window(completedCourseIds, 5).map((item) => (
-        <article className="course-row" key={item.course_id}><div><strong>{item.title}</strong><small>{item.course_id} · 第 {item.week} 周第 {item.day} 天</small></div><span className="course-state">{completedCourseIds.has(item.course_id) ? '已完成' : '未完成'}</span><button type="button" disabled={!sessionToken} onClick={() => startCourse(item.course_id)}>开始</button></article>
-      ))}</section><Link className="back-link" to="/">← 返回本周任务</Link>
+      <section className="course-list" aria-label="口语课程">{shownCourses.map((item) => {
+        const completed = completedCourseIds.has(item.course_id)
+        const isRecommended = item.course_id === recommended?.course_id
+        return <article className={`course-row${completed ? ' course-completed' : ''}${isRecommended ? ' course-recommended' : ''}`} key={item.course_id}><div><div className="course-title-line"><strong>{item.title}</strong>{isRecommended && <span className="recommendation-badge">推荐</span>}</div><small>{item.course_id} · 第 {item.week} 周第 {item.day} 天</small></div><span className="course-state">{completed ? '已完成' : '未完成'}</span><button type="button" disabled={!sessionToken} onClick={() => startCourse(item.course_id)}>开始</button></article>
+      })}</section><Link className="back-link" to="/">← 返回本周任务</Link>
     </main>
   )
 

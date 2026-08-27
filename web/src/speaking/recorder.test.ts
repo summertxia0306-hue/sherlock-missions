@@ -20,11 +20,15 @@ describe('P3 iPad recording primitives', () => {
     expect(peakAmplitude(new Float32Array([0, 0.02]))).toBeGreaterThan(0.01)
   })
 
-  it('reuses one healthy microphone stream and suspends one AudioContext between takes', async () => {
+  it('uses a fresh processed microphone stream for every take and releases it immediately', async () => {
     vi.useFakeTimers()
-    const stop = vi.fn()
-    const track = { readyState: 'live', muted: false, stop }
-    const getUserMedia = vi.fn(async () => ({ getAudioTracks: () => [track], getTracks: () => [track] }))
+    const stops = [vi.fn(), vi.fn()]
+    let streamIndex = 0
+    const getUserMedia = vi.fn(async () => {
+      const stop = stops[streamIndex++]
+      const track = { readyState: 'live', muted: false, stop }
+      return { getAudioTracks: () => [track], getTracks: () => [track] }
+    })
     Object.defineProperty(navigator, 'mediaDevices', { configurable: true, value: { getUserMedia } })
     const processors: Array<{ onaudioprocess: ((event: { inputBuffer: { getChannelData: () => Float32Array } }) => void) | null; connect: ReturnType<typeof vi.fn>; disconnect: ReturnType<typeof vi.fn> }> = []
     const resume = vi.fn(async () => undefined)
@@ -55,10 +59,74 @@ describe('P3 iPad recording primitives', () => {
       expect(result.peak).toBeGreaterThan(0.01)
       expect(result.wav.type).toBe('audio/wav')
     }
-    expect(getUserMedia).toHaveBeenCalledTimes(1)
+    expect(getUserMedia).toHaveBeenCalledTimes(2)
+    expect(getUserMedia).toHaveBeenNthCalledWith(1, {
+      audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true, autoGainControl: true }
+    })
     expect(resume).toHaveBeenCalledTimes(2)
     expect(suspend).toHaveBeenCalledTimes(2)
+    expect(stops[0]).toHaveBeenCalledTimes(1)
+    expect(stops[1]).toHaveBeenCalledTimes(1)
     recorder.release()
+    expect(stops[1]).toHaveBeenCalledTimes(1)
+  })
+
+  it('releases the iOS microphone indicator even when the take is silent', async () => {
+    vi.useFakeTimers()
+    const stop = vi.fn()
+    const track = { readyState: 'live', muted: false, stop }
+    Object.defineProperty(navigator, 'mediaDevices', { configurable: true, value: {
+      getUserMedia: vi.fn(async () => ({ getAudioTracks: () => [track], getTracks: () => [track] }))
+    } })
+    let processor: { onaudioprocess: ((event: { inputBuffer: { getChannelData: () => Float32Array } }) => void) | null } | undefined
+    class FakeContext {
+      sampleRate = 48000
+      destination = {}
+      async resume() {}
+      async suspend() {}
+      createMediaStreamSource() { return { connect: vi.fn(), disconnect: vi.fn() } }
+      createScriptProcessor() {
+        processor = { onaudioprocess: null }
+        return { ...processor, connect: vi.fn(), disconnect: vi.fn() }
+      }
+      createGain() { return { gain: { value: 1 }, connect: vi.fn(), disconnect: vi.fn() } }
+    }
+    vi.stubGlobal('AudioContext', FakeContext)
+    const recorder = new SharedPcmRecorder()
+    const start = recorder.start(vi.fn(), vi.fn())
+    await vi.runAllTimersAsync()
+    await start
+    processor?.onaudioprocess?.({ inputBuffer: { getChannelData: () => new Float32Array(48000).fill(0.001) } })
+    await expect(recorder.stop()).rejects.toThrow('SILENT_RECORDING')
+    expect(stop).toHaveBeenCalledTimes(1)
+  })
+
+  it('releases an active microphone stream when the page is left mid-take', async () => {
+    vi.useFakeTimers()
+    const stop = vi.fn()
+    const sourceDisconnect = vi.fn()
+    const processorDisconnect = vi.fn()
+    const track = { readyState: 'live', muted: false, stop }
+    Object.defineProperty(navigator, 'mediaDevices', { configurable: true, value: {
+      getUserMedia: vi.fn(async () => ({ getAudioTracks: () => [track], getTracks: () => [track] }))
+    } })
+    class FakeContext {
+      sampleRate = 48000
+      destination = {}
+      async resume() {}
+      async suspend() {}
+      createMediaStreamSource() { return { connect: vi.fn(), disconnect: sourceDisconnect } }
+      createScriptProcessor() { return { onaudioprocess: null, connect: vi.fn(), disconnect: processorDisconnect } }
+      createGain() { return { gain: { value: 1 }, connect: vi.fn(), disconnect: vi.fn() } }
+    }
+    vi.stubGlobal('AudioContext', FakeContext)
+    const recorder = new SharedPcmRecorder()
+    const start = recorder.start(vi.fn(), vi.fn())
+    await vi.runAllTimersAsync()
+    await start
+    recorder.release()
+    expect(sourceDisconnect).toHaveBeenCalledTimes(1)
+    expect(processorDisconnect).toHaveBeenCalledTimes(1)
     expect(stop).toHaveBeenCalledTimes(1)
   })
 })

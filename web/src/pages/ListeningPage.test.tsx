@@ -99,6 +99,9 @@ describe('P2 listening page', () => {
     for (const id of ['W01D42', 'W01D43', 'W01D44', 'W01D45', 'W01D46']) expect(within(courseList).getByText(new RegExp(id))).toBeInTheDocument()
     expect(screen.getAllByText('已完成')).toHaveLength(2)
     expect(screen.getAllByText('未完成')).toHaveLength(3)
+    expect(within(courseList).getByText('推荐')).toBeInTheDocument()
+    expect(within(courseList).getByText('Course 42').closest('.course-row')).toHaveClass('course-completed')
+    expect(within(courseList).getByText('Course 44').closest('.course-row')).toHaveClass('course-recommended')
   })
 
   it('shows the first formal incomplete course and never treats test as completed', async () => {

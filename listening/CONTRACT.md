@@ -1,5 +1,7 @@
 # 听力模块对接契约与功能清单（给统一架构 / Codex）
 
+> 版本 v5.1 · 2026-08-27。P5 课程列表恢复卡片内“推荐”标签，已完成课程标题与辅助信息置灰；听力/口语按钮和“返回本周任务”扩大触控留白。推荐算法、完成事实和 formal/test 边界不变。
+
 > 版本 v5.0 · 2026-08-26。P5 普通 CloudBase 儿童入口由服务端 formal 会话写正式结果；完成集合只读取 `student_id=sherlock`、`data_kind=formal`、`status=completed`，并以首个 formal 未完成课程为推荐、显示其附近最多 5 课。`?mode=test` 只接受当前应用内已认证家长会话，仍不产生完成状态。Streamlit 已改造为只读迁移提示，不再创建课程会话或提交结果。
 
 > 版本 v4.2 · 2026-08-24。新增 CloudBase P2 test 适配层：复用 W01D39–W01D50 与现有音频，不改课程事实；服务端计分、幂等提交、订正和家长完整明细已接入，formal 仍关闭。
@@ -110,6 +112,7 @@ sherlock-missions/
 | 26 | W01D31–D35 与 S01D31–D35 同页对齐 4A M3U1 第32–36页；主内容约80%，已学旧坑复现约20%，禁止引入 M3U2 新词 | content/listening + content/speaking |
 | 27 | W01D36–D40 与 S01D36–D40 同页对齐 4A M3U2 第37–41页；主内容约90%，已学旧坑复现约10%，禁止引入 M3U3 量词购物内容；地址问答只使用教材虚构地址 | content/listening + content/speaking |
 | 28 | W01D41–D50 与 S01D41–D50 成对综合复习 M1U1–M3U2；W/S39–40 原样保留；01–38 公共 JSON/音频已清理，但正式结果、错题、订正、录音、私有库与 Git 历史不删除 | content + static/audio + tools/prune_public_courses.py |
+| 29 | PWA 课程卡在首个 formal 未完成课程显示“推荐”，已完成课标题置灰；按钮与返回入口满足 iPad 触控留白 | web/src/pages + web/src/styles.css |
 
 ### 计划中（听力模块侧）
 

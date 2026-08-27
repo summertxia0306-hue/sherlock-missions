@@ -245,8 +245,8 @@ export function ListeningPage({
         {message && <p className="notice" role="status">{message}</p>}
         <section className="course-list" aria-label="听力课程">
           {shownCourses.map((item) => (
-            <article className="course-row" key={item.course_id}>
-              <div><strong>{item.title}</strong><small>{item.course_id} · 第 {item.week} 周第 {item.day} 天</small></div>
+            <article className={`course-row${completedCourseIds.has(item.course_id) ? ' course-completed' : ''}${item.course_id === recommended?.course_id ? ' course-recommended' : ''}`} key={item.course_id}>
+              <div><div className="course-title-line"><strong>{item.title}</strong>{item.course_id === recommended?.course_id && <span className="recommendation-badge">推荐</span>}</div><small>{item.course_id} · 第 {item.week} 周第 {item.day} 天</small></div>
               <span className="course-state">{completedCourseIds.has(item.course_id) ? '已完成' : '未完成'}</span>
               <button type="button" disabled={!sessionToken || busy} onClick={() => startCourse(item.course_id)} aria-label={`开始 ${item.course_id}`}>开始</button>
             </article>

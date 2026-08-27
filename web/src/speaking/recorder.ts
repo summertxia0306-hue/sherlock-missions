@@ -49,18 +49,28 @@ export class SharedPcmRecorder implements PcmRecorder {
   private startedAt = 0
   private timer?: number
 
-  private healthyStream(): boolean {
-    return Boolean(this.stream?.getAudioTracks().some((track) => track.readyState === 'live' && !track.muted))
+  private releaseStream(): void {
+    this.stream?.getTracks().forEach((track) => track.stop())
+    this.stream = undefined
   }
 
   async start(onAutoStop: () => void, onCountdown?: (value: number) => void): Promise<void> {
     if (this.processor) throw new Error('RECORDER_BUSY')
-    if (!this.healthyStream()) {
-      this.stream?.getTracks().forEach((track) => track.stop())
-      this.stream = await navigator.mediaDevices.getUserMedia({ audio: { channelCount: 1, echoCancellation: false, noiseSuppression: false, autoGainControl: false } })
-    }
+    this.releaseStream()
+    // WebKit requires AudioContext creation/resume to begin inside the tap's
+    // user-activation stack. Do this before awaiting microphone permission.
     this.context ??= new AudioContext()
-    await this.context.resume()
+    const resume = this.context.resume()
+    const microphone = navigator.mediaDevices.getUserMedia({
+      audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true, autoGainControl: true }
+    })
+    try {
+      this.stream = await microphone
+      await resume
+    } catch (error) {
+      this.releaseStream()
+      throw error
+    }
     for (const value of [3, 2, 1]) {
       onCountdown?.(value)
       await new Promise((done) => window.setTimeout(done, 700))
@@ -82,16 +92,21 @@ export class SharedPcmRecorder implements PcmRecorder {
   async stop(): Promise<RecordedAudio> {
     if (!this.processor || !this.context) throw new Error('RECORDER_NOT_ACTIVE')
     if (this.timer) window.clearTimeout(this.timer)
-    this.source?.disconnect(); this.processor.disconnect(); this.mute?.disconnect(); this.processor.onaudioprocess = null
-    this.source = undefined; this.processor = undefined; this.mute = undefined
-    await this.context.suspend()
+    try {
+      this.source?.disconnect(); this.processor.disconnect(); this.mute?.disconnect(); this.processor.onaudioprocess = null
+    } finally {
+      this.source = undefined; this.processor = undefined; this.mute = undefined
+      await this.context.suspend().catch(() => undefined)
+      // A fresh stream per take avoids an iOS stream that remains "live" but
+      // records zeros after playback changes the device audio session.
+      this.releaseStream()
+    }
     const length = this.chunks.reduce((sum, chunk) => sum + chunk.length, 0)
     const joined = new Float32Array(length)
     let offset = 0
     for (const chunk of this.chunks) { joined.set(chunk, offset); offset += chunk.length }
     const peak = peakAmplitude(joined)
     if (peak < 0.01) {
-      this.stream?.getTracks().forEach((track) => track.stop()); this.stream = undefined
       throw new Error('SILENT_RECORDING')
     }
     const wav = new Blob([encodePcm16Wav(resampleTo16k(joined, this.sourceRate))], { type: 'audio/wav' })
@@ -100,8 +115,11 @@ export class SharedPcmRecorder implements PcmRecorder {
 
   release(): void {
     if (this.timer) window.clearTimeout(this.timer)
-    this.stream?.getTracks().forEach((track) => track.stop())
-    this.stream = undefined
+    this.source?.disconnect(); this.processor?.disconnect(); this.mute?.disconnect()
+    if (this.processor) this.processor.onaudioprocess = null
+    this.source = undefined; this.processor = undefined; this.mute = undefined
+    this.releaseStream()
+    void this.context?.suspend().catch(() => undefined)
   }
 }
 
