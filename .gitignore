@@ -25,3 +25,5 @@ cloudfunctions/score-speaking/coverage/
 .cloudbaserc.p3.*.json
 .cloudbaserc.p5.*.json
 .p5-env.*.tmp
+/archive/migration-evidence/
+/private/
