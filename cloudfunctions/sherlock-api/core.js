@@ -91,6 +91,10 @@ function tokenHash(token, hmacKey) {
   return crypto.createHmac('sha256', hmacKey).update(token).digest('hex')
 }
 
+function callerOwnerHash(callerId, hmacKey) {
+  return crypto.createHmac('sha256', hmacKey).update(`formal-caller:${callerId}`).digest('hex')
+}
+
 function createService(options) {
   const store = options.store
   const passwordHash = options.passwordHash
@@ -105,6 +109,20 @@ function createService(options) {
   const speakingScorer = options.speakingScorer
   const speakingRecordingUrl = options.speakingRecordingUrl
   const formalEnabled = options.formalEnabled === true
+
+  function ownershipFields(session, requestContext) {
+    return {
+      created_by_session: session.token_hash.slice(0, 16),
+      ...(session.data_kind === 'formal' ? { created_by_caller: callerOwnerHash(requestContext.callerId, hmacKey) } : {})
+    }
+  }
+
+  function belongsToSession(record, session, requestContext) {
+    if (session.data_kind === 'formal' && boundedString(record?.created_by_caller, 64, 64)) {
+      return record.created_by_caller === callerOwnerHash(requestContext.callerId, hmacKey)
+    }
+    return record?.created_by_session === session.token_hash.slice(0, 16)
+  }
 
   async function requireSession(event, requestContext, expectedKind) {
     if (!boundedString(hmacKey, 16, 512) || !boundedString(event.session_token, 1, 512)) {
@@ -220,7 +238,8 @@ function createService(options) {
     if (!boundedString(requestedId, 1, 80)) throw new ServiceError('INVALID_LISTENING_RESULT')
     const existing = await store.getResult(requestedId)
     if (existing) {
-      if (existing.created_by_session !== session.token_hash.slice(0, 16) || existing.module_type !== 'listening' || existing.data_kind !== session.data_kind) {
+      if (!belongsToSession(existing, session, requestContext) || existing.module_type !== 'listening'
+        || existing.data_kind !== session.data_kind || existing.course_id !== event.submission?.course_id) {
         throw new ServiceError('RESULT_ID_CONFLICT')
       }
       return {
@@ -241,7 +260,7 @@ function createService(options) {
       throw new ServiceError('INVALID_LISTENING_RESULT')
     }
     submitted.created_at = new Date(now())
-    submitted.created_by_session = session.token_hash.slice(0, 16)
+    Object.assign(submitted, ownershipFields(session, requestContext))
     await store.saveResult(submitted)
     await store.saveAudit({ action: `listening_${session.data_kind}_result_created`, caller_id: requestContext.callerId, result_id: submitted.result_id, occurred_at: new Date(now()), log_tag: 'sherlock-english' })
     return {
@@ -313,7 +332,7 @@ function createService(options) {
     const takeId = crypto.createHash('sha256').update(`${session.data_kind}:${request.result_id}:${request.course_id}:${request.question_id}:${request.attempt}`).digest('hex')
     const cached = typeof store.getSpeakingTake === 'function' ? await store.getSpeakingTake(takeId) : null
     if (cached) {
-      if (cached.created_by_session !== session.token_hash.slice(0, 16) || cached.data_kind !== session.data_kind) throw new ServiceError('RESULT_ID_CONFLICT')
+      if (!belongsToSession(cached, session, requestContext) || cached.data_kind !== session.data_kind) throw new ServiceError('RESULT_ID_CONFLICT')
       return { ...cached.response, idempotent: true }
     }
     if (typeof speakingScorer !== 'function') throw new ServiceError('SPEAKING_SCORE_UNAVAILABLE')
@@ -353,7 +372,7 @@ function createService(options) {
       can_skip: stars < 3 && request.attempt >= 3
     }
     if (typeof store.saveSpeakingTake === 'function') {
-      await store.saveSpeakingTake({ take_id: takeId, response, created_by_session: session.token_hash.slice(0, 16), created_at: new Date(now()), data_kind: session.data_kind })
+      await store.saveSpeakingTake({ take_id: takeId, response, ...ownershipFields(session, requestContext), created_at: new Date(now()), data_kind: session.data_kind })
     }
     return { ...response, idempotent: false }
   }
@@ -364,7 +383,8 @@ function createService(options) {
     if (!boundedString(requestedId, 1, 80)) throw new ServiceError('INVALID_SPEAKING_RESULT')
     const existing = await store.getResult(requestedId)
     if (existing) {
-      if (existing.created_by_session !== session.token_hash.slice(0, 16) || existing.module_type !== 'speaking' || existing.data_kind !== session.data_kind) throw new ServiceError('RESULT_ID_CONFLICT')
+      if (!belongsToSession(existing, session, requestContext) || existing.module_type !== 'speaking'
+        || existing.data_kind !== session.data_kind || existing.course_id !== event.submission?.course_id) throw new ServiceError('RESULT_ID_CONFLICT')
       return { ok: true, result_id: existing.result_id, data_kind: session.data_kind, formal_completion_eligible: session.data_kind === 'formal', idempotent: true }
     }
     let loaded
@@ -372,7 +392,7 @@ function createService(options) {
     let submitted
     try { submitted = buildSpeakingResult(loaded.course, event.submission, loaded.version, hmacKey, session.data_kind) } catch { throw new ServiceError('INVALID_SPEAKING_RESULT') }
     submitted.created_at = new Date(now())
-    submitted.created_by_session = session.token_hash.slice(0, 16)
+    Object.assign(submitted, ownershipFields(session, requestContext))
     await store.saveResult(submitted)
     await store.saveAudit({ action: `speaking_${session.data_kind}_result_created`, caller_id: requestContext.callerId, result_id: submitted.result_id, occurred_at: new Date(now()), log_tag: 'sherlock-english' })
     return { ok: true, result_id: submitted.result_id, data_kind: session.data_kind, formal_completion_eligible: session.data_kind === 'formal', idempotent: false }

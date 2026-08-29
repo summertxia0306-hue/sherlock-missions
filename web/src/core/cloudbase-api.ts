@@ -6,14 +6,14 @@ interface ApiErrorResult {
   error: { code: string; message: string }
 }
 
-interface ParentAuthResult {
+export interface ParentAuthResult {
   ok: true
   session_token: string
   expires_at: string
   data_kind: 'test'
 }
 
-interface ChildSessionResult {
+export interface ChildSessionResult {
   ok: true
   session_token: string
   expires_at: string
@@ -55,6 +55,28 @@ export interface SherlockApi {
   getSpeakingRecordingUrl(sessionToken: string, resultId: string, questionId: number, attempt: number): Promise<{ ok: true; url: string; expires_in: number }>
   listParentResults(sessionToken: string, filters: ParentResultFilters): Promise<ParentResultsResponse>
   getParentRecordingUrl(sessionToken: string, resultId: string, questionId: number, attempt: number): Promise<{ ok: true; url: string; expires_in: number }>
+}
+
+export class SherlockApiError extends Error {
+  readonly code: string
+
+  constructor(code: string) {
+    super(code)
+    this.name = 'SherlockApiError'
+    this.code = code
+  }
+}
+
+export function apiErrorCode(error: unknown): string {
+  if (error instanceof SherlockApiError) return error.code
+  if (error instanceof Error && /^[A-Z][A-Z0-9_]{1,79}$/.test(error.message)) return error.message
+  return ''
+}
+
+export function isNetworkFailure(error: unknown): boolean {
+  if (typeof navigator !== 'undefined' && navigator.onLine === false) return true
+  if (error instanceof TypeError) return true
+  return ['NETWORK_ERROR', 'CLOUDBASE_NETWORK_ERROR', 'NETWORK_TIMEOUT'].includes(apiErrorCode(error))
 }
 
 export interface SpeakingScoreRequest {
@@ -246,7 +268,7 @@ export function createCloudbaseApi(
     const response = await app.callFunction({ name: functionName, data })
     const result = response.result as T | ApiErrorResult
     if (typeof result === 'object' && result !== null && 'ok' in result && result.ok === false) {
-      throw new Error(result.error.code)
+      throw new SherlockApiError(result.error.code)
     }
     return result as T
   }

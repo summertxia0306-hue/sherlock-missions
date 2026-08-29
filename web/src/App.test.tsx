@@ -21,6 +21,27 @@ describe('P5 application shell', () => {
     expect(screen.queryByText('正在连接正式学习进度…')).not.toBeInTheDocument()
   })
 
+  it('renews a near-expiry formal session when the PWA returns from the background', async () => {
+    const startChildSession = vi.fn()
+      .mockResolvedValueOnce({
+        ok: true, session_token: 'formal-token-1', expires_at: new Date(Date.now() + 60_000).toISOString(), data_kind: 'formal'
+      })
+      .mockResolvedValueOnce({
+        ok: true, session_token: 'formal-token-2', expires_at: new Date(Date.now() + 7_200_000).toISOString(), data_kind: 'formal'
+      })
+    const service = {
+      authenticate: vi.fn(), submitResult: vi.fn(), health: vi.fn(), submitListeningResult: vi.fn(),
+      checkListeningCorrection: vi.fn(), listListeningTestResults: vi.fn(), ...speakingApi, startChildSession
+    }
+    render(<MemoryRouter><App api={service} /></MemoryRouter>)
+    await waitFor(() => expect(service.getFormalProgress).toHaveBeenCalledWith('formal-token-1'))
+
+    window.dispatchEvent(new Event('pageshow'))
+
+    await waitFor(() => expect(startChildSession).toHaveBeenCalledTimes(2))
+    expect(screen.queryByText(/自动恢复失败/)).not.toBeInTheDocument()
+  })
+
   it('shows safe formal connection failures and keeps direct test mode isolated', async () => {
     const disabled = { authenticate: vi.fn(), submitResult: vi.fn(), health: vi.fn(), submitListeningResult: vi.fn(), checkListeningCorrection: vi.fn(), listListeningTestResults: vi.fn(), ...speakingApi,
       startChildSession: vi.fn(async () => { throw new Error('FORMAL_DISABLED') }) }

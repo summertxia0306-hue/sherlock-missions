@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import type { SherlockApi } from '../core/cloudbase-api'
+import { apiErrorCode, isNetworkFailure, type SherlockApi } from '../core/cloudbase-api'
+import type { SessionRequestRunner } from '../core/formal-session'
 import { loadSpeakingCatalog, loadSpeakingCourse, resolveSpeakingAudioUrl, type SpeakingCatalog, type SpeakingCourse } from '../speaking/course'
 import { addScoredTake, buildSpeakingSubmission, createSpeakingSession, markSafetyPass, type SpeakingSession } from '../speaking/session'
 import { sharedPcmRecorder, type PcmRecorder, type RecordedAudio } from '../speaking/recorder'
@@ -16,21 +17,37 @@ async function blobBase64(blob: Blob): Promise<string> {
   return btoa(binary)
 }
 
-function scoreFailureMessage(code: string, dataKind: 'formal' | 'test'): string {
+export function scoreFailureMessage(code: string, dataKind: 'formal' | 'test'): string {
   if (code === 'SILENT_AUDIO') return '没有录到清楚的声音，请重新录。'
   if (code === 'INVALID_AUDIO') return '录音格式没有通过检查，请重新录。'
-  if (code === 'UNAUTHORIZED') return dataKind === 'formal' ? '正式会话已失效，请刷新页面后重试。' : '家长 TEST 会话已失效，请返回家长验收入口重新认证。'
+  if (code === 'UNAUTHORIZED' || code === 'FORMAL_SESSION_RECOVERY_FAILED') return dataKind === 'formal' ? '正式会话自动恢复失败，录音仍保留；联网后可再次评分。' : '家长 TEST 会话已失效，请返回家长验收入口重新认证。'
   if (code === 'COURSE_VERSION_MISMATCH') return '课程刚刚更新，请返回列表后重新进入。'
   if (code === 'RECORDING_UPLOAD_FAILED') return `评分已返回，但${dataKind === 'formal' ? '正式' : '测试'}录音保存失败；本次不计次数，请重试。`
   const diagnostic = code || 'NETWORK_OR_CLIENT'
   return `评分暂时没有完成。本次不计次数，录音仍保留，可再次评分。（诊断码：${diagnostic}）`
 }
 
+export function speakingScoreFailureMessage(error: unknown, dataKind: 'formal' | 'test'): string {
+  if (isNetworkFailure(error)) return '评分没有完成。当前网络不可用，本次不计次数，录音仍保留。'
+  return scoreFailureMessage(apiErrorCode(error) || 'SERVICE_ERROR', dataKind)
+}
+
+export function speakingSubmitFailureMessage(error: unknown, dataKind: 'formal' | 'test'): string {
+  const code = apiErrorCode(error)
+  if (dataKind === 'formal' && (code === 'UNAUTHORIZED' || code === 'FORMAL_SESSION_RECOVERY_FAILED')) {
+    return '正式会话自动恢复失败，全部口语过程仍保留；联网后可再次提交。'
+  }
+  if (dataKind === 'test' && code === 'UNAUTHORIZED') return '家长 TEST 会话已失效，请返回家长验收入口重新认证。'
+  if (isNetworkFailure(error)) return '提交没有完成。当前网络不可用，恢复联网后可再次提交。'
+  return `提交没有完成（诊断码：${code || 'SERVICE_ERROR'}）。全部口语过程仍保留，可再次提交。`
+}
+
 export function SpeakingPage({
   api, sessionToken, dataKind = 'test', completedCourseIds = new Set<string>(), onFormalCompleted = () => undefined,
-  loadCatalog = loadSpeakingCatalog, loadCourse = loadSpeakingCourse, recorder = sharedPcmRecorder
+  runSessionRequest, loadCatalog = loadSpeakingCatalog, loadCourse = loadSpeakingCourse, recorder = sharedPcmRecorder
 }: {
   api: SherlockApi; sessionToken: string; dataKind?: 'formal' | 'test'; completedCourseIds?: ReadonlySet<string>;
+  runSessionRequest?: SessionRequestRunner;
   onFormalCompleted?: (courseId: string) => void; loadCatalog?: () => Promise<SpeakingCatalog>; loadCourse?: (id: string) => Promise<SpeakingCourse>; recorder?: PcmRecorder
 }) {
   const [catalog, setCatalog] = useState<SpeakingCatalog>()
@@ -47,6 +64,10 @@ export function SpeakingPage({
   const [submitted, setSubmitted] = useState(false)
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const recordingUrlRef = useRef('')
+
+  function withSession<T>(request: (token: string) => Promise<T>, onRecovering?: () => void): Promise<T> {
+    return runSessionRequest ? runSessionRequest(request, { onRecovering }) : request(sessionToken)
+  }
 
   useEffect(() => { loadCatalog().then(setCatalog).catch(() => setMessage('口语课程目录暂时无法加载。')) }, [loadCatalog])
   useEffect(() => {
@@ -128,17 +149,20 @@ export function SpeakingPage({
     const attempt = (session.questions[String(question.id)]?.proofs.length || 0) + 1
     setActivity('scoring'); setMessage('正在评分，请稍等…')
     try {
-      const response = await api.scoreSpeakingTake(sessionToken, {
+      const request = {
         result_id: session.result_id, course_id: course.course_id, course_version: course.course_version,
         question_id: question.id, attempt, wav_base64: await blobBase64(recording.wav)
-      })
+      }
+      const response = await withSession(
+        (token) => api.scoreSpeakingTake(token, request),
+        () => setMessage('正式会话已失效，正在自动恢复；本题录音和已完成评分均已保留…')
+      )
       setSession(addScoredTake(session, question.id, response))
       replaceRecording()
       if (response.stars < 3) setDemoPlays((value) => ({ ...value, [String(question.id)]: 0 }))
       setMessage(response.child_feedback)
     } catch (error) {
-      const code = error instanceof Error ? error.message : ''
-      setMessage(scoreFailureMessage(code, dataKind))
+      setMessage(speakingScoreFailureMessage(error, dataKind))
     } finally { setActivity('idle') }
   }
 
@@ -161,11 +185,17 @@ export function SpeakingPage({
     if (!course || !session || activity !== 'idle') return
     setActivity('submitting')
     try {
-      const response = await api.submitSpeakingResult(sessionToken, buildSpeakingSubmission(session, course.course_version))
+      const submission = buildSpeakingSubmission(session, course.course_version)
+      const response = await withSession(
+        (token) => api.submitSpeakingResult(token, submission),
+        () => setMessage('正式会话已失效，正在自动恢复；全部评分、星数、proof 和录音引用均已保留…')
+      )
       setSubmitted(true); sessionStorage.removeItem(`sherlock-speaking-${dataKind}-${course.course_id}`)
       if (response.data_kind === 'formal') onFormalCompleted(course.course_id)
       setMessage(response.data_kind === 'formal' ? '正式结果已安全提交。' : 'TEST 结果已安全提交，不计正式完成。')
-    } catch { setMessage('提交没有完成。联网后可再次提交，不会重复写入。') }
+    } catch (error) {
+      setMessage(speakingSubmitFailureMessage(error, dataKind))
+    }
     finally { setActivity('idle') }
   }
 

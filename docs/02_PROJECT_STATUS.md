@@ -300,3 +300,20 @@ CloudBase 安全：发布前 family24 为体验版、2027-02-04 到期、超额�
 阻塞：BLOCKED_BY_ID_COMPAT；正式 schema、MP3、manifest、test 部署和 iPad 验收须等待 02 完成新 ID、音频路径、catalog 与推荐顺序兼容
 下一步：02 完成兼容后接入单一活动课程源，生成并校验 168 个 MP3，重新运行全套正式校验；每日 formal 开放仍由 00 按学校当天已教范围决定
 ```
+
+## 2026-08-29 A：formal 会话无损续期本地实现
+
+```text
+日期：2026-08-29
+阶段：P5 生产事故热修复 A / 已部署、待 iPad 真实 formal 验收
+事故根因：PWA 只在首次加载时创建约 7200 秒 formal 会话，后台恢复和临近过期不续期；服务端又把 listening result 与 speaking take/result 的幂等所有权绑定到会变化的 token，换 token 后可能误报 RESULT_ID_CONFLICT；听力还把业务错误统一显示成网络错误
+本地修复：新增仅供儿童 formal 使用的会话管理器，在临近过期、pageshow/visibilitychange 恢复和 UNAUTHORIZED 时单飞续期，原请求最多重试一次；家长 test 不接入自动续期；服务端的新 formal 结果/take 使用稳定 CloudBase caller 的 HMAC 所有权，同时保留旧 token 标识和历史行旧规则
+状态保留：自动重试沿用同一请求对象和 result_id；听力答案、播放次数、订正状态不重建；口语 take/attempt/proof/星数及录音引用不重建；响应丢失后的重复请求由服务端幂等返回
+错误呈现：formal 区分正在恢复与恢复失败；test 过期要求重新认证；只有离线或明确传输异常显示网络错误；其他服务端错误显示安全诊断码
+验证：Web 68/68，覆盖率 statements 84.63%、branches 78.94%、functions 80.45%、lines 89.98%；sherlock-api 40/40，覆盖率 lines 93.26%、branches 77.83%、functions 85.94%；score-speaking 12/12；Python 52/52；迁移/构建环境 Node 测试 10/10；TypeScript 与 production-mode build 通过
+生产发布：家长明确批准后于 2026-08-30 仅更新 sherlock-api 与 sherlock-english 静态托管；函数部署完成，PWA 352/352 文件上传成功，线上活动 bundle 由 index-C1VOY_sS.js 切换为 index-_vmlXHVO.js，并核验包含 formal 自动恢复与恢复失败提示
+部署后验证：health 仍为 stage=P5 / formal_enabled=true / writes=formal-and-test；无效 formal token 返回 UNAUTHORIZED；family24 仍为 family24-web-003 / SUCCESS / 11/11；体验版有效至 2027-02-04，超额付费关闭；发布前后剩余额度 2941.94 → 2939.16；Git 工作区无未提交改动（登记修订除外）
+数据边界：未调用生产学习写接口，未创建用于验收的 test/formal 学习记录；未修改 W01D49、S01D49 或任何历史结果/录音；家长 test 仍须密码登录且不接入自动续期
+回滚：函数代码与静态站点均可由 A 提交的父提交重新构建发布；若 iPad 出现无法进入、数据隔离异常、重复结果或正式流程回归，立即停止 W01D50/S01D50 并执行回滚
+下一步：用真实 iPad 从后台恢复后分别完成 W01D50、S01D50，核对无刷新续期、同一 result_id、单条正式结果和完整口语录音；家长确认 A 通过前不进入 B
+```

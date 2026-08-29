@@ -86,6 +86,33 @@ describe('P2 listening API', () => {
     assert.equal(store.results.get(response.result_id).data_kind, 'formal')
   })
 
+  it('replays one formal result after token renewal for the same caller but rejects another caller', async () => {
+    const store = memoryStore()
+    let tokenNumber = 0
+    const service = createService({
+      store, passwordHash: 'unused', hmacKey: '1234567890abcdef', formalEnabled: true,
+      randomToken: () => `formal-token-${++tokenNumber}`,
+      courseProvider: { get: () => ({ course: fixtureCourse(), version: 'version1' }) }
+    })
+    const firstSession = await service.handle({ action: 'startChildSession' }, { callerId: 'child' })
+    const first = await service.handle({
+      action: 'submitListeningResult', session_token: firstSession.session_token, submission: submission()
+    }, { callerId: 'child' })
+    const renewedSession = await service.handle({ action: 'startChildSession' }, { callerId: 'child' })
+    const replay = await service.handle({
+      action: 'submitListeningResult', session_token: renewedSession.session_token, submission: submission()
+    }, { callerId: 'child' })
+
+    assert.equal(first.result_id, replay.result_id)
+    assert.equal(replay.idempotent, true)
+    assert.equal(store.results.size, 1)
+
+    const otherSession = await service.handle({ action: 'startChildSession' }, { callerId: 'other-child' })
+    await assert.rejects(service.handle({
+      action: 'submitListeningResult', session_token: otherSession.session_token, submission: submission()
+    }, { callerId: 'other-child' }), /RESULT_ID_CONFLICT/)
+  })
+
   it('keeps correction one blind and reveals transcript only after it is wrong', async () => {
     const { store, service, token } = await authenticatedService()
     await service.handle({ action: 'submitListeningResult', session_token: token, submission: submission() }, { callerId: 'parent' })

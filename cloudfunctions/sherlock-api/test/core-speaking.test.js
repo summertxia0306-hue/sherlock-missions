@@ -170,4 +170,77 @@ describe('P3 speaking API', () => {
     assert.equal(stored.data_kind, 'formal')
     assert.equal(stored.question_results[0].recording_records[0].data_kind, 'formal')
   })
+
+  it('reuses a scored formal take and final result after renewal for the same caller', async () => {
+    let calls = 0
+    const scorer = async (request) => {
+      calls += 1
+      return {
+        ...request, total: 80, accuracy: 79, fluency: 78, integrity: 81, is_rejected: false, words: [],
+        recording_path: `sherlock-english/formal/formal/S01D39/${request.result_id}/q${request.question_id}-take${request.attempt}.wav`
+      }
+    }
+    const store = memoryStore()
+    let tokenNumber = 0
+    const service = createService({
+      store, passwordHash: 'unused', hmacKey: '1234567890abcdef', formalEnabled: true,
+      randomToken: () => `formal-token-${++tokenNumber}`,
+      speakingCourseProvider: { get: () => ({ course: fixtureCourse(), version: 'version1' }) },
+      speakingScorer: scorer,
+      speakingRecordingUrl: async () => 'https://private.example.test/recording.wav'
+    })
+    const firstSession = await service.handle({ action: 'startChildSession' }, { callerId: 'child' })
+    const request = {
+      result_id: '123e4567-e89b-42d3-a456-426614174000', course_id: 'S01D39', course_version: 'version1',
+      question_id: 1, attempt: 1, wav_base64: Buffer.alloc(5000).toString('base64')
+    }
+    const firstTake = await service.handle({ action: 'scoreSpeakingTake', session_token: firstSession.session_token, request }, { callerId: 'child' })
+    const renewedSession = await service.handle({ action: 'startChildSession' }, { callerId: 'child' })
+    const replayedTake = await service.handle({ action: 'scoreSpeakingTake', session_token: renewedSession.session_token, request }, { callerId: 'child' })
+    assert.equal(replayedTake.proof, firstTake.proof)
+    assert.equal(replayedTake.idempotent, true)
+    assert.equal(calls, 1)
+
+    const proofs = [firstTake.proof]
+    for (let questionId = 2; questionId <= 8; questionId += 1) {
+      const scored = await service.handle({
+        action: 'scoreSpeakingTake', session_token: renewedSession.session_token,
+        request: { ...request, question_id: questionId }
+      }, { callerId: 'child' })
+      proofs.push(scored.proof)
+    }
+    const submission = {
+      result_id: request.result_id, student_id: 'sherlock', course_id: 'S01D39', course_version: 'version1',
+      started_at: '2026-08-24T10:00:00.000Z', submitted_at: '2026-08-24T10:02:00.000Z', duration_seconds: 120,
+      questions: proofs.map((proof, index) => ({ id: index + 1, proofs: [proof], passed_by_safety: false }))
+    }
+    const firstResult = await service.handle({ action: 'submitSpeakingResult', session_token: renewedSession.session_token, submission }, { callerId: 'child' })
+    const finalSession = await service.handle({ action: 'startChildSession' }, { callerId: 'child' })
+    const replayedResult = await service.handle({ action: 'submitSpeakingResult', session_token: finalSession.session_token, submission }, { callerId: 'child' })
+    assert.equal(replayedResult.result_id, firstResult.result_id)
+    assert.equal(replayedResult.idempotent, true)
+    assert.equal(store.results.size, 1)
+  })
+
+  it('keeps parent test take ownership bound to the authenticated test token', async () => {
+    const scorer = async (request) => ({ ...request, total: 80, is_rejected: false, words: [], recording_path: 'private.wav' })
+    const store = memoryStore()
+    let tokenNumber = 0
+    const passwordHash = await hashPassword('right-password', '00112233445566778899aabbccddeeff')
+    const service = createService({
+      store, passwordHash, hmacKey: '1234567890abcdef', randomToken: () => `test-token-${++tokenNumber}`,
+      speakingCourseProvider: { get: () => ({ course: fixtureCourse(), version: 'version1' }) },
+      speakingScorer: scorer
+    })
+    const callerId = 'parent'
+    const firstAuth = await service.handle({ action: 'parentAuth', password: 'right-password' }, { callerId })
+    const token = firstAuth.session_token
+    const request = { result_id: 'r-test', course_id: 'S01D39', course_version: 'version1', question_id: 1, attempt: 1, wav_base64: Buffer.alloc(5000).toString('base64') }
+    await service.handle({ action: 'scoreSpeakingTake', session_token: token, request }, { callerId })
+    const secondAuth = await service.handle({ action: 'parentAuth', password: 'right-password' }, { callerId })
+    await assert.rejects(
+      service.handle({ action: 'scoreSpeakingTake', session_token: secondAuth.session_token, request }, { callerId }),
+      /RESULT_ID_CONFLICT/
+    )
+  })
 })

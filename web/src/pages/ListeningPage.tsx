@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import type { SherlockApi } from '../core/cloudbase-api'
+import { apiErrorCode, isNetworkFailure, type SherlockApi } from '../core/cloudbase-api'
+import type { SessionRequestRunner } from '../core/formal-session'
 import {
   loadListeningCatalog,
   loadListeningCourse,
@@ -24,6 +25,7 @@ import {
 interface ListeningPageProps {
   api: SherlockApi
   sessionToken: string
+  runSessionRequest?: SessionRequestRunner
   dataKind?: 'formal' | 'test'
   completedCourseIds?: ReadonlySet<string>
   onFormalCompleted?: (courseId: string) => void
@@ -42,6 +44,20 @@ function questionOptions(question: ListeningQuestion): Array<{ label: string; va
 }
 
 type ActiveAudio = { id: string; phase: 'loading' | 'playing' } | null
+
+export function listeningRequestFailureMessage(
+  error: unknown,
+  dataKind: 'formal' | 'test',
+  action: '提交' | '订正'
+): string {
+  const code = apiErrorCode(error)
+  if (dataKind === 'formal' && (code === 'UNAUTHORIZED' || code === 'FORMAL_SESSION_RECOVERY_FAILED')) {
+    return `正式会话自动恢复失败，${action === '提交' ? '答案和 result_id' : '订正状态'}仍保留；联网后请再点一次。`
+  }
+  if (dataKind === 'test' && code === 'UNAUTHORIZED') return '家长 TEST 会话已失效，请返回家长验收入口重新认证。'
+  if (isNetworkFailure(error)) return `${action}没有完成。当前网络不可用，恢复联网后可再次点击。`
+  return `${action}没有完成（诊断码：${code || 'SERVICE_ERROR'}）。当前答题状态仍保留，可再次尝试。`
+}
 
 function LimitedAudioButton({ audioId, maxPlays, used, onPlay, activeAudio, label = '播放录音' }: {
   audioId: string; maxPlays: number; used: number; onPlay: () => void; activeAudio: ActiveAudio; label?: string
@@ -73,7 +89,7 @@ function QuestionChoices({ question, value, onChange }: {
 }
 
 export function ListeningPage({
-  api, sessionToken, dataKind = 'test', completedCourseIds = new Set<string>(), onFormalCompleted = () => undefined,
+  api, sessionToken, runSessionRequest, dataKind = 'test', completedCourseIds = new Set<string>(), onFormalCompleted = () => undefined,
   loadCatalog = loadListeningCatalog, loadCourse = loadListeningCourse
 }: ListeningPageProps) {
   const [catalog, setCatalog] = useState<ListeningCatalog>()
@@ -91,6 +107,10 @@ export function ListeningPage({
   const [activeAudio, setActiveAudio] = useState<ActiveAudio>(null)
   const activeAudioRef = useRef<HTMLAudioElement | null>(null)
   const audioTimeoutRef = useRef<number | null>(null)
+
+  function withSession<T>(request: (token: string) => Promise<T>, onRecovering?: () => void): Promise<T> {
+    return runSessionRequest ? runSessionRequest(request, { onRecovering }) : request(sessionToken)
+  }
 
   function clearAudioTimeout() {
     if (audioTimeoutRef.current !== null) window.clearTimeout(audioTimeoutRef.current)
@@ -191,16 +211,20 @@ export function ListeningPage({
     setBusy(true)
     setMessage('')
     try {
-      const response = await api.submitListeningResult(sessionToken, buildListeningSubmission(session, course.course_version, new Date().toISOString(), {
+      const submission = buildListeningSubmission(session, course.course_version, new Date().toISOString(), {
         platform: navigator.platform || 'unknown', user_agent: navigator.userAgent
-      }))
+      })
+      const response = await withSession(
+        (token) => api.submitListeningResult(token, submission),
+        () => setMessage('正式会话已失效，正在自动恢复；答案和 result_id 均已保留…')
+      )
       setWrongIds(response.wrong_question_ids)
       setCorrection(createCorrectionState(response.wrong_question_ids))
       if (response.data_kind === 'formal') onFormalCompleted(course.course_id)
       const kindLabel = response.data_kind === 'formal' ? '正式' : 'TEST'
       setMessage(response.idempotent ? `已恢复此前提交的同一条${kindLabel}结果。` : `${kindLabel}结果已安全提交。`)
-    } catch {
-      setMessage('提交没有完成。网络恢复后可再次点击，系统会沿用同一 result_id 防止重复。')
+    } catch (error) {
+      setMessage(listeningRequestFailureMessage(error, dataKind, '提交'))
     } finally {
       setBusy(false)
     }
@@ -220,11 +244,14 @@ export function ListeningPage({
     setBusy(true)
     try {
       const attempt = correction.phase === 'try1' ? 1 : 2
-      const response = await api.checkListeningCorrection(sessionToken, session.result_id, questionId, attempt, correctionPick)
+      const response = await withSession(
+        (token) => api.checkListeningCorrection(token, session.result_id, questionId, attempt, correctionPick),
+        () => setMessage('正式会话已失效，正在自动恢复；订正状态仍保留…')
+      )
       setCorrection(resolveCorrectionResponse(correction, response))
       setCorrectionPick(undefined)
-    } catch {
-      setMessage('订正校验暂时失败，请重试。')
+    } catch (error) {
+      setMessage(listeningRequestFailureMessage(error, dataKind, '订正'))
     } finally {
       setBusy(false)
     }

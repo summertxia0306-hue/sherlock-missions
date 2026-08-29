@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, Route, Routes, useLocation } from 'react-router-dom'
 import type { SherlockApi } from './core/cloudbase-api'
 import { cloudbaseApi } from './core/cloudbase-api'
+import { createFormalSessionManager, type SessionRequestRunner } from './core/formal-session'
 import { PwaStatus } from './components/PwaStatus'
 import { HomePage } from './pages/HomePage'
 import { ListeningPage } from './pages/ListeningPage'
@@ -15,11 +16,12 @@ export function mergeCompleted(
 }
 
 function LearningRoutes({
-  api, parentSessionToken, formalSessionToken, completed, formalMessage, markCompleted, onParentAuthenticated
+  api, parentSessionToken, formalSessionToken, runFormalRequest, completed, formalMessage, markCompleted, onParentAuthenticated
 }: {
   api: SherlockApi
   parentSessionToken: string
   formalSessionToken: string
+  runFormalRequest: SessionRequestRunner
   completed: { listening: string[]; speaking: string[] }
   formalMessage: string
   markCompleted: (module: 'listening' | 'speaking', courseId: string) => void
@@ -39,8 +41,8 @@ function LearningRoutes({
     {!testMode && formalMessage && <p className="notice warning" role="status">{formalMessage}</p>}
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/listening" element={<ListeningPage api={api} sessionToken={sessionToken} dataKind={dataKind} completedCourseIds={listeningCompleted} onFormalCompleted={markCompleted.bind(null, 'listening')} />} />
-      <Route path="/speaking" element={<SpeakingPage api={api} sessionToken={sessionToken} dataKind={dataKind} completedCourseIds={speakingCompleted} onFormalCompleted={markCompleted.bind(null, 'speaking')} />} />
+      <Route path="/listening" element={<ListeningPage api={api} sessionToken={sessionToken} runSessionRequest={testMode ? undefined : runFormalRequest} dataKind={dataKind} completedCourseIds={listeningCompleted} onFormalCompleted={markCompleted.bind(null, 'listening')} />} />
+      <Route path="/speaking" element={<SpeakingPage api={api} sessionToken={sessionToken} runSessionRequest={testMode ? undefined : runFormalRequest} dataKind={dataKind} completedCourseIds={speakingCompleted} onFormalCompleted={markCompleted.bind(null, 'speaking')} />} />
       <Route path="/parent" element={<ParentPage api={api} onAuthenticated={onParentAuthenticated} />} />
       <Route path="*" element={<main className="center-card"><h1>页面不存在</h1><Link to="/">返回首页</Link></main>} />
     </Routes>
@@ -52,13 +54,32 @@ export function App({ api = cloudbaseApi }: { api?: SherlockApi }) {
   const [formalSessionToken, setFormalSessionToken] = useState('')
   const [completed, setCompleted] = useState({ listening: [] as string[], speaking: [] as string[] })
   const [formalMessage, setFormalMessage] = useState('正在连接正式学习进度…')
+  const formalSession = useMemo(() => createFormalSessionManager(api, {
+    onSession: (session) => setFormalSessionToken(session.session_token)
+  }), [api])
+
+  const runFormalRequest = useCallback<SessionRequestRunner>(async (request, options) => {
+    try {
+      const result = await formalSession.run(request, {
+        onRecovering: () => {
+          setFormalMessage('正式会话正在自动恢复，当前学习状态仍保留…')
+          options?.onRecovering?.()
+        }
+      })
+      setFormalMessage('')
+      return result
+    } catch (error) {
+      if (error instanceof Error && error.message === 'FORMAL_SESSION_RECOVERY_FAILED') {
+        setFormalMessage('正式会话自动恢复失败，当前学习状态仍保留；联网后可再次操作。')
+      }
+      throw error
+    }
+  }, [formalSession])
 
   useEffect(() => {
     let active = true
-    api.startChildSession().then(async (session) => {
-      const progress = await api.getFormalProgress(session.session_token)
+    runFormalRequest((token) => api.getFormalProgress(token)).then((progress) => {
       if (!active) return
-      setFormalSessionToken(session.session_token)
       setCompleted(progress.completed_course_ids)
       setFormalMessage('')
     }).catch((error: unknown) => {
@@ -67,7 +88,28 @@ export function App({ api = cloudbaseApi }: { api?: SherlockApi }) {
       setFormalMessage(code === 'FORMAL_DISABLED' ? '正式入口尚未开放。' : '正式进度暂时无法连接，请稍后刷新。')
     })
     return () => { active = false }
-  }, [api])
+  }, [api, runFormalRequest])
+
+  useEffect(() => {
+    let active = true
+    const refresh = () => {
+      if (!active || document.visibilityState === 'hidden') return
+      void formalSession.ensureFresh({
+        onRecovering: () => setFormalMessage('正式会话正在自动恢复，当前学习状态仍保留…')
+      }).then(() => {
+        if (active) setFormalMessage('')
+      }).catch(() => {
+        if (active) setFormalMessage('正式会话自动恢复失败，当前学习状态仍保留；联网后可再次操作。')
+      })
+    }
+    document.addEventListener('visibilitychange', refresh)
+    window.addEventListener('pageshow', refresh)
+    return () => {
+      active = false
+      document.removeEventListener('visibilitychange', refresh)
+      window.removeEventListener('pageshow', refresh)
+    }
+  }, [formalSession])
 
   function markCompleted(module: 'listening' | 'speaking', courseId: string) {
     setCompleted((value) => mergeCompleted(value, module, courseId))
@@ -77,7 +119,7 @@ export function App({ api = cloudbaseApi }: { api?: SherlockApi }) {
     <div className="app-shell">
       <PwaStatus />
       <LearningRoutes api={api} parentSessionToken={parentSessionToken} formalSessionToken={formalSessionToken}
-        completed={completed} formalMessage={formalMessage} markCompleted={markCompleted} onParentAuthenticated={setParentSessionToken} />
+        runFormalRequest={runFormalRequest} completed={completed} formalMessage={formalMessage} markCompleted={markCompleted} onParentAuthenticated={setParentSessionToken} />
     </div>
   )
 }
