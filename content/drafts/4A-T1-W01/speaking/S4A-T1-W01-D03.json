@@ -1,0 +1,83 @@
+{
+  "course_id": "S4A-T1-W01-D03",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D03",
+  "pair_id": "4A-T1-W01-D03",
+  "title": "四上·第1周·周四｜人物信息·连续对话（口语）",
+  "week": 1,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 8,
+  "scope": "4A M1U1 p2-p3",
+  "difficulty": "L2",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D03/q01.mp3",
+      "tag": "A主线·p3·双句介绍",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "text": "This is my friend. His name is Danny."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D03/q02.mp3",
+      "tag": "A主线·p3·年龄能力整合",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "text": "He's nine. He can ride a bicycle."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D03/q03.mp3",
+      "tag": "A主线·p3·双句介绍",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "text": "This is my friend. Her name is Tracy."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D03/q04.mp3",
+      "tag": "A主线·p3·年龄能力整合",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "text": "She's thirteen. She can skip."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D03/q05.mp3",
+      "tag": "A主线·p2·人物年龄整合",
+      "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+      "text": "Sally is Kitty's sister. She's twelve."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D03/q06.mp3",
+      "tag": "C微调·p2·人物信息对应",
+      "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p2，不作未掌握结论",
+      "text": "Paul is Kitty's brother. He's only six."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D03/q07.mp3",
+      "tag": "A主线·p3·自主问答",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "question": "What can Danny do?",
+      "expected": "He can ride a bicycle.",
+      "hint": "用英语说：他会骑自行车。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D03/q08.mp3",
+      "tag": "A主线·p3·自主问答",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "question": "What can Tracy do?",
+      "expected": "She can skip.",
+      "hint": "用英语说：她会跳绳。"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "course_id": "S4A-T1-W01-D05",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D05",
+  "pair_id": "4A-T1-W01-D05",
+  "title": "四上·第1周·周六｜人物介绍·综合迁移（口语）",
+  "week": 1,
+  "day": 5,
+  "course_type": "training",
+  "est_minutes": 8,
+  "scope": "4A M1U1 p2-p3",
+  "difficulty": "L3",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D05/q01.mp3",
+      "tag": "A主线·p2·较长自我介绍",
+      "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+      "text": "Good morning. My name is Kitty, and I'm Peter's classmate."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D05/q02.mp3",
+      "tag": "A主线·p2·较长人物介绍",
+      "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+      "text": "This is my sister, Sally. She's twelve."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D05/q03.mp3",
+      "tag": "A主线·p2·较长人物介绍",
+      "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+      "text": "This is my brother, Paul. He's only six."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D05/q04.mp3",
+      "tag": "A主线·p3·三信息介绍",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "text": "This is my friend, Danny. He's nine, and he can ride a bicycle."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D05/q05.mp3",
+      "tag": "A主线·p3·三信息介绍",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "text": "This is my friend, Tracy. She's thirteen, and she can skip."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D05/q06.mp3",
+      "tag": "C微调·p3·his-her稳定输出",
+      "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p3，不作未掌握结论",
+      "text": "Her name is Tracy, and his name is Danny."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D05/q07.mp3",
+      "tag": "A主线·p3·陌生提示综合输出",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "question": "Tell me about Danny.",
+      "expected": "His name is Danny. He's nine, and he can ride a bicycle.",
+      "hint": "用英语说：他叫 Danny，九岁，会骑自行车。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D05/q08.mp3",
+      "tag": "A主线·p3·陌生提示综合输出",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "question": "Tell me about Tracy.",
+      "expected": "Her name is Tracy. She's thirteen, and she can skip.",
+      "hint": "用英语说：她叫 Tracy，十三岁，会跳绳。"
+    }
+  ]
+}

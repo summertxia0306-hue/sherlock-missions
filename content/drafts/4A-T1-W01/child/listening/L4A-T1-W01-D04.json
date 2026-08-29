@@ -1,0 +1,264 @@
+{
+  "course_id": "L4A-T1-W01-D04",
+  "course_version": "f5dea8c16d362711",
+  "title": "四上·第1周·周五｜相似信息辨别（听力）",
+  "week": 1,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 22,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D04/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "thirteen",
+            "fourteen",
+            "fifteen"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "fifteen",
+            "fourteen",
+            "sixteen"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "fourteen",
+            "sixteen",
+            "fifteen"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "his",
+            "my",
+            "her"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q04.mp3"
+        },
+        {
+          "id": 5,
+          "type": "word_choice",
+          "options": [
+            "six",
+            "sixteen",
+            "thirteen"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "Paul is twelve.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "Kitty is Peter's classmate.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "Danny can skip.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q08.mp3"
+        },
+        {
+          "id": 9,
+          "type": "sentence_judge",
+          "display": "Tracy is thirteen and she can skip.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "sentence_judge",
+          "display": "His name is Danny.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 1,
+      "questions": [
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "Her name is Tracy.",
+            "His name is Danny.",
+            "Her name is Sally."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "She's thirteen.",
+            "He's nine.",
+            "She's twelve."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q12.mp3"
+        },
+        {
+          "id": 13,
+          "type": "question_response",
+          "options": [
+            "He can ride a bicycle.",
+            "She can skip.",
+            "He's nine."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "question_response",
+          "options": [
+            "Paul.",
+            "Peter.",
+            "Danny."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "question_response",
+          "options": [
+            "She's twelve.",
+            "He's six.",
+            "She's thirteen."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "Ride a bicycle.",
+            "Skip.",
+            "Go to the park."
+          ],
+          "question_text": "What can Danny do?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q16.mp3"
+        },
+        {
+          "id": 17,
+          "type": "dialogue_choice",
+          "options": [
+            "Thirteen.",
+            "Twelve.",
+            "Sixteen."
+          ],
+          "question_text": "How old is Tracy?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q17.mp3"
+        },
+        {
+          "id": 18,
+          "type": "dialogue_choice",
+          "options": [
+            "Sally.",
+            "Paul.",
+            "Kitty."
+          ],
+          "question_text": "Who is twelve?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q18.mp3"
+        },
+        {
+          "id": 19,
+          "type": "dialogue_choice",
+          "options": [
+            "Tracy.",
+            "Danny.",
+            "Peter."
+          ],
+          "question_text": "Who can skip?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q19.mp3"
+        },
+        {
+          "id": 20,
+          "type": "dialogue_choice",
+          "options": [
+            "To the park.",
+            "To meet Tracy.",
+            "To ride a bicycle."
+          ],
+          "question_text": "Where are Peter and Kitty going?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D04/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D04/p01.mp3",
+      "questions": [
+        {
+          "id": 21,
+          "type": "passage_judge",
+          "statement": "Peter and Kitty are classmates."
+        },
+        {
+          "id": 22,
+          "type": "passage_judge",
+          "statement": "Paul is twelve."
+        },
+        {
+          "id": 23,
+          "type": "passage_judge",
+          "statement": "Danny is Kitty's friend."
+        },
+        {
+          "id": 24,
+          "type": "passage_judge",
+          "statement": "Tracy is thirteen."
+        },
+        {
+          "id": 25,
+          "type": "passage_judge",
+          "statement": "Danny can ride a bicycle."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,563 @@
+{
+  "course_id": "L4A-T1-W01-D06",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D06",
+  "pair_id": "4A-T1-W01-D06",
+  "title": "四上·第1周·周日｜M1U1第一周综合（听力）",
+  "week": 1,
+  "day": 6,
+  "course_type": "weekly_test",
+  "est_minutes": 30,
+  "scope": "4A M1U1 p2-p3综合",
+  "difficulty": "L3",
+  "scoring": {
+    "per_question": 4,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D06/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p3·周综合数字",
+          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "options": [
+            "fourteen",
+            "fifteen",
+            "sixteen"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "fifteen"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p3·听音选词数字辨别",
+          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p3，不作未掌握结论",
+          "options": [
+            "thirteen",
+            "fourteen",
+            "twelve"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "thirteen"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p2·人物关系",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "options": [
+            "classmate",
+            "brother",
+            "friend"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "brother"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p3·能力短语",
+          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "options": [
+            "skip",
+            "ride a bicycle",
+            "go to the park"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "ride a bicycle"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q04.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p2-p3·物主词",
+          "parent_note": "教材PDF p2-p3 主线或不增加新知识的同语境迁移",
+          "options": [
+            "his",
+            "my",
+            "her"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "her"
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p2·周综合人物年龄",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "display": "Paul is Kitty's brother, and he's only six.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Paul is Kitty's brother, and he's only six."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "C微调·p3·数字与人物能力对应",
+          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p3，不作未掌握结论",
+          "display": "Tracy is twelve and can ride a bicycle.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Tracy is thirteen and can skip."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p3·复合信息",
+          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "display": "Danny is Peter's friend, and he can ride a bicycle.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Danny is Peter's friend, and he can ride a bicycle."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q08.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p2·跨句人物关系",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "display": "Sally is Peter's classmate.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Sally is Kitty's sister, and Kitty is Peter's classmate."
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q09.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p2·同义语序",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "display": "Peter and Kitty are going to the park.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Kitty and Peter are going to the park."
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "C微调·p2-p3·听问句选答语与跨句整合",
+          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p2-p3，不作未掌握结论",
+          "options": [
+            "Her name is Tracy, and she's thirteen.",
+            "His name is Danny, and he's nine.",
+            "Her name is Sally, and she's six."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What's her name, and how old is she?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p3·人物能力",
+          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "options": [
+            "Danny can.",
+            "Tracy can.",
+            "Sally can."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who can ride a bicycle?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q12.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p2·人物年龄关系",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "options": [
+            "Sally. She's twelve.",
+            "Tracy. She's thirteen.",
+            "Kitty. She's nine."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who is Kitty's sister, and how old is she?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q13.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p3·年龄能力整合",
+          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "options": [
+            "She can skip.",
+            "He can ride a bicycle.",
+            "She can go to the park."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Tracy is thirteen. What can she do?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q14.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p2·人物关系",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "options": [
+            "Kitty.",
+            "Paul.",
+            "Danny."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who is Peter's classmate?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p2·周综合连续对话",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "question_text": "Who is six?",
+          "options": [
+            "Paul.",
+            "Sally.",
+            "Kitty."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "This is my sister Sally."
+            ],
+            [
+              "m",
+              "How old is she?"
+            ],
+            [
+              "f",
+              "She's twelve."
+            ],
+            [
+              "m",
+              "And Paul?"
+            ],
+            [
+              "f",
+              "He's my brother. He's six."
+            ],
+            [
+              "n",
+              "Question: Who is six?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q16.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "C微调·p3·人物信息对应",
+          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p3，不作未掌握结论",
+          "question_text": "Who can skip?",
+          "options": [
+            "Tracy.",
+            "Danny.",
+            "Peter."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "My friend Danny is nine."
+            ],
+            [
+              "f",
+              "Can he skip?"
+            ],
+            [
+              "m",
+              "No. He can ride a bicycle."
+            ],
+            [
+              "f",
+              "Tracy can skip. She's thirteen."
+            ],
+            [
+              "n",
+              "Question: Who can skip?"
+            ]
+          ],
+          "id": 17,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q17.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p2·周综合见面介绍",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "question_text": "Who says, This is my sister Sally?",
+          "options": [
+            "Kitty.",
+            "Peter.",
+            "Danny."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Good morning, Peter."
+            ],
+            [
+              "m",
+              "Good morning, Kitty."
+            ],
+            [
+              "f",
+              "This is my sister Sally and my brother Paul."
+            ],
+            [
+              "m",
+              "Hello, Sally. Hello, Paul."
+            ],
+            [
+              "n",
+              "Question: Who says, This is my sister Sally?"
+            ]
+          ],
+          "id": 18,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q18.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p2-p3·跨句综合",
+          "parent_note": "教材PDF p2-p3 主线或不增加新知识的同语境迁移",
+          "question_text": "Which statement is correct?",
+          "options": [
+            "Danny can ride a bicycle.",
+            "Tracy can ride a bicycle.",
+            "Kitty can skip."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Peter and Kitty are classmates."
+            ],
+            [
+              "f",
+              "Danny is Peter's friend."
+            ],
+            [
+              "m",
+              "Tracy is Kitty's friend."
+            ],
+            [
+              "f",
+              "Danny can ride a bicycle, and Tracy can skip."
+            ],
+            [
+              "n",
+              "Question: Which statement is correct?"
+            ]
+          ],
+          "id": 19,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q19.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p2-p3·数字整合",
+          "parent_note": "教材PDF p2-p3 主线或不增加新知识的同语境迁移",
+          "question_text": "Who is thirteen?",
+          "options": [
+            "Tracy.",
+            "Sally.",
+            "Danny."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Sally is twelve."
+            ],
+            [
+              "m",
+              "Tracy is thirteen."
+            ],
+            [
+              "f",
+              "Danny is nine."
+            ],
+            [
+              "m",
+              "Paul is only six."
+            ],
+            [
+              "n",
+              "Question: Who is thirteen?"
+            ]
+          ],
+          "id": 20,
+          "audio": "static/audio/listening/L4A-T1-W01-D06/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p2·周综合场景",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "statement": "Peter and Kitty are going to the park.",
+          "answer": "true",
+          "id": 21
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p2·跨句数字对应",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "statement": "Sally is six.",
+          "answer": "false",
+          "id": 22
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p2-p3·人物对应",
+          "parent_note": "教材PDF p2-p3 主线或不增加新知识的同语境迁移",
+          "statement": "Danny is Peter's friend.",
+          "answer": "true",
+          "id": 23
+        },
+        {
+          "type": "passage_judge",
+          "tag": "C微调·p3·数字人物能力对应",
+          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p3，不作未掌握结论",
+          "statement": "Tracy is thirteen and can skip.",
+          "answer": "true",
+          "id": 24
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p2-p3·跨句人物关系",
+          "parent_note": "教材PDF p2-p3 主线或不增加新知识的同语境迁移",
+          "statement": "Peter and Tracy are classmates.",
+          "answer": "false",
+          "id": 25
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D06/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Peter and Kitty are going to the park. Sally is Kitty's sister, and Paul is Kitty's brother. Sally is twelve, and Paul is only six. Danny is Peter's friend. Danny is nine and can ride a bicycle. Tracy is Kitty's friend. Tracy is thirteen and can skip. Peter and Kitty are classmates."
+        ]
+      ]
+    }
+  ]
+}

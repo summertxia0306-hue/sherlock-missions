@@ -1,0 +1,430 @@
+{
+  "course_id": "L4A-T1-W01-D01",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D01",
+  "pair_id": "4A-T1-W01-D01",
+  "title": "四上·第1周·周二｜认识新同学·基础（听力）",
+  "week": 1,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 17,
+  "scope": "4A M1U1 p2",
+  "difficulty": "L1",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D01/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p2·姓名直接识别",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "options": [
+            "Sally",
+            "Kitty",
+            "Tracy"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Sally"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D01/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p2·姓名直接识别",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "options": [
+            "Peter",
+            "Paul",
+            "Danny"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Paul"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D01/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p2·人物关系",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "options": [
+            "sister",
+            "brother",
+            "classmate"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "sister"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D01/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p2·人物信息对应",
+          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p2，不作未掌握结论",
+          "options": [
+            "classmate",
+            "brother",
+            "sister"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "brother"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D01/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p2·基础介绍",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "display": "This is my sister.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "This is my sister."
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D01/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "C微调·p2·his-her辨别",
+          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p2，不作未掌握结论",
+          "display": "Her name is Sally.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Her name is Sally."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D01/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "C微调·p2·his-her与姓名对应",
+          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p2，不作未掌握结论",
+          "display": "His name is Peter.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "His name is Paul."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D01/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p2·人物关系",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "display": "Kitty is Peter's classmate.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Kitty is Peter's classmate."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D01/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p2·人物关系",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "options": [
+            "She's Kitty's sister.",
+            "He's Kitty's brother.",
+            "She's Peter's classmate."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who is Sally?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D01/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p2·听问句选答语与her",
+          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p2，不作未掌握结论",
+          "options": [
+            "Her name is Sally.",
+            "His name is Paul.",
+            "My name is Kitty."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What's her name?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D01/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p2·年龄",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "options": [
+            "She's twelve.",
+            "He's six.",
+            "She's nine."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "How old is Sally?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D01/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p2·人物关系",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "options": [
+            "He's Kitty's brother.",
+            "She's Kitty's sister.",
+            "He's Peter's classmate."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who is Paul?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D01/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p2·见面问候",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "question_text": "Who says good morning to Peter?",
+          "options": [
+            "Kitty.",
+            "Sally.",
+            "Paul."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Good morning, Peter."
+            ],
+            [
+              "m",
+              "Good morning, Kitty."
+            ],
+            [
+              "n",
+              "Question: Who says good morning to Peter?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D01/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p2·介绍家人",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "question_text": "What is the sister's name?",
+          "options": [
+            "Sally.",
+            "Kitty.",
+            "Tracy."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "This is my sister."
+            ],
+            [
+              "f",
+              "Her name is Sally."
+            ],
+            [
+              "n",
+              "Question: What is the sister's name?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D01/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p2·年龄",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "question_text": "How old is Paul?",
+          "options": [
+            "Six.",
+            "Twelve.",
+            "Nine."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "This is my brother."
+            ],
+            [
+              "f",
+              "His name is Paul. He's only six."
+            ],
+            [
+              "n",
+              "Question: How old is Paul?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D01/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p2·人物信息对应",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "question_text": "Who is Kitty's classmate?",
+          "options": [
+            "Peter.",
+            "Paul.",
+            "Sally."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "My name is Kitty."
+            ],
+            [
+              "f",
+              "I'm Peter's classmate."
+            ],
+            [
+              "n",
+              "Question: Who is Kitty's classmate?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D01/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p2·短文取信息",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "statement": "Sally is Kitty's sister.",
+          "answer": "true",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p2·年龄对应",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "statement": "Sally is six.",
+          "answer": "false",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p2·人物关系",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "statement": "Paul is Kitty's brother.",
+          "answer": "true",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p2·人物对应",
+          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "statement": "Kitty is Paul's classmate.",
+          "answer": "false",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D01/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "This is Kitty. Sally is her sister. Sally is twelve. Paul is her brother. He is only six. Kitty is Peter's classmate. They are going to the park."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "course_id": "S4A-T1-W01-D06",
+  "course_version": "77a08f80041cbac2",
+  "title": "四上·第1周·周日｜M1U1第一周综合（口语）",
+  "week": 1,
+  "day": 6,
+  "course_type": "weekly_review",
+  "est_minutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Peter and Kitty are classmates, and they are going to the park.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D06/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "Sally is Kitty's sister. She's twelve.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D06/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "Paul is Kitty's brother. He's only six.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D06/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Danny is Peter's friend. He's nine and can ride a bicycle.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D06/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "Tracy is Kitty's friend. She's thirteen and can skip.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D06/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "His name is Danny, and her name is Tracy.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D06/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用英语说：这是 Danny，他九岁，会骑自行车。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D06/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用英语说：这是 Tracy，她十三岁，会跳绳。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D06/q08.mp3"
+    }
+  ]
+}

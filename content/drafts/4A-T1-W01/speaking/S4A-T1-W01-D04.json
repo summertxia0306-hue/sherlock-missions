@@ -1,0 +1,83 @@
+{
+  "course_id": "S4A-T1-W01-D04",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D04",
+  "pair_id": "4A-T1-W01-D04",
+  "title": "四上·第1周·周五｜相似信息辨别（口语）",
+  "week": 1,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 8,
+  "scope": "4A M1U1 p2-p3",
+  "difficulty": "L2",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D04/q01.mp3",
+      "tag": "A主线·p2·人物关系迁移",
+      "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+      "text": "Kitty is Peter's classmate."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D04/q02.mp3",
+      "tag": "A主线·p2·复合句",
+      "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+      "text": "Sally is Kitty's sister, and she's twelve."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D04/q03.mp3",
+      "tag": "A主线·p2·复合句",
+      "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+      "text": "Paul is Kitty's brother, and he's only six."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D04/q04.mp3",
+      "tag": "A主线·p3·复合句",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "text": "Danny is nine, and he can ride a bicycle."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D04/q05.mp3",
+      "tag": "A主线·p3·复合句",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "text": "Tracy is thirteen, and she can skip."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D04/q06.mp3",
+      "tag": "C微调·p3·his-her稳定输出",
+      "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p3，不作未掌握结论",
+      "text": "This is my friend. His name is Danny."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D04/q07.mp3",
+      "tag": "A主线·p3·人物信息问答",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "question": "What can Peter's friend Danny do?",
+      "expected": "He can ride a bicycle.",
+      "hint": "用英语说：他会骑自行车。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D04/q08.mp3",
+      "tag": "A主线·p3·人物信息问答",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "question": "What can Kitty's friend Tracy do?",
+      "expected": "She can skip.",
+      "hint": "用英语说：她会跳绳。"
+    }
+  ]
+}

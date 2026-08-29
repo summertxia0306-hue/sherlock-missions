@@ -1,0 +1,59 @@
+{
+  "course_id": "S4A-T1-W01-D01",
+  "course_version": "254559c3c03cb11f",
+  "title": "四上·第1周·周二｜认识新同学·基础（口语）",
+  "week": 1,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Good morning, Peter.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D01/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "Good morning, Kitty.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D01/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "This is my sister.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D01/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Her name is Sally.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D01/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "This is my brother.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D01/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "His name is Paul.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D01/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用英语说：她的名字叫 Sally。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D01/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用英语说：她十二岁。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D01/q08.mp3"
+    }
+  ]
+}

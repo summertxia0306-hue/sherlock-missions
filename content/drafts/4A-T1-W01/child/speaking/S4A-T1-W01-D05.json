@@ -1,0 +1,59 @@
+{
+  "course_id": "S4A-T1-W01-D05",
+  "course_version": "1888c4bce53858cc",
+  "title": "四上·第1周·周六｜人物介绍·综合迁移（口语）",
+  "week": 1,
+  "day": 5,
+  "course_type": "training",
+  "est_minutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Good morning. My name is Kitty, and I'm Peter's classmate.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D05/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "This is my sister, Sally. She's twelve.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D05/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "This is my brother, Paul. He's only six.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D05/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "This is my friend, Danny. He's nine, and he can ride a bicycle.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D05/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "This is my friend, Tracy. She's thirteen, and she can skip.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D05/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Her name is Tracy, and his name is Danny.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D05/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用英语说：他叫 Danny，九岁，会骑自行车。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D05/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用英语说：她叫 Tracy，十三岁，会跳绳。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D05/q08.mp3"
+    }
+  ]
+}

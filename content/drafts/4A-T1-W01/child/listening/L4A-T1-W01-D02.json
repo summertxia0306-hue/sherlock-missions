@@ -1,0 +1,222 @@
+{
+  "course_id": "L4A-T1-W01-D02",
+  "course_version": "30bcda30c3355966",
+  "title": "四上·第1周·周三｜介绍朋友·数字与能力（听力）",
+  "week": 1,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 17,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D02/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "eleven",
+            "twelve",
+            "thirteen"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D02/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "thirteen",
+            "twelve",
+            "fourteen"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D02/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "fourteen",
+            "fifteen",
+            "thirteen"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D02/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "six",
+            "sixteen",
+            "fifteen"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D02/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "This is my friend.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D02/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "Her name is Danny.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D02/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "Danny is nine.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D02/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "Tracy can ride a bicycle.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D02/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "He can ride a bicycle.",
+            "She can skip.",
+            "He is nine."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D02/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "She's thirteen.",
+            "He's nine.",
+            "She's twelve."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D02/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "His name is Danny.",
+            "Her name is Tracy.",
+            "My name is Peter."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D02/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "She can skip.",
+            "He can ride a bicycle.",
+            "She's thirteen."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D02/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "options": [
+            "Eleven.",
+            "Twelve.",
+            "Thirteen."
+          ],
+          "question_text": "How old is Paul?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D02/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "options": [
+            "Ride a bicycle.",
+            "Skip.",
+            "Go to the park."
+          ],
+          "question_text": "What can Danny do?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D02/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "options": [
+            "Thirteen.",
+            "Twelve.",
+            "Sixteen."
+          ],
+          "question_text": "How old is Tracy?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D02/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "Tracy.",
+            "Danny.",
+            "Peter."
+          ],
+          "question_text": "Who can skip?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D02/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D02/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "Tracy is Kitty's friend."
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "Danny is Kitty's friend."
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "Tracy can skip."
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "Danny can skip."
+        }
+      ]
+    }
+  ]
+}

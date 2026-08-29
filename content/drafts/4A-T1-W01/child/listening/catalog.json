@@ -1,0 +1,56 @@
+[
+  {
+    "course_id": "L4A-T1-W01-D01",
+    "course_version": "7a7fbc43a4133242",
+    "title": "四上·第1周·周二｜认识新同学·基础（听力）",
+    "course_type": "training",
+    "week": 1,
+    "day": 1,
+    "visible": false
+  },
+  {
+    "course_id": "L4A-T1-W01-D02",
+    "course_version": "30bcda30c3355966",
+    "title": "四上·第1周·周三｜介绍朋友·数字与能力（听力）",
+    "course_type": "training",
+    "week": 1,
+    "day": 2,
+    "visible": false
+  },
+  {
+    "course_id": "L4A-T1-W01-D03",
+    "course_version": "8490012b475fcd79",
+    "title": "四上·第1周·周四｜人物信息·连续对话（听力）",
+    "course_type": "training",
+    "week": 1,
+    "day": 3,
+    "visible": false
+  },
+  {
+    "course_id": "L4A-T1-W01-D04",
+    "course_version": "f5dea8c16d362711",
+    "title": "四上·第1周·周五｜相似信息辨别（听力）",
+    "course_type": "training",
+    "week": 1,
+    "day": 4,
+    "visible": false
+  },
+  {
+    "course_id": "L4A-T1-W01-D05",
+    "course_version": "fbb6ab6679312d8e",
+    "title": "四上·第1周·周六｜人物介绍·综合迁移（听力）",
+    "course_type": "training",
+    "week": 1,
+    "day": 5,
+    "visible": false
+  },
+  {
+    "course_id": "L4A-T1-W01-D06",
+    "course_version": "e758c1940650081b",
+    "title": "四上·第1周·周日｜M1U1第一周综合（听力）",
+    "course_type": "weekly_test",
+    "week": 1,
+    "day": 6,
+    "visible": false
+  }
+]

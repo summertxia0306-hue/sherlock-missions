@@ -1,0 +1,83 @@
+{
+  "course_id": "S4A-T1-W01-D02",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D02",
+  "pair_id": "4A-T1-W01-D02",
+  "title": "四上·第1周·周三｜介绍朋友·数字与能力（口语）",
+  "week": 1,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 8,
+  "scope": "4A M1U1 p2-p3",
+  "difficulty": "L1",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D02/q01.mp3",
+      "tag": "A主线·p3·数字11-13",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "text": "Eleven, twelve, thirteen."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D02/q02.mp3",
+      "tag": "A主线·p3·数字14-16",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "text": "Fourteen, fifteen, sixteen."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D02/q03.mp3",
+      "tag": "A主线·p3·介绍朋友",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "text": "This is my friend."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D02/q04.mp3",
+      "tag": "C微调·p3·his-her稳定输出",
+      "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p3，不作未掌握结论",
+      "text": "His name is Danny."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D02/q05.mp3",
+      "tag": "A主线·p3·能力表达",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "text": "He can ride a bicycle."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D02/q06.mp3",
+      "tag": "A主线·p3·能力表达",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "text": "She can skip."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D02/q07.mp3",
+      "tag": "A主线·p3·固定答案问答",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "question": "What's her name?",
+      "expected": "Her name is Tracy.",
+      "hint": "用英语说：她的名字叫 Tracy。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D02/q08.mp3",
+      "tag": "A主线·p3·固定答案问答",
+      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+      "question": "How old is Tracy?",
+      "expected": "She's thirteen.",
+      "hint": "用英语说：她十三岁。"
+    }
+  ]
+}
