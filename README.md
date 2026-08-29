@@ -13,8 +13,8 @@
 
 ## 当前状态
 
-- 日期：2026-08-28
-- 阶段：P5 上线切换与验收完整通过；CloudBase PWA 为唯一正式入口，Streamlit 保持只读
+- 日期：2026-08-29
+- 阶段：P5 上线切换与验收完整通过；P6 第一周课程设计已获家长确认，待 01/02 实施
 - 新项目根目录：`D:\ObsidianVaults\Education\Sherlock\English-Learning`
 - 切换目标：CloudBase 原生 PWA 成为唯一正式入口，Streamlit 仅保留只读迁移提示
 - 当前唯一开发根：`D:\ObsidianVaults\Education\Sherlock\English-Learning`
