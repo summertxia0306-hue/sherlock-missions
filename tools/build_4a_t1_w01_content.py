@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 """Build the approved 4A T1 W01 content-only draft package.
 
-This script intentionally writes under content/drafts. The active PWA and cloud
-asset pipelines still accept only the legacy summer IDs; moving these files into
-the active course directories belongs to window 02 after ID compatibility lands.
+This script writes the governed draft package. Window 02 promotes the same
+approved parent JSON into the single active source with publication_status=test.
 """
 from __future__ import annotations
 
@@ -503,6 +502,7 @@ def build_listening(day):
         "weekly_batch_id": BATCH,
         "study_pack": pair_id,
         "pair_id": pair_id,
+        "publication_status": "test",
         "title": meta["title"] + "（听力）",
         "week": 1,
         "day": day,
@@ -540,6 +540,7 @@ def build_speaking(day):
         "weekly_batch_id": BATCH,
         "study_pack": pair_id,
         "pair_id": pair_id,
+        "publication_status": "test",
         "title": meta["title"] + "（口语）",
         "week": 1,
         "day": day,
@@ -576,6 +577,8 @@ def child_listening(course):
 
     return {
         "course_id": course["course_id"],
+        "pair_id": course["pair_id"],
+        "study_pack": course["study_pack"],
         "course_version": listening_version(course),
         "title": course["title"],
         "week": course["week"],
@@ -611,6 +614,8 @@ def child_listening(course):
 def child_speaking(course):
     return {
         "course_id": course["course_id"],
+        "pair_id": course["pair_id"],
+        "study_pack": course["study_pack"],
         "course_version": speaking_version(course),
         "title": course["title"],
         "week": course["week"],
@@ -685,8 +690,8 @@ def build_audio_plan(listening_courses, speaking_courses):
             })
     return {
         "weekly_batch_id": BATCH,
-        "generation_status": "BLOCKED_BY_ID_COMPAT",
-        "reason": "正式音频脚本和manifest同步链仍限制旧W01Dxx/S01Dxx编号；01不得修改02核心兼容文件。",
+        "generation_status": "READY_TO_GENERATE",
+        "reason": "02兼容层已允许新旧编号并保持新课程为test；音频生成后仍不得直接开放formal。",
         "expected_listening_outputs": 120,
         "expected_speaking_outputs": 48,
         "expected_total_outputs": 168,
@@ -720,8 +725,8 @@ def build_study_packs(listening_courses, speaking_courses):
         })
     return {
         "weekly_batch_id": BATCH,
-        "publication_status": "BLOCKED_BY_ID_COMPAT",
-        "publication_note": "本包是01内容草案，不在活动课程目录，不会自动产生可见课程或学习记录。",
+        "publication_status": "READY_FOR_TEST",
+        "publication_note": "本包可同步到唯一活动课程源，但publication_status保持test，不会进入formal推荐或正式学习记录。",
         "study_packs": packs,
     }
 
@@ -835,6 +840,7 @@ def main():
             "course_id": course["course_id"], "course_version": child["course_version"],
             "title": course["title"], "course_type": course["course_type"],
             "week": course["week"], "day": course["day"], "visible": False,
+            "pair_id": course["pair_id"], "study_pack": course["study_pack"],
         })
     for course in speaking_courses:
         child = child_speaking(course)
@@ -843,6 +849,7 @@ def main():
             "course_id": course["course_id"], "course_version": child["course_version"],
             "title": course["title"], "course_type": course["course_type"],
             "week": course["week"], "day": course["day"], "visible": False,
+            "pair_id": course["pair_id"], "study_pack": course["study_pack"],
         })
     json_write(CHILD_LISTENING_OUT / "catalog.json", listening_catalog)
     json_write(CHILD_SPEAKING_OUT / "catalog.json", speaking_catalog)

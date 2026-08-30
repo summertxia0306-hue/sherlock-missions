@@ -98,10 +98,15 @@ describe('P3 speaking service contract', () => {
     }, 'version1', '1234567890abcdef'))
   })
 
-  it('loads the 12 retained speaking courses with six repeat and two QA questions', () => {
+  it('loads 12 retained plus 6 hidden term speaking courses with safe structure', () => {
     const provider = createFileSpeakingCourseProvider()
-    const ids = provider.catalog().map((item) => item.course_id)
-    assert.deepEqual(ids, Array.from({ length: 12 }, (_, index) => `S01D${index + 39}`))
+    const catalog = provider.catalog()
+    const ids = catalog.map((item) => item.course_id)
+    assert.deepEqual(ids, [
+      ...Array.from({ length: 12 }, (_, index) => `S01D${index + 39}`),
+      ...Array.from({ length: 6 }, (_, index) => `S4A-T1-W01-D0${index + 1}`)
+    ])
+    assert.equal(catalog.filter((item) => item.visible === false).length, 6)
     for (const id of ids) {
       const loaded = provider.get(id)
       assert.equal(loaded.course.questions.filter((item) => item.type === 'repeat').length, 6)

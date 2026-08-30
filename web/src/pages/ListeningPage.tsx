@@ -171,8 +171,8 @@ export function ListeningPage({
     if (session) sessionStorage.setItem(`sherlock-listening-${dataKind}-${session.course_id}`, JSON.stringify(session))
   }, [dataKind, session])
 
-  const shownCourses = catalog?.window(completedCourseIds, 5) || []
-  const recommended = catalog?.firstFormalIncomplete(completedCourseIds)
+  const shownCourses = catalog ? (dataKind === 'test' ? catalog.testCourses() : catalog.window(completedCourseIds, 5)) : []
+  const recommended = dataKind === 'formal' ? catalog?.firstFormalIncomplete(completedCourseIds) : undefined
   const allQuestions = useMemo(() => course?.sections.flatMap((section) => section.questions) || [], [course])
   const allAnswered = Boolean(session && allQuestions.length && allQuestions.every((question) => session.answers[String(question.id)] !== undefined))
 

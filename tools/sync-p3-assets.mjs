@@ -29,7 +29,7 @@ async function recreate(target) {
 
 async function main() {
   const manifest = JSON.parse(await readFile(join(sourceAudio, 'manifest.json'), 'utf8'))
-  const files = (await readdir(sourceContent)).filter((name) => /^S01D(?:39|4\d|50)\.json$/.test(name)).sort()
+  const files = (await readdir(sourceContent)).filter((name) => /^(?:S\d{2}D\d{2}|S[1-9][A-Z]-T\d{1,2}-W\d{2}-D\d{2})\.json$/.test(name)).sort()
   await recreate(functionContent)
   if (!functionOnly) { await recreate(webContent); await recreate(webAudio) }
   const catalog = []
@@ -44,7 +44,13 @@ async function main() {
     if (!functionOnly) {
       const child = sanitizeSpeakingCourse(course, version)
       await writeFile(join(webContent, file), `${JSON.stringify(child, null, 2)}\n`, 'utf8')
-      catalog.push({ course_id: course.course_id, course_version: version, title: course.title, course_type: course.course_type, week: course.week, day: course.day, visible: true })
+      catalog.push({
+        course_id: course.course_id, course_version: version, title: course.title,
+        course_type: course.course_type, week: course.week, day: course.day,
+        visible: course.publication_status !== 'test',
+        ...(course.pair_id ? { pair_id: course.pair_id } : {}),
+        ...(course.study_pack ? { study_pack: course.study_pack } : {})
+      })
       publicManifest.courses[course.course_id] = {}
       for (const [repoPath, hash] of Object.entries(assets)) {
         const rel = repoPath.replace(/^static\/audio\/speaking\//, '')

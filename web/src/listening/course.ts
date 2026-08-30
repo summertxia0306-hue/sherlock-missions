@@ -1,6 +1,12 @@
 import { z } from 'zod'
+import { courseOrder, isCourseId, isPairId, pairIdForCourse } from '../core/course-id'
 
-const audioAssetSchema = z.string().regex(/^audio\/listening\/[A-Z0-9]+\/(?:hello|q\d{2}|p\d{2})\.mp3$/)
+const listeningIdSchema = z.string().refine((value) => isCourseId(value, 'listening'), 'invalid listening course id')
+const pairIdSchema = z.string().refine(isPairId, 'invalid study pair id')
+const audioAssetSchema = z.string().refine((value) => {
+  const match = /^audio\/listening\/([^/]+)\/(?:hello|q\d{2}|p\d{2})\.mp3$/.exec(value)
+  return Boolean(match && isCourseId(match[1], 'listening'))
+}, 'invalid listening audio asset')
 
 const choiceQuestionSchema = z.object({
   id: z.number().int().positive(),
@@ -47,7 +53,9 @@ const sectionSchema = z.object({
 })
 
 export const listeningCourseSchema = z.object({
-  course_id: z.string().regex(/^W\d{2}D\d{2}$/),
+  course_id: listeningIdSchema,
+  pair_id: pairIdSchema.optional(),
+  study_pack: pairIdSchema.optional(),
   course_version: z.string().min(8).max(64),
   title: z.string().min(1).max(160),
   week: z.number().int().positive(),
@@ -56,13 +64,20 @@ export const listeningCourseSchema = z.object({
   est_minutes: z.number().int().positive().max(120).default(20),
   test_audio_asset: audioAssetSchema,
   sections: z.array(sectionSchema).length(5)
-}).strict()
+}).strict().superRefine((course, context) => {
+  const expected = pairIdForCourse(course.course_id)
+  if (expected && (course.pair_id !== expected || course.study_pack !== expected)) {
+    context.addIssue({ code: 'custom', message: 'term course must match pair_id and study_pack' })
+  }
+})
 
 export type ListeningCourse = z.infer<typeof listeningCourseSchema>
 export type ListeningQuestion = z.infer<typeof listeningQuestionSchema>
 
 const catalogEntrySchema = z.object({
-  course_id: z.string().regex(/^W\d{2}D\d{2}$/),
+  course_id: listeningIdSchema,
+  pair_id: pairIdSchema.optional(),
+  study_pack: pairIdSchema.optional(),
   course_version: z.string().min(1).max(64),
   title: z.string().min(1).max(160),
   course_type: z.enum(['diagnostic', 'training', 'weekly_test']),
@@ -75,6 +90,7 @@ export type ListeningCatalogEntry = z.infer<typeof catalogEntrySchema>
 
 export interface ListeningCatalog {
   courses: readonly ListeningCatalogEntry[]
+  testCourses(): ListeningCatalogEntry[]
   firstFormalIncomplete(formalCompleted: ReadonlySet<string>): ListeningCatalogEntry | undefined
   window(formalCompleted: ReadonlySet<string>, limit?: number): ListeningCatalogEntry[]
 }
@@ -84,11 +100,12 @@ export function parseListeningCourse(input: unknown): ListeningCourse {
 }
 
 export function parseListeningCatalog(input: unknown): ListeningCatalog {
-  const courses = z.array(catalogEntrySchema).parse(input)
-    .filter((course) => course.visible)
-    .sort((left, right) => left.course_id.localeCompare(right.course_id))
+  const allCourses = z.array(catalogEntrySchema).parse(input)
+    .sort((left, right) => courseOrder(left.course_id, right.course_id))
+  const courses = allCourses.filter((course) => course.visible)
   return {
     courses,
+    testCourses: () => [...allCourses],
     firstFormalIncomplete(formalCompleted) {
       return courses.find((course) => !formalCompleted.has(course.course_id))
     },
@@ -116,7 +133,7 @@ export async function loadListeningCatalog(fetcher: typeof fetch = fetch): Promi
 }
 
 export async function loadListeningCourse(courseId: string, fetcher: typeof fetch = fetch): Promise<ListeningCourse> {
-  if (!/^W\d{2}D\d{2}$/.test(courseId)) throw new Error('INVALID_COURSE_ID')
+  if (!isCourseId(courseId, 'listening')) throw new Error('INVALID_COURSE_ID')
   const response = await fetcher(`${import.meta.env.BASE_URL}content/listening/${courseId}.json`)
   if (!response.ok) throw new Error('LISTENING_COURSE_UNAVAILABLE')
   return parseListeningCourse(await response.json())

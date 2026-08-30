@@ -9,6 +9,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BATCH_ROOT = os.path.join(ROOT, "content", "drafts", "4A-T1-W01")
 LISTENING_ROOT = os.path.join(BATCH_ROOT, "listening")
 SPEAKING_ROOT = os.path.join(BATCH_ROOT, "speaking")
+ACTIVE_LISTENING_ROOT = os.path.join(ROOT, "content", "listening")
+ACTIVE_SPEAKING_ROOT = os.path.join(ROOT, "content", "speaking")
 
 LISTENING_COUNTS = [20, 20, 20, 25, 25, 25]
 JSON_DIFFICULTIES = ["L1", "L1", "L2", "L2", "L3", "L3"]
@@ -206,7 +208,7 @@ class FirstWeekContentTests(unittest.TestCase):
     def test_study_pack_and_audio_generation_plan_match_courses(self):
         packs = load_json(os.path.join(BATCH_ROOT, "study-packs.json"))
         audio_plan = load_json(os.path.join(BATCH_ROOT, "audio-generation-plan.json"))
-        self.assertEqual("BLOCKED_BY_ID_COMPAT", packs["publication_status"])
+        self.assertEqual("READY_FOR_TEST", packs["publication_status"])
         self.assertEqual(PLANNED_DIFFICULTIES, [pack["planned_difficulty"] for pack in packs["study_packs"]])
         self.assertEqual(6, len(packs["study_packs"]))
         expected_audio = set()
@@ -224,7 +226,7 @@ class FirstWeekContentTests(unittest.TestCase):
         planned_audio = {item["path"] for item in audio_plan["items"]}
         self.assertEqual(expected_audio, planned_audio)
         self.assertEqual(168, len(planned_audio))
-        self.assertEqual("BLOCKED_BY_ID_COMPAT", audio_plan["generation_status"])
+        self.assertEqual("READY_TO_GENERATE", audio_plan["generation_status"])
 
     def test_no_sensitive_markers_in_deliverables(self):
         paths = [listening_path(day) for day in range(1, 7)] + [speaking_path(day) for day in range(1, 7)]
@@ -252,7 +254,23 @@ class FirstWeekContentTests(unittest.TestCase):
                 with self.subTest(module=module, course=entry["course_id"]):
                     self.assertFalse(nested_keys(child) & forbidden)
                     self.assertNotIn("weekly_batch_id", child)
-                    self.assertNotIn("pair_id", child)
+                    self.assertEqual(entry["pair_id"], child["pair_id"])
+                    self.assertEqual(entry["study_pack"], child["study_pack"])
+
+    def test_promoted_courses_are_test_only_and_all_168_audio_files_are_manifested(self):
+        listening_manifest = load_json(os.path.join(ROOT, "static", "audio", "listening", "manifest.json"))["courses"]
+        speaking_manifest = load_json(os.path.join(ROOT, "static", "audio", "speaking", "manifest.json"))["courses"]
+        planned = load_json(os.path.join(BATCH_ROOT, "audio-generation-plan.json"))["items"]
+        self.assertEqual(168, len(planned))
+        for item in planned:
+            with self.subTest(path=item["path"]):
+                active_root = ACTIVE_LISTENING_ROOT if item["module"] == "listening" else ACTIVE_SPEAKING_ROOT
+                course = load_json(os.path.join(active_root, item["course_id"] + ".json"))
+                self.assertEqual("test", course["publication_status"])
+                self.assertTrue(os.path.isfile(os.path.join(ROOT, item["path"])))
+                self.assertGreater(os.path.getsize(os.path.join(ROOT, item["path"])), 0)
+                manifest = listening_manifest if item["module"] == "listening" else speaking_manifest
+                self.assertIn(item["path"], manifest[item["course_id"]])
 
     def test_mapping_and_parent_documents_cover_all_six_pairs(self):
         docs_root = os.path.join(ROOT, "docs", "course-batches")

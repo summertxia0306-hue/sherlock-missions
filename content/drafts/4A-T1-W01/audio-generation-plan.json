@@ -1,7 +1,7 @@
 {
   "weekly_batch_id": "4A-T1-W01",
-  "generation_status": "BLOCKED_BY_ID_COMPAT",
-  "reason": "正式音频脚本和manifest同步链仍限制旧W01Dxx/S01Dxx编号；01不得修改02核心兼容文件。",
+  "generation_status": "READY_TO_GENERATE",
+  "reason": "02兼容层已允许新旧编号并保持新课程为test；音频生成后仍不得直接开放formal。",
   "expected_listening_outputs": 120,
   "expected_speaking_outputs": 48,
   "expected_total_outputs": 168,

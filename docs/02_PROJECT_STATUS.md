@@ -1,7 +1,7 @@
 # PROJECT STATUS
 
-> 最后更新：2026-08-29
-> 当前阶段：P5 上线切换与验收完整通过；P6 第一周 12 门课程内容草案已完成，等待 02 新编号兼容、音频生成与 test 验收；未生产发布
+> 最后更新：2026-08-30
+> 当前阶段：A formal 会话续期热修复已部署并转入自然使用观察；P6/B 新编号兼容与第一周 12 门课程 test 部署已完成，课程对儿童 formal 保持不可见且不可写，等待 00/家长按学校进度批准正式开放
 
 ## 当前事实
 
@@ -11,7 +11,7 @@
 - P2 Git 基线：`954c02400a69ad7aed22574baa742500dfc15d1a`；P3 独立提交由本记录所在的 `main` 提交承载并推送。
 - 当前远端：`https://github.com/summertxia0306-hue/sherlock-missions.git`。
 - 原仓库 770 个跟踪文件均已迁入；根 README 同名冲突以治理 README 为主，旧 README 原样归档到 `docs/legacy-streamlit/README_streamlit_legacy.md`。
-- 当前公开课程：听力和口语各 12 个 JSON，共 24 个；成品 MP3 312 个，fragments MP3 380 个。
+- 当前单一活动课程源：听力和口语各 18 个 JSON，其中旧课各 12 门继续 formal 可见，新学期各 6 门为隐藏 test；成品 MP3 480 个，fragments MP3 580 个。
 - 当前唯一正式入口已切换为 CloudBase；Streamlit 真实浏览器渲染确认仅保留只读迁移提示，不再接受课程、家长测试或学习记录提交。
 - CloudBase `family24` 在 P5 切换前后实时核验仍为体验版，到期 `2027-02-04 23:59:59`，超额付费关闭；当前周期 `2026-08-04` 至 `2026-09-04`，切换部署前 3000 点中已用 27.13 点、剩余 2972.87 点。
 - P1 已创建隔离资源：Event 云函数 `sherlock-api`、4 个 `ADMINONLY` 的 `sherlock_*` 集合、`sherlock-english/test/README.txt` 存储标记和前端 `publish_key`；匿名登录仅对 `sherlock-api` 放行，其他函数保留原匿名禁用规则。
@@ -29,7 +29,7 @@
 - 2026-08-28 已将 Sherlock 根目录的 8 个 P0/P4/P5 英语迁移快照、staging 和 artifacts 保持原名集中移入 `archive/migration-evidence/`；共 3,870 个文件、256,350,412 字节、4 个嵌套 Git，移动前后逐项一致。`D:\ObsidianVaults\Education\Sherlock` 根目录现只保留活跃 `English-Learning` 与 `Math`。
 - 2026-08-28 家长确认新的四窗口架构：00 总控/学情/学习档案，01 教材与课程，02 系统与 CloudBase 运维，03 学校练习与考试批改归档；原 03 formal 分析职责并入 00。私密学习档案和校内错题库已迁入本地 `private/`，由 Git 排除。
 - 2026-08-29 家长确认 P6 第一周采用 `L/S4A-T1-W01-D01` 至 `D06` 的六日听说配对方案；开发范围为 4A M1U1 p2–3，正式开放仍受学校实际已教范围约束。
-- 2026-08-29 01 窗口已在 `content/drafts/4A-T1-W01/` 完成 6 个 study pack、6 门听力与 6 门口语内容草案、家长版答案原文、儿童安全草案副本和 168 项音频文本清单；草案未进入活动课程目录。内容定向 12/12、全仓 Python 52/52、Web 59/59、`sherlock-api` 37/37、`score-speaking` 12/12 通过。正式 schema、MP3 与 manifest 仍受 02 新编号兼容阻塞。
+- 2026-08-30 02 已完成 B：新旧编号同时兼容，草案按批准流程接入原有 `content/listening` 与 `content/speaking` 单一活动源；168 个新音频、两个 manifest、catalog/推荐顺序、路由、服务端 provider 和 formal 发布闸门均完成。线上 test 资源 12/12 儿童副本安全、168/168 音频哈希一致；新课仍为 `publication_status=test` / `visible=false`，儿童 formal 写入返回 `COURSE_NOT_FORMAL`。
 
 ## 已完成
 
@@ -69,7 +69,7 @@
 
 ## 下一步
 
-P5 已完整验收通过。P6 第一周内容草案已由 01 完成。下一步由 02 完成新编号、音频路径、catalog/推荐顺序和同步校验兼容，再生成 168 个 MP3、正式 manifest 与家长 test 版；正式开放仍需 00/家长确认学校实际已教页段。线上 formal 由 00 直接分析；学校练习/考试交给 03 批改入库。
+P6/B 工程兼容、音频生成和 CloudBase 隐藏 test 部署已经完成。下一步不是继续改代码，而是由 00/家长按学校当天实际已教范围决定 D01–D06 中哪些课程可以从 test 改为 formal 可见；未获批准前全部新课继续隐藏且服务端拒绝 formal 写入。线上 formal 由 00 直接分析；学校练习/考试交给 03 批改入库。
 
 P0、P4 与 P5 的临时克隆、迁移前备份、原始快照和失败网络克隆目录继续保留，清理属于破坏性操作，须经家长另行明确授权。
 
@@ -77,7 +77,7 @@ P0、P4 与 P5 的临时克隆、迁移前备份、原始快照和失败网络�
 
 ## 当前阻塞
 
-P5 无阻塞且退出条件全部满足。P6 第一周课程当前为 `BLOCKED_BY_ID_COMPAT`：现有 Python/Web/云函数 schema、同步脚本和音频目录仍锁定旧 `W01Dxx/S01Dxx` 编号。01 已保留完整内容草案，未越界修改 02 核心文件；具体阻塞清单见 `docs/course-batches/2026-09-01-4A-T1-W01内容校验报告.md`。
+P5 无阻塞且退出条件全部满足。P6 第一周工程阻塞 `BLOCKED_BY_ID_COMPAT` 已解除；当前唯一发布闸门是 00/家长确认学校当天实际已教范围并明确批准 formal 开放。浏览器自动化已打开线上页面但 DOM 读取连续超时；不影响 HTTP、逐文件哈希、云函数边界和全套回归结论，也不要求孩子为隐藏 test 课程执行额外验收流程。
 
 ## 尚未实时确认但不阻塞
 
@@ -315,5 +315,21 @@ CloudBase 安全：发布前 family24 为体验版、2027-02-04 到期、超额�
 部署后验证：health 仍为 stage=P5 / formal_enabled=true / writes=formal-and-test；无效 formal token 返回 UNAUTHORIZED；family24 仍为 family24-web-003 / SUCCESS / 11/11；体验版有效至 2027-02-04，超额付费关闭；发布前后剩余额度 2941.94 → 2939.16；Git 工作区无未提交改动（登记修订除外）
 数据边界：未调用生产学习写接口，未创建用于验收的 test/formal 学习记录；未修改 W01D49、S01D49 或任何历史结果/录音；家长 test 仍须密码登录且不接入自动续期
 回滚：函数代码与静态站点均可由 A 提交的父提交重新构建发布；若 iPad 出现无法进入、数据隔离异常、重复结果或正式流程回归，立即停止 W01D50/S01D50 并执行回滚
-下一步：用真实 iPad 从后台恢复后分别完成 W01D50、S01D50，核对无刷新续期、同一 result_id、单条正式结果和完整口语录音；家长确认 A 通过前不进入 B
+后续决定：家长认为专门等待两小时并按步骤制造过期过于繁琐，批准保留 A 线上热修复并转为真实使用中的自然观察，直接进入 B；W01D50/S01D50 不再作为进入 B 的前置人工流程
+```
+
+## 2026-08-30 B：P6 新学期编号兼容与隐藏 test 部署
+
+```text
+日期：2026-08-30
+阶段：P6/B 新编号兼容 / test 已部署、formal 未开放
+完成：旧 W01Dxx/S01Dxx 与新 L/S4A-T1-W01-D01 至 D06 同时兼容；12 门新课接入原有单一活动源；catalog、推荐顺序、路由、音频路径、Python/Web/云函数 schema 与 provider 均支持新旧编号
+发布闸门：12 门新课统一 publication_status=test、visible=false；儿童 formal 无法从目录看到，直接写入也由服务端返回 COURSE_NOT_FORMAL；家长 test 仍必须密码认证
+音频：新生成 168 项，ffmpeg 解码 168/168；发布后 168/168 逐文件 SHA-256 与本地一致；manifest 与儿童安全副本同步完成
+验证：Python 53/53；Web 73/73；sherlock-api 43/43；score-speaking 13/13；TypeScript、Python 编译和生产构建通过；线上 12 门隐藏儿童课件安全字段校验通过；CloudBase formal 拦截听力/口语均通过
+CloudBase：只更新既有 score-speaking、sherlock-api 和 sherlock-english 静态托管，没有创建新资源、没有开启付费、没有写 test/formal 学习结果或录音；health 保持 P5/formal-and-test
+24 点：family24-web-003 / SUCCESS / 11/11，HTTP 200，未受影响；体验版有效至 2027-02-04 23:59:59，超额付费关闭，当前剩余 2939.12 点
+浏览器验收：自动浏览器已打开正式列表页，但 DOM 读取连续超时；HTTP、静态哈希、构建和云函数边界均已完成自动验收，不要求孩子执行隐藏 test 专项流程
+正式发布状态：未发布；D01-D06 均不可用于儿童 formal。正式开放必须由 00/家长按学校当天实际已教范围另行明确批准
+回滚：以 B 提交的父提交重新构建并部署两支函数和静态站点；不迁改任何旧课程 ID、成绩、录音路径或历史记录
 ```

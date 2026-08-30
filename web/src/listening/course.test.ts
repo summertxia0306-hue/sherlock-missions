@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { parseListeningCatalog, parseListeningCourse, resolveAudioUrl } from './course'
+import { loadListeningCourse, parseListeningCatalog, parseListeningCourse, resolveAudioUrl } from './course'
 
 const childCourse = {
   course_id: 'W01D39',
@@ -69,5 +69,31 @@ describe('P2 listening child course contract', () => {
     expect(resolveAudioUrl('audio/listening/W01D39/q01.mp3', '/sherlock-english/'))
       .toBe('/sherlock-english/audio/listening/W01D39/q01.mp3')
     expect(() => resolveAudioUrl('../secret', '/sherlock-english/')).toThrow()
+  })
+
+  it('accepts a paired term course and keeps test-only entries out of formal recommendation', async () => {
+    const termCourse = structuredClone(childCourse)
+    termCourse.course_id = 'L4A-T1-W01-D01'
+    Object.assign(termCourse, { pair_id: '4A-T1-W01-D01', study_pack: '4A-T1-W01-D01' })
+    termCourse.test_audio_asset = 'audio/listening/L4A-T1-W01-D01/hello.mp3'
+    for (const section of termCourse.sections) {
+      if ('passage_audio_asset' in section && section.passage_audio_asset) section.passage_audio_asset = section.passage_audio_asset.replace('W01D39', termCourse.course_id)
+      for (const question of section.questions) {
+        if ('audio_asset' in question && question.audio_asset) question.audio_asset = question.audio_asset.replace('W01D39', termCourse.course_id)
+      }
+    }
+    expect(parseListeningCourse(termCourse).pair_id).toBe('4A-T1-W01-D01')
+
+    const catalog = parseListeningCatalog([
+      { course_id: 'W01D50', course_version: 'legacy-v', title: 'Summer', course_type: 'weekly_test', week: 6, day: 10, visible: true },
+      { course_id: 'L4A-T1-W01-D02', course_version: 'term-v2', title: 'Term 2', course_type: 'training', week: 1, day: 2, visible: false, pair_id: '4A-T1-W01-D02', study_pack: '4A-T1-W01-D02' },
+      { course_id: 'L4A-T1-W01-D01', course_version: 'term-v1', title: 'Term 1', course_type: 'training', week: 1, day: 1, visible: false, pair_id: '4A-T1-W01-D01', study_pack: '4A-T1-W01-D01' }
+    ])
+    expect(catalog.window(new Set(['W01D50'])).map((item) => item.course_id)).toEqual(['W01D50'])
+    expect(catalog.firstFormalIncomplete(new Set(['W01D50']))).toBeUndefined()
+    expect(catalog.testCourses().map((item) => item.course_id)).toEqual(['W01D50', 'L4A-T1-W01-D01', 'L4A-T1-W01-D02'])
+
+    const fetcher = async () => ({ ok: true, json: async () => termCourse } as Response)
+    await expect(loadListeningCourse('L4A-T1-W01-D01', fetcher as typeof fetch)).resolves.toMatchObject({ course_id: 'L4A-T1-W01-D01' })
   })
 })

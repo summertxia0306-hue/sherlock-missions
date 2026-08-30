@@ -4,12 +4,12 @@ const crypto = require('node:crypto')
 const fs = require('node:fs')
 const path = require('node:path')
 
-const COURSE_ID = /^W\d{2}D\d{2}$/
+const COURSE_ID = /^(?:W\d{2}D\d{2}|L[1-9][A-Z]-T\d{1,2}-W\d{2}-D\d{2})$/
 const RESULT_ID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i
 const CHOICE_TYPES = new Set(['word_choice', 'question_response', 'dialogue_choice'])
 
 function assetPath(repoPath) {
-  if (typeof repoPath !== 'string' || !/^static\/audio\/listening\/[A-Z0-9]+\/(?:hello|q\d{2}|p\d{2})\.mp3$/.test(repoPath)) {
+  if (typeof repoPath !== 'string' || !/^static\/audio\/listening\/(?:W\d{2}D\d{2}|L[1-9][A-Z]-T\d{1,2}-W\d{2}-D\d{2})\/(?:hello|q\d{2}|p\d{2})\.mp3$/.test(repoPath)) {
     throw new Error('INVALID_AUDIO_ASSET')
   }
   return repoPath.replace(/^static\//, '')
@@ -22,6 +22,8 @@ function sanitizeCourse(course, manifestCourse, version) {
   }
   return {
     course_id: course.course_id,
+    ...(course.pair_id ? { pair_id: course.pair_id } : {}),
+    ...(course.study_pack ? { study_pack: course.study_pack } : {}),
     course_version: version,
     title: course.title,
     week: course.week,
@@ -111,6 +113,8 @@ function scoreListeningSubmission(course, submission, version, dataKind = 'test'
     student_id: submission.student_id,
     module_type: 'listening',
     course_id: course.course_id,
+    ...(course.pair_id ? { pair_id: course.pair_id } : {}),
+    ...(course.study_pack ? { study_pack: course.study_pack } : {}),
     data_kind: dataKind,
     course_version: version,
     started_at: new Date(submission.started_at),

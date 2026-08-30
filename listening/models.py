@@ -6,6 +6,7 @@
 """
 import json
 import os
+import re
 
 CHOICE_TYPES = ("word_choice", "question_response", "dialogue_choice")
 JUDGE_TYPES = ("sentence_judge", "passage_judge")
@@ -81,11 +82,16 @@ def validate_course(data, check_audio=True):
 
     od = data.get("open_date")
     if od is not None:
-        import re
         if not isinstance(od, str) or not re.match(r"^\d{4}-\d{2}-\d{2}$", od):
             errors.append("open_date 必须是 YYYY-MM-DD 格式，当前: %r" % od)
 
     cid = data["course_id"]
+    if not re.fullmatch(r"(?:W\d{2}D\d{2}|L[1-9][A-Z]-T\d{1,2}-W\d{2}-D\d{2})", cid or ""):
+        errors.append("course_id 格式无效: %r" % cid)
+    if cid.startswith("L"):
+        pair_id = cid[1:]
+        if data.get("pair_id") != pair_id or data.get("study_pack") != pair_id:
+            errors.append("新学期课程 pair_id/study_pack 必须匹配 course_id")
     seen_ids = set()
     total_questions = 0
 

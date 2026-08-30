@@ -59,7 +59,7 @@ function safeSegment(value, pattern) {
 
 function validatePayload(payload) {
   if (!payload || !safeSegment(payload.result_id, /^[A-Za-z0-9-]{1,80}$/)
-    || !safeSegment(payload.course_id, /^S01D(?:39|4\d|50)$/)
+    || !safeSegment(payload.course_id, /^(?:S\d{2}D\d{2}|S[1-9][A-Z]-T\d{1,2}-W\d{2}-D\d{2})$/)
     || !safeSegment(payload.course_version, /^[A-Za-z0-9_-]{1,40}$/)
     || !Number.isInteger(payload.question_id) || payload.question_id < 1 || payload.question_id > 8
     || !Number.isInteger(payload.attempt) || payload.attempt < 1 || payload.attempt > 3

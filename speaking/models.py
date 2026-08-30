@@ -45,7 +45,11 @@ def validate_course(course, check_audio=True):
             errs.append(msg)
 
     cid = course.get("course_id", "")
-    need(re.fullmatch(r"S\d{2}D\d{2}", cid or ""), "course_id 应形如 S01D01：%r" % cid)
+    need(re.fullmatch(r"(?:S\d{2}D\d{2}|S[1-9][A-Z]-T\d{1,2}-W\d{2}-D\d{2})", cid or ""), "course_id 格式无效：%r" % cid)
+    if cid.startswith("S") and "-" in cid:
+        pair_id = cid[1:]
+        need(course.get("pair_id") == pair_id and course.get("study_pack") == pair_id,
+             "新学期课程 pair_id/study_pack 必须匹配 course_id")
     need(course.get("title"), "缺 title")
     need(course.get("course_type", "training") in COURSE_TYPES,
          "course_type 非法：%r" % course.get("course_type"))

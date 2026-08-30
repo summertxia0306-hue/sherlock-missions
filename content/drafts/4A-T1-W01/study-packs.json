@@ -1,7 +1,7 @@
 {
   "weekly_batch_id": "4A-T1-W01",
-  "publication_status": "BLOCKED_BY_ID_COMPAT",
-  "publication_note": "本包是01内容草案，不在活动课程目录，不会自动产生可见课程或学习记录。",
+  "publication_status": "READY_FOR_TEST",
+  "publication_note": "本包可同步到唯一活动课程源，但publication_status保持test，不会进入formal推荐或正式学习记录。",
   "study_packs": [
     {
       "study_pack": "4A-T1-W01-D01",

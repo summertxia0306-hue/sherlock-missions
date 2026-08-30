@@ -104,9 +104,10 @@ describe('P2 listening page', () => {
     expect(within(courseList).getByText('Course 44').closest('.course-row')).toHaveClass('course-recommended')
   })
 
-  it('shows the first formal incomplete course and never treats test as completed', async () => {
+  it('keeps legacy courses available in test without a formal recommendation badge', async () => {
     render(<MemoryRouter><ListeningPage api={api} sessionToken="token" loadCatalog={loadCatalog} /></MemoryRouter>)
-    expect(await screen.findByText(/当前推荐.*W01D39/)).toBeInTheDocument()
+    expect(await screen.findByText(/W01D39/)).toBeInTheDocument()
+    expect(screen.queryByText(/当前推荐/)).not.toBeInTheDocument()
     expect(screen.getByRole('heading', { name: '听力训练' })).toBeInTheDocument()
     expect(screen.getAllByText('未完成')).toHaveLength(2)
     expect(screen.getByRole('button', { name: /开始.*W01D39/ })).toBeEnabled()

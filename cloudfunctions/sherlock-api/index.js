@@ -50,6 +50,7 @@ exports.main = async (event, context) => {
       INVALID_SPEAKING_TAKE: '口语录音格式无效',
       COURSE_NOT_FOUND: '课程不存在',
       COURSE_VERSION_MISMATCH: '课程已更新，请重新进入',
+      COURSE_NOT_FORMAL: '该课程尚未开放正式学习',
       SPEAKING_SCORE_UNAVAILABLE: '评分暂不可用，请重试',
       INVALID_SPEAKING_RESULT: '口语结果格式无效',
       RESULT_ID_CONFLICT: '结果编号冲突',

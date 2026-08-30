@@ -43,7 +43,7 @@ describe('private speaking scorer', () => {
     await assert.rejects(service.handle({ payload: request(), signature: 'bad' }), /UNAUTHORIZED/)
     assert.throws(() => signInternalRequest({}, 'short'), /CONFIG_ERROR/)
     const invalids = [
-      { result_id: '../bad' }, { course_id: 'S01D38' }, { course_version: '' }, { question_id: 9 },
+      { result_id: '../bad' }, { course_id: 'L4A-T1-W01-D01' }, { course_version: '' }, { question_id: 9 },
       { attempt: 0 }, { target_text: '' }, { session_marker: 'bad' }, { data_kind: 'production' }, { wav_base64: 'tiny' }
     ]
     for (const patch of invalids) {
@@ -62,6 +62,18 @@ describe('private speaking scorer', () => {
     })
     const result = await service.handle({ payload: reordered, signature: signInternalRequest(original, '1234567890abcdef') })
     assert.equal(result.total, 80)
+  })
+
+  it('accepts the approved term speaking id without weakening path safety', async () => {
+    const payload = request({ course_id: 'S4A-T1-W01-D01' })
+    const uploads = []
+    const service = createService({
+      internalKey: '1234567890abcdef',
+      evaluator: async () => ({ total: 80, is_rejected: false, words: [] }),
+      uploader: async (path) => { uploads.push(path) }
+    })
+    await service.handle({ payload, signature: signInternalRequest(payload, '1234567890abcdef') })
+    assert.match(uploads[0], /\/S4A-T1-W01-D01\//)
   })
 
   it('evaluates then uploads to the private path for the authenticated data kind', async () => {

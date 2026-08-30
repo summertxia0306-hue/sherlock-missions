@@ -1,56 +1,68 @@
 [
   {
     "course_id": "S4A-T1-W01-D01",
-    "course_version": "254559c3c03cb11f",
+    "course_version": "11d50c768469228f",
     "title": "四上·第1周·周二｜认识新同学·基础（口语）",
     "course_type": "training",
     "week": 1,
     "day": 1,
-    "visible": false
+    "visible": false,
+    "pair_id": "4A-T1-W01-D01",
+    "study_pack": "4A-T1-W01-D01"
   },
   {
     "course_id": "S4A-T1-W01-D02",
-    "course_version": "8097f38addfefb03",
+    "course_version": "1db7e07b3a33e7d2",
     "title": "四上·第1周·周三｜介绍朋友·数字与能力（口语）",
     "course_type": "training",
     "week": 1,
     "day": 2,
-    "visible": false
+    "visible": false,
+    "pair_id": "4A-T1-W01-D02",
+    "study_pack": "4A-T1-W01-D02"
   },
   {
     "course_id": "S4A-T1-W01-D03",
-    "course_version": "e96c2c918beb9e56",
+    "course_version": "de4244a55094b121",
     "title": "四上·第1周·周四｜人物信息·连续对话（口语）",
     "course_type": "training",
     "week": 1,
     "day": 3,
-    "visible": false
+    "visible": false,
+    "pair_id": "4A-T1-W01-D03",
+    "study_pack": "4A-T1-W01-D03"
   },
   {
     "course_id": "S4A-T1-W01-D04",
-    "course_version": "757b82890144e4d1",
+    "course_version": "b73f8f1a4316418b",
     "title": "四上·第1周·周五｜相似信息辨别（口语）",
     "course_type": "training",
     "week": 1,
     "day": 4,
-    "visible": false
+    "visible": false,
+    "pair_id": "4A-T1-W01-D04",
+    "study_pack": "4A-T1-W01-D04"
   },
   {
     "course_id": "S4A-T1-W01-D05",
-    "course_version": "1888c4bce53858cc",
+    "course_version": "ad2b9558f34d59e5",
     "title": "四上·第1周·周六｜人物介绍·综合迁移（口语）",
     "course_type": "training",
     "week": 1,
     "day": 5,
-    "visible": false
+    "visible": false,
+    "pair_id": "4A-T1-W01-D05",
+    "study_pack": "4A-T1-W01-D05"
   },
   {
     "course_id": "S4A-T1-W01-D06",
-    "course_version": "77a08f80041cbac2",
+    "course_version": "ecbfc1ff588eab1a",
     "title": "四上·第1周·周日｜M1U1第一周综合（口语）",
     "course_type": "weekly_review",
     "week": 1,
     "day": 6,
-    "visible": false
+    "visible": false,
+    "pair_id": "4A-T1-W01-D06",
+    "study_pack": "4A-T1-W01-D06"
   }
 ]

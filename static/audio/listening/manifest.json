@@ -1733,6 +1733,960 @@
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
    "text": "Alice is my classmate. She is eleven and she can swim well. Her father is a teacher. Alice's school has a library and a big playground. There is a supermarket next to her home and a bakery near the park."
+  },
+  "b7b49915afed52dd": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Sally"
+  },
+  "b8de17c317235675": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Paul"
+  },
+  "1be7cd23b2eea571": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "sister"
+  },
+  "a4b694cd2d68ad83": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "brother"
+  },
+  "64cc48a0f6e180cb": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is my sister."
+  },
+  "1fbeba9c6aecbce6": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Her name is Sally."
+  },
+  "3aa3c763656848bf": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "His name is Paul."
+  },
+  "e20fbe955c506263": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Kitty is Peter's classmate."
+  },
+  "6b501cfd531efd98": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who is Sally?"
+  },
+  "294fb65a826110a5": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What's her name?"
+  },
+  "9b3b8ac0468e1e0d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How old is Sally?"
+  },
+  "7c9403acf85fafe3": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who is Paul?"
+  },
+  "654855d47a29d273": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Good morning, Peter."
+  },
+  "f5d6fb8ba431c6d9": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Good morning, Kitty."
+  },
+  "f47fd76836cda393": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who says good morning to Peter?"
+  },
+  "58bcf8a19a633f49": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "This is my sister."
+  },
+  "420ff1825634363e": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Her name is Sally."
+  },
+  "f5d7054f338a402b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What is the sister's name?"
+  },
+  "6f6b94200193f90b": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "This is my brother."
+  },
+  "4d145bb9d571ce35": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "His name is Paul. He's only six."
+  },
+  "3d9c0f612a997de8": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: How old is Paul?"
+  },
+  "f210d36f76a74a98": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "My name is Kitty."
+  },
+  "db88cfc31cf21ef3": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I'm Peter's classmate."
+  },
+  "59f7682cf71d55d8": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who is Kitty's classmate?"
+  },
+  "ac6cb39bb5e8cee9": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is Kitty. Sally is her sister. Sally is twelve. Paul is her brother. He is only six. Kitty is Peter's classmate. They are going to the park."
+  },
+  "10975537854d0b2d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "twelve"
+  },
+  "f18ea06de3f6a169": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "thirteen"
+  },
+  "f27c8444e6116b36": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "sixteen"
+  },
+  "49377e3fc58700ee": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is my friend."
+  },
+  "6a4d0a913579dbd4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "His name is Danny."
+  },
+  "e296f8ea15c41cdf": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Danny is nine."
+  },
+  "ae1126dd9126965e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Tracy can skip."
+  },
+  "7f43b9f849c78792": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can Danny do?"
+  },
+  "0beed1c0014a4e2a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How old is Tracy?"
+  },
+  "bc1b2ed4b8f298f4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What's his name?"
+  },
+  "1221df3f1e473134": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "This is my friend, Paul."
+  },
+  "c9baa6cb1ba9d56b": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "I'm eleven."
+  },
+  "8ba24d2c72f1827d": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "This is my friend."
+  },
+  "728fde6917152c2c": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "His name is Danny. He can ride a bicycle."
+  },
+  "4a17f77f98d6ccde": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What can Danny do?"
+  },
+  "7caba462e8a5d80a": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "What's her name?"
+  },
+  "f056f9c01685654a": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Her name is Tracy. She's thirteen."
+  },
+  "0daa6ffe6b826204": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: How old is Tracy?"
+  },
+  "a0bc80e525e4a6e7": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Danny can ride a bicycle."
+  },
+  "327af02fd29af91d": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Tracy can skip."
+  },
+  "ff3b612db6163128": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who can skip?"
+  },
+  "b70141ebfa0f010d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is Kitty's friend, Tracy. She's thirteen. She can skip. Danny is Peter's friend. He's nine. He can ride a bicycle."
+  },
+  "a8e67ec1f780fde5": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "fourteen"
+  },
+  "90e7eda10e3d1d7f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "fifteen"
+  },
+  "0955d0e8c1a93324": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "her"
+  },
+  "35e613cc7729a482": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "ride a bicycle"
+  },
+  "20f7e6c316e6d282": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Peter's friend is Danny."
+  },
+  "e55165d7701ffc9b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Sally is twelve and Paul is six."
+  },
+  "6d8d08afd2acd8ec": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Danny is nine and he can ride a bicycle."
+  },
+  "507a5ee7b8acb70c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Her name is Tracy and she can skip."
+  },
+  "7a90e210ac456202": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How old is Peter's friend Danny?"
+  },
+  "55ac47072f5cc54d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can Tracy do?"
+  },
+  "9e8707f51b06eb15": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "His name is Danny."
+  },
+  "5a16b7e341535bb0": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "I'm nine."
+  },
+  "3ee90db3048e30fd": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: How old is Danny?"
+  },
+  "015747e21bf959f2": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Is Sally Kitty's sister?"
+  },
+  "daff91e11744719c": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Yes. Sally is twelve."
+  },
+  "ca71440010a21ffa": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Paul is her brother. He's six."
+  },
+  "97359fb09b426f8a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who is six?"
+  },
+  "0e80ef99b08bcc08": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "This is Tracy."
+  },
+  "63f431b713df484b": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "How old is she?"
+  },
+  "238f8a0fc5b4109c": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "She's thirteen, and she can skip."
+  },
+  "b18ffabb8b995634": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What can Tracy do?"
+  },
+  "4cfb4b3f6c87991b": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Danny can ride a bicycle."
+  },
+  "449ff7a381004364": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Tracy can skip."
+  },
+  "b11adc05fb6f4f16": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "They are friends."
+  },
+  "3586319ffcff3c78": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who can ride a bicycle?"
+  },
+  "8e9a212b490c094f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Kitty is Peter's classmate. Sally is Kitty's sister, and she's twelve. Paul is Kitty's brother, and he's six. Peter's friend Danny is nine and can ride a bicycle. Tracy is thirteen and can skip."
+  },
+  "2d7e56ad8ca53767": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Sally is twelve, but Paul is six."
+  },
+  "9988c321225d26aa": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Kitty is Peter's classmate, and Sally is Kitty's sister."
+  },
+  "64b707dcdb3e3928": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Danny is nine, and he can ride a bicycle."
+  },
+  "5fb07a444e0761cd": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Tracy is thirteen, and she can skip."
+  },
+  "36d9e3c62f86315d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Her name is Tracy, and his name is Danny."
+  },
+  "7778085794d67636": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How old is the girl who can skip?"
+  },
+  "127b9aee17ccc8ed": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can Peter's friend Danny do?"
+  },
+  "95c6ea4701a8ac89": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who is Kitty's brother?"
+  },
+  "aaaf946afe598637": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How old is Kitty's sister?"
+  },
+  "dca87ca33819b864": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "This is my friend Danny."
+  },
+  "d6aa10f7649374d7": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "He can ride a bicycle."
+  },
+  "4ed3abf849269fe9": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Yes, I can."
+  },
+  "d758a5044a9db300": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Is Tracy twelve?"
+  },
+  "229b1c1f38c329ff": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "No. She's thirteen."
+  },
+  "be8bf98fd0f6c42e": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Can she skip?"
+  },
+  "ef96905e65dffafe": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Yes, she can."
+  },
+  "edbf22766d6da8d8": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Sally is Kitty's sister."
+  },
+  "47047324e89ab7bc": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "She's twelve."
+  },
+  "c0bee7dd4c76b676": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Paul is Kitty's brother."
+  },
+  "067ba83707307a13": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "He's only six."
+  },
+  "55fc50184b93d088": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who is twelve?"
+  },
+  "1882f8577517632c": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Danny is my friend."
+  },
+  "a60d702f4e8c0db9": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Tracy is my friend too."
+  },
+  "02736f905b617952": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "We are going to the park."
+  },
+  "f018dc88c02bc6d6": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "See you."
+  },
+  "45e00a0e75e17732": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Where are Peter and Kitty going?"
+  },
+  "1c943af4ae996490": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Peter and Kitty are classmates. Kitty's sister is Sally. Sally is twelve. Kitty's brother is Paul, and he's only six. Danny is Peter's friend. He's nine and can ride a bicycle. Tracy is Kitty's friend. She's thirteen and can skip."
+  },
+  "bd07fc2a592609b6": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "his"
+  },
+  "5a6a8d3a999001c2": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Sally is Kitty's sister, and she's twelve."
+  },
+  "9828d0958f6faa09": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Paul is Kitty's brother, and he's six."
+  },
+  "bd1011a13a5c6c81": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Danny is nine and can ride a bicycle."
+  },
+  "5e27983368c75db0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Tracy is thirteen and can skip."
+  },
+  "3f315608738cc68c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Peter and Kitty are going to the park."
+  },
+  "d9d3ad4363348f43": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who is twelve?"
+  },
+  "ebf645190dd05a2d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What's his name, and what can he do?"
+  },
+  "0a38d9d1cb4de664": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who is Kitty's brother, and how old is he?"
+  },
+  "e1b0c076bb7859e7": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How old is the friend who can skip?"
+  },
+  "6180430794b8ae2c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Danny is nine. What can he do?"
+  },
+  "6066eba01f57407f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: How old is Danny, and what can he do?"
+  },
+  "86e6ac5f467e31e2": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "This is Tracy."
+  },
+  "2188f52d7c16aeeb": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I'm thirteen."
+  },
+  "83e9f461f473217c": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "She can skip."
+  },
+  "ed3004dcab2b52d1": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Yes, I can."
+  },
+  "493bfe14da450e7f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who is thirteen?"
+  },
+  "9505b1fd645460ee": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Paul is Kitty's brother."
+  },
+  "59d8d7a17d47eed7": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Sally is twelve."
+  },
+  "5da1c4d53265503c": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Paul is six."
+  },
+  "3690472f2904a692": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: How old is Kitty's brother?"
+  },
+  "c090947ba5b583dc": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Peter, this is my friend Tracy."
+  },
+  "64008fd191c6fc38": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "She's thirteen and can skip."
+  },
+  "21f9051122581b36": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "My friend Danny is nine."
+  },
+  "0b9138af8152946e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What can Peter's friend do?"
+  },
+  "25ae0a58ccdac4c7": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Good morning, Kitty."
+  },
+  "26067d02a607a67a": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Good morning, Peter."
+  },
+  "83be17edd0d8cda9": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "This is Sally and this is Paul."
+  },
+  "961263124cef160c": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Hi, Sally. Hi, Paul."
+  },
+  "cc846440b056ddfb": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who is going to the park?"
+  },
+  "1c2f83bf163dc661": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Sally is Kitty's sister. She's twelve. Paul is Kitty's brother, and he's only six. Danny is Peter's friend. He's nine and can ride a bicycle. Tracy is Kitty's friend. She's thirteen and can skip. Peter and Kitty are classmates."
+  },
+  "674d29ff30cbf48d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Paul is Kitty's brother, and he's only six."
+  },
+  "b29b86ff53c2a727": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Danny is Peter's friend, and he can ride a bicycle."
+  },
+  "fc1a22e970390ddf": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Sally is Kitty's sister, and Kitty is Peter's classmate."
+  },
+  "7d0241fcf6788a21": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Kitty and Peter are going to the park."
+  },
+  "bc183a509c8af2a9": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What's her name, and how old is she?"
+  },
+  "d3010a6680c27f93": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who can ride a bicycle?"
+  },
+  "b54485e3f9ca4cbb": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who is Kitty's sister, and how old is she?"
+  },
+  "d5707c6a538fe5dc": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Tracy is thirteen. What can she do?"
+  },
+  "af1389df492a076e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who is Peter's classmate?"
+  },
+  "af6f22b3edefdd9f": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "This is my sister Sally."
+  },
+  "15c8ac133e4b96cc": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "She's twelve."
+  },
+  "97e7a4fc1800f6d6": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "And Paul?"
+  },
+  "2c27f318f7ff02fc": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "He's my brother. He's six."
+  },
+  "fea0e7cfd1a09f19": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Can he skip?"
+  },
+  "2b4011aae62ec0c8": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "No. He can ride a bicycle."
+  },
+  "8aa5a6c344f8c962": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Tracy can skip. She's thirteen."
+  },
+  "51b2c834b3cf1b1e": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "This is my sister Sally and my brother Paul."
+  },
+  "e06aea093aebcc81": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Hello, Sally. Hello, Paul."
+  },
+  "cf5c6cb23a67e970": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who says, This is my sister Sally?"
+  },
+  "6ec5861c6ad9cc66": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Peter and Kitty are classmates."
+  },
+  "f6c1ad01163ac73a": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Danny is Peter's friend."
+  },
+  "02cb01d327798b9c": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Tracy is Kitty's friend."
+  },
+  "871f804cd4006e88": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Danny can ride a bicycle, and Tracy can skip."
+  },
+  "8a45c6dc57c60f04": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which statement is correct?"
+  },
+  "76955e6567979d94": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Tracy is thirteen."
+  },
+  "ebd2633715bc2673": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Danny is nine."
+  },
+  "c1519dea64d19607": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Paul is only six."
+  },
+  "923f022827920e3b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Peter and Kitty are going to the park. Sally is Kitty's sister, and Paul is Kitty's brother. Sally is twelve, and Paul is only six. Danny is Peter's friend. Danny is nine and can ride a bicycle. Tracy is Kitty's friend. Tracy is thirteen and can skip. Peter and Kitty are classmates."
   }
  },
  "courses": {
@@ -1975,6 +2929,138 @@
    "static/audio/listening/W01D50/q15.mp3": "a15fa9bbe7edff76",
    "static/audio/listening/W01D50/q16.mp3": "a03c7e8d4354e92a",
    "static/audio/listening/W01D50/p01.mp3": "dbadf8bd21790b7b"
+  },
+  "L4A-T1-W01-D01": {
+   "static/audio/listening/L4A-T1-W01-D01/hello.mp3": "9c3d431c92f97887",
+   "static/audio/listening/L4A-T1-W01-D01/q01.mp3": "2f7b99955622258b",
+   "static/audio/listening/L4A-T1-W01-D01/q02.mp3": "434dac28e79f2e91",
+   "static/audio/listening/L4A-T1-W01-D01/q03.mp3": "90f922f80f553545",
+   "static/audio/listening/L4A-T1-W01-D01/q04.mp3": "9a91895a4033c283",
+   "static/audio/listening/L4A-T1-W01-D01/q05.mp3": "b8bc4287110c61be",
+   "static/audio/listening/L4A-T1-W01-D01/q06.mp3": "b11a3e2869d503d8",
+   "static/audio/listening/L4A-T1-W01-D01/q07.mp3": "2053c02388e46266",
+   "static/audio/listening/L4A-T1-W01-D01/q08.mp3": "bebfb5bf73150334",
+   "static/audio/listening/L4A-T1-W01-D01/q09.mp3": "3f5d7f2bb722d38d",
+   "static/audio/listening/L4A-T1-W01-D01/q10.mp3": "fd722540c8802fa4",
+   "static/audio/listening/L4A-T1-W01-D01/q11.mp3": "e6611f654c9691c1",
+   "static/audio/listening/L4A-T1-W01-D01/q12.mp3": "027d1aa12bbc5970",
+   "static/audio/listening/L4A-T1-W01-D01/q13.mp3": "54af2bab911d3831",
+   "static/audio/listening/L4A-T1-W01-D01/q14.mp3": "a34f82681c4f8b2d",
+   "static/audio/listening/L4A-T1-W01-D01/q15.mp3": "0301735c66ba5307",
+   "static/audio/listening/L4A-T1-W01-D01/q16.mp3": "bebb8489178d4276",
+   "static/audio/listening/L4A-T1-W01-D01/p01.mp3": "0c94c4178e1fc882"
+  },
+  "L4A-T1-W01-D02": {
+   "static/audio/listening/L4A-T1-W01-D02/hello.mp3": "9c3d431c92f97887",
+   "static/audio/listening/L4A-T1-W01-D02/q01.mp3": "f83b0df284d0f426",
+   "static/audio/listening/L4A-T1-W01-D02/q02.mp3": "47d9e2467f83e0e1",
+   "static/audio/listening/L4A-T1-W01-D02/q03.mp3": "041d7432bc105ab9",
+   "static/audio/listening/L4A-T1-W01-D02/q04.mp3": "7bb351fa4c70d8d5",
+   "static/audio/listening/L4A-T1-W01-D02/q05.mp3": "8e0ee0c9eac8b906",
+   "static/audio/listening/L4A-T1-W01-D02/q06.mp3": "b120c7c5e6ba445d",
+   "static/audio/listening/L4A-T1-W01-D02/q07.mp3": "537e7473439750d4",
+   "static/audio/listening/L4A-T1-W01-D02/q08.mp3": "52de0bb56ae58e57",
+   "static/audio/listening/L4A-T1-W01-D02/q09.mp3": "ef8d5dbe1b2531ba",
+   "static/audio/listening/L4A-T1-W01-D02/q10.mp3": "9c3280f460d112b2",
+   "static/audio/listening/L4A-T1-W01-D02/q11.mp3": "52d1f69208d644ca",
+   "static/audio/listening/L4A-T1-W01-D02/q12.mp3": "b0e576d1d075f99f",
+   "static/audio/listening/L4A-T1-W01-D02/q13.mp3": "939d0d86838b8000",
+   "static/audio/listening/L4A-T1-W01-D02/q14.mp3": "39e5acfdadc2ea31",
+   "static/audio/listening/L4A-T1-W01-D02/q15.mp3": "946e86fd3d02eebf",
+   "static/audio/listening/L4A-T1-W01-D02/q16.mp3": "9d8fcda8ff7313cc",
+   "static/audio/listening/L4A-T1-W01-D02/p01.mp3": "267170c747f0a55c"
+  },
+  "L4A-T1-W01-D03": {
+   "static/audio/listening/L4A-T1-W01-D03/hello.mp3": "9c3d431c92f97887",
+   "static/audio/listening/L4A-T1-W01-D03/q01.mp3": "173fb8372557ab61",
+   "static/audio/listening/L4A-T1-W01-D03/q02.mp3": "3983a698d5657f4d",
+   "static/audio/listening/L4A-T1-W01-D03/q03.mp3": "cf566d7f7d815353",
+   "static/audio/listening/L4A-T1-W01-D03/q04.mp3": "37dcc46a2bf9abb7",
+   "static/audio/listening/L4A-T1-W01-D03/q05.mp3": "8083185e219e0156",
+   "static/audio/listening/L4A-T1-W01-D03/q06.mp3": "0707d025e070cf72",
+   "static/audio/listening/L4A-T1-W01-D03/q07.mp3": "b1676d96e06f89f0",
+   "static/audio/listening/L4A-T1-W01-D03/q08.mp3": "7940a06c48177e31",
+   "static/audio/listening/L4A-T1-W01-D03/q09.mp3": "1ad0e275aec247fc",
+   "static/audio/listening/L4A-T1-W01-D03/q10.mp3": "f74e77e28df32ca3",
+   "static/audio/listening/L4A-T1-W01-D03/q11.mp3": "25b28c64be97a4c2",
+   "static/audio/listening/L4A-T1-W01-D03/q12.mp3": "fd722540c8802fa4",
+   "static/audio/listening/L4A-T1-W01-D03/q13.mp3": "b2317441ad98fbb3",
+   "static/audio/listening/L4A-T1-W01-D03/q14.mp3": "c76eb9f24f688fa1",
+   "static/audio/listening/L4A-T1-W01-D03/q15.mp3": "3d2bc8ba96718eb2",
+   "static/audio/listening/L4A-T1-W01-D03/q16.mp3": "e912a9500a5839e5",
+   "static/audio/listening/L4A-T1-W01-D03/p01.mp3": "a7bb9211ff0d9d97"
+  },
+  "L4A-T1-W01-D04": {
+   "static/audio/listening/L4A-T1-W01-D04/hello.mp3": "9c3d431c92f97887",
+   "static/audio/listening/L4A-T1-W01-D04/q01.mp3": "041d7432bc105ab9",
+   "static/audio/listening/L4A-T1-W01-D04/q02.mp3": "173fb8372557ab61",
+   "static/audio/listening/L4A-T1-W01-D04/q03.mp3": "3983a698d5657f4d",
+   "static/audio/listening/L4A-T1-W01-D04/q04.mp3": "cf566d7f7d815353",
+   "static/audio/listening/L4A-T1-W01-D04/q05.mp3": "7bb351fa4c70d8d5",
+   "static/audio/listening/L4A-T1-W01-D04/q06.mp3": "32f192c91da42246",
+   "static/audio/listening/L4A-T1-W01-D04/q07.mp3": "ba6a1a95097c86e0",
+   "static/audio/listening/L4A-T1-W01-D04/q08.mp3": "3916e78be43cd674",
+   "static/audio/listening/L4A-T1-W01-D04/q09.mp3": "949a481321cc865d",
+   "static/audio/listening/L4A-T1-W01-D04/q10.mp3": "d040ac58d1c7a48b",
+   "static/audio/listening/L4A-T1-W01-D04/q11.mp3": "fd722540c8802fa4",
+   "static/audio/listening/L4A-T1-W01-D04/q12.mp3": "a3cac5d798ffa7be",
+   "static/audio/listening/L4A-T1-W01-D04/q13.mp3": "7d56e75c7e6bd475",
+   "static/audio/listening/L4A-T1-W01-D04/q14.mp3": "f9fdb4ae2916f77a",
+   "static/audio/listening/L4A-T1-W01-D04/q15.mp3": "bdf5a239c04b53d9",
+   "static/audio/listening/L4A-T1-W01-D04/q16.mp3": "61d5d584f3127337",
+   "static/audio/listening/L4A-T1-W01-D04/q17.mp3": "b3dd6676b48c6d51",
+   "static/audio/listening/L4A-T1-W01-D04/q18.mp3": "8bc0114ebdc321c4",
+   "static/audio/listening/L4A-T1-W01-D04/q19.mp3": "deecb3de3de5088c",
+   "static/audio/listening/L4A-T1-W01-D04/q20.mp3": "ec4f6f84eb1b49a5",
+   "static/audio/listening/L4A-T1-W01-D04/p01.mp3": "f6833ae263f34d9a"
+  },
+  "L4A-T1-W01-D05": {
+   "static/audio/listening/L4A-T1-W01-D05/hello.mp3": "9c3d431c92f97887",
+   "static/audio/listening/L4A-T1-W01-D05/q01.mp3": "173fb8372557ab61",
+   "static/audio/listening/L4A-T1-W01-D05/q02.mp3": "7bb351fa4c70d8d5",
+   "static/audio/listening/L4A-T1-W01-D05/q03.mp3": "37dcc46a2bf9abb7",
+   "static/audio/listening/L4A-T1-W01-D05/q04.mp3": "e56644a7dafb622d",
+   "static/audio/listening/L4A-T1-W01-D05/q05.mp3": "3f87fd78d9d0bc4e",
+   "static/audio/listening/L4A-T1-W01-D05/q06.mp3": "0ac82f06746795fe",
+   "static/audio/listening/L4A-T1-W01-D05/q07.mp3": "eee3392a12471e69",
+   "static/audio/listening/L4A-T1-W01-D05/q08.mp3": "ffb1e36102c3b372",
+   "static/audio/listening/L4A-T1-W01-D05/q09.mp3": "5996a1c4eaff7108",
+   "static/audio/listening/L4A-T1-W01-D05/q10.mp3": "fd2fc05cbbdcab08",
+   "static/audio/listening/L4A-T1-W01-D05/q11.mp3": "9727071183b21bbe",
+   "static/audio/listening/L4A-T1-W01-D05/q12.mp3": "17cb7f035d21ca1a",
+   "static/audio/listening/L4A-T1-W01-D05/q13.mp3": "5d252c17cf72ccd4",
+   "static/audio/listening/L4A-T1-W01-D05/q14.mp3": "13b33dd8da5afd63",
+   "static/audio/listening/L4A-T1-W01-D05/q15.mp3": "92761645e8a3c5a2",
+   "static/audio/listening/L4A-T1-W01-D05/q16.mp3": "b79096854f6ccd29",
+   "static/audio/listening/L4A-T1-W01-D05/q17.mp3": "dba6104916ac8930",
+   "static/audio/listening/L4A-T1-W01-D05/q18.mp3": "5cb31d4334a8599c",
+   "static/audio/listening/L4A-T1-W01-D05/q19.mp3": "2c6a743120a33e25",
+   "static/audio/listening/L4A-T1-W01-D05/q20.mp3": "adc9913e82b9ddd6",
+   "static/audio/listening/L4A-T1-W01-D05/p01.mp3": "fb5ccc68b539a9c3"
+  },
+  "L4A-T1-W01-D06": {
+   "static/audio/listening/L4A-T1-W01-D06/hello.mp3": "9c3d431c92f97887",
+   "static/audio/listening/L4A-T1-W01-D06/q01.mp3": "3983a698d5657f4d",
+   "static/audio/listening/L4A-T1-W01-D06/q02.mp3": "041d7432bc105ab9",
+   "static/audio/listening/L4A-T1-W01-D06/q03.mp3": "9a91895a4033c283",
+   "static/audio/listening/L4A-T1-W01-D06/q04.mp3": "37dcc46a2bf9abb7",
+   "static/audio/listening/L4A-T1-W01-D06/q05.mp3": "cf566d7f7d815353",
+   "static/audio/listening/L4A-T1-W01-D06/q06.mp3": "79f17000c48cfb78",
+   "static/audio/listening/L4A-T1-W01-D06/q07.mp3": "5996a1c4eaff7108",
+   "static/audio/listening/L4A-T1-W01-D06/q08.mp3": "fb219fa4db40b81e",
+   "static/audio/listening/L4A-T1-W01-D06/q09.mp3": "d852c5047d9684cd",
+   "static/audio/listening/L4A-T1-W01-D06/q10.mp3": "93f259a305b23b8b",
+   "static/audio/listening/L4A-T1-W01-D06/q11.mp3": "d4e6ca68d9fd183b",
+   "static/audio/listening/L4A-T1-W01-D06/q12.mp3": "9a93d2cc565bf7db",
+   "static/audio/listening/L4A-T1-W01-D06/q13.mp3": "a3507b43bd6df550",
+   "static/audio/listening/L4A-T1-W01-D06/q14.mp3": "7f22befe3150dbfc",
+   "static/audio/listening/L4A-T1-W01-D06/q15.mp3": "91a623c4a660b393",
+   "static/audio/listening/L4A-T1-W01-D06/q16.mp3": "12f75dd0eda11349",
+   "static/audio/listening/L4A-T1-W01-D06/q17.mp3": "5b53f30eeefc91ff",
+   "static/audio/listening/L4A-T1-W01-D06/q18.mp3": "4c2704ab4e8729a8",
+   "static/audio/listening/L4A-T1-W01-D06/q19.mp3": "980b21ae6f7e3227",
+   "static/audio/listening/L4A-T1-W01-D06/q20.mp3": "471196b6306c1822",
+   "static/audio/listening/L4A-T1-W01-D06/p01.mp3": "1f4b7f8f9fda0f31"
   }
  }
 }

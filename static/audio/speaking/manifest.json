@@ -449,6 +449,211 @@
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
    "text": "Is there a supermarket near her home?"
+  },
+  "29616ee3aeb2231d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Good morning, Peter."
+  },
+  "ec4f012a111bc80b": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Good morning, Kitty."
+  },
+  "7f72f304d68df594": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is my sister."
+  },
+  "0e0af6417c6e2582": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Her name is Sally."
+  },
+  "fd5ce6e74fd32a64": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is my brother."
+  },
+  "d19ade21bfa122a3": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "His name is Paul."
+  },
+  "8b93287729334dd6": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How old is Sally?"
+  },
+  "ea5cc587c69d6224": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Eleven, twelve, thirteen."
+  },
+  "f3468fefbd890a23": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Fourteen, fifteen, sixteen."
+  },
+  "e181b1936f1b683e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is my friend."
+  },
+  "e74bce03aa721a53": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "His name is Danny."
+  },
+  "50c5c45a9530c2bc": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "He can ride a bicycle."
+  },
+  "d0800623049f96f8": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She can skip."
+  },
+  "bb9c5d137c9293dd": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How old is Tracy?"
+  },
+  "9ac64ccec86c3c9d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is my friend. His name is Danny."
+  },
+  "8d74dbdd925b9fd0": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "He's nine. He can ride a bicycle."
+  },
+  "7af569886ae5dc06": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is my friend. Her name is Tracy."
+  },
+  "71624f30ddeb4321": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "She's thirteen. She can skip."
+  },
+  "ad2777f33e535921": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Sally is Kitty's sister. She's twelve."
+  },
+  "9c0a3b515037cc69": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Paul is Kitty's brother. He's only six."
+  },
+  "773ac4ed85d9a5be": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can Danny do?"
+  },
+  "54f1032364bd0879": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can Tracy do?"
+  },
+  "c95f03f1a669313d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Kitty is Peter's classmate."
+  },
+  "cde0ad77db276f20": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Sally is Kitty's sister, and she's twelve."
+  },
+  "7bc7b010fc0a3a4f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Paul is Kitty's brother, and he's only six."
+  },
+  "0ca5640e0a1458aa": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Danny is nine, and he can ride a bicycle."
+  },
+  "aa295267bc1736cb": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Tracy is thirteen, and she can skip."
+  },
+  "93be6c47dfc03338": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can Peter's friend Danny do?"
+  },
+  "fc6bff138ff832e4": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can Kitty's friend Tracy do?"
+  },
+  "49b84a738e4994cd": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Good morning. My name is Kitty, and I'm Peter's classmate."
+  },
+  "d4b81d52014c32c8": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is my sister, Sally. She's twelve."
+  },
+  "77b27dbb1f25ae6d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is my brother, Paul. He's only six."
+  },
+  "358a915d14015245": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is my friend, Danny. He's nine, and he can ride a bicycle."
+  },
+  "1f904ab78a7655ae": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is my friend, Tracy. She's thirteen, and she can skip."
+  },
+  "8474d6d1f767193e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Her name is Tracy, and his name is Danny."
+  },
+  "51ffa206df7dad7f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Tell me about Danny."
+  },
+  "2fc644736e329785": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Tell me about Tracy."
+  },
+  "705a42f2d04db64f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Peter and Kitty are classmates, and they are going to the park."
+  },
+  "323692f70c297da2": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Danny is Peter's friend. He's nine and can ride a bicycle."
+  },
+  "3c9133016a122f52": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Tracy is Kitty's friend. She's thirteen and can skip."
+  },
+  "e8634676a35faed8": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "His name is Danny, and her name is Tracy."
   }
  },
  "courses": {
@@ -571,6 +776,66 @@
    "static/audio/speaking/S01D50/q06.mp3": "e93de4bf91db1ae6",
    "static/audio/speaking/S01D50/q07.mp3": "adfaa1eb448b4f8e",
    "static/audio/speaking/S01D50/q08.mp3": "8067d761bc5a2516"
+  },
+  "S4A-T1-W01-D01": {
+   "static/audio/speaking/S4A-T1-W01-D01/q01.mp3": "29616ee3aeb2231d",
+   "static/audio/speaking/S4A-T1-W01-D01/q02.mp3": "ec4f012a111bc80b",
+   "static/audio/speaking/S4A-T1-W01-D01/q03.mp3": "7f72f304d68df594",
+   "static/audio/speaking/S4A-T1-W01-D01/q04.mp3": "0e0af6417c6e2582",
+   "static/audio/speaking/S4A-T1-W01-D01/q05.mp3": "fd5ce6e74fd32a64",
+   "static/audio/speaking/S4A-T1-W01-D01/q06.mp3": "d19ade21bfa122a3",
+   "static/audio/speaking/S4A-T1-W01-D01/q07.mp3": "7f69d1f8a9d62172",
+   "static/audio/speaking/S4A-T1-W01-D01/q08.mp3": "8b93287729334dd6"
+  },
+  "S4A-T1-W01-D02": {
+   "static/audio/speaking/S4A-T1-W01-D02/q01.mp3": "ea5cc587c69d6224",
+   "static/audio/speaking/S4A-T1-W01-D02/q02.mp3": "f3468fefbd890a23",
+   "static/audio/speaking/S4A-T1-W01-D02/q03.mp3": "e181b1936f1b683e",
+   "static/audio/speaking/S4A-T1-W01-D02/q04.mp3": "e74bce03aa721a53",
+   "static/audio/speaking/S4A-T1-W01-D02/q05.mp3": "50c5c45a9530c2bc",
+   "static/audio/speaking/S4A-T1-W01-D02/q06.mp3": "d0800623049f96f8",
+   "static/audio/speaking/S4A-T1-W01-D02/q07.mp3": "7f69d1f8a9d62172",
+   "static/audio/speaking/S4A-T1-W01-D02/q08.mp3": "bb9c5d137c9293dd"
+  },
+  "S4A-T1-W01-D03": {
+   "static/audio/speaking/S4A-T1-W01-D03/q01.mp3": "9ac64ccec86c3c9d",
+   "static/audio/speaking/S4A-T1-W01-D03/q02.mp3": "8d74dbdd925b9fd0",
+   "static/audio/speaking/S4A-T1-W01-D03/q03.mp3": "7af569886ae5dc06",
+   "static/audio/speaking/S4A-T1-W01-D03/q04.mp3": "71624f30ddeb4321",
+   "static/audio/speaking/S4A-T1-W01-D03/q05.mp3": "ad2777f33e535921",
+   "static/audio/speaking/S4A-T1-W01-D03/q06.mp3": "9c0a3b515037cc69",
+   "static/audio/speaking/S4A-T1-W01-D03/q07.mp3": "773ac4ed85d9a5be",
+   "static/audio/speaking/S4A-T1-W01-D03/q08.mp3": "54f1032364bd0879"
+  },
+  "S4A-T1-W01-D04": {
+   "static/audio/speaking/S4A-T1-W01-D04/q01.mp3": "c95f03f1a669313d",
+   "static/audio/speaking/S4A-T1-W01-D04/q02.mp3": "cde0ad77db276f20",
+   "static/audio/speaking/S4A-T1-W01-D04/q03.mp3": "7bc7b010fc0a3a4f",
+   "static/audio/speaking/S4A-T1-W01-D04/q04.mp3": "0ca5640e0a1458aa",
+   "static/audio/speaking/S4A-T1-W01-D04/q05.mp3": "aa295267bc1736cb",
+   "static/audio/speaking/S4A-T1-W01-D04/q06.mp3": "9ac64ccec86c3c9d",
+   "static/audio/speaking/S4A-T1-W01-D04/q07.mp3": "93be6c47dfc03338",
+   "static/audio/speaking/S4A-T1-W01-D04/q08.mp3": "fc6bff138ff832e4"
+  },
+  "S4A-T1-W01-D05": {
+   "static/audio/speaking/S4A-T1-W01-D05/q01.mp3": "49b84a738e4994cd",
+   "static/audio/speaking/S4A-T1-W01-D05/q02.mp3": "d4b81d52014c32c8",
+   "static/audio/speaking/S4A-T1-W01-D05/q03.mp3": "77b27dbb1f25ae6d",
+   "static/audio/speaking/S4A-T1-W01-D05/q04.mp3": "358a915d14015245",
+   "static/audio/speaking/S4A-T1-W01-D05/q05.mp3": "1f904ab78a7655ae",
+   "static/audio/speaking/S4A-T1-W01-D05/q06.mp3": "8474d6d1f767193e",
+   "static/audio/speaking/S4A-T1-W01-D05/q07.mp3": "51ffa206df7dad7f",
+   "static/audio/speaking/S4A-T1-W01-D05/q08.mp3": "2fc644736e329785"
+  },
+  "S4A-T1-W01-D06": {
+   "static/audio/speaking/S4A-T1-W01-D06/q01.mp3": "705a42f2d04db64f",
+   "static/audio/speaking/S4A-T1-W01-D06/q02.mp3": "ad2777f33e535921",
+   "static/audio/speaking/S4A-T1-W01-D06/q03.mp3": "9c0a3b515037cc69",
+   "static/audio/speaking/S4A-T1-W01-D06/q04.mp3": "323692f70c297da2",
+   "static/audio/speaking/S4A-T1-W01-D06/q05.mp3": "3c9133016a122f52",
+   "static/audio/speaking/S4A-T1-W01-D06/q06.mp3": "e8634676a35faed8",
+   "static/audio/speaking/S4A-T1-W01-D06/q07.mp3": "51ffa206df7dad7f",
+   "static/audio/speaking/S4A-T1-W01-D06/q08.mp3": "2fc644736e329785"
   }
  }
 }

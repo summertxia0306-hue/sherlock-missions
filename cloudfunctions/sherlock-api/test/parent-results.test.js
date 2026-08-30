@@ -9,7 +9,8 @@ function parentStore() {
   const rows = [
     { result_id: 'formal-listening', module_type: 'listening', course_id: 'W01D01', data_kind: 'formal', submitted_at: new Date('2026-06-27T06:53:00+08:00'), score: 100 },
     { result_id: 'formal-speaking', module_type: 'speaking', course_id: 'S01D01', data_kind: 'formal', submitted_at: new Date('2026-06-27T15:01:00+08:00'), score: 99, question_results: [{ id: 1, recording_records: [{ file_id: 'cloud://formal.wav', data_kind: 'formal' }] }] },
-    { result_id: 'test-listening', module_type: 'listening', course_id: 'W01D02', data_kind: 'test', submitted_at: new Date('2026-06-12T21:00:00+08:00'), score: 80 }
+    { result_id: 'test-listening', module_type: 'listening', course_id: 'W01D02', data_kind: 'test', submitted_at: new Date('2026-06-12T21:00:00+08:00'), score: 80 },
+    { result_id: 'test-term-listening', module_type: 'listening', course_id: 'L4A-T1-W01-D01', data_kind: 'test', submitted_at: new Date('2026-09-01T21:00:00+08:00'), score: 100 }
   ]
   return {
     rows,
@@ -47,7 +48,7 @@ describe('P4 authenticated parent history', () => {
     assert.deepEqual(formal.results.map((item) => item.result_id), ['formal-speaking', 'formal-listening'])
     assert.equal(formal.summary.result_count, 2)
     assert.equal(test.data_kind, 'test')
-    assert.deepEqual(test.results.map((item) => item.result_id), ['test-listening'])
+    assert.deepEqual(test.results.map((item) => item.result_id), ['test-term-listening', 'test-listening'])
     assert.equal(test.summary.formal_completion_count, 0)
   })
 
@@ -61,5 +62,11 @@ describe('P4 authenticated parent history', () => {
     assert.equal(recording.expires_in, 600)
 
     await assert.rejects(service.handle({ action: 'listParentResults', session_token: auth.session_token, filters: { data_kind: 'formal', module_type: 'admin' } }, { callerId: 'parent' }), /INVALID_FILTER/)
+  })
+
+  it('queries the new term ids without changing legacy filter behavior', async () => {
+    const { service, auth } = await authenticatedService()
+    const response = await service.handle({ action: 'listParentResults', session_token: auth.session_token, filters: { data_kind: 'test', course_id: 'L4A-T1-W01-D01' } }, { callerId: 'parent' })
+    assert.deepEqual(response.results.map((item) => item.result_id), ['test-term-listening'])
   })
 })

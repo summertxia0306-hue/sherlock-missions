@@ -57,6 +57,33 @@ function submission() {
 }
 
 describe('P2 listening API', () => {
+  it('allows a hidden term course only in parent test and preserves its pair metadata', async () => {
+    const termCourse = {
+      ...fixtureCourse(), course_id: 'L4A-T1-W01-D01', pair_id: '4A-T1-W01-D01',
+      study_pack: '4A-T1-W01-D01', publication_status: 'test'
+    }
+    const testStore = memoryStore()
+    const passwordHash = await hashPassword('right-password', '00112233445566778899aabbccddeeff')
+    const testService = createService({
+      store: testStore, passwordHash, hmacKey: '1234567890abcdef', randomToken: () => 'test-token',
+      courseProvider: { get: () => ({ course: termCourse, version: 'term-version' }) }
+    })
+    const testAuth = await testService.handle({ action: 'parentAuth', password: 'right-password' }, { callerId: 'parent' })
+    const termSubmission = { ...submission(), course_id: termCourse.course_id, course_version: 'term-version' }
+    const saved = await testService.handle({ action: 'submitListeningResult', session_token: testAuth.session_token, submission: termSubmission }, { callerId: 'parent' })
+    assert.equal(testStore.results.get(saved.result_id).pair_id, termCourse.pair_id)
+    assert.equal(testStore.results.get(saved.result_id).data_kind, 'test')
+
+    const formalService = createService({
+      store: memoryStore(), passwordHash: 'unused', hmacKey: '1234567890abcdef', formalEnabled: true,
+      randomToken: () => 'formal-token', courseProvider: { get: () => ({ course: termCourse, version: 'term-version' }) }
+    })
+    const formalAuth = await formalService.handle({ action: 'startChildSession' }, { callerId: 'child' })
+    await assert.rejects(formalService.handle({
+      action: 'submitListeningResult', session_token: formalAuth.session_token, submission: termSubmission
+    }, { callerId: 'child' }), /COURSE_NOT_FORMAL/)
+  })
+
   it('stores one server-scored test result for repeated result_id submissions', async () => {
     const { store, service, token } = await authenticatedService()
     const event = { action: 'submitListeningResult', session_token: token, submission: submission() }

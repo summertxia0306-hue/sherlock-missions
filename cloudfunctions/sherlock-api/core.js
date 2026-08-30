@@ -12,6 +12,7 @@ const scryptAsync = promisify(crypto.scrypt)
 const ALLOWED_MODULES = new Set(['listening', 'speaking', 'vocabulary'])
 const SAFE_SPEAKING_SCORE_ERRORS = new Set(['SILENT_AUDIO', 'INVALID_AUDIO', 'RECORDING_UPLOAD_FAILED', 'SCORE_UNAVAILABLE'])
 const PARENT_RESULT_MODULES = new Set(['listening', 'speaking'])
+const PARENT_COURSE_ID = /^(?:[WS]\d{2}D\d{2}|[LS][1-9][A-Z]-T\d{1,2}-W\d{2}-D\d{2})$/
 
 class ServiceError extends Error {
   constructor(code, message = code) {
@@ -122,6 +123,12 @@ function createService(options) {
       return record.created_by_caller === callerOwnerHash(requestContext.callerId, hmacKey)
     }
     return record?.created_by_session === session.token_hash.slice(0, 16)
+  }
+
+  function assertCourseAllowedForSession(course, session) {
+    if (session.data_kind === 'formal' && course?.publication_status === 'test') {
+      throw new ServiceError('COURSE_NOT_FORMAL')
+    }
   }
 
   async function requireSession(event, requestContext, expectedKind) {
@@ -236,6 +243,13 @@ function createService(options) {
     const session = await requireSession(event, requestContext)
     const requestedId = event.submission?.result_id
     if (!boundedString(requestedId, 1, 80)) throw new ServiceError('INVALID_LISTENING_RESULT')
+    let loaded
+    try {
+      loaded = courseProvider.get(event.submission?.course_id)
+    } catch {
+      throw new ServiceError('COURSE_NOT_FOUND')
+    }
+    assertCourseAllowedForSession(loaded.course, session)
     const existing = await store.getResult(requestedId)
     if (existing) {
       if (!belongsToSession(existing, session, requestContext) || existing.module_type !== 'listening'
@@ -246,12 +260,6 @@ function createService(options) {
         ok: true, result_id: existing.result_id, data_kind: session.data_kind, formal_completion_eligible: session.data_kind === 'formal',
         wrong_question_ids: (existing.wrong_answers || []).map((item) => item.id), idempotent: true
       }
-    }
-    let loaded
-    try {
-      loaded = courseProvider.get(event.submission?.course_id)
-    } catch {
-      throw new ServiceError('COURSE_NOT_FOUND')
     }
     let submitted
     try {
@@ -326,6 +334,7 @@ function createService(options) {
     }
     let loaded
     try { loaded = speakingCourseProvider.get(request.course_id) } catch { throw new ServiceError('COURSE_NOT_FOUND') }
+    assertCourseAllowedForSession(loaded.course, session)
     if (loaded.version !== request.course_version) throw new ServiceError('COURSE_VERSION_MISMATCH')
     const question = loaded.course.questions.find((item) => item.id === request.question_id)
     if (!question) throw new ServiceError('INVALID_SPEAKING_TAKE')
@@ -381,14 +390,15 @@ function createService(options) {
     const session = await requireSession(event, requestContext)
     const requestedId = event.submission?.result_id
     if (!boundedString(requestedId, 1, 80)) throw new ServiceError('INVALID_SPEAKING_RESULT')
+    let loaded
+    try { loaded = speakingCourseProvider.get(event.submission?.course_id) } catch { throw new ServiceError('COURSE_NOT_FOUND') }
+    assertCourseAllowedForSession(loaded.course, session)
     const existing = await store.getResult(requestedId)
     if (existing) {
       if (!belongsToSession(existing, session, requestContext) || existing.module_type !== 'speaking'
         || existing.data_kind !== session.data_kind || existing.course_id !== event.submission?.course_id) throw new ServiceError('RESULT_ID_CONFLICT')
       return { ok: true, result_id: existing.result_id, data_kind: session.data_kind, formal_completion_eligible: session.data_kind === 'formal', idempotent: true }
     }
-    let loaded
-    try { loaded = speakingCourseProvider.get(event.submission?.course_id) } catch { throw new ServiceError('COURSE_NOT_FOUND') }
     let submitted
     try { submitted = buildSpeakingResult(loaded.course, event.submission, loaded.version, hmacKey, session.data_kind) } catch { throw new ServiceError('INVALID_SPEAKING_RESULT') }
     submitted.created_at = new Date(now())
@@ -409,7 +419,7 @@ function createService(options) {
     const dataKind = filters.data_kind === undefined ? 'formal' : filters.data_kind
     if (!['formal', 'test'].includes(dataKind)
       || (filters.module_type !== undefined && !PARENT_RESULT_MODULES.has(filters.module_type))
-      || (filters.course_id !== undefined && !/^[WS]\d{2}D\d{2}$/.test(filters.course_id))
+      || (filters.course_id !== undefined && !PARENT_COURSE_ID.test(filters.course_id))
       || (filters.date_from !== undefined && !isIsoDate(filters.date_from))
       || (filters.date_to !== undefined && !isIsoDate(filters.date_to))) throw new ServiceError('INVALID_FILTER')
     if (filters.date_from && filters.date_to && Date.parse(filters.date_from) > Date.parse(filters.date_to)) throw new ServiceError('INVALID_FILTER')

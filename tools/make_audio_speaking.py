@@ -98,8 +98,9 @@ def load_manifest():
 
 def save_manifest(m):
     os.makedirs(AUDIO_ROOT, exist_ok=True)
-    with open(MANIFEST_PATH, "w", encoding="utf-8") as fh:
+    with open(MANIFEST_PATH, "w", encoding="utf-8", newline="\n") as fh:
         json.dump(m, fh, ensure_ascii=False, indent=1)
+        fh.write("\n")
 
 
 def speak_text(q):

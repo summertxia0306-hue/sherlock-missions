@@ -200,8 +200,8 @@ export function SpeakingPage({
   }
 
   if (!catalog) return <main className="center-card"><h1>跟读口语</h1><p>{message || '正在加载课程…'}</p></main>
-  const recommended = catalog.firstFormalIncomplete(completedCourseIds)
-  const shownCourses = catalog.window(completedCourseIds, 5)
+  const recommended = dataKind === 'formal' ? catalog.firstFormalIncomplete(completedCourseIds) : undefined
+  const shownCourses = dataKind === 'test' ? catalog.testCourses() : catalog.window(completedCourseIds, 5)
   if (!course || !session) return (
     <main>
       <section className="hero compact-hero"><p className="eyebrow">SPEAKING · {dataKind === 'formal' ? 'FORMAL' : 'TEST ONLY'}</p><h1>跟读口语</h1><p className="hero-copy">{dataKind === 'formal' ? '正式课程结果和私有录音会保存并衔接既有学习进度。' : '家长验收只保存 test，不计入正式完成。'}</p>{recommended && <div className="stage-pill">当前推荐 · {recommended.course_id}</div>}</section>

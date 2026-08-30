@@ -54,4 +54,22 @@ describe('P3 speaking child course contract', () => {
       expect(init).toMatchObject({ cache: 'no-store' })
     }
   })
+
+  it('accepts paired term courses and exposes hidden courses only to test selection', async () => {
+    const termCourse = structuredClone(course)
+    termCourse.course_id = 'S4A-T1-W01-D01'
+    Object.assign(termCourse, { pair_id: '4A-T1-W01-D01', study_pack: '4A-T1-W01-D01' })
+    for (const question of termCourse.questions) question.audio_asset = question.audio_asset.replace('S01D39', termCourse.course_id)
+    expect(parseSpeakingCourse(termCourse).study_pack).toBe('4A-T1-W01-D01')
+
+    const catalog = parseSpeakingCatalog([
+      { course_id: 'S01D50', course_version: 'legacy-v', title: 'Summer', course_type: 'weekly_review', week: 6, day: 10, visible: true },
+      { course_id: 'S4A-T1-W01-D01', course_version: 'term-v', title: 'Term', course_type: 'training', week: 1, day: 1, visible: false, pair_id: '4A-T1-W01-D01', study_pack: '4A-T1-W01-D01' }
+    ])
+    expect(catalog.window(new Set(['S01D50'])).map((item) => item.course_id)).toEqual(['S01D50'])
+    expect(catalog.testCourses().map((item) => item.course_id)).toEqual(['S01D50', 'S4A-T1-W01-D01'])
+
+    const fetcher = async () => ({ ok: true, json: async () => termCourse } as Response)
+    await expect(loadSpeakingCourse('S4A-T1-W01-D01', fetcher as typeof fetch)).resolves.toMatchObject({ course_id: 'S4A-T1-W01-D01' })
+  })
 })

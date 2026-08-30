@@ -49,7 +49,45 @@ async function setup(scorer, { formal = false } = {}) {
   return { store, service, token: auth.session_token, callerId }
 }
 
+function termCourse() {
+  return {
+    ...fixtureCourse(), course_id: 'S4A-T1-W01-D01', pair_id: '4A-T1-W01-D01',
+    study_pack: '4A-T1-W01-D01', publication_status: 'test',
+    questions: fixtureCourse().questions.map((question) => ({
+      ...question, audio: question.audio.replace('S01D39', 'S4A-T1-W01-D01')
+    }))
+  }
+}
+
 describe('P3 speaking API', () => {
+  it('allows hidden term takes only in parent test and blocks formal scoring before the provider call', async () => {
+    let calls = 0
+    const scorer = async (request) => {
+      calls += 1
+      return { ...request, total: 80, is_rejected: false, words: [], recording_path: 'private.wav' }
+    }
+    const passwordHash = await hashPassword('right-password', '00112233445566778899aabbccddeeff')
+    const testStore = memoryStore()
+    const testService = createService({
+      store: testStore, passwordHash, hmacKey: '1234567890abcdef', randomToken: () => 'test-token',
+      speakingCourseProvider: { get: () => ({ course: termCourse(), version: 'term-version' }) }, speakingScorer: scorer
+    })
+    const testAuth = await testService.handle({ action: 'parentAuth', password: 'right-password' }, { callerId: 'parent' })
+    const request = { result_id: 'term-r1', course_id: 'S4A-T1-W01-D01', course_version: 'term-version', question_id: 1, attempt: 1, wav_base64: Buffer.alloc(5000).toString('base64') }
+    await testService.handle({ action: 'scoreSpeakingTake', session_token: testAuth.session_token, request }, { callerId: 'parent' })
+    assert.equal(calls, 1)
+
+    const formalService = createService({
+      store: memoryStore(), passwordHash: 'unused', hmacKey: '1234567890abcdef', formalEnabled: true,
+      randomToken: () => 'formal-token', speakingCourseProvider: { get: () => ({ course: termCourse(), version: 'term-version' }) }, speakingScorer: scorer
+    })
+    const formalAuth = await formalService.handle({ action: 'startChildSession' }, { callerId: 'child' })
+    await assert.rejects(formalService.handle({
+      action: 'scoreSpeakingTake', session_token: formalAuth.session_token, request
+    }, { callerId: 'child' }), /COURSE_NOT_FORMAL/)
+    assert.equal(calls, 1)
+  })
+
   it('scores only authenticated, course-bound test audio and returns a signed proof', async () => {
     let calls = 0
     const scorer = async (request) => { calls += 1; return ({

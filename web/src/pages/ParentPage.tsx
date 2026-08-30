@@ -93,7 +93,7 @@ export function ParentPage({ api, onAuthenticated = () => undefined }: { api: Sh
               <option value="">全部</option><option value="listening">听力</option><option value="speaking">口语</option>
             </select>
             <label htmlFor="parent-course">课程</label>
-            <input id="parent-course" placeholder="如 W01D01" maxLength={6} value={filters.course_id || ''} onChange={(event) => setFilters({ ...filters, course_id: event.target.value })} />
+            <input id="parent-course" placeholder="如 W01D49 或 L4A-T1-W01-D01" maxLength={18} value={filters.course_id || ''} onChange={(event) => setFilters({ ...filters, course_id: event.target.value })} />
             <label htmlFor="parent-from">开始日期</label><input id="parent-from" type="date" value={filters.date_from || ''} onChange={(event) => setFilters({ ...filters, date_from: event.target.value })} />
             <label htmlFor="parent-to">结束日期</label><input id="parent-to" type="date" value={filters.date_to || ''} onChange={(event) => setFilters({ ...filters, date_to: event.target.value })} />
             <button type="submit" disabled={busy}>查询</button>

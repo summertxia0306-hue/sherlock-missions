@@ -1,6 +1,12 @@
 import { z } from 'zod'
+import { courseOrder, isCourseId, isPairId, pairIdForCourse } from '../core/course-id'
 
-const audioSchema = z.string().regex(/^audio\/speaking\/S01D(?:39|4\d|50)\/q\d{2}\.mp3$/)
+const speakingIdSchema = z.string().refine((value) => isCourseId(value, 'speaking'), 'invalid speaking course id')
+const pairIdSchema = z.string().refine(isPairId, 'invalid study pair id')
+const audioSchema = z.string().refine((value) => {
+  const match = /^audio\/speaking\/([^/]+)\/q\d{2}\.mp3$/.exec(value)
+  return Boolean(match && isCourseId(match[1], 'speaking'))
+}, 'invalid speaking audio asset')
 const repeatSchema = z.object({
   id: z.number().int().min(1).max(8), type: z.literal('repeat'), text: z.string().min(1).max(500), audio_asset: audioSchema
 }).strict()
@@ -10,11 +16,16 @@ const qaSchema = z.object({
 
 export const speakingQuestionSchema = z.discriminatedUnion('type', [repeatSchema, qaSchema])
 export const speakingCourseSchema = z.object({
-  course_id: z.string().regex(/^S01D(?:39|4\d|50)$/), course_version: z.string().min(8).max(64),
+  course_id: speakingIdSchema, course_version: z.string().min(8).max(64),
+  pair_id: pairIdSchema.optional(), study_pack: pairIdSchema.optional(),
   title: z.string().min(1).max(160), week: z.number().int().positive(), day: z.number().int().positive(),
   course_type: z.enum(['training', 'weekly_review']), est_minutes: z.number().int().positive().max(60),
   questions: z.array(speakingQuestionSchema).length(8)
 }).strict().superRefine((course, context) => {
+  const expected = pairIdForCourse(course.course_id)
+  if (expected && (course.pair_id !== expected || course.study_pack !== expected)) {
+    context.addIssue({ code: 'custom', message: 'term course must match pair_id and study_pack' })
+  }
   if (course.questions.some((item, index) => item.id !== index + 1)
     || course.questions.filter((item) => item.type === 'repeat').length !== 6
     || course.questions.filter((item) => item.type === 'qa').length !== 2) {
@@ -29,13 +40,15 @@ export type SpeakingCourse = z.infer<typeof speakingCourseSchema>
 export type SpeakingQuestion = z.infer<typeof speakingQuestionSchema>
 
 const catalogEntrySchema = z.object({
-  course_id: z.string().regex(/^S01D(?:39|4\d|50)$/), course_version: z.string().min(1).max(64),
+  course_id: speakingIdSchema, course_version: z.string().min(1).max(64),
+  pair_id: pairIdSchema.optional(), study_pack: pairIdSchema.optional(),
   title: z.string().min(1).max(160), course_type: z.enum(['training', 'weekly_review']),
   week: z.number().int().positive(), day: z.number().int().positive(), visible: z.boolean()
 }).strict()
 export type SpeakingCatalogEntry = z.infer<typeof catalogEntrySchema>
 export interface SpeakingCatalog {
   courses: readonly SpeakingCatalogEntry[]
+  testCourses(): SpeakingCatalogEntry[]
   firstFormalIncomplete(completed: ReadonlySet<string>): SpeakingCatalogEntry | undefined
   window(completed: ReadonlySet<string>, limit?: number): SpeakingCatalogEntry[]
 }
@@ -43,9 +56,11 @@ export interface SpeakingCatalog {
 export function parseSpeakingCourse(input: unknown): SpeakingCourse { return speakingCourseSchema.parse(input) }
 
 export function parseSpeakingCatalog(input: unknown): SpeakingCatalog {
-  const courses = z.array(catalogEntrySchema).parse(input).filter((item) => item.visible).sort((a, b) => a.course_id.localeCompare(b.course_id))
+  const allCourses = z.array(catalogEntrySchema).parse(input).sort((a, b) => courseOrder(a.course_id, b.course_id))
+  const courses = allCourses.filter((item) => item.visible)
   return {
     courses,
+    testCourses: () => [...allCourses],
     firstFormalIncomplete: (completed) => courses.find((item) => !completed.has(item.course_id)),
     window(completed, limit = 5) {
       if (limit < 1) return []
@@ -69,7 +84,7 @@ export async function loadSpeakingCatalog(fetcher: typeof fetch = fetch): Promis
 }
 
 export async function loadSpeakingCourse(courseId: string, fetcher: typeof fetch = fetch): Promise<SpeakingCourse> {
-  if (!/^S01D(?:39|4\d|50)$/.test(courseId)) throw new Error('INVALID_COURSE_ID')
+  if (!isCourseId(courseId, 'speaking')) throw new Error('INVALID_COURSE_ID')
   const response = await fetcher(`${import.meta.env.BASE_URL}content/speaking/${courseId}.json?fresh=${Date.now()}`, { cache: 'no-store' })
   if (!response.ok) throw new Error('SPEAKING_COURSE_UNAVAILABLE')
   return parseSpeakingCourse(await response.json())

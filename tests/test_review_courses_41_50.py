@@ -11,8 +11,10 @@ from speaking import models as speaking_models
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LISTENING_IDS = ["W01D%02d" % i for i in range(41, 51)]
 SPEAKING_IDS = ["S01D%02d" % i for i in range(41, 51)]
-ACTIVE_LISTENING_IDS = ["W01D%02d" % i for i in range(39, 51)]
-ACTIVE_SPEAKING_IDS = ["S01D%02d" % i for i in range(39, 51)]
+ACTIVE_LISTENING_IDS = sorted(["W01D%02d" % i for i in range(39, 51)] +
+                              ["L4A-T1-W01-D%02d" % i for i in range(1, 7)])
+ACTIVE_SPEAKING_IDS = sorted(["S01D%02d" % i for i in range(39, 51)] +
+                             ["S4A-T1-W01-D%02d" % i for i in range(1, 7)])
 
 EXPECTED_SCOPES = {
     41: "M1U1",
@@ -50,7 +52,7 @@ def _course_text(course):
 
 
 class ReviewCourseTests(unittest.TestCase):
-    def test_only_active_listening_and_speaking_json_remain(self):
+    def test_only_approved_legacy_and_term_test_json_remain(self):
         listening_ids = [
             os.path.splitext(os.path.basename(path))[0]
             for path in listening_models.list_course_files()

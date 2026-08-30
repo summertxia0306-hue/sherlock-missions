@@ -4,8 +4,8 @@ const crypto = require('node:crypto')
 const fs = require('node:fs')
 const path = require('node:path')
 
-const COURSE_ID = /^S01D(?:39|4\d|50)$/
-const AUDIO_PATH = /^static\/audio\/speaking\/(S01D(?:39|4\d|50))\/q\d{2}\.mp3$/
+const COURSE_ID = /^(?:S\d{2}D\d{2}|S[1-9][A-Z]-T\d{1,2}-W\d{2}-D\d{2})$/
+const AUDIO_PATH = /^static\/audio\/speaking\/(?:S\d{2}D\d{2}|S[1-9][A-Z]-T\d{1,2}-W\d{2}-D\d{2})\/q\d{2}\.mp3$/
 
 function fail() { throw new Error('INVALID_SPEAKING_DATA') }
 
@@ -30,6 +30,8 @@ function sanitizeSpeakingCourse(course, version = stableVersion(course)) {
   validateCourse(course)
   return {
     course_id: course.course_id,
+    ...(course.pair_id ? { pair_id: course.pair_id } : {}),
+    ...(course.study_pack ? { study_pack: course.study_pack } : {}),
     course_version: version,
     title: String(course.title || course.course_id),
     week: Number(course.week || 0),
@@ -55,10 +57,10 @@ function createFileSpeakingCourseProvider(directory = path.join(__dirname, 'cont
   return {
     get,
     catalog() {
-      return fs.readdirSync(directory).filter((name) => /^S01D(?:39|4\d|50)\.json$/.test(name)).sort()
+      return fs.readdirSync(directory).filter((name) => /^(?:S\d{2}D\d{2}|S[1-9][A-Z]-T\d{1,2}-W\d{2}-D\d{2})\.json$/.test(name)).sort()
         .map((name) => {
           const loaded = get(name.slice(0, -5))
-          return { course_id: loaded.course.course_id, title: loaded.course.title, course_type: loaded.course.course_type, week: loaded.course.week, day: loaded.course.day, visible: true, course_version: loaded.version }
+          return { course_id: loaded.course.course_id, title: loaded.course.title, course_type: loaded.course.course_type, week: loaded.course.week, day: loaded.course.day, visible: loaded.course.publication_status !== 'test', course_version: loaded.version }
         })
     }
   }
@@ -172,6 +174,8 @@ function buildSpeakingResult(course, submission, expectedVersion, secret, dataKi
   return {
     result_id: submission.result_id, student_id: submission.student_id, module_type: 'speaking', module: 'speaking',
     course_id: course.course_id, data_kind: dataKind, course_version: expectedVersion, status: 'completed',
+    ...(course.pair_id ? { pair_id: course.pair_id } : {}),
+    ...(course.study_pack ? { study_pack: course.study_pack } : {}),
     score: scored.length ? Math.round(scored.reduce((sum, item) => sum + item.best_total, 0) / scored.length) : 0,
     stars_total: questionResults.reduce((sum, item) => sum + item.stars, 0), stars_max: questionResults.length * 3,
     question_results: questionResults, duration_seconds: submission.duration_seconds,
