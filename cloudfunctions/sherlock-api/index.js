@@ -4,6 +4,12 @@ const cloudbase = require('@cloudbase/node-sdk')
 const { createService, ServiceError } = require('./core')
 const { createCloudbaseStore } = require('./store')
 const { createSpeakingScorer, createRecordingUrlProvider } = require('./speaking-client')
+const {
+  HttpRequestError,
+  createHttpResponse,
+  isHttpGatewayEvent,
+  parseHttpGatewayEvent
+} = require('./http-adapter')
 
 const app = cloudbase.init({ env: cloudbase.SYMBOL_CURRENT_ENV })
 const store = createCloudbaseStore(app.database())
@@ -31,9 +37,9 @@ function callerId(event, context) {
   return `request:${context?.requestId || 'unknown'}`
 }
 
-exports.main = async (event, context) => {
+async function handleServiceEvent(event, context, requestCallerId = callerId(event, context)) {
   try {
-    return await service.handle(event, { callerId: callerId(event, context) })
+    return await service.handle(event, { callerId: requestCallerId })
   } catch (error) {
     const code = error instanceof ServiceError ? error.code : 'INTERNAL_ERROR'
     if (!(error instanceof ServiceError)) {
@@ -59,5 +65,23 @@ exports.main = async (event, context) => {
       INVALID_FILTER: '查询条件无效'
     }
     return { ok: false, error: { code, message: safeMessages[code] || '服务暂不可用' } }
+  }
+}
+
+exports.main = async (event, context) => {
+  if (!isHttpGatewayEvent(event)) return handleServiceEvent(event, context)
+
+  try {
+    const request = parseHttpGatewayEvent(event)
+    if (request.kind === 'preflight') return request.response
+    const result = await handleServiceEvent(request.payload, context, request.callerId)
+    return createHttpResponse(result)
+  } catch (error) {
+    if (!(error instanceof HttpRequestError)) throw error
+    return createHttpResponse(
+      { ok: false, error: { code: error.code, message: '请求不被允许' } },
+      error.statusCode,
+      error.code !== 'HTTP_ORIGIN_DENIED'
+    )
   }
 }

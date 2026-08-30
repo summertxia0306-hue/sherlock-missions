@@ -222,7 +222,61 @@ interface CloudbaseAppLike {
   callFunction?(options: { name: string; data: Record<string, unknown> }): Promise<{ result: unknown }>
 }
 
+interface StorageLike {
+  getItem(key: string): string | null
+  setItem(key: string, value: string): void
+}
+
+interface HttpGatewayDependencies {
+  fetcher?: typeof fetch
+  storage?: StorageLike
+  createClientId?: () => string
+}
+
+const HTTP_CLIENT_STORAGE_KEY = 'sherlock-http-client-id-v1'
+
+function defaultClientId(): string {
+  if (typeof globalThis.crypto?.randomUUID === 'function') return globalThis.crypto.randomUUID()
+  const bytes = new Uint8Array(16)
+  globalThis.crypto.getRandomValues(bytes)
+  return Array.from(bytes, (value) => value.toString(16).padStart(2, '0')).join('')
+}
+
+export function createHttpGatewayApp(endpoint: string, dependencies: HttpGatewayDependencies = {}): CloudbaseAppLike {
+  const fetcher = dependencies.fetcher || globalThis.fetch.bind(globalThis)
+  const storage = dependencies.storage || globalThis.localStorage
+  const createClientId = dependencies.createClientId || defaultClientId
+  let clientId = storage.getItem(HTTP_CLIENT_STORAGE_KEY) || ''
+  if (!/^[A-Za-z0-9_-]{16,128}$/.test(clientId)) {
+    clientId = createClientId()
+    if (!/^[A-Za-z0-9_-]{16,128}$/.test(clientId)) throw new Error('HTTP_CLIENT_ID_INVALID')
+    storage.setItem(HTTP_CLIENT_STORAGE_KEY, clientId)
+  }
+
+  return {
+    auth: () => ({ hasLoginState: () => true, signInAnonymously: async () => ({}) }),
+    callFunction: async ({ data }) => {
+      const response = await fetcher(endpoint, {
+        method: 'POST',
+        credentials: 'omit',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Sherlock-Client-Id': clientId
+        },
+        body: JSON.stringify(data)
+      })
+      const result = await response.json()
+      if (!response.ok && !(typeof result === 'object' && result !== null && 'ok' in result)) {
+        throw new Error('HTTP_GATEWAY_ERROR')
+      }
+      return { result }
+    }
+  }
+}
+
 async function configuredApp(): Promise<CloudbaseAppLike> {
+  const httpEndpoint = import.meta.env.VITE_SHERLOCK_API_URL?.trim()
+  if (httpEndpoint) return createHttpGatewayApp(httpEndpoint)
   const env = import.meta.env.VITE_CLOUDBASE_ENV_ID?.trim()
   if (!env) {
     throw new Error('CLOUDBASE_NOT_CONFIGURED')

@@ -9,7 +9,7 @@ vi.mock('@cloudbase/js-sdk', () => ({
   }
 }))
 
-import { cloudbaseApi, createCloudbaseApi } from './cloudbase-api'
+import { cloudbaseApi, createCloudbaseApi, createHttpGatewayApp } from './cloudbase-api'
 
 function fakeApp(options: { loggedIn?: boolean; authError?: boolean; result?: unknown; functions?: boolean } = {}) {
   const signInAnonymously = vi.fn().mockResolvedValue(options.authError ? { error: new Error('denied') } : {})
@@ -27,6 +27,39 @@ function fakeApp(options: { loggedIn?: boolean; authError?: boolean; result?: un
 }
 
 describe('CloudBase browser adapter', () => {
+  it('uses a stable client id and exact JSON request for the HTTP gateway transport', async () => {
+    const fetcher = vi.fn().mockResolvedValue({
+      ok: true,
+      json: async () => ({ ok: true, service: 'sherlock-api', stage: 'P5', formal_enabled: true, writes: 'formal-and-test' })
+    })
+    const values = new Map<string, string>()
+    const storage = {
+      getItem: (key: string) => values.get(key) ?? null,
+      setItem: (key: string, value: string) => { values.set(key, value) }
+    }
+    const endpoint = 'https://family24.example.app.tcloudbase.com/sherlock-api'
+    const app = createHttpGatewayApp(endpoint, {
+      fetcher: fetcher as unknown as typeof fetch,
+      storage,
+      createClientId: () => '123e4567-e89b-42d3-a456-426614174000'
+    })
+    const api = createCloudbaseApi(app)
+
+    await api.health()
+    await api.authenticate('password')
+
+    expect(fetcher).toHaveBeenCalledTimes(2)
+    expect(fetcher).toHaveBeenLastCalledWith(endpoint, expect.objectContaining({
+      method: 'POST',
+      credentials: 'omit',
+      headers: expect.objectContaining({
+        'Content-Type': 'application/json',
+        'X-Sherlock-Client-Id': '123e4567-e89b-42d3-a456-426614174000'
+      }),
+      body: JSON.stringify({ action: 'parentAuth', password: 'password' })
+    }))
+  })
+
   it('requires public environment configuration', async () => {
     await expect(createCloudbaseApi(undefined).health()).rejects.toThrow('CLOUDBASE_NOT_CONFIGURED')
   })

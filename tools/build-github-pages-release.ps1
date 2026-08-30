@@ -12,7 +12,7 @@ $OutputEncoding = $Utf8NoBom
 
 $ExpectedRoot = 'D:\ObsidianVaults\Education\Sherlock\English-Learning'
 $ProjectRoot = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '..')).Path
-$CloudBaseUrl = 'https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/'
+$GatewayUrl = 'https://family24-d7gqb6r6m2d722f7a-1383960965.ap-shanghai.app.tcloudbase.com/sherlock-api'
 if ($ProjectRoot -ne $ExpectedRoot -or $EnvId -ne 'family24-d7gqb6r6m2d722f7a') {
     throw 'Project root or CloudBase environment mismatch. Refusing to run.'
 }
@@ -25,33 +25,13 @@ if ($PagesCheckout -ne $ExpectedPagesCheckout) {
     throw 'Pages checkout mismatch. Only the protected _runtime staging checkout is allowed.'
 }
 
-function Get-ExistingPublishKey {
-    $Html = (Invoke-WebRequest -Uri $CloudBaseUrl -UseBasicParsing -TimeoutSec 30).Content
-    $ScriptPath = [regex]::Match($Html, 'src="([^"]+\.js)"').Groups[1].Value
-    if ([string]::IsNullOrWhiteSpace($ScriptPath)) { throw 'Current CloudBase bundle was not found.' }
-    $JavaScript = (Invoke-WebRequest -Uri ([Uri]::new([Uri]$CloudBaseUrl, $ScriptPath)) -UseBasicParsing -TimeoutSec 30).Content
-    foreach ($Candidate in [regex]::Matches($JavaScript, 'eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+')) {
-        $Token = $Candidate.Value
-        $Part = $Token.Split('.')[1].Replace('-', '+').Replace('_', '/')
-        while ($Part.Length % 4) { $Part += '=' }
-        try {
-            $Payload = [Text.Encoding]::UTF8.GetString([Convert]::FromBase64String($Part)) | ConvertFrom-Json
-            if ($Payload.project_id -eq $EnvId -and $Payload.meta.platform -eq 'PublishableKey') { return $Token }
-        }
-        catch { continue }
-    }
-    throw 'Existing CloudBase publish key could not be recovered.'
-}
-
 $PagesStatusBefore = @(git -C $PagesCheckout status --porcelain)
 if ($LASTEXITCODE -ne 0 -or $PagesStatusBefore.Count -ne 0) {
     throw 'Pages staging checkout is not clean before release preparation.'
 }
 
 try {
-    $env:VITE_CLOUDBASE_ENV_ID = $EnvId
-    $env:VITE_CLOUDBASE_ACCESS_KEY = Get-ExistingPublishKey
-    $env:VITE_CLOUDBASE_FUNCTION_NAME = 'sherlock-api'
+    $env:VITE_SHERLOCK_API_URL = $GatewayUrl
 
     Push-Location (Join-Path $ProjectRoot 'web')
     try {
@@ -65,9 +45,7 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'GitHub Pages release preparation failed.' }
 }
 finally {
-    $env:VITE_CLOUDBASE_ENV_ID = $null
-    $env:VITE_CLOUDBASE_ACCESS_KEY = $null
-    $env:VITE_CLOUDBASE_FUNCTION_NAME = $null
+    $env:VITE_SHERLOCK_API_URL = $null
 }
 
 $Changed = @(git -C $PagesCheckout status --short)
