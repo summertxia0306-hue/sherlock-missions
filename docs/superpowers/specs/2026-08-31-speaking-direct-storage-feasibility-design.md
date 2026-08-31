@@ -1,7 +1,7 @@
 # 口语录音云存储直传隔离可行性验证设计
 
 > 日期：2026-08-31  
-> 状态：设计与规格均已获家长批准；候选已部署，安卓无 VPN 预验收通过，iPad Safari 待补验
+> 状态：原 150KiB 设计与规格已批准并部署；三档扩展方案已获口头批准，本文更新待家长复核
 > 唯一项目根：`D:\ObsidianVaults\Education\Sherlock\English-Learning`
 
 ## 1. 背景与判断
@@ -15,7 +15,8 @@ GitHub Pages 候选入口当前通过 Base64 分块上传口语 WAV，已经完�
 ### 目标
 
 - 确认现有 `family24` 体验版能否签发并接受单对象直传；
-- 确认无 VPN iPad Safari 能否从 GitHub Pages Origin 上传约 150 KiB 的原始 WAV；
+- 确认无 VPN Android Chrome 与 iPad Safari 能否从 GitHub Pages Origin 上传三个固定档位的原始 WAV；
+- 用三个固定档位覆盖短句、常见约 12 秒录音和当前系统录音上限；
 - 确认上传后服务端能够核验对象路径、字节数和 SHA-256；
 - 记录直传耗时及错误域，为是否替换现有分块传输提供证据；
 - 验证后清理测试对象，不留下孤儿文件。
@@ -43,6 +44,14 @@ GitHub Pages 候选入口当前通过 Base64 分块上传口语 WAV，已经完�
 
 它是当前生产兜底和回滚路径，已经通过真机验收。本轮保持不变；只有 B 的隔离验证全部通过并再次获得家长批准，才会另立正式替换设计。
 
+### 三档扩展的方案比较
+
+- **固定三个档位（选定）**：只允许 `153600`、`409600`、`700000` 字节，分别显示为 150KiB、400KiB、700KB。覆盖面完整，输入边界最小。
+- **允许 120KiB–700KB 任意输入**：调试灵活，但会把隔离探针扩大为通用上传入口，本轮不采用。
+- **只保留 700KB 单档**：改动最少，但无法区分固定开销、常见录音和上限录音的耗时，本轮不采用。
+
+三个档位按 16kHz、单声道、16-bit PCM/WAV 粗略对应约 4.8 秒、12.8 秒和 21.9 秒。700KB 使用当前正式口语服务已有的 `700000` 字节上限，不提高正式录音容量。
+
 ## 4. 隔离数据流
 
 ```text
@@ -55,9 +64,9 @@ sherlock-api
         | 校验家长 test 会话、固定测试前缀、大小上限和有效期
         | 返回单对象短期上传地址与 object_key
         v
-iPad Safari
+Android Chrome 或 iPad Safari
         |
-        | PUT 约 150 KiB 原始测试 WAV，不使用 Base64
+        | PUT 一个固定档位的原始测试 WAV，不使用 Base64
         v
 私有 CloudBase/COS 临时对象
         |
@@ -71,11 +80,13 @@ sherlock-api 核验对象
 
 测试 WAV 由程序生成，只包含静音或确定性测试波形，不包含孩子声音。测试对象前缀固定为 `sherlock-english/test/direct-upload-probe/`，对象名使用服务端生成的随机 ID；浏览器不得自行指定任意存储路径。
 
+家长端显示三个独立按钮。任一测试运行期间，其余按钮一并禁用；不提供“一键连续跑三档”，避免重复流量和难以定位单档失败。每次结果都显示精确字节数、PUT 耗时、服务端核验/删除耗时、总耗时和清理状态。
+
 ## 5. 安全约束
 
 - 仅已认证家长 test 会话能够申请上传票据；儿童 formal 会话不可用；
 - 上传票据有效期不超过 120 秒，只对应一个确定对象；
-- 服务端限制内容类型、声明大小和最大字节数，本轮最大 200 KiB；
+- 服务端只接受 `153600`、`409600`、`700000` 三个精确字节数；其他整数、范围内任意值和超过 700000 字节均拒绝；
 - 浏览器不接触 CloudBase 管理密钥、永久 Secret 或讯飞密钥；
 - 核验动作重新绑定申请者、票据 ID 和对象路径，不信任浏览器回传的任意 `file_id`；
 - 服务端核对实际对象大小和 SHA-256 后才判定成功；
@@ -88,13 +99,12 @@ sherlock-api 核验对象
 验证结果必须区分：
 
 - `SIGNING_UNAVAILABLE`：当前套餐、SDK 或权限不能签发；
-- `STORAGE_CORS_BLOCKED`：Safari 在对象存储跨域预检或 PUT 阶段阻止上传；
+- `STORAGE_CORS_OR_NETWORK_BLOCKED`：浏览器只返回不可细分的跨域或网络 `TypeError`；结合 COS 预检和在线状态另行判断；
 - `UPLOAD_TICKET_EXPIRED`：票据过期；
 - `UPLOAD_SIZE_MISMATCH`：实际大小与声明不符；
 - `UPLOAD_HASH_MISMATCH`：对象 SHA-256 不一致；
 - `UPLOAD_OBJECT_MISSING`：PUT 未成功或对象不可见；
 - `UPLOAD_CLEANUP_FAILED`：核验已结束但临时对象未删除；
-- `NETWORK_ERROR`：仅用于确实无法到达存储服务的传输故障。
 
 失败不得占用口语有效评分次数，不得写入现有结果集合。
 
@@ -103,10 +113,11 @@ sherlock-api 核验对象
 1. 只读核对当前 CloudBase/COS SDK、环境配置、存储权限和可用签名接口；
 2. 本地单元测试验证路径约束、票据过期、大小和哈希校验、无权限拒绝及清理逻辑；
 3. 在不调用学习接口的条件下部署隔离 probe 动作；
-4. 桌面 GitHub Pages test Origin 上传一次确定性 150 KiB WAV；
-5. 家长在无 VPN iPad Safari 执行一次同样上传；
-6. 查询确认对象已删除，且结果、take、录音和完成状态数量没有增加；
-7. 记录总耗时、PUT 耗时、核验耗时和错误域。
+4. 桌面 GitHub Pages test Origin 分别验证三个固定档位；
+5. 家长在无 VPN Android Chrome 补测 400KiB 与 700KB；既有 150KiB 安卓结果继续有效；
+6. 家长有 iPad 后，在无 VPN iPad Safari 至少执行一次 700KB 上限档；
+7. 每次查询确认对象已删除，且结果、take、录音和完成状态数量没有增加；
+8. 分档记录总耗时、PUT 耗时、核验耗时和错误域。
 
 遇到以下任一条件立即停止，不扩大权限或费用：
 
@@ -120,8 +131,9 @@ sherlock-api 核验对象
 
 直传可行必须同时满足：
 
-- 无 VPN iPad Safari 的预检和二进制 PUT 成功；
-- 约 150 KiB WAV 一次上传，不经过 `sherlock-api` 大请求体；
+- 无 VPN Android Chrome 的 400KiB 与 700KB 二进制 PUT 成功；
+- 无 VPN iPad Safari 的 700KB 上限档预检和二进制 PUT 成功；
+- 三个固定档位均一次上传，不经过 `sherlock-api` 大请求体；
 - 服务端对象大小和 SHA-256 完全一致；
 - 测试对象最终不存在；
 - 未新增任何 test/formal 学习记录、评分 take、proof 或正式录音；
