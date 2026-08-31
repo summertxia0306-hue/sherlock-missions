@@ -1,7 +1,7 @@
 # PROJECT STATUS
 
-> 最后更新：2026-08-30
-> 当前阶段：A formal 会话续期热修复已部署并转入自然使用观察；P6/B 新编号兼容与第一周 12 门课程 test 部署已完成，课程对儿童 formal 保持不可见且不可写，等待 00/家长按学校进度批准正式开放
+> 最后更新：2026-08-31
+> 当前阶段：GitHub Pages 前端候选入口阶段一已部署，等待家长 iPad Safari 的家长 test 真机验收；原 CloudBase 入口仍是唯一儿童 formal 入口。P6 第一周 12 门课程继续保持隐藏 test，尚未批准正式开放
 
 ## 当前事实
 
@@ -16,6 +16,7 @@
 - CloudBase `family24` 在 P5 切换前后实时核验仍为体验版，到期 `2027-02-04 23:59:59`，超额付费关闭；当前周期 `2026-08-04` 至 `2026-09-04`，切换部署前 3000 点中已用 27.13 点、剩余 2972.87 点。
 - P1 已创建隔离资源：Event 云函数 `sherlock-api`、4 个 `ADMINONLY` 的 `sherlock_*` 集合、`sherlock-english/test/README.txt` 存储标记和前端 `publish_key`；匿名登录仅对 `sherlock-api` 放行，其他函数保留原匿名禁用规则。
 - `sherlock-api` 已配置家长密码 scrypt 哈希、会话 HMAC 和口语内部 HMAC；P3 私有 `score-speaking` 继续使用。P5 保留全部既有密钥并仅新增 `FORMAL_ENABLED=true`；在线健康检查返回 `stage=P5`、`formal_enabled=true` 和 `writes=formal-and-test`。正式站点为 `https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/`。
+- 2026-08-31 已部署 GitHub Pages 阶段一候选入口 `https://summertxia0306-hue.github.io/sherlock-english/`。CloudBase 体验版套餐拒绝新增 Web 安全域名，因此候选前端改用同一 CloudBase 环境的 HTTP 网关 `/sherlock-api`，由云函数只向上述 GitHub Pages Origin 返回 CORS；原 Web SDK/Event 调用路径继续保留。候选入口尚未获得 iPad 真机 test 验收，不是儿童 formal 正式入口。
 - P2 已上线 W01D39–W01D50 共 12 门听力课；儿童副本 12/12 无答案、原文、考点标签或家长备注；216/216 段线上 MP3 与本地发布文件 SHA-256 一致。
 - P3 已完成 React 口语页面、单实例 iPad PCM/WAV 录音、试录/回放/自动停止、示范音互斥、讯飞评分适配、3 星/三次门控、加密 proof、幂等评分、私有录音和家长临时回放实现，并已部署 test。
 - 2026-08-27 两台 iOS 正式体验确认 PWA 跨录次复用麦克风流会导致首录间歇性静音、录完后系统麦克风指示灯跨题常亮，且显式关闭自动增益后回听偏小；Android 与旧 Streamlit 不复现。PWA 已改为每次录音获取新流并在成功、静音、异常和离页时立即停轨，恢复浏览器自动增益/降噪/回声消除；同时恢复课程卡“推荐”、完成置灰并扩大按钮触控留白。发布后真实 iOS 复验确认首录、回听音量、麦克风指示灯释放及 UI 微调均已修复。
@@ -332,4 +333,22 @@ CloudBase：只更新既有 score-speaking、sherlock-api 和 sherlock-english �
 浏览器验收：自动浏览器已打开正式列表页，但 DOM 读取连续超时；HTTP、静态哈希、构建和云函数边界均已完成自动验收，不要求孩子执行隐藏 test 专项流程
 正式发布状态：未发布；D01-D06 均不可用于儿童 formal。正式开放必须由 00/家长按学校当天实际已教范围另行明确批准
 回滚：以 B 提交的父提交重新构建并部署两支函数和静态站点；不迁改任何旧课程 ID、成绩、录音路径或历史记录
+```
+
+## 2026-08-31 GitHub Pages 候选入口阶段一部署
+
+```text
+日期：2026-08-31
+阶段：P5 后续入口故障治理 / 方案 A 阶段一候选部署完成、待 iPad 真机验收
+家长决策：采用 GitHub Pages /sherlock-english/ 作为候选前端，CloudBase 后端与数据保留；先仅家长 test，不切换儿童 formal；不购买域名、不申请 ICP 备案、不新增付费资源
+套餐约束与修订：CloudBase 返回 [CreateAuthDomain] 当前套餐无法执行此操作，不能新增 GitHub Web 安全域名；改用同一环境 HTTP 网关转发 sherlock-api，函数只允许 https://summertxia0306-hue.github.io Origin，原 Event/Web SDK 调用兼容保留
+源码提交：5c0512e（隔离发布工具）、c044a6a（HTTP 网关传输与双入口云函数）；设计文档 c6fe54d
+Pages 发布：独立 Pages 仓库提交 3eb0d9b，GitHub Actions run 33348996066 成功；候选 URL https://summertxia0306-hue.github.io/sherlock-english/
+CloudBase：已更新 sherlock-api 函数代码并创建 /sherlock-api HTTP 路由；OPTIONS 为 204，GitHub Origin health 为 200，错误客户端为 400，非许可 Origin 为 403 且无 ACAO；原 Event health 仍返回 P5/formal-and-test
+自动验证：Python 53/53；Web 74/74，覆盖率 statements 84.79%、branches 79.34%、functions 80.98%、lines 90.27%；sherlock-api 47/47，覆盖率 lines 92.94%、branches 77.61%、functions 86.03%；score-speaking 13/13；发布隔离 5/5；TypeScript、production build、敏感信息扫描通过
+线上静态验收：根、listening、speaking、parent、主 JS、Manifest、Service Worker、听力/口语 JSON 与代表音频均 HTTP 200；HTML 无 Content-Disposition；候选树 531 个文件。Pages 提交在 sherlock-english/ 之外零变更，家庭 24 点根站仍为 HTTP 200 / 标题“家庭 24 点”
+数据边界：自动验证只调用 health 和错误输入边界，不登录家长端、不提交课程、不创建 test/formal 学习结果或录音；private 未发布，候选包不含 CloudBase Publishable Key、JWT 或管理密钥
+浏览器限制：候选地址可导航，但自动化 DOM/控制台读取超时，因此不登记为真实浏览器全流程通过；HTTP、构建、提交和云函数证据已通过，iPad Safari 仍是最终门槛
+正式状态：原 CloudBase 地址继续是唯一儿童 formal 入口；GitHub Pages 只用于家长阶段一 test。未经家长在 iPad 完成播放、录音、回放、评分、test 提交并再次明确批准，不执行阶段二切换
+回滚：删除 Pages 仓库 sherlock-english/ 子目录并删除 HTTP 网关路由；CloudBase 原静态入口、Event 调用、正式数据和录音不变
 ```

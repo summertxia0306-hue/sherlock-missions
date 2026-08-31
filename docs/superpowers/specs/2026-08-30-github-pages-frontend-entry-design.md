@@ -1,7 +1,7 @@
 # GitHub Pages 前端入口切换设计
 
 > 日期：2026-08-30  
-> 状态：家长已批准方案 A，待书面规格复核后实施  
+> 状态：家长已批准方案 A；阶段一候选已部署，待 iPad 真机验收
 > 唯一项目根：`D:\ObsidianVaults\Education\Sherlock\English-Learning`
 
 ## 1. 背景与已确认根因
@@ -54,7 +54,7 @@ summertxia0306-hue.github.io/sherlock-english/
 ├─ 儿童安全课程 JSON
 └─ 公开示范音频
         |
-        | CloudBase Web SDK / callFunction
+        | HTTPS JSON / CloudBase HTTP 网关
         v
 现有 family24 CloudBase 环境
 ├─ sherlock-api
@@ -84,7 +84,7 @@ summertxia0306-hue.github.io/sherlock-english/
 - 科大讯飞 APISecret/APIKey；
 - 正式结果、错题、学习档案或私有录音。
 
-CloudBase Publishable Key 仍按现有 Web SDK 客户端模型在构建时注入，不得输出到日志、Markdown 或提交历史。
+GitHub Pages 候选构建不注入 CloudBase Publishable Key；客户端只包含公开的 HTTPS 网关地址。原 CloudBase 前端继续沿用现有 Web SDK 配置，任何 Publishable Key 仍不得输出到日志、Markdown 或新增提交历史。
 
 ### CloudBase 保留内容
 
@@ -96,7 +96,7 @@ CloudBase Publishable Key 仍按现有 Web SDK 客户端模型在构建时注入
 - 私有录音和临时访问地址；
 - 讯飞配置与函数环境变量。
 
-只新增 GitHub Pages 来源域名到 Web 安全域名白名单。不得扩大数据库、存储或云函数权限。
+实施时 CloudBase 体验版拒绝新增 GitHub Pages Web 安全域名，因此阶段一改为创建同一环境的 HTTP 网关路由，由 `sherlock-api` 对唯一 GitHub Pages Origin 执行精确 CORS。不得扩大数据库、存储或其他云函数权限。
 
 ## 5. 两阶段切换
 
@@ -104,7 +104,7 @@ CloudBase Publishable Key 仍按现有 Web SDK 客户端模型在构建时注入
 
 1. 记录家庭 24 点 Pages 根站的文件清单、哈希和在线基线。
 2. 构建 Sherlock PWA，并只写入 Pages 仓库的 `sherlock-english/` 子目录。
-3. 将 `summertxia0306-hue.github.io` 加入 CloudBase Web 安全域名。
+3. 通过同一 CloudBase 环境的 `/sherlock-api` HTTP 网关连接现有云函数，并只允许 `https://summertxia0306-hue.github.io` Origin。
 4. 验证候选入口、路由、静态资源、音频和只读 API。
 5. 由家长在 iPad Safari 使用家长 test 入口完成播放、录音、回放、评分和提交验收。
 
@@ -175,7 +175,7 @@ CloudBase Publishable Key 仍按现有 Web SDK 客户端模型在构建时注入
 阶段一回滚：
 
 - 删除 Pages 仓库中的 `sherlock-english/` 候选目录；
-- 移除新增的 GitHub Pages Web 安全域名；
+- 删除新增的 `/sherlock-api` HTTP 网关路由；
 - CloudBase 原入口和全部数据保持不变。
 
 阶段二回滚：
@@ -196,3 +196,18 @@ CloudBase Publishable Key 仍按现有 Web SDK 客户端模型在构建时注入
 - 24 小时后结果、推荐和录音仍一致；
 - CloudBase 原前端已经只读提示，新入口成为唯一日常入口；
 - 项目状态、URL、提交、验证证据和回滚版本已经登记。
+
+## 11. 2026-08-31 实施修订与阶段一证据
+
+原设计假设可将 GitHub Pages 域名加入 CloudBase Web 安全域名。实施时平台明确返回 `[CreateAuthDomain] 当前套餐无法执行此操作`，该假设在现有体验版套餐下不成立。为保持方案 A 的产品边界且不升级付费，连接层作以下技术修订：
+
+- 前端静态承载仍为批准的 GitHub Pages `/sherlock-english/` 子路径；
+- 后端、数据库、正式结果、私有录音和讯飞链路仍在原 CloudBase 环境；
+- GitHub Pages 前端通过同环境 HTTP 网关调用 `sherlock-api`，不再依赖 Web SDK 安全域名；
+- `sherlock-api` 同时保留既有 Event 调用与新增 HTTP 调用，旧正式入口没有被切断；
+- HTTP 入口只接受 JSON `POST/OPTIONS`，校验客户端标识、请求大小和唯一 GitHub Origin；错误 Origin 返回 403 且不返回 `Access-Control-Allow-Origin`；
+- 候选构建不包含 CloudBase Publishable Key、管理密钥、JWT、`private/`、正式结果或私有录音。
+
+阶段一已完成的自动证据：Pages 提交 `3eb0d9b` 部署成功；候选四个入口、主脚本、Manifest、Service Worker、两类课程 JSON 和代表音频均为 HTTP 200；HTML 不含附件响应头；家庭 24 点根站保持 HTTP 200 且 Pages 提交在 `sherlock-english/` 以外零变更；HTTP 网关的许可 Origin health 为 200、预检为 204、非许可 Origin 为 403。
+
+该修订不等于阶段二获批。iPad Safari 的安装、缓存、音频、麦克风、录音、回放、评分和家长 test 提交仍须家长实机验收；在验收通过并再次明确批准前，原 CloudBase 地址继续是唯一儿童 formal 入口。
