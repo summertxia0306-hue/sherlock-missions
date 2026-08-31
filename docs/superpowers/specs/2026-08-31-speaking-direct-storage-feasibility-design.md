@@ -1,7 +1,7 @@
 # 口语录音云存储直传隔离可行性验证设计
 
 > 日期：2026-08-31  
-> 状态：家长已批准对话设计，书面规格待家长复核  
+> 状态：设计与规格均已获家长批准；候选已部署，安卓无 VPN 预验收通过，iPad Safari 待补验
 > 唯一项目根：`D:\ObsidianVaults\Education\Sherlock\English-Learning`
 
 ## 1. 背景与判断

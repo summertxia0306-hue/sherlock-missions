@@ -389,5 +389,8 @@ CORS：保留 COS 既有规则，只新增 ID=sherlock-direct-upload-probe-githu
 发布证据：设计 472a5d6；实施计划 866f2c2；实现 afdfbbc；Pages 968fd0b；GitHub Actions run 33384616270 success；线上活动 bundle index-BBGwsV5w.js
 数据边界：自动验证只执行 health、CORS OPTIONS 和无效 session 边界；未创建探针对象、课程结果、speaking take、录音或完成状态；未修改夏洛恪英语学习档案
 回滚：Pages 恢复 ac6bd8e；sherlock-api 恢复 afdfbbc 的父提交对应代码；删除 COS CORS 规则 sherlock-direct-upload-probe-github；历史结果、录音和现行分块链路不动
-待验收：家长在无 VPN iPad Safari 登录家长端，点击“运行150KiB直传测试”；必须看到 153600 字节、上传/校验/总耗时和“对象已清理”，之后再决定直传是否进入正式口语链路
+安卓预验收：家长在关闭 VPN 的安卓手机上运行成功；153600 字节完整通过，PUT 501ms、服务端核验与删除 1671ms、总计 3744ms，页面显示“对象已清理”；随后云端查询 sherlock-english/test/direct-upload-probe/ 为 0 个对象
+安卓界面观察：截图顶部仍显示“当前离线”，但签票、跨域 PUT、服务端下载核验和删除均完成，判定为页面网络状态提示误报；该现象不否定本次传输结果，也暂不扩展为本轮直传功能改造
+当前结论：存储直传在安卓无 VPN 网络上技术可行，单次原始二进制 PUT 约 0.5 秒；3744ms 不是完整口语评分耗时，不能据此承诺讯飞反馈时间；现行分块链路继续不变
+待验收：补做一次无 VPN iPad Safari 同样探针；通过后才可形成“进入正式直传替换设计”的最终可行性结论，仍不得直接切换正式口语链路
 ```
