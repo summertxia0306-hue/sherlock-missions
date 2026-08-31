@@ -60,6 +60,92 @@ describe('CloudBase browser adapter', () => {
     }))
   })
 
+  it('splits a normal 12-second speaking WAV into bounded HTTP requests', async () => {
+    const calls: Array<{ body: string; payload: Record<string, any> }> = []
+    let activeUploads = 0
+    let maximumActiveUploads = 0
+    const fetcher = vi.fn().mockImplementation(async (_url: string, init: RequestInit) => {
+      const body = String(init.body)
+      const payload = JSON.parse(body) as Record<string, any>
+      calls.push({ body, payload })
+      if (payload.action === 'uploadSpeakingChunk') {
+        activeUploads += 1
+        maximumActiveUploads = Math.max(maximumActiveUploads, activeUploads)
+        await new Promise((resolve) => setTimeout(resolve, 2))
+        activeUploads -= 1
+        return {
+          ok: true,
+          status: 200,
+          json: async () => ({
+            ok: true,
+            chunk_index: payload.request.chunk_index,
+            file_id: `cloud://test.bucket/tmp/part-${payload.request.chunk_index}.bin`
+          })
+        }
+      }
+      if (payload.action === 'scoreUploadedSpeakingTake') {
+        return {
+          ok: true,
+          status: 200,
+          json: async () => ({
+            ok: true, stars: 3, proof: 'opaque', child_feedback: 'ok', weak_words: [],
+            word_lights: [], can_retry: false, can_skip: false
+          })
+        }
+      }
+      throw new Error(`unexpected action ${payload.action}`)
+    })
+    const storage = { getItem: () => '123e4567-e89b-42d3-a456-426614174000', setItem: vi.fn() }
+    const api = createCloudbaseApi(createHttpGatewayApp('https://example.test/sherlock-api', {
+      fetcher: fetcher as unknown as typeof fetch,
+      storage
+    }))
+    const wavBase64 = Buffer.alloc(384_044, 7).toString('base64')
+
+    const response = await api.scoreSpeakingTake('token', {
+      result_id: 'r1', course_id: 'S01D39', course_version: 'version1',
+      question_id: 1, attempt: 1, wav_base64: wavBase64
+    })
+
+    expect(response.proof).toBe('opaque')
+    const uploads = calls.filter(({ payload }) => payload.action === 'uploadSpeakingChunk')
+    expect(uploads).toHaveLength(8)
+    expect(calls.at(-1)?.payload.action).toBe('scoreUploadedSpeakingTake')
+    expect(calls.some(({ payload }) => payload.action === 'scoreSpeakingTake')).toBe(false)
+    expect(Math.max(...calls.map(({ body }) => new TextEncoder().encode(body).byteLength))).toBeLessThan(75 * 1024)
+    expect(maximumActiveUploads).toBe(2)
+  })
+
+  it('retries only a failed speaking chunk before final scoring', async () => {
+    const attempts = new Map<number, number>()
+    const fetcher = vi.fn().mockImplementation(async (_url: string, init: RequestInit) => {
+      const payload = JSON.parse(String(init.body)) as Record<string, any>
+      if (payload.action === 'uploadSpeakingChunk') {
+        const index = payload.request.chunk_index as number
+        attempts.set(index, (attempts.get(index) || 0) + 1)
+        if (index === 0 && attempts.get(index) === 1) {
+          return { ok: false, status: 503, json: async () => ({ ok: false, error: { code: 'TEMPORARY' } }) }
+        }
+        return { ok: true, status: 200, json: async () => ({ ok: true, chunk_index: index, file_id: `cloud://test.bucket/part-${index}` }) }
+      }
+      return {
+        ok: true, status: 200,
+        json: async () => ({ ok: true, stars: 3, proof: 'retry-proof', child_feedback: 'ok', weak_words: [], word_lights: [], can_retry: false, can_skip: false })
+      }
+    })
+    const app = createHttpGatewayApp('https://example.test/sherlock-api', {
+      fetcher: fetcher as unknown as typeof fetch,
+      storage: { getItem: () => '123e4567-e89b-42d3-a456-426614174000', setItem: vi.fn() }
+    })
+    const response = await createCloudbaseApi(app).scoreSpeakingTake('token', {
+      result_id: 'r1', course_id: 'S01D39', course_version: 'version1', question_id: 1, attempt: 1,
+      wav_base64: Buffer.alloc(60_000, 5).toString('base64')
+    })
+    expect(response.proof).toBe('retry-proof')
+    expect(attempts.get(0)).toBe(2)
+    expect(attempts.get(1)).toBe(1)
+  })
+
   it('requires public environment configuration', async () => {
     await expect(createCloudbaseApi(undefined).health()).rejects.toThrow('CLOUDBASE_NOT_CONFIGURED')
   })

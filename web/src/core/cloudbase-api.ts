@@ -234,12 +234,41 @@ interface HttpGatewayDependencies {
 }
 
 const HTTP_CLIENT_STORAGE_KEY = 'sherlock-http-client-id-v1'
+const SPEAKING_CHUNK_BASE64_LENGTH = 65_536
+const SPEAKING_UPLOAD_CONCURRENCY = 2
+const SPEAKING_UPLOAD_RETRIES = 2
 
 function defaultClientId(): string {
   if (typeof globalThis.crypto?.randomUUID === 'function') return globalThis.crypto.randomUUID()
   const bytes = new Uint8Array(16)
   globalThis.crypto.getRandomValues(bytes)
   return Array.from(bytes, (value) => value.toString(16).padStart(2, '0')).join('')
+}
+
+function base64Bytes(value: string): Uint8Array {
+  const binary = atob(value)
+  const bytes = new Uint8Array(binary.length)
+  for (let index = 0; index < binary.length; index += 1) bytes[index] = binary.charCodeAt(index)
+  return bytes
+}
+
+async function sha256Hex(bytes: Uint8Array): Promise<string> {
+  const digest = await globalThis.crypto.subtle.digest('SHA-256', bytes as BufferSource)
+  return Array.from(new Uint8Array(digest), (value) => value.toString(16).padStart(2, '0')).join('')
+}
+
+async function mapWithConcurrency<T, R>(items: T[], concurrency: number, worker: (item: T, index: number) => Promise<R>): Promise<R[]> {
+  const results = new Array<R>(items.length)
+  let nextIndex = 0
+  async function run(): Promise<void> {
+    while (nextIndex < items.length) {
+      const index = nextIndex
+      nextIndex += 1
+      results[index] = await worker(items[index], index)
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(concurrency, items.length) }, () => run()))
+  return results
 }
 
 export function createHttpGatewayApp(endpoint: string, dependencies: HttpGatewayDependencies = {}): CloudbaseAppLike {
@@ -253,19 +282,79 @@ export function createHttpGatewayApp(endpoint: string, dependencies: HttpGateway
     storage.setItem(HTTP_CLIENT_STORAGE_KEY, clientId)
   }
 
+  async function post(data: Record<string, unknown>): Promise<{ response: Response; result: any }> {
+    const response = await fetcher(endpoint, {
+      method: 'POST',
+      credentials: 'omit',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Sherlock-Client-Id': clientId
+      },
+      body: JSON.stringify(data)
+    })
+    const result = await response.json()
+    return { response, result }
+  }
+
+  async function uploadChunk(data: Record<string, unknown>): Promise<string> {
+    for (let retry = 0; retry <= SPEAKING_UPLOAD_RETRIES; retry += 1) {
+      try {
+        const { response, result } = await post(data)
+        if (response.ok && result?.ok === true && typeof result.file_id === 'string') return result.file_id
+        if (result?.ok === false && response.status < 500) throw new SherlockApiError(result.error?.code || 'SPEAKING_UPLOAD_FAILED')
+        if (retry === SPEAKING_UPLOAD_RETRIES) throw new SherlockApiError('SPEAKING_UPLOAD_FAILED')
+      } catch (error) {
+        if (error instanceof SherlockApiError && error.code !== 'SPEAKING_UPLOAD_FAILED') throw error
+        if (retry === SPEAKING_UPLOAD_RETRIES) throw new SherlockApiError('SPEAKING_UPLOAD_FAILED')
+      }
+    }
+    throw new SherlockApiError('SPEAKING_UPLOAD_FAILED')
+  }
+
+  async function scoreSpeakingInChunks(data: Record<string, unknown>): Promise<{ result: unknown }> {
+    const request = data.request
+    if (!request || typeof request !== 'object' || Array.isArray(request)) throw new SherlockApiError('INVALID_SPEAKING_TAKE')
+    const wavBase64 = (request as Record<string, unknown>).wav_base64
+    if (typeof wavBase64 !== 'string') throw new SherlockApiError('INVALID_SPEAKING_TAKE')
+    const chunks = Array.from(
+      { length: Math.ceil(wavBase64.length / SPEAKING_CHUNK_BASE64_LENGTH) },
+      (_, index) => wavBase64.slice(index * SPEAKING_CHUNK_BASE64_LENGTH, (index + 1) * SPEAKING_CHUNK_BASE64_LENGTH)
+    )
+    const wavBytes = base64Bytes(wavBase64)
+    const common = {
+      ...(request as Record<string, unknown>),
+      wav_base64: undefined,
+      chunk_count: chunks.length,
+      wav_byte_length: wavBytes.byteLength,
+      wav_sha256: await sha256Hex(wavBytes)
+    }
+    delete common.wav_base64
+    const partFileIds = await mapWithConcurrency(chunks, SPEAKING_UPLOAD_CONCURRENCY, async (chunkBase64, chunkIndex) => {
+      const chunkBytes = base64Bytes(chunkBase64)
+      return uploadChunk({
+        action: 'uploadSpeakingChunk',
+        session_token: data.session_token,
+        request: {
+          ...common,
+          chunk_index: chunkIndex,
+          chunk_base64: chunkBase64,
+          chunk_sha256: await sha256Hex(chunkBytes)
+        }
+      })
+    })
+    const { result } = await post({
+      action: 'scoreUploadedSpeakingTake',
+      session_token: data.session_token,
+      request: { ...common, part_file_ids: partFileIds }
+    })
+    return { result }
+  }
+
   return {
     auth: () => ({ hasLoginState: () => true, signInAnonymously: async () => ({}) }),
     callFunction: async ({ data }) => {
-      const response = await fetcher(endpoint, {
-        method: 'POST',
-        credentials: 'omit',
-        headers: {
-          'Content-Type': 'application/json',
-          'X-Sherlock-Client-Id': clientId
-        },
-        body: JSON.stringify(data)
-      })
-      const result = await response.json()
+      if (data.action === 'scoreSpeakingTake') return scoreSpeakingInChunks(data)
+      const { response, result } = await post(data)
       if (!response.ok && !(typeof result === 'object' && result !== null && 'ok' in result)) {
         throw new Error('HTTP_GATEWAY_ERROR')
       }

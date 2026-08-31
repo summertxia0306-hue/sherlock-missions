@@ -141,4 +141,14 @@ describe('P3 speaking page', () => {
     await recordAndScore(user)
     expect(await screen.findByText(/诊断码：ISE_10163/)).toBeInTheDocument()
   })
+
+  it('distinguishes a chunk upload failure from an ISE scoring failure', async () => {
+    const user = userEvent.setup()
+    const service = api(async () => { throw new Error('SPEAKING_UPLOAD_FAILED') })
+    render(<MemoryRouter><SpeakingPage api={service} sessionToken="token" loadCatalog={async () => catalog} loadCourse={async () => course} recorder={fakeRecorder()} /></MemoryRouter>)
+    await user.click(await screen.findByRole('button', { name: '开始' }))
+    await finishTrial(user)
+    await recordAndScore(user)
+    expect(await screen.findByText(/录音上传没有完成.*直接再次评分/)).toBeInTheDocument()
+  })
 })

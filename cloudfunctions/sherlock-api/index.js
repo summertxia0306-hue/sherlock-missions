@@ -4,6 +4,7 @@ const cloudbase = require('@cloudbase/node-sdk')
 const { createService, ServiceError } = require('./core')
 const { createCloudbaseStore } = require('./store')
 const { createSpeakingScorer, createRecordingUrlProvider } = require('./speaking-client')
+const { createSpeakingUploadStore } = require('./speaking-upload-store')
 const {
   HttpRequestError,
   createHttpResponse,
@@ -22,7 +23,8 @@ const service = createService({
   maxFailures: Number(process.env.AUTH_MAX_FAILURES || 5),
   formalEnabled: String(process.env.FORMAL_ENABLED || '').toLowerCase() === 'true',
   speakingScorer: createSpeakingScorer(app, process.env.SPEAKING_INTERNAL_HMAC_KEY),
-  speakingRecordingUrl: createRecordingUrlProvider(app)
+  speakingRecordingUrl: createRecordingUrlProvider(app),
+  speakingUploadStore: createSpeakingUploadStore(app)
 })
 
 function callerId(event, context) {
@@ -62,6 +64,8 @@ async function handleServiceEvent(event, context, requestCallerId = callerId(eve
       RESULT_ID_CONFLICT: '结果编号冲突',
       RECORDING_NOT_FOUND: '录音不存在',
       RECORDING_UNAVAILABLE: '录音暂不可播放',
+      SPEAKING_UPLOAD_FAILED: '录音上传未完成，请重试',
+      SPEAKING_UPLOAD_INCOMPLETE: '录音分块不完整，请重试',
       INVALID_FILTER: '查询条件无效'
     }
     return { ok: false, error: { code, message: safeMessages[code] || '服务暂不可用' } }

@@ -23,6 +23,8 @@ export function scoreFailureMessage(code: string, dataKind: 'formal' | 'test'): 
   if (code === 'UNAUTHORIZED' || code === 'FORMAL_SESSION_RECOVERY_FAILED') return dataKind === 'formal' ? '正式会话自动恢复失败，录音仍保留；联网后可再次评分。' : '家长 TEST 会话已失效，请返回家长验收入口重新认证。'
   if (code === 'COURSE_VERSION_MISMATCH') return '课程刚刚更新，请返回列表后重新进入。'
   if (code === 'RECORDING_UPLOAD_FAILED') return `评分已返回，但${dataKind === 'formal' ? '正式' : '测试'}录音保存失败；本次不计次数，请重试。`
+  if (code === 'SPEAKING_UPLOAD_FAILED') return '录音上传没有完成。本次不计次数，录音仍保留，可直接再次评分。'
+  if (code === 'SPEAKING_UPLOAD_INCOMPLETE') return '录音分块校验没有通过。本次不计次数，录音仍保留，可直接再次评分。'
   const diagnostic = code || 'NETWORK_OR_CLIENT'
   return `评分暂时没有完成。本次不计次数，录音仍保留，可再次评分。（诊断码：${diagnostic}）`
 }
@@ -147,7 +149,7 @@ export function SpeakingPage({
     if (!course || !session || !recording || activity !== 'idle') return
     const question = course.questions[questionIndex]
     const attempt = (session.questions[String(question.id)]?.proofs.length || 0) + 1
-    setActivity('scoring'); setMessage('正在评分，请稍等…')
+    setActivity('scoring'); setMessage('正在上传录音并评分，请稍等…')
     try {
       const request = {
         result_id: session.result_id, course_id: course.course_id, course_version: course.course_version,

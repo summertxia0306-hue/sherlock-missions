@@ -13,6 +13,10 @@ const ALLOWED_MODULES = new Set(['listening', 'speaking', 'vocabulary'])
 const SAFE_SPEAKING_SCORE_ERRORS = new Set(['SILENT_AUDIO', 'INVALID_AUDIO', 'RECORDING_UPLOAD_FAILED', 'SCORE_UNAVAILABLE'])
 const PARENT_RESULT_MODULES = new Set(['listening', 'speaking'])
 const PARENT_COURSE_ID = /^(?:[WS]\d{2}D\d{2}|[LS][1-9][A-Z]-T\d{1,2}-W\d{2}-D\d{2})$/
+const SHA256_PATTERN = /^[a-f0-9]{64}$/
+const MAX_SPEAKING_WAV_BYTES = 700_000
+const MAX_SPEAKING_CHUNKS = 16
+const MAX_SPEAKING_CHUNK_BASE64 = 65_536
 
 class ServiceError extends Error {
   constructor(code, message = code) {
@@ -24,6 +28,16 @@ class ServiceError extends Error {
 
 function boundedString(value, min, max) {
   return typeof value === 'string' && value.length >= min && value.length <= max
+}
+
+function strictBase64(value, min, max) {
+  if (!boundedString(value, min, max) || value.length % 4 !== 0 || !/^[A-Za-z0-9+/]+={0,2}$/.test(value)) return null
+  const bytes = Buffer.from(value, 'base64')
+  return bytes.toString('base64') === value ? bytes : null
+}
+
+function sha256Hex(bytes) {
+  return crypto.createHash('sha256').update(bytes).digest('hex')
 }
 
 function safeSpeakingScoreError(error) {
@@ -109,6 +123,7 @@ function createService(options) {
   const speakingCourseProvider = options.speakingCourseProvider || createFileSpeakingCourseProvider()
   const speakingScorer = options.speakingScorer
   const speakingRecordingUrl = options.speakingRecordingUrl
+  const speakingUploadStore = options.speakingUploadStore
   const formalEnabled = options.formalEnabled === true
 
   function ownershipFields(session, requestContext) {
@@ -129,6 +144,27 @@ function createService(options) {
     if (session.data_kind === 'formal' && course?.publication_status === 'test') {
       throw new ServiceError('COURSE_NOT_FORMAL')
     }
+  }
+
+  function speakingTakeId(session, request) {
+    return crypto.createHash('sha256').update(`${session.data_kind}:${request.result_id}:${request.course_id}:${request.question_id}:${request.attempt}`).digest('hex')
+  }
+
+  function speakingUploadOwner(session, requestContext) {
+    const identity = session.data_kind === 'formal'
+      ? callerOwnerHash(requestContext.callerId, hmacKey)
+      : session.token_hash
+    return crypto.createHmac('sha256', hmacKey).update(`speaking-upload:${identity}`).digest('hex').slice(0, 32)
+  }
+
+  function speakingChunkPath(session, request, requestContext, chunkIndex) {
+    const part = String(chunkIndex).padStart(2, '0')
+    return `sherlock-english/tmp-speaking/${session.data_kind}/${speakingUploadOwner(session, requestContext)}/${speakingTakeId(session, request)}/part-${part}.bin`
+  }
+
+  function fileIdMatchesPath(fileId, path) {
+    if (!boundedString(fileId, 1, 1024)) return false
+    try { return decodeURIComponent(fileId).endsWith(`/${path}`) } catch { return false }
   }
 
   async function requireSession(event, requestContext, expectedKind) {
@@ -322,14 +358,11 @@ function createService(options) {
     }
   }
 
-  async function scoreSpeakingTake(event, requestContext) {
-    const session = await requireSession(event, requestContext)
-    const request = event.request
+  function resolveSpeakingTake(session, request) {
     if (!request || !boundedString(request.result_id, 1, 80)
       || !boundedString(request.course_id, 1, 80) || !boundedString(request.course_version, 1, 40)
       || !Number.isInteger(request.question_id) || !Number.isInteger(request.attempt)
-      || request.attempt < 1 || request.attempt > 3
-      || !boundedString(request.wav_base64, 1024, 900_000)) {
+      || request.attempt < 1 || request.attempt > 3) {
       throw new ServiceError('INVALID_SPEAKING_TAKE')
     }
     let loaded
@@ -338,19 +371,24 @@ function createService(options) {
     if (loaded.version !== request.course_version) throw new ServiceError('COURSE_VERSION_MISMATCH')
     const question = loaded.course.questions.find((item) => item.id === request.question_id)
     if (!question) throw new ServiceError('INVALID_SPEAKING_TAKE')
-    const takeId = crypto.createHash('sha256').update(`${session.data_kind}:${request.result_id}:${request.course_id}:${request.question_id}:${request.attempt}`).digest('hex')
+    return { question, takeId: speakingTakeId(session, request) }
+  }
+
+  async function scorePreparedSpeakingTake(session, request, requestContext, question, takeId, wavProvider) {
     const cached = typeof store.getSpeakingTake === 'function' ? await store.getSpeakingTake(takeId) : null
     if (cached) {
       if (!belongsToSession(cached, session, requestContext) || cached.data_kind !== session.data_kind) throw new ServiceError('RESULT_ID_CONFLICT')
       return { ...cached.response, idempotent: true }
     }
     if (typeof speakingScorer !== 'function') throw new ServiceError('SPEAKING_SCORE_UNAVAILABLE')
+    const wavBase64 = await wavProvider()
+    if (!boundedString(wavBase64, 1024, 900_000)) throw new ServiceError('INVALID_SPEAKING_TAKE')
     let scored
     try {
       scored = await speakingScorer({
         result_id: request.result_id, course_id: request.course_id, course_version: request.course_version,
         question_id: request.question_id, attempt: request.attempt,
-        target_text: question.text || question.expected, wav_base64: request.wav_base64,
+        target_text: question.text || question.expected, wav_base64: wavBase64,
         session_marker: session.token_hash.slice(0, 16), data_kind: session.data_kind
       })
     } catch (error) {
@@ -384,6 +422,64 @@ function createService(options) {
       await store.saveSpeakingTake({ take_id: takeId, response, ...ownershipFields(session, requestContext), created_at: new Date(now()), data_kind: session.data_kind })
     }
     return { ...response, idempotent: false }
+  }
+
+  async function scoreSpeakingTake(event, requestContext) {
+    const session = await requireSession(event, requestContext)
+    const request = event.request
+    const { question, takeId } = resolveSpeakingTake(session, request)
+    if (!boundedString(request.wav_base64, 1024, 900_000)) throw new ServiceError('INVALID_SPEAKING_TAKE')
+    return scorePreparedSpeakingTake(session, request, requestContext, question, takeId, async () => request.wav_base64)
+  }
+
+  function validateChunkCommon(request) {
+    if (!Number.isInteger(request.chunk_count) || request.chunk_count < 1 || request.chunk_count > MAX_SPEAKING_CHUNKS
+      || !Number.isInteger(request.wav_byte_length) || request.wav_byte_length < 768 || request.wav_byte_length > MAX_SPEAKING_WAV_BYTES
+      || !SHA256_PATTERN.test(request.wav_sha256 || '')) throw new ServiceError('SPEAKING_UPLOAD_INCOMPLETE')
+  }
+
+  async function uploadSpeakingChunk(event, requestContext) {
+    const session = await requireSession(event, requestContext)
+    const request = event.request
+    resolveSpeakingTake(session, request)
+    validateChunkCommon(request)
+    if (!speakingUploadStore || !Number.isInteger(request.chunk_index) || request.chunk_index < 0 || request.chunk_index >= request.chunk_count
+      || !SHA256_PATTERN.test(request.chunk_sha256 || '')) throw new ServiceError('SPEAKING_UPLOAD_INCOMPLETE')
+    const bytes = strictBase64(request.chunk_base64, 4, MAX_SPEAKING_CHUNK_BASE64)
+    if (!bytes || sha256Hex(bytes) !== request.chunk_sha256) throw new ServiceError('SPEAKING_UPLOAD_INCOMPLETE')
+    const path = speakingChunkPath(session, request, requestContext, request.chunk_index)
+    let uploaded
+    try { uploaded = await speakingUploadStore.upload(path, bytes) } catch { throw new ServiceError('SPEAKING_UPLOAD_FAILED') }
+    if (!fileIdMatchesPath(uploaded?.fileID, path)) throw new ServiceError('SPEAKING_UPLOAD_FAILED')
+    return { ok: true, chunk_index: request.chunk_index, file_id: uploaded.fileID }
+  }
+
+  async function scoreUploadedSpeakingTake(event, requestContext) {
+    const session = await requireSession(event, requestContext)
+    const request = event.request
+    const { question, takeId } = resolveSpeakingTake(session, request)
+    validateChunkCommon(request)
+    if (!speakingUploadStore || !Array.isArray(request.part_file_ids)
+      || request.part_file_ids.length !== request.chunk_count) throw new ServiceError('SPEAKING_UPLOAD_INCOMPLETE')
+    const expectedPaths = request.part_file_ids.map((_, index) => speakingChunkPath(session, request, requestContext, index))
+    if (!request.part_file_ids.every((fileId, index) => fileIdMatchesPath(fileId, expectedPaths[index]))) {
+      throw new ServiceError('SPEAKING_UPLOAD_INCOMPLETE')
+    }
+    const wavProvider = async () => {
+      let parts
+      try { parts = await Promise.all(request.part_file_ids.map((fileId) => speakingUploadStore.download(fileId))) } catch {
+        throw new ServiceError('SPEAKING_UPLOAD_INCOMPLETE')
+      }
+      if (!parts.every(Buffer.isBuffer)) throw new ServiceError('SPEAKING_UPLOAD_INCOMPLETE')
+      const wav = Buffer.concat(parts)
+      if (wav.length !== request.wav_byte_length || wav.length > MAX_SPEAKING_WAV_BYTES || sha256Hex(wav) !== request.wav_sha256) {
+        throw new ServiceError('SPEAKING_UPLOAD_INCOMPLETE')
+      }
+      return wav.toString('base64')
+    }
+    const response = await scorePreparedSpeakingTake(session, request, requestContext, question, takeId, wavProvider)
+    try { await speakingUploadStore.remove(request.part_file_ids) } catch { /* best-effort temporary cleanup */ }
+    return response
   }
 
   async function submitSpeakingResult(event, requestContext) {
@@ -498,6 +594,8 @@ function createService(options) {
       if (event.action === 'listListeningTestResults') {
         return listListeningTestResults(event, requestContext)
       }
+      if (event.action === 'uploadSpeakingChunk') return uploadSpeakingChunk(event, requestContext)
+      if (event.action === 'scoreUploadedSpeakingTake') return scoreUploadedSpeakingTake(event, requestContext)
       if (event.action === 'scoreSpeakingTake') return scoreSpeakingTake(event, requestContext)
       if (event.action === 'submitSpeakingResult') return submitSpeakingResult(event, requestContext)
       if (event.action === 'listSpeakingTestResults') return listSpeakingTestResults(event, requestContext)

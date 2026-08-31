@@ -1,5 +1,7 @@
 # 口语模块对接契约与功能清单
 
+> 版本 v4.2 · 2026-08-31：GitHub Pages HTTP 网关实测在约 100 KiB 请求体处返回 413。候选入口的 HTTP 传输层将口语 WAV Base64 按 65536 字符分块、最多 2 块并发并对单块重试；`sherlock-api` 将私有临时块绑定会话/caller、校验分块与整段 SHA-256 后，再复用原内部评分、proof、星级和最终私有录音链路。原 CloudBase Event 入口保持整段内部请求兼容，test/formal 与评分门控不变。
+
 > 版本 v4.1 · 2026-08-27：P5 iOS 真机缺陷修复。PWA 保留单一 `AudioContext`，但每次录音重新获取麦克风流并在成功、静音或异常后立即停轨；恢复浏览器自动增益、降噪与回声消除，避免跨题哑流、麦克风指示灯常亮和 iOS 回听音量过小。课程卡增加推荐标识与完成置灰，按钮触控留白同步扩大。
 
 > 版本 v4.0 · 2026-08-26：P5 普通 CloudBase 儿童入口由服务端 formal 会话写正式结果和私有录音；评分函数仅接受服务端 HMAC 签署的 `data_kind=formal|test`，录音路径固定隔离为 `sherlock-english/{data_kind}/{data_kind}/{course_id}/{result_id}/`。家长验收继续独立写 test，Streamlit 仅保留只读迁移提示。
@@ -26,6 +28,7 @@
 - 评分成功才生成不可篡改的加密 proof。最终提交只携带 proof；服务端重建分数、首读/末读/最高分、`take_stars`、`weak_words` 和 `passed_by_safety`。
 - 同一 result/question/attempt 重复请求使用服务端幂等缓存；评分服务或网络失败不产生 proof、不占三次有效评分。
 - 首次评分的幂等缓存读取必须使用 `take_id` 条件查询并把空结果视为未评分，不得对尚不存在的文档执行会抛错的直读；线上验收必须从公开 SDK 经 `sherlock-api` 走完整评分链路，不能再用直接调用私有评分函数代替。
+- GitHub Pages HTTP 入口不得把整段 WAV 放入单个外部请求。Base64 固定按 65536 字符分块，单块 JSON 小于 75 KiB、最多 2 块并发、单块失败最多重试 2 次；服务端必须重新认证并校验块/整段 SHA-256、精确临时路径和 caller 所有权，全部通过后才能调用原 `score-speaking`。临时块保持私有，成功或幂等返回后尽力清理；上传/校验失败不产生 proof、不占有效录次。
 - 录音只由评分函数服务端上传到 `sherlock-english/test/test/{course_id}/{result_id}/qNN-takeN.wav`；家长认证后按题次取得 10 分钟临时 URL，儿童端只回放当前浏览器内的录音 Blob。
 - 讯飞配额策略：不购买、不自动付费；当前授权到期前使用现有免费额度，到期后先验证每日免费额度是否继续；供应商不可用时保留录音和重试能力，不伪造分数。
 - CloudBase 英文 ISE 适配器与已验证的 Streamlit 契约保持一致：参考文本为 BOM 加原文、`group=pupil`、10 ms 音频帧节奏，最后一个实际音频帧携带 `aus=4/status=2`；调用超时上限 20 秒并允许一次瞬时失败重试。外层 `sherlock-api` 与私有评分函数均配置 60 秒函数超时。

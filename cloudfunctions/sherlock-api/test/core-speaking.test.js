@@ -2,6 +2,7 @@
 
 const { describe, it } = require('node:test')
 const assert = require('node:assert/strict')
+const crypto = require('node:crypto')
 const { createService, hashPassword } = require('../core')
 
 function fixtureCourse() {
@@ -32,6 +33,32 @@ function memoryStore() {
   }
 }
 
+function memoryUploadStore() {
+  const files = new Map()
+  const removed = []
+  return {
+    files,
+    removed,
+    async upload(path, bytes) {
+      files.set(path, Buffer.from(bytes))
+      return { fileID: `cloud://test.bucket/${path}` }
+    },
+    async download(fileId) {
+      const path = fileId.replace('cloud://test.bucket/', '')
+      if (!files.has(path)) throw new Error('missing')
+      return Buffer.from(files.get(path))
+    },
+    async remove(fileIds) {
+      removed.push(...fileIds)
+      for (const fileId of fileIds) files.delete(fileId.replace('cloud://test.bucket/', ''))
+    }
+  }
+}
+
+function sha256(bytes) {
+  return crypto.createHash('sha256').update(bytes).digest('hex')
+}
+
 async function setup(scorer, { formal = false } = {}) {
   const store = memoryStore()
   const passwordHash = await hashPassword('right-password', '00112233445566778899aabbccddeeff')
@@ -60,6 +87,108 @@ function termCourse() {
 }
 
 describe('P3 speaking API', () => {
+  it('uploads bounded private chunks, reassembles the WAV, and reuses the existing scoring contract', async () => {
+    let scoredBase64 = ''
+    const uploadStore = memoryUploadStore()
+    const scorer = async (request) => {
+      scoredBase64 = request.wav_base64
+      return {
+        ...request, total: 80, is_rejected: false, words: [],
+        recording_path: 'sherlock-english/test/test/S01D39/r1/q01-take1.wav'
+      }
+    }
+    const store = memoryStore()
+    const passwordHash = await hashPassword('right-password', '00112233445566778899aabbccddeeff')
+    const service = createService({
+      store, passwordHash, hmacKey: '1234567890abcdef', randomToken: () => 'test-token',
+      speakingCourseProvider: { get: () => ({ course: fixtureCourse(), version: 'version1' }) },
+      speakingScorer: scorer, speakingUploadStore: uploadStore
+    })
+    const auth = await service.handle({ action: 'parentAuth', password: 'right-password' }, { callerId: 'parent' })
+    const wav = Buffer.alloc(100_000, 9)
+    const wavBase64 = wav.toString('base64')
+    const chunks = wavBase64.match(/.{1,65536}/g)
+    const common = {
+      result_id: 'r1', course_id: 'S01D39', course_version: 'version1', question_id: 1, attempt: 1,
+      chunk_count: chunks.length, wav_byte_length: wav.length, wav_sha256: sha256(wav)
+    }
+    const partFileIds = []
+    for (const [chunkIndex, chunkBase64] of chunks.entries()) {
+      const bytes = Buffer.from(chunkBase64, 'base64')
+      const uploaded = await service.handle({
+        action: 'uploadSpeakingChunk', session_token: auth.session_token,
+        request: {
+          ...common, chunk_index: chunkIndex, chunk_base64: chunkBase64,
+          chunk_sha256: sha256(bytes)
+        }
+      }, { callerId: 'parent' })
+      partFileIds.push(uploaded.file_id)
+      assert.match(uploaded.file_id, /sherlock-english\/tmp-speaking\/test\//)
+    }
+
+    const response = await service.handle({
+      action: 'scoreUploadedSpeakingTake', session_token: auth.session_token,
+      request: { ...common, part_file_ids: partFileIds }
+    }, { callerId: 'parent' })
+
+    assert.equal(response.stars, 3)
+    assert.equal(scoredBase64, wavBase64)
+    assert.equal(uploadStore.files.size, 0)
+    assert.equal(uploadStore.removed.length, chunks.length)
+  })
+
+  it('rejects tampered chunks and foreign temporary paths before scoring', async () => {
+    let scorerCalls = 0
+    const uploadStore = memoryUploadStore()
+    const store = memoryStore()
+    const passwordHash = await hashPassword('right-password', '00112233445566778899aabbccddeeff')
+    const service = createService({
+      store, passwordHash, hmacKey: '1234567890abcdef', randomToken: () => 'test-token',
+      speakingCourseProvider: { get: () => ({ course: fixtureCourse(), version: 'version1' }) },
+      speakingScorer: async () => { scorerCalls += 1; return {} }, speakingUploadStore: uploadStore
+    })
+    const auth = await service.handle({ action: 'parentAuth', password: 'right-password' }, { callerId: 'parent' })
+    const wav = Buffer.alloc(5_000, 3)
+    const chunkBase64 = wav.toString('base64')
+    const common = {
+      result_id: 'r2', course_id: 'S01D39', course_version: 'version1', question_id: 1, attempt: 1,
+      chunk_count: 1, wav_byte_length: wav.length, wav_sha256: sha256(wav)
+    }
+    await assert.rejects(service.handle({
+      action: 'uploadSpeakingChunk', session_token: auth.session_token,
+      request: { ...common, chunk_index: 0, chunk_base64: chunkBase64, chunk_sha256: '0'.repeat(64) }
+    }, { callerId: 'parent' }), /SPEAKING_UPLOAD_INCOMPLETE/)
+
+    await assert.rejects(service.handle({
+      action: 'scoreUploadedSpeakingTake', session_token: auth.session_token,
+      request: { ...common, part_file_ids: ['cloud://test.bucket/sherlock-english/tmp-speaking/test/foreign/part-00.bin'] }
+    }, { callerId: 'parent' }), /SPEAKING_UPLOAD_INCOMPLETE/)
+    assert.equal(scorerCalls, 0)
+  })
+
+  it('derives the temporary chunk namespace from the server-side formal session', async () => {
+    const uploadStore = memoryUploadStore()
+    const service = createService({
+      store: memoryStore(), passwordHash: 'unused', hmacKey: '1234567890abcdef', formalEnabled: true,
+      randomToken: () => 'formal-token', speakingUploadStore: uploadStore,
+      speakingCourseProvider: { get: () => ({ course: fixtureCourse(), version: 'version1' }) },
+      speakingScorer: async () => ({})
+    })
+    const auth = await service.handle({ action: 'startChildSession' }, { callerId: 'child' })
+    const wav = Buffer.alloc(5_000, 2)
+    const chunkBase64 = wav.toString('base64')
+    const response = await service.handle({
+      action: 'uploadSpeakingChunk', session_token: auth.session_token,
+      request: {
+        result_id: 'formal-r1', course_id: 'S01D39', course_version: 'version1', question_id: 1, attempt: 1,
+        chunk_count: 1, chunk_index: 0, chunk_base64: chunkBase64, chunk_sha256: sha256(wav),
+        wav_byte_length: wav.length, wav_sha256: sha256(wav)
+      }
+    }, { callerId: 'child' })
+    assert.match(response.file_id, /sherlock-english\/tmp-speaking\/formal\//)
+    assert.doesNotMatch(response.file_id, /\/test\//)
+  })
+
   it('allows hidden term takes only in parent test and blocks formal scoring before the provider call', async () => {
     let calls = 0
     const scorer = async (request) => {
