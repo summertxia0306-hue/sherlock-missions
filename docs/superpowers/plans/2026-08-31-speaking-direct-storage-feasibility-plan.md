@@ -1,7 +1,7 @@
 # 口语录音云存储直传隔离验证实施计划
 
 > 依据：`docs/superpowers/specs/2026-08-31-speaking-direct-storage-feasibility-design.md`  
-> 状态：书面规格已获家长批准
+> 状态：原 150KiB 已实施；150KiB/400KiB/700KB 三档扩展规格已获家长批准
 
 ## 事实基线
 
@@ -18,7 +18,8 @@
 在 `cloudfunctions/sherlock-api/test/` 增加直传 probe 用例，先证明以下行为：
 
 - 未认证、formal 会话和无效输入均被拒绝；
-- 只有家长 test 会话能申请固定大小范围内的 probe；
+- 只有家长 test 会话能申请 `153600`、`409600`、`700000` 三个精确字节数的 probe；
+- 范围内任意其他整数、非整数和超过 700000 字节均被拒绝；
 - 对象路径只能由服务端生成，位于 `sherlock-english/test/direct-upload-probe/`；
 - 返回的上传信息不包含管理密钥，日志不输出上传 token；
 - finalize 会验证 HMAC 票据、caller、到期时间、对象路径、字节数和 SHA-256；
@@ -47,9 +48,10 @@
 在 `web/src/core/cloudbase-api.test.ts` 与父页面定向测试中覆盖：
 
 - HTTP 客户端能调用三个 probe 动作；
-- 浏览器生成固定 16 kHz、单声道、16 bit、约 150 KiB 的非儿童测试 WAV；
+- 浏览器能按三个白名单档位生成固定 16 kHz、单声道、16 bit 的非儿童测试 WAV；
 - 使用服务端返回的 URL/headers 执行单次二进制 PUT；
-- 客户端展示 PUT、服务端核验和总耗时；
+- 家长端显示三个独立按钮，运行一档时三档全部禁用；
+- 客户端按档位展示精确字节数、PUT、服务端核验和总耗时；
 - PUT 或核验失败时调用 cancel；
 - probe 只在 GitHub Pages 候选构建且家长认证后显示。
 
@@ -77,13 +79,13 @@
 
 - 部署前重新核对体验版、超额付费关闭及 24 点状态；
 - 只更新既有 `sherlock-api` 和 GitHub Pages 候选子目录，不修改 CloudBase 正式静态入口；
-- 使用家长 test 会话从 GitHub Pages Origin 执行一次 150 KiB PUT、verify 和 delete；
+- 使用家长 test 会话从 GitHub Pages Origin 分档执行 PUT、verify 和 delete；
 - 检查 probe 前缀为空，学习结果、speaking take 和正式录音计数未增加；
 - 再次核对 24 点与 CloudBase 正式英语入口。
 
 ### 7. iPad 验收与结论
 
-向家长提供一个按钮和最短操作步骤。iPad 无 VPN 验收只执行一次确定性测试 WAV，不启用麦克风。成功后记录 PUT、verify 和总耗时；失败时保留明确错误码和 CORS 证据。
+向家长提供三个固定档位按钮和最短操作步骤。Android 无 VPN 补测 400KiB、700KB；iPad 可用后至少验收一次 700KB 上限档。测试不启用麦克风。成功后分档记录 PUT、verify 和总耗时；失败时保留明确错误码和 CORS 证据。
 
 只有 iPad 成功、对象清零、数据零污染和现有链路无回归同时满足，才能登记“直传传输层可行”。是否替换正式分块方案另立设计，不在本计划内。
 
