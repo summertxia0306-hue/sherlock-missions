@@ -1,7 +1,7 @@
 # GitHub Pages 口语录音分块上传设计
 
 > 日期：2026-08-31  
-> 状态：家长已批准并通过书面规格；本地实现与自动验证通过，待候选入口部署和 iPad test 复验
+> 状态：家长已批准并通过书面规格；实现、自动验证和候选入口部署完成，待 iPad test 复验
 > 唯一项目根：`D:\ObsidianVaults\Education\Sherlock\English-Learning`
 
 ## 1. 故障事实与根因
