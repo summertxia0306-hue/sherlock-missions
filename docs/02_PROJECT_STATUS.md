@@ -373,3 +373,21 @@ CloudBase：已更新 sherlock-api 函数代码并创建 /sherlock-api HTTP 路�
 整课验收：家长已在无 VPN iPad 完成 8 题及最终 test 提交，并明确确认整体验收通过；云端结果 e78b76f2-9c2e-4f01-a260-0f7a02f6f8fd 为 S01D39/test/completed、97 分、24/24 星、8/8 题且每题 1 次有效评分；8 个最终 WAV 均存在且非空，临时分块为 0，formal_completion_eligible=false
 剩余边界：阶段一无遗留；家长未明确批准阶段二前，GitHub Pages 仍不是儿童 formal 入口
 ```
+
+## 2026-08-31 私有 COS 直传隔离探针候选部署
+
+```text
+日期：2026-08-31
+阶段：GitHub Pages 口语性能优化可行性验证 / 候选已部署、待无 VPN iPad 真机验收
+家长决策：批准设计与规格；只验证一份确定性 150KiB WAV 直传私有 COS，不使用麦克风、不调用讯飞、不写 test/formal 结果或学习档案；现行分块上传仍为生产回滚链路
+服务端边界：仅家长 test session 可申请；对象固定写入 sherlock-english/test/direct-upload-probe/；PUT 签名 120 秒有效；ticket 绑定 session、caller、精确 file_id、字节数、SHA-256 和 content-type；验证或取消后删除对象
+CORS：保留 COS 既有规则，只新增 ID=sherlock-direct-upload-probe-github；Origin 精确限定 https://summertxia0306-hue.github.io，方法仅 PUT，请求头仅 Content-Type，预检实测 200；未开放匿名读取或通配 GitHub Origin
+入口隔离：VITE_DIRECT_UPLOAD_PROBE 只在 GitHub Pages 候选构建设为 true；CloudBase 正式静态构建默认 false；按钮仅在家长密码认证成功后出现
+自动验证：sherlock-api 60/60，覆盖率 lines 92.22%/branches 76.63%/functions 87.72%；Web 82/82，statements 85.07%/branches 78.60%/functions 81.49%/lines 90.54%；score-speaking 13/13；Python 53/53；TypeScript 与 production build 通过
+安全复核：无效 session 的线上 createDirectUploadProbe 返回 UNAUTHORIZED；函数部署前后环境变量内容完全一致；新增 cos-nodejs-sdk-v5 固定为 3.0.0；npm audit 的 5 项告警均来自既有 @cloudbase/node-sdk 依赖链，未执行破坏性强制升级
+资源复核：family24 仍为 family24-web-003/SUCCESS/11-11；体验版有效至 2027-02-04，超额付费关闭，预检时剩余 2933.61 点；未新建环境、数据库、函数、网关或付费资源
+发布证据：设计 472a5d6；实施计划 866f2c2；实现 afdfbbc；Pages 968fd0b；GitHub Actions run 33384616270 success；线上活动 bundle index-BBGwsV5w.js
+数据边界：自动验证只执行 health、CORS OPTIONS 和无效 session 边界；未创建探针对象、课程结果、speaking take、录音或完成状态；未修改夏洛恪英语学习档案
+回滚：Pages 恢复 ac6bd8e；sherlock-api 恢复 afdfbbc 的父提交对应代码；删除 COS CORS 规则 sherlock-direct-upload-probe-github；历史结果、录音和现行分块链路不动
+待验收：家长在无 VPN iPad Safari 登录家长端，点击“运行150KiB直传测试”；必须看到 153600 字节、上传/校验/总耗时和“对象已清理”，之后再决定直传是否进入正式口语链路
+```
