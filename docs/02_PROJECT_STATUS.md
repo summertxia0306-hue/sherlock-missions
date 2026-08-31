@@ -1,7 +1,7 @@
 # PROJECT STATUS
 
 > 最后更新：2026-08-31
-> 当前阶段：GitHub Pages 候选入口的听力 test 已由家长真机验证通过；口语大请求 413 已改为分块上传并部署，等待家长在无 VPN iPad Safari 重新录制第 1 题完成评分复验。原 CloudBase 入口仍是唯一儿童 formal 入口；P6 第一周 12 门课程继续保持隐藏 test，尚未批准正式开放
+> 当前阶段：GitHub Pages 候选入口的听力 test 与口语第 1 题评分均已由家长在无 VPN iPad 真机验证通过；口语分块上传反馈约 3 秒。阶段一如需完整闭环仍可继续完成 8 题和最终 test 提交。原 CloudBase 入口仍是唯一儿童 formal 入口；P6 第一周 12 门课程继续保持隐藏 test，尚未批准正式开放
 
 ## 当前事实
 
@@ -368,5 +368,6 @@ CloudBase：已更新 sherlock-api 函数代码并创建 /sherlock-api HTTP 路�
 提交/版本：设计 2fd4a3a；实现 e1cf455；Pages ac6bd8e；候选 URL https://summertxia0306-hue.github.io/sherlock-english/
 数据边界：自动验证只使用无效 session 的边界请求，未创建 test/formal 结果、speaking take、临时分块、最终录音或完成状态；未修改学习档案；家长此前成功的听力 test 继续只作功能验收
 回滚：sherlock-api 恢复到实现提交 e1cf455 的父提交 2fd4a3a 对应代码；Pages 恢复 3eb0d9b；不删除任何历史结果或最终录音
-剩余验收：家长在无 VPN iPad Safari 重新录制口语第 1 题并点击评分；成功后再决定是否完成 8 题整课 test。阶段一未完整通过前，GitHub Pages 仍不是儿童 formal 入口
+真实 iPad 复验：家长在无 VPN iPad Safari 重新录制口语第 1 题并点击评分，确认评分成功；提交后的反馈约 3 秒，符合分块上传、云端合并校验和讯飞评分的预期链路
+剩余验收：口语分块故障修复已经通过真机验证；如需完成候选入口阶段一全部闭环，可继续完成 8 题整课及最终 test 提交。家长未明确批准阶段二前，GitHub Pages 仍不是儿童 formal 入口
 ```
