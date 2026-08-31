@@ -17,6 +17,10 @@ const SHA256_PATTERN = /^[a-f0-9]{64}$/
 const MAX_SPEAKING_WAV_BYTES = 700_000
 const MAX_SPEAKING_CHUNKS = 16
 const MAX_SPEAKING_CHUNK_BASE64 = 65_536
+const DIRECT_UPLOAD_PROBE_MIN_BYTES = 120 * 1024
+const DIRECT_UPLOAD_PROBE_MAX_BYTES = 200 * 1024
+const DIRECT_UPLOAD_PROBE_TTL_MS = 120_000
+const DIRECT_UPLOAD_PROBE_PREFIX = 'sherlock-english/test/direct-upload-probe'
 
 class ServiceError extends Error {
   constructor(code, message = code) {
@@ -124,6 +128,8 @@ function createService(options) {
   const speakingScorer = options.speakingScorer
   const speakingRecordingUrl = options.speakingRecordingUrl
   const speakingUploadStore = options.speakingUploadStore
+  const directUploadProbeStore = options.directUploadProbeStore
+  const randomProbeId = options.randomProbeId || (() => crypto.randomUUID())
   const formalEnabled = options.formalEnabled === true
 
   function ownershipFields(session, requestContext) {
@@ -167,6 +173,50 @@ function createService(options) {
     try { return decodeURIComponent(fileId).endsWith(`/${path}`) } catch { return false }
   }
 
+  function directUploadProbeOwner(session, requestContext) {
+    return crypto.createHmac('sha256', hmacKey)
+      .update(`direct-upload-probe:${session.token_hash}:${requestContext.callerId}`)
+      .digest('hex')
+  }
+
+  function signDirectUploadTicket(payload) {
+    const encoded = Buffer.from(JSON.stringify(payload)).toString('base64url')
+    const signature = crypto.createHmac('sha256', hmacKey).update(encoded).digest('hex')
+    return `${encoded}.${signature}`
+  }
+
+  function readDirectUploadTicket(ticket, session, requestContext, { allowExpired = false } = {}) {
+    if (!boundedString(ticket, 80, 4096)) throw new ServiceError('INVALID_DIRECT_UPLOAD_TICKET')
+    const parts = ticket.split('.')
+    if (parts.length !== 2 || !/^[A-Za-z0-9_-]+$/.test(parts[0]) || !/^[0-9a-f]{64}$/.test(parts[1])) {
+      throw new ServiceError('INVALID_DIRECT_UPLOAD_TICKET')
+    }
+    const expected = crypto.createHmac('sha256', hmacKey).update(parts[0]).digest()
+    const actual = Buffer.from(parts[1], 'hex')
+    if (actual.length !== expected.length || !crypto.timingSafeEqual(actual, expected)) {
+      throw new ServiceError('INVALID_DIRECT_UPLOAD_TICKET')
+    }
+    let payload
+    try { payload = JSON.parse(Buffer.from(parts[0], 'base64url').toString('utf8')) } catch { throw new ServiceError('INVALID_DIRECT_UPLOAD_TICKET') }
+    const valid = payload && payload.v === 1
+      && payload.owner === directUploadProbeOwner(session, requestContext)
+      && boundedString(payload.object_key, DIRECT_UPLOAD_PROBE_PREFIX.length + 10, DIRECT_UPLOAD_PROBE_PREFIX.length + 90)
+      && payload.object_key.startsWith(`${DIRECT_UPLOAD_PROBE_PREFIX}/`)
+      && payload.object_key.endsWith('.wav')
+      && fileIdMatchesPath(payload.file_id, payload.object_key)
+      && Number.isInteger(payload.byte_length)
+      && payload.byte_length >= DIRECT_UPLOAD_PROBE_MIN_BYTES
+      && payload.byte_length <= DIRECT_UPLOAD_PROBE_MAX_BYTES
+      && SHA256_PATTERN.test(payload.sha256 || '')
+      && payload.content_type === 'audio/wav'
+      && Number.isFinite(payload.issued_at)
+      && Number.isFinite(payload.expires_at)
+      && payload.expires_at - payload.issued_at === DIRECT_UPLOAD_PROBE_TTL_MS
+    if (!valid) throw new ServiceError('INVALID_DIRECT_UPLOAD_TICKET')
+    if (!allowExpired && payload.expires_at <= now()) throw new ServiceError('UPLOAD_TICKET_EXPIRED')
+    return payload
+  }
+
   async function requireSession(event, requestContext, expectedKind) {
     if (!boundedString(hmacKey, 16, 512) || !boundedString(event.session_token, 1, 512)) {
       throw new ServiceError('UNAUTHORIZED')
@@ -183,6 +233,93 @@ function createService(options) {
 
   async function requireTestSession(event, requestContext) {
     return requireSession(event, requestContext, 'test')
+  }
+
+  async function createDirectUploadProbe(event, requestContext) {
+    const session = await requireTestSession(event, requestContext)
+    const request = event.request
+    if (!request || !Number.isInteger(request.byte_length)
+      || request.byte_length < DIRECT_UPLOAD_PROBE_MIN_BYTES
+      || request.byte_length > DIRECT_UPLOAD_PROBE_MAX_BYTES
+      || !SHA256_PATTERN.test(request.sha256 || '')
+      || request.content_type !== 'audio/wav') throw new ServiceError('INVALID_DIRECT_UPLOAD_PROBE')
+    if (!directUploadProbeStore) throw new ServiceError('SIGNING_UNAVAILABLE')
+    const probeId = randomProbeId()
+    if (!/^[A-Za-z0-9_-]{8,80}$/.test(probeId)) throw new ServiceError('SIGNING_UNAVAILABLE')
+    const objectKey = `${DIRECT_UPLOAD_PROBE_PREFIX}/${probeId}.wav`
+    let upload
+    try {
+      upload = await directUploadProbeStore.issue(objectKey, {
+        expiresIn: DIRECT_UPLOAD_PROBE_TTL_MS / 1000,
+        contentType: request.content_type
+      })
+    } catch { throw new ServiceError('SIGNING_UNAVAILABLE') }
+    if (!boundedString(upload?.upload_url, 1, 4096) || !upload.upload_url.startsWith('https://')
+      || !fileIdMatchesPath(upload?.file_id, objectKey)
+      || upload.expires_in !== DIRECT_UPLOAD_PROBE_TTL_MS / 1000) throw new ServiceError('SIGNING_UNAVAILABLE')
+    const timestamp = now()
+    const payload = {
+      v: 1,
+      owner: directUploadProbeOwner(session, requestContext),
+      object_key: objectKey,
+      file_id: upload.file_id,
+      byte_length: request.byte_length,
+      sha256: request.sha256,
+      content_type: request.content_type,
+      issued_at: timestamp,
+      expires_at: timestamp + DIRECT_UPLOAD_PROBE_TTL_MS
+    }
+    return {
+      ok: true,
+      data_kind: 'test',
+      upload_url: upload.upload_url,
+      object_key: objectKey,
+      file_id: upload.file_id,
+      byte_length: request.byte_length,
+      expires_at: new Date(payload.expires_at).toISOString(),
+      ticket: signDirectUploadTicket(payload)
+    }
+  }
+
+  async function removeDirectUploadProbe(fileId) {
+    try {
+      await directUploadProbeStore.remove(fileId)
+      return true
+    } catch {
+      return false
+    }
+  }
+
+  async function verifyDirectUploadProbe(event, requestContext) {
+    const session = await requireTestSession(event, requestContext)
+    if (!directUploadProbeStore) throw new ServiceError('SIGNING_UNAVAILABLE')
+    const payload = readDirectUploadTicket(event.ticket, session, requestContext)
+    let bytes
+    try { bytes = await directUploadProbeStore.download(payload.file_id) } catch {
+      await removeDirectUploadProbe(payload.file_id)
+      throw new ServiceError('UPLOAD_OBJECT_MISSING')
+    }
+    let integrityError = ''
+    if (!Buffer.isBuffer(bytes) || bytes.length !== payload.byte_length) integrityError = 'UPLOAD_SIZE_MISMATCH'
+    else if (sha256Hex(bytes) !== payload.sha256) integrityError = 'UPLOAD_HASH_MISMATCH'
+    const cleanedUp = await removeDirectUploadProbe(payload.file_id)
+    if (!cleanedUp) throw new ServiceError('UPLOAD_CLEANUP_FAILED')
+    if (integrityError) throw new ServiceError(integrityError)
+    return {
+      ok: true,
+      data_kind: 'test',
+      byte_length: bytes.length,
+      sha256: payload.sha256,
+      cleaned_up: true
+    }
+  }
+
+  async function cancelDirectUploadProbe(event, requestContext) {
+    const session = await requireTestSession(event, requestContext)
+    if (!directUploadProbeStore) throw new ServiceError('SIGNING_UNAVAILABLE')
+    const payload = readDirectUploadTicket(event.ticket, session, requestContext, { allowExpired: true })
+    if (!(await removeDirectUploadProbe(payload.file_id))) throw new ServiceError('UPLOAD_CLEANUP_FAILED')
+    return { ok: true, data_kind: 'test', cleaned_up: true }
   }
 
   async function startChildSession(_event, requestContext) {
@@ -594,6 +731,9 @@ function createService(options) {
       if (event.action === 'listListeningTestResults') {
         return listListeningTestResults(event, requestContext)
       }
+      if (event.action === 'createDirectUploadProbe') return createDirectUploadProbe(event, requestContext)
+      if (event.action === 'verifyDirectUploadProbe') return verifyDirectUploadProbe(event, requestContext)
+      if (event.action === 'cancelDirectUploadProbe') return cancelDirectUploadProbe(event, requestContext)
       if (event.action === 'uploadSpeakingChunk') return uploadSpeakingChunk(event, requestContext)
       if (event.action === 'scoreUploadedSpeakingTake') return scoreUploadedSpeakingTake(event, requestContext)
       if (event.action === 'scoreSpeakingTake') return scoreSpeakingTake(event, requestContext)

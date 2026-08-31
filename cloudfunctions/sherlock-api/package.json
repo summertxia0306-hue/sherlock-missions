@@ -10,7 +10,8 @@
     "test:coverage": "node --test --experimental-test-coverage --test-coverage-lines=80 --test-coverage-functions=80 --test-coverage-branches=75"
   },
   "dependencies": {
-    "@cloudbase/node-sdk": "3.18.3"
+    "@cloudbase/node-sdk": "3.18.3",
+    "cos-nodejs-sdk-v5": "3.0.0"
   },
   "engines": {
     "node": ">=18"

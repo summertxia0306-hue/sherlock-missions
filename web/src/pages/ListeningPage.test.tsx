@@ -16,7 +16,8 @@ const api = {
   health: vi.fn(), authenticate: vi.fn(), submitResult: vi.fn(),
   submitListeningResult: vi.fn(), checkListeningCorrection: vi.fn(), listListeningTestResults: vi.fn(),
   scoreSpeakingTake: vi.fn(), submitSpeakingResult: vi.fn(), listSpeakingTestResults: vi.fn(), getSpeakingRecordingUrl: vi.fn(),
-  listParentResults: vi.fn(), getParentRecordingUrl: vi.fn()
+  listParentResults: vi.fn(), getParentRecordingUrl: vi.fn(),
+  createDirectUploadProbe: vi.fn(), verifyDirectUploadProbe: vi.fn(), cancelDirectUploadProbe: vi.fn()
 } as SherlockApi
 const loadCatalog = async () => catalog
 

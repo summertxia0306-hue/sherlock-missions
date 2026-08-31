@@ -10,7 +10,8 @@ const speakingApi = {
   getFormalProgress: vi.fn(async () => ({ ok: true as const, completed_course_ids: { listening: ['W01D43'], speaking: ['S01D43'] } })),
   scoreSpeakingTake: vi.fn(), submitSpeakingResult: vi.fn(), listSpeakingTestResults: vi.fn(), getSpeakingRecordingUrl: vi.fn(),
   listParentResults: vi.fn(async () => ({ ok: true as const, data_kind: 'formal' as const, summary: { result_count: 0, completed_course_count: 0, formal_completion_count: 0 }, results: [] })),
-  getParentRecordingUrl: vi.fn()
+  getParentRecordingUrl: vi.fn(),
+  createDirectUploadProbe: vi.fn(), verifyDirectUploadProbe: vi.fn(), cancelDirectUploadProbe: vi.fn()
 }
 
 describe('P5 application shell', () => {

@@ -30,8 +30,11 @@ if ($LASTEXITCODE -ne 0 -or $PagesStatusBefore.Count -ne 0) {
     throw 'Pages staging checkout is not clean before release preparation.'
 }
 
+$PreviousApiUrl = $env:VITE_SHERLOCK_API_URL
+$PreviousProbeFlag = $env:VITE_DIRECT_UPLOAD_PROBE
 try {
     $env:VITE_SHERLOCK_API_URL = $GatewayUrl
+    $env:VITE_DIRECT_UPLOAD_PROBE = 'true'
 
     Push-Location (Join-Path $ProjectRoot 'web')
     try {
@@ -45,7 +48,8 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'GitHub Pages release preparation failed.' }
 }
 finally {
-    $env:VITE_SHERLOCK_API_URL = $null
+    $env:VITE_SHERLOCK_API_URL = $PreviousApiUrl
+    $env:VITE_DIRECT_UPLOAD_PROBE = $PreviousProbeFlag
 }
 
 $Changed = @(git -C $PagesCheckout status --short)

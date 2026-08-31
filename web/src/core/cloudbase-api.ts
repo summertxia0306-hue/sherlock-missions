@@ -40,11 +40,45 @@ export interface HealthResult {
   writes: 'test-only' | 'formal-and-test'
 }
 
+export interface DirectUploadProbeRequest {
+  byte_length: number
+  sha256: string
+  content_type: 'audio/wav'
+}
+
+export interface DirectUploadProbeIssueResult {
+  ok: true
+  data_kind: 'test'
+  upload_url: string
+  object_key: string
+  file_id: string
+  byte_length: number
+  expires_at: string
+  ticket: string
+}
+
+export interface DirectUploadProbeVerifyResult {
+  ok: true
+  data_kind: 'test'
+  byte_length: number
+  sha256: string
+  cleaned_up: boolean
+}
+
+export interface DirectUploadProbeCancelResult {
+  ok: true
+  data_kind: 'test'
+  cleaned_up: boolean
+}
+
 export interface SherlockApi {
   health(): Promise<HealthResult>
   startChildSession(): Promise<ChildSessionResult>
   getFormalProgress(sessionToken: string): Promise<FormalProgressResult>
   authenticate(password: string): Promise<ParentAuthResult>
+  createDirectUploadProbe(sessionToken: string, request: DirectUploadProbeRequest): Promise<DirectUploadProbeIssueResult>
+  verifyDirectUploadProbe(sessionToken: string, ticket: string): Promise<DirectUploadProbeVerifyResult>
+  cancelDirectUploadProbe(sessionToken: string, ticket: string): Promise<DirectUploadProbeCancelResult>
   submitResult(sessionToken: string, result: ResultSubmission): Promise<SubmitResultResponse>
   submitListeningResult(sessionToken: string, submission: ListeningSubmission): Promise<ListeningSubmitResponse>
   checkListeningCorrection(sessionToken: string, resultId: string, questionId: number, attempt: 1 | 2, pick: ListeningPick): Promise<ListeningCorrectionResponse>
@@ -421,6 +455,15 @@ export function createCloudbaseApi(
     startChildSession: () => call<ChildSessionResult>({ action: 'startChildSession' }),
     getFormalProgress: (sessionToken) => call<FormalProgressResult>({ action: 'getFormalProgress', session_token: sessionToken }),
     authenticate: (password) => call<ParentAuthResult>({ action: 'parentAuth', password }),
+    createDirectUploadProbe: (sessionToken, request) => call<DirectUploadProbeIssueResult>({
+      action: 'createDirectUploadProbe', session_token: sessionToken, request
+    }),
+    verifyDirectUploadProbe: (sessionToken, ticket) => call<DirectUploadProbeVerifyResult>({
+      action: 'verifyDirectUploadProbe', session_token: sessionToken, ticket
+    }),
+    cancelDirectUploadProbe: (sessionToken, ticket) => call<DirectUploadProbeCancelResult>({
+      action: 'cancelDirectUploadProbe', session_token: sessionToken, ticket
+    }),
     submitResult: (sessionToken, result) => call<SubmitResultResponse>({
       action: 'submitResult',
       session_token: sessionToken,
@@ -467,6 +510,9 @@ export const cloudbaseApi: SherlockApi = {
   startChildSession: async () => (await getDefaultApi()).startChildSession(),
   getFormalProgress: async (sessionToken) => (await getDefaultApi()).getFormalProgress(sessionToken),
   authenticate: async (password) => (await getDefaultApi()).authenticate(password),
+  createDirectUploadProbe: async (sessionToken, request) => (await getDefaultApi()).createDirectUploadProbe(sessionToken, request),
+  verifyDirectUploadProbe: async (sessionToken, ticket) => (await getDefaultApi()).verifyDirectUploadProbe(sessionToken, ticket),
+  cancelDirectUploadProbe: async (sessionToken, ticket) => (await getDefaultApi()).cancelDirectUploadProbe(sessionToken, ticket),
   submitResult: async (sessionToken, result) => (await getDefaultApi()).submitResult(sessionToken, result),
   submitListeningResult: async (sessionToken, submission) => (await getDefaultApi()).submitListeningResult(sessionToken, submission),
   checkListeningCorrection: async (sessionToken, resultId, questionId, attempt, pick) => (

@@ -16,6 +16,7 @@ function api(): SherlockApi {
     startChildSession: vi.fn(), getFormalProgress: vi.fn(),
     health: vi.fn(), submitResult: vi.fn(), submitListeningResult: vi.fn(), checkListeningCorrection: vi.fn(),
     authenticate: vi.fn(async () => ({ ok: true as const, session_token: 'token', expires_at: '2026-08-24T12:00:00.000Z', data_kind: 'test' as const })),
+    createDirectUploadProbe: vi.fn(), verifyDirectUploadProbe: vi.fn(), cancelDirectUploadProbe: vi.fn(),
     listListeningTestResults: vi.fn(async () => ({ ok: true as const, data_kind: 'test' as const, results: [{
       result_id: 'l1', course_id: 'W01D39', data_kind: 'test' as const, score: 10, duration_seconds: 60,
       section_scores: {}, wrong_answers: [], corrections: {}, question_results: [], submitted_at: '2026-08-24T10:00:00Z'
@@ -61,6 +62,7 @@ describe('P4 parent history', () => {
     await user.click(screen.getByRole('button', { name: '进入家长端' }))
 
     expect(await screen.findByText('正式记录 1 条')).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: '运行150KiB直传测试' })).not.toBeInTheDocument()
     expect(screen.getByText('S01D01 · formal · 24/24 星 · 99 分')).toBeInTheDocument()
     expect(screen.queryByText(/W01D02/)).not.toBeInTheDocument()
     await user.click(screen.getByRole('button', { name: '播放第 1 次' }))
@@ -71,5 +73,26 @@ describe('P4 parent history', () => {
     await user.click(screen.getByRole('button', { name: '查询' }))
     expect(await screen.findByText('W01D02 · test · 80 分')).toBeInTheDocument()
     expect(service.listParentResults).toHaveBeenLastCalledWith('token', expect.objectContaining({ data_kind: 'test' }))
+  })
+
+  it('shows the isolated binary upload probe only when explicitly enabled and reports timings', async () => {
+    const service = p4Api()
+    const probeRunner = vi.fn().mockResolvedValue({
+      byte_length: 150 * 1024,
+      sha256: 'a'.repeat(64),
+      upload_ms: 420,
+      verify_ms: 180,
+      total_ms: 640,
+      cleaned_up: true
+    })
+    render(<MemoryRouter><ParentPage api={service} directUploadProbeEnabled probeRunner={probeRunner} /></MemoryRouter>)
+    const user = userEvent.setup()
+    await user.type(screen.getByLabelText('家长验收密码'), 'parent-password')
+    await user.click(screen.getByRole('button', { name: '进入家长端' }))
+    await user.click(await screen.findByRole('button', { name: '运行150KiB直传测试' }))
+
+    await waitFor(() => expect(probeRunner).toHaveBeenCalledWith(service, 'token'))
+    expect(await screen.findByText(/直传成功：153600 字节/)).toHaveTextContent('上传 420ms')
+    expect(screen.getByText(/对象已清理/)).toBeInTheDocument()
   })
 })

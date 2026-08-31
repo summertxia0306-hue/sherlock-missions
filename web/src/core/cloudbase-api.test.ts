@@ -174,6 +174,26 @@ describe('CloudBase browser adapter', () => {
     expect(fake.signInAnonymously).not.toHaveBeenCalled()
   })
 
+  it('forwards authenticated direct-upload probe issue, verify, and cleanup actions', async () => {
+    const fake = fakeApp({ loggedIn: true, result: { ok: true, data_kind: 'test', cleaned_up: true } })
+    const api = createCloudbaseApi(fake.app)
+    const request = { byte_length: 150 * 1024, sha256: 'a'.repeat(64), content_type: 'audio/wav' as const }
+
+    await api.createDirectUploadProbe('token', request)
+    await api.verifyDirectUploadProbe('token', 'ticket')
+    await api.cancelDirectUploadProbe('token', 'ticket')
+
+    expect(fake.callFunction).toHaveBeenNthCalledWith(1, expect.objectContaining({
+      name: 'sherlock-api', data: { action: 'createDirectUploadProbe', session_token: 'token', request }
+    }))
+    expect(fake.callFunction).toHaveBeenNthCalledWith(2, expect.objectContaining({
+      name: 'sherlock-api', data: { action: 'verifyDirectUploadProbe', session_token: 'token', ticket: 'ticket' }
+    }))
+    expect(fake.callFunction).toHaveBeenNthCalledWith(3, expect.objectContaining({
+      name: 'sherlock-api', data: { action: 'cancelDirectUploadProbe', session_token: 'token', ticket: 'ticket' }
+    }))
+  })
+
   it('forwards P2 listening submit, correction, and authenticated parent detail actions', async () => {
     const fake = fakeApp({ loggedIn: true, result: { ok: true, results: [] } })
     const api = createCloudbaseApi(fake.app)

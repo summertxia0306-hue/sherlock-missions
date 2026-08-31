@@ -1,20 +1,36 @@
 import { useRef, useState, type FormEvent } from 'react'
 import { Link } from 'react-router-dom'
 import type { ParentResultDetail, ParentResultFilters, SherlockApi } from '../core/cloudbase-api'
+import { runDirectUploadProbe } from '../core/direct-upload-probe'
 
 function errorMessage(error: unknown): string {
   const code = error instanceof Error ? error.message : 'UNKNOWN'
   const messages: Record<string, string> = {
     AUTH_FAILED: '密码不正确，请重试。', RATE_LIMITED: '尝试次数过多，请稍后再试。',
     CLOUDBASE_NOT_CONFIGURED: '站点尚未完成 CloudBase 公开配置。', CLOUDBASE_ANONYMOUS_LOGIN_FAILED: 'CloudBase 匿名登录尚未启用。',
-    CONFIG_ERROR: '云函数的家长认证配置尚未完成。', INVALID_FILTER: '查询条件无效，请检查课程编号或日期。'
+    CONFIG_ERROR: '云函数的家长认证配置尚未完成。', INVALID_FILTER: '查询条件无效，请检查课程编号或日期。',
+    SIGNING_UNAVAILABLE: '当前体验版环境无法签发直传地址。', STORAGE_CORS_OR_NETWORK_BLOCKED: '云存储跨域或网络连接被阻止。',
+    UPLOAD_TICKET_EXPIRED: '直传测试票据已过期，请重新运行。', UPLOAD_OBJECT_MISSING: '云存储没有收到测试文件。',
+    UPLOAD_SIZE_MISMATCH: '测试文件大小校验失败。', UPLOAD_HASH_MISMATCH: '测试文件完整性校验失败。',
+    UPLOAD_CLEANUP_FAILED: '测试对象未能自动清理，请停止测试。'
   }
+  if (/^STORAGE_UPLOAD_HTTP_\d{3}$/.test(code)) return `云存储上传失败（HTTP ${code.slice(-3)}）。`
   return messages[code] || '暂时无法完成操作，请稍后再试。'
 }
 
 const initialFilters: ParentResultFilters = { data_kind: 'formal' }
 
-export function ParentPage({ api, onAuthenticated = () => undefined }: { api: SherlockApi; onAuthenticated?: (token: string) => void }) {
+export function ParentPage({
+  api,
+  onAuthenticated = () => undefined,
+  directUploadProbeEnabled = import.meta.env.VITE_DIRECT_UPLOAD_PROBE === 'true',
+  probeRunner = runDirectUploadProbe
+}: {
+  api: SherlockApi
+  onAuthenticated?: (token: string) => void
+  directUploadProbeEnabled?: boolean
+  probeRunner?: typeof runDirectUploadProbe
+}) {
   const [password, setPassword] = useState('')
   const [token, setToken] = useState('')
   const [message, setMessage] = useState('')
@@ -70,6 +86,15 @@ export function ParentPage({ api, onAuthenticated = () => undefined }: { api: Sh
     } catch (error) { playbackRef.current = null; setBusy(false); setMessage(errorMessage(error)) }
   }
 
+  async function runProbe() {
+    setBusy(true); setMessage('正在生成并上传150KiB测试 WAV，不会启用麦克风…')
+    try {
+      const result = await probeRunner(api, token)
+      setMessage(`直传成功：${result.byte_length} 字节｜上传 ${result.upload_ms}ms｜核验 ${result.verify_ms}ms｜总计 ${result.total_ms}ms｜${result.cleaned_up ? '对象已清理' : '对象未清理'}`)
+    } catch (error) { setMessage(errorMessage(error)) }
+    finally { setBusy(false) }
+  }
+
   return (
     <main className="center-card parent-card">
       <p className="eyebrow">PARENT HISTORY · FORMAL / TEST ISOLATED</p>
@@ -104,6 +129,13 @@ export function ParentPage({ api, onAuthenticated = () => undefined }: { api: Sh
             <span>计入正式完成 {summary.formal_completion_count} 门</span>
           </div>
           <div className="parent-actions"><Link className="primary-link" to="/listening?mode=test">进入听力 test 验收</Link><Link className="primary-link" to="/speaking?mode=test">进入口语 test 验收</Link></div>
+          {directUploadProbeEnabled && (
+            <section className="parent-result" aria-label="云存储直传隔离测试">
+              <strong>云存储直传隔离测试</strong>
+              <p>自动生成150KiB测试 WAV，不调用麦克风、不评分、不写学习记录；核验后立即删除。</p>
+              <button type="button" disabled={busy} onClick={runProbe}>{busy ? '测试进行中…' : '运行150KiB直传测试'}</button>
+            </section>
+          )}
         </>
       )}
       {message && <p className="form-message" role="status">{message}</p>}
