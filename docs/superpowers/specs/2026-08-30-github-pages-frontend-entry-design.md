@@ -1,7 +1,7 @@
 # GitHub Pages 前端入口切换设计
 
 > 日期：2026-08-30  
-> 状态：家长已批准方案 A；阶段一候选已部署，待 iPad 真机验收
+> 状态：家长已批准方案 A；阶段一候选部署及无 VPN iPad 家长 test 全流程验收通过；阶段二尚未批准
 > 唯一项目根：`D:\ObsidianVaults\Education\Sherlock\English-Learning`
 
 ## 1. 背景与已确认根因
@@ -210,4 +210,6 @@ GitHub Pages 候选构建不注入 CloudBase Publishable Key；客户端只包�
 
 阶段一已完成的自动证据：Pages 提交 `3eb0d9b` 部署成功；候选四个入口、主脚本、Manifest、Service Worker、两类课程 JSON 和代表音频均为 HTTP 200；HTML 不含附件响应头；家庭 24 点根站保持 HTTP 200 且 Pages 提交在 `sherlock-english/` 以外零变更；HTTP 网关的许可 Origin health 为 200、预检为 204、非许可 Origin 为 403。
 
-该修订不等于阶段二获批。iPad Safari 的安装、缓存、音频、麦克风、录音、回放、评分和家长 test 提交仍须家长实机验收；在验收通过并再次明确批准前，原 CloudBase 地址继续是唯一儿童 formal 入口。
+2026-08-31 家长已在无 VPN iPad Safari 完成听力 test、口语录音/回放、8 题评分和最终 test 提交，并明确确认整体验收通过。云端复核最新口语结果为 `S01D39/test/completed`、97 分、24/24 星、8/8 题；8 个最终私有 WAV 均存在且非空，临时分块目录为空，且没有新增 formal 结果。
+
+该修订和阶段一验收通过均不等于阶段二获批。家长再次明确批准正式切换前，原 CloudBase 地址继续是唯一儿童 formal 入口。
