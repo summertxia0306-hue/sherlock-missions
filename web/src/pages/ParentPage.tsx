@@ -1,7 +1,7 @@
 import { useRef, useState, type FormEvent } from 'react'
 import { Link } from 'react-router-dom'
 import type { ParentResultDetail, ParentResultFilters, SherlockApi } from '../core/cloudbase-api'
-import { runDirectUploadProbe } from '../core/direct-upload-probe'
+import { DIRECT_UPLOAD_PROBE_OPTIONS, runDirectUploadProbe } from '../core/direct-upload-probe'
 
 function errorMessage(error: unknown): string {
   const code = error instanceof Error ? error.message : 'UNKNOWN'
@@ -86,10 +86,10 @@ export function ParentPage({
     } catch (error) { playbackRef.current = null; setBusy(false); setMessage(errorMessage(error)) }
   }
 
-  async function runProbe() {
-    setBusy(true); setMessage('正在生成并上传150KiB测试 WAV，不会启用麦克风…')
+  async function runProbe(byteLength: number, label: string) {
+    setBusy(true); setMessage(`正在生成并上传${label}测试 WAV，不会启用麦克风…`)
     try {
-      const result = await probeRunner(api, token)
+      const result = await probeRunner(api, token, byteLength)
       setMessage(`直传成功：${result.byte_length} 字节｜上传 ${result.upload_ms}ms｜核验 ${result.verify_ms}ms｜总计 ${result.total_ms}ms｜${result.cleaned_up ? '对象已清理' : '对象未清理'}`)
     } catch (error) { setMessage(errorMessage(error)) }
     finally { setBusy(false) }
@@ -132,8 +132,12 @@ export function ParentPage({
           {directUploadProbeEnabled && (
             <section className="parent-result" aria-label="云存储直传隔离测试">
               <strong>云存储直传隔离测试</strong>
-              <p>自动生成150KiB测试 WAV，不调用麦克风、不评分、不写学习记录；核验后立即删除。</p>
-              <button type="button" disabled={busy} onClick={runProbe}>{busy ? '测试进行中…' : '运行150KiB直传测试'}</button>
+              <p>按需生成150KiB、400KiB或700KB测试 WAV；不调用麦克风、不评分、不写学习记录，核验后立即删除。每次只运行一项。</p>
+              {DIRECT_UPLOAD_PROBE_OPTIONS.map((option) => (
+                <button type="button" disabled={busy} key={option.byteLength} onClick={() => runProbe(option.byteLength, option.label)}>
+                  {busy ? '测试进行中…' : `运行${option.label}直传测试`}
+                </button>
+              ))}
             </section>
           )}
         </>

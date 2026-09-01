@@ -17,8 +17,7 @@ const SHA256_PATTERN = /^[a-f0-9]{64}$/
 const MAX_SPEAKING_WAV_BYTES = 700_000
 const MAX_SPEAKING_CHUNKS = 16
 const MAX_SPEAKING_CHUNK_BASE64 = 65_536
-const DIRECT_UPLOAD_PROBE_MIN_BYTES = 120 * 1024
-const DIRECT_UPLOAD_PROBE_MAX_BYTES = 200 * 1024
+const DIRECT_UPLOAD_PROBE_ALLOWED_BYTES = new Set([150 * 1024, 400 * 1024, 700_000])
 const DIRECT_UPLOAD_PROBE_TTL_MS = 120_000
 const DIRECT_UPLOAD_PROBE_PREFIX = 'sherlock-english/test/direct-upload-probe'
 
@@ -205,8 +204,7 @@ function createService(options) {
       && payload.object_key.endsWith('.wav')
       && fileIdMatchesPath(payload.file_id, payload.object_key)
       && Number.isInteger(payload.byte_length)
-      && payload.byte_length >= DIRECT_UPLOAD_PROBE_MIN_BYTES
-      && payload.byte_length <= DIRECT_UPLOAD_PROBE_MAX_BYTES
+      && DIRECT_UPLOAD_PROBE_ALLOWED_BYTES.has(payload.byte_length)
       && SHA256_PATTERN.test(payload.sha256 || '')
       && payload.content_type === 'audio/wav'
       && Number.isFinite(payload.issued_at)
@@ -239,8 +237,7 @@ function createService(options) {
     const session = await requireTestSession(event, requestContext)
     const request = event.request
     if (!request || !Number.isInteger(request.byte_length)
-      || request.byte_length < DIRECT_UPLOAD_PROBE_MIN_BYTES
-      || request.byte_length > DIRECT_UPLOAD_PROBE_MAX_BYTES
+      || !DIRECT_UPLOAD_PROBE_ALLOWED_BYTES.has(request.byte_length)
       || !SHA256_PATTERN.test(request.sha256 || '')
       || request.content_type !== 'audio/wav') throw new ServiceError('INVALID_DIRECT_UPLOAD_PROBE')
     if (!directUploadProbeStore) throw new ServiceError('SIGNING_UNAVAILABLE')

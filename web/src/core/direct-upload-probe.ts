@@ -1,4 +1,9 @@
-const PROBE_WAV_BYTES = 150 * 1024
+export const DIRECT_UPLOAD_PROBE_OPTIONS = [
+  { label: '150KiB', byteLength: 150 * 1024 },
+  { label: '400KiB', byteLength: 400 * 1024 },
+  { label: '700KB', byteLength: 700_000 }
+] as const
+const DIRECT_UPLOAD_PROBE_ALLOWED_BYTES = new Set<number>(DIRECT_UPLOAD_PROBE_OPTIONS.map((option) => option.byteLength))
 const WAV_HEADER_BYTES = 44
 const SAMPLE_RATE = 16_000
 
@@ -37,8 +42,9 @@ function writeAscii(bytes: Uint8Array, offset: number, value: string): void {
   for (let index = 0; index < value.length; index += 1) bytes[offset + index] = value.charCodeAt(index)
 }
 
-export function createDeterministicProbeWav(): Uint8Array {
-  const bytes = new Uint8Array(PROBE_WAV_BYTES)
+export function createDeterministicProbeWav(byteLength = DIRECT_UPLOAD_PROBE_OPTIONS[0].byteLength): Uint8Array {
+  if (!DIRECT_UPLOAD_PROBE_ALLOWED_BYTES.has(byteLength)) throw new Error('INVALID_DIRECT_UPLOAD_PROBE_SIZE')
+  const bytes = new Uint8Array(byteLength)
   const view = new DataView(bytes.buffer)
   const dataBytes = bytes.byteLength - WAV_HEADER_BYTES
   writeAscii(bytes, 0, 'RIFF')
@@ -69,12 +75,13 @@ async function sha256Hex(bytes: Uint8Array): Promise<string> {
 export async function runDirectUploadProbe(
   api: DirectUploadProbeApi,
   sessionToken: string,
+  byteLength = DIRECT_UPLOAD_PROBE_OPTIONS[0].byteLength,
   dependencies: ProbeDependencies = {}
 ): Promise<DirectUploadProbeResult> {
   const fetcher = dependencies.fetcher || globalThis.fetch.bind(globalThis)
   const now = dependencies.now || (() => globalThis.performance.now())
   const totalStarted = now()
-  const wav = createDeterministicProbeWav()
+  const wav = createDeterministicProbeWav(byteLength)
   const hash = await sha256Hex(wav)
   let ticket = ''
   try {

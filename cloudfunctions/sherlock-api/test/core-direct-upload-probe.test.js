@@ -81,41 +81,43 @@ function probeRequest(bytes) {
 }
 
 describe('direct storage upload feasibility probe', () => {
-  it('issues one exact 120-second private upload target and verifies then removes the object', async () => {
-    const bytes = Buffer.alloc(150 * 1024, 7)
-    const { service, probeStore, token, callerId, nowValue } = await setup()
+  it('accepts only the three fixed sizes and verifies then removes each object', async () => {
+    for (const byteLength of [150 * 1024, 400 * 1024, 700_000]) {
+      const bytes = Buffer.alloc(byteLength, 7)
+      const { service, probeStore, token, callerId, nowValue } = await setup()
 
-    const issued = await service.handle({
-      action: 'createDirectUploadProbe',
-      session_token: token,
-      request: probeRequest(bytes)
-    }, { callerId })
+      const issued = await service.handle({
+        action: 'createDirectUploadProbe',
+        session_token: token,
+        request: probeRequest(bytes)
+      }, { callerId })
 
-    assert.equal(issued.ok, true)
-    assert.equal(issued.data_kind, 'test')
-    assert.equal(issued.byte_length, bytes.length)
-    assert.equal(issued.expires_at, new Date(nowValue + 120_000).toISOString())
-    assert.match(issued.object_key, /^sherlock-english\/test\/direct-upload-probe\/probe-id-1234\.wav$/)
-    assert.equal(probeStore.issued[0].options.expiresIn, 120)
-    assert.equal(Object.hasOwn(issued, 'authorization'), false)
-    assert.equal(Object.hasOwn(issued, 'token'), false)
+      assert.equal(issued.ok, true)
+      assert.equal(issued.data_kind, 'test')
+      assert.equal(issued.byte_length, bytes.length)
+      assert.equal(issued.expires_at, new Date(nowValue + 120_000).toISOString())
+      assert.match(issued.object_key, /^sherlock-english\/test\/direct-upload-probe\/probe-id-1234\.wav$/)
+      assert.equal(probeStore.issued[0].options.expiresIn, 120)
+      assert.equal(Object.hasOwn(issued, 'authorization'), false)
+      assert.equal(Object.hasOwn(issued, 'token'), false)
 
-    probeStore.files.set(issued.file_id, bytes)
-    const verified = await service.handle({
-      action: 'verifyDirectUploadProbe',
-      session_token: token,
-      ticket: issued.ticket
-    }, { callerId })
+      probeStore.files.set(issued.file_id, bytes)
+      const verified = await service.handle({
+        action: 'verifyDirectUploadProbe',
+        session_token: token,
+        ticket: issued.ticket
+      }, { callerId })
 
-    assert.deepEqual(verified, {
-      ok: true,
-      data_kind: 'test',
-      byte_length: bytes.length,
-      sha256: sha256(bytes),
-      cleaned_up: true
-    })
-    assert.equal(probeStore.files.size, 0)
-    assert.deepEqual(probeStore.removed, [issued.file_id])
+      assert.deepEqual(verified, {
+        ok: true,
+        data_kind: 'test',
+        byte_length: bytes.length,
+        sha256: sha256(bytes),
+        cleaned_up: true
+      })
+      assert.equal(probeStore.files.size, 0)
+      assert.deepEqual(probeStore.removed, [issued.file_id])
+    }
   })
 
   it('requires a parent test session and rejects invalid upload declarations', async () => {
@@ -126,7 +128,11 @@ describe('direct storage upload feasibility probe', () => {
     await assert.rejects(service.handle({ action: 'createDirectUploadProbe', request: valid }, { callerId }), /UNAUTHORIZED/)
     for (const request of [
       { ...valid, byte_length: 1024 },
-      { ...valid, byte_length: 201 * 1024 },
+      { ...valid, byte_length: 120 * 1024 },
+      { ...valid, byte_length: 200 * 1024 },
+      { ...valid, byte_length: 400 * 1024 + 1 },
+      { ...valid, byte_length: 700_001 },
+      { ...valid, byte_length: 700_000.5 },
       { ...valid, sha256: 'bad' },
       { ...valid, content_type: 'application/octet-stream' }
     ]) {
