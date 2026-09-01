@@ -5,7 +5,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import type { SherlockApi, SpeakingScoreResponse } from '../core/cloudbase-api'
 import { parseSpeakingCatalog, parseSpeakingCourse } from '../speaking/course'
 import type { PcmRecorder } from '../speaking/recorder'
-import { scoreFailureMessage, SpeakingPage } from './SpeakingPage'
+import { scoreFailureMessage, SpeakingPage, summarizeTransportDiagnostics } from './SpeakingPage'
 
 const catalog = parseSpeakingCatalog([{ course_id: 'S01D39', course_version: 'version1', title: 'Speaking', course_type: 'training', week: 5, day: 4, visible: true }])
 const course = parseSpeakingCourse({
@@ -60,6 +60,22 @@ describe('P3 speaking page', () => {
   it('tells the parent not to fall back when a direct score response is ambiguous', () => {
     expect(scoreFailureMessage('SPEAKING_DIRECT_STATUS_UNKNOWN', 'test')).toContain('不要重新录音')
     expect(scoreFailureMessage('SPEAKING_DIRECT_STATUS_UNKNOWN', 'test')).toContain('原录音')
+  })
+
+  it('summarizes direct coverage, median, slowest take, and fallback count', () => {
+    const diagnostics = [1200, 3000, 2400, 8000].map((total, index) => ({
+      questionId: index + 1,
+      attempt: 1,
+      diagnostics: {
+        mode: index === 3 ? 'chunk-fallback' as const : 'direct' as const,
+        hash_ms: 1, ticket_ms: 1, upload_ms: 1, validation_ms: 1, scoring_ms: 1, cleanup_ms: 1,
+        total_ms: total, cleaned_up: true
+      }
+    }))
+
+    expect(summarizeTransportDiagnostics(diagnostics)).toEqual({
+      questions: 4, takes: 4, direct: 3, fallback: 1, medianMs: 2700, slowestMs: 8000
+    })
   })
 
   async function finishTrial(user: ReturnType<typeof userEvent.setup>) {

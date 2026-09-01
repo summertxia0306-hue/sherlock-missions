@@ -336,9 +336,9 @@ python -m pytest
 ## 2026-09-01 当前实施证据
 
 - 服务端和 Web 直传优先状态机已实施；隐藏课程、formal、认证、票据、完整性、幂等、清理和安全回退边界均有自动化测试。
-- 本地回归：Web 93/93、`sherlock-api` 72/72、`score-speaking` 13/13、Python 53/53；Web 生产构建和 Pages 发布隔离测试通过。
+- 本地回归：Web 94/94、`sherlock-api` 72/72、`score-speaking` 13/13、Python 53/53；Web 生产构建和 Pages 发布隔离测试通过。
 - 安全检查：公开 bundle 未发现 Secret、签名 URL 或本地绝对路径；Web 生产依赖 0 漏洞。CloudBase SDK 原有传递依赖仍为 4 high / 1 moderate，未执行会破坏 SDK 版本的强制修复。
 - CloudBase：只部署 `sherlock-api`，保留原 7 项环境变量并新增 `SPEAKING_DIRECT_UPLOAD_TEST_ENABLED=true`；线上健康为 `formal-and-test` 且 TEST 直传开启，未部署正式腾讯云静态站点或 `score-speaking`。
-- GitHub Pages：候选发布提交 `74e79d6`，线上 bundle `index-CLsbdWkx.js`；只更新 `/sherlock-english/` 子路径。
+- GitHub Pages：候选发布提交 `0af62af`，线上 bundle `index-BTNa3zCL.js`；只更新 `/sherlock-english/` 子路径，最终页自动汇总覆盖题数、直传/兜底次数、中位数与最慢反馈时间。
 - 发布前后 `sherlock-english/tmp-speaking-direct/test/` 均为 0 个对象；24 点应用仍为 `family24-web-003` 且 11/11 文件一致。
 - 尚未完成：家长无 VPN iPad Safari 整节 8 题口语 TEST、最终录音/幂等/清理复核及 5 秒中位数、8 秒上限性能判定。因此本计划尚未完成，也未形成正式入口切换授权。

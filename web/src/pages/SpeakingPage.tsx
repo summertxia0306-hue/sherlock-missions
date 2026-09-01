@@ -9,10 +9,26 @@ import type { SpeakingTransportDiagnostics } from '../core/speaking-direct-uploa
 
 type Activity = 'idle' | 'demo' | 'countdown' | 'recording' | 'replay' | 'scoring' | 'submitting'
 
-interface TransportDiagnosticEntry {
+export interface TransportDiagnosticEntry {
   questionId: number
   attempt: number
   diagnostics: SpeakingTransportDiagnostics
+}
+
+export function summarizeTransportDiagnostics(entries: readonly TransportDiagnosticEntry[]) {
+  const totals = entries.map((entry) => entry.diagnostics.total_ms).sort((left, right) => left - right)
+  const middle = Math.floor(totals.length / 2)
+  const medianMs = totals.length === 0 ? 0 : totals.length % 2 === 1
+    ? totals[middle]
+    : Math.round((totals[middle - 1] + totals[middle]) / 2)
+  return {
+    questions: new Set(entries.map((entry) => entry.questionId)).size,
+    takes: entries.length,
+    direct: entries.filter((entry) => entry.diagnostics.mode === 'direct').length,
+    fallback: entries.filter((entry) => entry.diagnostics.mode === 'chunk-fallback').length,
+    medianMs,
+    slowestMs: totals.at(-1) || 0
+  }
 }
 
 function TransportDiagnostic({ entry }: { entry: TransportDiagnosticEntry }) {
@@ -244,7 +260,18 @@ export function SpeakingPage({
     </main>
   )
 
-  if (submitted) return <main className="center-card result-card"><p className="eyebrow">{dataKind === 'formal' ? 'FORMAL RESULT SAVED' : 'TEST RESULT SAVED'}</p><h1>完成啦</h1><p>{message}</p>{dataKind === 'test' && transportDiagnostics.length > 0 && <section aria-label="本节传输诊断">{transportDiagnostics.map((entry) => <TransportDiagnostic key={`${entry.questionId}-${entry.attempt}`} entry={entry} />)}</section>}<button type="button" onClick={() => { setCourse(undefined); setSession(undefined); setSubmitted(false); setTransportDiagnostics([]) }}>返回课程列表</button></main>
+  if (submitted) {
+    const summary = summarizeTransportDiagnostics(transportDiagnostics)
+    return <main className="center-card result-card">
+      <p className="eyebrow">{dataKind === 'formal' ? 'FORMAL RESULT SAVED' : 'TEST RESULT SAVED'}</p>
+      <h1>完成啦</h1><p>{message}</p>
+      {dataKind === 'test' && transportDiagnostics.length > 0 && <section aria-label="本节传输诊断">
+        <p className="notice"><strong>本节传输汇总：</strong>覆盖 {summary.questions}/8 题 · 直传 {summary.direct}/{summary.takes} 次 · 分块兜底 {summary.fallback} 次 · 中位数 {summary.medianMs}ms · 最慢 {summary.slowestMs}ms</p>
+        {transportDiagnostics.map((entry) => <TransportDiagnostic key={`${entry.questionId}-${entry.attempt}`} entry={entry} />)}
+      </section>}
+      <button type="button" onClick={() => { setCourse(undefined); setSession(undefined); setSubmitted(false); setTransportDiagnostics([]) }}>返回课程列表</button>
+    </main>
+  }
 
   if (!trialDone) return (
     <main className="center-card"><p className="eyebrow">{course.course_id} · 麦克风试音</p><h1>先试录</h1><p>每节课只申请一次麦克风权限。录一句、回放听清楚后再开始。</p>
