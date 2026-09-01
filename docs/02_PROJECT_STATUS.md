@@ -394,3 +394,18 @@ CORS：保留 COS 既有规则，只新增 ID=sherlock-direct-upload-probe-githu
 当前结论：存储直传在安卓无 VPN 网络上技术可行，单次原始二进制 PUT 约 0.5 秒；3744ms 不是完整口语评分耗时，不能据此承诺讯飞反馈时间；现行分块链路继续不变
 待验收：补做一次无 VPN iPad Safari 同样探针；通过后才可形成“进入正式直传替换设计”的最终可行性结论，仍不得直接切换正式口语链路
 ```
+
+## 2026-09-01 私有 COS 直传三档探针扩展部署
+
+```text
+日期：2026-09-01
+阶段：GitHub Pages 口语性能优化可行性验证 / 三档候选已部署、待真机补测
+家长决策：三档规格通过；固定允许 153600、409600、700000 字节，分别对应 150KiB、400KiB、700KB；每次只运行一档，不提供批量执行
+实现边界：前后端均采用精确白名单，不接受范围内任意其他大小；沿用 120 秒签名、caller/session/ticket/path/hash/type 绑定及验证后删除；正式口语仍使用既有分块链路，讯飞评分、formal/test 数据和课程逻辑均未改变
+自动验证：Web 82/82，coverage statements 85.15%/branches 78.71%/functions 81.67%/lines 90.57%；sherlock-api 60/60，coverage lines 92.21%/branches 76.63%/functions 87.72%；score-speaking 13/13；Python 53/53；TypeScript typecheck 与 GitHub Pages production build 通过
+安全复核：sherlock-api 采用 code-only 更新；部署前后 7 个环境变量文件 SHA-256 均为 EC66FCD6AB317825108A8D15BE2137A1E6793C60542924ED7B48ED28094EC5E9，临时快照已删除；HTTP 网关 health 为 200，CORS 仍精确允许 https://summertxia0306-hue.github.io；P5/formal-and-test 与隐藏课程 formal 拦截均正常
+资源复核：family24 为 family24-web-003/SUCCESS/11-11；体验版有效至 2027-02-04，超额付费关闭，部署前剩余 2927.83 点；原 CloudBase 英语正式入口与家庭 24 点均 HTTP 200
+发布证据：设计扩展 85834de；实施计划 26a7e65；实现 39a96a6；Pages 7280052；GitHub Actions run 33465649825 success；线上活动 bundle index-aq5Lbf_5.js，包含 400KiB/700KB 档位标记
+数据边界：发布验证未登录家长端、未运行探针、未创建 test/formal 结果、speaking take、录音或完成状态；云端 sherlock-english/test/direct-upload-probe/ 当前为 0 个对象；未修改夏洛恪英语学习档案
+待验收：Android 关闭 VPN 后分别运行 400KiB 与 700KB；iPad 可用后至少运行 700KB。只有真机成功且对象清零后，才登记对应档位可行；是否替换正式分块方案仍须另立设计
+```

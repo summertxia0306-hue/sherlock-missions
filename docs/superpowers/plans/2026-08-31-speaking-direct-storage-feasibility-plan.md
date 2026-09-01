@@ -1,7 +1,7 @@
 # 口语录音云存储直传隔离验证实施计划
 
 > 依据：`docs/superpowers/specs/2026-08-31-speaking-direct-storage-feasibility-design.md`  
-> 状态：原 150KiB 已实施；150KiB/400KiB/700KB 三档扩展规格已获家长批准
+> 状态：150KiB/400KiB/700KB 三档扩展已实施并部署；待 Android 与 iPad 真机验收
 
 ## 事实基线
 

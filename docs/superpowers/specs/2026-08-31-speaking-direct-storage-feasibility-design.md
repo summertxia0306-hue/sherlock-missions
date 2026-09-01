@@ -1,7 +1,7 @@
 # 口语录音云存储直传隔离可行性验证设计
 
 > 日期：2026-08-31  
-> 状态：原 150KiB 设计与规格已批准并部署；三档扩展方案已获口头批准，本文更新待家长复核
+> 状态：150KiB/400KiB/700KB 三档扩展规格已批准、实现并部署；待 Android 400KiB/700KB 与 iPad 700KB 真机验收
 > 唯一项目根：`D:\ObsidianVaults\Education\Sherlock\English-Learning`
 
 ## 1. 背景与判断
