@@ -20,6 +20,8 @@ const MAX_SPEAKING_CHUNK_BASE64 = 65_536
 const DIRECT_UPLOAD_PROBE_ALLOWED_BYTES = new Set([150 * 1024, 400 * 1024, 700_000])
 const DIRECT_UPLOAD_PROBE_TTL_MS = 120_000
 const DIRECT_UPLOAD_PROBE_PREFIX = 'sherlock-english/test/direct-upload-probe'
+const SPEAKING_DIRECT_UPLOAD_TTL_MS = 120_000
+const SPEAKING_DIRECT_UPLOAD_PREFIX = 'sherlock-english/tmp-speaking-direct/test'
 
 class ServiceError extends Error {
   constructor(code, message = code) {
@@ -128,8 +130,11 @@ function createService(options) {
   const speakingRecordingUrl = options.speakingRecordingUrl
   const speakingUploadStore = options.speakingUploadStore
   const directUploadProbeStore = options.directUploadProbeStore
+  const speakingDirectUploadStore = options.speakingDirectUploadStore
   const randomProbeId = options.randomProbeId || (() => crypto.randomUUID())
   const formalEnabled = options.formalEnabled === true
+  const speakingDirectUploadEnabled = options.speakingDirectUploadEnabled === true
+  const monotonicNow = options.monotonicNow || Date.now
 
   function ownershipFields(session, requestContext) {
     return {
@@ -178,6 +183,17 @@ function createService(options) {
       .digest('hex')
   }
 
+  function speakingDirectUploadOwner(session, requestContext) {
+    return crypto.createHmac('sha256', hmacKey)
+      .update(`speaking-direct-upload:${session.token_hash}:${requestContext.callerId}`)
+      .digest('hex')
+  }
+
+  function speakingDirectUploadPath(session, request, requestContext) {
+    const owner = speakingDirectUploadOwner(session, requestContext).slice(0, 32)
+    return `${SPEAKING_DIRECT_UPLOAD_PREFIX}/${owner}/${speakingTakeId(session, request)}.wav`
+  }
+
   function signDirectUploadTicket(payload) {
     const encoded = Buffer.from(JSON.stringify(payload)).toString('base64url')
     const signature = crypto.createHmac('sha256', hmacKey).update(encoded).digest('hex')
@@ -212,6 +228,44 @@ function createService(options) {
       && payload.expires_at - payload.issued_at === DIRECT_UPLOAD_PROBE_TTL_MS
     if (!valid) throw new ServiceError('INVALID_DIRECT_UPLOAD_TICKET')
     if (!allowExpired && payload.expires_at <= now()) throw new ServiceError('UPLOAD_TICKET_EXPIRED')
+    return payload
+  }
+
+  function readSpeakingDirectUploadTicket(ticket, session, request, requestContext, { allowExpired = false } = {}) {
+    if (!boundedString(ticket, 80, 4096)) throw new ServiceError('INVALID_SPEAKING_DIRECT_TICKET')
+    const parts = ticket.split('.')
+    if (parts.length !== 2 || !/^[A-Za-z0-9_-]+$/.test(parts[0]) || !/^[0-9a-f]{64}$/.test(parts[1])) {
+      throw new ServiceError('INVALID_SPEAKING_DIRECT_TICKET')
+    }
+    const expected = crypto.createHmac('sha256', hmacKey).update(parts[0]).digest()
+    const actual = Buffer.from(parts[1], 'hex')
+    if (actual.length !== expected.length || !crypto.timingSafeEqual(actual, expected)) {
+      throw new ServiceError('INVALID_SPEAKING_DIRECT_TICKET')
+    }
+    let payload
+    try { payload = JSON.parse(Buffer.from(parts[0], 'base64url').toString('utf8')) } catch { throw new ServiceError('INVALID_SPEAKING_DIRECT_TICKET') }
+    const boundRequest = request || payload || {}
+    const expectedPath = speakingDirectUploadPath(session, boundRequest, requestContext)
+    const expectedTakeId = speakingTakeId(session, boundRequest)
+    const valid = payload && payload.v === 2
+      && payload.owner === speakingDirectUploadOwner(session, requestContext)
+      && payload.data_kind === 'test'
+      && payload.result_id === boundRequest.result_id
+      && payload.course_id === boundRequest.course_id
+      && payload.course_version === boundRequest.course_version
+      && payload.question_id === boundRequest.question_id
+      && payload.attempt === boundRequest.attempt
+      && payload.take_id === expectedTakeId
+      && payload.object_key === expectedPath
+      && fileIdMatchesPath(payload.file_id, expectedPath)
+      && payload.byte_length === boundRequest.byte_length
+      && payload.sha256 === boundRequest.sha256
+      && payload.content_type === boundRequest.content_type
+      && Number.isFinite(payload.issued_at)
+      && Number.isFinite(payload.expires_at)
+      && payload.expires_at - payload.issued_at === SPEAKING_DIRECT_UPLOAD_TTL_MS
+    if (!valid) throw new ServiceError('INVALID_SPEAKING_DIRECT_TICKET')
+    if (!allowExpired && payload.expires_at <= now()) throw new ServiceError('SPEAKING_DIRECT_TICKET_EXPIRED')
     return payload
   }
 
@@ -316,6 +370,155 @@ function createService(options) {
     if (!directUploadProbeStore) throw new ServiceError('SIGNING_UNAVAILABLE')
     const payload = readDirectUploadTicket(event.ticket, session, requestContext, { allowExpired: true })
     if (!(await removeDirectUploadProbe(payload.file_id))) throw new ServiceError('UPLOAD_CLEANUP_FAILED')
+    return { ok: true, data_kind: 'test', cleaned_up: true }
+  }
+
+  function validateSpeakingDirectDeclaration(request) {
+    if (!Number.isInteger(request.byte_length) || request.byte_length < 768 || request.byte_length > MAX_SPEAKING_WAV_BYTES
+      || !SHA256_PATTERN.test(request.sha256 || '') || request.content_type !== 'audio/wav') {
+      throw new ServiceError('INVALID_SPEAKING_DIRECT_UPLOAD')
+    }
+  }
+
+  async function createSpeakingDirectUpload(event, requestContext) {
+    const session = await requireTestSession(event, requestContext)
+    if (!speakingDirectUploadEnabled) throw new ServiceError('SPEAKING_DIRECT_UPLOAD_DISABLED')
+    if (!speakingDirectUploadStore) throw new ServiceError('SPEAKING_DIRECT_SIGNING_UNAVAILABLE')
+    const request = event.request
+    const { course, takeId } = resolveSpeakingTake(session, request)
+    if (course?.publication_status === 'test') throw new ServiceError('COURSE_NOT_FORMAL')
+    validateSpeakingDirectDeclaration(request)
+    const objectKey = speakingDirectUploadPath(session, request, requestContext)
+    let upload
+    try {
+      upload = await speakingDirectUploadStore.issue(objectKey, {
+        expiresIn: SPEAKING_DIRECT_UPLOAD_TTL_MS / 1000,
+        contentType: request.content_type
+      })
+    } catch { throw new ServiceError('SPEAKING_DIRECT_SIGNING_UNAVAILABLE') }
+    if (!boundedString(upload?.upload_url, 1, 4096) || !upload.upload_url.startsWith('https://')
+      || !fileIdMatchesPath(upload?.file_id, objectKey)
+      || upload.expires_in !== SPEAKING_DIRECT_UPLOAD_TTL_MS / 1000) {
+      throw new ServiceError('SPEAKING_DIRECT_SIGNING_UNAVAILABLE')
+    }
+    const timestamp = now()
+    const payload = {
+      v: 2,
+      owner: speakingDirectUploadOwner(session, requestContext),
+      data_kind: 'test',
+      result_id: request.result_id,
+      course_id: request.course_id,
+      course_version: request.course_version,
+      question_id: request.question_id,
+      attempt: request.attempt,
+      take_id: takeId,
+      object_key: objectKey,
+      file_id: upload.file_id,
+      byte_length: request.byte_length,
+      sha256: request.sha256,
+      content_type: request.content_type,
+      issued_at: timestamp,
+      expires_at: timestamp + SPEAKING_DIRECT_UPLOAD_TTL_MS
+    }
+    await store.saveAudit({
+      action: 'speaking_test_direct_upload_issued', caller_id: requestContext.callerId,
+      course_id: request.course_id, question_id: request.question_id, take_id: takeId,
+      occurred_at: new Date(timestamp), log_tag: 'sherlock-english'
+    })
+    return {
+      ok: true,
+      data_kind: 'test',
+      upload_url: upload.upload_url,
+      byte_length: request.byte_length,
+      expires_at: new Date(payload.expires_at).toISOString(),
+      ticket: signDirectUploadTicket(payload)
+    }
+  }
+
+  async function removeSpeakingDirectObject(fileId) {
+    try {
+      await speakingDirectUploadStore.remove(fileId)
+      return true
+    } catch {
+      return false
+    }
+  }
+
+  function isPcmWav(bytes) {
+    return Buffer.isBuffer(bytes) && bytes.length >= 44
+      && bytes.subarray(0, 4).toString() === 'RIFF'
+      && bytes.subarray(8, 12).toString() === 'WAVE'
+  }
+
+  async function scoreDirectUploadedSpeakingTake(event, requestContext) {
+    const session = await requireTestSession(event, requestContext)
+    if (!speakingDirectUploadEnabled) throw new ServiceError('SPEAKING_DIRECT_UPLOAD_DISABLED')
+    if (!speakingDirectUploadStore) throw new ServiceError('SPEAKING_DIRECT_SIGNING_UNAVAILABLE')
+    const request = event.request
+    const { course, question, takeId } = resolveSpeakingTake(session, request)
+    if (course?.publication_status === 'test') throw new ServiceError('COURSE_NOT_FORMAL')
+    validateSpeakingDirectDeclaration(request)
+    const payload = readSpeakingDirectUploadTicket(event.ticket, session, request, requestContext)
+    let validationMs = 0
+    const scoringStarted = monotonicNow()
+    let response
+    let scoreError
+    try {
+      response = await scorePreparedSpeakingTake(session, request, requestContext, question, takeId, async () => {
+        const validationStarted = monotonicNow()
+        let bytes
+        try { bytes = await speakingDirectUploadStore.download(payload.file_id) } catch {
+          throw new ServiceError('SPEAKING_DIRECT_OBJECT_MISSING')
+        }
+        if (!isPcmWav(bytes) || bytes.length !== payload.byte_length || sha256Hex(bytes) !== payload.sha256) {
+          throw new ServiceError('SPEAKING_DIRECT_INTEGRITY_FAILED')
+        }
+        validationMs = Math.max(0, monotonicNow() - validationStarted)
+        return bytes.toString('base64')
+      })
+    } catch (error) {
+      scoreError = error
+    }
+    const scoringFinished = monotonicNow()
+    const cleanupStarted = monotonicNow()
+    const cleanedUp = await removeSpeakingDirectObject(payload.file_id)
+    const cleanupFinished = monotonicNow()
+    if (!cleanedUp) {
+      await store.saveAudit({
+        action: 'speaking_test_direct_upload_cleanup_failed', caller_id: requestContext.callerId,
+        course_id: request.course_id, question_id: request.question_id, take_id: takeId,
+        occurred_at: new Date(now()), log_tag: 'sherlock-english'
+      })
+    }
+    if (scoreError) throw scoreError
+    await store.saveAudit({
+      action: 'speaking_test_direct_upload_scored', caller_id: requestContext.callerId,
+      course_id: request.course_id, question_id: request.question_id, take_id: takeId,
+      idempotent: response.idempotent === true, cleaned_up: cleanedUp,
+      occurred_at: new Date(now()), log_tag: 'sherlock-english'
+    })
+    return {
+      ...response,
+      transport: 'direct',
+      cleaned_up: cleanedUp,
+      server_timing: {
+        validation_ms: Math.round(validationMs),
+        scoring_ms: Math.round(Math.max(0, scoringFinished - scoringStarted - validationMs)),
+        cleanup_ms: Math.round(Math.max(0, cleanupFinished - cleanupStarted))
+      }
+    }
+  }
+
+  async function cancelSpeakingDirectUpload(event, requestContext) {
+    const session = await requireTestSession(event, requestContext)
+    if (!speakingDirectUploadStore) throw new ServiceError('SPEAKING_DIRECT_SIGNING_UNAVAILABLE')
+    const payload = readSpeakingDirectUploadTicket(event.ticket, session, undefined, requestContext, { allowExpired: true })
+    if (!(await removeSpeakingDirectObject(payload.file_id))) throw new ServiceError('SPEAKING_DIRECT_CLEANUP_FAILED')
+    await store.saveAudit({
+      action: 'speaking_test_direct_upload_cancelled', caller_id: requestContext.callerId,
+      course_id: payload.course_id, question_id: payload.question_id, take_id: payload.take_id,
+      occurred_at: new Date(now()), log_tag: 'sherlock-english'
+    })
     return { ok: true, data_kind: 'test', cleaned_up: true }
   }
 
@@ -505,7 +708,7 @@ function createService(options) {
     if (loaded.version !== request.course_version) throw new ServiceError('COURSE_VERSION_MISMATCH')
     const question = loaded.course.questions.find((item) => item.id === request.question_id)
     if (!question) throw new ServiceError('INVALID_SPEAKING_TAKE')
-    return { question, takeId: speakingTakeId(session, request) }
+    return { course: loaded.course, question, takeId: speakingTakeId(session, request) }
   }
 
   async function scorePreparedSpeakingTake(session, request, requestContext, question, takeId, wavProvider) {
@@ -708,6 +911,7 @@ function createService(options) {
         return {
           ok: true, service: 'sherlock-api', stage: 'P5', formal_enabled: formalEnabled,
           writes: formalEnabled ? 'formal-and-test' : 'test-only',
+          speaking_direct_upload_test_enabled: speakingDirectUploadEnabled,
           speaking_course_versions: Object.fromEntries(speakingCourseProvider.catalog().map((item) => [item.course_id, item.course_version]))
         }
       }
@@ -731,6 +935,9 @@ function createService(options) {
       if (event.action === 'createDirectUploadProbe') return createDirectUploadProbe(event, requestContext)
       if (event.action === 'verifyDirectUploadProbe') return verifyDirectUploadProbe(event, requestContext)
       if (event.action === 'cancelDirectUploadProbe') return cancelDirectUploadProbe(event, requestContext)
+      if (event.action === 'createSpeakingDirectUpload') return createSpeakingDirectUpload(event, requestContext)
+      if (event.action === 'scoreDirectUploadedSpeakingTake') return scoreDirectUploadedSpeakingTake(event, requestContext)
+      if (event.action === 'cancelSpeakingDirectUpload') return cancelSpeakingDirectUpload(event, requestContext)
       if (event.action === 'uploadSpeakingChunk') return uploadSpeakingChunk(event, requestContext)
       if (event.action === 'scoreUploadedSpeakingTake') return scoreUploadedSpeakingTake(event, requestContext)
       if (event.action === 'scoreSpeakingTake') return scoreSpeakingTake(event, requestContext)

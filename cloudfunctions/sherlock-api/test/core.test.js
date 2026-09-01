@@ -54,6 +54,7 @@ describe('sherlock-api service', () => {
       stage: 'P5',
       formal_enabled: false,
       writes: 'test-only',
+      speaking_direct_upload_test_enabled: false,
       speaking_course_versions: undefined
     })
     assert.match(health.speaking_course_versions.S01D39, /^[a-f0-9]{16}$/)

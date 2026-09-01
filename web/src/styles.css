@@ -111,6 +111,8 @@ button:disabled { opacity: .6; cursor: wait; }
 .recording-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .countdown { font-size: 4rem; line-height: 1; font-weight: 900; color: #c26f00; }
 .speaking-feedback { padding: 18px; border-radius: 18px; background: #eef4ef; }
+.speaking-transport-diagnostic { padding: 14px 16px; border: 1px solid rgba(18,55,42,.18); border-radius: 16px; background: #fffdf5; color: #315848; text-align: left; }
+.speaking-transport-diagnostic p { margin: 6px 0 0; font-size: .88rem; overflow-wrap: anywhere; }
 .stars { min-height: 36px; font-size: 1.7rem; font-weight: 850; color: #315848; }
 .word-lights { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
 .word-lights span { padding: 5px 9px; border-radius: 9px; font-weight: 800; }

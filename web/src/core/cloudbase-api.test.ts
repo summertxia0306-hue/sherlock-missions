@@ -146,6 +146,51 @@ describe('CloudBase browser adapter', () => {
     expect(attempts.get(1)).toBe(1)
   })
 
+  it('uses direct speaking upload first only when the HTTP candidate flag is enabled', async () => {
+    const calls: Array<{ url: string; payload?: Record<string, any>; init: RequestInit }> = []
+    const endpoint = 'https://example.test/sherlock-api'
+    const uploadUrl = 'https://storage.example.test/take.wav?signed=1'
+    const fetcher = vi.fn().mockImplementation(async (url: string, init: RequestInit) => {
+      if (url === uploadUrl) {
+        calls.push({ url, init })
+        return { ok: true, status: 200 }
+      }
+      const payload = JSON.parse(String(init.body)) as Record<string, any>
+      calls.push({ url, payload, init })
+      if (payload.action === 'createSpeakingDirectUpload') {
+        return { ok: true, status: 200, json: async () => ({ ok: true, upload_url: uploadUrl, ticket: 'ticket' }) }
+      }
+      if (payload.action === 'scoreDirectUploadedSpeakingTake') {
+        return {
+          ok: true, status: 200,
+          json: async () => ({
+            ok: true, stars: 3, proof: 'direct-proof', child_feedback: 'ok', weak_words: [], word_lights: [],
+            can_retry: false, can_skip: false, transport: 'direct', cleaned_up: true,
+            server_timing: { validation_ms: 10, scoring_ms: 500, cleanup_ms: 5 }
+          })
+        }
+      }
+      throw new Error(`unexpected action ${payload.action}`)
+    })
+    const app = createHttpGatewayApp(endpoint, {
+      fetcher: fetcher as unknown as typeof fetch,
+      storage: { getItem: () => '123e4567-e89b-42d3-a456-426614174000', setItem: vi.fn() },
+      directSpeakingUploadEnabled: true
+    })
+
+    const result = await createCloudbaseApi(app).scoreSpeakingTake('token', {
+      result_id: 'r1', course_id: 'S01D39', course_version: 'version1', question_id: 1, attempt: 1,
+      wav_base64: Buffer.alloc(12_044, 4).toString('base64')
+    })
+
+    expect(result.proof).toBe('direct-proof')
+    expect(result.transport_diagnostics?.mode).toBe('direct')
+    expect(calls.filter(({ payload }) => payload?.action === 'createSpeakingDirectUpload')).toHaveLength(1)
+    expect(calls.filter(({ payload }) => payload?.action === 'scoreDirectUploadedSpeakingTake')).toHaveLength(1)
+    expect(calls.filter(({ payload }) => payload?.action === 'uploadSpeakingChunk')).toHaveLength(0)
+    expect(calls.find(({ url }) => url === uploadUrl)?.init.body).toBeInstanceOf(Uint8Array)
+  })
+
   it('requires public environment configuration', async () => {
     await expect(createCloudbaseApi(undefined).health()).rejects.toThrow('CLOUDBASE_NOT_CONFIGURED')
   })

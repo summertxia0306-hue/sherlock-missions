@@ -5,7 +5,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import type { SherlockApi, SpeakingScoreResponse } from '../core/cloudbase-api'
 import { parseSpeakingCatalog, parseSpeakingCourse } from '../speaking/course'
 import type { PcmRecorder } from '../speaking/recorder'
-import { SpeakingPage } from './SpeakingPage'
+import { scoreFailureMessage, SpeakingPage } from './SpeakingPage'
 
 const catalog = parseSpeakingCatalog([{ course_id: 'S01D39', course_version: 'version1', title: 'Speaking', course_type: 'training', week: 5, day: 4, visible: true }])
 const course = parseSpeakingCourse({
@@ -56,6 +56,11 @@ describe('P3 speaking page', () => {
     sessionStorage.clear()
   })
   afterEach(() => vi.unstubAllGlobals())
+
+  it('tells the parent not to fall back when a direct score response is ambiguous', () => {
+    expect(scoreFailureMessage('SPEAKING_DIRECT_STATUS_UNKNOWN', 'test')).toContain('不要重新录音')
+    expect(scoreFailureMessage('SPEAKING_DIRECT_STATUS_UNKNOWN', 'test')).toContain('原录音')
+  })
 
   async function finishTrial(user: ReturnType<typeof userEvent.setup>) {
     await user.click(screen.getByRole('button', { name: '🎙️ 开始试录' }))
@@ -151,5 +156,56 @@ describe('P3 speaking page', () => {
     await finishTrial(user)
     await recordAndScore(user)
     expect(await screen.findByText(/录音上传没有完成.*直接再次评分/)).toBeInTheDocument()
+  })
+
+  it('shows direct transport timings only in the parent TEST page', async () => {
+    const user = userEvent.setup()
+    const directResponse: SpeakingScoreResponse = {
+      ...scored(3, 1, 1),
+      transport_diagnostics: {
+        mode: 'direct', hash_ms: 11, ticket_ms: 22, upload_ms: 333,
+        validation_ms: 44, scoring_ms: 1555, cleanup_ms: 6, total_ms: 1971, cleaned_up: true
+      }
+    }
+    const service = api(async () => directResponse)
+    render(<MemoryRouter><SpeakingPage api={service} sessionToken="token" dataKind="test"
+      loadCatalog={async () => catalog} loadCourse={async () => course} recorder={fakeRecorder()} /></MemoryRouter>)
+    await user.click(await screen.findByRole('button', { name: '开始' }))
+    await finishTrial(user)
+    await recordAndScore(user)
+
+    expect(await screen.findByText('传输诊断 · 直传')).toBeInTheDocument()
+    expect(screen.getByText(/哈希 11ms.*签票 22ms.*上传 333ms/)).toBeInTheDocument()
+    expect(screen.getByText(/校验 44ms.*评分 1555ms.*清理 6ms/)).toBeInTheDocument()
+    expect(screen.getByText(/总反馈 1971ms.*临时对象已清理/)).toBeInTheDocument()
+  })
+
+  it('shows chunk fallback cause in TEST but never exposes diagnostics in formal', async () => {
+    const fallbackResponse: SpeakingScoreResponse = {
+      ...scored(3, 1, 1),
+      transport_diagnostics: {
+        mode: 'chunk-fallback', hash_ms: 10, ticket_ms: 15, upload_ms: 20,
+        validation_ms: 0, scoring_ms: 0, cleanup_ms: 0, total_ms: 2500, cleaned_up: true,
+        direct_error_code: 'SPEAKING_DIRECT_OBJECT_MISSING'
+      }
+    }
+    const testUser = userEvent.setup()
+    const testView = render(<MemoryRouter><SpeakingPage api={api(async () => fallbackResponse)} sessionToken="token" dataKind="test"
+      loadCatalog={async () => catalog} loadCourse={async () => course} recorder={fakeRecorder()} /></MemoryRouter>)
+    await testUser.click(await screen.findByRole('button', { name: '开始' }))
+    await finishTrial(testUser)
+    await recordAndScore(testUser)
+    expect(await screen.findByText('传输诊断 · 分块兜底')).toBeInTheDocument()
+    expect(screen.getByText(/SPEAKING_DIRECT_OBJECT_MISSING/)).toBeInTheDocument()
+    testView.unmount()
+
+    const formalUser = userEvent.setup()
+    render(<MemoryRouter><SpeakingPage api={api(async () => fallbackResponse)} sessionToken="formal-token" dataKind="formal"
+      loadCatalog={async () => catalog} loadCourse={async () => course} recorder={fakeRecorder()} /></MemoryRouter>)
+    await formalUser.click(await screen.findByRole('button', { name: '开始' }))
+    await finishTrial(formalUser)
+    await recordAndScore(formalUser)
+    expect(screen.queryByText(/传输诊断/)).not.toBeInTheDocument()
+    expect(screen.queryByText(/SPEAKING_DIRECT_OBJECT_MISSING/)).not.toBeInTheDocument()
   })
 })

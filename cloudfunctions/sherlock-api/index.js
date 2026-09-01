@@ -6,6 +6,7 @@ const { createCloudbaseStore } = require('./store')
 const { createSpeakingScorer, createRecordingUrlProvider } = require('./speaking-client')
 const { createSpeakingUploadStore } = require('./speaking-upload-store')
 const { createDirectUploadProbeStore } = require('./direct-upload-probe-store')
+const { createSpeakingDirectUploadStore } = require('./speaking-direct-upload-store')
 const {
   HttpRequestError,
   createHttpResponse,
@@ -26,7 +27,9 @@ const service = createService({
   speakingScorer: createSpeakingScorer(app, process.env.SPEAKING_INTERNAL_HMAC_KEY),
   speakingRecordingUrl: createRecordingUrlProvider(app),
   speakingUploadStore: createSpeakingUploadStore(app),
-  directUploadProbeStore: createDirectUploadProbeStore(app)
+  directUploadProbeStore: createDirectUploadProbeStore(app),
+  speakingDirectUploadStore: createSpeakingDirectUploadStore(app),
+  speakingDirectUploadEnabled: String(process.env.SPEAKING_DIRECT_UPLOAD_TEST_ENABLED || '').toLowerCase() === 'true'
 })
 
 function callerId(event, context) {
@@ -76,6 +79,14 @@ async function handleServiceEvent(event, context, requestCallerId = callerId(eve
       UPLOAD_SIZE_MISMATCH: '直传测试文件大小不一致',
       UPLOAD_HASH_MISMATCH: '直传测试文件校验失败',
       UPLOAD_CLEANUP_FAILED: '直传测试对象清理失败',
+      SPEAKING_DIRECT_UPLOAD_DISABLED: '口语直传 TEST 尚未开启',
+      INVALID_SPEAKING_DIRECT_UPLOAD: '口语直传参数无效',
+      INVALID_SPEAKING_DIRECT_TICKET: '口语直传票据无效',
+      SPEAKING_DIRECT_TICKET_EXPIRED: '口语直传票据已过期',
+      SPEAKING_DIRECT_SIGNING_UNAVAILABLE: '口语直传地址暂不可用',
+      SPEAKING_DIRECT_OBJECT_MISSING: '口语直传录音不存在',
+      SPEAKING_DIRECT_INTEGRITY_FAILED: '口语直传录音校验失败',
+      SPEAKING_DIRECT_CLEANUP_FAILED: '口语直传临时录音清理失败',
       INVALID_FILTER: '查询条件无效'
     }
     return { ok: false, error: { code, message: safeMessages[code] || '服务暂不可用' } }

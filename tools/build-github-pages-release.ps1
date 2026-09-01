@@ -32,9 +32,11 @@ if ($LASTEXITCODE -ne 0 -or $PagesStatusBefore.Count -ne 0) {
 
 $PreviousApiUrl = $env:VITE_SHERLOCK_API_URL
 $PreviousProbeFlag = $env:VITE_DIRECT_UPLOAD_PROBE
+$PreviousSpeakingDirectFlag = $env:VITE_SPEAKING_DIRECT_UPLOAD_TEST
 try {
     $env:VITE_SHERLOCK_API_URL = $GatewayUrl
     $env:VITE_DIRECT_UPLOAD_PROBE = 'true'
+    $env:VITE_SPEAKING_DIRECT_UPLOAD_TEST = 'true'
 
     Push-Location (Join-Path $ProjectRoot 'web')
     try {
@@ -50,6 +52,7 @@ try {
 finally {
     $env:VITE_SHERLOCK_API_URL = $PreviousApiUrl
     $env:VITE_DIRECT_UPLOAD_PROBE = $PreviousProbeFlag
+    $env:VITE_SPEAKING_DIRECT_UPLOAD_TEST = $PreviousSpeakingDirectFlag
 }
 
 $Changed = @(git -C $PagesCheckout status --short)

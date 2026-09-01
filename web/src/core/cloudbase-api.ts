@@ -1,5 +1,6 @@
 import type { ResultSubmission } from './result-schema'
 import type { ListeningPick, ListeningSubmission } from '../listening/session'
+import { scoreSpeakingDirectFirst, type SpeakingTransportDiagnostics } from './speaking-direct-upload'
 
 interface ApiErrorResult {
   ok: false
@@ -38,6 +39,7 @@ export interface HealthResult {
   stage: 'P5'
   formal_enabled: boolean
   writes: 'test-only' | 'formal-and-test'
+  speaking_direct_upload_test_enabled?: boolean
 }
 
 export interface DirectUploadProbeRequest {
@@ -132,6 +134,7 @@ export interface SpeakingScoreResponse {
   can_retry: boolean
   can_skip: boolean
   idempotent?: boolean
+  transport_diagnostics?: SpeakingTransportDiagnostics
 }
 
 export interface SpeakingSubmission {
@@ -265,6 +268,7 @@ interface HttpGatewayDependencies {
   fetcher?: typeof fetch
   storage?: StorageLike
   createClientId?: () => string
+  directSpeakingUploadEnabled?: boolean
 }
 
 const HTTP_CLIENT_STORAGE_KEY = 'sherlock-http-client-id-v1'
@@ -309,6 +313,7 @@ export function createHttpGatewayApp(endpoint: string, dependencies: HttpGateway
   const fetcher = dependencies.fetcher || globalThis.fetch.bind(globalThis)
   const storage = dependencies.storage || globalThis.localStorage
   const createClientId = dependencies.createClientId || defaultClientId
+  const directSpeakingUploadEnabled = dependencies.directSpeakingUploadEnabled === true
   let clientId = storage.getItem(HTTP_CLIENT_STORAGE_KEY) || ''
   if (!/^[A-Za-z0-9_-]{16,128}$/.test(clientId)) {
     clientId = createClientId()
@@ -384,10 +389,45 @@ export function createHttpGatewayApp(endpoint: string, dependencies: HttpGateway
     return { result }
   }
 
+  async function actionResult<T>(data: Record<string, unknown>): Promise<T> {
+    const { response, result } = await post(data)
+    if (typeof result === 'object' && result !== null && result.ok === false) {
+      throw new SherlockApiError(result.error?.code || 'SERVICE_ERROR')
+    }
+    if (!response.ok) throw new Error('HTTP_GATEWAY_ERROR')
+    return result as T
+  }
+
   return {
     auth: () => ({ hasLoginState: () => true, signInAnonymously: async () => ({}) }),
     callFunction: async ({ data }) => {
-      if (data.action === 'scoreSpeakingTake') return scoreSpeakingInChunks(data)
+      if (data.action === 'scoreSpeakingTake') {
+        if (!directSpeakingUploadEnabled) return scoreSpeakingInChunks(data)
+        const request = data.request as SpeakingScoreRequest
+        const result = await scoreSpeakingDirectFirst(String(data.session_token || ''), request, {
+          fetcher,
+          issue: (sessionToken, directRequest) => actionResult({
+            action: 'createSpeakingDirectUpload', session_token: sessionToken, request: directRequest
+          }),
+          scoreDirect: (sessionToken, ticket, directRequest) => actionResult({
+            action: 'scoreDirectUploadedSpeakingTake', session_token: sessionToken, ticket, request: directRequest
+          }),
+          cancelDirect: (sessionToken, ticket) => actionResult({
+            action: 'cancelSpeakingDirectUpload', session_token: sessionToken, ticket
+          }),
+          fallback: async (sessionToken, fallbackRequest) => {
+            const response = await scoreSpeakingInChunks({
+              action: 'scoreSpeakingTake', session_token: sessionToken, request: fallbackRequest
+            })
+            const fallbackResult = response.result as SpeakingScoreResponse | ApiErrorResult
+            if (typeof fallbackResult === 'object' && fallbackResult !== null && fallbackResult.ok === false) {
+              throw new SherlockApiError(fallbackResult.error.code)
+            }
+            return fallbackResult as SpeakingScoreResponse
+          }
+        })
+        return { result }
+      }
       const { response, result } = await post(data)
       if (!response.ok && !(typeof result === 'object' && result !== null && 'ok' in result)) {
         throw new Error('HTTP_GATEWAY_ERROR')
@@ -399,7 +439,9 @@ export function createHttpGatewayApp(endpoint: string, dependencies: HttpGateway
 
 async function configuredApp(): Promise<CloudbaseAppLike> {
   const httpEndpoint = import.meta.env.VITE_SHERLOCK_API_URL?.trim()
-  if (httpEndpoint) return createHttpGatewayApp(httpEndpoint)
+  if (httpEndpoint) return createHttpGatewayApp(httpEndpoint, {
+    directSpeakingUploadEnabled: import.meta.env.VITE_SPEAKING_DIRECT_UPLOAD_TEST === 'true'
+  })
   const env = import.meta.env.VITE_CLOUDBASE_ENV_ID?.trim()
   if (!env) {
     throw new Error('CLOUDBASE_NOT_CONFIGURED')

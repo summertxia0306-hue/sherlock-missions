@@ -5,8 +5,26 @@ import type { SessionRequestRunner } from '../core/formal-session'
 import { loadSpeakingCatalog, loadSpeakingCourse, resolveSpeakingAudioUrl, type SpeakingCatalog, type SpeakingCourse } from '../speaking/course'
 import { addScoredTake, buildSpeakingSubmission, createSpeakingSession, markSafetyPass, type SpeakingSession } from '../speaking/session'
 import { sharedPcmRecorder, type PcmRecorder, type RecordedAudio } from '../speaking/recorder'
+import type { SpeakingTransportDiagnostics } from '../core/speaking-direct-upload'
 
 type Activity = 'idle' | 'demo' | 'countdown' | 'recording' | 'replay' | 'scoring' | 'submitting'
+
+interface TransportDiagnosticEntry {
+  questionId: number
+  attempt: number
+  diagnostics: SpeakingTransportDiagnostics
+}
+
+function TransportDiagnostic({ entry }: { entry: TransportDiagnosticEntry }) {
+  const value = entry.diagnostics
+  return <aside className="speaking-transport-diagnostic" aria-label={`第 ${entry.questionId} 题第 ${entry.attempt} 次传输诊断`}>
+    <strong>传输诊断 · {value.mode === 'direct' ? '直传' : '分块兜底'}</strong>
+    <p>哈希 {value.hash_ms}ms · 签票 {value.ticket_ms}ms · 上传 {value.upload_ms}ms</p>
+    <p>校验 {value.validation_ms}ms · 评分 {value.scoring_ms}ms · 清理 {value.cleanup_ms}ms</p>
+    <p>总反馈 {value.total_ms}ms · {value.cleaned_up ? '临时对象已清理' : '临时对象待后台清理'}</p>
+    {value.direct_error_code && <p>直传诊断码：{value.direct_error_code}</p>}
+  </aside>
+}
 
 function newResultId(): string { return crypto.randomUUID?.() || '00000000-0000-4000-8000-000000000000' }
 
@@ -25,6 +43,7 @@ export function scoreFailureMessage(code: string, dataKind: 'formal' | 'test'): 
   if (code === 'RECORDING_UPLOAD_FAILED') return `评分已返回，但${dataKind === 'formal' ? '正式' : '测试'}录音保存失败；本次不计次数，请重试。`
   if (code === 'SPEAKING_UPLOAD_FAILED') return '录音上传没有完成。本次不计次数，录音仍保留，可直接再次评分。'
   if (code === 'SPEAKING_UPLOAD_INCOMPLETE') return '录音分块校验没有通过。本次不计次数，录音仍保留，可直接再次评分。'
+  if (code === 'SPEAKING_DIRECT_STATUS_UNKNOWN') return '评分结果状态暂时无法确认。请不要重新录音或切换提交方式，原录音仍保留；恢复联网后用原录音再次评分。'
   const diagnostic = code || 'NETWORK_OR_CLIENT'
   return `评分暂时没有完成。本次不计次数，录音仍保留，可再次评分。（诊断码：${diagnostic}）`
 }
@@ -64,6 +83,7 @@ export function SpeakingPage({
   const [demoPlays, setDemoPlays] = useState<Record<string, number>>({})
   const [message, setMessage] = useState('')
   const [submitted, setSubmitted] = useState(false)
+  const [transportDiagnostics, setTransportDiagnostics] = useState<TransportDiagnosticEntry[]>([])
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const recordingUrlRef = useRef('')
 
@@ -95,7 +115,7 @@ export function SpeakingPage({
       const loaded = await loadCourse(courseId)
       const saved = sessionStorage.getItem(`sherlock-speaking-${dataKind}-${courseId}`)
       const restored = saved ? JSON.parse(saved) as SpeakingSession : createSpeakingSession(courseId, newResultId())
-      setCourse(loaded); setSession(restored); setTrialDone(false); setSubmitted(false)
+      setCourse(loaded); setSession(restored); setTrialDone(false); setSubmitted(false); setTransportDiagnostics([])
       setQuestionIndex(Math.min(7, Array.from({ length: 8 }, (_, index) => index).find((index) => !restored.questions[String(index + 1)]?.complete) ?? 0))
     } catch { setMessage('课程暂时无法打开，请稍后重试。') }
   }
@@ -159,6 +179,13 @@ export function SpeakingPage({
         (token) => api.scoreSpeakingTake(token, request),
         () => setMessage('正式会话已失效，正在自动恢复；本题录音和已完成评分均已保留…')
       )
+      if (dataKind === 'test' && response.transport_diagnostics) {
+        const entry = { questionId: question.id, attempt, diagnostics: response.transport_diagnostics }
+        setTransportDiagnostics((current) => [
+          ...current.filter((item) => item.questionId !== question.id || item.attempt !== attempt),
+          entry
+        ])
+      }
       setSession(addScoredTake(session, question.id, response))
       replaceRecording()
       if (response.stars < 3) setDemoPlays((value) => ({ ...value, [String(question.id)]: 0 }))
@@ -217,7 +244,7 @@ export function SpeakingPage({
     </main>
   )
 
-  if (submitted) return <main className="center-card result-card"><p className="eyebrow">{dataKind === 'formal' ? 'FORMAL RESULT SAVED' : 'TEST RESULT SAVED'}</p><h1>完成啦</h1><p>{message}</p><button type="button" onClick={() => { setCourse(undefined); setSession(undefined); setSubmitted(false) }}>返回课程列表</button></main>
+  if (submitted) return <main className="center-card result-card"><p className="eyebrow">{dataKind === 'formal' ? 'FORMAL RESULT SAVED' : 'TEST RESULT SAVED'}</p><h1>完成啦</h1><p>{message}</p>{dataKind === 'test' && transportDiagnostics.length > 0 && <section aria-label="本节传输诊断">{transportDiagnostics.map((entry) => <TransportDiagnostic key={`${entry.questionId}-${entry.attempt}`} entry={entry} />)}</section>}<button type="button" onClick={() => { setCourse(undefined); setSession(undefined); setSubmitted(false); setTransportDiagnostics([]) }}>返回课程列表</button></main>
 
   if (!trialDone) return (
     <main className="center-card"><p className="eyebrow">{course.course_id} · 麦克风试音</p><h1>先试录</h1><p>每节课只申请一次麦克风权限。录一句、回放听清楚后再开始。</p>
@@ -232,6 +259,7 @@ export function SpeakingPage({
 
   const question = course.questions[questionIndex]
   const questionState = session.questions[String(question.id)]
+  const currentDiagnostic = [...transportDiagnostics].reverse().find((item) => item.questionId === question.id)
   const used = demoPlays[String(question.id)] || 0
   const allComplete = course.questions.every((item) => session.questions[String(item.id)]?.complete)
   return (
@@ -243,6 +271,7 @@ export function SpeakingPage({
         {activity === 'recording' && <button type="button" onClick={() => { void stopRecording() }}>■ 读完了</button>}
         {recording && <div className="recording-actions"><button type="button" disabled={activity !== 'idle'} onClick={() => playUrl(recording.url, 'replay')}>▶ 回放我的录音</button><button type="button" disabled={activity !== 'idle' || Boolean(questionState?.complete)} onClick={scoreRecording}>{activity === 'scoring' ? '正在评分…' : '就用这个，开始评分'}</button></div>}
         {questionState && <div className="speaking-feedback"><div className="stars" aria-label={`${questionState.stars} 星`}>{'⭐'.repeat(questionState.stars) || '再试一次'}</div><p>{message || questionState.child_feedback}</p><div className="word-lights">{questionState.word_lights.map((item, index) => <span className={`word-${item.light}`} key={`${item.word}-${index}`}>{item.word}</span>)}</div><small>各次星级：{questionState.take_stars.map((value) => '⭐'.repeat(value) || '未识别').join(' / ')}</small></div>}
+        {dataKind === 'test' && currentDiagnostic && <TransportDiagnostic entry={currentDiagnostic} />}
         {!questionState && message && <p className="notice" role="status">{message}</p>}
         {questionState && !questionState.complete && questionState.proofs.length === 3 && <button type="button" className="quiet-button" disabled={activity !== 'idle'} onClick={safetyPass}>先过这题</button>}
         {questionState?.complete && (questionIndex < 7 ? <button type="button" disabled={activity !== 'idle'} onClick={nextQuestion}>下一题</button> : <button type="button" disabled={!allComplete || activity !== 'idle'} onClick={submit}>全部完成，提交{dataKind === 'formal' ? '正式结果' : ' TEST'}</button>)}
