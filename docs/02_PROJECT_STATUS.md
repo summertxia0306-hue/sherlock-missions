@@ -407,5 +407,8 @@ CORS：保留 COS 既有规则，只新增 ID=sherlock-direct-upload-probe-githu
 资源复核：family24 为 family24-web-003/SUCCESS/11-11；体验版有效至 2027-02-04，超额付费关闭，部署前剩余 2927.83 点；原 CloudBase 英语正式入口与家庭 24 点均 HTTP 200
 发布证据：设计扩展 85834de；实施计划 26a7e65；实现 39a96a6；Pages 7280052；GitHub Actions run 33465649825 success；线上活动 bundle index-aq5Lbf_5.js，包含 400KiB/700KB 档位标记
 数据边界：发布验证未登录家长端、未运行探针、未创建 test/formal 结果、speaking take、录音或完成状态；云端 sherlock-english/test/direct-upload-probe/ 当前为 0 个对象；未修改夏洛恪英语学习档案
-待验收：Android 关闭 VPN 后分别运行 400KiB 与 700KB；iPad 可用后至少运行 700KB。只有真机成功且对象清零后，才登记对应档位可行；是否替换正式分块方案仍须另立设计
+Android 无 VPN 真机补测：400KiB 返回 409600 字节，PUT 555ms、服务端核验与删除 1365ms、总计 2501ms；700KB 返回 700000 字节，PUT 472ms、服务端核验与删除 1139ms、总计 2351ms；两档页面均显示“对象已清理”
+云端复核：两档测试完成后 sherlock-english/test/direct-upload-probe/ 再次查询为 0 个对象；连同此前 150KiB 结果，Android 无 VPN 三档均通过，且本轮未进入学习档案
+当前结论：Android 侧已证明当前口语 WAV 上限 700000 字节可绕过 HTTP 网关直接上传私有 COS；该结论只覆盖传输、核验与清理，不代表完整讯飞评分反馈能达到 2.4 至 2.5 秒
+待验收：iPad 可用后至少运行一次 700KB。通过后才登记跨 Android/iPad 的直传传输层可行；是否替换正式分块方案仍须另立设计
 ```
