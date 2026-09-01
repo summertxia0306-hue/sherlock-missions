@@ -410,5 +410,7 @@ CORS：保留 COS 既有规则，只新增 ID=sherlock-direct-upload-probe-githu
 Android 无 VPN 真机补测：400KiB 返回 409600 字节，PUT 555ms、服务端核验与删除 1365ms、总计 2501ms；700KB 返回 700000 字节，PUT 472ms、服务端核验与删除 1139ms、总计 2351ms；两档页面均显示“对象已清理”
 云端复核：两档测试完成后 sherlock-english/test/direct-upload-probe/ 再次查询为 0 个对象；连同此前 150KiB 结果，Android 无 VPN 三档均通过，且本轮未进入学习档案
 当前结论：Android 侧已证明当前口语 WAV 上限 700000 字节可绕过 HTTP 网关直接上传私有 COS；该结论只覆盖传输、核验与清理，不代表完整讯飞评分反馈能达到 2.4 至 2.5 秒
-待验收：iPad 可用后至少运行一次 700KB。通过后才登记跨 Android/iPad 的直传传输层可行；是否替换正式分块方案仍须另立设计
+iOS 真机验收：家长确认 700KB 档通过；返回 700000 字节，PUT 2337ms、服务端核验与删除 1348ms、总计 4229ms，页面显示“对象已清理”
+最终云端复核：iOS 测试完成后 sherlock-english/test/direct-upload-probe/ 为 0 个对象；未生成学习结果、口语 take 或学习档案记录
+最终结论：Android 无 VPN 三档与 iOS 700KB 上限档均通过，跨 Android/iOS 的私有 COS 直传传输层可行性验收完成；是否替换正式分块方案仍须另立设计并保留回滚链路
 ```
