@@ -207,9 +207,13 @@ try {
         }
     }
     [IO.File]::WriteAllText($AppConfigPath, ($AppConfig | ConvertTo-Json -Depth 10), $Utf8NoBom)
-    npx --yes --package=@cloudbase/cli@3.8.0 tcb --config-file $AppConfigPath app deploy sherlock-english `
-        --framework static --cwd web/dist --output-dir ./ --deploy-path /sherlock-english --json | Out-Null
-    if ($LASTEXITCODE -ne 0) { throw 'Independent Sherlock Web App deployment failed.' }
+    Push-Location (Join-Path $ProjectRoot 'web\dist')
+    try {
+        npx --yes --package=@cloudbase/cli@3.8.0 tcb --config-file $AppConfigPath app deploy sherlock-english `
+            --framework static --cwd . --output-dir . --deploy-path /sherlock-english --json
+        if ($LASTEXITCODE -ne 0) { throw 'Independent Sherlock Web App deployment failed.' }
+    }
+    finally { Pop-Location }
 
     $Info = (Get-AppInfo $ServiceName).data
     if ($Info.latestStatus -ne 'SUCCESS' -or $Info.domain -ne $ExpectedDomain -or $Info.appPath -ne $DeployPath) {
