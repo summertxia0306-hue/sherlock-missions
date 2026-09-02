@@ -93,6 +93,7 @@ function createStaticApp({ root, manifest, routePrefix, audioBaseUrl }) {
     const common = {
       ...headers,
       'Content-Type': metadata.contentType,
+      'Content-Disposition': 'inline',
       'Content-Length': String(body.byteLength),
       'Cache-Control': cacheControl,
       ETag: `"sha256-${metadata.sha256}"`

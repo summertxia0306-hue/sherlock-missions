@@ -47,7 +47,7 @@ test('serves the PWA shell with inline disposition and strict browser headers', 
     assert.equal(response.statusCode, 200)
     assert.equal(response.headers['Content-Type'], 'text/html; charset=utf-8')
     assert.equal(response.headers['Cache-Control'], 'no-store')
-    assert.equal(response.headers['Content-Disposition'], undefined)
+    assert.equal(response.headers['Content-Disposition'], 'inline')
     assert.equal(response.headers['X-Content-Type-Options'], 'nosniff')
     assert.match(response.headers['Content-Security-Policy'], /default-src 'self'/)
     assert.match(response.body, /id="root"/)

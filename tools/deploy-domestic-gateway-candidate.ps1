@@ -101,7 +101,8 @@ function Wait-ForStaticShell {
     for ($Attempt = 1; $Attempt -le 12; $Attempt++) {
         $LastResponse = Invoke-Http 'GET' "$GatewayUrl/"
         $ContentType = if ($LastResponse.Headers.ContainsKey('Content-Type')) { $LastResponse.Headers['Content-Type'] } else { '' }
-        $DownloadLike = $LastResponse.Headers.ContainsKey('Content-Disposition')
+        $Disposition = if ($LastResponse.Headers.ContainsKey('Content-Disposition')) { $LastResponse.Headers['Content-Disposition'] } else { '' }
+        $DownloadLike = -not [string]::IsNullOrWhiteSpace($Disposition) -and $Disposition -notmatch '^inline(?:;|$)'
         if ($LastResponse.StatusCode -eq 200 -and $ContentType -match '^text/html' -and -not $DownloadLike `
             -and $LastResponse.Body -match '/sherlock-api/assets/') {
             return $LastResponse
