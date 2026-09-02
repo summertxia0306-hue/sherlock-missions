@@ -105,7 +105,7 @@ describe('CloudBase browser adapter', () => {
     const response = await api.scoreSpeakingTake('token', {
       result_id: 'r1', course_id: 'S01D39', course_version: 'version1',
       question_id: 1, attempt: 1, wav_base64: wavBase64
-    })
+    }, 'test')
 
     expect(response.proof).toBe('opaque')
     const uploads = calls.filter(({ payload }) => payload.action === 'uploadSpeakingChunk')
@@ -140,7 +140,7 @@ describe('CloudBase browser adapter', () => {
     const response = await createCloudbaseApi(app).scoreSpeakingTake('token', {
       result_id: 'r1', course_id: 'S01D39', course_version: 'version1', question_id: 1, attempt: 1,
       wav_base64: Buffer.alloc(60_000, 5).toString('base64')
-    })
+    }, 'test')
     expect(response.proof).toBe('retry-proof')
     expect(attempts.get(0)).toBe(2)
     expect(attempts.get(1)).toBe(1)
@@ -181,7 +181,7 @@ describe('CloudBase browser adapter', () => {
     const result = await createCloudbaseApi(app).scoreSpeakingTake('token', {
       result_id: 'r1', course_id: 'S01D39', course_version: 'version1', question_id: 1, attempt: 1,
       wav_base64: Buffer.alloc(12_044, 4).toString('base64')
-    })
+    }, 'test')
 
     expect(result.proof).toBe('direct-proof')
     expect(result.transport_diagnostics?.mode).toBe('direct')
@@ -189,6 +189,40 @@ describe('CloudBase browser adapter', () => {
     expect(calls.filter(({ payload }) => payload?.action === 'scoreDirectUploadedSpeakingTake')).toHaveLength(1)
     expect(calls.filter(({ payload }) => payload?.action === 'uploadSpeakingChunk')).toHaveLength(0)
     expect(calls.find(({ url }) => url === uploadUrl)?.init.body).toBeInstanceOf(Uint8Array)
+  })
+
+  it('keeps formal speaking on chunk upload even when direct TEST is enabled', async () => {
+    const actions: string[] = []
+    const fetcher = vi.fn().mockImplementation(async (_url: string, init: RequestInit) => {
+      const payload = JSON.parse(String(init.body)) as Record<string, any>
+      actions.push(String(payload.action))
+      if (payload.action === 'uploadSpeakingChunk') {
+        return { ok: true, status: 200, json: async () => ({ ok: true, file_id: `cloud://part-${payload.request.chunk_index}` }) }
+      }
+      if (payload.action === 'scoreUploadedSpeakingTake') {
+        return {
+          ok: true, status: 200,
+          json: async () => ({ ok: true, stars: 3, proof: 'formal-proof', child_feedback: 'ok', weak_words: [], word_lights: [], can_retry: false, can_skip: false })
+        }
+      }
+      throw new Error(`unexpected action ${payload.action}`)
+    })
+    const app = createHttpGatewayApp('https://example.test/sherlock-api', {
+      fetcher: fetcher as unknown as typeof fetch,
+      storage: { getItem: () => '123e4567-e89b-42d3-a456-426614174000', setItem: vi.fn() },
+      directSpeakingUploadEnabled: true
+    })
+
+    const result = await createCloudbaseApi(app).scoreSpeakingTake('formal-token', {
+      result_id: 'r1', course_id: 'S01D50', course_version: 'version1', question_id: 1, attempt: 1,
+      wav_base64: Buffer.alloc(12_044, 4).toString('base64')
+    }, 'formal')
+
+    expect(result.proof).toBe('formal-proof')
+    expect(actions).toContain('uploadSpeakingChunk')
+    expect(actions).toContain('scoreUploadedSpeakingTake')
+    expect(actions).not.toContain('createSpeakingDirectUpload')
+    expect(actions).not.toContain('scoreDirectUploadedSpeakingTake')
   })
 
   it('requires public environment configuration', async () => {
@@ -266,8 +300,8 @@ describe('CloudBase browser adapter', () => {
     const fake = fakeApp({ loggedIn: true, result: { ok: true, proof: 'opaque', stars: 3 } })
     const api = createCloudbaseApi(fake.app)
     const request = { result_id: 'r1', course_id: 'S01D39', course_version: 'version1', question_id: 1, attempt: 1, wav_base64: 'base64' }
-    await api.scoreSpeakingTake('token', request)
-    expect(fake.callFunction).toHaveBeenLastCalledWith(expect.objectContaining({ data: { action: 'scoreSpeakingTake', session_token: 'token', request } }))
+    await api.scoreSpeakingTake('token', request, 'test')
+    expect(fake.callFunction).toHaveBeenLastCalledWith(expect.objectContaining({ data: { action: 'scoreSpeakingTake', session_token: 'token', request, data_kind: 'test' } }))
     const submission = { result_id: 'r1', student_id: 'sherlock', course_id: 'S01D39', course_version: 'version1', started_at: '2026-08-24T10:00:00.000Z', submitted_at: '2026-08-24T10:02:00.000Z', duration_seconds: 120, questions: [{ id: 1, proofs: ['opaque'], passed_by_safety: false }] }
     await api.submitSpeakingResult('token', submission)
     expect(fake.callFunction).toHaveBeenLastCalledWith(expect.objectContaining({ data: { action: 'submitSpeakingResult', session_token: 'token', submission } }))

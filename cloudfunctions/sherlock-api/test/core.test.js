@@ -54,6 +54,7 @@ describe('sherlock-api service', () => {
       stage: 'P5',
       formal_enabled: false,
       writes: 'test-only',
+      formal_entry_mode: 'dual',
       speaking_direct_upload_test_enabled: false,
       speaking_course_versions: undefined
     })
@@ -85,6 +86,30 @@ describe('sherlock-api service', () => {
   it('does not create a formal child session before the cutover flag is enabled', async () => {
     const service = createService({ store: memoryStore(), passwordHash: 'unused', hmacKey: '1234567890abcdef' })
     await assert.rejects(service.handle({ action: 'startChildSession' }, { callerId: 'child' }), /FORMAL_DISABLED/)
+  })
+
+  it('accepts formal only from the configured GitHub HTTP channel and rejects stale event sessions', async () => {
+    const store = memoryStore()
+    const service = createService({
+      store, passwordHash: 'unused', hmacKey: '1234567890abcdef', formalEnabled: true,
+      formalEntryMode: 'github-http-only', randomToken: () => 'github-formal-token'
+    })
+    await assert.rejects(
+      service.handle({ action: 'startChildSession' }, { callerId: 'child', transport: 'cloudbase-event' }),
+      /FORMAL_ENTRY_REQUIRED/
+    )
+    const session = await service.handle(
+      { action: 'startChildSession' },
+      { callerId: 'github:child', transport: 'github-http' }
+    )
+    assert.equal([...store.sessions.values()][0].entry_channel, 'github-http')
+    await assert.rejects(
+      service.handle(
+        { action: 'getFormalProgress', session_token: session.session_token },
+        { callerId: 'github:child', transport: 'cloudbase-event' }
+      ),
+      /FORMAL_ENTRY_REQUIRED/
+    )
   })
 
   it('authenticates a parent without returning or storing the password', async () => {

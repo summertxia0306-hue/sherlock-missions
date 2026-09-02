@@ -22,6 +22,7 @@ const DIRECT_UPLOAD_PROBE_TTL_MS = 120_000
 const DIRECT_UPLOAD_PROBE_PREFIX = 'sherlock-english/test/direct-upload-probe'
 const SPEAKING_DIRECT_UPLOAD_TTL_MS = 120_000
 const SPEAKING_DIRECT_UPLOAD_PREFIX = 'sherlock-english/tmp-speaking-direct/test'
+const FORMAL_ENTRY_MODES = new Set(['dual', 'github-http-only', 'cloudbase-event-only'])
 
 class ServiceError extends Error {
   constructor(code, message = code) {
@@ -133,8 +134,25 @@ function createService(options) {
   const speakingDirectUploadStore = options.speakingDirectUploadStore
   const randomProbeId = options.randomProbeId || (() => crypto.randomUUID())
   const formalEnabled = options.formalEnabled === true
+  const formalEntryMode = options.formalEntryMode || 'dual'
   const speakingDirectUploadEnabled = options.speakingDirectUploadEnabled === true
   const monotonicNow = options.monotonicNow || Date.now
+
+  function requestTransport(requestContext) {
+    return requestContext?.transport === 'github-http' ? 'github-http' : 'cloudbase-event'
+  }
+
+  function assertFormalEntry(requestContext, session) {
+    if (!FORMAL_ENTRY_MODES.has(formalEntryMode)) throw new ServiceError('CONFIG_ERROR')
+    const transport = requestTransport(requestContext)
+    if ((formalEntryMode === 'github-http-only' && transport !== 'github-http')
+      || (formalEntryMode === 'cloudbase-event-only' && transport !== 'cloudbase-event')) {
+      throw new ServiceError('FORMAL_ENTRY_REQUIRED')
+    }
+    if (session?.entry_channel && session.entry_channel !== transport) throw new ServiceError('FORMAL_ENTRY_REQUIRED')
+    if (formalEntryMode !== 'dual' && !session?.entry_channel && session !== undefined) throw new ServiceError('FORMAL_ENTRY_REQUIRED')
+    return transport
+  }
 
   function ownershipFields(session, requestContext) {
     return {
@@ -280,6 +298,7 @@ function createService(options) {
       || !['formal', 'test'].includes(session.data_kind) || (expectedKind && session.data_kind !== expectedKind)) {
       throw new ServiceError('UNAUTHORIZED')
     }
+    if (session.data_kind === 'formal') assertFormalEntry(requestContext, session)
     return { ...session, token_hash: session.token_hash || hash }
   }
 
@@ -525,11 +544,13 @@ function createService(options) {
   async function startChildSession(_event, requestContext) {
     if (!formalEnabled) throw new ServiceError('FORMAL_DISABLED')
     if (!boundedString(hmacKey, 16, 512) || !boundedString(requestContext.callerId, 1, 512)) throw new ServiceError('CONFIG_ERROR')
+    const entryChannel = assertFormalEntry(requestContext)
     const timestamp = now()
     const token = randomToken()
     const expiresAt = timestamp + sessionTtlMs
     await store.saveSession({
       token_hash: tokenHash(token, hmacKey), caller_id: requestContext.callerId, data_kind: 'formal',
+      entry_channel: entryChannel,
       created_at: new Date(timestamp), expires_at: new Date(expiresAt)
     })
     await store.saveAudit({ action: 'formal_child_session_started', caller_id: requestContext.callerId, occurred_at: new Date(timestamp), log_tag: 'sherlock-english' })
@@ -911,6 +932,7 @@ function createService(options) {
         return {
           ok: true, service: 'sherlock-api', stage: 'P5', formal_enabled: formalEnabled,
           writes: formalEnabled ? 'formal-and-test' : 'test-only',
+          formal_entry_mode: formalEntryMode,
           speaking_direct_upload_test_enabled: speakingDirectUploadEnabled,
           speaking_course_versions: Object.fromEntries(speakingCourseProvider.catalog().map((item) => [item.course_id, item.course_version]))
         }

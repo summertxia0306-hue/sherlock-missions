@@ -39,6 +39,7 @@ export interface HealthResult {
   stage: 'P5'
   formal_enabled: boolean
   writes: 'test-only' | 'formal-and-test'
+  formal_entry_mode?: 'dual' | 'github-http-only' | 'cloudbase-event-only'
   speaking_direct_upload_test_enabled?: boolean
 }
 
@@ -85,7 +86,7 @@ export interface SherlockApi {
   submitListeningResult(sessionToken: string, submission: ListeningSubmission): Promise<ListeningSubmitResponse>
   checkListeningCorrection(sessionToken: string, resultId: string, questionId: number, attempt: 1 | 2, pick: ListeningPick): Promise<ListeningCorrectionResponse>
   listListeningTestResults(sessionToken: string): Promise<ListeningResultsResponse>
-  scoreSpeakingTake(sessionToken: string, request: SpeakingScoreRequest): Promise<SpeakingScoreResponse>
+  scoreSpeakingTake(sessionToken: string, request: SpeakingScoreRequest, dataKind: 'formal' | 'test'): Promise<SpeakingScoreResponse>
   submitSpeakingResult(sessionToken: string, submission: SpeakingSubmission): Promise<SpeakingSubmitResponse>
   listSpeakingTestResults(sessionToken: string): Promise<SpeakingResultsResponse>
   getSpeakingRecordingUrl(sessionToken: string, resultId: string, questionId: number, attempt: number): Promise<{ ok: true; url: string; expires_in: number }>
@@ -402,7 +403,7 @@ export function createHttpGatewayApp(endpoint: string, dependencies: HttpGateway
     auth: () => ({ hasLoginState: () => true, signInAnonymously: async () => ({}) }),
     callFunction: async ({ data }) => {
       if (data.action === 'scoreSpeakingTake') {
-        if (!directSpeakingUploadEnabled) return scoreSpeakingInChunks(data)
+        if (!directSpeakingUploadEnabled || data.data_kind !== 'test') return scoreSpeakingInChunks(data)
         const request = data.request as SpeakingScoreRequest
         const result = await scoreSpeakingDirectFirst(String(data.session_token || ''), request, {
           fetcher,
@@ -521,7 +522,9 @@ export function createCloudbaseApi(
     listListeningTestResults: (sessionToken) => call<ListeningResultsResponse>({
       action: 'listListeningTestResults', session_token: sessionToken
     }),
-    scoreSpeakingTake: (sessionToken, request) => call<SpeakingScoreResponse>({ action: 'scoreSpeakingTake', session_token: sessionToken, request }),
+    scoreSpeakingTake: (sessionToken, request, dataKind) => call<SpeakingScoreResponse>({
+      action: 'scoreSpeakingTake', session_token: sessionToken, request, data_kind: dataKind
+    }),
     submitSpeakingResult: (sessionToken, submission) => call<SpeakingSubmitResponse>({ action: 'submitSpeakingResult', session_token: sessionToken, submission }),
     listSpeakingTestResults: (sessionToken) => call<SpeakingResultsResponse>({ action: 'listSpeakingTestResults', session_token: sessionToken }),
     getSpeakingRecordingUrl: (sessionToken, resultId, questionId, attempt) => call({
@@ -560,7 +563,8 @@ export const cloudbaseApi: SherlockApi = {
   checkListeningCorrection: async (sessionToken, resultId, questionId, attempt, pick) => (
     await getDefaultApi()).checkListeningCorrection(sessionToken, resultId, questionId, attempt, pick),
   listListeningTestResults: async (sessionToken) => (await getDefaultApi()).listListeningTestResults(sessionToken),
-  scoreSpeakingTake: async (sessionToken, request) => (await getDefaultApi()).scoreSpeakingTake(sessionToken, request),
+  scoreSpeakingTake: async (sessionToken, request, dataKind) => (
+    await getDefaultApi()).scoreSpeakingTake(sessionToken, request, dataKind),
   submitSpeakingResult: async (sessionToken, submission) => (await getDefaultApi()).submitSpeakingResult(sessionToken, submission),
   listSpeakingTestResults: async (sessionToken) => (await getDefaultApi()).listSpeakingTestResults(sessionToken),
   getSpeakingRecordingUrl: async (sessionToken, resultId, questionId, attempt) => (await getDefaultApi()).getSpeakingRecordingUrl(sessionToken, resultId, questionId, attempt),

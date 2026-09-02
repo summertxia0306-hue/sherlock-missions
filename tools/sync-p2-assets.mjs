@@ -51,7 +51,7 @@ async function main() {
     if (!assets || typeof assets !== 'object') throw new Error(`Manifest missing course ${course.course_id}`)
     const version = versionOf(raw)
     await cp(join(sourceContent, file), join(functionContent, file))
-    if (!functionOnly) {
+    if (!functionOnly && course.publication_status !== 'test') {
       const child = sanitizeCourse(course, assets, version)
       await writeFile(join(webContent, file), `${JSON.stringify(child, null, 2)}\n`, 'utf8')
       catalog.push({

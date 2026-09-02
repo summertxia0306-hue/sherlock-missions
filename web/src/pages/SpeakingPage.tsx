@@ -192,7 +192,7 @@ export function SpeakingPage({
         question_id: question.id, attempt, wav_base64: await blobBase64(recording.wav)
       }
       const response = await withSession(
-        (token) => api.scoreSpeakingTake(token, request),
+        (token) => api.scoreSpeakingTake(token, request, dataKind),
         () => setMessage('正式会话已失效，正在自动恢复；本题录音和已完成评分均已保留…')
       )
       if (dataKind === 'test' && response.transport_diagnostics) {

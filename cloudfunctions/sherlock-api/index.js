@@ -24,6 +24,7 @@ const service = createService({
   authWindowSeconds: Number(process.env.AUTH_WINDOW_SECONDS || 900),
   maxFailures: Number(process.env.AUTH_MAX_FAILURES || 5),
   formalEnabled: String(process.env.FORMAL_ENABLED || '').toLowerCase() === 'true',
+  formalEntryMode: process.env.FORMAL_ENTRY_MODE || 'dual',
   speakingScorer: createSpeakingScorer(app, process.env.SPEAKING_INTERNAL_HMAC_KEY),
   speakingRecordingUrl: createRecordingUrlProvider(app),
   speakingUploadStore: createSpeakingUploadStore(app),
@@ -44,9 +45,12 @@ function callerId(event, context) {
   return `request:${context?.requestId || 'unknown'}`
 }
 
-async function handleServiceEvent(event, context, requestCallerId = callerId(event, context)) {
+async function handleServiceEvent(event, context, requestContext = {
+  callerId: callerId(event, context),
+  transport: 'cloudbase-event'
+}) {
   try {
-    return await service.handle(event, { callerId: requestCallerId })
+    return await service.handle(event, requestContext)
   } catch (error) {
     const code = error instanceof ServiceError ? error.code : 'INTERNAL_ERROR'
     if (!(error instanceof ServiceError)) {
@@ -58,6 +62,7 @@ async function handleServiceEvent(event, context, requestCallerId = callerId(eve
       UNAUTHORIZED: '未授权',
       INVALID_RESULT: '结果格式无效',
       FORMAL_DISABLED: '正式入口尚未开放',
+      FORMAL_ENTRY_REQUIRED: '请从新的正式入口重新进入',
       UNKNOWN_ACTION: '未知操作',
       CONFIG_ERROR: '服务配置未完成',
       INVALID_SPEAKING_TAKE: '口语录音格式无效',
@@ -99,7 +104,10 @@ exports.main = async (event, context) => {
   try {
     const request = parseHttpGatewayEvent(event)
     if (request.kind === 'preflight') return request.response
-    const result = await handleServiceEvent(request.payload, context, request.callerId)
+    const result = await handleServiceEvent(request.payload, context, {
+      callerId: request.callerId,
+      transport: 'github-http'
+    })
     return createHttpResponse(result)
   } catch (error) {
     if (!(error instanceof HttpRequestError)) throw error
