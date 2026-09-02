@@ -2,7 +2,12 @@
 
 const crypto = require('node:crypto')
 
-const ALLOWED_ORIGIN = 'https://summertxia0306-hue.github.io'
+const GITHUB_ORIGIN = 'https://summertxia0306-hue.github.io'
+const DOMESTIC_ORIGIN = 'https://family24-d7gqb6r6m2d722f7a-1383960965.ap-shanghai.app.tcloudbase.com'
+const ALLOWED_ORIGINS = new Map([
+  [GITHUB_ORIGIN, { transport: 'github-http', callerPrefix: 'github' }],
+  [DOMESTIC_ORIGIN, { transport: 'domestic-http', callerPrefix: 'domestic' }]
+])
 const MAX_BODY_BYTES = 1_200_000
 const CLIENT_ID_PATTERN = /^[A-Za-z0-9_-]{16,128}$/
 
@@ -19,9 +24,10 @@ function normalizedHeaders(headers = {}) {
   return Object.fromEntries(Object.entries(headers).map(([name, value]) => [name.toLowerCase(), String(value)]))
 }
 
-function corsHeaders() {
+function corsHeaders(origin) {
+  if (!ALLOWED_ORIGINS.has(origin)) throw new HttpRequestError('HTTP_ORIGIN_DENIED', 403)
   return {
-    'Access-Control-Allow-Origin': ALLOWED_ORIGIN,
+    'Access-Control-Allow-Origin': origin,
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type, X-Sherlock-Client-Id',
     'Access-Control-Max-Age': '600',
@@ -30,16 +36,21 @@ function corsHeaders() {
   }
 }
 
-function createHttpResponse(result, statusCode = 200, includeCors = true) {
+function createHttpResponse(result, statusCode = 200, origin = GITHUB_ORIGIN) {
   return {
     statusCode,
     headers: {
-      ...(includeCors ? corsHeaders() : {}),
+      ...(origin ? corsHeaders(origin) : {}),
       'Content-Type': 'application/json; charset=utf-8',
       'Cache-Control': 'no-store'
     },
     body: statusCode === 204 ? '' : JSON.stringify(result)
   }
+}
+
+function recognizedOrigin(event) {
+  const origin = normalizedHeaders(event?.headers).origin
+  return ALLOWED_ORIGINS.has(origin) ? origin : null
 }
 
 function isHttpGatewayEvent(event) {
@@ -49,11 +60,12 @@ function isHttpGatewayEvent(event) {
 function parseHttpGatewayEvent(event) {
   const headers = normalizedHeaders(event?.headers)
   const origin = headers.origin
-  if (origin !== ALLOWED_ORIGIN) throw new HttpRequestError('HTTP_ORIGIN_DENIED', 403)
+  const originConfig = ALLOWED_ORIGINS.get(origin)
+  if (!originConfig) throw new HttpRequestError('HTTP_ORIGIN_DENIED', 403)
 
   const method = String(event.httpMethod || '').toUpperCase()
   if (method === 'OPTIONS') {
-    return { kind: 'preflight', response: createHttpResponse(null, 204) }
+    return { kind: 'preflight', response: createHttpResponse(null, 204, origin) }
   }
   if (method !== 'POST') throw new HttpRequestError('HTTP_METHOD_NOT_ALLOWED', 405)
   if (!headers['content-type']?.toLowerCase().includes('application/json')) {
@@ -82,13 +94,20 @@ function parseHttpGatewayEvent(event) {
   }
 
   const digest = crypto.createHash('sha256').update(clientId).digest('hex').slice(0, 32)
-  return { kind: 'request', payload, callerId: `github:${digest}` }
+  return {
+    kind: 'request', payload, origin,
+    callerId: `${originConfig.callerPrefix}:${digest}`,
+    transport: originConfig.transport
+  }
 }
 
 module.exports = {
-  ALLOWED_ORIGIN,
+  ALLOWED_ORIGINS,
+  DOMESTIC_ORIGIN,
+  GITHUB_ORIGIN,
   HttpRequestError,
   createHttpResponse,
   isHttpGatewayEvent,
-  parseHttpGatewayEvent
+  parseHttpGatewayEvent,
+  recognizedOrigin
 }

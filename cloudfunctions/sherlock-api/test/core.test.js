@@ -112,6 +112,32 @@ describe('sherlock-api service', () => {
     )
   })
 
+  it('accepts formal only from the domestic HTTP channel after the domestic cutover', async () => {
+    const store = memoryStore()
+    const service = createService({
+      store, passwordHash: 'unused', hmacKey: '1234567890abcdef', formalEnabled: true,
+      formalEntryMode: 'domestic-http-only', randomToken: () => 'domestic-formal-token'
+    })
+    for (const transport of ['github-http', 'cloudbase-event']) {
+      await assert.rejects(
+        service.handle({ action: 'startChildSession' }, { callerId: `${transport}:child`, transport }),
+        /FORMAL_ENTRY_REQUIRED/
+      )
+    }
+    const session = await service.handle(
+      { action: 'startChildSession' },
+      { callerId: 'domestic:child', transport: 'domestic-http' }
+    )
+    assert.equal([...store.sessions.values()][0].entry_channel, 'domestic-http')
+    await assert.rejects(
+      service.handle(
+        { action: 'getFormalProgress', session_token: session.session_token },
+        { callerId: 'domestic:child', transport: 'github-http' }
+      ),
+      /FORMAL_ENTRY_REQUIRED/
+    )
+  })
+
   it('authenticates a parent without returning or storing the password', async () => {
     const store = memoryStore()
     const passwordHash = await hashPassword('correct horse battery staple', '00112233445566778899aabbccddeeff')

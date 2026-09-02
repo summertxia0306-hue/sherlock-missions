@@ -1,5 +1,7 @@
 'use strict'
 
+const { readFileSync } = require('node:fs')
+const { join } = require('node:path')
 const cloudbase = require('@cloudbase/node-sdk')
 const { createService, ServiceError } = require('./core')
 const { createCloudbaseStore } = require('./store')
@@ -11,8 +13,31 @@ const {
   HttpRequestError,
   createHttpResponse,
   isHttpGatewayEvent,
-  parseHttpGatewayEvent
+  parseHttpGatewayEvent,
+  recognizedOrigin
 } = require('./http-adapter')
+const { createStaticApp } = require('./static-app')
+
+const STATIC_APP_ROOT = join(__dirname, 'public-app')
+const STATIC_AUDIO_BASE = 'https://family24-d7gqb6r6m2d722f7a-1383960965.tcloudbaseapp.com/sherlock-english/'
+let staticApp
+
+function getStaticApp() {
+  if (staticApp) return staticApp
+  let manifest = { files: {}, audio: {} }
+  try {
+    manifest = JSON.parse(readFileSync(join(STATIC_APP_ROOT, 'static-manifest.json'), 'utf8'))
+  } catch {
+    // Candidate deployment validation treats a missing release as unavailable.
+  }
+  staticApp = createStaticApp({
+    root: STATIC_APP_ROOT,
+    manifest,
+    routePrefix: '/sherlock-api/',
+    audioBaseUrl: STATIC_AUDIO_BASE
+  })
+  return staticApp
+}
 
 const app = cloudbase.init({ env: cloudbase.SYMBOL_CURRENT_ENV })
 const store = createCloudbaseStore(app.database())
@@ -101,20 +126,24 @@ async function handleServiceEvent(event, context, requestContext = {
 exports.main = async (event, context) => {
   if (!isHttpGatewayEvent(event)) return handleServiceEvent(event, context)
 
+  const method = String(event.httpMethod || '').toUpperCase()
+  if (method === 'GET' || method === 'HEAD') return getStaticApp().handle(event)
+
+  const responseOrigin = recognizedOrigin(event)
   try {
     const request = parseHttpGatewayEvent(event)
     if (request.kind === 'preflight') return request.response
     const result = await handleServiceEvent(request.payload, context, {
       callerId: request.callerId,
-      transport: 'github-http'
+      transport: request.transport
     })
-    return createHttpResponse(result)
+    return createHttpResponse(result, 200, request.origin)
   } catch (error) {
     if (!(error instanceof HttpRequestError)) throw error
     return createHttpResponse(
       { ok: false, error: { code: error.code, message: '请求不被允许' } },
       error.statusCode,
-      error.code !== 'HTTP_ORIGIN_DENIED'
+      error.code === 'HTTP_ORIGIN_DENIED' ? null : responseOrigin
     )
   }
 }

@@ -1,0 +1,224 @@
+param(
+    [string]$EnvId = 'family24-d7gqb6r6m2d722f7a'
+)
+
+$ErrorActionPreference = 'Stop'
+Set-StrictMode -Version Latest
+$Utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+[Console]::InputEncoding = $Utf8NoBom
+[Console]::OutputEncoding = $Utf8NoBom
+$OutputEncoding = $Utf8NoBom
+Add-Type -AssemblyName System.Net.Http
+
+$ExpectedRoot = 'D:\ObsidianVaults\Education\Sherlock\English-Learning'
+$ExpectedEnvId = 'family24-d7gqb6r6m2d722f7a'
+$GatewayUrl = 'https://family24-d7gqb6r6m2d722f7a-1383960965.ap-shanghai.app.tcloudbase.com/sherlock-api'
+$DomesticOrigin = 'https://family24-d7gqb6r6m2d722f7a-1383960965.ap-shanghai.app.tcloudbase.com'
+$GitHubOrigin = 'https://summertxia0306-hue.github.io'
+$ProjectRoot = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '..')).Path
+if ($ProjectRoot -ne $ExpectedRoot -or $EnvId -ne $ExpectedEnvId) {
+    throw 'Project root or CloudBase environment mismatch. Refusing to run.'
+}
+
+function ConvertFrom-TcbOutput([object[]]$Lines) {
+    $Joined = $Lines -join "`n"
+    $Start = $Joined.IndexOf('{')
+    if ($Start -lt 0) { throw 'CloudBase CLI did not return JSON.' }
+    $Object = $Joined.Substring($Start) | ConvertFrom-Json
+    if ($Object.PSObject.Properties['error']) { throw "CloudBase operation failed: $($Object.error.code)" }
+    return $Object
+}
+
+function ConvertTo-NativeJsonArgument([string]$Json) {
+    if ($PSVersionTable.PSVersion.Major -le 5) { return $Json.Replace('"', '\"') }
+    return $Json
+}
+
+function Invoke-Function([hashtable]$Event) {
+    $Argument = ConvertTo-NativeJsonArgument ($Event | ConvertTo-Json -Compress -Depth 10)
+    $Response = ConvertFrom-TcbOutput @(npx --yes --package=@cloudbase/cli@3.8.0 tcb -e $EnvId fn invoke sherlock-api -d $Argument --json)
+    if ($LASTEXITCODE -ne 0) { throw 'CloudBase function invocation failed.' }
+    return $Response.data.RetMsg | ConvertFrom-Json
+}
+
+function Invoke-Http([string]$Origin, [hashtable]$Payload, [string]$ClientId) {
+    $Handler = New-Object System.Net.Http.HttpClientHandler
+    $Client = New-Object System.Net.Http.HttpClient($Handler)
+    $Request = $null
+    try {
+        $Request = New-Object System.Net.Http.HttpRequestMessage([System.Net.Http.HttpMethod]::Post, $GatewayUrl)
+        $Request.Headers.TryAddWithoutValidation('Origin', $Origin) | Out-Null
+        $Request.Headers.TryAddWithoutValidation('X-Sherlock-Client-Id', $ClientId) | Out-Null
+        $Json = $Payload | ConvertTo-Json -Compress -Depth 20
+        $Request.Content = New-Object System.Net.Http.StringContent($Json, $Utf8NoBom, 'application/json')
+        $Response = $Client.SendAsync($Request).GetAwaiter().GetResult()
+        $Content = $Response.Content.ReadAsStringAsync().GetAwaiter().GetResult()
+        return [pscustomobject]@{ StatusCode = [int]$Response.StatusCode; Payload = ($Content | ConvertFrom-Json) }
+    }
+    finally {
+        if ($null -ne $Request) { $Request.Dispose() }
+        $Client.Dispose()
+        $Handler.Dispose()
+    }
+}
+
+function Assert-ApiError([object]$Response, [int]$StatusCode, [string]$ErrorCode) {
+    if ($Response.StatusCode -ne $StatusCode -or $Response.Payload.ok -ne $false `
+        -or $Response.Payload.error.code -ne $ErrorCode) {
+        throw "Expected HTTP $StatusCode with $ErrorCode."
+    }
+}
+
+function Wait-ForEntryMode([string]$ExpectedMode) {
+    for ($Attempt = 1; $Attempt -le 12; $Attempt++) {
+        try {
+            $Health = Invoke-Function @{ action = 'health' }
+            if ($Health.ok -and $Health.formal_enabled -and $Health.writes -eq 'formal-and-test' `
+                -and $Health.formal_entry_mode -eq $ExpectedMode) { return $Health }
+        }
+        catch {
+            if ($Attempt -eq 12) { throw }
+        }
+        if ($Attempt -lt 12) { Start-Sleep -Seconds 3 }
+    }
+    throw "Formal entry mode did not propagate: $ExpectedMode"
+}
+
+function Read-EnvFile([string]$Path) {
+    $Values = [ordered]@{}
+    foreach ($Line in Get-Content -LiteralPath $Path -Encoding UTF8) {
+        if ([string]::IsNullOrWhiteSpace($Line) -or $Line.TrimStart().StartsWith('#')) { continue }
+        $Parts = $Line -split '=', 2
+        if ($Parts.Count -ne 2 -or [string]::IsNullOrWhiteSpace($Parts[0])) { throw 'Pulled function environment file is malformed.' }
+        $Values[$Parts[0].Trim()] = $Parts[1]
+    }
+    return $Values
+}
+
+function Copy-Environment([System.Collections.IDictionary]$Source) {
+    $Copy = [ordered]@{}
+    foreach ($Key in $Source.Keys) { $Copy[$Key] = $Source[$Key] }
+    return $Copy
+}
+
+function Assert-EnvironmentEqual([System.Collections.IDictionary]$Expected, [System.Collections.IDictionary]$Actual) {
+    if ($Expected.Count -ne $Actual.Count) { throw 'Function environment variable count changed unexpectedly.' }
+    foreach ($Key in $Expected.Keys) {
+        if (-not $Actual.Contains($Key) -or [string]$Actual[$Key] -cne [string]$Expected[$Key]) {
+            throw "Function environment variable drift detected: $Key"
+        }
+    }
+}
+
+function Write-DeployConfig([System.Collections.IDictionary]$Environment, [string]$Path) {
+    $Config = Get-Content -LiteralPath (Join-Path $ProjectRoot 'cloudbaserc.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+    $ApiFunction = $Config.functions | Where-Object { $_.name -eq 'sherlock-api' }
+    if ($null -eq $ApiFunction) { throw 'sherlock-api is missing from cloudbaserc.json.' }
+    $ApiFunction | Add-Member -NotePropertyName envVariables -NotePropertyValue $Environment -Force
+    [IO.File]::WriteAllText($Path, ($Config | ConvertTo-Json -Depth 20), $Utf8NoBom)
+}
+
+function Deploy-Environment([System.Collections.IDictionary]$Environment, [string]$ConfigPath) {
+    Write-DeployConfig $Environment $ConfigPath
+    npx --yes --package=@cloudbase/cli@3.8.0 tcb --config-file $ConfigPath fn deploy sherlock-api --force --install-dependency true --json | Out-Null
+    if ($LASTEXITCODE -ne 0) { throw 'sherlock-api environment deployment failed.' }
+}
+
+$RunId = [guid]::NewGuid().ToString('N')
+$BeforeEnvPath = Join-Path $ProjectRoot ".formal-domestic-before-$RunId.tmp"
+$AfterEnvPath = Join-Path $ProjectRoot ".formal-domestic-after-$RunId.tmp"
+$ConfigPath = Join-Path $ProjectRoot ".cloudbaserc.formal-domestic-$RunId.json"
+$SafeRoot = [IO.Path]::GetFullPath($ProjectRoot + [IO.Path]::DirectorySeparatorChar)
+foreach ($Path in @($BeforeEnvPath, $AfterEnvPath, $ConfigPath)) {
+    if (-not ([IO.Path]::GetFullPath($Path)).StartsWith($SafeRoot, [StringComparison]::OrdinalIgnoreCase)) {
+        throw 'Unsafe temporary path.'
+    }
+}
+
+$OriginalEnvironment = $null
+$SwitchAttempted = $false
+try {
+    if (-not (Test-Path -LiteralPath (Join-Path $ProjectRoot 'cloudfunctions\sherlock-api\public-app\static-manifest.json'))) {
+        throw 'Domestic candidate release is missing; refusing to switch.'
+    }
+    $InitialHealth = Wait-ForEntryMode 'github-http-only'
+    $ClientId = "domestic-cutover-$RunId"
+    $GitHubSession = Invoke-Http $GitHubOrigin @{ action = 'startChildSession' } $ClientId
+    if ($GitHubSession.StatusCode -ne 200 -or -not $GitHubSession.Payload.ok `
+        -or [string]::IsNullOrWhiteSpace($GitHubSession.Payload.session_token)) {
+        throw 'GitHub formal entry is not healthy before the switch.'
+    }
+    $DomesticBefore = Invoke-Http $DomesticOrigin @{ action = 'startChildSession' } $ClientId
+    Assert-ApiError $DomesticBefore 403 'FORMAL_ENTRY_REQUIRED'
+
+    npx --yes --package=@cloudbase/cli@3.8.0 tcb -e $EnvId fn env pull sherlock-api --output-file $BeforeEnvPath --json | Out-Null
+    if ($LASTEXITCODE -ne 0 -or -not (Test-Path -LiteralPath $BeforeEnvPath)) { throw 'Unable to pull the existing function environment safely.' }
+    $OriginalEnvironment = Read-EnvFile $BeforeEnvPath
+    foreach ($Required in @('PARENT_PASSWORD_SCRYPT', 'PARENT_SESSION_HMAC_KEY', 'SPEAKING_INTERNAL_HMAC_KEY', 'FORMAL_ENABLED')) {
+        if (-not $OriginalEnvironment.Contains($Required) -or [string]::IsNullOrWhiteSpace([string]$OriginalEnvironment[$Required])) {
+            throw "Required existing function setting is missing: $Required"
+        }
+    }
+    if ([string]$OriginalEnvironment['FORMAL_ENABLED'] -cne 'true' `
+        -or [string]$OriginalEnvironment['FORMAL_ENTRY_MODE'] -cne 'github-http-only') {
+        throw 'Formal learning state drift detected before domestic cutover.'
+    }
+
+    $DesiredEnvironment = Copy-Environment $OriginalEnvironment
+    $DesiredEnvironment['FORMAL_ENTRY_MODE'] = 'domestic-http-only'
+    $SwitchAttempted = $true
+    Deploy-Environment $DesiredEnvironment $ConfigPath
+    $FinalHealth = Wait-ForEntryMode 'domestic-http-only'
+
+    npx --yes --package=@cloudbase/cli@3.8.0 tcb -e $EnvId fn env pull sherlock-api --output-file $AfterEnvPath --json | Out-Null
+    if ($LASTEXITCODE -ne 0 -or -not (Test-Path -LiteralPath $AfterEnvPath)) { throw 'Unable to verify the switched function environment.' }
+    Assert-EnvironmentEqual $DesiredEnvironment (Read-EnvFile $AfterEnvPath)
+
+    $DomesticSession = Invoke-Http $DomesticOrigin @{ action = 'startChildSession' } $ClientId
+    if ($DomesticSession.StatusCode -ne 200 -or -not $DomesticSession.Payload.ok `
+        -or [string]::IsNullOrWhiteSpace($DomesticSession.Payload.session_token)) {
+        throw 'Domestic formal session could not be created after cutover.'
+    }
+    $GitHubAfter = Invoke-Http $GitHubOrigin @{ action = 'startChildSession' } $ClientId
+    Assert-ApiError $GitHubAfter 403 'FORMAL_ENTRY_REQUIRED'
+    $GitHubExistingAfter = Invoke-Http $GitHubOrigin @{
+        action = 'getFormalProgress'; session_token = $GitHubSession.Payload.session_token
+    } $ClientId
+    Assert-ApiError $GitHubExistingAfter 403 'FORMAL_ENTRY_REQUIRED'
+
+    $HiddenCourse = Invoke-Http $DomesticOrigin @{
+        action = 'submitListeningResult'
+        session_token = $DomesticSession.Payload.session_token
+        submission = @{ result_id = [guid]::NewGuid().ToString(); course_id = 'L4A-T1-W01-D01' }
+    } $ClientId
+    Assert-ApiError $HiddenCourse 409 'COURSE_NOT_FORMAL'
+
+    $OldEvent = Invoke-Function @{ action = 'startChildSession' }
+    if ($OldEvent.ok -ne $false -or $OldEvent.error.code -ne 'FORMAL_ENTRY_REQUIRED') {
+        throw 'Legacy CloudBase Event formal entry was not blocked.'
+    }
+
+    Write-Host 'Domestic formal entry cutover succeeded.'
+    Write-Host "FormalUrl=$GatewayUrl/"
+    Write-Host "FormalEntryMode=$($FinalHealth.formal_entry_mode)"
+    Write-Host 'DomesticHttpSession=allowed'
+    Write-Host 'GitHubHttpSession=blocked'
+    Write-Host 'LegacyCloudBaseEventSession=blocked'
+    Write-Host 'WithdrawnTermCourses=blocked'
+}
+catch {
+    $OriginalError = $_
+    if ($SwitchAttempted -and $null -ne $OriginalEnvironment) {
+        try {
+            Deploy-Environment $OriginalEnvironment $ConfigPath
+            Write-Warning 'Cutover validation failed; the original function environment was restored.'
+        }
+        catch { Write-Warning 'Automatic rollback failed. Immediate CloudBase inspection is required.' }
+    }
+    throw $OriginalError
+}
+finally {
+    foreach ($Path in @($BeforeEnvPath, $AfterEnvPath, $ConfigPath)) {
+        if (Test-Path -LiteralPath $Path) { Remove-Item -LiteralPath $Path -Force }
+    }
+}

@@ -22,7 +22,7 @@ const DIRECT_UPLOAD_PROBE_TTL_MS = 120_000
 const DIRECT_UPLOAD_PROBE_PREFIX = 'sherlock-english/test/direct-upload-probe'
 const SPEAKING_DIRECT_UPLOAD_TTL_MS = 120_000
 const SPEAKING_DIRECT_UPLOAD_PREFIX = 'sherlock-english/tmp-speaking-direct/test'
-const FORMAL_ENTRY_MODES = new Set(['dual', 'github-http-only', 'cloudbase-event-only'])
+const FORMAL_ENTRY_MODES = new Set(['dual', 'github-http-only', 'domestic-http-only', 'cloudbase-event-only'])
 
 class ServiceError extends Error {
   constructor(code, message = code) {
@@ -139,13 +139,16 @@ function createService(options) {
   const monotonicNow = options.monotonicNow || Date.now
 
   function requestTransport(requestContext) {
-    return requestContext?.transport === 'github-http' ? 'github-http' : 'cloudbase-event'
+    return ['github-http', 'domestic-http'].includes(requestContext?.transport)
+      ? requestContext.transport
+      : 'cloudbase-event'
   }
 
   function assertFormalEntry(requestContext, session) {
     if (!FORMAL_ENTRY_MODES.has(formalEntryMode)) throw new ServiceError('CONFIG_ERROR')
     const transport = requestTransport(requestContext)
     if ((formalEntryMode === 'github-http-only' && transport !== 'github-http')
+      || (formalEntryMode === 'domestic-http-only' && transport !== 'domestic-http')
       || (formalEntryMode === 'cloudbase-event-only' && transport !== 'cloudbase-event')) {
       throw new ServiceError('FORMAL_ENTRY_REQUIRED')
     }

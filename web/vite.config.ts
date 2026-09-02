@@ -1,11 +1,15 @@
 import { resolve } from 'node:path'
 import { defineConfig } from 'vitest/config'
+import { loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
+import { createAudioPathPattern, resolveAppBase } from './app-base.ts'
 
-export default defineConfig(({ mode }) => ({
-  base: '/sherlock-english/',
-  plugins: [
+export default defineConfig(({ mode }) => {
+  const appBase = resolveAppBase(loadEnv(mode, process.cwd(), '').VITE_APP_BASE)
+  return {
+    base: appBase,
+    plugins: [
     react(),
     mode !== 'test' && VitePWA({
       registerType: 'prompt',
@@ -17,8 +21,8 @@ export default defineConfig(({ mode }) => ({
         theme_color: '#12372a',
         background_color: '#f7f3e8',
         display: 'standalone',
-        start_url: '/sherlock-english/',
-        scope: '/sherlock-english/',
+        start_url: appBase,
+        scope: appBase,
         icons: [
           {
             src: 'sherlock-mark.svg',
@@ -29,11 +33,11 @@ export default defineConfig(({ mode }) => ({
         ]
       },
       workbox: {
-        navigateFallback: '/sherlock-english/index.html',
+        navigateFallback: `${appBase}index.html`,
         globPatterns: ['**/*.{js,css,html,svg,woff2}'],
         runtimeCaching: [
           {
-            urlPattern: ({ url }) => /\/sherlock-english\/audio\/(?:listening|speaking)\//.test(url.pathname),
+            urlPattern: createAudioPathPattern(appBase),
             handler: 'CacheFirst',
             options: {
               cacheName: 'sherlock-course-audio-v2',
@@ -44,13 +48,13 @@ export default defineConfig(({ mode }) => ({
         ]
       }
     })
-  ].filter(Boolean),
-  resolve: mode === 'test' ? {
+    ].filter(Boolean),
+    resolve: mode === 'test' ? {
     alias: {
       'virtual:pwa-register/react': resolve(import.meta.dirname, 'src/test/pwa-register.ts')
     }
-  } : undefined,
-  test: {
+    } : undefined,
+    test: {
     environment: 'jsdom',
     setupFiles: ['./src/test/setup.ts'],
     coverage: {
@@ -65,5 +69,6 @@ export default defineConfig(({ mode }) => ({
         statements: 80
       }
     }
+    }
   }
-}))
+})

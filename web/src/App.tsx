@@ -9,6 +9,8 @@ import { ListeningPage } from './pages/ListeningPage'
 import { ParentPage } from './pages/ParentPage'
 import { SpeakingPage } from './pages/SpeakingPage'
 
+const DOMESTIC_FORMAL_ENTRY = 'https://family24-d7gqb6r6m2d722f7a-1383960965.ap-shanghai.app.tcloudbase.com/sherlock-api/'
+
 export function mergeCompleted(
   value: { listening: string[]; speaking: string[] }, module: 'listening' | 'speaking', courseId: string
 ) {
@@ -16,7 +18,7 @@ export function mergeCompleted(
 }
 
 function LearningRoutes({
-  api, parentSessionToken, formalSessionToken, runFormalRequest, completed, formalMessage, markCompleted, onParentAuthenticated
+  api, parentSessionToken, formalSessionToken, runFormalRequest, completed, formalMessage, formalEntryRequired, markCompleted, onParentAuthenticated
 }: {
   api: SherlockApi
   parentSessionToken: string
@@ -24,6 +26,7 @@ function LearningRoutes({
   runFormalRequest: SessionRequestRunner
   completed: { listening: string[]; speaking: string[] }
   formalMessage: string
+  formalEntryRequired: boolean
   markCompleted: (module: 'listening' | 'speaking', courseId: string) => void
   onParentAuthenticated: (token: string) => void
 }) {
@@ -38,7 +41,10 @@ function LearningRoutes({
       <Link className="brand" to="/" aria-label="返回首页"><span className="brand-mark">S</span><span>夏洛恪英语</span></Link>
       <span className="test-label">{testMode ? 'TEST' : 'FORMAL'}</span>
     </header>
-    {!testMode && formalMessage && <p className="notice warning" role="status">{formalMessage}</p>}
+    {!testMode && formalMessage && <p className="notice warning" role="status">
+      {formalMessage}
+      {formalEntryRequired && <> <a href={DOMESTIC_FORMAL_ENTRY}>打开腾讯云国内正式入口</a></>}
+    </p>}
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/listening" element={<ListeningPage api={api} sessionToken={sessionToken} runSessionRequest={testMode ? undefined : runFormalRequest} dataKind={dataKind} completedCourseIds={listeningCompleted} onFormalCompleted={markCompleted.bind(null, 'listening')} />} />
@@ -54,6 +60,7 @@ export function App({ api = cloudbaseApi }: { api?: SherlockApi }) {
   const [formalSessionToken, setFormalSessionToken] = useState('')
   const [completed, setCompleted] = useState({ listening: [] as string[], speaking: [] as string[] })
   const [formalMessage, setFormalMessage] = useState('正在连接正式学习进度…')
+  const [formalEntryRequired, setFormalEntryRequired] = useState(false)
   const formalSession = useMemo(() => createFormalSessionManager(api, {
     onSession: (session) => setFormalSessionToken(session.session_token)
   }), [api])
@@ -66,10 +73,15 @@ export function App({ api = cloudbaseApi }: { api?: SherlockApi }) {
           options?.onRecovering?.()
         }
       })
+      setFormalEntryRequired(false)
       setFormalMessage('')
       return result
     } catch (error) {
-      if (error instanceof Error && error.message === 'FORMAL_SESSION_RECOVERY_FAILED') {
+      const code = error instanceof Error ? error.message : ''
+      if (code === 'FORMAL_ENTRY_REQUIRED') {
+        setFormalEntryRequired(true)
+        setFormalMessage('儿童正式入口已迁移。')
+      } else if (code === 'FORMAL_SESSION_RECOVERY_FAILED') {
         setFormalMessage('正式会话自动恢复失败，当前学习状态仍保留；联网后可再次操作。')
       }
       throw error
@@ -81,11 +93,18 @@ export function App({ api = cloudbaseApi }: { api?: SherlockApi }) {
     runFormalRequest((token) => api.getFormalProgress(token)).then((progress) => {
       if (!active) return
       setCompleted(progress.completed_course_ids)
+      setFormalEntryRequired(false)
       setFormalMessage('')
     }).catch((error: unknown) => {
       if (!active) return
       const code = error instanceof Error ? error.message : ''
-      setFormalMessage(code === 'FORMAL_DISABLED' ? '正式入口尚未开放。' : '正式进度暂时无法连接，请稍后刷新。')
+      if (code === 'FORMAL_ENTRY_REQUIRED') {
+        setFormalEntryRequired(true)
+        setFormalMessage('儿童正式入口已迁移。')
+      } else {
+        setFormalEntryRequired(false)
+        setFormalMessage(code === 'FORMAL_DISABLED' ? '正式入口尚未开放。' : '正式进度暂时无法连接，请稍后刷新。')
+      }
     })
     return () => { active = false }
   }, [api, runFormalRequest])
@@ -97,9 +116,18 @@ export function App({ api = cloudbaseApi }: { api?: SherlockApi }) {
       void formalSession.ensureFresh({
         onRecovering: () => setFormalMessage('正式会话正在自动恢复，当前学习状态仍保留…')
       }).then(() => {
-        if (active) setFormalMessage('')
-      }).catch(() => {
-        if (active) setFormalMessage('正式会话自动恢复失败，当前学习状态仍保留；联网后可再次操作。')
+        if (active) {
+          setFormalEntryRequired(false)
+          setFormalMessage('')
+        }
+      }).catch((error: unknown) => {
+        if (!active) return
+        if (error instanceof Error && error.message === 'FORMAL_ENTRY_REQUIRED') {
+          setFormalEntryRequired(true)
+          setFormalMessage('儿童正式入口已迁移。')
+        } else {
+          setFormalMessage('正式会话自动恢复失败，当前学习状态仍保留；联网后可再次操作。')
+        }
       })
     }
     document.addEventListener('visibilitychange', refresh)
@@ -119,7 +147,7 @@ export function App({ api = cloudbaseApi }: { api?: SherlockApi }) {
     <div className="app-shell">
       <PwaStatus />
       <LearningRoutes api={api} parentSessionToken={parentSessionToken} formalSessionToken={formalSessionToken}
-        runFormalRequest={runFormalRequest} completed={completed} formalMessage={formalMessage} markCompleted={markCompleted} onParentAuthenticated={setParentSessionToken} />
+        runFormalRequest={runFormalRequest} completed={completed} formalMessage={formalMessage} formalEntryRequired={formalEntryRequired} markCompleted={markCompleted} onParentAuthenticated={setParentSessionToken} />
     </div>
   )
 }

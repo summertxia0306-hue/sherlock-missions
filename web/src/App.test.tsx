@@ -57,6 +57,21 @@ describe('P5 application shell', () => {
     expect(screen.getByText('TEST')).toBeInTheDocument()
   })
 
+  it('guides a rejected GitHub formal child to the domestic entry without blocking parent TEST', async () => {
+    const entryRequired = {
+      authenticate: vi.fn(), submitResult: vi.fn(), health: vi.fn(), submitListeningResult: vi.fn(),
+      checkListeningCorrection: vi.fn(), listListeningTestResults: vi.fn(), ...speakingApi,
+      startChildSession: vi.fn(async () => { throw new Error('FORMAL_ENTRY_REQUIRED') })
+    }
+    render(<MemoryRouter><App api={entryRequired} /></MemoryRouter>)
+    const link = await screen.findByRole('link', { name: '打开腾讯云国内正式入口' })
+    expect(link).toHaveAttribute(
+      'href',
+      'https://family24-d7gqb6r6m2d722f7a-1383960965.ap-shanghai.app.tcloudbase.com/sherlock-api/'
+    )
+    expect(screen.getByRole('link', { name: /^家长端/ })).toBeInTheDocument()
+  })
+
   it('merges a new formal completion once and preserves an existing completion', () => {
     const value = { listening: ['W01D43'], speaking: ['S01D43'] }
     const added = mergeCompleted(value, 'listening', 'W01D44')
