@@ -56,6 +56,21 @@ test('serves the PWA shell with inline disposition and strict browser headers', 
   }
 })
 
+test('accepts the CloudBase gateway path after the mounted route prefix is stripped', async () => {
+  const { root, app } = await fixture()
+  try {
+    const shell = await app.handle(request('/'))
+    assert.equal(shell.statusCode, 200)
+    assert.equal(shell.headers['Content-Type'], 'text/html; charset=utf-8')
+    assert.match(shell.body, /id="root"/)
+    const asset = await app.handle(request('/assets/app-123.js'))
+    assert.equal(asset.statusCode, 200)
+    assert.match(asset.headers['Cache-Control'], /immutable/)
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
+
 test('uses immutable caching for hashed assets and an empty body for HEAD', async () => {
   const { root, app } = await fixture()
   try {

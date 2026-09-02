@@ -58,9 +58,10 @@ function createStaticApp({ root, manifest, routePrefix, audioBaseUrl }) {
     if (decoded === prefix.slice(0, -1)) {
       return response(308, '', { ...headers, Location: prefix, 'Cache-Control': 'no-store' })
     }
-    if (!decoded.startsWith(prefix)) return response(404, 'Not Found', { ...headers, 'Cache-Control': 'no-store' })
-
-    let relativePath = decoded.slice(prefix.length)
+    let relativePath
+    if (decoded.startsWith(prefix)) relativePath = decoded.slice(prefix.length)
+    else if (decoded.startsWith('/')) relativePath = decoded.slice(1)
+    else return response(404, 'Not Found', { ...headers, 'Cache-Control': 'no-store' })
     if (!relativePath) relativePath = 'index.html'
     if (AUDIO_PATH.test(relativePath)) {
       if (!Object.hasOwn(audio, relativePath)) return response(404, 'Not Found', { ...headers, 'Cache-Control': 'no-store' })
