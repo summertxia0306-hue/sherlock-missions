@@ -1,7 +1,7 @@
 # GitHub Pages 正式入口切换与 W01D50 / S01D50 发布设计
 
 > 日期：2026-09-01
-> 状态：家长已批准方案 A，待书面规格复核后实施
+> 状态：已实施并完成线上自动验收（2026-09-02）
 > 唯一项目根：`D:\ObsidianVaults\Education\Sherlock\English-Learning`
 
 ## 1. 已确认决策

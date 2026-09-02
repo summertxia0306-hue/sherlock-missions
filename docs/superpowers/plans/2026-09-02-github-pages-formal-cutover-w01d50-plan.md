@@ -1,7 +1,7 @@
 # GitHub Pages formal 切换与 W01D50 / S01D50 实施计划
 
 > 对应设计：`docs/superpowers/specs/2026-09-01-github-pages-formal-cutover-w01d50-design.md`
-> 状态：规格已通过，实施中
+> 状态：已完成并完成线上自动验收（2026-09-02）
 
 1. 为服务端入口通道、公开课程过滤、formal/TEST 口语分流补失败测试。
 2. 在 `sherlock-api` 中加入服务端可信通道与 `FORMAL_ENTRY_MODE` 硬门。
