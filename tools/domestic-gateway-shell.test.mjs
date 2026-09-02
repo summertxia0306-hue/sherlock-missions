@@ -10,6 +10,7 @@ test('candidate deployment builds the exact domestic base and updates code witho
   assert.match(script, /VITE_APP_BASE\s*=\s*'\/sherlock-api\/'/)
   assert.match(script, /prepare-domestic-gateway-release\.mjs/)
   assert.match(script, /fn code update sherlock-api/)
+  assert.match(script, /Wait-ForStaticShell/)
   assert.match(script, /FORMAL_ENTRY_REQUIRED/)
   assert.match(script, /github-http-only/)
   assert.doesNotMatch(script, /FORMAL_ENTRY_MODE['"]?\]\s*=\s*'domestic-http-only'/)

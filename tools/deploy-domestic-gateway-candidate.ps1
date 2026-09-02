@@ -96,6 +96,23 @@ function Assert-ApiError([object]$Response, [int]$StatusCode, [string]$ErrorCode
     }
 }
 
+function Wait-ForStaticShell {
+    $LastResponse = $null
+    for ($Attempt = 1; $Attempt -le 12; $Attempt++) {
+        $LastResponse = Invoke-Http 'GET' "$GatewayUrl/"
+        $ContentType = if ($LastResponse.Headers.ContainsKey('Content-Type')) { $LastResponse.Headers['Content-Type'] } else { '' }
+        $DownloadLike = $LastResponse.Headers.ContainsKey('Content-Disposition')
+        if ($LastResponse.StatusCode -eq 200 -and $ContentType -match '^text/html' -and -not $DownloadLike `
+            -and $LastResponse.Body -match '/sherlock-api/assets/') {
+            return $LastResponse
+        }
+        if ($Attempt -lt 12) { Start-Sleep -Seconds 3 }
+    }
+    $LastType = if ($LastResponse.Headers.ContainsKey('Content-Type')) { $LastResponse.Headers['Content-Type'] } else { 'missing' }
+    $LastDisposition = if ($LastResponse.Headers.ContainsKey('Content-Disposition')) { $LastResponse.Headers['Content-Disposition'] } else { 'none' }
+    throw "Domestic gateway shell did not propagate safely. Status=$($LastResponse.StatusCode) ContentType=$LastType ContentDisposition=$LastDisposition"
+}
+
 function Find-DownloadedFunctionRoot([string]$Root) {
     $Package = Get-ChildItem -LiteralPath $Root -Recurse -File -Filter 'package.json' |
         Where-Object { Test-Path -LiteralPath (Join-Path $_.Directory.FullName 'index.js') } |
@@ -167,11 +184,7 @@ try {
         throw 'Candidate deployment changed the formal entry mode unexpectedly.'
     }
 
-    $Shell = Invoke-Http 'GET' "$GatewayUrl/"
-    if ($Shell.StatusCode -ne 200 -or $Shell.Headers['Content-Type'] -notmatch '^text/html' `
-        -or $Shell.Headers.ContainsKey('Content-Disposition')) {
-        throw 'Domestic gateway shell response is invalid or download-like.'
-    }
+    $Shell = Wait-ForStaticShell
     $AssetMatch = [regex]::Match($Shell.Body, '(?:src|href)="(?<path>/sherlock-api/assets/[^"]+)"')
     if (-not $AssetMatch.Success) { throw 'Domestic gateway shell does not reference a base-safe hashed asset.' }
     $Asset = Invoke-Http 'HEAD' ($DomesticOrigin + $AssetMatch.Groups['path'].Value)
