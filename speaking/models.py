@@ -116,6 +116,9 @@ def all_courses():
                 out[cid] = {"title": d.get("title", ""), "week": d.get("week"),
                             "day": d.get("day"),
                             "course_type": d.get("course_type", "training"),
+                            "publication_status": d.get(
+                                "publication_status", "formal"
+                            ),
                             "open_date": d.get("open_date"),
                             "status": progress.get_course_status(cid)}
         except Exception:
@@ -127,5 +130,6 @@ def visible_courses():
     from storage import progress
     today = progress.beijing_today()
     return {cid: m for cid, m in all_courses().items()
-            if m["status"] == "open"
+            if m.get("publication_status") == "formal"
+            and m["status"] == "open"
             and (not m.get("open_date") or m["open_date"] <= today)}

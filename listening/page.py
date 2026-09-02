@@ -102,7 +102,7 @@ def listening_home(student_id):
     done = progress.completed_course_ids(
         progress.list_results(student_id=student_id)
     )
-    metas = progress.all_courses()
+    metas = progress.visible_courses()
     shown = _shown_courses(metas, today)
     recommended = _recommended_course_id(shown, done)
     student_window = progress.course_window(shown, done)

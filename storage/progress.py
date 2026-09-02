@@ -398,6 +398,9 @@ def all_courses():
                 out[cid] = {"title": data.get("title", ""),
                             "week": data.get("week"), "day": data.get("day"),
                             "course_type": data.get("course_type", ""),
+                            "publication_status": data.get(
+                                "publication_status", "formal"
+                            ),
                             "open_date": data.get("open_date"),
                             "status": statuses.get(cid, "open")}
         except Exception:
@@ -409,5 +412,6 @@ def visible_courses():
     """儿童端可见课程 = 状态 open 且已到 open_date（未填则不限日期）。"""
     today = beijing_today()
     return {cid: m for cid, m in all_courses().items()
-            if m["status"] == "open"
+            if m.get("publication_status") == "formal"
+            and m["status"] == "open"
             and (not m.get("open_date") or m["open_date"] <= today)}
