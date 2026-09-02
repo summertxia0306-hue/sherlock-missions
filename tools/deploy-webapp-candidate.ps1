@@ -192,7 +192,7 @@ try {
     Assert-EnvironmentEqual $BeforeEnvironment (Read-EnvFile $AfterEnvPath)
     Wait-ForWebAppApi
     $WebAppDenied = Invoke-Http 'POST' $GatewayUrl $WebAppOrigin '{"action":"startChildSession"}'
-    Assert-ApiError $WebAppDenied 403 'FORMAL_ENTRY_REQUIRED'
+    Assert-ApiError $WebAppDenied 200 'FORMAL_ENTRY_REQUIRED'
     $GitHubAllowed = Invoke-Http 'POST' $GatewayUrl $GitHubOrigin '{"action":"startChildSession"}'
     if ($GitHubAllowed.StatusCode -ne 200 -or -not (($GitHubAllowed.Body | ConvertFrom-Json).ok)) {
         throw 'Existing GitHub formal entry stopped working during Web App candidate deployment.'

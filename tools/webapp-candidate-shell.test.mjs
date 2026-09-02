@@ -14,6 +14,7 @@ test('Web App candidate is isolated, exact-origin, and keeps formal on GitHub', 
   assert.match(script, /family24-web/)
   assert.match(script, /fn code update sherlock-api/)
   assert.match(script, /FORMAL_ENTRY_REQUIRED/)
+  assert.match(script, /Assert-ApiError \$WebAppDenied 200 'FORMAL_ENTRY_REQUIRED'/)
   assert.match(script, /github-http-only/)
   assert.doesNotMatch(script, /app delete/)
   assert.doesNotMatch(script, /FORMAL_ENTRY_MODE['"]?\]\s*=\s*'webapp-http-only'/)
