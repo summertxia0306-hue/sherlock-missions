@@ -138,6 +138,25 @@ describe('sherlock-api service', () => {
     )
   })
 
+  it('accepts formal only from the independent Web App after its cutover', async () => {
+    const store = memoryStore()
+    const service = createService({
+      store, passwordHash: 'unused', hmacKey: '1234567890abcdef', formalEnabled: true,
+      formalEntryMode: 'webapp-http-only', randomToken: () => 'webapp-formal-token'
+    })
+    for (const transport of ['github-http', 'domestic-http', 'cloudbase-event']) {
+      await assert.rejects(
+        service.handle({ action: 'startChildSession' }, { callerId: `${transport}:child`, transport }),
+        /FORMAL_ENTRY_REQUIRED/
+      )
+    }
+    await service.handle(
+      { action: 'startChildSession' },
+      { callerId: 'webapp:child', transport: 'webapp-http' }
+    )
+    assert.equal([...store.sessions.values()][0].entry_channel, 'webapp-http')
+  })
+
   it('authenticates a parent without returning or storing the password', async () => {
     const store = memoryStore()
     const passwordHash = await hashPassword('correct horse battery staple', '00112233445566778899aabbccddeeff')

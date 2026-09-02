@@ -4,9 +4,11 @@ const crypto = require('node:crypto')
 
 const GITHUB_ORIGIN = 'https://summertxia0306-hue.github.io'
 const DOMESTIC_ORIGIN = 'https://family24-d7gqb6r6m2d722f7a-1383960965.ap-shanghai.app.tcloudbase.com'
+const WEBAPP_ORIGIN = 'https://sherlock-english-family24-d7gqb6r6m2d722f7a.webapps.tcloudbase.com'
 const ALLOWED_ORIGINS = new Map([
   [GITHUB_ORIGIN, { transport: 'github-http', callerPrefix: 'github' }],
-  [DOMESTIC_ORIGIN, { transport: 'domestic-http', callerPrefix: 'domestic' }]
+  [DOMESTIC_ORIGIN, { transport: 'domestic-http', callerPrefix: 'domestic' }],
+  [WEBAPP_ORIGIN, { transport: 'webapp-http', callerPrefix: 'webapp' }]
 ])
 const MAX_BODY_BYTES = 1_200_000
 const CLIENT_ID_PATTERN = /^[A-Za-z0-9_-]{16,128}$/
@@ -105,6 +107,7 @@ module.exports = {
   ALLOWED_ORIGINS,
   DOMESTIC_ORIGIN,
   GITHUB_ORIGIN,
+  WEBAPP_ORIGIN,
   HttpRequestError,
   createHttpResponse,
   isHttpGatewayEvent,

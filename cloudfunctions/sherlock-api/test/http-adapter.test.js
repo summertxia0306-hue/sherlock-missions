@@ -11,6 +11,7 @@ const {
 
 const origin = 'https://summertxia0306-hue.github.io'
 const domesticOrigin = 'https://family24-d7gqb6r6m2d722f7a-1383960965.ap-shanghai.app.tcloudbase.com'
+const webAppOrigin = 'https://sherlock-english-family24-d7gqb6r6m2d722f7a.webapps.tcloudbase.com'
 
 function request(overrides = {}) {
   return {
@@ -42,6 +43,17 @@ test('parses the exact domestic gateway origin as a separate trusted transport',
   }))
   assert.equal(parsed.transport, 'domestic-http')
   assert.match(parsed.callerId, /^domestic:[a-f0-9]{32}$/)
+})
+
+test('parses only the exact Sherlock Web App origin as its own trusted transport', () => {
+  const parsed = parseHttpGatewayEvent(request({
+    headers: { ...request().headers, origin: webAppOrigin }
+  }))
+  assert.equal(parsed.transport, 'webapp-http')
+  assert.match(parsed.callerId, /^webapp:[a-f0-9]{32}$/)
+  assert.throws(() => parseHttpGatewayEvent(request({
+    headers: { ...request().headers, origin: `${webAppOrigin}.evil.example` }
+  })), HttpRequestError)
 })
 
 test('handles preflight without invoking business logic', () => {
