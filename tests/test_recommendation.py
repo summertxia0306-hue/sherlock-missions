@@ -117,6 +117,35 @@ class RecommendationTests(unittest.TestCase):
             listening_page._recommended_course_id(window, {"W01D01"}),
         )
 
+    def test_reconciled_progress_recommends_only_course_50(self):
+        shown = listening_page._shown_courses(metas("W01D", count=50), "2026-07-09")
+        rows = [
+            {"course_id": "W01D%02d" % i, "student_id": "sherlock", "data_kind": "formal"}
+            for i in range(1, 46)
+        ]
+        reconciliations = [
+            {
+                "course_id": "W01D%02d" % i,
+                "student_id": "sherlock",
+                "data_kind": "formal",
+                "status": "completed",
+            }
+            for i in range(46, 50)
+        ]
+
+        done = progress.completed_course_ids(
+            rows,
+            student_id="sherlock",
+            reconciliations=reconciliations,
+        )
+        window = progress.course_window(shown, done)
+
+        self.assertEqual("W01D50", listening_page._recommended_course_id(shown, done))
+        self.assertEqual(
+            ["W01D46", "W01D47", "W01D48", "W01D49", "W01D50"],
+            [course_id for course_id, _meta in window],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

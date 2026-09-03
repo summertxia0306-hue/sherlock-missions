@@ -57,6 +57,65 @@ class DataKindTests(unittest.TestCase):
         ]
         self.assertEqual({"W01D02"}, progress.completed_course_ids(rows))
 
+    def test_completion_reconciliation_is_formal_completed_and_student_scoped(self):
+        rows = [{
+            "course_id": "W01D45",
+            "student_id": "sherlock",
+            "data_kind": "formal",
+        }]
+        reconciliations = [
+            {
+                "course_id": "W01D46",
+                "student_id": "sherlock",
+                "data_kind": "formal",
+                "status": "completed",
+            },
+            {
+                "course_id": "W01D47",
+                "student_id": "sherlock",
+                "data_kind": "test",
+                "status": "completed",
+            },
+            {
+                "course_id": "W01D48",
+                "student_id": "someone-else",
+                "data_kind": "formal",
+                "status": "completed",
+            },
+            {
+                "course_id": "W01D50",
+                "student_id": "sherlock",
+                "data_kind": "formal",
+                "status": "pending",
+            },
+        ]
+
+        self.assertEqual(
+            {"W01D45", "W01D46"},
+            progress.completed_course_ids(
+                rows,
+                student_id="sherlock",
+                reconciliations=reconciliations,
+            ),
+        )
+
+    def test_completion_reconciliation_requires_explicit_student_scope(self):
+        rows = [{"course_id": "W01D45", "data_kind": "formal"}]
+        with mock.patch.object(
+            progress,
+            "list_completion_reconciliations",
+            return_value=[{
+                "course_id": "W01D46",
+                "student_id": "someone-else",
+                "data_kind": "formal",
+                "status": "completed",
+            }],
+        ) as reader:
+            done = progress.completed_course_ids(rows)
+
+        self.assertEqual({"W01D45"}, done)
+        reader.assert_not_called()
+
     def test_parent_label_distinguishes_test_and_formal(self):
         self.assertEqual("开发/家长测试", progress.data_kind_label("test"))
         self.assertEqual("正式学习", progress.data_kind_label("formal"))

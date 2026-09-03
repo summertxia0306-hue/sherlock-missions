@@ -124,13 +124,42 @@ def _annotate_result(result):
     return out
 
 
-def completed_course_ids(results):
-    """儿童端完成状态只认 formal 结果。"""
-    return {
+def list_completion_reconciliations(student_id=None):
+    """读取跨平台确认的完成事实；该旁路不伪造成绩或改写原始结果。"""
+    data = None
+    if persistence_enabled():
+        data, _sha = _remote_read("completion_reconciliations.json", [])
+    if data is None:
+        data = _read("completion_reconciliations.json", [])
+    if not isinstance(data, list):
+        return []
+    rows = [item for item in data if isinstance(item, dict)]
+    if student_id:
+        rows = [item for item in rows if item.get("student_id") == student_id]
+    return rows
+
+
+def completed_course_ids(results, student_id=None, reconciliations=None):
+    """儿童端完成状态只认 formal 结果或经确认的 formal/completed 对账项。"""
+    done = {
         r.get("course_id") for r in results
         if r.get("course_id")
         and normalize_data_kind(r.get("data_kind")) == "formal"
     }
+    if reconciliations is None:
+        reconciliations = (
+            list_completion_reconciliations(student_id=student_id)
+            if student_id else []
+        )
+    done.update(
+        item.get("course_id") for item in reconciliations
+        if item.get("course_id")
+        and item.get("student_id")
+        and (student_id is None or item.get("student_id") == student_id)
+        and item.get("data_kind") == "formal"
+        and item.get("status") == "completed"
+    )
+    return done
 
 
 def course_window(shown, done, limit=5):

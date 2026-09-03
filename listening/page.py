@@ -100,7 +100,8 @@ def listening_home(student_id):
     st.markdown("## 🎧 听力练习")
     today = progress.beijing_today()
     done = progress.completed_course_ids(
-        progress.list_results(student_id=student_id)
+        progress.list_results(student_id=student_id),
+        student_id=student_id,
     )
     metas = progress.visible_courses()
     shown = _shown_courses(metas, today)
