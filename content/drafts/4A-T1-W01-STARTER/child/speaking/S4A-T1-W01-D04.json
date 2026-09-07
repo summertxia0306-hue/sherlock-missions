@@ -1,0 +1,61 @@
+{
+  "course_id": "S4A-T1-W01-D04",
+  "pair_id": "4A-T1-W01-D04",
+  "study_pack": "4A-T1-W01-D04",
+  "course_version": "61bebf697fd7a453",
+  "title": "四上·Starter第4课｜数字20–100·准确听辨（口语）",
+  "week": 1,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Twenty, twenty-one, twenty-two.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D04/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "Twenty-three, twenty-four, twenty-five.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D04/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "Twenty-six, twenty-seven, twenty-eight, twenty-nine.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D04/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Thirty, forty, fifty.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D04/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "Sixty, seventy, eighty, ninety.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D04/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "One hundred.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D04/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "完整回答：有24个女孩。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D04/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "完整回答：有26个男孩。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D04/q08.mp3"
+    }
+  ]
+}

@@ -17,6 +17,7 @@ import base64
 import datetime
 import json
 import os
+import re
 import threading
 import time
 import urllib.error
@@ -177,6 +178,23 @@ def course_window(shown, done, limit=5):
     end = min(len(shown), start + limit)
     start = max(0, end - limit)
     return shown[start:end]
+
+
+def course_sort_key(course_id):
+    """Keep retained W/S courses before the renumbered term sequence."""
+    legacy = re.fullmatch(r"[WS]\d{2}D(\d{2})", course_id)
+    if legacy:
+        return 0, int(legacy.group(1)), course_id
+    term = re.fullmatch(r"[LS]\d[A-Z]-T\d-W\d{2}-D(\d{2})", course_id)
+    if term:
+        return 1, int(term.group(1)), course_id
+    return 2, 0, course_id
+
+
+def course_action_label(course_id, done, recommended):
+    if course_id in done:
+        return "再做一遍"
+    return "推荐开始" if course_id == recommended else "开始"
 
 
 def _gh_request(method, url, token, payload=None):

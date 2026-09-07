@@ -20,6 +20,52 @@ def metas(prefix, count=20):
 
 
 class RecommendationTests(unittest.TestCase):
+    def test_cross_term_window_keeps_legacy_50_before_new_starter_courses(self):
+        listening_metas = {
+            **metas("W01D", count=50),
+            **{
+                "L4A-T1-W01-D%02d" % day: {
+                    "title": "Starter %d" % day,
+                    "week": 1,
+                    "day": day,
+                    "status": "open",
+                }
+                for day in range(1, 6)
+            },
+        }
+        speaking_metas = {
+            **metas("S01D", count=50),
+            **{
+                "S4A-T1-W01-D%02d" % day: {
+                    "title": "Starter %d" % day,
+                    "week": 1,
+                    "day": day,
+                    "status": "open",
+                }
+                for day in range(1, 6)
+            },
+        }
+        listening_done = {"W01D%02d" % day for day in range(1, 50)}
+        speaking_done = {"S01D%02d" % day for day in range(1, 50)}
+        listening_shown = listening_page._shown_courses(listening_metas, "2026-09-07")
+        speaking_shown = speaking_page._shown_courses(speaking_metas, "2026-09-07")
+
+        self.assertEqual("W01D50", listening_page._recommended_course_id(listening_shown, listening_done))
+        self.assertEqual("S01D50", speaking_page._recommended_course_id(speaking_shown, speaking_done))
+        self.assertEqual(
+            ["W01D48", "W01D49", "W01D50", "L4A-T1-W01-D01", "L4A-T1-W01-D02"],
+            [cid for cid, _meta in progress.course_window(listening_shown, listening_done)],
+        )
+        self.assertEqual(
+            ["S01D48", "S01D49", "S01D50", "S4A-T1-W01-D01", "S4A-T1-W01-D02"],
+            [cid for cid, _meta in progress.course_window(speaking_shown, speaking_done)],
+        )
+
+    def test_recommended_incomplete_course_gets_recommend_start_label(self):
+        self.assertEqual("推荐开始", progress.course_action_label("S01D50", set(), "S01D50"))
+        self.assertEqual("开始", progress.course_action_label("S4A-T1-W01-D01", set(), "S01D50"))
+        self.assertEqual("再做一遍", progress.course_action_label("S01D49", {"S01D49"}, "S01D50"))
+
     def test_listening_recommends_first_formal_incomplete_course(self):
         done = {"W01D%02d" % i for i in range(1, 10)}
         shown = listening_page._shown_courses(metas("W01D"), "2026-07-09")

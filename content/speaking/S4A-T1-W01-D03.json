@@ -3,82 +3,82 @@
   "weekly_batch_id": "4A-T1-W01",
   "study_pack": "4A-T1-W01-D03",
   "pair_id": "4A-T1-W01-D03",
-  "publication_status": "test",
-  "title": "四上·第1周·周四｜人物信息·连续对话（口语）",
+  "publication_status": "formal",
+  "title": "四上·Starter第3课｜学习方法·勇敢尝试（口语）",
   "week": 1,
   "day": 3,
   "course_type": "training",
   "est_minutes": 8,
-  "scope": "4A M1U1 p2-p3",
+  "scope": "4A Starter p2-p5",
   "difficulty": "L2",
   "questions": [
     {
       "id": 1,
       "type": "repeat",
       "audio": "static/audio/speaking/S4A-T1-W01-D03/q01.mp3",
-      "tag": "A主线·p3·双句介绍",
-      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-      "text": "This is my friend. His name is Danny."
+      "tag": "A主线·p5·拼写问句",
+      "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+      "text": "How do you spell book?"
     },
     {
       "id": 2,
       "type": "repeat",
       "audio": "static/audio/speaking/S4A-T1-W01-D03/q02.mp3",
-      "tag": "A主线·p3·年龄能力整合",
-      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-      "text": "He's nine. He can ride a bicycle."
+      "tag": "A主线·p5·字母拼读",
+      "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+      "text": "B-o-o-k."
     },
     {
       "id": 3,
       "type": "repeat",
       "audio": "static/audio/speaking/S4A-T1-W01-D03/q03.mp3",
-      "tag": "A主线·p3·双句介绍",
-      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-      "text": "This is my friend. Her name is Tracy."
+      "tag": "A主线·p5·鼓励表达",
+      "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+      "text": "Don't be afraid!"
     },
     {
       "id": 4,
       "type": "repeat",
       "audio": "static/audio/speaking/S4A-T1-W01-D03/q04.mp3",
-      "tag": "A主线·p3·年龄能力整合",
-      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-      "text": "She's thirteen. She can skip."
+      "tag": "A主线·p5·鼓励表达",
+      "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+      "text": "Have a try!"
     },
     {
       "id": 5,
       "type": "repeat",
       "audio": "static/audio/speaking/S4A-T1-W01-D03/q05.mp3",
-      "tag": "A主线·p2·人物年龄整合",
-      "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-      "text": "Sally is Kitty's sister. She's twelve."
+      "tag": "A主线·p5·学习计划",
+      "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+      "text": "This is my plan for English study."
     },
     {
       "id": 6,
       "type": "repeat",
       "audio": "static/audio/speaking/S4A-T1-W01-D03/q06.mp3",
-      "tag": "C微调·p2·人物信息对应",
-      "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p2，不作未掌握结论",
-      "text": "Paul is Kitty's brother. He's only six."
+      "tag": "A主线·p5·表扬表达",
+      "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+      "text": "Well done! It's a good plan!"
     },
     {
       "id": 7,
       "type": "qa",
       "audio": "static/audio/speaking/S4A-T1-W01-D03/q07.mp3",
-      "tag": "A主线·p3·自主问答",
-      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-      "question": "What can Danny do?",
-      "expected": "He can ride a bicycle.",
-      "hint": "用英语说：他会骑自行车。"
+      "tag": "C微调·p5·听问句后准确拼写",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p5，不作未掌握结论",
+      "question": "How do you spell book?",
+      "expected": "B-o-o-k.",
+      "hint": "拼读单词book。"
     },
     {
       "id": 8,
       "type": "qa",
       "audio": "static/audio/speaking/S4A-T1-W01-D03/q08.mp3",
-      "tag": "A主线·p3·自主问答",
-      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-      "question": "What can Tracy do?",
-      "expected": "She can skip.",
-      "hint": "用英语说：她会跳绳。"
+      "tag": "A主线·p5·情境自主回应",
+      "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+      "question": "Your friend is afraid. What do you say?",
+      "expected": "Don't be afraid! Have a try!",
+      "hint": "鼓励朋友：别害怕，试一试。"
     }
   ]
 }

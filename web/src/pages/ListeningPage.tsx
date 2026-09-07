@@ -271,13 +271,16 @@ export function ListeningPage({
         {!sessionToken && <p className="notice warning">{dataKind === 'formal' ? '正式入口正在连接，请稍后重试。' : '请先从家长验收完成认证，再进入听力 test。'}</p>}
         {message && <p className="notice" role="status">{message}</p>}
         <section className="course-list" aria-label="听力课程">
-          {shownCourses.map((item) => (
-            <article className={`course-row${completedCourseIds.has(item.course_id) ? ' course-completed' : ''}${item.course_id === recommended?.course_id ? ' course-recommended' : ''}`} key={item.course_id}>
-              <div><div className="course-title-line"><strong>{item.title}</strong>{item.course_id === recommended?.course_id && <span className="recommendation-badge">推荐</span>}</div><small>{item.course_id} · 第 {item.week} 周第 {item.day} 天</small></div>
-              <span className="course-state">{completedCourseIds.has(item.course_id) ? '已完成' : '未完成'}</span>
-              <button type="button" disabled={!sessionToken || busy} onClick={() => startCourse(item.course_id)} aria-label={`开始 ${item.course_id}`}>开始</button>
+          {shownCourses.map((item) => {
+            const completed = completedCourseIds.has(item.course_id)
+            const isRecommended = item.course_id === recommended?.course_id
+            const startLabel = isRecommended ? '推荐开始' : '开始'
+            return <article className={`course-row${completed ? ' course-completed' : ''}${isRecommended ? ' course-recommended' : ''}`} key={item.course_id}>
+              <div><div className="course-title-line"><strong>{item.title}</strong>{isRecommended && <span className="recommendation-badge">推荐</span>}</div><small>{item.course_id} · 第 {item.week} 周第 {item.day} 天</small></div>
+              <span className="course-state">{completed ? '已完成' : '未完成'}</span>
+              <button type="button" disabled={!sessionToken || busy} onClick={() => startCourse(item.course_id)} aria-label={`${startLabel} ${item.course_id}`}>{startLabel}</button>
             </article>
-          ))}
+          })}
         </section>
         <Link className="back-link" to="/">← 返回本周任务</Link>
       </main>

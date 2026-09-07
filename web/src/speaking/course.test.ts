@@ -55,7 +55,7 @@ describe('P3 speaking child course contract', () => {
     }
   })
 
-  it('accepts paired term courses and exposes hidden courses only to test selection', async () => {
+  it('accepts a visible paired term course after the legacy sequence', async () => {
     const termCourse = structuredClone(course)
     termCourse.course_id = 'S4A-T1-W01-D01'
     Object.assign(termCourse, { pair_id: '4A-T1-W01-D01', study_pack: '4A-T1-W01-D01' })
@@ -64,9 +64,10 @@ describe('P3 speaking child course contract', () => {
 
     const catalog = parseSpeakingCatalog([
       { course_id: 'S01D50', course_version: 'legacy-v', title: 'Summer', course_type: 'weekly_review', week: 6, day: 10, visible: true },
-      { course_id: 'S4A-T1-W01-D01', course_version: 'term-v', title: 'Term', course_type: 'training', week: 1, day: 1, visible: false, pair_id: '4A-T1-W01-D01', study_pack: '4A-T1-W01-D01' }
+      { course_id: 'S4A-T1-W01-D01', course_version: 'term-v', title: 'Term', course_type: 'training', week: 1, day: 1, visible: true, pair_id: '4A-T1-W01-D01', study_pack: '4A-T1-W01-D01' }
     ])
-    expect(catalog.window(new Set(['S01D50'])).map((item) => item.course_id)).toEqual(['S01D50'])
+    expect(catalog.window(new Set(['S01D50'])).map((item) => item.course_id)).toEqual(['S01D50', 'S4A-T1-W01-D01'])
+    expect(catalog.firstFormalIncomplete(new Set(['S01D50']))?.course_id).toBe('S4A-T1-W01-D01')
     expect(catalog.testCourses().map((item) => item.course_id)).toEqual(['S01D50', 'S4A-T1-W01-D01'])
 
     const fetcher = async () => ({ ok: true, json: async () => termCourse } as Response)

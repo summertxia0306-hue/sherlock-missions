@@ -31,13 +31,13 @@ class AccessRouteTests(unittest.TestCase):
         self.assertIn("L_formal_W01D39", at.session_state.filtered_state)
         self.assertNotIn("L_test_W01D39", at.session_state.filtered_state)
 
-    def test_test_publication_course_never_starts_a_formal_session(self):
+    def test_renumbered_starter_course_starts_a_formal_session(self):
         at = self._app()
         at.query_params["course_id"] = "L4A-T1-W01-D01"
         at.run()
 
         self.assertFalse(at.exception)
-        self.assertNotIn(
+        self.assertIn(
             "L_formal_L4A-T1-W01-D01", at.session_state.filtered_state
         )
 

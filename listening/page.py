@@ -73,7 +73,7 @@ def get_last_result(student_id, course_id):
 
 def _shown_courses(metas, today):
     shown = []
-    for cid in sorted(metas):
+    for cid in sorted(metas, key=progress.course_sort_key):
         m = metas[cid]
         if m["status"] in ("hidden", "archived"):
             continue
@@ -124,7 +124,7 @@ def listening_home(student_id):
             c3.button("🔒 未开放", key="go_" + cid, disabled=True,
                       use_container_width=True)
         else:
-            label = "再做一遍" if cid in done else "开始"
+            label = progress.course_action_label(cid, done, recommended)
             if c3.button(label, key="go_" + cid, use_container_width=True,
                          type="secondary" if cid in done else "primary"):
                 st.query_params["course_id"] = cid

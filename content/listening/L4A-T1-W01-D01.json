@@ -3,13 +3,13 @@
   "weekly_batch_id": "4A-T1-W01",
   "study_pack": "4A-T1-W01-D01",
   "pair_id": "4A-T1-W01-D01",
-  "publication_status": "test",
-  "title": "四上·第1周·周二｜认识新同学·基础（听力）",
+  "publication_status": "formal",
+  "title": "四上·Starter第1课｜认识家人、朋友和老师（听力）",
   "week": 1,
   "day": 1,
   "course_type": "training",
-  "est_minutes": 17,
-  "scope": "4A M1U1 p2",
+  "est_minutes": 12,
+  "scope": "4A Starter p2-p3",
   "difficulty": "L1",
   "scoring": {
     "per_question": 5,
@@ -31,18 +31,18 @@
       "questions": [
         {
           "type": "word_choice",
-          "tag": "A主线·p2·姓名直接识别",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p2·教材人物直接识别",
+          "parent_note": "确认版教材p2主线或不增加新知识的同语境受控重组",
           "options": [
-            "Sally",
-            "Kitty",
-            "Tracy"
+            "Shenshen",
+            "Xinxin",
+            "Xiaotian"
           ],
           "answer": 0,
           "transcript": [
             [
               "n",
-              "Sally"
+              "Shenshen"
             ]
           ],
           "id": 1,
@@ -50,18 +50,18 @@
         },
         {
           "type": "word_choice",
-          "tag": "A主线·p2·姓名直接识别",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p2-p3·教材人物直接识别",
+          "parent_note": "确认版教材p2-p3主线或不增加新知识的同语境受控重组",
           "options": [
-            "Peter",
-            "Paul",
-            "Danny"
+            "Xiaojiang",
+            "Xiaopu",
+            "Minmin"
           ],
           "answer": 1,
           "transcript": [
             [
               "n",
-              "Paul"
+              "Xiaopu"
             ]
           ],
           "id": 2,
@@ -69,18 +69,18 @@
         },
         {
           "type": "word_choice",
-          "tag": "A主线·p2·人物关系",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p3·老师称谓与姓名",
+          "parent_note": "确认版教材p3主线或不增加新知识的同语境受控重组",
           "options": [
-            "sister",
-            "brother",
-            "classmate"
+            "Ms Yu",
+            "Miss Li",
+            "Mr Zhong"
           ],
-          "answer": 0,
+          "answer": 1,
           "transcript": [
             [
               "n",
-              "sister"
+              "Miss Li"
             ]
           ],
           "id": 3,
@@ -88,18 +88,18 @@
         },
         {
           "type": "word_choice",
-          "tag": "C微调·p2·人物信息对应",
-          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p2，不作未掌握结论",
+          "tag": "C微调·p3·听音选词与称谓辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p3，不作未掌握结论",
           "options": [
-            "classmate",
-            "brother",
-            "sister"
+            "Mr Qian",
+            "Miss Li",
+            "Ms Yu"
           ],
-          "answer": 1,
+          "answer": 0,
           "transcript": [
             [
               "n",
-              "brother"
+              "Mr Qian"
             ]
           ],
           "id": 4,
@@ -115,14 +115,14 @@
       "questions": [
         {
           "type": "sentence_judge",
-          "tag": "A主线·p2·基础介绍",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "display": "This is my sister.",
+          "tag": "A主线·p2·家庭分组",
+          "parent_note": "确认版教材p2主线或不增加新知识的同语境受控重组",
+          "display": "This is Shenshen and her family.",
           "answer": "same",
           "transcript": [
             [
               "n",
-              "This is my sister."
+              "This is Shenshen and her family."
             ]
           ],
           "id": 5,
@@ -130,14 +130,14 @@
         },
         {
           "type": "sentence_judge",
-          "tag": "C微调·p2·his-her辨别",
-          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p2，不作未掌握结论",
-          "display": "Her name is Sally.",
+          "tag": "A主线·p2·人物组合",
+          "parent_note": "确认版教材p2主线或不增加新知识的同语境受控重组",
+          "display": "This is Xiaopu and Xiaojiang.",
           "answer": "same",
           "transcript": [
             [
               "n",
-              "Her name is Sally."
+              "This is Xiaopu and Xiaojiang."
             ]
           ],
           "id": 6,
@@ -145,14 +145,14 @@
         },
         {
           "type": "sentence_judge",
-          "tag": "C微调·p2·his-her与姓名对应",
-          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p2，不作未掌握结论",
-          "display": "His name is Peter.",
-          "answer": "different",
+          "tag": "A主线·p3·家庭人物对应",
+          "parent_note": "确认版教材p3主线或不增加新知识的同语境受控重组",
+          "display": "Lele is with Minmin and his family.",
+          "answer": "same",
           "transcript": [
             [
               "n",
-              "His name is Paul."
+              "Lele is with Minmin and his family."
             ]
           ],
           "id": 7,
@@ -160,14 +160,14 @@
         },
         {
           "type": "sentence_judge",
-          "tag": "A主线·p2·人物关系",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "display": "Kitty is Peter's classmate.",
-          "answer": "same",
+          "tag": "A主线·p3·老师姓名辨别",
+          "parent_note": "确认版教材p3主线或不增加新知识的同语境受控重组",
+          "display": "Mr Zhong is a teacher.",
+          "answer": "different",
           "transcript": [
             [
               "n",
-              "Kitty is Peter's classmate."
+              "Mr Qian is a teacher."
             ]
           ],
           "id": 8,
@@ -183,18 +183,18 @@
       "questions": [
         {
           "type": "question_response",
-          "tag": "A主线·p2·人物关系",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p2·家庭称谓问答",
+          "parent_note": "确认版教材p2主线或不增加新知识的同语境受控重组",
           "options": [
-            "She's Kitty's sister.",
-            "He's Kitty's brother.",
-            "She's Peter's classmate."
+            "This is Shenshen's mum.",
+            "This is Shenshen's dad.",
+            "This is Shenshen's grandma."
           ],
           "answer": 0,
           "transcript": [
             [
               "n",
-              "Who is Sally?"
+              "Who is Shenshen's mum?"
             ]
           ],
           "id": 9,
@@ -202,18 +202,18 @@
         },
         {
           "type": "question_response",
-          "tag": "C微调·p2·听问句选答语与her",
-          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p2，不作未掌握结论",
+          "tag": "C微调·p2-p3·听问句选答语与人物称谓",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p2-p3，不作未掌握结论",
           "options": [
-            "Her name is Sally.",
-            "His name is Paul.",
-            "My name is Kitty."
+            "She is a teacher.",
+            "She is Shenshen's mum.",
+            "She is Minmin."
           ],
           "answer": 0,
           "transcript": [
             [
               "n",
-              "What's her name?"
+              "Who is Miss Li?"
             ]
           ],
           "id": 10,
@@ -221,18 +221,18 @@
         },
         {
           "type": "question_response",
-          "tag": "A主线·p2·年龄",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p2-p3·人物信息对应",
+          "parent_note": "确认版教材p2-p3主线或不增加新知识的同语境受控重组",
           "options": [
-            "She's twelve.",
-            "He's six.",
-            "She's nine."
+            "Lele.",
+            "Max.",
+            "Mira."
           ],
           "answer": 0,
           "transcript": [
             [
               "n",
-              "How old is Sally?"
+              "Who is with Minmin and his family?"
             ]
           ],
           "id": 11,
@@ -240,18 +240,18 @@
         },
         {
           "type": "question_response",
-          "tag": "A主线·p2·人物关系",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p2-p3·家庭分组对应",
+          "parent_note": "确认版教材p2-p3主线或不增加新知识的同语境受控重组",
           "options": [
-            "He's Kitty's brother.",
-            "She's Kitty's sister.",
-            "He's Peter's classmate."
+            "Xiaopu and Xiaojiang.",
+            "Yaoyao and James.",
+            "Ms Yu and Mr Qian."
           ],
           "answer": 0,
           "transcript": [
             [
               "n",
-              "Who is Paul?"
+              "Who are in the same family group?"
             ]
           ],
           "id": 12,
@@ -267,27 +267,27 @@
       "questions": [
         {
           "type": "dialogue_choice",
-          "tag": "A主线·p2·见面问候",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "question_text": "Who says good morning to Peter?",
+          "tag": "A主线·p2·家庭人物识别",
+          "parent_note": "确认版教材p2主线或不增加新知识的同语境受控重组",
+          "question_text": "Who is with her family?",
           "options": [
-            "Kitty.",
-            "Sally.",
-            "Paul."
+            "Shenshen.",
+            "Minmin.",
+            "James."
           ],
           "answer": 0,
           "transcript": [
             [
               "f",
-              "Good morning, Peter."
+              "This is Shenshen and her family."
             ],
             [
               "m",
-              "Good morning, Kitty."
+              "Hello, Shenshen."
             ],
             [
               "n",
-              "Question: Who says good morning to Peter?"
+              "Question: Who is with her family?"
             ]
           ],
           "id": 13,
@@ -295,27 +295,27 @@
         },
         {
           "type": "dialogue_choice",
-          "tag": "A主线·p2·介绍家人",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "question_text": "What is the sister's name?",
+          "tag": "A主线·p2-p3·人物组合对应",
+          "parent_note": "确认版教材p2-p3主线或不增加新知识的同语境受控重组",
+          "question_text": "Who are together?",
           "options": [
-            "Sally.",
-            "Kitty.",
-            "Tracy."
+            "Xiaopu and Xiaojiang.",
+            "Yaoyao and James.",
+            "Ms Yu and Miss Li."
           ],
           "answer": 0,
           "transcript": [
             [
               "f",
-              "This is my sister."
+              "This is Xiaopu and Xiaojiang."
             ],
             [
-              "f",
-              "Her name is Sally."
+              "m",
+              "They are with their family."
             ],
             [
               "n",
-              "Question: What is the sister's name?"
+              "Question: Who are together?"
             ]
           ],
           "id": 14,
@@ -323,27 +323,27 @@
         },
         {
           "type": "dialogue_choice",
-          "tag": "A主线·p2·年龄",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "question_text": "How old is Paul?",
+          "tag": "A主线·p3·家庭人物对应",
+          "parent_note": "确认版教材p3主线或不增加新知识的同语境受控重组",
+          "question_text": "Who is with Minmin?",
           "options": [
-            "Six.",
-            "Twelve.",
-            "Nine."
+            "Lele.",
+            "Mira.",
+            "Max."
           ],
           "answer": 0,
           "transcript": [
             [
               "f",
-              "This is my brother."
+              "This is Minmin and his family."
             ],
             [
-              "f",
-              "His name is Paul. He's only six."
+              "m",
+              "Lele is with Minmin."
             ],
             [
               "n",
-              "Question: How old is Paul?"
+              "Question: Who is with Minmin?"
             ]
           ],
           "id": 15,
@@ -351,27 +351,27 @@
         },
         {
           "type": "dialogue_choice",
-          "tag": "A主线·p2·人物信息对应",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "question_text": "Who is Kitty's classmate?",
+          "tag": "A主线·p3·老师人物对应",
+          "parent_note": "确认版教材p3主线或不增加新知识的同语境受控重组",
+          "question_text": "Who is the teacher?",
           "options": [
-            "Peter.",
-            "Paul.",
-            "Sally."
+            "Miss Li.",
+            "Xinxin.",
+            "Lele."
           ],
           "answer": 0,
           "transcript": [
             [
               "f",
-              "My name is Kitty."
+              "This is Miss Li."
             ],
             [
-              "f",
-              "I'm Peter's classmate."
+              "m",
+              "She is a teacher."
             ],
             [
               "n",
-              "Question: Who is Kitty's classmate?"
+              "Question: Who is the teacher?"
             ]
           ],
           "id": 16,
@@ -387,34 +387,34 @@
       "questions": [
         {
           "type": "passage_judge",
-          "tag": "A主线·p2·短文取信息",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "statement": "Sally is Kitty's sister.",
+          "tag": "A主线·p2·家庭人物提取",
+          "parent_note": "确认版教材p2主线或不增加新知识的同语境受控重组",
+          "statement": "Xinxin is with Shenshen and her family.",
           "answer": "true",
           "id": 17
         },
         {
           "type": "passage_judge",
-          "tag": "A主线·p2·年龄对应",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "statement": "Sally is six.",
+          "tag": "A主线·p2-p3·跨组人物判断",
+          "parent_note": "确认版教材p2-p3主线或不增加新知识的同语境受控重组",
+          "statement": "Xiaopu is with Minmin and his family.",
           "answer": "false",
           "id": 18
         },
         {
           "type": "passage_judge",
-          "tag": "A主线·p2·人物关系",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "statement": "Paul is Kitty's brother.",
+          "tag": "A主线·p3·家庭人物提取",
+          "parent_note": "确认版教材p3主线或不增加新知识的同语境受控重组",
+          "statement": "Lele is with Minmin.",
           "answer": "true",
           "id": 19
         },
         {
           "type": "passage_judge",
-          "tag": "A主线·p2·人物对应",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "statement": "Kitty is Paul's classmate.",
-          "answer": "false",
+          "tag": "A主线·p3·老师信息提取",
+          "parent_note": "确认版教材p3主线或不增加新知识的同语境受控重组",
+          "statement": "Mr Qian is a teacher.",
+          "answer": "true",
           "id": 20
         }
       ],
@@ -423,7 +423,7 @@
       "passage_transcript": [
         [
           "n",
-          "This is Kitty. Sally is her sister. Sally is twelve. Paul is her brother. He is only six. Kitty is Peter's classmate. They are going to the park."
+          "This is Shenshen and her family. Grandma, Grandpa, Dad, Mum, Mira and Xinxin are with Shenshen. This is Xiaopu, Xiaojiang and their family. This is Minmin and his family. Lele is with Minmin. Ms Yu, Miss Li, Mr Zhong and Mr Qian are teachers."
         ]
       ]
     }

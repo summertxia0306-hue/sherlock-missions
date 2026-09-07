@@ -92,35 +92,44 @@ describe('P3 speaking page', () => {
     await user.click(screen.getByRole('button', { name: '就用这个，开始评分' }))
   }
 
-  it('shows the five-course formal window around the first incomplete migrated course', async () => {
-    const formalCatalog = parseSpeakingCatalog(Array.from({ length: 8 }, (_, index) => ({
-      course_id: `S01D${index + 39}`, course_version: `version-${index}`, title: `Course ${index + 39}`,
-      course_type: 'training', week: 5, day: index + 1, visible: true
-    })))
+  it('recommends S01D50 with two completed courses before and two new-term courses after it', async () => {
+    const formalCatalog = parseSpeakingCatalog([
+      ...[48, 49, 50].map((day) => ({
+        course_id: `S01D${day}`, course_version: `version-${day}`, title: `Course ${day}`,
+        course_type: 'training', week: 6, day, visible: true
+      })),
+      ...[1, 2].map((day) => ({
+        course_id: `S4A-T1-W01-D0${day}`, course_version: `term-${day}`, title: `Starter ${day}`,
+        course_type: 'training', week: 1, day, visible: true,
+        pair_id: `4A-T1-W01-D0${day}`, study_pack: `4A-T1-W01-D0${day}`
+      }))
+    ])
     render(<MemoryRouter><SpeakingPage api={api(async (request) => scored(3, request.question_id, request.attempt))}
-      sessionToken="formal-token" dataKind="formal" completedCourseIds={new Set(['S01D39', 'S01D40', 'S01D41', 'S01D42', 'S01D43'])}
+      sessionToken="formal-token" dataKind="formal" completedCourseIds={new Set(['S01D48', 'S01D49'])}
       loadCatalog={async () => formalCatalog} loadCourse={async () => course} recorder={fakeRecorder()} /></MemoryRouter>)
-    expect(await screen.findByText(/当前推荐.*S01D44/)).toBeInTheDocument()
+    expect(await screen.findByText(/当前推荐.*S01D50/)).toBeInTheDocument()
     const courseList = screen.getByRole('region', { name: '口语课程' })
-    for (const id of ['S01D42', 'S01D43', 'S01D44', 'S01D45', 'S01D46']) expect(within(courseList).getByText(new RegExp(id))).toBeInTheDocument()
+    for (const id of ['S01D48', 'S01D49', 'S01D50', 'S4A-T1-W01-D01', 'S4A-T1-W01-D02']) expect(within(courseList).getByText(new RegExp(id))).toBeInTheDocument()
     expect(screen.getAllByText('已完成')).toHaveLength(2)
     expect(screen.getAllByText('未完成')).toHaveLength(3)
     expect(within(courseList).getByText('推荐')).toBeInTheDocument()
-    expect(within(courseList).getByText('Course 42').closest('.course-row')).toHaveClass('course-completed')
-    expect(within(courseList).getByText('Course 44').closest('.course-row')).toHaveClass('course-recommended')
+    expect(within(courseList).getByText('Course 48').closest('.course-row')).toHaveClass('course-completed')
+    expect(within(courseList).getByText('Course 50').closest('.course-row')).toHaveClass('course-recommended')
+    expect(within(courseList).getByRole('button', { name: '推荐开始 S01D50' })).toBeEnabled()
+    expect(within(courseList).getByRole('button', { name: '开始 S4A-T1-W01-D01' })).toBeEnabled()
   })
 
   it('keeps unauthenticated access read-only', async () => {
     render(<MemoryRouter><SpeakingPage api={api(async (request) => scored(3, request.question_id, request.attempt))} sessionToken="" loadCatalog={async () => catalog} loadCourse={async () => course} recorder={fakeRecorder()} /></MemoryRouter>)
     expect(await screen.findByText(/请先从家长验收/)).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: '开始' })).toBeDisabled()
+    expect(screen.getByRole('button', { name: /开始.*S01D39/ })).toBeDisabled()
   })
 
   it('enforces three valid low takes, then completes eight proof-only questions', async () => {
     const user = userEvent.setup()
     const service = api(async (request) => scored(request.question_id === 1 ? 2 : 3, request.question_id, request.attempt))
     render(<MemoryRouter><SpeakingPage api={service} sessionToken="token" loadCatalog={async () => catalog} loadCourse={async () => course} recorder={fakeRecorder()} /></MemoryRouter>)
-    await user.click(await screen.findByRole('button', { name: '开始' }))
+    await user.click(await screen.findByRole('button', { name: /开始.*S01D39/ }))
     await finishTrial(user)
     expect(screen.getByText('Sentence 1.')).toBeInTheDocument()
     for (let attempt = 0; attempt < 3; attempt += 1) await recordAndScore(user)
@@ -145,7 +154,7 @@ describe('P3 speaking page', () => {
     let calls = 0
     const service = api(async (request) => { calls += 1; if (calls === 1) throw new Error('SPEAKING_SCORE_UNAVAILABLE'); return scored(3, request.question_id, request.attempt) })
     render(<MemoryRouter><SpeakingPage api={service} sessionToken="token" loadCatalog={async () => catalog} loadCourse={async () => course} recorder={fakeRecorder()} /></MemoryRouter>)
-    await user.click(await screen.findByRole('button', { name: '开始' }))
+    await user.click(await screen.findByRole('button', { name: /开始.*S01D39/ }))
     await finishTrial(user)
     await recordAndScore(user)
     expect(await screen.findByText(/本次不计次数，录音仍保留/)).toBeInTheDocument()
@@ -158,7 +167,7 @@ describe('P3 speaking page', () => {
     const user = userEvent.setup()
     const service = api(async () => { throw new Error('ISE_10163') })
     render(<MemoryRouter><SpeakingPage api={service} sessionToken="token" loadCatalog={async () => catalog} loadCourse={async () => course} recorder={fakeRecorder()} /></MemoryRouter>)
-    await user.click(await screen.findByRole('button', { name: '开始' }))
+    await user.click(await screen.findByRole('button', { name: /开始.*S01D39/ }))
     await finishTrial(user)
     await recordAndScore(user)
     expect(await screen.findByText(/诊断码：ISE_10163/)).toBeInTheDocument()
@@ -168,7 +177,7 @@ describe('P3 speaking page', () => {
     const user = userEvent.setup()
     const service = api(async () => { throw new Error('SPEAKING_UPLOAD_FAILED') })
     render(<MemoryRouter><SpeakingPage api={service} sessionToken="token" loadCatalog={async () => catalog} loadCourse={async () => course} recorder={fakeRecorder()} /></MemoryRouter>)
-    await user.click(await screen.findByRole('button', { name: '开始' }))
+    await user.click(await screen.findByRole('button', { name: /开始.*S01D39/ }))
     await finishTrial(user)
     await recordAndScore(user)
     expect(await screen.findByText(/录音上传没有完成.*直接再次评分/)).toBeInTheDocument()
@@ -186,7 +195,7 @@ describe('P3 speaking page', () => {
     const service = api(async () => directResponse)
     render(<MemoryRouter><SpeakingPage api={service} sessionToken="token" dataKind="test"
       loadCatalog={async () => catalog} loadCourse={async () => course} recorder={fakeRecorder()} /></MemoryRouter>)
-    await user.click(await screen.findByRole('button', { name: '开始' }))
+    await user.click(await screen.findByRole('button', { name: /开始.*S01D39/ }))
     await finishTrial(user)
     await recordAndScore(user)
 
@@ -208,7 +217,7 @@ describe('P3 speaking page', () => {
     const testUser = userEvent.setup()
     const testView = render(<MemoryRouter><SpeakingPage api={api(async () => fallbackResponse)} sessionToken="token" dataKind="test"
       loadCatalog={async () => catalog} loadCourse={async () => course} recorder={fakeRecorder()} /></MemoryRouter>)
-    await testUser.click(await screen.findByRole('button', { name: '开始' }))
+    await testUser.click(await screen.findByRole('button', { name: /开始.*S01D39/ }))
     await finishTrial(testUser)
     await recordAndScore(testUser)
     expect(await screen.findByText('传输诊断 · 分块兜底')).toBeInTheDocument()
@@ -218,7 +227,7 @@ describe('P3 speaking page', () => {
     const formalUser = userEvent.setup()
     render(<MemoryRouter><SpeakingPage api={api(async () => fallbackResponse)} sessionToken="formal-token" dataKind="formal"
       loadCatalog={async () => catalog} loadCourse={async () => course} recorder={fakeRecorder()} /></MemoryRouter>)
-    await formalUser.click(await screen.findByRole('button', { name: '开始' }))
+    await formalUser.click(await screen.findByRole('button', { name: /开始.*S01D39/ }))
     await finishTrial(formalUser)
     await recordAndScore(formalUser)
     expect(screen.queryByText(/传输诊断/)).not.toBeInTheDocument()

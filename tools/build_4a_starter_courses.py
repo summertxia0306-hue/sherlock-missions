@@ -1,14 +1,16 @@
 # -*- coding: utf-8 -*-
-"""Build the approved 4A Starter p2-p6 D07-D11 course package.
+"""Build the approved 4A Starter p2-p6 D01-D05 course package.
 
 The active parent JSON files are the single authoritative course source. The
 draft directory contains only pairing/audio plans and derived child-validation
-copies. All courses remain publication_status=test until a separate release.
+copies. The five renumbered courses are published to the formal catalog.
 """
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
+import shutil
 from pathlib import Path
 
 
@@ -20,10 +22,12 @@ DRAFT_OUT = ROOT / "content" / "drafts" / "4A-T1-W01-STARTER"
 CHILD_LISTENING_OUT = DRAFT_OUT / "child" / "listening"
 CHILD_SPEAKING_OUT = DRAFT_OUT / "child" / "speaking"
 DOCS_OUT = ROOT / "docs" / "course-batches"
+LISTENING_AUDIO_ROOT = ROOT / "static" / "audio" / "listening"
+SPEAKING_AUDIO_ROOT = ROOT / "static" / "audio" / "speaking"
 
 
 DAY_META = {
-    7: {
+    1: {
         "lesson": 1,
         "title": "四上·Starter第1课｜认识家人、朋友和老师",
         "scope": "4A Starter p2-p3",
@@ -34,7 +38,7 @@ DAY_META = {
         "focus": "人物名称、家庭分组和老师称谓",
         "max_plays": [2, 2, 2, 2, 3],
     },
-    8: {
+    2: {
         "lesson": 2,
         "title": "四上·Starter第2课｜在学校·听懂并回应",
         "scope": "4A Starter p2-p4",
@@ -45,7 +49,7 @@ DAY_META = {
         "focus": "课堂请求、指令与自然回应",
         "max_plays": [2, 2, 2, 2, 3],
     },
-    9: {
+    3: {
         "lesson": 3,
         "title": "四上·Starter第3课｜学习方法·勇敢尝试",
         "scope": "4A Starter p2-p5",
@@ -56,7 +60,7 @@ DAY_META = {
         "focus": "拼写、鼓励尝试、学习计划与表扬",
         "max_plays": [2, 2, 2, 2, 3],
     },
-    10: {
+    4: {
         "lesson": 4,
         "title": "四上·Starter第4课｜数字20–100·准确听辨",
         "scope": "4A Starter p2-p6 Numbers",
@@ -67,7 +71,7 @@ DAY_META = {
         "focus": "20–29、整十数和100的相似音辨别",
         "max_plays": [1, 2, 2, 2, 3],
     },
-    11: {
+    5: {
         "lesson": 5,
         "title": "四上·Starter第5课｜星期表达·Starter综合",
         "scope": "4A Starter p2-p6 Days of the week and review",
@@ -152,7 +156,7 @@ def passage_statement(statement, answer, tag):
 
 
 LISTENING_DATA = {
-    7: {
+    1: {
         "words": [
             word("Shenshen", ["Shenshen", "Xinxin", "Xiaotian"], 0, a("p2", "教材人物直接识别")),
             word("Xiaopu", ["Xiaojiang", "Xiaopu", "Minmin"], 1, a("p2-p3", "教材人物直接识别")),
@@ -185,7 +189,7 @@ LISTENING_DATA = {
             passage_statement("Mr Qian is a teacher.", True, a("p3", "老师信息提取")),
         ],
     },
-    8: {
+    2: {
         "words": [
             word("quiet", ["quiet", "pencil", "partner"], 0, a("p4", "课堂用语听辨")),
             word("red pencil", ["red pencil", "open books", "read the story"], 0, a("p4", "课堂物品短语")),
@@ -218,7 +222,7 @@ LISTENING_DATA = {
             passage_statement("Miss Li asks them to read with a partner.", True, a("p3-p4", "跨句课堂指令")),
         ],
     },
-    9: {
+    3: {
         "words": [
             word("spell", ["spell", "plan", "quiet"], 0, a("p5", "学习表达听辨")),
             word("book", ["book", "Weather", "plan"], 0, a("p5", "拼写对象")),
@@ -251,7 +255,7 @@ LISTENING_DATA = {
             passage_statement("Mr Zhong says, Keep quiet, please.", True, a("p3-p5", "人物与表达对应")),
         ],
     },
-    10: {
+    4: {
         "words": [
             word("twenty-four", ["twenty-four", "forty", "twenty-five"], 0, a("p6", "相似数字听辨")),
             word("sixty", ["sixteen", "sixty", "seventy"], 1, a("p6", "整十数听辨")),
@@ -284,7 +288,7 @@ LISTENING_DATA = {
             passage_statement("Mr Qian says ninety.", False, a("p3-p6", "跨句数字对应")),
         ],
     },
-    11: {
+    5: {
         "words": [
             word("Monday", ["Monday", "Tuesday", "Sunday"], 0, a("p6", "星期直接识别")),
             word("Wednesday", ["Tuesday", "Wednesday", "Thursday"], 1, a("p6", "相邻星期辨别")),
@@ -326,7 +330,7 @@ LISTENING_DATA = {
 
 
 SPEAKING_DATA = {
-    7: [
+    1: [
         ("repeat", "This is Shenshen.", "", "", a("p2", "人物介绍")),
         ("repeat", "This is Shenshen and her family.", "", "", a("p2", "家庭介绍")),
         ("repeat", "This is Xiaopu and Xiaojiang.", "", "", a("p2", "人物组合")),
@@ -336,7 +340,7 @@ SPEAKING_DATA = {
         ("qa", "Is Miss Li a teacher?", "Yes. Miss Li is a teacher.", "回答：是的，Miss Li是一位老师。", c("p3", "听问句后准确回应")),
         ("qa", "Who is Shenshen's mum?", "This is Shenshen's mum.", "回答：这是Shenshen的妈妈。", a("p2", "家庭称谓问答")),
     ],
-    8: [
+    2: [
         ("repeat", "I win!", "", "", a("p4", "课堂表达")),
         ("repeat", "Please be quiet.", "", "", a("p4", "课堂指令")),
         ("repeat", "May I use your red pencil?", "", "", a("p4", "课堂请求")),
@@ -346,7 +350,7 @@ SPEAKING_DATA = {
         ("qa", "May I use your red pencil?", "Here you are.", "递给对方并回答：给你。", c("p4", "听请求后准确回应")),
         ("qa", "Open your books, please.", "All right, Miss Li.", "回答Miss Li：好的。", a("p4", "听指令后回应")),
     ],
-    9: [
+    3: [
         ("repeat", "How do you spell book?", "", "", a("p5", "拼写问句")),
         ("repeat", "B-o-o-k.", "", "", a("p5", "字母拼读")),
         ("repeat", "Don't be afraid!", "", "", a("p5", "鼓励表达")),
@@ -356,7 +360,7 @@ SPEAKING_DATA = {
         ("qa", "How do you spell book?", "B-o-o-k.", "拼读单词book。", c("p5", "听问句后准确拼写")),
         ("qa", "Your friend is afraid. What do you say?", "Don't be afraid! Have a try!", "鼓励朋友：别害怕，试一试。", a("p5", "情境自主回应")),
     ],
-    10: [
+    4: [
         ("repeat", "Twenty, twenty-one, twenty-two.", "", "", a("p6", "连续数字")),
         ("repeat", "Twenty-three, twenty-four, twenty-five.", "", "", a("p6", "连续数字")),
         ("repeat", "Twenty-six, twenty-seven, twenty-eight, twenty-nine.", "", "", a("p6", "连续数字")),
@@ -366,7 +370,7 @@ SPEAKING_DATA = {
         ("qa", "There are twenty-four girls. How many girls are there?", "There are twenty-four girls.", "完整回答：有24个女孩。", c("p6", "听问句后准确说数量")),
         ("qa", "There are twenty-six boys. How many boys are there?", "There are twenty-six boys.", "完整回答：有26个男孩。", a("p6", "数量完整回答")),
     ],
-    11: [
+    5: [
         ("repeat", "Monday, Tuesday, Wednesday.", "", "", a("p6", "星期顺序")),
         ("repeat", "Thursday, Friday, Saturday, Sunday.", "", "", a("p6", "星期顺序")),
         ("repeat", "Tuesday is after Monday.", "", "", a("p6", "星期前后关系")),
@@ -436,7 +440,7 @@ def build_listening(day):
         "weekly_batch_id": BATCH,
         "study_pack": pair_id,
         "pair_id": pair_id,
-        "publication_status": "test",
+        "publication_status": "formal",
         "title": meta["title"] + "（听力）",
         "week": 1,
         "day": day,
@@ -474,7 +478,7 @@ def build_speaking(day):
         "weekly_batch_id": BATCH,
         "study_pack": pair_id,
         "pair_id": pair_id,
-        "publication_status": "test",
+        "publication_status": "formal",
         "title": meta["title"] + "（口语）",
         "week": 1,
         "day": day,
@@ -625,7 +629,7 @@ def build_audio_plan(listening_courses, speaking_courses):
     return {
         "weekly_batch_id": BATCH,
         "generation_status": "READY_TO_GENERATE",
-        "publication_status": "test",
+        "publication_status": "formal",
         "expected_listening_outputs": 94,
         "expected_speaking_outputs": 40,
         "expected_total_outputs": 134,
@@ -654,8 +658,8 @@ def build_study_packs(listening_courses, speaking_courses):
         })
     return {
         "weekly_batch_id": BATCH,
-        "publication_status": "test",
-        "visible": False,
+        "publication_status": "formal",
+        "visible": True,
         "authority_note": "content/listening与content/speaking中的父JSON是唯一活动课程源；本目录仅保存派生校验材料。",
         "study_packs": packs,
     }
@@ -663,15 +667,15 @@ def build_study_packs(listening_courses, speaking_courses):
 
 def build_mapping_doc(listening_courses, speaking_courses):
     lines = [
-        "# 4A 新教材 Starter D07–D11 教材与课程映射",
+        "# 4A 新教材 Starter D01–D05 教材与课程映射",
         "",
-        "> 状态：内容实施稿；所有课程保持 `publication_status=test`，未部署、未开放 formal。",
+        "> 状态：方案 A 正式发布稿；五组课程进入现有 formal 课程目录，不自动生成完成记录。",
         "",
         "## 教材事实边界",
         "",
         "- 唯一事实源：`content/curriculum/4A_2026/4A确认版教材/全册最终文件/`。",
         "- 本批只覆盖 Starter p2–6；Unit 1 从 p7 开始，本批不进入。",
-        "- 旧教材及旧 D01–D06 不作为本批内容事实，继续隐藏保留。",
+        "- 旧教材 D01–D06 已从现行课程源与目录撤出，仅由 Git 历史保留；成绩和录音不删除。",
         "",
         "## 五课映射",
         "",
@@ -690,14 +694,14 @@ def build_mapping_doc(listening_courses, speaking_courses):
         "",
         "## 螺旋与微调",
         "",
-        "- D07：约90% p2–3主线、10%历史题型微调。",
-        "- D08–D11：约70%本课新增范围、20%已教前课复现、10%历史题型微调。",
+        "- D01：约90% p2–3主线、10%历史题型微调。",
+        "- D02–D05：约70%本课新增范围、20%已教前课复现、10%历史题型微调。",
         "- 听力每课2道C题，口语每课1道C题；合计15/145，约10.3%。",
         "- C只改善听音选词和听问句后回应，不引入旧教材语言材料。",
         "",
         "## 正式开放闸门",
         "",
-        "D07、D08、D09、D10、D11分别以老师实际教完p2–3、p4、p5、p6 Numbers、p6 Days of the week为前提。预计进度或课程制作完成不能替代家长确认。",
+        "D01、D02、D03、D04、D05分别对应p2–3、p4、p5、p6 Numbers、p6 Days of the week；正式目录发布不制造完成状态，推荐课仍由实际 formal 完成记录决定。",
         "",
     ])
     return "\n".join(lines)
@@ -705,9 +709,9 @@ def build_mapping_doc(listening_courses, speaking_courses):
 
 def build_parent_doc(listening_courses, speaking_courses):
     lines = [
-        "# 4A 新教材 Starter D07–D11 家长版答案、原文与口语目标句",
+        "# 4A 新教材 Starter D01–D05 家长版答案、原文与口语目标句",
         "",
-        "> 家长专用。不得作为儿童公开副本；当前课程均为隐藏 test。",
+        "> 家长专用。不得作为儿童公开副本；答案、原文和目标句不会写入儿童课程 JSON。",
         "",
     ]
     for listening, speaking in zip(listening_courses, speaking_courses):
@@ -746,9 +750,58 @@ def build_parent_doc(listening_courses, speaking_courses):
     return "\n".join(lines)
 
 
+def remove_if_exists(path: Path):
+    if path.exists():
+        path.unlink()
+
+
+def clean_obsolete_course_outputs():
+    """Remove only generated term outputs superseded by the D01-D05 release."""
+    for day in range(6, 12):
+        remove_if_exists(LISTENING_OUT / f"L4A-T1-W01-D{day:02d}.json")
+        remove_if_exists(SPEAKING_OUT / f"S4A-T1-W01-D{day:02d}.json")
+    for day in range(1, 12):
+        remove_if_exists(CHILD_LISTENING_OUT / f"L4A-T1-W01-D{day:02d}.json")
+        remove_if_exists(CHILD_SPEAKING_OUT / f"S4A-T1-W01-D{day:02d}.json")
+    for suffix in ("教材与课程映射", "家长版答案原文", "校验报告"):
+        remove_if_exists(DOCS_OUT / f"2026-09-07-4A-Starter-D07-D11{suffix}.md")
+
+
+def reset_renumbered_audio():
+    """Clear exact generated course directories and manifest rows before rebuilding."""
+    for module, prefix, audio_root in (
+        ("listening", "L", LISTENING_AUDIO_ROOT),
+        ("speaking", "S", SPEAKING_AUDIO_ROOT),
+    ):
+        course_ids = [f"{prefix}4A-T1-W01-D{day:02d}" for day in range(1, 12)]
+        for course_id in course_ids:
+            target = audio_root / course_id
+            if target.is_dir():
+                shutil.rmtree(target)
+        manifest_path = audio_root / "manifest.json"
+        if manifest_path.is_file():
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            courses = manifest.setdefault("courses", {})
+            for course_id in course_ids:
+                courses.pop(course_id, None)
+            json_write(manifest_path, manifest)
+        print(f"Reset {module} D01-D11 generated audio rows; D01-D05 must now be regenerated.")
+
+
 def main():
-    listening_courses = [build_listening(day) for day in range(7, 12)]
-    speaking_courses = [build_speaking(day) for day in range(7, 12)]
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--reset-renumbered-audio",
+        action="store_true",
+        help="remove exact D01-D11 generated audio directories and manifest rows before rebuilding D01-D05",
+    )
+    args = parser.parse_args()
+    clean_obsolete_course_outputs()
+    if args.reset_renumbered_audio:
+        reset_renumbered_audio()
+
+    listening_courses = [build_listening(day) for day in range(1, 6)]
+    speaking_courses = [build_speaking(day) for day in range(1, 6)]
 
     for course in listening_courses:
         json_write(LISTENING_OUT / f"{course['course_id']}.json", course)
@@ -767,7 +820,7 @@ def main():
             "course_type": course["course_type"],
             "week": course["week"],
             "day": course["day"],
-            "visible": False,
+            "visible": True,
             "pair_id": course["pair_id"],
             "study_pack": course["study_pack"],
         })
@@ -781,7 +834,7 @@ def main():
             "course_type": course["course_type"],
             "week": course["week"],
             "day": course["day"],
-            "visible": False,
+            "visible": True,
             "pair_id": course["pair_id"],
             "study_pack": course["study_pack"],
         })
@@ -791,13 +844,13 @@ def main():
     json_write(DRAFT_OUT / "study-packs.json", build_study_packs(listening_courses, speaking_courses))
     json_write(DRAFT_OUT / "audio-generation-plan.json", build_audio_plan(listening_courses, speaking_courses))
     DOCS_OUT.mkdir(parents=True, exist_ok=True)
-    (DOCS_OUT / "2026-09-07-4A-Starter-D07-D11教材与课程映射.md").write_text(
+    (DOCS_OUT / "2026-09-07-4A-Starter-D01-D05教材与课程映射.md").write_text(
         build_mapping_doc(listening_courses, speaking_courses), encoding="utf-8", newline="\n"
     )
-    (DOCS_OUT / "2026-09-07-4A-Starter-D07-D11家长版答案原文.md").write_text(
+    (DOCS_OUT / "2026-09-07-4A-Starter-D01-D05家长版答案原文.md").write_text(
         build_parent_doc(listening_courses, speaking_courses), encoding="utf-8", newline="\n"
     )
-    print("Built 5 listening + 5 speaking active test courses, 5 study packs, and 134 audio text items.")
+    print("Built 5 listening + 5 speaking formal courses, 5 study packs, and 134 audio text items.")
 
 
 if __name__ == "__main__":

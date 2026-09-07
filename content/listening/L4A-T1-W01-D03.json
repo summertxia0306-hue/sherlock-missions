@@ -3,13 +3,13 @@
   "weekly_batch_id": "4A-T1-W01",
   "study_pack": "4A-T1-W01-D03",
   "pair_id": "4A-T1-W01-D03",
-  "publication_status": "test",
-  "title": "四上·第1周·周四｜人物信息·连续对话（听力）",
+  "publication_status": "formal",
+  "title": "四上·Starter第3课｜学习方法·勇敢尝试（听力）",
   "week": 1,
   "day": 3,
   "course_type": "training",
-  "est_minutes": 22,
-  "scope": "4A M1U1 p2-p3",
+  "est_minutes": 17,
+  "scope": "4A Starter p2-p5",
   "difficulty": "L2",
   "scoring": {
     "per_question": 5,
@@ -31,18 +31,18 @@
       "questions": [
         {
           "type": "word_choice",
-          "tag": "A主线·p3·相邻数字",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p5·学习表达听辨",
+          "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
           "options": [
-            "thirteen",
-            "fourteen",
-            "fifteen"
+            "spell",
+            "plan",
+            "quiet"
           ],
-          "answer": 1,
+          "answer": 0,
           "transcript": [
             [
               "n",
-              "fourteen"
+              "spell"
             ]
           ],
           "id": 1,
@@ -50,18 +50,18 @@
         },
         {
           "type": "word_choice",
-          "tag": "A主线·p3·相邻数字",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p5·拼写对象",
+          "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
           "options": [
-            "fifteen",
-            "sixteen",
-            "fourteen"
+            "book",
+            "Weather",
+            "plan"
           ],
           "answer": 0,
           "transcript": [
             [
               "n",
-              "fifteen"
+              "book"
             ]
           ],
           "id": 2,
@@ -69,18 +69,18 @@
         },
         {
           "type": "word_choice",
-          "tag": "C微调·p2-p3·his-her-your相关辨别",
-          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p2-p3，不作未掌握结论",
+          "tag": "A主线·p4-p5·学习短语",
+          "parent_note": "确认版教材p4-p5主线或不增加新知识的同语境受控重组",
           "options": [
-            "his",
-            "her",
-            "my"
+            "English study",
+            "red pencil",
+            "your partner"
           ],
-          "answer": 1,
+          "answer": 0,
           "transcript": [
             [
               "n",
-              "her"
+              "English study"
             ]
           ],
           "id": 3,
@@ -88,18 +88,18 @@
         },
         {
           "type": "word_choice",
-          "tag": "A主线·p3·能力短语",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "tag": "C微调·p5·听音选表达",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p5，不作未掌握结论",
           "options": [
-            "ride a bicycle",
-            "skip",
-            "go to the park"
+            "Well done",
+            "Have a try",
+            "Keep quiet"
           ],
-          "answer": 0,
+          "answer": 1,
           "transcript": [
             [
               "n",
-              "ride a bicycle"
+              "Have a try"
             ]
           ],
           "id": 4,
@@ -115,14 +115,14 @@
       "questions": [
         {
           "type": "sentence_judge",
-          "tag": "A主线·p2-p3·人物关系迁移",
-          "parent_note": "教材PDF p2-p3 主线或不增加新知识的同语境迁移",
-          "display": "Peter's friend is Danny.",
+          "tag": "A主线·p5·拼写问句",
+          "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+          "display": "How do you spell book?",
           "answer": "same",
           "transcript": [
             [
               "n",
-              "Peter's friend is Danny."
+              "How do you spell book?"
             ]
           ],
           "id": 5,
@@ -130,14 +130,14 @@
         },
         {
           "type": "sentence_judge",
-          "tag": "A主线·p2·跨句年龄对应",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "display": "Sally is six and Paul is twelve.",
-          "answer": "different",
+          "tag": "A主线·p5·鼓励表达",
+          "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+          "display": "Don't be afraid!",
+          "answer": "same",
           "transcript": [
             [
               "n",
-              "Sally is twelve and Paul is six."
+              "Don't be afraid!"
             ]
           ],
           "id": 6,
@@ -145,14 +145,14 @@
         },
         {
           "type": "sentence_judge",
-          "tag": "A主线·p3·年龄能力整合",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-          "display": "Danny is nine and he can ride a bicycle.",
+          "tag": "A主线·p5·学习计划",
+          "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+          "display": "This is my plan for English study.",
           "answer": "same",
           "transcript": [
             [
               "n",
-              "Danny is nine and he can ride a bicycle."
+              "This is my plan for English study."
             ]
           ],
           "id": 7,
@@ -160,14 +160,14 @@
         },
         {
           "type": "sentence_judge",
-          "tag": "C微调·p3·人物代词信息对应",
-          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p3，不作未掌握结论",
-          "display": "His name is Tracy and he can skip.",
+          "tag": "A主线·p5·表达目的辨别",
+          "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+          "display": "It's a good plan!",
           "answer": "different",
           "transcript": [
             [
               "n",
-              "Her name is Tracy and she can skip."
+              "Keep quiet, please."
             ]
           ],
           "id": 8,
@@ -183,18 +183,18 @@
       "questions": [
         {
           "type": "question_response",
-          "tag": "A主线·p2·人物关系",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p5·拼写问答",
+          "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
           "options": [
-            "She's Kitty's sister, Sally.",
-            "He's Kitty's brother, Paul.",
-            "She's Peter's friend, Danny."
+            "B-o-o-k.",
+            "Weather.",
+            "Have a try!"
           ],
           "answer": 0,
           "transcript": [
             [
               "n",
-              "Who is she?"
+              "How do you spell book?"
             ]
           ],
           "id": 9,
@@ -202,18 +202,18 @@
         },
         {
           "type": "question_response",
-          "tag": "A主线·p3·连续信息",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p4-p5·情境鼓励",
+          "parent_note": "确认版教材p4-p5主线或不增加新知识的同语境受控重组",
           "options": [
-            "He's nine.",
-            "She's thirteen.",
-            "He's six."
+            "Don't be afraid! Have a try!",
+            "Keep quiet, please.",
+            "Here you are."
           ],
           "answer": 0,
           "transcript": [
             [
               "n",
-              "How old is Peter's friend Danny?"
+              "Your partner is afraid. What do you say?"
             ]
           ],
           "id": 10,
@@ -221,18 +221,18 @@
         },
         {
           "type": "question_response",
-          "tag": "A主线·p3·能力",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "tag": "C微调·p4-p5·听问句选恰当回应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p4-p5，不作未掌握结论",
           "options": [
-            "She can skip.",
-            "He can ride a bicycle.",
-            "She's thirteen."
+            "Well done! It's a good plan!",
+            "May I use your red pencil?",
+            "Please be quiet."
           ],
           "answer": 0,
           "transcript": [
             [
               "n",
-              "What can Tracy do?"
+              "What do you say about a good English study plan?"
             ]
           ],
           "id": 11,
@@ -240,18 +240,18 @@
         },
         {
           "type": "question_response",
-          "tag": "C微调·p2-p3·听问句选答语与人物对应",
-          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p2-p3，不作未掌握结论",
+          "tag": "A主线·p4-p5·情境指令",
+          "parent_note": "确认版教材p4-p5主线或不增加新知识的同语境受控重组",
           "options": [
-            "Her name is Tracy.",
-            "His name is Danny.",
-            "Her name is Sally."
+            "Keep quiet, please.",
+            "B-o-o-k.",
+            "I win!"
           ],
           "answer": 0,
           "transcript": [
             [
               "n",
-              "What's her name?"
+              "What do you say when someone should be quiet?"
             ]
           ],
           "id": 12,
@@ -267,31 +267,31 @@
       "questions": [
         {
           "type": "dialogue_choice",
-          "tag": "A主线·p3·连续对话",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-          "question_text": "How old is Danny?",
+          "tag": "A主线·p5·三轮拼写对话",
+          "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+          "question_text": "What does the boy spell?",
           "options": [
-            "Nine.",
-            "Twelve.",
-            "Thirteen."
+            "Book.",
+            "Weather.",
+            "Plan."
           ],
           "answer": 0,
           "transcript": [
             [
               "f",
-              "This is my friend."
-            ],
-            [
-              "f",
-              "His name is Danny."
+              "How do you spell book?"
             ],
             [
               "m",
-              "I'm nine."
+              "B-o-o-k."
+            ],
+            [
+              "f",
+              "Well done!"
             ],
             [
               "n",
-              "Question: How old is Danny?"
+              "Question: What does the boy spell?"
             ]
           ],
           "id": 13,
@@ -299,31 +299,31 @@
         },
         {
           "type": "dialogue_choice",
-          "tag": "A主线·p2·连续对话年龄对应",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "question_text": "Who is six?",
+          "tag": "A主线·p4-p5·三轮鼓励情境",
+          "parent_note": "确认版教材p4-p5主线或不增加新知识的同语境受控重组",
+          "question_text": "What does the girl say?",
           "options": [
-            "Paul.",
-            "Sally.",
-            "Kitty."
+            "She says, Have a try!",
+            "She says, May I use your pencil?",
+            "She says, Open your books, please."
           ],
           "answer": 0,
           "transcript": [
             [
               "m",
-              "Is Sally Kitty's sister?"
+              "I am afraid."
             ],
             [
               "f",
-              "Yes. Sally is twelve."
+              "Don't be afraid!"
             ],
             [
-              "m",
-              "Paul is her brother. He's six."
+              "f",
+              "Have a try!"
             ],
             [
               "n",
-              "Question: Who is six?"
+              "Question: What does the girl say?"
             ]
           ],
           "id": 14,
@@ -331,31 +331,31 @@
         },
         {
           "type": "dialogue_choice",
-          "tag": "A主线·p3·连续对话能力",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-          "question_text": "What can Tracy do?",
+          "tag": "A主线·p5·三轮信息整合",
+          "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+          "question_text": "What does the boy think of the plan?",
           "options": [
-            "Skip.",
-            "Ride a bicycle.",
-            "Go to the park."
+            "It is good.",
+            "It is a red pencil.",
+            "It is quiet."
           ],
           "answer": 0,
           "transcript": [
             [
               "f",
-              "This is Tracy."
+              "This is my plan for English study."
             ],
             [
               "m",
-              "How old is she?"
+              "Well done!"
             ],
             [
-              "f",
-              "She's thirteen, and she can skip."
+              "m",
+              "It's a good plan!"
             ],
             [
               "n",
-              "Question: What can Tracy do?"
+              "Question: What does the boy think of the plan?"
             ]
           ],
           "id": 15,
@@ -363,31 +363,31 @@
         },
         {
           "type": "dialogue_choice",
-          "tag": "A主线·p3·人物能力对应",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-          "question_text": "Who can ride a bicycle?",
+          "tag": "A主线·p4-p5·前课螺旋复现",
+          "parent_note": "确认版教材p4-p5主线或不增加新知识的同语境受控重组",
+          "question_text": "What should the boy do?",
           "options": [
-            "Danny.",
-            "Tracy.",
-            "Sally."
+            "Be quiet.",
+            "Spell book.",
+            "Use a red pencil."
           ],
           "answer": 0,
           "transcript": [
             [
               "m",
-              "Danny can ride a bicycle."
+              "I win!"
             ],
             [
               "f",
-              "Tracy can skip."
+              "Please be quiet."
             ],
             [
               "m",
-              "They are friends."
+              "All right, Miss Li."
             ],
             [
               "n",
-              "Question: Who can ride a bicycle?"
+              "Question: What should the boy do?"
             ]
           ],
           "id": 16,
@@ -403,34 +403,34 @@
       "questions": [
         {
           "type": "passage_judge",
-          "tag": "A主线·p2·人物关系",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "statement": "Kitty is Peter's classmate.",
+          "tag": "A主线·p2-p5·学习计划取信息",
+          "parent_note": "确认版教材p2-p5主线或不增加新知识的同语境受控重组",
+          "statement": "Shenshen has a plan for English study.",
           "answer": "true",
           "id": 17
         },
         {
           "type": "passage_judge",
-          "tag": "C微调·p2·数字与人物对应",
-          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p2，不作未掌握结论",
-          "statement": "Sally is six.",
+          "tag": "A主线·p3-p5·拼写内容对应",
+          "parent_note": "确认版教材p3-p5主线或不增加新知识的同语境受控重组",
+          "statement": "James spells Weather.",
           "answer": "false",
           "id": 18
         },
         {
           "type": "passage_judge",
-          "tag": "A主线·p3·能力",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-          "statement": "Danny can ride a bicycle.",
+          "tag": "A主线·p2-p5·跨句人物行为",
+          "parent_note": "确认版教材p2-p5主线或不增加新知识的同语境受控重组",
+          "statement": "Shenshen says, Have a try, to Minmin.",
           "answer": "true",
           "id": 19
         },
         {
           "type": "passage_judge",
-          "tag": "A主线·p3·跨句年龄",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-          "statement": "Tracy is twelve.",
-          "answer": "false",
+          "tag": "A主线·p3-p5·人物与表达对应",
+          "parent_note": "确认版教材p3-p5主线或不增加新知识的同语境受控重组",
+          "statement": "Mr Zhong says, Keep quiet, please.",
+          "answer": "true",
           "id": 20
         }
       ],
@@ -439,7 +439,7 @@
       "passage_transcript": [
         [
           "n",
-          "Kitty is Peter's classmate. Sally is Kitty's sister, and she's twelve. Paul is Kitty's brother, and he's six. Peter's friend Danny is nine and can ride a bicycle. Tracy is thirteen and can skip."
+          "This is Shenshen's plan for English study. She asks, How do you spell book? James says, B-o-o-k. Minmin is afraid. Shenshen says, Don't be afraid! Have a try! Miss Li says, Well done! It's a good plan! Mr Zhong says, Keep quiet, please."
         ]
       ]
     }

@@ -1,0 +1,61 @@
+{
+  "course_id": "S4A-T1-W01-D03",
+  "pair_id": "4A-T1-W01-D03",
+  "study_pack": "4A-T1-W01-D03",
+  "course_version": "36eb825294902bcd",
+  "title": "四上·Starter第3课｜学习方法·勇敢尝试（口语）",
+  "week": 1,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "How do you spell book?",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D03/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "B-o-o-k.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D03/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "Don't be afraid!",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D03/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Have a try!",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D03/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "This is my plan for English study.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D03/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Well done! It's a good plan!",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D03/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "拼读单词book。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D03/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "鼓励朋友：别害怕，试一试。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D03/q08.mp3"
+    }
+  ]
+}

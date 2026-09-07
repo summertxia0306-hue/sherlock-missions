@@ -1,16 +1,16 @@
 {
   "weekly_batch_id": "4A-T1-W01",
   "generation_status": "READY_TO_GENERATE",
-  "publication_status": "test",
+  "publication_status": "formal",
   "expected_listening_outputs": 94,
   "expected_speaking_outputs": 40,
   "expected_total_outputs": 134,
   "items": [
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D07",
+      "course_id": "L4A-T1-W01-D01",
       "kind": "test_audio",
-      "path": "static/audio/listening/L4A-T1-W01-D07/hello.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D01/hello.mp3",
       "clips": [
         [
           "n",
@@ -20,9 +20,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D07",
+      "course_id": "L4A-T1-W01-D01",
       "kind": "question_01",
-      "path": "static/audio/listening/L4A-T1-W01-D07/q01.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D01/q01.mp3",
       "clips": [
         [
           "n",
@@ -32,9 +32,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D07",
+      "course_id": "L4A-T1-W01-D01",
       "kind": "question_02",
-      "path": "static/audio/listening/L4A-T1-W01-D07/q02.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D01/q02.mp3",
       "clips": [
         [
           "n",
@@ -44,9 +44,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D07",
+      "course_id": "L4A-T1-W01-D01",
       "kind": "question_03",
-      "path": "static/audio/listening/L4A-T1-W01-D07/q03.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D01/q03.mp3",
       "clips": [
         [
           "n",
@@ -56,9 +56,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D07",
+      "course_id": "L4A-T1-W01-D01",
       "kind": "question_04",
-      "path": "static/audio/listening/L4A-T1-W01-D07/q04.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D01/q04.mp3",
       "clips": [
         [
           "n",
@@ -68,9 +68,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D07",
+      "course_id": "L4A-T1-W01-D01",
       "kind": "question_05",
-      "path": "static/audio/listening/L4A-T1-W01-D07/q05.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D01/q05.mp3",
       "clips": [
         [
           "n",
@@ -80,9 +80,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D07",
+      "course_id": "L4A-T1-W01-D01",
       "kind": "question_06",
-      "path": "static/audio/listening/L4A-T1-W01-D07/q06.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D01/q06.mp3",
       "clips": [
         [
           "n",
@@ -92,9 +92,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D07",
+      "course_id": "L4A-T1-W01-D01",
       "kind": "question_07",
-      "path": "static/audio/listening/L4A-T1-W01-D07/q07.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D01/q07.mp3",
       "clips": [
         [
           "n",
@@ -104,9 +104,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D07",
+      "course_id": "L4A-T1-W01-D01",
       "kind": "question_08",
-      "path": "static/audio/listening/L4A-T1-W01-D07/q08.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D01/q08.mp3",
       "clips": [
         [
           "n",
@@ -116,9 +116,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D07",
+      "course_id": "L4A-T1-W01-D01",
       "kind": "question_09",
-      "path": "static/audio/listening/L4A-T1-W01-D07/q09.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D01/q09.mp3",
       "clips": [
         [
           "n",
@@ -128,9 +128,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D07",
+      "course_id": "L4A-T1-W01-D01",
       "kind": "question_10",
-      "path": "static/audio/listening/L4A-T1-W01-D07/q10.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D01/q10.mp3",
       "clips": [
         [
           "n",
@@ -140,9 +140,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D07",
+      "course_id": "L4A-T1-W01-D01",
       "kind": "question_11",
-      "path": "static/audio/listening/L4A-T1-W01-D07/q11.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D01/q11.mp3",
       "clips": [
         [
           "n",
@@ -152,9 +152,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D07",
+      "course_id": "L4A-T1-W01-D01",
       "kind": "question_12",
-      "path": "static/audio/listening/L4A-T1-W01-D07/q12.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D01/q12.mp3",
       "clips": [
         [
           "n",
@@ -164,9 +164,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D07",
+      "course_id": "L4A-T1-W01-D01",
       "kind": "question_13",
-      "path": "static/audio/listening/L4A-T1-W01-D07/q13.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D01/q13.mp3",
       "clips": [
         [
           "f",
@@ -184,9 +184,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D07",
+      "course_id": "L4A-T1-W01-D01",
       "kind": "question_14",
-      "path": "static/audio/listening/L4A-T1-W01-D07/q14.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D01/q14.mp3",
       "clips": [
         [
           "f",
@@ -204,9 +204,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D07",
+      "course_id": "L4A-T1-W01-D01",
       "kind": "question_15",
-      "path": "static/audio/listening/L4A-T1-W01-D07/q15.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D01/q15.mp3",
       "clips": [
         [
           "f",
@@ -224,9 +224,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D07",
+      "course_id": "L4A-T1-W01-D01",
       "kind": "question_16",
-      "path": "static/audio/listening/L4A-T1-W01-D07/q16.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D01/q16.mp3",
       "clips": [
         [
           "f",
@@ -244,9 +244,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D07",
+      "course_id": "L4A-T1-W01-D01",
       "kind": "passage",
-      "path": "static/audio/listening/L4A-T1-W01-D07/p01.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D01/p01.mp3",
       "clips": [
         [
           "n",
@@ -256,9 +256,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D08",
+      "course_id": "L4A-T1-W01-D02",
       "kind": "test_audio",
-      "path": "static/audio/listening/L4A-T1-W01-D08/hello.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D02/hello.mp3",
       "clips": [
         [
           "n",
@@ -268,9 +268,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D08",
+      "course_id": "L4A-T1-W01-D02",
       "kind": "question_01",
-      "path": "static/audio/listening/L4A-T1-W01-D08/q01.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D02/q01.mp3",
       "clips": [
         [
           "n",
@@ -280,9 +280,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D08",
+      "course_id": "L4A-T1-W01-D02",
       "kind": "question_02",
-      "path": "static/audio/listening/L4A-T1-W01-D08/q02.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D02/q02.mp3",
       "clips": [
         [
           "n",
@@ -292,9 +292,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D08",
+      "course_id": "L4A-T1-W01-D02",
       "kind": "question_03",
-      "path": "static/audio/listening/L4A-T1-W01-D08/q03.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D02/q03.mp3",
       "clips": [
         [
           "n",
@@ -304,9 +304,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D08",
+      "course_id": "L4A-T1-W01-D02",
       "kind": "question_04",
-      "path": "static/audio/listening/L4A-T1-W01-D08/q04.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D02/q04.mp3",
       "clips": [
         [
           "n",
@@ -316,9 +316,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D08",
+      "course_id": "L4A-T1-W01-D02",
       "kind": "question_05",
-      "path": "static/audio/listening/L4A-T1-W01-D08/q05.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D02/q05.mp3",
       "clips": [
         [
           "n",
@@ -328,9 +328,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D08",
+      "course_id": "L4A-T1-W01-D02",
       "kind": "question_06",
-      "path": "static/audio/listening/L4A-T1-W01-D08/q06.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D02/q06.mp3",
       "clips": [
         [
           "n",
@@ -340,9 +340,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D08",
+      "course_id": "L4A-T1-W01-D02",
       "kind": "question_07",
-      "path": "static/audio/listening/L4A-T1-W01-D08/q07.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D02/q07.mp3",
       "clips": [
         [
           "n",
@@ -352,9 +352,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D08",
+      "course_id": "L4A-T1-W01-D02",
       "kind": "question_08",
-      "path": "static/audio/listening/L4A-T1-W01-D08/q08.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D02/q08.mp3",
       "clips": [
         [
           "n",
@@ -364,9 +364,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D08",
+      "course_id": "L4A-T1-W01-D02",
       "kind": "question_09",
-      "path": "static/audio/listening/L4A-T1-W01-D08/q09.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D02/q09.mp3",
       "clips": [
         [
           "n",
@@ -376,9 +376,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D08",
+      "course_id": "L4A-T1-W01-D02",
       "kind": "question_10",
-      "path": "static/audio/listening/L4A-T1-W01-D08/q10.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D02/q10.mp3",
       "clips": [
         [
           "n",
@@ -388,9 +388,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D08",
+      "course_id": "L4A-T1-W01-D02",
       "kind": "question_11",
-      "path": "static/audio/listening/L4A-T1-W01-D08/q11.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D02/q11.mp3",
       "clips": [
         [
           "n",
@@ -400,9 +400,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D08",
+      "course_id": "L4A-T1-W01-D02",
       "kind": "question_12",
-      "path": "static/audio/listening/L4A-T1-W01-D08/q12.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D02/q12.mp3",
       "clips": [
         [
           "n",
@@ -412,9 +412,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D08",
+      "course_id": "L4A-T1-W01-D02",
       "kind": "question_13",
-      "path": "static/audio/listening/L4A-T1-W01-D08/q13.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D02/q13.mp3",
       "clips": [
         [
           "m",
@@ -432,9 +432,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D08",
+      "course_id": "L4A-T1-W01-D02",
       "kind": "question_14",
-      "path": "static/audio/listening/L4A-T1-W01-D08/q14.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D02/q14.mp3",
       "clips": [
         [
           "f",
@@ -452,9 +452,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D08",
+      "course_id": "L4A-T1-W01-D02",
       "kind": "question_15",
-      "path": "static/audio/listening/L4A-T1-W01-D08/q15.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D02/q15.mp3",
       "clips": [
         [
           "f",
@@ -472,9 +472,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D08",
+      "course_id": "L4A-T1-W01-D02",
       "kind": "question_16",
-      "path": "static/audio/listening/L4A-T1-W01-D08/q16.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D02/q16.mp3",
       "clips": [
         [
           "f",
@@ -492,9 +492,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D08",
+      "course_id": "L4A-T1-W01-D02",
       "kind": "passage",
-      "path": "static/audio/listening/L4A-T1-W01-D08/p01.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D02/p01.mp3",
       "clips": [
         [
           "n",
@@ -504,9 +504,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D09",
+      "course_id": "L4A-T1-W01-D03",
       "kind": "test_audio",
-      "path": "static/audio/listening/L4A-T1-W01-D09/hello.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D03/hello.mp3",
       "clips": [
         [
           "n",
@@ -516,9 +516,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D09",
+      "course_id": "L4A-T1-W01-D03",
       "kind": "question_01",
-      "path": "static/audio/listening/L4A-T1-W01-D09/q01.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D03/q01.mp3",
       "clips": [
         [
           "n",
@@ -528,9 +528,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D09",
+      "course_id": "L4A-T1-W01-D03",
       "kind": "question_02",
-      "path": "static/audio/listening/L4A-T1-W01-D09/q02.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D03/q02.mp3",
       "clips": [
         [
           "n",
@@ -540,9 +540,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D09",
+      "course_id": "L4A-T1-W01-D03",
       "kind": "question_03",
-      "path": "static/audio/listening/L4A-T1-W01-D09/q03.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D03/q03.mp3",
       "clips": [
         [
           "n",
@@ -552,9 +552,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D09",
+      "course_id": "L4A-T1-W01-D03",
       "kind": "question_04",
-      "path": "static/audio/listening/L4A-T1-W01-D09/q04.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D03/q04.mp3",
       "clips": [
         [
           "n",
@@ -564,9 +564,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D09",
+      "course_id": "L4A-T1-W01-D03",
       "kind": "question_05",
-      "path": "static/audio/listening/L4A-T1-W01-D09/q05.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D03/q05.mp3",
       "clips": [
         [
           "n",
@@ -576,9 +576,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D09",
+      "course_id": "L4A-T1-W01-D03",
       "kind": "question_06",
-      "path": "static/audio/listening/L4A-T1-W01-D09/q06.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D03/q06.mp3",
       "clips": [
         [
           "n",
@@ -588,9 +588,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D09",
+      "course_id": "L4A-T1-W01-D03",
       "kind": "question_07",
-      "path": "static/audio/listening/L4A-T1-W01-D09/q07.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D03/q07.mp3",
       "clips": [
         [
           "n",
@@ -600,9 +600,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D09",
+      "course_id": "L4A-T1-W01-D03",
       "kind": "question_08",
-      "path": "static/audio/listening/L4A-T1-W01-D09/q08.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D03/q08.mp3",
       "clips": [
         [
           "n",
@@ -612,9 +612,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D09",
+      "course_id": "L4A-T1-W01-D03",
       "kind": "question_09",
-      "path": "static/audio/listening/L4A-T1-W01-D09/q09.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D03/q09.mp3",
       "clips": [
         [
           "n",
@@ -624,9 +624,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D09",
+      "course_id": "L4A-T1-W01-D03",
       "kind": "question_10",
-      "path": "static/audio/listening/L4A-T1-W01-D09/q10.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D03/q10.mp3",
       "clips": [
         [
           "n",
@@ -636,9 +636,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D09",
+      "course_id": "L4A-T1-W01-D03",
       "kind": "question_11",
-      "path": "static/audio/listening/L4A-T1-W01-D09/q11.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D03/q11.mp3",
       "clips": [
         [
           "n",
@@ -648,9 +648,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D09",
+      "course_id": "L4A-T1-W01-D03",
       "kind": "question_12",
-      "path": "static/audio/listening/L4A-T1-W01-D09/q12.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D03/q12.mp3",
       "clips": [
         [
           "n",
@@ -660,9 +660,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D09",
+      "course_id": "L4A-T1-W01-D03",
       "kind": "question_13",
-      "path": "static/audio/listening/L4A-T1-W01-D09/q13.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D03/q13.mp3",
       "clips": [
         [
           "f",
@@ -684,9 +684,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D09",
+      "course_id": "L4A-T1-W01-D03",
       "kind": "question_14",
-      "path": "static/audio/listening/L4A-T1-W01-D09/q14.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D03/q14.mp3",
       "clips": [
         [
           "m",
@@ -708,9 +708,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D09",
+      "course_id": "L4A-T1-W01-D03",
       "kind": "question_15",
-      "path": "static/audio/listening/L4A-T1-W01-D09/q15.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D03/q15.mp3",
       "clips": [
         [
           "f",
@@ -732,9 +732,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D09",
+      "course_id": "L4A-T1-W01-D03",
       "kind": "question_16",
-      "path": "static/audio/listening/L4A-T1-W01-D09/q16.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D03/q16.mp3",
       "clips": [
         [
           "m",
@@ -756,9 +756,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D09",
+      "course_id": "L4A-T1-W01-D03",
       "kind": "passage",
-      "path": "static/audio/listening/L4A-T1-W01-D09/p01.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D03/p01.mp3",
       "clips": [
         [
           "n",
@@ -768,9 +768,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D10",
+      "course_id": "L4A-T1-W01-D04",
       "kind": "test_audio",
-      "path": "static/audio/listening/L4A-T1-W01-D10/hello.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D04/hello.mp3",
       "clips": [
         [
           "n",
@@ -780,9 +780,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D10",
+      "course_id": "L4A-T1-W01-D04",
       "kind": "question_01",
-      "path": "static/audio/listening/L4A-T1-W01-D10/q01.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D04/q01.mp3",
       "clips": [
         [
           "n",
@@ -792,9 +792,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D10",
+      "course_id": "L4A-T1-W01-D04",
       "kind": "question_02",
-      "path": "static/audio/listening/L4A-T1-W01-D10/q02.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D04/q02.mp3",
       "clips": [
         [
           "n",
@@ -804,9 +804,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D10",
+      "course_id": "L4A-T1-W01-D04",
       "kind": "question_03",
-      "path": "static/audio/listening/L4A-T1-W01-D10/q03.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D04/q03.mp3",
       "clips": [
         [
           "n",
@@ -816,9 +816,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D10",
+      "course_id": "L4A-T1-W01-D04",
       "kind": "question_04",
-      "path": "static/audio/listening/L4A-T1-W01-D10/q04.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D04/q04.mp3",
       "clips": [
         [
           "n",
@@ -828,9 +828,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D10",
+      "course_id": "L4A-T1-W01-D04",
       "kind": "question_05",
-      "path": "static/audio/listening/L4A-T1-W01-D10/q05.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D04/q05.mp3",
       "clips": [
         [
           "n",
@@ -840,9 +840,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D10",
+      "course_id": "L4A-T1-W01-D04",
       "kind": "question_06",
-      "path": "static/audio/listening/L4A-T1-W01-D10/q06.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D04/q06.mp3",
       "clips": [
         [
           "n",
@@ -852,9 +852,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D10",
+      "course_id": "L4A-T1-W01-D04",
       "kind": "question_07",
-      "path": "static/audio/listening/L4A-T1-W01-D10/q07.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D04/q07.mp3",
       "clips": [
         [
           "n",
@@ -864,9 +864,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D10",
+      "course_id": "L4A-T1-W01-D04",
       "kind": "question_08",
-      "path": "static/audio/listening/L4A-T1-W01-D10/q08.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D04/q08.mp3",
       "clips": [
         [
           "n",
@@ -876,9 +876,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D10",
+      "course_id": "L4A-T1-W01-D04",
       "kind": "question_09",
-      "path": "static/audio/listening/L4A-T1-W01-D10/q09.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D04/q09.mp3",
       "clips": [
         [
           "n",
@@ -888,9 +888,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D10",
+      "course_id": "L4A-T1-W01-D04",
       "kind": "question_10",
-      "path": "static/audio/listening/L4A-T1-W01-D10/q10.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D04/q10.mp3",
       "clips": [
         [
           "n",
@@ -900,9 +900,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D10",
+      "course_id": "L4A-T1-W01-D04",
       "kind": "question_11",
-      "path": "static/audio/listening/L4A-T1-W01-D10/q11.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D04/q11.mp3",
       "clips": [
         [
           "n",
@@ -912,9 +912,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D10",
+      "course_id": "L4A-T1-W01-D04",
       "kind": "question_12",
-      "path": "static/audio/listening/L4A-T1-W01-D10/q12.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D04/q12.mp3",
       "clips": [
         [
           "n",
@@ -924,9 +924,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D10",
+      "course_id": "L4A-T1-W01-D04",
       "kind": "question_13",
-      "path": "static/audio/listening/L4A-T1-W01-D10/q13.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D04/q13.mp3",
       "clips": [
         [
           "f",
@@ -948,9 +948,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D10",
+      "course_id": "L4A-T1-W01-D04",
       "kind": "question_14",
-      "path": "static/audio/listening/L4A-T1-W01-D10/q14.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D04/q14.mp3",
       "clips": [
         [
           "m",
@@ -972,9 +972,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D10",
+      "course_id": "L4A-T1-W01-D04",
       "kind": "question_15",
-      "path": "static/audio/listening/L4A-T1-W01-D10/q15.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D04/q15.mp3",
       "clips": [
         [
           "f",
@@ -1000,9 +1000,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D10",
+      "course_id": "L4A-T1-W01-D04",
       "kind": "question_16",
-      "path": "static/audio/listening/L4A-T1-W01-D10/q16.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D04/q16.mp3",
       "clips": [
         [
           "m",
@@ -1024,9 +1024,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D10",
+      "course_id": "L4A-T1-W01-D04",
       "kind": "passage",
-      "path": "static/audio/listening/L4A-T1-W01-D10/p01.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D04/p01.mp3",
       "clips": [
         [
           "n",
@@ -1036,9 +1036,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "test_audio",
-      "path": "static/audio/listening/L4A-T1-W01-D11/hello.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/hello.mp3",
       "clips": [
         [
           "n",
@@ -1048,9 +1048,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_01",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q01.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q01.mp3",
       "clips": [
         [
           "n",
@@ -1060,9 +1060,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_02",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q02.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q02.mp3",
       "clips": [
         [
           "n",
@@ -1072,9 +1072,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_03",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q03.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q03.mp3",
       "clips": [
         [
           "n",
@@ -1084,9 +1084,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_04",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q04.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q04.mp3",
       "clips": [
         [
           "n",
@@ -1096,9 +1096,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_05",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q05.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q05.mp3",
       "clips": [
         [
           "n",
@@ -1108,9 +1108,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_06",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q06.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q06.mp3",
       "clips": [
         [
           "n",
@@ -1120,9 +1120,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_07",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q07.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q07.mp3",
       "clips": [
         [
           "n",
@@ -1132,9 +1132,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_08",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q08.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q08.mp3",
       "clips": [
         [
           "n",
@@ -1144,9 +1144,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_09",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q09.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q09.mp3",
       "clips": [
         [
           "n",
@@ -1156,9 +1156,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_10",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q10.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q10.mp3",
       "clips": [
         [
           "n",
@@ -1168,9 +1168,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_11",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q11.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q11.mp3",
       "clips": [
         [
           "n",
@@ -1180,9 +1180,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_12",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q12.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q12.mp3",
       "clips": [
         [
           "n",
@@ -1192,9 +1192,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_13",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q13.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q13.mp3",
       "clips": [
         [
           "n",
@@ -1204,9 +1204,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_14",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q14.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q14.mp3",
       "clips": [
         [
           "n",
@@ -1216,9 +1216,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_15",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q15.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q15.mp3",
       "clips": [
         [
           "n",
@@ -1228,9 +1228,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_16",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q16.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q16.mp3",
       "clips": [
         [
           "f",
@@ -1252,9 +1252,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_17",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q17.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q17.mp3",
       "clips": [
         [
           "m",
@@ -1276,9 +1276,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_18",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q18.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q18.mp3",
       "clips": [
         [
           "f",
@@ -1304,9 +1304,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_19",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q19.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q19.mp3",
       "clips": [
         [
           "m",
@@ -1328,9 +1328,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "question_20",
-      "path": "static/audio/listening/L4A-T1-W01-D11/q20.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/q20.mp3",
       "clips": [
         [
           "f",
@@ -1356,9 +1356,9 @@
     },
     {
       "module": "listening",
-      "course_id": "L4A-T1-W01-D11",
+      "course_id": "L4A-T1-W01-D05",
       "kind": "passage",
-      "path": "static/audio/listening/L4A-T1-W01-D11/p01.mp3",
+      "path": "static/audio/listening/L4A-T1-W01-D05/p01.mp3",
       "clips": [
         [
           "n",
@@ -1368,9 +1368,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D07",
+      "course_id": "S4A-T1-W01-D01",
       "kind": "question_01_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D07/q01.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D01/q01.mp3",
       "clips": [
         [
           "n",
@@ -1380,9 +1380,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D07",
+      "course_id": "S4A-T1-W01-D01",
       "kind": "question_02_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D07/q02.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D01/q02.mp3",
       "clips": [
         [
           "n",
@@ -1392,9 +1392,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D07",
+      "course_id": "S4A-T1-W01-D01",
       "kind": "question_03_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D07/q03.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D01/q03.mp3",
       "clips": [
         [
           "n",
@@ -1404,9 +1404,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D07",
+      "course_id": "S4A-T1-W01-D01",
       "kind": "question_04_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D07/q04.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D01/q04.mp3",
       "clips": [
         [
           "n",
@@ -1416,9 +1416,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D07",
+      "course_id": "S4A-T1-W01-D01",
       "kind": "question_05_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D07/q05.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D01/q05.mp3",
       "clips": [
         [
           "n",
@@ -1428,9 +1428,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D07",
+      "course_id": "S4A-T1-W01-D01",
       "kind": "question_06_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D07/q06.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D01/q06.mp3",
       "clips": [
         [
           "n",
@@ -1440,9 +1440,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D07",
+      "course_id": "S4A-T1-W01-D01",
       "kind": "question_07_qa",
-      "path": "static/audio/speaking/S4A-T1-W01-D07/q07.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D01/q07.mp3",
       "clips": [
         [
           "n",
@@ -1452,9 +1452,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D07",
+      "course_id": "S4A-T1-W01-D01",
       "kind": "question_08_qa",
-      "path": "static/audio/speaking/S4A-T1-W01-D07/q08.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D01/q08.mp3",
       "clips": [
         [
           "n",
@@ -1464,9 +1464,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D08",
+      "course_id": "S4A-T1-W01-D02",
       "kind": "question_01_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D08/q01.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D02/q01.mp3",
       "clips": [
         [
           "n",
@@ -1476,9 +1476,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D08",
+      "course_id": "S4A-T1-W01-D02",
       "kind": "question_02_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D08/q02.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D02/q02.mp3",
       "clips": [
         [
           "n",
@@ -1488,9 +1488,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D08",
+      "course_id": "S4A-T1-W01-D02",
       "kind": "question_03_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D08/q03.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D02/q03.mp3",
       "clips": [
         [
           "n",
@@ -1500,9 +1500,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D08",
+      "course_id": "S4A-T1-W01-D02",
       "kind": "question_04_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D08/q04.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D02/q04.mp3",
       "clips": [
         [
           "n",
@@ -1512,9 +1512,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D08",
+      "course_id": "S4A-T1-W01-D02",
       "kind": "question_05_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D08/q05.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D02/q05.mp3",
       "clips": [
         [
           "n",
@@ -1524,9 +1524,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D08",
+      "course_id": "S4A-T1-W01-D02",
       "kind": "question_06_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D08/q06.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D02/q06.mp3",
       "clips": [
         [
           "n",
@@ -1536,9 +1536,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D08",
+      "course_id": "S4A-T1-W01-D02",
       "kind": "question_07_qa",
-      "path": "static/audio/speaking/S4A-T1-W01-D08/q07.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D02/q07.mp3",
       "clips": [
         [
           "n",
@@ -1548,9 +1548,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D08",
+      "course_id": "S4A-T1-W01-D02",
       "kind": "question_08_qa",
-      "path": "static/audio/speaking/S4A-T1-W01-D08/q08.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D02/q08.mp3",
       "clips": [
         [
           "n",
@@ -1560,9 +1560,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D09",
+      "course_id": "S4A-T1-W01-D03",
       "kind": "question_01_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D09/q01.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D03/q01.mp3",
       "clips": [
         [
           "n",
@@ -1572,9 +1572,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D09",
+      "course_id": "S4A-T1-W01-D03",
       "kind": "question_02_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D09/q02.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D03/q02.mp3",
       "clips": [
         [
           "n",
@@ -1584,9 +1584,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D09",
+      "course_id": "S4A-T1-W01-D03",
       "kind": "question_03_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D09/q03.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D03/q03.mp3",
       "clips": [
         [
           "n",
@@ -1596,9 +1596,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D09",
+      "course_id": "S4A-T1-W01-D03",
       "kind": "question_04_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D09/q04.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D03/q04.mp3",
       "clips": [
         [
           "n",
@@ -1608,9 +1608,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D09",
+      "course_id": "S4A-T1-W01-D03",
       "kind": "question_05_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D09/q05.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D03/q05.mp3",
       "clips": [
         [
           "n",
@@ -1620,9 +1620,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D09",
+      "course_id": "S4A-T1-W01-D03",
       "kind": "question_06_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D09/q06.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D03/q06.mp3",
       "clips": [
         [
           "n",
@@ -1632,9 +1632,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D09",
+      "course_id": "S4A-T1-W01-D03",
       "kind": "question_07_qa",
-      "path": "static/audio/speaking/S4A-T1-W01-D09/q07.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D03/q07.mp3",
       "clips": [
         [
           "n",
@@ -1644,9 +1644,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D09",
+      "course_id": "S4A-T1-W01-D03",
       "kind": "question_08_qa",
-      "path": "static/audio/speaking/S4A-T1-W01-D09/q08.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D03/q08.mp3",
       "clips": [
         [
           "n",
@@ -1656,9 +1656,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D10",
+      "course_id": "S4A-T1-W01-D04",
       "kind": "question_01_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D10/q01.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D04/q01.mp3",
       "clips": [
         [
           "n",
@@ -1668,9 +1668,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D10",
+      "course_id": "S4A-T1-W01-D04",
       "kind": "question_02_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D10/q02.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D04/q02.mp3",
       "clips": [
         [
           "n",
@@ -1680,9 +1680,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D10",
+      "course_id": "S4A-T1-W01-D04",
       "kind": "question_03_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D10/q03.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D04/q03.mp3",
       "clips": [
         [
           "n",
@@ -1692,9 +1692,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D10",
+      "course_id": "S4A-T1-W01-D04",
       "kind": "question_04_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D10/q04.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D04/q04.mp3",
       "clips": [
         [
           "n",
@@ -1704,9 +1704,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D10",
+      "course_id": "S4A-T1-W01-D04",
       "kind": "question_05_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D10/q05.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D04/q05.mp3",
       "clips": [
         [
           "n",
@@ -1716,9 +1716,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D10",
+      "course_id": "S4A-T1-W01-D04",
       "kind": "question_06_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D10/q06.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D04/q06.mp3",
       "clips": [
         [
           "n",
@@ -1728,9 +1728,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D10",
+      "course_id": "S4A-T1-W01-D04",
       "kind": "question_07_qa",
-      "path": "static/audio/speaking/S4A-T1-W01-D10/q07.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D04/q07.mp3",
       "clips": [
         [
           "n",
@@ -1740,9 +1740,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D10",
+      "course_id": "S4A-T1-W01-D04",
       "kind": "question_08_qa",
-      "path": "static/audio/speaking/S4A-T1-W01-D10/q08.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D04/q08.mp3",
       "clips": [
         [
           "n",
@@ -1752,9 +1752,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D11",
+      "course_id": "S4A-T1-W01-D05",
       "kind": "question_01_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D11/q01.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D05/q01.mp3",
       "clips": [
         [
           "n",
@@ -1764,9 +1764,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D11",
+      "course_id": "S4A-T1-W01-D05",
       "kind": "question_02_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D11/q02.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D05/q02.mp3",
       "clips": [
         [
           "n",
@@ -1776,9 +1776,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D11",
+      "course_id": "S4A-T1-W01-D05",
       "kind": "question_03_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D11/q03.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D05/q03.mp3",
       "clips": [
         [
           "n",
@@ -1788,9 +1788,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D11",
+      "course_id": "S4A-T1-W01-D05",
       "kind": "question_04_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D11/q04.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D05/q04.mp3",
       "clips": [
         [
           "n",
@@ -1800,9 +1800,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D11",
+      "course_id": "S4A-T1-W01-D05",
       "kind": "question_05_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D11/q05.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D05/q05.mp3",
       "clips": [
         [
           "n",
@@ -1812,9 +1812,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D11",
+      "course_id": "S4A-T1-W01-D05",
       "kind": "question_06_repeat",
-      "path": "static/audio/speaking/S4A-T1-W01-D11/q06.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D05/q06.mp3",
       "clips": [
         [
           "n",
@@ -1824,9 +1824,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D11",
+      "course_id": "S4A-T1-W01-D05",
       "kind": "question_07_qa",
-      "path": "static/audio/speaking/S4A-T1-W01-D11/q07.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D05/q07.mp3",
       "clips": [
         [
           "n",
@@ -1836,9 +1836,9 @@
     },
     {
       "module": "speaking",
-      "course_id": "S4A-T1-W01-D11",
+      "course_id": "S4A-T1-W01-D05",
       "kind": "question_08_qa",
-      "path": "static/audio/speaking/S4A-T1-W01-D11/q08.mp3",
+      "path": "static/audio/speaking/S4A-T1-W01-D05/q08.mp3",
       "clips": [
         [
           "n",

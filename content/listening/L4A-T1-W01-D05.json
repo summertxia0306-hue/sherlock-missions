@@ -3,13 +3,13 @@
   "weekly_batch_id": "4A-T1-W01",
   "study_pack": "4A-T1-W01-D05",
   "pair_id": "4A-T1-W01-D05",
-  "publication_status": "test",
-  "title": "四上·第1周·周六｜人物介绍·综合迁移（听力）",
+  "publication_status": "formal",
+  "title": "四上·Starter第5课｜星期表达·Starter综合（听力）",
   "week": 1,
   "day": 5,
   "course_type": "training",
-  "est_minutes": 27,
-  "scope": "4A M1U1 p2-p3",
+  "est_minutes": 22,
+  "scope": "4A Starter p2-p6 Days of the week and review",
   "difficulty": "L3",
   "scoring": {
     "per_question": 4,
@@ -31,18 +31,18 @@
       "questions": [
         {
           "type": "word_choice",
-          "tag": "A主线·p3·相邻数字",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p6·星期直接识别",
+          "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
           "options": [
-            "thirteen",
-            "fourteen",
-            "fifteen"
+            "Monday",
+            "Tuesday",
+            "Sunday"
           ],
-          "answer": 1,
+          "answer": 0,
           "transcript": [
             [
               "n",
-              "fourteen"
+              "Monday"
             ]
           ],
           "id": 1,
@@ -50,18 +50,18 @@
         },
         {
           "type": "word_choice",
-          "tag": "C微调·p3·听音选词数字辨别",
-          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p3，不作未掌握结论",
+          "tag": "A主线·p6·相邻星期辨别",
+          "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
           "options": [
-            "six",
-            "sixteen",
-            "fifteen"
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
           ],
           "answer": 1,
           "transcript": [
             [
               "n",
-              "sixteen"
+              "Wednesday"
             ]
           ],
           "id": 2,
@@ -69,18 +69,18 @@
         },
         {
           "type": "word_choice",
-          "tag": "A主线·p3·能力短语",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p6·相邻星期辨别",
+          "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
           "options": [
-            "ride a bicycle",
-            "skip",
-            "go to the park"
+            "Thursday",
+            "Friday",
+            "Saturday"
           ],
-          "answer": 0,
+          "answer": 1,
           "transcript": [
             [
               "n",
-              "ride a bicycle"
+              "Friday"
             ]
           ],
           "id": 3,
@@ -88,18 +88,18 @@
         },
         {
           "type": "word_choice",
-          "tag": "A主线·p2-p3·物主词",
-          "parent_note": "教材PDF p2-p3 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p6·相邻星期辨别",
+          "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
           "options": [
-            "her",
-            "his",
-            "my"
+            "Saturday",
+            "Sunday",
+            "Monday"
           ],
           "answer": 1,
           "transcript": [
             [
               "n",
-              "his"
+              "Sunday"
             ]
           ],
           "id": 4,
@@ -107,18 +107,18 @@
         },
         {
           "type": "word_choice",
-          "tag": "A主线·p2·人物关系",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "tag": "C微调·p6·听音选词与星期辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p6，不作未掌握结论",
           "options": [
-            "classmate",
-            "brother",
-            "friend"
+            "Tuesday",
+            "Thursday",
+            "Friday"
           ],
-          "answer": 0,
+          "answer": 1,
           "transcript": [
             [
               "n",
-              "classmate"
+              "Thursday"
             ]
           ],
           "id": 5,
@@ -134,14 +134,14 @@
       "questions": [
         {
           "type": "sentence_judge",
-          "tag": "A主线·p2·复合信息",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "display": "Sally is Kitty's sister, and she's twelve.",
+          "tag": "A主线·p6·星期顺序",
+          "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
+          "display": "Tuesday is after Monday.",
           "answer": "same",
           "transcript": [
             [
               "n",
-              "Sally is Kitty's sister, and she's twelve."
+              "Tuesday is after Monday."
             ]
           ],
           "id": 6,
@@ -149,14 +149,14 @@
         },
         {
           "type": "sentence_judge",
-          "tag": "C微调·p2·人物信息对应",
-          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p2，不作未掌握结论",
-          "display": "Paul is Peter's brother, and he's six.",
+          "tag": "A主线·p6·跨一日干扰",
+          "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
+          "display": "Friday is after Thursday.",
           "answer": "different",
           "transcript": [
             [
               "n",
-              "Paul is Kitty's brother, and he's six."
+              "Saturday is after Thursday."
             ]
           ],
           "id": 7,
@@ -164,14 +164,14 @@
         },
         {
           "type": "sentence_judge",
-          "tag": "A主线·p3·双信息辨别",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-          "display": "Danny is thirteen and can skip.",
-          "answer": "different",
+          "tag": "A主线·p6·星期顺序",
+          "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
+          "display": "Sunday is after Saturday.",
+          "answer": "same",
           "transcript": [
             [
               "n",
-              "Danny is nine and can ride a bicycle."
+              "Sunday is after Saturday."
             ]
           ],
           "id": 8,
@@ -179,14 +179,14 @@
         },
         {
           "type": "sentence_judge",
-          "tag": "A主线·p3·双信息辨别",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-          "display": "Tracy is thirteen and can skip.",
-          "answer": "same",
+          "tag": "A主线·p6·最喜欢的星期",
+          "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
+          "display": "My favourite day is Wednesday.",
+          "answer": "different",
           "transcript": [
             [
               "n",
-              "Tracy is thirteen and can skip."
+              "My favourite day is Friday."
             ]
           ],
           "id": 9,
@@ -194,14 +194,14 @@
         },
         {
           "type": "sentence_judge",
-          "tag": "A主线·p2·语序迁移",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "display": "Kitty and Peter are going to the park.",
+          "tag": "A主线·p4-p6·星期与课堂表达整合",
+          "parent_note": "确认版教材p4-p6主线或不增加新知识的同语境受控重组",
+          "display": "On Tuesday, we read the story with a partner.",
           "answer": "same",
           "transcript": [
             [
               "n",
-              "Peter and Kitty are going to the park."
+              "On Tuesday, we read the story with a partner."
             ]
           ],
           "id": 10,
@@ -217,18 +217,18 @@
       "questions": [
         {
           "type": "question_response",
-          "tag": "A主线·p2·跨信息问答",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p6·星期顺序问答",
+          "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
           "options": [
-            "Sally.",
-            "Tracy.",
-            "Kitty."
+            "Tuesday.",
+            "Sunday.",
+            "Friday."
           ],
           "answer": 0,
           "transcript": [
             [
               "n",
-              "Who is twelve?"
+              "What day is after Monday?"
             ]
           ],
           "id": 11,
@@ -236,18 +236,18 @@
         },
         {
           "type": "question_response",
-          "tag": "C微调·p3·听问句选答语与信息整合",
-          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p3，不作未掌握结论",
+          "tag": "C微调·p6·听问句选答语",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p6，不作未掌握结论",
           "options": [
-            "His name is Danny, and he can ride a bicycle.",
-            "Her name is Tracy, and she can skip.",
-            "His name is Paul, and he's six."
+            "Monday.",
+            "Wednesday.",
+            "Thursday."
           ],
-          "answer": 0,
+          "answer": 1,
           "transcript": [
             [
               "n",
-              "What's his name, and what can he do?"
+              "What day is after Tuesday?"
             ]
           ],
           "id": 12,
@@ -255,18 +255,18 @@
         },
         {
           "type": "question_response",
-          "tag": "A主线·p2·人物年龄整合",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p6·星期顺序问答",
+          "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
           "options": [
-            "Paul. He's six.",
-            "Peter. He's nine.",
-            "Danny. He's thirteen."
+            "Thursday.",
+            "Saturday.",
+            "Sunday."
           ],
-          "answer": 0,
+          "answer": 1,
           "transcript": [
             [
               "n",
-              "Who is Kitty's brother, and how old is he?"
+              "What day is after Friday?"
             ]
           ],
           "id": 13,
@@ -274,18 +274,18 @@
         },
         {
           "type": "question_response",
-          "tag": "A主线·p3·跨句年龄能力",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p6·星期顺序问答",
+          "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
           "options": [
-            "She's thirteen.",
-            "He's nine.",
-            "She's twelve."
+            "Sunday.",
+            "Monday.",
+            "Friday."
           ],
           "answer": 0,
           "transcript": [
             [
               "n",
-              "How old is the friend who can skip?"
+              "What day is after Saturday?"
             ]
           ],
           "id": 14,
@@ -293,18 +293,18 @@
         },
         {
           "type": "question_response",
-          "tag": "A主线·p3·跨句年龄能力",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p2-p6·人物与星期信息",
+          "parent_note": "确认版教材p2-p6主线或不增加新知识的同语境受控重组",
           "options": [
-            "He can ride a bicycle.",
-            "She can skip.",
-            "He can go to the park."
+            "Sunday.",
+            "Saturday.",
+            "Monday."
           ],
           "answer": 0,
           "transcript": [
             [
               "n",
-              "Danny is nine. What can he do?"
+              "Shenshen says, My favourite day is Sunday. What is Shenshen's favourite day?"
             ]
           ],
           "id": 15,
@@ -320,35 +320,31 @@
       "questions": [
         {
           "type": "dialogue_choice",
-          "tag": "A主线·p2-p3·陌生语境迁移",
-          "parent_note": "教材PDF p2-p3 主线或不增加新知识的同语境迁移",
-          "question_text": "How old is Danny, and what can he do?",
+          "tag": "A主线·p4-p6·三轮星期问答",
+          "parent_note": "确认版教材p4-p6主线或不增加新知识的同语境受控重组",
+          "question_text": "What day is after Tuesday?",
           "options": [
-            "He's nine and can ride a bicycle.",
-            "He's six and is going to the park.",
-            "She's thirteen and can skip."
+            "Wednesday.",
+            "Thursday.",
+            "Monday."
           ],
           "answer": 0,
           "transcript": [
             [
               "f",
-              "This is my friend Danny."
+              "What day is after Tuesday?"
             ],
             [
               "m",
-              "I'm nine."
+              "Wednesday."
             ],
             [
               "f",
-              "He can ride a bicycle."
-            ],
-            [
-              "m",
-              "Yes, I can."
+              "All right."
             ],
             [
               "n",
-              "Question: How old is Danny, and what can he do?"
+              "Question: What day is after Tuesday?"
             ]
           ],
           "id": 16,
@@ -356,35 +352,31 @@
         },
         {
           "type": "dialogue_choice",
-          "tag": "C微调·p3·人物与数字对应",
-          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p3，不作未掌握结论",
-          "question_text": "Who is thirteen?",
+          "tag": "A主线·p3-p6·星期与课堂指令",
+          "parent_note": "确认版教材p3-p6主线或不增加新知识的同语境受控重组",
+          "question_text": "What should they do on Tuesday?",
           "options": [
-            "Tracy.",
-            "Danny.",
-            "Sally."
+            "Read the story with a partner.",
+            "Open their books.",
+            "Use a red pencil."
           ],
           "answer": 0,
           "transcript": [
             [
               "m",
-              "This is Tracy."
+              "On Monday, open your books, please."
             ],
             [
               "f",
-              "I'm thirteen."
+              "All right, Mr Zhong."
             ],
             [
               "m",
-              "She can skip."
-            ],
-            [
-              "f",
-              "Yes, I can."
+              "On Tuesday, read the story with your partner."
             ],
             [
               "n",
-              "Question: Who is thirteen?"
+              "Question: What should they do on Tuesday?"
             ]
           ],
           "id": 17,
@@ -392,35 +384,35 @@
         },
         {
           "type": "dialogue_choice",
-          "tag": "A主线·p2·长对话取信息",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "question_text": "How old is Kitty's brother?",
+          "tag": "A主线·p4-p6·四轮星期学习情境",
+          "parent_note": "确认版教材p4-p6主线或不增加新知识的同语境受控重组",
+          "question_text": "What does the boy spell on Wednesday?",
           "options": [
-            "Six.",
-            "Twelve.",
-            "Thirteen."
+            "Book.",
+            "Weather.",
+            "Monday."
           ],
           "answer": 0,
           "transcript": [
             [
               "f",
-              "Sally is Kitty's sister."
+              "On Wednesday, how do you spell book?"
             ],
             [
               "m",
-              "Paul is Kitty's brother."
+              "B-o-o-k."
             ],
             [
               "f",
-              "Sally is twelve."
+              "Well done!"
             ],
             [
               "m",
-              "Paul is six."
+              "All right."
             ],
             [
               "n",
-              "Question: How old is Kitty's brother?"
+              "Question: What does the boy spell on Wednesday?"
             ]
           ],
           "id": 18,
@@ -428,35 +420,31 @@
         },
         {
           "type": "dialogue_choice",
-          "tag": "A主线·p3·跨句人物能力",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-          "question_text": "What can Peter's friend do?",
+          "tag": "A主线·p6·人物与星期对应",
+          "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
+          "question_text": "What is the girl's favourite day?",
           "options": [
-            "Ride a bicycle.",
-            "Skip.",
-            "Go to the park."
+            "Friday.",
+            "Sunday.",
+            "Saturday."
           ],
-          "answer": 0,
+          "answer": 1,
           "transcript": [
             [
               "m",
-              "Peter, this is my friend Tracy."
+              "My favourite day is Friday."
             ],
             [
               "f",
-              "She's thirteen and can skip."
+              "My favourite day is Sunday."
             ],
             [
               "m",
-              "My friend Danny is nine."
-            ],
-            [
-              "f",
-              "He can ride a bicycle."
+              "Sunday is after Saturday."
             ],
             [
               "n",
-              "Question: What can Peter's friend do?"
+              "Question: What is the girl's favourite day?"
             ]
           ],
           "id": 19,
@@ -464,39 +452,35 @@
         },
         {
           "type": "dialogue_choice",
-          "tag": "A主线·p2·长对话整合",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "question_text": "Who is going to the park?",
+          "tag": "A主线·p4-p6·四轮Starter整合",
+          "parent_note": "确认版教材p4-p6主线或不增加新知识的同语境受控重组",
+          "question_text": "What does the girl do on Friday?",
           "options": [
-            "Peter, Kitty, Sally and Paul.",
-            "Danny and Tracy.",
-            "Only Peter and Paul."
+            "She reads the story.",
+            "She uses a pencil.",
+            "She spells Monday."
           ],
           "answer": 0,
           "transcript": [
             [
               "f",
-              "Good morning, Kitty."
+              "On Thursday, this is my plan for English study."
             ],
             [
               "m",
-              "Good morning, Peter."
+              "Have a try!"
             ],
             [
               "f",
-              "This is Sally and this is Paul."
+              "On Friday, I read the story."
             ],
             [
               "m",
-              "Hi, Sally. Hi, Paul."
-            ],
-            [
-              "f",
-              "We are going to the park."
+              "Well done!"
             ],
             [
               "n",
-              "Question: Who is going to the park?"
+              "Question: What does the girl do on Friday?"
             ]
           ],
           "id": 20,
@@ -512,42 +496,42 @@
       "questions": [
         {
           "type": "passage_judge",
-          "tag": "A主线·p2-p3·陌生语境迁移",
-          "parent_note": "教材PDF p2-p3 主线或不增加新知识的同语境迁移",
-          "statement": "Sally, Paul, Danny and Tracy are in the passage.",
+          "tag": "A主线·p4-p6·星期与课堂活动",
+          "parent_note": "确认版教材p4-p6主线或不增加新知识的同语境受控重组",
+          "statement": "They open their books on Monday.",
           "answer": "true",
           "id": 21
         },
         {
           "type": "passage_judge",
-          "tag": "A主线·p2·跨句人物年龄",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "statement": "Sally is Kitty's sister, and she's six.",
+          "tag": "A主线·p5-p6·跨句星期活动对应",
+          "parent_note": "确认版教材p5-p6主线或不增加新知识的同语境受控重组",
+          "statement": "They spell book on Tuesday.",
           "answer": "false",
           "id": 22
         },
         {
           "type": "passage_judge",
-          "tag": "C微调·p2-p3·人物信息对应",
-          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p2-p3，不作未掌握结论",
-          "statement": "Danny is Peter's friend.",
+          "tag": "A主线·p5-p6·星期与鼓励表达",
+          "parent_note": "确认版教材p5-p6主线或不增加新知识的同语境受控重组",
+          "statement": "They say, Have a try, on Thursday.",
           "answer": "true",
           "id": 23
         },
         {
           "type": "passage_judge",
-          "tag": "A主线·p3·人物能力",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-          "statement": "Tracy can ride a bicycle.",
-          "answer": "false",
+          "tag": "A主线·p3-p6·人物星期对应",
+          "parent_note": "确认版教材p3-p6主线或不增加新知识的同语境受控重组",
+          "statement": "Miss Li says, Well done, on Friday.",
+          "answer": "true",
           "id": 24
         },
         {
           "type": "passage_judge",
-          "tag": "A主线·p2·人物关系",
-          "parent_note": "教材PDF p2 主线或不增加新知识的同语境迁移",
-          "statement": "Peter and Kitty are classmates.",
-          "answer": "true",
+          "tag": "A主线·p6·星期顺序综合",
+          "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
+          "statement": "Sunday is after Friday.",
+          "answer": "false",
           "id": 25
         }
       ],
@@ -556,7 +540,7 @@
       "passage_transcript": [
         [
           "n",
-          "Sally is Kitty's sister. She's twelve. Paul is Kitty's brother, and he's only six. Danny is Peter's friend. He's nine and can ride a bicycle. Tracy is Kitty's friend. She's thirteen and can skip. Peter and Kitty are classmates."
+          "This is our plan for English study. On Monday, we open our books. On Tuesday, we read the story with a partner. On Wednesday, we spell book. On Thursday, we say, Don't be afraid! Have a try! On Friday, Miss Li says, Well done! Saturday is after Friday. Sunday is after Saturday."
         ]
       ]
     }

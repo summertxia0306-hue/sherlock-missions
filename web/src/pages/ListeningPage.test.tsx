@@ -87,22 +87,31 @@ afterEach(() => {
 })
 
 describe('P2 listening page', () => {
-  it('shows the five-course formal window around the first incomplete migrated course', async () => {
-    const formalCatalog = parseListeningCatalog(Array.from({ length: 8 }, (_, index) => ({
-      course_id: `W01D${index + 39}`, course_version: `version-${index}`, title: `Course ${index + 39}`,
-      course_type: 'training', week: 5, day: index + 1, visible: true
-    })))
+  it('shows S50-equivalent legacy recommendation with two completed and two new-term courses after it', async () => {
+    const formalCatalog = parseListeningCatalog([
+      ...[48, 49, 50].map((day) => ({
+        course_id: `W01D${day}`, course_version: `version-${day}`, title: `Course ${day}`,
+        course_type: 'training', week: 6, day, visible: true
+      })),
+      ...[1, 2].map((day) => ({
+        course_id: `L4A-T1-W01-D0${day}`, course_version: `term-${day}`, title: `Starter ${day}`,
+        course_type: 'training', week: 1, day, visible: true,
+        pair_id: `4A-T1-W01-D0${day}`, study_pack: `4A-T1-W01-D0${day}`
+      }))
+    ])
     render(<MemoryRouter><ListeningPage api={api} sessionToken="formal-token" dataKind="formal"
-      completedCourseIds={new Set(['W01D39', 'W01D40', 'W01D41', 'W01D42', 'W01D43'])}
+      completedCourseIds={new Set(['W01D48', 'W01D49'])}
       loadCatalog={async () => formalCatalog} /></MemoryRouter>)
-    expect(await screen.findByText(/当前推荐.*W01D44/)).toBeInTheDocument()
+    expect(await screen.findByText(/当前推荐.*W01D50/)).toBeInTheDocument()
     const courseList = screen.getByRole('region', { name: '听力课程' })
-    for (const id of ['W01D42', 'W01D43', 'W01D44', 'W01D45', 'W01D46']) expect(within(courseList).getByText(new RegExp(id))).toBeInTheDocument()
+    for (const id of ['W01D48', 'W01D49', 'W01D50', 'L4A-T1-W01-D01', 'L4A-T1-W01-D02']) expect(within(courseList).getByText(new RegExp(id))).toBeInTheDocument()
     expect(screen.getAllByText('已完成')).toHaveLength(2)
     expect(screen.getAllByText('未完成')).toHaveLength(3)
     expect(within(courseList).getByText('推荐')).toBeInTheDocument()
-    expect(within(courseList).getByText('Course 42').closest('.course-row')).toHaveClass('course-completed')
-    expect(within(courseList).getByText('Course 44').closest('.course-row')).toHaveClass('course-recommended')
+    expect(within(courseList).getByText('Course 48').closest('.course-row')).toHaveClass('course-completed')
+    expect(within(courseList).getByText('Course 50').closest('.course-row')).toHaveClass('course-recommended')
+    expect(within(courseList).getByRole('button', { name: '推荐开始 W01D50' })).toBeEnabled()
+    expect(within(courseList).getByRole('button', { name: '开始 L4A-T1-W01-D01' })).toBeEnabled()
   })
 
   it('keeps legacy courses available in test without a formal recommendation badge', async () => {

@@ -71,7 +71,7 @@ describe('P2 listening child course contract', () => {
     expect(() => resolveAudioUrl('../secret', '/sherlock-english/')).toThrow()
   })
 
-  it('accepts a paired term course and keeps test-only entries out of formal recommendation', async () => {
+  it('orders a visible paired term course after W01D50 in the formal recommendation window', async () => {
     const termCourse = structuredClone(childCourse)
     termCourse.course_id = 'L4A-T1-W01-D01'
     Object.assign(termCourse, { pair_id: '4A-T1-W01-D01', study_pack: '4A-T1-W01-D01' })
@@ -86,11 +86,11 @@ describe('P2 listening child course contract', () => {
 
     const catalog = parseListeningCatalog([
       { course_id: 'W01D50', course_version: 'legacy-v', title: 'Summer', course_type: 'weekly_test', week: 6, day: 10, visible: true },
-      { course_id: 'L4A-T1-W01-D02', course_version: 'term-v2', title: 'Term 2', course_type: 'training', week: 1, day: 2, visible: false, pair_id: '4A-T1-W01-D02', study_pack: '4A-T1-W01-D02' },
-      { course_id: 'L4A-T1-W01-D01', course_version: 'term-v1', title: 'Term 1', course_type: 'training', week: 1, day: 1, visible: false, pair_id: '4A-T1-W01-D01', study_pack: '4A-T1-W01-D01' }
+      { course_id: 'L4A-T1-W01-D02', course_version: 'term-v2', title: 'Term 2', course_type: 'training', week: 1, day: 2, visible: true, pair_id: '4A-T1-W01-D02', study_pack: '4A-T1-W01-D02' },
+      { course_id: 'L4A-T1-W01-D01', course_version: 'term-v1', title: 'Term 1', course_type: 'training', week: 1, day: 1, visible: true, pair_id: '4A-T1-W01-D01', study_pack: '4A-T1-W01-D01' }
     ])
-    expect(catalog.window(new Set(['W01D50'])).map((item) => item.course_id)).toEqual(['W01D50'])
-    expect(catalog.firstFormalIncomplete(new Set(['W01D50']))).toBeUndefined()
+    expect(catalog.window(new Set(['W01D50'])).map((item) => item.course_id)).toEqual(['W01D50', 'L4A-T1-W01-D01', 'L4A-T1-W01-D02'])
+    expect(catalog.firstFormalIncomplete(new Set(['W01D50']))?.course_id).toBe('L4A-T1-W01-D01')
     expect(catalog.testCourses().map((item) => item.course_id)).toEqual(['W01D50', 'L4A-T1-W01-D01', 'L4A-T1-W01-D02'])
 
     const fetcher = async () => ({ ok: true, json: async () => termCourse } as Response)

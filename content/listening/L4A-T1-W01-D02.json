@@ -3,13 +3,13 @@
   "weekly_batch_id": "4A-T1-W01",
   "study_pack": "4A-T1-W01-D02",
   "pair_id": "4A-T1-W01-D02",
-  "publication_status": "test",
-  "title": "四上·第1周·周三｜介绍朋友·数字与能力（听力）",
+  "publication_status": "formal",
+  "title": "四上·Starter第2课｜在学校·听懂并回应（听力）",
   "week": 1,
   "day": 2,
   "course_type": "training",
-  "est_minutes": 17,
-  "scope": "4A M1U1 p2-p3",
+  "est_minutes": 12,
+  "scope": "4A Starter p2-p4",
   "difficulty": "L1",
   "scoring": {
     "per_question": 5,
@@ -31,18 +31,18 @@
       "questions": [
         {
           "type": "word_choice",
-          "tag": "A主线·p3·数字11-16",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p4·课堂用语听辨",
+          "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
           "options": [
-            "eleven",
-            "twelve",
-            "thirteen"
+            "quiet",
+            "pencil",
+            "partner"
           ],
           "answer": 0,
           "transcript": [
             [
               "n",
-              "eleven"
+              "quiet"
             ]
           ],
           "id": 1,
@@ -50,18 +50,18 @@
         },
         {
           "type": "word_choice",
-          "tag": "A主线·p3·数字11-16",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p4·课堂物品短语",
+          "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
           "options": [
-            "thirteen",
-            "twelve",
-            "fourteen"
+            "red pencil",
+            "open books",
+            "read the story"
           ],
-          "answer": 1,
+          "answer": 0,
           "transcript": [
             [
               "n",
-              "twelve"
+              "red pencil"
             ]
           ],
           "id": 2,
@@ -69,18 +69,18 @@
         },
         {
           "type": "word_choice",
-          "tag": "A主线·p3·数字11-16",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p4·课堂指令听辨",
+          "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
           "options": [
-            "fourteen",
-            "fifteen",
-            "thirteen"
+            "read the story",
+            "open your books",
+            "please be quiet"
           ],
-          "answer": 2,
+          "answer": 1,
           "transcript": [
             [
               "n",
-              "thirteen"
+              "open your books"
             ]
           ],
           "id": 3,
@@ -88,18 +88,18 @@
         },
         {
           "type": "word_choice",
-          "tag": "C微调·p3·听音选词数字辨别",
-          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p3，不作未掌握结论",
+          "tag": "C微调·p4·听音选词",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p4，不作未掌握结论",
           "options": [
-            "six",
-            "sixteen",
-            "fifteen"
+            "pencil",
+            "partner",
+            "story"
           ],
           "answer": 1,
           "transcript": [
             [
               "n",
-              "sixteen"
+              "partner"
             ]
           ],
           "id": 4,
@@ -115,14 +115,14 @@
       "questions": [
         {
           "type": "sentence_judge",
-          "tag": "A主线·p3·介绍朋友",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-          "display": "This is my friend.",
+          "tag": "A主线·p4·课堂指令",
+          "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
+          "display": "Please be quiet.",
           "answer": "same",
           "transcript": [
             [
               "n",
-              "This is my friend."
+              "Please be quiet."
             ]
           ],
           "id": 5,
@@ -130,14 +130,14 @@
         },
         {
           "type": "sentence_judge",
-          "tag": "C微调·p3·his-her辨别",
-          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p3，不作未掌握结论",
-          "display": "Her name is Danny.",
-          "answer": "different",
+          "tag": "A主线·p4·课堂请求",
+          "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
+          "display": "May I use your red pencil?",
+          "answer": "same",
           "transcript": [
             [
               "n",
-              "His name is Danny."
+              "May I use your red pencil?"
             ]
           ],
           "id": 6,
@@ -145,14 +145,14 @@
         },
         {
           "type": "sentence_judge",
-          "tag": "A主线·p3·年龄",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-          "display": "Danny is nine.",
-          "answer": "same",
+          "tag": "A主线·p4·相近课堂指令",
+          "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
+          "display": "Open your books, please.",
+          "answer": "different",
           "transcript": [
             [
               "n",
-              "Danny is nine."
+              "Read the story, please."
             ]
           ],
           "id": 7,
@@ -160,14 +160,14 @@
         },
         {
           "type": "sentence_judge",
-          "tag": "A主线·p3·能力表达",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-          "display": "Tracy can ride a bicycle.",
-          "answer": "different",
+          "tag": "A主线·p4·课堂指令",
+          "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
+          "display": "Read the story with your partner.",
+          "answer": "same",
           "transcript": [
             [
               "n",
-              "Tracy can skip."
+              "Read the story with your partner."
             ]
           ],
           "id": 8,
@@ -183,18 +183,18 @@
       "questions": [
         {
           "type": "question_response",
-          "tag": "A主线·p3·能力表达",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p4·请求与回应",
+          "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
           "options": [
-            "He can ride a bicycle.",
-            "She can skip.",
-            "He is nine."
+            "Here you are.",
+            "Please be quiet.",
+            "I win!"
           ],
           "answer": 0,
           "transcript": [
             [
               "n",
-              "What can Danny do?"
+              "May I use your red pencil?"
             ]
           ],
           "id": 9,
@@ -202,18 +202,18 @@
         },
         {
           "type": "question_response",
-          "tag": "A主线·p3·年龄",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "tag": "C微调·p4·听问句选答语",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p4，不作未掌握结论",
           "options": [
-            "She's thirteen.",
-            "He's nine.",
-            "She's twelve."
+            "All right, Miss Li.",
+            "Here you are.",
+            "I win!"
           ],
           "answer": 0,
           "transcript": [
             [
               "n",
-              "How old is Tracy?"
+              "Open your books, please."
             ]
           ],
           "id": 10,
@@ -221,18 +221,18 @@
         },
         {
           "type": "question_response",
-          "tag": "C微调·p3·听问句选答语与his",
-          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p3，不作未掌握结论",
+          "tag": "A主线·p4·指令与回应",
+          "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
           "options": [
-            "His name is Danny.",
-            "Her name is Tracy.",
-            "My name is Peter."
+            "All right, Miss Li.",
+            "May I use your red pencil?",
+            "Read the story with your partner."
           ],
           "answer": 0,
           "transcript": [
             [
               "n",
-              "What's his name?"
+              "Please be quiet."
             ]
           ],
           "id": 11,
@@ -240,18 +240,18 @@
         },
         {
           "type": "question_response",
-          "tag": "A主线·p3·能力表达",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
+          "tag": "A主线·p4·指令与回应",
+          "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
           "options": [
-            "She can skip.",
-            "He can ride a bicycle.",
-            "She's thirteen."
+            "All right, Miss Li.",
+            "Here you are.",
+            "Please be quiet."
           ],
           "answer": 0,
           "transcript": [
             [
               "n",
-              "What can she do?"
+              "Read the story with your partner."
             ]
           ],
           "id": 12,
@@ -267,27 +267,27 @@
       "questions": [
         {
           "type": "dialogue_choice",
-          "tag": "A主线·p2-p3·同语境数字迁移",
-          "parent_note": "教材PDF p2-p3 主线或不增加新知识的同语境迁移",
-          "question_text": "How old is Paul?",
+          "tag": "A主线·p4·课堂情境对应",
+          "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
+          "question_text": "What does the girl say?",
           "options": [
-            "Eleven.",
-            "Twelve.",
-            "Thirteen."
+            "Please be quiet.",
+            "Here you are.",
+            "Open your books, please."
           ],
           "answer": 0,
           "transcript": [
             [
-              "f",
-              "This is my friend, Paul."
+              "m",
+              "I win!"
             ],
             [
-              "m",
-              "I'm eleven."
+              "f",
+              "Please be quiet."
             ],
             [
               "n",
-              "Question: How old is Paul?"
+              "Question: What does the girl say?"
             ]
           ],
           "id": 13,
@@ -295,27 +295,27 @@
         },
         {
           "type": "dialogue_choice",
-          "tag": "A主线·p3·介绍朋友与能力",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-          "question_text": "What can Danny do?",
+          "tag": "A主线·p4·借用物品情境",
+          "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
+          "question_text": "What does the boy say?",
           "options": [
-            "Ride a bicycle.",
-            "Skip.",
-            "Go to the park."
+            "Here you are.",
+            "I win!",
+            "Please be quiet."
           ],
           "answer": 0,
           "transcript": [
             [
               "f",
-              "This is my friend."
+              "May I use your red pencil?"
             ],
             [
-              "f",
-              "His name is Danny. He can ride a bicycle."
+              "m",
+              "Here you are."
             ],
             [
               "n",
-              "Question: What can Danny do?"
+              "Question: What does the boy say?"
             ]
           ],
           "id": 14,
@@ -323,27 +323,27 @@
         },
         {
           "type": "dialogue_choice",
-          "tag": "A主线·p3·姓名年龄对应",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-          "question_text": "How old is Tracy?",
+          "tag": "A主线·p4·课堂指令取信息",
+          "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
+          "question_text": "What should they open?",
           "options": [
-            "Thirteen.",
-            "Twelve.",
-            "Sixteen."
+            "Their books.",
+            "The red pencil.",
+            "The story."
           ],
           "answer": 0,
           "transcript": [
             [
-              "m",
-              "What's her name?"
+              "f",
+              "Open your books, please."
             ],
             [
-              "f",
-              "Her name is Tracy. She's thirteen."
+              "m",
+              "All right, Miss Li."
             ],
             [
               "n",
-              "Question: How old is Tracy?"
+              "Question: What should they open?"
             ]
           ],
           "id": 15,
@@ -351,27 +351,27 @@
         },
         {
           "type": "dialogue_choice",
-          "tag": "A主线·p3·人物能力对应",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-          "question_text": "Who can skip?",
+          "tag": "A主线·p2-p4·课堂指令与人物角色",
+          "parent_note": "确认版教材p2-p4主线或不增加新知识的同语境受控重组",
+          "question_text": "Who should read with you?",
           "options": [
-            "Tracy.",
-            "Danny.",
-            "Peter."
+            "Your partner.",
+            "Mr Zhong.",
+            "Shenshen's mum."
           ],
           "answer": 0,
           "transcript": [
             [
               "f",
-              "Danny can ride a bicycle."
+              "Read the story with your partner."
             ],
             [
               "m",
-              "Tracy can skip."
+              "All right, Miss Li."
             ],
             [
               "n",
-              "Question: Who can skip?"
+              "Question: Who should read with you?"
             ]
           ],
           "id": 16,
@@ -387,34 +387,34 @@
       "questions": [
         {
           "type": "passage_judge",
-          "tag": "A主线·p2-p3·人物关系迁移",
-          "parent_note": "教材PDF p2-p3 主线或不增加新知识的同语境迁移",
-          "statement": "Tracy is Kitty's friend.",
+          "tag": "A主线·p2-p4·人物与课堂表达",
+          "parent_note": "确认版教材p2-p4主线或不增加新知识的同语境受控重组",
+          "statement": "Shenshen says, I win!",
           "answer": "true",
           "id": 17
         },
         {
           "type": "passage_judge",
-          "tag": "C微调·p2-p3·人物信息对应",
-          "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p2-p3，不作未掌握结论",
-          "statement": "Danny is Kitty's friend.",
+          "tag": "A主线·p3-p4·人物与请求对应",
+          "parent_note": "确认版教材p3-p4主线或不增加新知识的同语境受控重组",
+          "statement": "Miss Li asks for a red pencil.",
           "answer": "false",
           "id": 18
         },
         {
           "type": "passage_judge",
-          "tag": "A主线·p3·能力",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-          "statement": "Tracy can skip.",
+          "tag": "A主线·p3-p4·人物与回应对应",
+          "parent_note": "确认版教材p3-p4主线或不增加新知识的同语境受控重组",
+          "statement": "James says, Here you are.",
           "answer": "true",
           "id": 19
         },
         {
           "type": "passage_judge",
-          "tag": "A主线·p3·能力对应",
-          "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-          "statement": "Danny can skip.",
-          "answer": "false",
+          "tag": "A主线·p3-p4·跨句课堂指令",
+          "parent_note": "确认版教材p3-p4主线或不增加新知识的同语境受控重组",
+          "statement": "Miss Li asks them to read with a partner.",
+          "answer": "true",
           "id": 20
         }
       ],
@@ -423,7 +423,7 @@
       "passage_transcript": [
         [
           "n",
-          "This is Kitty's friend, Tracy. She's thirteen. She can skip. Danny is Peter's friend. He's nine. He can ride a bicycle."
+          "At school, Shenshen says, I win! Miss Li says, Please be quiet. Minmin asks, May I use your red pencil? James says, Here you are. Miss Li says, Open your books, please. Read the story with your partner. They say, All right, Miss Li."
         ]
       ]
     }

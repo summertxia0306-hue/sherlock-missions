@@ -3,82 +3,82 @@
   "weekly_batch_id": "4A-T1-W01",
   "study_pack": "4A-T1-W01-D02",
   "pair_id": "4A-T1-W01-D02",
-  "publication_status": "test",
-  "title": "四上·第1周·周三｜介绍朋友·数字与能力（口语）",
+  "publication_status": "formal",
+  "title": "四上·Starter第2课｜在学校·听懂并回应（口语）",
   "week": 1,
   "day": 2,
   "course_type": "training",
   "est_minutes": 8,
-  "scope": "4A M1U1 p2-p3",
+  "scope": "4A Starter p2-p4",
   "difficulty": "L1",
   "questions": [
     {
       "id": 1,
       "type": "repeat",
       "audio": "static/audio/speaking/S4A-T1-W01-D02/q01.mp3",
-      "tag": "A主线·p3·数字11-13",
-      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-      "text": "Eleven, twelve, thirteen."
+      "tag": "A主线·p4·课堂表达",
+      "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
+      "text": "I win!"
     },
     {
       "id": 2,
       "type": "repeat",
       "audio": "static/audio/speaking/S4A-T1-W01-D02/q02.mp3",
-      "tag": "A主线·p3·数字14-16",
-      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-      "text": "Fourteen, fifteen, sixteen."
+      "tag": "A主线·p4·课堂指令",
+      "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
+      "text": "Please be quiet."
     },
     {
       "id": 3,
       "type": "repeat",
       "audio": "static/audio/speaking/S4A-T1-W01-D02/q03.mp3",
-      "tag": "A主线·p3·介绍朋友",
-      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-      "text": "This is my friend."
+      "tag": "A主线·p4·课堂请求",
+      "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
+      "text": "May I use your red pencil?"
     },
     {
       "id": 4,
       "type": "repeat",
       "audio": "static/audio/speaking/S4A-T1-W01-D02/q04.mp3",
-      "tag": "C微调·p3·his-her稳定输出",
-      "parent_note": "00确认摘要轻量复测；语言材料仅取教材PDF p3，不作未掌握结论",
-      "text": "His name is Danny."
+      "tag": "A主线·p4·自然回应",
+      "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
+      "text": "Here you are."
     },
     {
       "id": 5,
       "type": "repeat",
       "audio": "static/audio/speaking/S4A-T1-W01-D02/q05.mp3",
-      "tag": "A主线·p3·能力表达",
-      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-      "text": "He can ride a bicycle."
+      "tag": "A主线·p4·课堂指令",
+      "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
+      "text": "Open your books, please."
     },
     {
       "id": 6,
       "type": "repeat",
       "audio": "static/audio/speaking/S4A-T1-W01-D02/q06.mp3",
-      "tag": "A主线·p3·能力表达",
-      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-      "text": "She can skip."
+      "tag": "A主线·p4·课堂指令",
+      "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
+      "text": "Read the story with your partner."
     },
     {
       "id": 7,
       "type": "qa",
       "audio": "static/audio/speaking/S4A-T1-W01-D02/q07.mp3",
-      "tag": "A主线·p3·固定答案问答",
-      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-      "question": "What's her name?",
-      "expected": "Her name is Tracy.",
-      "hint": "用英语说：她的名字叫 Tracy。"
+      "tag": "C微调·p4·听请求后准确回应",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p4，不作未掌握结论",
+      "question": "May I use your red pencil?",
+      "expected": "Here you are.",
+      "hint": "递给对方并回答：给你。"
     },
     {
       "id": 8,
       "type": "qa",
       "audio": "static/audio/speaking/S4A-T1-W01-D02/q08.mp3",
-      "tag": "A主线·p3·固定答案问答",
-      "parent_note": "教材PDF p3 主线或不增加新知识的同语境迁移",
-      "question": "How old is Tracy?",
-      "expected": "She's thirteen.",
-      "hint": "用英语说：她十三岁。"
+      "tag": "A主线·p4·听指令后回应",
+      "parent_note": "确认版教材p4主线或不增加新知识的同语境受控重组",
+      "question": "Open your books, please.",
+      "expected": "All right, Miss Li.",
+      "hint": "回答Miss Li：好的。"
     }
   ]
 }

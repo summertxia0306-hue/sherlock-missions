@@ -11,11 +11,17 @@ describe('generated listening assets', () => {
     const rawCatalog = JSON.parse(readFileSync(join(contentRoot, 'catalog.json'), 'utf8'))
     const catalog = parseListeningCatalog(rawCatalog)
     expect(catalog.courses.map((course) => course.course_id)).toEqual(
-      Array.from({ length: 12 }, (_, index) => `W01D${index + 39}`)
+      [
+        ...Array.from({ length: 12 }, (_, index) => `W01D${index + 39}`),
+        ...Array.from({ length: 5 }, (_, index) => `L4A-T1-W01-D0${index + 1}`)
+      ]
     )
     expect(catalog.testCourses().filter((course) => !course.visible)).toEqual([])
-    for (let day = 1; day <= 6; day += 1) {
-      expect(existsSync(join(contentRoot, `L4A-T1-W01-D0${day}.json`))).toBe(false)
+    for (let day = 1; day <= 5; day += 1) {
+      expect(existsSync(join(contentRoot, `L4A-T1-W01-D0${day}.json`))).toBe(true)
+    }
+    for (let day = 6; day <= 11; day += 1) {
+      expect(existsSync(join(contentRoot, `L4A-T1-W01-D${String(day).padStart(2, '0')}.json`))).toBe(false)
     }
     for (const entry of catalog.testCourses()) {
       const raw = readFileSync(join(contentRoot, `${entry.course_id}.json`), 'utf8')
@@ -31,7 +37,7 @@ describe('generated listening assets', () => {
       courses: Record<string, Record<string, string>>
     }
     const assets = Object.values(manifest.courses).flatMap((course) => Object.keys(course))
-    expect(assets).toHaveLength(216)
+    expect(assets).toHaveLength(310)
     for (const asset of assets) {
       const file = join(publicRoot, ...asset.split('/'))
       expect(existsSync(file), asset).toBe(true)

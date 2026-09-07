@@ -10,9 +10,9 @@ SPEAKING_DIR = ROOT / "content" / "speaking"
 DRAFT_DIR = ROOT / "content" / "drafts" / "4A-T1-W01-STARTER"
 DOC_DIR = ROOT / "docs" / "course-batches"
 
-LISTENING_IDS = [f"L4A-T1-W01-D{day:02d}" for day in range(7, 12)]
-SPEAKING_IDS = [f"S4A-T1-W01-D{day:02d}" for day in range(7, 12)]
-PAIR_IDS = [f"4A-T1-W01-D{day:02d}" for day in range(7, 12)]
+LISTENING_IDS = [f"L4A-T1-W01-D{day:02d}" for day in range(1, 6)]
+SPEAKING_IDS = [f"S4A-T1-W01-D{day:02d}" for day in range(1, 6)]
+PAIR_IDS = [f"4A-T1-W01-D{day:02d}" for day in range(1, 6)]
 QUESTION_COUNTS = [20, 20, 20, 20, 25]
 SCOPES = [
     "4A Starter p2-p3",
@@ -59,7 +59,7 @@ class StarterFivePackContentTests(unittest.TestCase):
         for course_id in SPEAKING_IDS:
             self.assertTrue((SPEAKING_DIR / f"{course_id}.json").is_file())
 
-    def test_ids_pairing_scope_and_hidden_test_status(self):
+    def test_ids_pairing_scope_and_formal_status(self):
         for index, (listening, speaking) in enumerate(zip(self.listening, self.speaking)):
             self.assertEqual(LISTENING_IDS[index], listening["course_id"])
             self.assertEqual(SPEAKING_IDS[index], speaking["course_id"])
@@ -67,7 +67,7 @@ class StarterFivePackContentTests(unittest.TestCase):
                 self.assertEqual("4A-T1-W01", course["weekly_batch_id"])
                 self.assertEqual(PAIR_IDS[index], course["study_pack"])
                 self.assertEqual(PAIR_IDS[index], course["pair_id"])
-                self.assertEqual("test", course["publication_status"])
+                self.assertEqual("formal", course["publication_status"])
                 self.assertEqual("training", course["course_type"])
                 self.assertEqual(SCOPES[index], course["scope"])
                 self.assertEqual(JSON_DIFFICULTIES[index], course["difficulty"])
@@ -130,6 +130,11 @@ class StarterFivePackContentTests(unittest.TestCase):
         for term in forbidden:
             self.assertNotIn(term, payload)
 
+    def test_obsolete_and_pre_migration_term_ids_are_absent(self):
+        for day in range(6, 12):
+            self.assertFalse((LISTENING_DIR / f"L4A-T1-W01-D{day:02d}.json").exists())
+            self.assertFalse((SPEAKING_DIR / f"S4A-T1-W01-D{day:02d}.json").exists())
+
     def test_study_packs_and_audio_plan_match_exactly(self):
         packs = load(DRAFT_DIR / "study-packs.json")
         self.assertEqual("4A-T1-W01", packs["weekly_batch_id"])
@@ -157,7 +162,7 @@ class StarterFivePackContentTests(unittest.TestCase):
             course_entries = manifest["courses"].get(item["course_id"], {})
             self.assertIn(path, course_entries, f"{item['course_id']}: {path}")
 
-    def test_generated_child_validation_copies_are_safe_and_hidden(self):
+    def test_generated_child_validation_copies_are_safe_and_visible(self):
         forbidden_listening = {"answer", "transcript", "passage_transcript", "tag", "parent_note"}
         forbidden_speaking = {"question", "expected", "tag", "parent_note", "scoring", "difficulty"}
         for module, ids, forbidden in (
@@ -166,7 +171,7 @@ class StarterFivePackContentTests(unittest.TestCase):
         ):
             catalog = load(DRAFT_DIR / "child" / module / "catalog.json")
             self.assertEqual(ids, [entry["course_id"] for entry in catalog])
-            self.assertTrue(all(entry["visible"] is False for entry in catalog))
+            self.assertTrue(all(entry["visible"] is True for entry in catalog))
             for course_id in ids:
                 child = load(DRAFT_DIR / "child" / module / f"{course_id}.json")
                 keys = set()
@@ -181,8 +186,8 @@ class StarterFivePackContentTests(unittest.TestCase):
                 self.assertFalse(keys & forbidden, f"{course_id}: {keys & forbidden}")
 
     def test_parent_and_mapping_documents_cover_all_courses(self):
-        mapping = (DOC_DIR / "2026-09-07-4A-Starter-D07-D11教材与课程映射.md").read_text(encoding="utf-8")
-        parent = (DOC_DIR / "2026-09-07-4A-Starter-D07-D11家长版答案原文.md").read_text(encoding="utf-8")
+        mapping = (DOC_DIR / "2026-09-07-4A-Starter-D01-D05教材与课程映射.md").read_text(encoding="utf-8")
+        parent = (DOC_DIR / "2026-09-07-4A-Starter-D01-D05家长版答案原文.md").read_text(encoding="utf-8")
         for course_id in LISTENING_IDS + SPEAKING_IDS:
             self.assertIn(course_id, mapping)
             self.assertIn(course_id, parent)
