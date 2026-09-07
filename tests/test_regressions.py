@@ -40,6 +40,7 @@ class RegressionTests(unittest.TestCase):
         self.assertEqual(2, len(sources))
         self.assertTrue(sources[0].startswith("https://cdn.jsdelivr.net/gh/"))
         self.assertTrue(sources[1].startswith("https://raw.githubusercontent.com/"))
+        self.assertTrue(all("5cc0978" in source for source in sources))
         self.assertTrue(sources[0].endswith(path))
         self.assertTrue(sources[1].endswith(path))
         self.assertEqual(sources[0], listening_audio.audio_url(path))
