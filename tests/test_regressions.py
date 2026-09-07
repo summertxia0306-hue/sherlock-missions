@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import base64
 import json
+from pathlib import Path
 import time
 import unittest
 from unittest import mock
@@ -25,6 +26,14 @@ class _Response:
 
 
 class RegressionTests(unittest.TestCase):
+    def test_recorder_capture_failures_restore_a_tappable_microphone(self):
+        html = (Path(recorder.__file__).parent / "frontend" / "index.html").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("function recoverCaptureFailure(msg)", html)
+        self.assertIn('recoverCaptureFailure("录音太短了，重新录一次吧")', html)
+        self.assertIn('recoverCaptureFailure("好像没有录到声音，再点一次话筒重试', html)
+
     def test_limited_audio_uses_cdn_with_raw_fallback(self):
         path = "static/audio/listening/W01D39/q13.mp3"
         sources = listening_audio.audio_sources(path)

@@ -46,6 +46,11 @@ function fail(msg){
   err.textContent = msg; err.style.display = "block";
   state = "idle"; render();
 }
+function recoverCaptureFailure(msg){
+  releaseStream();
+  freshMic();
+  fail(msg);
+}
 function render(){
   mic.classList.toggle("rec", state==="recording");
   mic.style.display = (state==="review") ? "none" : "";
@@ -110,14 +115,13 @@ function stopRecord(){
   var total=0; for(var i=0;i<chunks.length;i++) total+=chunks[i].length;
   var all=new Float32Array(total), off=0;
   for(var j=0;j<chunks.length;j++){ all.set(chunks[j], off); off+=chunks[j].length; }
-  if(all.length < inRate*0.4){ fail("录音太短了，重新录一次吧"); return; }
+  if(all.length < inRate*0.4){ recoverCaptureFailure("录音太短了，重新录一次吧"); return; }
   var peak=0;
   for(var k=0;k<all.length;k++){ var a=Math.abs(all[k]); if(a>peak) peak=a; }
   if(peak < 0.01){
-    releaseStream();  // 哑流释放，下一次点话筒自动换新流
-    fail("好像没有录到声音，再点一次话筒重试（会重新连接麦克风）"
-         + "〔调试: ctx=" + (ctx?ctx.state:"无") + " " + inRate + "Hz peak="
-         + peak.toFixed(4) + "〕");
+    recoverCaptureFailure("好像没有录到声音，再点一次话筒重试（会重新连接麦克风）"
+                          + "〔调试: ctx=" + (ctx?ctx.state:"无") + " " + inRate + "Hz peak="
+                          + peak.toFixed(4) + "〕");
     return;
   }
   var wav = encodeWav16k(all, inRate);
