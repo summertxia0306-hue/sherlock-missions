@@ -1,0 +1,447 @@
+{
+  "course_id": "L4A-T1-W01-D09",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D09",
+  "pair_id": "4A-T1-W01-D09",
+  "publication_status": "test",
+  "title": "四上·Starter第3课｜学习方法·勇敢尝试（听力）",
+  "week": 1,
+  "day": 9,
+  "course_type": "training",
+  "est_minutes": 17,
+  "scope": "4A Starter p2-p5",
+  "difficulty": "L2",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D09/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p5·学习表达听辨",
+          "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+          "options": [
+            "spell",
+            "plan",
+            "quiet"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "spell"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p5·拼写对象",
+          "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+          "options": [
+            "book",
+            "Weather",
+            "plan"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "book"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p4-p5·学习短语",
+          "parent_note": "确认版教材p4-p5主线或不增加新知识的同语境受控重组",
+          "options": [
+            "English study",
+            "red pencil",
+            "your partner"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "English study"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p5·听音选表达",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p5，不作未掌握结论",
+          "options": [
+            "Well done",
+            "Have a try",
+            "Keep quiet"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Have a try"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p5·拼写问句",
+          "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+          "display": "How do you spell book?",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "How do you spell book?"
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p5·鼓励表达",
+          "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+          "display": "Don't be afraid!",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Don't be afraid!"
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p5·学习计划",
+          "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+          "display": "This is my plan for English study.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "This is my plan for English study."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p5·表达目的辨别",
+          "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+          "display": "It's a good plan!",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Keep quiet, please."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p5·拼写问答",
+          "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+          "options": [
+            "B-o-o-k.",
+            "Weather.",
+            "Have a try!"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "How do you spell book?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p4-p5·情境鼓励",
+          "parent_note": "确认版教材p4-p5主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Don't be afraid! Have a try!",
+            "Keep quiet, please.",
+            "Here you are."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Your partner is afraid. What do you say?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p4-p5·听问句选恰当回应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p4-p5，不作未掌握结论",
+          "options": [
+            "Well done! It's a good plan!",
+            "May I use your red pencil?",
+            "Please be quiet."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What do you say about a good English study plan?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p4-p5·情境指令",
+          "parent_note": "确认版教材p4-p5主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Keep quiet, please.",
+            "B-o-o-k.",
+            "I win!"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What do you say when someone should be quiet?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p5·三轮拼写对话",
+          "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+          "question_text": "What does the boy spell?",
+          "options": [
+            "Book.",
+            "Weather.",
+            "Plan."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "How do you spell book?"
+            ],
+            [
+              "m",
+              "B-o-o-k."
+            ],
+            [
+              "f",
+              "Well done!"
+            ],
+            [
+              "n",
+              "Question: What does the boy spell?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p4-p5·三轮鼓励情境",
+          "parent_note": "确认版教材p4-p5主线或不增加新知识的同语境受控重组",
+          "question_text": "What does the girl say?",
+          "options": [
+            "She says, Have a try!",
+            "She says, May I use your pencil?",
+            "She says, Open your books, please."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "I am afraid."
+            ],
+            [
+              "f",
+              "Don't be afraid!"
+            ],
+            [
+              "f",
+              "Have a try!"
+            ],
+            [
+              "n",
+              "Question: What does the girl say?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p5·三轮信息整合",
+          "parent_note": "确认版教材p5主线或不增加新知识的同语境受控重组",
+          "question_text": "What does the boy think of the plan?",
+          "options": [
+            "It is good.",
+            "It is a red pencil.",
+            "It is quiet."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "This is my plan for English study."
+            ],
+            [
+              "m",
+              "Well done!"
+            ],
+            [
+              "m",
+              "It's a good plan!"
+            ],
+            [
+              "n",
+              "Question: What does the boy think of the plan?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p4-p5·前课螺旋复现",
+          "parent_note": "确认版教材p4-p5主线或不增加新知识的同语境受控重组",
+          "question_text": "What should the boy do?",
+          "options": [
+            "Be quiet.",
+            "Spell book.",
+            "Use a red pencil."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "I win!"
+            ],
+            [
+              "f",
+              "Please be quiet."
+            ],
+            [
+              "m",
+              "All right, Miss Li."
+            ],
+            [
+              "n",
+              "Question: What should the boy do?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p2-p5·学习计划取信息",
+          "parent_note": "确认版教材p2-p5主线或不增加新知识的同语境受控重组",
+          "statement": "Shenshen has a plan for English study.",
+          "answer": "true",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p3-p5·拼写内容对应",
+          "parent_note": "确认版教材p3-p5主线或不增加新知识的同语境受控重组",
+          "statement": "James spells Weather.",
+          "answer": "false",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p2-p5·跨句人物行为",
+          "parent_note": "确认版教材p2-p5主线或不增加新知识的同语境受控重组",
+          "statement": "Shenshen says, Have a try, to Minmin.",
+          "answer": "true",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p3-p5·人物与表达对应",
+          "parent_note": "确认版教材p3-p5主线或不增加新知识的同语境受控重组",
+          "statement": "Mr Zhong says, Keep quiet, please.",
+          "answer": "true",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D09/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "This is Shenshen's plan for English study. She asks, How do you spell book? James says, B-o-o-k. Minmin is afraid. Shenshen says, Don't be afraid! Have a try! Miss Li says, Well done! It's a good plan! Mr Zhong says, Keep quiet, please."
+        ]
+      ]
+    }
+  ]
+}

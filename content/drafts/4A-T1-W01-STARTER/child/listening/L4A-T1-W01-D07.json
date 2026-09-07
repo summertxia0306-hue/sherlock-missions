@@ -1,0 +1,224 @@
+{
+  "course_id": "L4A-T1-W01-D07",
+  "pair_id": "4A-T1-W01-D07",
+  "study_pack": "4A-T1-W01-D07",
+  "course_version": "9bdf9288b857a923",
+  "title": "四上·Starter第1课｜认识家人、朋友和老师（听力）",
+  "week": 1,
+  "day": 7,
+  "course_type": "training",
+  "est_minutes": 12,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D07/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "Shenshen",
+            "Xinxin",
+            "Xiaotian"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D07/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "Xiaojiang",
+            "Xiaopu",
+            "Minmin"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D07/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "Ms Yu",
+            "Miss Li",
+            "Mr Zhong"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D07/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "Mr Qian",
+            "Miss Li",
+            "Ms Yu"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D07/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "This is Shenshen and her family.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D07/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "This is Xiaopu and Xiaojiang.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D07/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "Lele is with Minmin and his family.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D07/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "Mr Zhong is a teacher.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D07/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "This is Shenshen's mum.",
+            "This is Shenshen's dad.",
+            "This is Shenshen's grandma."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D07/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "She is a teacher.",
+            "She is Shenshen's mum.",
+            "She is Minmin."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D07/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "Lele.",
+            "Max.",
+            "Mira."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D07/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "Xiaopu and Xiaojiang.",
+            "Yaoyao and James.",
+            "Ms Yu and Mr Qian."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D07/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "options": [
+            "Shenshen.",
+            "Minmin.",
+            "James."
+          ],
+          "question_text": "Who is with her family?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D07/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "options": [
+            "Xiaopu and Xiaojiang.",
+            "Yaoyao and James.",
+            "Ms Yu and Miss Li."
+          ],
+          "question_text": "Who are together?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D07/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "options": [
+            "Lele.",
+            "Mira.",
+            "Max."
+          ],
+          "question_text": "Who is with Minmin?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D07/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "Miss Li.",
+            "Xinxin.",
+            "Lele."
+          ],
+          "question_text": "Who is the teacher?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D07/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D07/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "Xinxin is with Shenshen and her family."
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "Xiaopu is with Minmin and his family."
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "Lele is with Minmin."
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "Mr Qian is a teacher."
+        }
+      ]
+    }
+  ]
+}

@@ -74,7 +74,17 @@ def frag_key(text):
     return hashlib.sha1(("%s|%s|%s" % (VOICE, text, RATE)).encode("utf-8")).hexdigest()[:16]
 
 
+def prefer_threaded_dns_on_windows():
+    """Use Windows' working system resolver when optional aiodns is broken."""
+    if os.name != "nt":
+        return
+    import aiohttp.connector
+    from aiohttp.resolver import ThreadedResolver
+    aiohttp.connector.DefaultResolver = ThreadedResolver
+
+
 async def synth(text, dest):
+    prefer_threaded_dns_on_windows()
     import edge_tts
     com = edge_tts.Communicate(text, VOICE, rate=RATE, proxy=PROXY)
     buf = bytearray()

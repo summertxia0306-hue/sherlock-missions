@@ -9,8 +9,8 @@ const { createFileSpeakingCourseProvider } = require('../speaking-service')
 it('publishes matching versions only for formal courses and keeps hidden term courses function-only', () => {
   const provider = createFileSpeakingCourseProvider()
   const catalog = provider.catalog()
-  assert.equal(catalog.length, 18)
-  assert.equal(catalog.filter((item) => item.visible === false).length, 6)
+  assert.equal(catalog.length, 23)
+  assert.equal(catalog.filter((item) => item.visible === false).length, 11)
   const publicDirectory = path.join(__dirname, '..', '..', '..', 'web', 'public', 'content', 'speaking')
   for (const item of catalog) {
     const publicFile = path.join(publicDirectory, `${item.course_id}.json`)

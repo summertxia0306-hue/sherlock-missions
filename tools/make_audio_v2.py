@@ -96,6 +96,22 @@ def frag_key(role, text):
     return hashlib.sha1(("%s|%s|%s" % (role, text, RATE)).encode("utf-8")).hexdigest()[:16]
 
 
+def prefer_threaded_dns_on_windows():
+    """Avoid the optional aiodns resolver when Windows system DNS still works.
+
+    Some Windows Python environments install aiodns through unrelated packages.
+    aiohttp then selects its c-ares based resolver automatically, which can fail
+    with "Could not contact DNS servers" even though socket.getaddrinfo works.
+    Edge TTS creates its own connector, so replacing aiohttp's connector default
+    before that happens is the smallest process-local fallback.
+    """
+    if os.name != "nt":
+        return
+    import aiohttp.connector
+    from aiohttp.resolver import ThreadedResolver
+    aiohttp.connector.DefaultResolver = ThreadedResolver
+
+
 def load_manifest():
     if os.path.isfile(MANIFEST_PATH):
         with open(MANIFEST_PATH, encoding="utf-8") as fh:
@@ -129,6 +145,7 @@ def collect_items(course):
 
 
 async def synth_fragment(role, text, dest):
+    prefer_threaded_dns_on_windows()
     import edge_tts
     com = edge_tts.Communicate(text, VOICES[role], rate=RATE, proxy=PROXY)
     buf = bytearray()

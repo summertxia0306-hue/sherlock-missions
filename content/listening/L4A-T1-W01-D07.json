@@ -1,0 +1,431 @@
+{
+  "course_id": "L4A-T1-W01-D07",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D07",
+  "pair_id": "4A-T1-W01-D07",
+  "publication_status": "test",
+  "title": "四上·Starter第1课｜认识家人、朋友和老师（听力）",
+  "week": 1,
+  "day": 7,
+  "course_type": "training",
+  "est_minutes": 12,
+  "scope": "4A Starter p2-p3",
+  "difficulty": "L1",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D07/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let's begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p2·教材人物直接识别",
+          "parent_note": "确认版教材p2主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Shenshen",
+            "Xinxin",
+            "Xiaotian"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Shenshen"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D07/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p2-p3·教材人物直接识别",
+          "parent_note": "确认版教材p2-p3主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Xiaojiang",
+            "Xiaopu",
+            "Minmin"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Xiaopu"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D07/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p3·老师称谓与姓名",
+          "parent_note": "确认版教材p3主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Ms Yu",
+            "Miss Li",
+            "Mr Zhong"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Miss Li"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D07/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p3·听音选词与称谓辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p3，不作未掌握结论",
+          "options": [
+            "Mr Qian",
+            "Miss Li",
+            "Ms Yu"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Mr Qian"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D07/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p2·家庭分组",
+          "parent_note": "确认版教材p2主线或不增加新知识的同语境受控重组",
+          "display": "This is Shenshen and her family.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "This is Shenshen and her family."
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D07/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p2·人物组合",
+          "parent_note": "确认版教材p2主线或不增加新知识的同语境受控重组",
+          "display": "This is Xiaopu and Xiaojiang.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "This is Xiaopu and Xiaojiang."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D07/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p3·家庭人物对应",
+          "parent_note": "确认版教材p3主线或不增加新知识的同语境受控重组",
+          "display": "Lele is with Minmin and his family.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Lele is with Minmin and his family."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D07/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p3·老师姓名辨别",
+          "parent_note": "确认版教材p3主线或不增加新知识的同语境受控重组",
+          "display": "Mr Zhong is a teacher.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Mr Qian is a teacher."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D07/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p2·家庭称谓问答",
+          "parent_note": "确认版教材p2主线或不增加新知识的同语境受控重组",
+          "options": [
+            "This is Shenshen's mum.",
+            "This is Shenshen's dad.",
+            "This is Shenshen's grandma."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who is Shenshen's mum?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D07/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p2-p3·听问句选答语与人物称谓",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p2-p3，不作未掌握结论",
+          "options": [
+            "She is a teacher.",
+            "She is Shenshen's mum.",
+            "She is Minmin."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who is Miss Li?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D07/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p2-p3·人物信息对应",
+          "parent_note": "确认版教材p2-p3主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Lele.",
+            "Max.",
+            "Mira."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who is with Minmin and his family?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D07/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p2-p3·家庭分组对应",
+          "parent_note": "确认版教材p2-p3主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Xiaopu and Xiaojiang.",
+            "Yaoyao and James.",
+            "Ms Yu and Mr Qian."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who are in the same family group?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D07/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p2·家庭人物识别",
+          "parent_note": "确认版教材p2主线或不增加新知识的同语境受控重组",
+          "question_text": "Who is with her family?",
+          "options": [
+            "Shenshen.",
+            "Minmin.",
+            "James."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "This is Shenshen and her family."
+            ],
+            [
+              "m",
+              "Hello, Shenshen."
+            ],
+            [
+              "n",
+              "Question: Who is with her family?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D07/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p2-p3·人物组合对应",
+          "parent_note": "确认版教材p2-p3主线或不增加新知识的同语境受控重组",
+          "question_text": "Who are together?",
+          "options": [
+            "Xiaopu and Xiaojiang.",
+            "Yaoyao and James.",
+            "Ms Yu and Miss Li."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "This is Xiaopu and Xiaojiang."
+            ],
+            [
+              "m",
+              "They are with their family."
+            ],
+            [
+              "n",
+              "Question: Who are together?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D07/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p3·家庭人物对应",
+          "parent_note": "确认版教材p3主线或不增加新知识的同语境受控重组",
+          "question_text": "Who is with Minmin?",
+          "options": [
+            "Lele.",
+            "Mira.",
+            "Max."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "This is Minmin and his family."
+            ],
+            [
+              "m",
+              "Lele is with Minmin."
+            ],
+            [
+              "n",
+              "Question: Who is with Minmin?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D07/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p3·老师人物对应",
+          "parent_note": "确认版教材p3主线或不增加新知识的同语境受控重组",
+          "question_text": "Who is the teacher?",
+          "options": [
+            "Miss Li.",
+            "Xinxin.",
+            "Lele."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "This is Miss Li."
+            ],
+            [
+              "m",
+              "She is a teacher."
+            ],
+            [
+              "n",
+              "Question: Who is the teacher?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D07/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p2·家庭人物提取",
+          "parent_note": "确认版教材p2主线或不增加新知识的同语境受控重组",
+          "statement": "Xinxin is with Shenshen and her family.",
+          "answer": "true",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p2-p3·跨组人物判断",
+          "parent_note": "确认版教材p2-p3主线或不增加新知识的同语境受控重组",
+          "statement": "Xiaopu is with Minmin and his family.",
+          "answer": "false",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p3·家庭人物提取",
+          "parent_note": "确认版教材p3主线或不增加新知识的同语境受控重组",
+          "statement": "Lele is with Minmin.",
+          "answer": "true",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p3·老师信息提取",
+          "parent_note": "确认版教材p3主线或不增加新知识的同语境受控重组",
+          "statement": "Mr Qian is a teacher.",
+          "answer": "true",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D07/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "This is Shenshen and her family. Grandma, Grandpa, Dad, Mum, Mira and Xinxin are with Shenshen. This is Xiaopu, Xiaojiang and their family. This is Minmin and his family. Lele is with Minmin. Ms Yu, Miss Li, Mr Zhong and Mr Qian are teachers."
+        ]
+      ]
+    }
+  ]
+}

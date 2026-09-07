@@ -1,0 +1,57 @@
+[
+  {
+    "course_id": "S4A-T1-W01-D07",
+    "course_version": "d7e9271a6e41ab03",
+    "title": "四上·Starter第1课｜认识家人、朋友和老师（口语）",
+    "course_type": "training",
+    "week": 1,
+    "day": 7,
+    "visible": false,
+    "pair_id": "4A-T1-W01-D07",
+    "study_pack": "4A-T1-W01-D07"
+  },
+  {
+    "course_id": "S4A-T1-W01-D08",
+    "course_version": "88c9977f49619cd7",
+    "title": "四上·Starter第2课｜在学校·听懂并回应（口语）",
+    "course_type": "training",
+    "week": 1,
+    "day": 8,
+    "visible": false,
+    "pair_id": "4A-T1-W01-D08",
+    "study_pack": "4A-T1-W01-D08"
+  },
+  {
+    "course_id": "S4A-T1-W01-D09",
+    "course_version": "564e4dfcbc8f820a",
+    "title": "四上·Starter第3课｜学习方法·勇敢尝试（口语）",
+    "course_type": "training",
+    "week": 1,
+    "day": 9,
+    "visible": false,
+    "pair_id": "4A-T1-W01-D09",
+    "study_pack": "4A-T1-W01-D09"
+  },
+  {
+    "course_id": "S4A-T1-W01-D10",
+    "course_version": "921f1c11612f9cde",
+    "title": "四上·Starter第4课｜数字20–100·准确听辨（口语）",
+    "course_type": "training",
+    "week": 1,
+    "day": 10,
+    "visible": false,
+    "pair_id": "4A-T1-W01-D10",
+    "study_pack": "4A-T1-W01-D10"
+  },
+  {
+    "course_id": "S4A-T1-W01-D11",
+    "course_version": "22f9b760cff797be",
+    "title": "四上·Starter第5课｜星期表达·Starter综合（口语）",
+    "course_type": "training",
+    "week": 1,
+    "day": 11,
+    "visible": false,
+    "pair_id": "4A-T1-W01-D11",
+    "study_pack": "4A-T1-W01-D11"
+  }
+]

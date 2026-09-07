@@ -1,0 +1,266 @@
+{
+  "course_id": "L4A-T1-W01-D11",
+  "pair_id": "4A-T1-W01-D11",
+  "study_pack": "4A-T1-W01-D11",
+  "course_version": "c3cfabc248a972b5",
+  "title": "四上·Starter第5课｜星期表达·Starter综合（听力）",
+  "week": 1,
+  "day": 11,
+  "course_type": "training",
+  "est_minutes": 22,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D11/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Sunday"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "Saturday",
+            "Sunday",
+            "Monday"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q04.mp3"
+        },
+        {
+          "id": 5,
+          "type": "word_choice",
+          "options": [
+            "Tuesday",
+            "Thursday",
+            "Friday"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 1,
+      "questions": [
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "Tuesday is after Monday.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "Friday is after Thursday.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "Sunday is after Saturday.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q08.mp3"
+        },
+        {
+          "id": 9,
+          "type": "sentence_judge",
+          "display": "My favourite day is Wednesday.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "sentence_judge",
+          "display": "On Tuesday, we read the story with a partner.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "Tuesday.",
+            "Sunday.",
+            "Friday."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "Monday.",
+            "Wednesday.",
+            "Thursday."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q12.mp3"
+        },
+        {
+          "id": 13,
+          "type": "question_response",
+          "options": [
+            "Thursday.",
+            "Saturday.",
+            "Sunday."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "question_response",
+          "options": [
+            "Sunday.",
+            "Monday.",
+            "Friday."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "question_response",
+          "options": [
+            "Sunday.",
+            "Saturday.",
+            "Monday."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "Wednesday.",
+            "Thursday.",
+            "Monday."
+          ],
+          "question_text": "What day is after Tuesday?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q16.mp3"
+        },
+        {
+          "id": 17,
+          "type": "dialogue_choice",
+          "options": [
+            "Read the story with a partner.",
+            "Open their books.",
+            "Use a red pencil."
+          ],
+          "question_text": "What should they do on Tuesday?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q17.mp3"
+        },
+        {
+          "id": 18,
+          "type": "dialogue_choice",
+          "options": [
+            "Book.",
+            "Weather.",
+            "Monday."
+          ],
+          "question_text": "What does the boy spell on Wednesday?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q18.mp3"
+        },
+        {
+          "id": 19,
+          "type": "dialogue_choice",
+          "options": [
+            "Friday.",
+            "Sunday.",
+            "Saturday."
+          ],
+          "question_text": "What is the girl's favourite day?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q19.mp3"
+        },
+        {
+          "id": 20,
+          "type": "dialogue_choice",
+          "options": [
+            "She reads the story.",
+            "She uses a pencil.",
+            "She spells Monday."
+          ],
+          "question_text": "What does the girl do on Friday?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D11/p01.mp3",
+      "questions": [
+        {
+          "id": 21,
+          "type": "passage_judge",
+          "statement": "They open their books on Monday."
+        },
+        {
+          "id": 22,
+          "type": "passage_judge",
+          "statement": "They spell book on Tuesday."
+        },
+        {
+          "id": 23,
+          "type": "passage_judge",
+          "statement": "They say, Have a try, on Thursday."
+        },
+        {
+          "id": 24,
+          "type": "passage_judge",
+          "statement": "Miss Li says, Well done, on Friday."
+        },
+        {
+          "id": 25,
+          "type": "passage_judge",
+          "statement": "Sunday is after Friday."
+        }
+      ]
+    }
+  ]
+}

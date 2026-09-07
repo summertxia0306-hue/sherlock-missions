@@ -1,0 +1,1850 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "generation_status": "READY_TO_GENERATE",
+  "publication_status": "test",
+  "expected_listening_outputs": 94,
+  "expected_speaking_outputs": 40,
+  "expected_total_outputs": 134,
+  "items": [
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D07/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let's begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "Shenshen"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "Xiaopu"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "Miss Li"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "Mr Qian"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "This is Shenshen and her family."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "This is Xiaopu and Xiaojiang."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Lele is with Minmin and his family."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Mr Qian is a teacher."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Who is Shenshen's mum?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Who is Miss Li?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Who is with Minmin and his family?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Who are in the same family group?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "This is Shenshen and her family."
+        ],
+        [
+          "m",
+          "Hello, Shenshen."
+        ],
+        [
+          "n",
+          "Question: Who is with her family?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q14.mp3",
+      "clips": [
+        [
+          "f",
+          "This is Xiaopu and Xiaojiang."
+        ],
+        [
+          "m",
+          "They are with their family."
+        ],
+        [
+          "n",
+          "Question: Who are together?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "This is Minmin and his family."
+        ],
+        [
+          "m",
+          "Lele is with Minmin."
+        ],
+        [
+          "n",
+          "Question: Who is with Minmin?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "This is Miss Li."
+        ],
+        [
+          "m",
+          "She is a teacher."
+        ],
+        [
+          "n",
+          "Question: Who is the teacher?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D07/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "This is Shenshen and her family. Grandma, Grandpa, Dad, Mum, Mira and Xinxin are with Shenshen. This is Xiaopu, Xiaojiang and their family. This is Minmin and his family. Lele is with Minmin. Ms Yu, Miss Li, Mr Zhong and Mr Qian are teachers."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D08/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let's begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "quiet"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "red pencil"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "open your books"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "partner"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "Please be quiet."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "May I use your red pencil?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Read the story, please."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Read the story with your partner."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "May I use your red pencil?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Open your books, please."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Please be quiet."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Read the story with your partner."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q13.mp3",
+      "clips": [
+        [
+          "m",
+          "I win!"
+        ],
+        [
+          "f",
+          "Please be quiet."
+        ],
+        [
+          "n",
+          "Question: What does the girl say?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q14.mp3",
+      "clips": [
+        [
+          "f",
+          "May I use your red pencil?"
+        ],
+        [
+          "m",
+          "Here you are."
+        ],
+        [
+          "n",
+          "Question: What does the boy say?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "Open your books, please."
+        ],
+        [
+          "m",
+          "All right, Miss Li."
+        ],
+        [
+          "n",
+          "Question: What should they open?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "Read the story with your partner."
+        ],
+        [
+          "m",
+          "All right, Miss Li."
+        ],
+        [
+          "n",
+          "Question: Who should read with you?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D08/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "At school, Shenshen says, I win! Miss Li says, Please be quiet. Minmin asks, May I use your red pencil? James says, Here you are. Miss Li says, Open your books, please. Read the story with your partner. They say, All right, Miss Li."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D09/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let's begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "spell"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "book"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "English study"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "Have a try"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "How do you spell book?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Don't be afraid!"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "This is my plan for English study."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Keep quiet, please."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "How do you spell book?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Your partner is afraid. What do you say?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What do you say about a good English study plan?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What do you say when someone should be quiet?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "How do you spell book?"
+        ],
+        [
+          "m",
+          "B-o-o-k."
+        ],
+        [
+          "f",
+          "Well done!"
+        ],
+        [
+          "n",
+          "Question: What does the boy spell?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q14.mp3",
+      "clips": [
+        [
+          "m",
+          "I am afraid."
+        ],
+        [
+          "f",
+          "Don't be afraid!"
+        ],
+        [
+          "f",
+          "Have a try!"
+        ],
+        [
+          "n",
+          "Question: What does the girl say?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "This is my plan for English study."
+        ],
+        [
+          "m",
+          "Well done!"
+        ],
+        [
+          "m",
+          "It's a good plan!"
+        ],
+        [
+          "n",
+          "Question: What does the boy think of the plan?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q16.mp3",
+      "clips": [
+        [
+          "m",
+          "I win!"
+        ],
+        [
+          "f",
+          "Please be quiet."
+        ],
+        [
+          "m",
+          "All right, Miss Li."
+        ],
+        [
+          "n",
+          "Question: What should the boy do?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D09/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "This is Shenshen's plan for English study. She asks, How do you spell book? James says, B-o-o-k. Minmin is afraid. Shenshen says, Don't be afraid! Have a try! Miss Li says, Well done! It's a good plan! Mr Zhong says, Keep quiet, please."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D10/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let's begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "twenty-four"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "sixty"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "twenty-six"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "forty"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "twenty-eight"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "twenty-seven"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "one hundred"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "fifty"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "There are twenty-four girls. How many girls are there?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "There are twenty-six boys. How many boys are there?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "The number is eighty. What is the number?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "The number is one hundred. What is the number?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "How many girls are there?"
+        ],
+        [
+          "m",
+          "There are twenty-four girls."
+        ],
+        [
+          "f",
+          "Twenty-four. All right."
+        ],
+        [
+          "n",
+          "Question: How many girls are there?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q14.mp3",
+      "clips": [
+        [
+          "m",
+          "How many boys are there?"
+        ],
+        [
+          "f",
+          "There are twenty-six boys."
+        ],
+        [
+          "m",
+          "Twenty-six. Well done!"
+        ],
+        [
+          "n",
+          "Question: How many boys are there?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "Please say the number."
+        ],
+        [
+          "m",
+          "Forty."
+        ],
+        [
+          "f",
+          "Please say the number after forty."
+        ],
+        [
+          "m",
+          "Fifty."
+        ],
+        [
+          "n",
+          "Question: What number does the boy say after forty?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q16.mp3",
+      "clips": [
+        [
+          "m",
+          "Eighty."
+        ],
+        [
+          "f",
+          "Ninety."
+        ],
+        [
+          "m",
+          "One hundred."
+        ],
+        [
+          "n",
+          "Question: What number does the boy say after ninety?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D10/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "There are twenty-four girls and twenty-six boys in a class. Miss Li says forty. Mr Zhong says sixty. Ms Yu says eighty. Mr Qian says one hundred."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D11/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let's begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "Monday"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "Wednesday"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "Friday"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "Sunday"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "Thursday"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Tuesday is after Monday."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Saturday is after Thursday."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Sunday is after Saturday."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "My favourite day is Friday."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "On Tuesday, we read the story with a partner."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What day is after Monday?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What day is after Tuesday?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q13.mp3",
+      "clips": [
+        [
+          "n",
+          "What day is after Friday?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q14.mp3",
+      "clips": [
+        [
+          "n",
+          "What day is after Saturday?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q15.mp3",
+      "clips": [
+        [
+          "n",
+          "Shenshen says, My favourite day is Sunday. What is Shenshen's favourite day?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "What day is after Tuesday?"
+        ],
+        [
+          "m",
+          "Wednesday."
+        ],
+        [
+          "f",
+          "All right."
+        ],
+        [
+          "n",
+          "Question: What day is after Tuesday?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_17",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q17.mp3",
+      "clips": [
+        [
+          "m",
+          "On Monday, open your books, please."
+        ],
+        [
+          "f",
+          "All right, Mr Zhong."
+        ],
+        [
+          "m",
+          "On Tuesday, read the story with your partner."
+        ],
+        [
+          "n",
+          "Question: What should they do on Tuesday?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_18",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q18.mp3",
+      "clips": [
+        [
+          "f",
+          "On Wednesday, how do you spell book?"
+        ],
+        [
+          "m",
+          "B-o-o-k."
+        ],
+        [
+          "f",
+          "Well done!"
+        ],
+        [
+          "m",
+          "All right."
+        ],
+        [
+          "n",
+          "Question: What does the boy spell on Wednesday?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_19",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q19.mp3",
+      "clips": [
+        [
+          "m",
+          "My favourite day is Friday."
+        ],
+        [
+          "f",
+          "My favourite day is Sunday."
+        ],
+        [
+          "m",
+          "Sunday is after Saturday."
+        ],
+        [
+          "n",
+          "Question: What is the girl's favourite day?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "question_20",
+      "path": "static/audio/listening/L4A-T1-W01-D11/q20.mp3",
+      "clips": [
+        [
+          "f",
+          "On Thursday, this is my plan for English study."
+        ],
+        [
+          "m",
+          "Have a try!"
+        ],
+        [
+          "f",
+          "On Friday, I read the story."
+        ],
+        [
+          "m",
+          "Well done!"
+        ],
+        [
+          "n",
+          "Question: What does the girl do on Friday?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D11",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D11/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "This is our plan for English study. On Monday, we open our books. On Tuesday, we read the story with a partner. On Wednesday, we spell book. On Thursday, we say, Don't be afraid! Have a try! On Friday, Miss Li says, Well done! Saturday is after Friday. Sunday is after Saturday."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D07",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D07/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "This is Shenshen."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D07",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D07/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "This is Shenshen and her family."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D07",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D07/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "This is Xiaopu and Xiaojiang."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D07",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D07/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "Lele is with Minmin and his family."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D07",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D07/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "Ms Yu is a teacher."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D07",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D07/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Mr Zhong is a teacher."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D07",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D07/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Is Miss Li a teacher?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D07",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D07/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Who is Shenshen's mum?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D08",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D08/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "I win!"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D08",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D08/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "Please be quiet."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D08",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D08/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "May I use your red pencil?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D08",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D08/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "Here you are."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D08",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D08/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "Open your books, please."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D08",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D08/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Read the story with your partner."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D08",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D08/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "May I use your red pencil?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D08",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D08/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Open your books, please."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D09",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D09/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "How do you spell book?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D09",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D09/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "B-o-o-k."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D09",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D09/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "Don't be afraid!"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D09",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D09/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "Have a try!"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D09",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D09/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "This is my plan for English study."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D09",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D09/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Well done! It's a good plan!"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D09",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D09/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "How do you spell book?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D09",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D09/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Your friend is afraid. What do you say?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D10",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D10/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "Twenty, twenty-one, twenty-two."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D10",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D10/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "Twenty-three, twenty-four, twenty-five."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D10",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D10/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "Twenty-six, twenty-seven, twenty-eight, twenty-nine."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D10",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D10/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "Thirty, forty, fifty."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D10",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D10/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "Sixty, seventy, eighty, ninety."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D10",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D10/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "One hundred."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D10",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D10/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "There are twenty-four girls. How many girls are there?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D10",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D10/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "There are twenty-six boys. How many boys are there?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D11",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D11/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "Monday, Tuesday, Wednesday."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D11",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D11/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "Thursday, Friday, Saturday, Sunday."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D11",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D11/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "Tuesday is after Monday."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D11",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D11/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "Sunday is after Saturday."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D11",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D11/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "My favourite day is Sunday."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D11",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D11/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "On Tuesday, read the story with your partner."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D11",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D11/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "What day is after Tuesday?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D11",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D11/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "What day is after Saturday?"
+        ]
+      ]
+    }
+  ]
+}

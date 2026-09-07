@@ -1,0 +1,61 @@
+{
+  "course_id": "S4A-T1-W01-D07",
+  "pair_id": "4A-T1-W01-D07",
+  "study_pack": "4A-T1-W01-D07",
+  "course_version": "d7e9271a6e41ab03",
+  "title": "四上·Starter第1课｜认识家人、朋友和老师（口语）",
+  "week": 1,
+  "day": 7,
+  "course_type": "training",
+  "est_minutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "This is Shenshen.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D07/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "This is Shenshen and her family.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D07/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "This is Xiaopu and Xiaojiang.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D07/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Lele is with Minmin and his family.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D07/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "Ms Yu is a teacher.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D07/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Mr Zhong is a teacher.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D07/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "回答：是的，Miss Li是一位老师。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D07/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "回答：这是Shenshen的妈妈。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D07/q08.mp3"
+    }
+  ]
+}

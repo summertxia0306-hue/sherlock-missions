@@ -2687,6 +2687,816 @@
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
    "text": "Peter and Kitty are going to the park. Sally is Kitty's sister, and Paul is Kitty's brother. Sally is twelve, and Paul is only six. Danny is Peter's friend. Danny is nine and can ride a bicycle. Tracy is Kitty's friend. Tracy is thirteen and can skip. Peter and Kitty are classmates."
+  },
+  "e2dd480839865132": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Shenshen"
+  },
+  "9cc07039f96df593": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Xiaopu"
+  },
+  "0b5580554c787ad2": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Miss Li"
+  },
+  "dfb3c5d899159e11": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Mr Qian"
+  },
+  "bc64a894087eefb2": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is Shenshen and her family."
+  },
+  "3923813244a65fd4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is Xiaopu and Xiaojiang."
+  },
+  "9a8dfd5245e5cc9d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Lele is with Minmin and his family."
+  },
+  "c814166e2e4a7481": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Mr Qian is a teacher."
+  },
+  "1d40c0f35cc9e83c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who is Shenshen's mum?"
+  },
+  "7aceb5a481379f4e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who is Miss Li?"
+  },
+  "895e10d10ce78890": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who is with Minmin and his family?"
+  },
+  "2799d8ccb5a4dea3": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who are in the same family group?"
+  },
+  "68462e4640819285": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "This is Shenshen and her family."
+  },
+  "3edfdb57a5d6b8bc": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Hello, Shenshen."
+  },
+  "e96e2a20af1dbf56": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who is with her family?"
+  },
+  "b3e7b7cd784162b5": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "This is Xiaopu and Xiaojiang."
+  },
+  "1f49dd296f7656e7": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "They are with their family."
+  },
+  "a63877b4e63dc471": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who are together?"
+  },
+  "791fbc69e81b5280": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "This is Minmin and his family."
+  },
+  "84e0dc6d208b18bf": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Lele is with Minmin."
+  },
+  "9cf7b1f367c747cd": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who is with Minmin?"
+  },
+  "1fe830f4be5e9973": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "This is Miss Li."
+  },
+  "7b52c68db0560dcd": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "She is a teacher."
+  },
+  "88e1c012b38d9769": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who is the teacher?"
+  },
+  "47ebde559409cbbe": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is Shenshen and her family. Grandma, Grandpa, Dad, Mum, Mira and Xinxin are with Shenshen. This is Xiaopu, Xiaojiang and their family. This is Minmin and his family. Lele is with Minmin. Ms Yu, Miss Li, Mr Zhong and Mr Qian are teachers."
+  },
+  "d57a5d30d423013d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "quiet"
+  },
+  "ca3c5b5332fb5e9a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "red pencil"
+  },
+  "a2db8dc3d2e76f1a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "open your books"
+  },
+  "0b9cc0bd5c7d5636": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "partner"
+  },
+  "8f1f77fe963a6fef": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Please be quiet."
+  },
+  "51de0cc6bf2da421": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "May I use your red pencil?"
+  },
+  "561ec8030079d08c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Read the story, please."
+  },
+  "2ee59792e76f1377": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Read the story with your partner."
+  },
+  "8e2c679a3c784f5a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Open your books, please."
+  },
+  "09f565508a8990ab": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "I win!"
+  },
+  "fd0daa7bc90dc527": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Please be quiet."
+  },
+  "eea34a5a90f99f6b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does the girl say?"
+  },
+  "edb0cc69e9642806": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "May I use your red pencil?"
+  },
+  "f802b162505e68a5": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Here you are."
+  },
+  "644600b784243609": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does the boy say?"
+  },
+  "5dc7441a79e21d1c": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Open your books, please."
+  },
+  "f493be13ccddb108": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "All right, Miss Li."
+  },
+  "f2b38643fa80c317": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What should they open?"
+  },
+  "46dfb475dc155b8b": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Read the story with your partner."
+  },
+  "b5d361cf6f3ca3b1": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who should read with you?"
+  },
+  "b43ee49f917f21fe": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "At school, Shenshen says, I win! Miss Li says, Please be quiet. Minmin asks, May I use your red pencil? James says, Here you are. Miss Li says, Open your books, please. Read the story with your partner. They say, All right, Miss Li."
+  },
+  "16c2a7c0e4c7dc41": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "spell"
+  },
+  "2e4becd9856b877a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "book"
+  },
+  "809c4e9dc0539069": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "English study"
+  },
+  "036c4a7c622e9dae": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Have a try"
+  },
+  "ddec209113f11de8": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How do you spell book?"
+  },
+  "fa6eaf709adf0a0d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Don't be afraid!"
+  },
+  "d1aa3f880a8575bd": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is my plan for English study."
+  },
+  "e6c2366aa8b63b2d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Keep quiet, please."
+  },
+  "ae839ac60c358a25": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Your partner is afraid. What do you say?"
+  },
+  "62729f1d0130927e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do you say about a good English study plan?"
+  },
+  "dc571c62d6a268c3": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do you say when someone should be quiet?"
+  },
+  "0a84e38777215221": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "How do you spell book?"
+  },
+  "30f3ce82e5e19035": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "B-o-o-k."
+  },
+  "9ddb2fa28192b555": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Well done!"
+  },
+  "732fc00f6822678f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does the boy spell?"
+  },
+  "7144f82bab82ff1b": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "I am afraid."
+  },
+  "47029aa041629ed8": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Don't be afraid!"
+  },
+  "c15d3658a618a9d1": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Have a try!"
+  },
+  "dcafe3dd01224a6d": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "This is my plan for English study."
+  },
+  "f915d38c7b8bd154": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Well done!"
+  },
+  "157d44607d0dc855": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "It's a good plan!"
+  },
+  "b9af785442e85873": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does the boy think of the plan?"
+  },
+  "ae47815d13e87a4e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What should the boy do?"
+  },
+  "8356375dfd8d8011": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is Shenshen's plan for English study. She asks, How do you spell book? James says, B-o-o-k. Minmin is afraid. Shenshen says, Don't be afraid! Have a try! Miss Li says, Well done! It's a good plan! Mr Zhong says, Keep quiet, please."
+  },
+  "6bfaa6278df328f5": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "twenty-four"
+  },
+  "32288f29be94331a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "sixty"
+  },
+  "99ac87efe88790c9": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "twenty-six"
+  },
+  "b0d8fa38a147189d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "forty"
+  },
+  "7ab15cdfd88efd2b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "twenty-eight"
+  },
+  "c0ad41af18e592b0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "twenty-seven"
+  },
+  "0981736aff0197b6": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "one hundred"
+  },
+  "3f009518ac36b401": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "fifty"
+  },
+  "3640a88b450cb877": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "There are twenty-four girls. How many girls are there?"
+  },
+  "19f3ac6fdbace444": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "There are twenty-six boys. How many boys are there?"
+  },
+  "97a360b814668824": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The number is eighty. What is the number?"
+  },
+  "a3b4fdea0ce7f23f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The number is one hundred. What is the number?"
+  },
+  "f0df38d60aeb598e": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "How many girls are there?"
+  },
+  "96b4c5bb2038967a": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "There are twenty-four girls."
+  },
+  "6f70e635bd690185": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Twenty-four. All right."
+  },
+  "5cb7154d9d3bd31c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: How many girls are there?"
+  },
+  "55fbfd6c3975c7da": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "How many boys are there?"
+  },
+  "25b0031f7850379e": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "There are twenty-six boys."
+  },
+  "d5ed8277c1d673d2": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Twenty-six. Well done!"
+  },
+  "c9719bd97a0e4c1e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: How many boys are there?"
+  },
+  "f837ca74076feb9e": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Please say the number."
+  },
+  "1b1c368d8adcce9f": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Forty."
+  },
+  "d18be94882e33304": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Please say the number after forty."
+  },
+  "5df9f0e83539fcf8": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Fifty."
+  },
+  "9403b580473ea386": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What number does the boy say after forty?"
+  },
+  "e80a4096c774748c": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Eighty."
+  },
+  "97c2b0bf414ebf74": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Ninety."
+  },
+  "d0d5771ef07b3e37": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "One hundred."
+  },
+  "33a89e9deeb166c0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What number does the boy say after ninety?"
+  },
+  "71eee6a29d6152c4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "There are twenty-four girls and twenty-six boys in a class. Miss Li says forty. Mr Zhong says sixty. Ms Yu says eighty. Mr Qian says one hundred."
+  },
+  "719f47754fb7e84b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Monday"
+  },
+  "af92904fdfae9048": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Wednesday"
+  },
+  "2f0a8482fb86f5f4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Friday"
+  },
+  "85412bd59b393941": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Sunday"
+  },
+  "ba7690f96b27b747": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Thursday"
+  },
+  "793274de87bdd70f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Tuesday is after Monday."
+  },
+  "3a729682e33da556": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Saturday is after Thursday."
+  },
+  "9b5cd114bbdc3559": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Sunday is after Saturday."
+  },
+  "b6b563ddb2b9f9c9": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "My favourite day is Friday."
+  },
+  "b9d9bb8331e656c4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "On Tuesday, we read the story with a partner."
+  },
+  "5bbdaa61e62ff6e7": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What day is after Monday?"
+  },
+  "116897d2e346a95a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What day is after Tuesday?"
+  },
+  "509c8cf5b97d1c50": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What day is after Friday?"
+  },
+  "b0dc241a88ccb0c0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What day is after Saturday?"
+  },
+  "60721756b6b6e83a": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "What day is after Tuesday?"
+  },
+  "67b8389e2381f090": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Wednesday."
+  },
+  "116707371a88e7a5": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "All right."
+  },
+  "836e31aca13a3bdc": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What day is after Tuesday?"
+  },
+  "83ab4e830ce6c3db": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "On Monday, open your books, please."
+  },
+  "2844c8cc07e24c31": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "All right, Mr Zhong."
+  },
+  "b8f3d3f8aaf13f60": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "On Tuesday, read the story with your partner."
+  },
+  "cf6e81330262d412": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What should they do on Tuesday?"
+  },
+  "d22ae7fb528a2194": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "On Wednesday, how do you spell book?"
+  },
+  "e305b55e47254ca9": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "All right."
+  },
+  "591b51e6037f1463": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does the boy spell on Wednesday?"
+  },
+  "130f823f91267e06": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "My favourite day is Friday."
+  },
+  "6685f703c5080e78": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "My favourite day is Sunday."
+  },
+  "f75c423e2cbd1f6a": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Sunday is after Saturday."
+  },
+  "c62d7e490911bbdf": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What is the girl's favourite day?"
+  },
+  "db5e04066d544d0d": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "On Thursday, this is my plan for English study."
+  },
+  "18ad0449a294d742": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Have a try!"
+  },
+  "a313334be278b1c5": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "On Friday, I read the story."
+  },
+  "a96a68506fae28f6": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does the girl do on Friday?"
+  },
+  "9d42a2836206325e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is our plan for English study. On Monday, we open our books. On Tuesday, we read the story with a partner. On Wednesday, we spell book. On Thursday, we say, Don't be afraid! Have a try! On Friday, Miss Li says, Well done! Saturday is after Friday. Sunday is after Saturday."
+  },
+  "afc40f4fde82aad4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Shenshen says, My favourite day is Sunday. What is Shenshen's favourite day?"
   }
  },
  "courses": {
@@ -3061,6 +3871,110 @@
    "static/audio/listening/L4A-T1-W01-D06/q19.mp3": "980b21ae6f7e3227",
    "static/audio/listening/L4A-T1-W01-D06/q20.mp3": "471196b6306c1822",
    "static/audio/listening/L4A-T1-W01-D06/p01.mp3": "1f4b7f8f9fda0f31"
+  },
+  "L4A-T1-W01-D07": {
+   "static/audio/listening/L4A-T1-W01-D07/hello.mp3": "9c3d431c92f97887",
+   "static/audio/listening/L4A-T1-W01-D07/q01.mp3": "e790139756a221d1",
+   "static/audio/listening/L4A-T1-W01-D07/q02.mp3": "ab2a5a94ef7c47ee",
+   "static/audio/listening/L4A-T1-W01-D07/q03.mp3": "44e6a5cd7273ee2e",
+   "static/audio/listening/L4A-T1-W01-D07/q04.mp3": "d3bcfb6b2da5e29b",
+   "static/audio/listening/L4A-T1-W01-D07/q05.mp3": "8ea3423cd720866a",
+   "static/audio/listening/L4A-T1-W01-D07/q06.mp3": "d2213a075bae0260",
+   "static/audio/listening/L4A-T1-W01-D07/q07.mp3": "05f2eda6d5c33ea6",
+   "static/audio/listening/L4A-T1-W01-D07/q08.mp3": "eb6163444fee0660",
+   "static/audio/listening/L4A-T1-W01-D07/q09.mp3": "85f69e4df980a870",
+   "static/audio/listening/L4A-T1-W01-D07/q10.mp3": "be72b27264e2da39",
+   "static/audio/listening/L4A-T1-W01-D07/q11.mp3": "ce4f26963eedd4fa",
+   "static/audio/listening/L4A-T1-W01-D07/q12.mp3": "a93481bc4c12ecce",
+   "static/audio/listening/L4A-T1-W01-D07/q13.mp3": "1a5ba6710b95a7e8",
+   "static/audio/listening/L4A-T1-W01-D07/q14.mp3": "57e0062f130de4f6",
+   "static/audio/listening/L4A-T1-W01-D07/q15.mp3": "d23d4405d40421cf",
+   "static/audio/listening/L4A-T1-W01-D07/q16.mp3": "4f3354f7d2855a5e",
+   "static/audio/listening/L4A-T1-W01-D07/p01.mp3": "9da459bba776931c"
+  },
+  "L4A-T1-W01-D08": {
+   "static/audio/listening/L4A-T1-W01-D08/hello.mp3": "9c3d431c92f97887",
+   "static/audio/listening/L4A-T1-W01-D08/q01.mp3": "0c9ed99c09708a09",
+   "static/audio/listening/L4A-T1-W01-D08/q02.mp3": "f7de9e5a351a6f61",
+   "static/audio/listening/L4A-T1-W01-D08/q03.mp3": "b67290e8a1ce53d0",
+   "static/audio/listening/L4A-T1-W01-D08/q04.mp3": "f53505f2d44140f5",
+   "static/audio/listening/L4A-T1-W01-D08/q05.mp3": "020237c6f547a263",
+   "static/audio/listening/L4A-T1-W01-D08/q06.mp3": "99b4d6222ca32fda",
+   "static/audio/listening/L4A-T1-W01-D08/q07.mp3": "6572c85a4b66cc95",
+   "static/audio/listening/L4A-T1-W01-D08/q08.mp3": "e302910356484623",
+   "static/audio/listening/L4A-T1-W01-D08/q09.mp3": "99b4d6222ca32fda",
+   "static/audio/listening/L4A-T1-W01-D08/q10.mp3": "e0f8f160552481e9",
+   "static/audio/listening/L4A-T1-W01-D08/q11.mp3": "020237c6f547a263",
+   "static/audio/listening/L4A-T1-W01-D08/q12.mp3": "e302910356484623",
+   "static/audio/listening/L4A-T1-W01-D08/q13.mp3": "080270a00937dac3",
+   "static/audio/listening/L4A-T1-W01-D08/q14.mp3": "4ee77abee3dca2f1",
+   "static/audio/listening/L4A-T1-W01-D08/q15.mp3": "35cddff853f6e1a7",
+   "static/audio/listening/L4A-T1-W01-D08/q16.mp3": "cc5ea87a39911b50",
+   "static/audio/listening/L4A-T1-W01-D08/p01.mp3": "b2728d2413f9662d"
+  },
+  "L4A-T1-W01-D09": {
+   "static/audio/listening/L4A-T1-W01-D09/hello.mp3": "9c3d431c92f97887",
+   "static/audio/listening/L4A-T1-W01-D09/q01.mp3": "b5a6fe9577e0d769",
+   "static/audio/listening/L4A-T1-W01-D09/q02.mp3": "5e39a771e243a755",
+   "static/audio/listening/L4A-T1-W01-D09/q03.mp3": "aed0373a382a7238",
+   "static/audio/listening/L4A-T1-W01-D09/q04.mp3": "9bf8452aed18b118",
+   "static/audio/listening/L4A-T1-W01-D09/q05.mp3": "13bd7894c94b0b08",
+   "static/audio/listening/L4A-T1-W01-D09/q06.mp3": "bc2171c6e1b3aa7d",
+   "static/audio/listening/L4A-T1-W01-D09/q07.mp3": "f101cfc5413f410c",
+   "static/audio/listening/L4A-T1-W01-D09/q08.mp3": "112a476cc50e25bc",
+   "static/audio/listening/L4A-T1-W01-D09/q09.mp3": "13bd7894c94b0b08",
+   "static/audio/listening/L4A-T1-W01-D09/q10.mp3": "b30dca01f5d1bddf",
+   "static/audio/listening/L4A-T1-W01-D09/q11.mp3": "a22612ce02c0ad2e",
+   "static/audio/listening/L4A-T1-W01-D09/q12.mp3": "299b0f9ccf5bd6e2",
+   "static/audio/listening/L4A-T1-W01-D09/q13.mp3": "37179c869c454108",
+   "static/audio/listening/L4A-T1-W01-D09/q14.mp3": "8a0f3c430ad42824",
+   "static/audio/listening/L4A-T1-W01-D09/q15.mp3": "cedb427510ba3332",
+   "static/audio/listening/L4A-T1-W01-D09/q16.mp3": "792f53fac198b401",
+   "static/audio/listening/L4A-T1-W01-D09/p01.mp3": "6606dbf68615aaa3"
+  },
+  "L4A-T1-W01-D10": {
+   "static/audio/listening/L4A-T1-W01-D10/hello.mp3": "9c3d431c92f97887",
+   "static/audio/listening/L4A-T1-W01-D10/q01.mp3": "5c32ef0759e485af",
+   "static/audio/listening/L4A-T1-W01-D10/q02.mp3": "7ee3b4852dfc54f5",
+   "static/audio/listening/L4A-T1-W01-D10/q03.mp3": "e4cc6ef1ae04bd64",
+   "static/audio/listening/L4A-T1-W01-D10/q04.mp3": "5c15cd08375929d4",
+   "static/audio/listening/L4A-T1-W01-D10/q05.mp3": "e667b13e4feac7e3",
+   "static/audio/listening/L4A-T1-W01-D10/q06.mp3": "827a783b878521da",
+   "static/audio/listening/L4A-T1-W01-D10/q07.mp3": "0992cd990964427b",
+   "static/audio/listening/L4A-T1-W01-D10/q08.mp3": "833fec4119ff2a46",
+   "static/audio/listening/L4A-T1-W01-D10/q09.mp3": "9000b055b8a0fbf6",
+   "static/audio/listening/L4A-T1-W01-D10/q10.mp3": "cad31ccfe9700730",
+   "static/audio/listening/L4A-T1-W01-D10/q11.mp3": "c907d93f33158ccf",
+   "static/audio/listening/L4A-T1-W01-D10/q12.mp3": "39bf3973af859319",
+   "static/audio/listening/L4A-T1-W01-D10/q13.mp3": "a14f52f938eb3483",
+   "static/audio/listening/L4A-T1-W01-D10/q14.mp3": "6460e5f8d437157b",
+   "static/audio/listening/L4A-T1-W01-D10/q15.mp3": "bb3773b509dad54d",
+   "static/audio/listening/L4A-T1-W01-D10/q16.mp3": "30fb814176e437cb",
+   "static/audio/listening/L4A-T1-W01-D10/p01.mp3": "37811cfa366401f7"
+  },
+  "L4A-T1-W01-D11": {
+   "static/audio/listening/L4A-T1-W01-D11/hello.mp3": "9c3d431c92f97887",
+   "static/audio/listening/L4A-T1-W01-D11/q01.mp3": "c0bf4f7c6c21a813",
+   "static/audio/listening/L4A-T1-W01-D11/q02.mp3": "efc0721d8fd6d99d",
+   "static/audio/listening/L4A-T1-W01-D11/q03.mp3": "f7c7780227331b06",
+   "static/audio/listening/L4A-T1-W01-D11/q04.mp3": "26b94a2b74f40f69",
+   "static/audio/listening/L4A-T1-W01-D11/q05.mp3": "49b37fc38b894ef1",
+   "static/audio/listening/L4A-T1-W01-D11/q06.mp3": "ee310015b6f83a47",
+   "static/audio/listening/L4A-T1-W01-D11/q07.mp3": "06376e59df40c098",
+   "static/audio/listening/L4A-T1-W01-D11/q08.mp3": "a7041ac2b82a7bbb",
+   "static/audio/listening/L4A-T1-W01-D11/q09.mp3": "4572211eda82f5bd",
+   "static/audio/listening/L4A-T1-W01-D11/q10.mp3": "9a1fee9157e35e49",
+   "static/audio/listening/L4A-T1-W01-D11/q11.mp3": "2c1158c92b85b650",
+   "static/audio/listening/L4A-T1-W01-D11/q12.mp3": "1c5ce924537b8ef2",
+   "static/audio/listening/L4A-T1-W01-D11/q13.mp3": "039e859aa29f7c55",
+   "static/audio/listening/L4A-T1-W01-D11/q14.mp3": "990e41469c1a7d28",
+   "static/audio/listening/L4A-T1-W01-D11/q15.mp3": "ec7b369ef5643358",
+   "static/audio/listening/L4A-T1-W01-D11/q16.mp3": "a5aefdc3ca718cb0",
+   "static/audio/listening/L4A-T1-W01-D11/q17.mp3": "ccc150bae294cab8",
+   "static/audio/listening/L4A-T1-W01-D11/q18.mp3": "8b9f2a52745f2eff",
+   "static/audio/listening/L4A-T1-W01-D11/q19.mp3": "b6b2380acd49d99e",
+   "static/audio/listening/L4A-T1-W01-D11/q20.mp3": "dba4dcae66948515",
+   "static/audio/listening/L4A-T1-W01-D11/p01.mp3": "1460f56d3cbf27f4"
   }
  }
 }

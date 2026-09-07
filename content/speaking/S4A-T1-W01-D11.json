@@ -1,0 +1,84 @@
+{
+  "course_id": "S4A-T1-W01-D11",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D11",
+  "pair_id": "4A-T1-W01-D11",
+  "publication_status": "test",
+  "title": "四上·Starter第5课｜星期表达·Starter综合（口语）",
+  "week": 1,
+  "day": 11,
+  "course_type": "training",
+  "est_minutes": 8,
+  "scope": "4A Starter p2-p6 Days of the week and review",
+  "difficulty": "L3",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D11/q01.mp3",
+      "tag": "A主线·p6·星期顺序",
+      "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
+      "text": "Monday, Tuesday, Wednesday."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D11/q02.mp3",
+      "tag": "A主线·p6·星期顺序",
+      "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
+      "text": "Thursday, Friday, Saturday, Sunday."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D11/q03.mp3",
+      "tag": "A主线·p6·星期前后关系",
+      "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
+      "text": "Tuesday is after Monday."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D11/q04.mp3",
+      "tag": "A主线·p6·星期前后关系",
+      "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
+      "text": "Sunday is after Saturday."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D11/q05.mp3",
+      "tag": "A主线·p6·给定目标星期",
+      "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
+      "text": "My favourite day is Sunday."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D11/q06.mp3",
+      "tag": "A主线·p4-p6·星期与课堂指令",
+      "parent_note": "确认版教材p4-p6主线或不增加新知识的同语境受控重组",
+      "text": "On Tuesday, read the story with your partner."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D11/q07.mp3",
+      "tag": "C微调·p6·听问句后准确回应",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p6，不作未掌握结论",
+      "question": "What day is after Tuesday?",
+      "expected": "Wednesday.",
+      "hint": "回答Tuesday之后是星期几。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D11/q08.mp3",
+      "tag": "A主线·p6·星期顺序问答",
+      "parent_note": "确认版教材p6主线或不增加新知识的同语境受控重组",
+      "question": "What day is after Saturday?",
+      "expected": "Sunday.",
+      "hint": "回答Saturday之后是星期几。"
+    }
+  ]
+}
