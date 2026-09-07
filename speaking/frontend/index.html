@@ -78,8 +78,8 @@ function beginCountdown(){
 
 var sink = null;
 function ensureCtx(){
-  // iOS 规矩：AudioContext 必须在用户手势调用栈里创建/恢复；且全程只用这一个，
-  // 录完只 suspend 不 close（close 后复用的麦克风流在 iOS 上会变哑）——2026-06-12 实测教训
+  // iOS 规矩：AudioContext 必须在用户手势调用栈里创建/恢复；全程只用这一个，
+  // 每次录音使用新麦克风流，录完只 suspend context、不 close。
   if(!ctx){
     ctx = new (window.AudioContext||window.webkitAudioContext)();
     inRate = ctx.sampleRate;
@@ -102,7 +102,7 @@ function startRecord(){
     };
     if(!sink){ sink = ctx.createGain(); sink.gain.value = 0; sink.connect(ctx.destination); }
     srcNode.connect(node); node.connect(sink);  // 静音汇出，避免录音时外放回声
-  }catch(e){ fail("启动录音失败：" + e); return; }
+  }catch(e){ recoverCaptureFailure("启动录音失败：" + e); return; }
   render();
 }
 
@@ -110,8 +110,10 @@ function stopRecord(){
   if(state!=="recording") return;
   state="processing"; hint.textContent="处理中…";
   durSec = (Date.now()-t0)/1000;
-  try{ if(node){node.disconnect();} if(srcNode){srcNode.disconnect();}
+  try{ if(node){node.onaudioprocess=null; node.disconnect();} if(srcNode){srcNode.disconnect();}
        if(ctx && ctx.state==="running"){ ctx.suspend(); } }catch(e){}
+  node=null; srcNode=null;
+  releaseStream();  // iOS：回放前结束麦克风音频会话，下一次录音再取新流
   var total=0; for(var i=0;i<chunks.length;i++) total+=chunks[i].length;
   var all=new Float32Array(total), off=0;
   for(var j=0;j<chunks.length;j++){ all.set(chunks[j], off); off+=chunks[j].length; }
@@ -169,18 +171,13 @@ function onMicTap(){
   if(state==="recording"){ stopRecord(); return; }
   if(state!=="idle") return;
   ensureCtx();  // 必须在手势栈内（iOS）
-  // 麦克风流策略 v3（2026-06-12 iOS 三轮实测迭代）：
-  // v2"每次新申请"能录但 iOS 随机重弹权限 4-5 次/课。改为：健康流直接复用，
-  // 仅当流被系统静音(muted，播放示范音切走音频会话所致)或失活时才重新申请；
-  // 漏网的哑流由录后静音检测兜底（检测到即释放，下一次点击自动换新流）。
-  if(stream){
-    var tr0 = stream.getAudioTracks()[0];
-    if(tr0 && tr0.readyState === "live" && !tr0.muted){ beginCountdown(); return; }
-    releaseStream();
-  }
+  // 与已通过 iOS 验证的 PWA v4.1 对齐：每次录音重新取流，避免示范音/回放
+  // 切换音频会话后复用一个表面 live、实际采集异常的旧流。
+  releaseStream();
   if(!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia){
     fail("这个浏览器不支持录音"); return; }
-  navigator.mediaDevices.getUserMedia({audio:true}).then(function(s){
+  navigator.mediaDevices.getUserMedia({audio:{channelCount:1,echoCancellation:true,
+                                               noiseSuppression:true,autoGainControl:true}}).then(function(s){
     stream = s; beginCountdown();
   }).catch(function(){
     fail("需要麦克风权限才能录音。请点允许，或让爸爸妈妈在设置里打开。");
