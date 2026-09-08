@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Build the approved 4A Unit 1 p7-p14 D06-D10 local test package."""
+"""Build the approved 4A Unit 1 p7-p14 D06-D10 formal package."""
 from __future__ import annotations
 
 import hashlib
@@ -366,7 +366,7 @@ def build_listening(day):
         "weekly_batch_id": BATCH,
         "study_pack": pair_id,
         "pair_id": pair_id,
-        "publication_status": "test",
+        "publication_status": "formal",
         "title": meta["title"] + "（听力）",
         "week": 2,
         "day": day - 5,
@@ -398,7 +398,7 @@ def build_speaking(day):
         "weekly_batch_id": BATCH,
         "study_pack": pair_id,
         "pair_id": pair_id,
-        "publication_status": "test",
+        "publication_status": "formal",
         "title": meta["title"] + "（口语）",
         "week": 2,
         "day": day - 5,
@@ -429,7 +429,7 @@ def build_audio_plan(listening_courses, speaking_courses):
     return {
         "weekly_batch_id": BATCH,
         "generation_status": "READY_TO_GENERATE",
-        "publication_status": "test",
+        "publication_status": "formal",
         "expected_listening_outputs": listening_count,
         "expected_speaking_outputs": speaking_count,
         "expected_total_outputs": len(items),
@@ -440,9 +440,9 @@ def build_audio_plan(listening_courses, speaking_courses):
 def build_study_packs(listening_courses, speaking_courses):
     return {
         "weekly_batch_id": BATCH,
-        "publication_status": "test",
-        "visible": False,
-        "authority_note": "父JSON是唯一活动课程源；本目录保存配对、音频计划和派生儿童安全校验副本。制作完成不等于正式开放。",
+        "publication_status": "formal",
+        "visible": True,
+        "authority_note": "父JSON是唯一活动课程源；本目录保存配对、音频计划和派生儿童安全校验副本。课程完成后默认formal开放。",
         "study_packs": [
             {
                 "lesson": DAY_META[day]["lesson"],
@@ -456,7 +456,7 @@ def build_study_packs(listening_courses, speaking_courses):
                 "focus": DAY_META[day]["focus"],
                 "listening_course_id": listening["course_id"],
                 "speaking_course_id": speaking["course_id"],
-                "publication_gate": "须由00按老师实际已教页段确认；当前保持test且隐藏。",
+                "publication_gate": "课程完成后默认formal开放；家长负责按实际学习进度依次使用。",
             }
             for day, listening, speaking in zip(range(6, 11), listening_courses, speaking_courses)
         ],
@@ -467,7 +467,7 @@ def build_mapping_doc(listening_courses, speaking_courses):
     lines = [
         "# 4A 新教材 Unit 1 D06–D10 教材与课程映射",
         "",
-        "> 本地 test 制作稿；不部署、不开放 formal。教材事实源为确认版教材逐页转录，范围严格为 Unit 1 p7–14。",
+        "> formal发布稿。教材事实源为确认版教材逐页转录，范围严格为Unit 1 p7–14。",
         "",
         "| 课次 | pair / study pack | 听力 | 口语 | 教材范围 | 难度 | 题量 | 总时长 | 重点 |",
         "|---|---|---|---|---|---|---:|---:|---|",
@@ -478,10 +478,10 @@ def build_mapping_doc(listening_courses, speaking_courses):
         lines.append(f"| 第{day}课 | {listening['pair_id']} | {listening['course_id']} | {speaking['course_id']} | {meta['scope']} | {meta['planned_difficulty']}（JSON {meta['json_difficulty']}） | {count}+8 | 约{meta['listening_minutes'] + meta['speaking_minutes']}分钟 | {meta['focus']} |")
     lines += [
         "",
-        "## 页段闸门",
+        "## 开放规则",
         "",
-        "- D06只用p7–9，与2026-09-08家长报告的当前进度p9一致；是否formal仍需00决定。",
-        "- D07、D08、D09、D10分别须确认已教到p10、p11、p13、p14；制作完成不等于开放。",
+        "- 2026-09-08家长确认：课程完成后默认formal开放，不再按学校逐页设置发布闸门。",
+        "- 夏洛恪与家长按实际进度从推荐课开始逐课完成；家长负责提醒新的教材进度。",
         "- 全批不进入Unit 2，不制造test或formal学习记录。",
         "",
         "## A主线与C微调",
@@ -498,7 +498,7 @@ def build_parent_doc(listening_courses, speaking_courses):
     lines = [
         "# 4A 新教材 Unit 1 D06–D10 家长版答案、原文与口语目标句",
         "",
-        "> 家长专用。不得作为儿童公开副本；当前为本地 test 制作稿。",
+        "> 家长专用。不得作为儿童公开副本；课程为formal发布稿。",
         "",
     ]
     for day, listening, speaking in zip(range(6, 11), listening_courses, speaking_courses):
@@ -530,7 +530,7 @@ def child_catalog_entry(course, child):
         "course_type": course["course_type"],
         "week": course["week"],
         "day": course["day"],
-        "visible": False,
+        "visible": True,
         "pair_id": course["pair_id"],
         "study_pack": course["study_pack"],
     }
@@ -558,7 +558,7 @@ def main():
     DOCS_OUT.mkdir(parents=True, exist_ok=True)
     (DOCS_OUT / "2026-09-08-4A-Unit1-D06-D10教材与课程映射.md").write_text(build_mapping_doc(listening_courses, speaking_courses), encoding="utf-8", newline="\n")
     (DOCS_OUT / "2026-09-08-4A-Unit1-D06-D10家长版答案原文.md").write_text(build_parent_doc(listening_courses, speaking_courses), encoding="utf-8", newline="\n")
-    print("Built 5 listening + 5 speaking hidden test courses, 5 study packs, and 138 audio text items.")
+    print("Built 5 listening + 5 speaking formal courses, 5 study packs, and 138 audio text items.")
 
 
 if __name__ == "__main__":

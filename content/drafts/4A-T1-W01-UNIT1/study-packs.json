@@ -1,8 +1,8 @@
 {
   "weekly_batch_id": "4A-T1-W01",
-  "publication_status": "test",
-  "visible": false,
-  "authority_note": "父JSON是唯一活动课程源；本目录保存配对、音频计划和派生儿童安全校验副本。制作完成不等于正式开放。",
+  "publication_status": "formal",
+  "visible": true,
+  "authority_note": "父JSON是唯一活动课程源；本目录保存配对、音频计划和派生儿童安全校验副本。课程完成后默认formal开放。",
   "study_packs": [
     {
       "lesson": 6,
@@ -16,7 +16,7 @@
       "focus": "校园场所、场所与活动直接对应、表达喜欢",
       "listening_course_id": "L4A-T1-W01-D06",
       "speaking_course_id": "S4A-T1-W01-D06",
-      "publication_gate": "须由00按老师实际已教页段确认；当前保持test且隐藏。"
+      "publication_gate": "课程完成后默认formal开放；家长负责按实际学习进度依次使用。"
     },
     {
       "lesson": 7,
@@ -30,7 +30,7 @@
       "focus": "寻找同伴、项目对话、选择见面地点",
       "listening_course_id": "L4A-T1-W01-D07",
       "speaking_course_id": "S4A-T1-W01-D07",
-      "publication_gate": "须由00按老师实际已教页段确认；当前保持test且隐藏。"
+      "publication_gate": "课程完成后默认formal开放；家长负责按实际学习进度依次使用。"
     },
     {
       "lesson": 8,
@@ -44,7 +44,7 @@
       "focus": "人物地点对应、连续对话、have no与do not have any",
       "listening_course_id": "L4A-T1-W01-D08",
       "speaking_course_id": "S4A-T1-W01-D08",
-      "publication_gate": "须由00按老师实际已教页段确认；当前保持test且隐藏。"
+      "publication_gate": "课程完成后默认formal开放；家长负责按实际学习进度依次使用。"
     },
     {
       "lesson": 9,
@@ -58,7 +58,7 @@
       "focus": "竹子学校、建筑特点、跨句提取与整合",
       "listening_course_id": "L4A-T1-W01-D09",
       "speaking_course_id": "S4A-T1-W01-D09",
-      "publication_gate": "须由00按老师实际已教页段确认；当前保持test且隐藏。"
+      "publication_gate": "课程完成后默认formal开放；家长负责按实际学习进度依次使用。"
     },
     {
       "lesson": 10,
@@ -72,7 +72,7 @@
       "focus": "Unit 1周综合、最喜欢的校园地点、稳定完整输出",
       "listening_course_id": "L4A-T1-W01-D10",
       "speaking_course_id": "S4A-T1-W01-D10",
-      "publication_gate": "须由00按老师实际已教页段确认；当前保持test且隐藏。"
+      "publication_gate": "课程完成后默认formal开放；家长负责按实际学习进度依次使用。"
     }
   ]
 }

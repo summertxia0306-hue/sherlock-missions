@@ -1,7 +1,7 @@
 {
   "weekly_batch_id": "4A-T1-W01",
   "generation_status": "READY_TO_GENERATE",
-  "publication_status": "test",
+  "publication_status": "formal",
   "expected_listening_outputs": 98,
   "expected_speaking_outputs": 40,
   "expected_total_outputs": 138,

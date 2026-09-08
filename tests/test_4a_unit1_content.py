@@ -25,7 +25,7 @@ def listening_questions(course):
 
 
 class Unit1ContentTests(unittest.TestCase):
-    def test_ten_parent_courses_exist_with_pairing_and_hidden_test_status(self):
+    def test_ten_parent_courses_exist_with_pairing_and_formal_status(self):
         for index, day in enumerate(range(6, 11)):
             listening = load(LISTENING_DIR / f"{LISTENING_IDS[index]}.json")
             speaking = load(SPEAKING_DIR / f"{SPEAKING_IDS[index]}.json")
@@ -34,7 +34,7 @@ class Unit1ContentTests(unittest.TestCase):
                 self.assertEqual("4A-T1-W01", course["weekly_batch_id"])
                 self.assertEqual(pair_id, course["study_pack"])
                 self.assertEqual(pair_id, course["pair_id"])
-                self.assertEqual("test", course["publication_status"])
+                self.assertEqual("formal", course["publication_status"])
                 self.assertEqual(2, course["week"])
                 self.assertEqual(index + 1, course["day"])
                 self.assertEqual(EXPECTED_DIFFICULTIES[index], course["difficulty"])
@@ -113,12 +113,12 @@ class Unit1ContentTests(unittest.TestCase):
         for forbidden in ("classmates", "helpful", "take it easy", "keep going", "xiaopu always"):
             self.assertNotIn(forbidden, corpus)
 
-    def test_child_copies_and_catalogs_are_safe_and_hidden(self):
+    def test_child_copies_and_catalogs_are_safe_and_visible(self):
         forbidden = {"answer", "transcript", "tag", "parent_note", "expected", "score", "scoring"}
         for module, ids in (("listening", LISTENING_IDS), ("speaking", SPEAKING_IDS)):
             catalog = load(DRAFT_DIR / "child" / module / "catalog.json")
             self.assertEqual(ids, [entry["course_id"] for entry in catalog])
-            self.assertTrue(all(entry["visible"] is False for entry in catalog))
+            self.assertTrue(all(entry["visible"] is True for entry in catalog))
             for course_id in ids:
                 child = load(DRAFT_DIR / "child" / module / f"{course_id}.json")
                 keys = set()
@@ -135,8 +135,8 @@ class Unit1ContentTests(unittest.TestCase):
     def test_study_packs_audio_plan_and_documents_cover_all_courses(self):
         packs = load(DRAFT_DIR / "study-packs.json")
         self.assertEqual("4A-T1-W01", packs["weekly_batch_id"])
-        self.assertEqual("test", packs["publication_status"])
-        self.assertFalse(packs["visible"])
+        self.assertEqual("formal", packs["publication_status"])
+        self.assertTrue(packs["visible"])
         self.assertEqual(PAIR_IDS, [pack["pair_id"] for pack in packs["study_packs"]])
 
         audio = load(DRAFT_DIR / "audio-generation-plan.json")
