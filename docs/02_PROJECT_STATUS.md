@@ -102,6 +102,20 @@ P5 无阻塞且退出条件全部满足。P6 第一周工程阻塞 `BLOCKED_BY_I
 下一步：
 ```
 
+## 2026-09-08 新教材 Unit 1 D06–D10 正式开放
+
+```text
+日期：2026-09-08
+阶段：P6 开学后课程运营 / 新教材 Unit 1 第6至第10课正式发布
+家长决策：D06–D10直接部署并开放；此后完成内容、音频与自动校验的课程默认formal可见，由家长提醒教材进度并按推荐顺序逐课完成（D34）
+课程：L4A-T1-W01-D06至D10、S4A-T1-W01-D06至D10；5个study pack一一配对；范围只到确认版教材Unit 1 p7–14
+发布：父课程publication_status=formal，儿童目录visible=true；唯一formal入口继续为Streamlit，CloudBase formal保持关闭
+提交：正式内容1f1e2ef175215128437df67d23d2707b3993993a；音频固定1960d1d1c12d4ca94a1effdc86cd13c37263d6e7
+验证：Python 73/73、Web 107/107、sherlock-api 84/84、score-speaking 13/13；TypeScript和production build通过；线上音频138/138 SHA-256一致
+线上：L4A-T1-W01-D06与S4A-T1-W01-D10正式直链可打开；只读验收未开始课程、未使用麦克风、未提交结果
+数据边界：没有生成test/formal学习结果、录音或完成状态；未修改学习档案、校内错题库或CloudBase核心程序
+```
+
 ## 2026-08-24 P0 状态登记
 
 ```text
