@@ -1,0 +1,61 @@
+{
+  "course_id": "S4A-T1-W01-D09",
+  "pair_id": "4A-T1-W01-D09",
+  "study_pack": "4A-T1-W01-D09",
+  "course_version": "93fd2b57063274e9",
+  "title": "四上·第9课｜Unit 1竹子学校·阅读整合（口语）",
+  "week": 2,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "All the school buildings are made of bamboo.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D09/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "These bamboo buildings have no walls.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D09/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "They do not have any walls.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D09/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "They look like big umbrellas.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D09/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "Each building has three floors.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D09/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Students learn and play in bamboo classrooms.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D09/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答建筑材料。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D09/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答建筑外形。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D09/q08.mp3"
+    }
+  ]
+}

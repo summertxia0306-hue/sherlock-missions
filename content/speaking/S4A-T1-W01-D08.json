@@ -1,0 +1,84 @@
+{
+  "course_id": "S4A-T1-W01-D08",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D08",
+  "pair_id": "4A-T1-W01-D08",
+  "publication_status": "test",
+  "title": "四上·第8课｜Unit 1人物地点·连续对话（口语）",
+  "week": 2,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 8,
+  "scope": "4A Unit 1 p7-p11",
+  "difficulty": "L2",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D08/q01.mp3",
+      "tag": "A主线·p10-p11·否定结构",
+      "parent_note": "确认版教材p10-p11主线或不增加新知识的同语境受控重组",
+      "text": "The classroom has no computers."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D08/q02.mp3",
+      "tag": "A主线·p11·等义否定表达",
+      "parent_note": "确认版教材p11主线或不增加新知识的同语境受控重组",
+      "text": "The classroom does not have any computers."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D08/q03.mp3",
+      "tag": "A主线·p10-p11·人物地点",
+      "parent_note": "确认版教材p10-p11主线或不增加新知识的同语境受控重组",
+      "text": "James is in the library."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D08/q04.mp3",
+      "tag": "A主线·p10-p11·人物地点推断",
+      "parent_note": "确认版教材p10-p11主线或不增加新知识的同语境受控重组",
+      "text": "Xiaopu is likely on the sports field."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D08/q05.mp3",
+      "tag": "A主线·p10-p11·地点与楼层",
+      "parent_note": "确认版教材p10-p11主线或不增加新知识的同语境受控重组",
+      "text": "The computer room is on the ground floor."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D08/q06.mp3",
+      "tag": "A主线·p10-p11·连续对话输出",
+      "parent_note": "确认版教材p10-p11主线或不增加新知识的同语境受控重组",
+      "text": "Let us meet in the computer room then."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D08/q07.mp3",
+      "tag": "C微调·p11·听问句后准确回应",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p11，不作未掌握结论",
+      "question": "Does the classroom have any computers?",
+      "expected": "No, it does not.",
+      "hint": "根据教材事实作否定回答。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D08/q08.mp3",
+      "tag": "A主线·p10-p11·跨句地点整合",
+      "parent_note": "确认版教材p10-p11主线或不增加新知识的同语境受控重组",
+      "question": "Where will Minmin's group meet?",
+      "expected": "They will meet in the computer room on the ground floor.",
+      "hint": "同时说出房间和楼层。"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "course_id": "S4A-T1-W01-D08",
+  "pair_id": "4A-T1-W01-D08",
+  "study_pack": "4A-T1-W01-D08",
+  "course_version": "c2e49e06878dfbc2",
+  "title": "四上·第8课｜Unit 1人物地点·连续对话（口语）",
+  "week": 2,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "The classroom has no computers.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D08/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "The classroom does not have any computers.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D08/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "James is in the library.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D08/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Xiaopu is likely on the sports field.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D08/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "The computer room is on the ground floor.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D08/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Let us meet in the computer room then.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D08/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "根据教材事实作否定回答。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D08/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "同时说出房间和楼层。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D08/q08.mp3"
+    }
+  ]
+}

@@ -1,0 +1,560 @@
+{
+  "course_id": "L4A-T1-W01-D10",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D10",
+  "pair_id": "4A-T1-W01-D10",
+  "publication_status": "test",
+  "title": "四上·第10课｜Unit 1我最喜欢的校园地点·综合（听力）",
+  "week": 2,
+  "day": 5,
+  "course_type": "weekly_test",
+  "est_minutes": 25,
+  "scope": "4A Unit 1 p7-p14",
+  "difficulty": "L3",
+  "scoring": {
+    "per_question": 4,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D10/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p9-p14·项目主题听辨",
+          "parent_note": "确认版教材p9-p14主线或不增加新知识的同语境受控重组",
+          "options": [
+            "favourite place",
+            "school history",
+            "ground floor"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "favourite place"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p14·图书馆外形",
+          "parent_note": "确认版教材p14主线或不增加新知识的同语境受控重组",
+          "options": [
+            "looks like a boat",
+            "looks like an umbrella",
+            "has three floors"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "looks like a boat"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p14·室内物品",
+          "parent_note": "确认版教材p14主线或不增加新知识的同语境受控重组",
+          "options": [
+            "walls and floors",
+            "chairs and desks",
+            "books and computers"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "chairs and desks"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p9-p14·场所活动辨别",
+          "parent_note": "确认版教材p9-p14主线或不增加新知识的同语境受控重组",
+          "options": [
+            "read many interesting books",
+            "play basketball every day",
+            "sing for all"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "read many interesting books"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q04.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p7-p14·听音选词与相似场所辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p7-p14，不作未掌握结论",
+          "options": [
+            "library",
+            "classroom",
+            "computer room"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "library"
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p14·图书馆位置",
+          "parent_note": "确认版教材p14主线或不增加新知识的同语境受控重组",
+          "display": "The library is on the ground floor.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The library is on the ground floor."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p12-p14·相似外形干扰",
+          "parent_note": "确认版教材p12-p14主线或不增加新知识的同语境受控重组",
+          "display": "The library looks like a big umbrella.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The library looks like a boat."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p11-p14·等义否定表达",
+          "parent_note": "确认版教材p11-p14主线或不增加新知识的同语境受控重组",
+          "display": "The library has no chairs or desks.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The library does not have any chairs or desks."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q08.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p14·图书馆活动",
+          "parent_note": "确认版教材p14主线或不增加新知识的同语境受控重组",
+          "display": "In the library, I read many interesting books.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "In the library, I read many interesting books."
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q09.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p12-p13·双特征整合",
+          "parent_note": "确认版教材p12-p13主线或不增加新知识的同语境受控重组",
+          "display": "The bamboo buildings have three floors and no walls.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The bamboo buildings have three floors and no walls."
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p14·最喜欢的场所",
+          "parent_note": "确认版教材p14主线或不增加新知识的同语境受控重组",
+          "options": [
+            "The library.",
+            "The hall.",
+            "The sports field."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Which place do you like best in the example?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p11-p14·听问句选答语与楼层辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p11-p14，不作未掌握结论",
+          "options": [
+            "On the ground floor.",
+            "On the second floor.",
+            "On the sports field."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where is the library?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q12.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p14·图书馆外形",
+          "parent_note": "确认版教材p14主线或不增加新知识的同语境受控重组",
+          "options": [
+            "A boat.",
+            "A big umbrella.",
+            "A classroom."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does the library look like?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q13.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p14·否定信息提取",
+          "parent_note": "确认版教材p14主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Any chairs or desks.",
+            "Any books.",
+            "Any floors."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does the library not have?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q14.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p9-p14·场所活动问答",
+          "parent_note": "确认版教材p9-p14主线或不增加新知识的同语境受控重组",
+          "options": [
+            "I read many interesting books.",
+            "I play basketball.",
+            "I sing for all."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What do you do in the library?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p14·四轮喜好地点整合",
+          "parent_note": "确认版教材p14主线或不增加新知识的同语境受控重组",
+          "question_text": "Which place does the boy like best?",
+          "options": [
+            "The library.",
+            "The hall.",
+            "The sports field."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Which place do you like best?"
+            ],
+            [
+              "m",
+              "I like the library best."
+            ],
+            [
+              "f",
+              "Where is it?"
+            ],
+            [
+              "m",
+              "It is on the ground floor."
+            ],
+            [
+              "n",
+              "Question: Which place does the boy like best?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q16.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p11-p14·四轮双特征整合",
+          "parent_note": "确认版教材p11-p14主线或不增加新知识的同语境受控重组",
+          "question_text": "Which two features are given?",
+          "options": [
+            "It looks like a boat and has no chairs or desks.",
+            "It looks like an umbrella and has three floors.",
+            "It is a hall and has computers."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "What is special about the library?"
+            ],
+            [
+              "f",
+              "It looks like a boat."
+            ],
+            [
+              "m",
+              "Does it have chairs and desks?"
+            ],
+            [
+              "f",
+              "No, it does not."
+            ],
+            [
+              "n",
+              "Question: Which two features are given?"
+            ]
+          ],
+          "id": 17,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q17.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p9-p14·人物活动对应",
+          "parent_note": "确认版教材p9-p14主线或不增加新知识的同语境受控重组",
+          "question_text": "Where does the boy read?",
+          "options": [
+            "In the library.",
+            "In the classroom.",
+            "In the hall."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "I study in the classroom."
+            ],
+            [
+              "m",
+              "I play on the sports field."
+            ],
+            [
+              "f",
+              "I sing in the hall."
+            ],
+            [
+              "m",
+              "I read in the library."
+            ],
+            [
+              "n",
+              "Question: Where does the boy read?"
+            ]
+          ],
+          "id": 18,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q18.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p12-p14·相似外形跨句辨别",
+          "parent_note": "确认版教材p12-p14主线或不增加新知识的同语境受控重组",
+          "question_text": "Which place looks like a boat?",
+          "options": [
+            "The library.",
+            "The bamboo buildings.",
+            "The sports field."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "The bamboo school buildings have no walls."
+            ],
+            [
+              "f",
+              "They look like big umbrellas."
+            ],
+            [
+              "m",
+              "Our library looks like a boat."
+            ],
+            [
+              "f",
+              "Both places are special."
+            ],
+            [
+              "n",
+              "Question: Which place looks like a boat?"
+            ]
+          ],
+          "id": 19,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q19.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p10-p14·人物地点与目的地整合",
+          "parent_note": "确认版教材p10-p14主线或不增加新知识的同语境受控重组",
+          "question_text": "Where will the group meet?",
+          "options": [
+            "In the computer room.",
+            "In the library.",
+            "On the sports field."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "James is in the library."
+            ],
+            [
+              "m",
+              "Xiaopu is on the sports field."
+            ],
+            [
+              "f",
+              "The group will meet in the computer room."
+            ],
+            [
+              "m",
+              "It is on the ground floor."
+            ],
+            [
+              "n",
+              "Question: Where will the group meet?"
+            ]
+          ],
+          "id": 20,
+          "audio": "static/audio/listening/L4A-T1-W01-D10/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p14·最喜欢的场所",
+          "parent_note": "确认版教材p14主线或不增加新知识的同语境受控重组",
+          "statement": "The speaker's favourite place is the library.",
+          "answer": "true",
+          "id": 21
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p11-p14·楼层信息干扰",
+          "parent_note": "确认版教材p11-p14主线或不增加新知识的同语境受控重组",
+          "statement": "The library is on the second floor.",
+          "answer": "false",
+          "id": 22
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p14·场所外形",
+          "parent_note": "确认版教材p14主线或不增加新知识的同语境受控重组",
+          "statement": "The library looks like a boat.",
+          "answer": "true",
+          "id": 23
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p14·否定信息",
+          "parent_note": "确认版教材p14主线或不增加新知识的同语境受控重组",
+          "statement": "The library has chairs and desks.",
+          "answer": "false",
+          "id": 24
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p9-p14·跨句活动整合",
+          "parent_note": "确认版教材p9-p14主线或不增加新知识的同语境受控重组",
+          "statement": "The speaker studies, plays, sings and reads in different school places.",
+          "answer": "true",
+          "id": 25
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D10/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "I like the library in my school best. It is on the ground floor. It is very special and looks like a boat. The room does not have any chairs or desks. In the library, I read many interesting books. I also like our classroom, hall, computer room, art room and sports field. In the classroom I study, on the sports field I play, and in the hall I sing for all."
+        ]
+      ]
+    }
+  ]
+}

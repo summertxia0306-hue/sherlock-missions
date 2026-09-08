@@ -1,0 +1,78 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "publication_status": "test",
+  "visible": false,
+  "authority_note": "父JSON是唯一活动课程源；本目录保存配对、音频计划和派生儿童安全校验副本。制作完成不等于正式开放。",
+  "study_packs": [
+    {
+      "lesson": 6,
+      "study_pack": "4A-T1-W01-D06",
+      "pair_id": "4A-T1-W01-D06",
+      "planned_title": "四上·第6课｜Unit 1校园场所·我喜欢的地方",
+      "textbook_scope": "4A Unit 1 p7-p9",
+      "planned_difficulty": "L1",
+      "json_difficulty": "L1",
+      "planned_total_minutes": 20,
+      "focus": "校园场所、场所与活动直接对应、表达喜欢",
+      "listening_course_id": "L4A-T1-W01-D06",
+      "speaking_course_id": "S4A-T1-W01-D06",
+      "publication_gate": "须由00按老师实际已教页段确认；当前保持test且隐藏。"
+    },
+    {
+      "lesson": 7,
+      "study_pack": "4A-T1-W01-D07",
+      "pair_id": "4A-T1-W01-D07",
+      "planned_title": "四上·第7课｜Unit 1寻找同伴·在哪里见面",
+      "textbook_scope": "4A Unit 1 p7-p10",
+      "planned_difficulty": "L1+",
+      "json_difficulty": "L1",
+      "planned_total_minutes": 22,
+      "focus": "寻找同伴、项目对话、选择见面地点",
+      "listening_course_id": "L4A-T1-W01-D07",
+      "speaking_course_id": "S4A-T1-W01-D07",
+      "publication_gate": "须由00按老师实际已教页段确认；当前保持test且隐藏。"
+    },
+    {
+      "lesson": 8,
+      "study_pack": "4A-T1-W01-D08",
+      "pair_id": "4A-T1-W01-D08",
+      "planned_title": "四上·第8课｜Unit 1人物地点·连续对话",
+      "textbook_scope": "4A Unit 1 p7-p11",
+      "planned_difficulty": "L2",
+      "json_difficulty": "L2",
+      "planned_total_minutes": 25,
+      "focus": "人物地点对应、连续对话、have no与do not have any",
+      "listening_course_id": "L4A-T1-W01-D08",
+      "speaking_course_id": "S4A-T1-W01-D08",
+      "publication_gate": "须由00按老师实际已教页段确认；当前保持test且隐藏。"
+    },
+    {
+      "lesson": 9,
+      "study_pack": "4A-T1-W01-D09",
+      "pair_id": "4A-T1-W01-D09",
+      "planned_title": "四上·第9课｜Unit 1竹子学校·阅读整合",
+      "textbook_scope": "4A Unit 1 p7-p13",
+      "planned_difficulty": "L2+",
+      "json_difficulty": "L2",
+      "planned_total_minutes": 29,
+      "focus": "竹子学校、建筑特点、跨句提取与整合",
+      "listening_course_id": "L4A-T1-W01-D09",
+      "speaking_course_id": "S4A-T1-W01-D09",
+      "publication_gate": "须由00按老师实际已教页段确认；当前保持test且隐藏。"
+    },
+    {
+      "lesson": 10,
+      "study_pack": "4A-T1-W01-D10",
+      "pair_id": "4A-T1-W01-D10",
+      "planned_title": "四上·第10课｜Unit 1我最喜欢的校园地点·综合",
+      "textbook_scope": "4A Unit 1 p7-p14",
+      "planned_difficulty": "L3",
+      "json_difficulty": "L3",
+      "planned_total_minutes": 33,
+      "focus": "Unit 1周综合、最喜欢的校园地点、稳定完整输出",
+      "listening_course_id": "L4A-T1-W01-D10",
+      "speaking_course_id": "S4A-T1-W01-D10",
+      "publication_gate": "须由00按老师实际已教页段确认；当前保持test且隐藏。"
+    }
+  ]
+}

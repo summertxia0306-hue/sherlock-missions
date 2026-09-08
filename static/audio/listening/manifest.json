@@ -3497,6 +3497,882 @@
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
    "text": "Shenshen says, My favourite day is Sunday. What is Shenshen's favourite day?"
+  },
+  "c13577f14ec1eaf4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Hello! Can you hear me? Let us begin."
+  },
+  "33883745477c76b9": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "school building"
+  },
+  "84fcf1534b0eb1ca": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "sports field"
+  },
+  "eb26cbf34cf3f578": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "art room"
+  },
+  "a8d45c90e48f03a5": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "In the classroom I study."
+  },
+  "d1d89261ceae2fc1": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "On the sports field I play."
+  },
+  "62cd5f9ca908c44f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "In the hall I sing for all."
+  },
+  "ec41d664f9446d98": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The library is the best of all."
+  },
+  "28cd3e8f4d0864fb": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where do you study?"
+  },
+  "c78d5fd388827071": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where do you play?"
+  },
+  "bb01bd774a66032e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where do you sing for all?"
+  },
+  "bc1627858a690118": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Which place is the best of all in the rhyme?"
+  },
+  "7b50b5a6032156e5": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I like my school."
+  },
+  "cc58779229951431": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "It is lovely and cool."
+  },
+  "3f11df974ae25ec1": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What do they like?"
+  },
+  "9772ec76ee5ffd44": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Where do you study?"
+  },
+  "ad3d09ff109ea595": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "In the classroom."
+  },
+  "85d716a5d76fbb47": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Where does the boy study?"
+  },
+  "9f7f3f3ef6008b4f": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "I play on the sports field."
+  },
+  "cdf4476439b31c99": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "We do sports there every day."
+  },
+  "7c453af0392aaed6": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What do they do there?"
+  },
+  "6fea064fb34a9fe5": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I like the sports field best."
+  },
+  "22e79252efc232d1": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "We play basketball there."
+  },
+  "84ccc233824c5981": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which place does the girl like best?"
+  },
+  "769ab1abc8138205": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I like my school. It is lovely and cool. In the classroom I study. We always keep it tidy. On the sports field I play. We do sports there every day. In the hall I sing for all. The library is the best of all."
+  },
+  "5789bb04d960a021": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "project"
+  },
+  "b74bf462651ef3ba": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "school history"
+  },
+  "580ba20c67c8f25e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "ground floor"
+  },
+  "4eb3d1a54155ac26": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "computer room"
+  },
+  "397131c939dfab48": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Shenshen and Minmin begin with their project."
+  },
+  "a175cf9b987888df": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "James is in the library."
+  },
+  "51150a8afc30003b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Xiaopu is likely on the sports field."
+  },
+  "ceccf7fd93347a46": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The computer room is on the ground floor."
+  },
+  "29c709c0a64b8fd1": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Shall we begin with our project?"
+  },
+  "52e2f2173b216223": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is James?"
+  },
+  "b3a92ad4cabe7c45": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is Xiaopu likely to be?"
+  },
+  "e4bbefc527b0b5ae": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where will the group meet?"
+  },
+  "59dd1f8f3618900e": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Shall we begin with our project?"
+  },
+  "17cb584635700b5e": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Sure. But where are James and Xiaopu?"
+  },
+  "e9e0b34936998cd3": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What are they going to begin?"
+  },
+  "2be483b5010a3c00": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Where is James?"
+  },
+  "e2bba34a29d9f2cb": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "He is in the library."
+  },
+  "0cca6c0453a24efb": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Where is James?"
+  },
+  "0c10b5e9df63f662": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Xiaopu likes playing football."
+  },
+  "25c27f1ef51d96c8": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "He is likely on the sports field."
+  },
+  "9d6fecd58b6a17b2": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Why is Xiaopu likely there?"
+  },
+  "45639ee826b60de9": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "How about the computer room?"
+  },
+  "5406ebbf813b251c": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Sure. Let us meet there then."
+  },
+  "fc6ccc631a74e3ef": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Where will they meet?"
+  },
+  "e6b0bb70b4eb645a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Shenshen and Minmin begin with their school history project. James is in the library. Xiaopu likes playing football, so he is likely on the sports field. The classroom has no computers. The computer room is on the ground floor. They will meet there."
+  },
+  "123de6701f6c00f8": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "classroom"
+  },
+  "1153dad75e02ac47": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "second floor"
+  },
+  "45f77900026c17c9": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "has no computers"
+  },
+  "39ed1613239fbe56": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "does not have any computers"
+  },
+  "5490eda433849f4c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The classroom has no computers."
+  },
+  "e4980f192c20be71": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The classroom does not have any computers."
+  },
+  "ca9f06346ba45f03": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "James is in the library and Xiaopu is likely on the sports field."
+  },
+  "b3313f9f959fd9b4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Does the classroom have any computers?"
+  },
+  "928db7c33ef869f7": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where will Minmin's group meet?"
+  },
+  "75526add38c22f5a": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Where are James and Xiaopu?"
+  },
+  "777a52d6ed0f59c3": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "James is in the library."
+  },
+  "384293e6a9b5b80c": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Xiaopu is likely on the sports field."
+  },
+  "4107f72cf7cb4b38": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who is in the library?"
+  },
+  "ae119e29076150fa": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Shall we meet in the classroom?"
+  },
+  "c40943507a8431a8": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "The classroom has no computers."
+  },
+  "e38bf642f2abcf5a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Why do they not choose the classroom?"
+  },
+  "f139971f09032747": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Where is the computer room?"
+  },
+  "a691be51f60c97a3": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "It is on the ground floor."
+  },
+  "52962a8d094f98a9": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Let us meet there then."
+  },
+  "2bd9a056e7aaf39f": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "James is in the library."
+  },
+  "38766664ea2664a5": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Let us look for them."
+  },
+  "71a54f86c4f500d1": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which two places should they go to?"
+  },
+  "09861ae9bb2d1a63": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Minmin's group begins a school history project. James is in the library. Xiaopu likes playing football and is likely on the sports field. The group needs computers. The classroom has no computers. It does not have any computers. The computer room is on the ground floor, so they will meet there."
+  },
+  "cf9bf2f3895c1cc3": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "bamboo"
+  },
+  "66e150b9aa606d41": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "walls"
+  },
+  "28bac12020eb88bb": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "umbrellas"
+  },
+  "b836e6d24e627030": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "three floors"
+  },
+  "3c4e6ed405236263": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "music room"
+  },
+  "d1a80b0dc6b9b5f4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "All the school buildings are made of bamboo."
+  },
+  "e7319ce56f247791": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The bamboo buildings do not have any walls."
+  },
+  "239e43fc5c6bfc25": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The buildings look like big umbrellas."
+  },
+  "d96145b4c732d84a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Each building has three floors."
+  },
+  "3cd89bdae79f4e64": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Students learn and play in bamboo classrooms and special rooms."
+  },
+  "7dee09532b0393a4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What are all the school buildings made of?"
+  },
+  "efb9bd3620e0e648": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Do the bamboo buildings have any walls?"
+  },
+  "1e7da203be75d8fa": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do the buildings look like?"
+  },
+  "021b45afe2846049": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How many floors does each building have?"
+  },
+  "6742de85145a3685": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where do students learn and play?"
+  },
+  "c92122a07574356a": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "This is Green School Bali."
+  },
+  "a753d66f953a3eab": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "What is special about it?"
+  },
+  "746b7731d46899bd": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "All the school buildings are made of bamboo."
+  },
+  "8aeea3adc33408f9": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What makes the school special?"
+  },
+  "b12bc4d293d4c3fe": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Do the buildings have walls?"
+  },
+  "c164aa110be7bc8b": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "No, they do not have any walls."
+  },
+  "25e3c76ccbe6fa57": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "They look like big umbrellas."
+  },
+  "6ec0603e074e3425": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What do the buildings not have?"
+  },
+  "c74d3389afe49b65": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "How many floors does each building have?"
+  },
+  "02a451d98b6fe240": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Three floors."
+  },
+  "14ea5826d62a0e55": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "The floors are made of bamboo too."
+  },
+  "07066db579201c42": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What are the floors made of?"
+  },
+  "c5bfa06ea140137c": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Where do students learn?"
+  },
+  "ed35e70bb7fd7948": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "In bamboo classrooms and computer rooms."
+  },
+  "067823c5490fa2f6": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "They also use music rooms and art rooms."
+  },
+  "88c35fc9278217c9": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which room is not named?"
+  },
+  "021f3d77838a1e48": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "The buildings have no walls."
+  },
+  "8e17d0994f9fc5b8": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Each building has three floors."
+  },
+  "4ddbff15f419e4b4": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "That is a special school."
+  },
+  "af03e771a047fb3d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: How many features are given before the last sentence?"
+  },
+  "6456cc45da839d8d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Green School Bali is special. All the school buildings are made of bamboo. The bamboo buildings have no walls. They do not have any walls, and they look like big umbrellas. Each building has three floors. The floors are made of bamboo too. Students learn and play in bamboo classrooms, computer rooms, music rooms and art rooms."
+  },
+  "c2313ca7d88a9f9a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "favourite place"
+  },
+  "8ca7a1727374f646": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "looks like a boat"
+  },
+  "0fe7413d61f6b31c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "chairs and desks"
+  },
+  "808440f8d3a65a42": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "read many interesting books"
+  },
+  "e559938da5b62df9": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The library is on the ground floor."
+  },
+  "b3c8b6d13555f55b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The library looks like a boat."
+  },
+  "601de075e21eaa14": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The library does not have any chairs or desks."
+  },
+  "7b080d008912fb23": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "In the library, I read many interesting books."
+  },
+  "589709e98914330f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The bamboo buildings have three floors and no walls."
+  },
+  "3014196b9894cb35": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Which place do you like best in the example?"
+  },
+  "cc7ec6efcf051626": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is the library?"
+  },
+  "ab03b950b3e99405": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does the library look like?"
+  },
+  "f4043990f4c57109": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does the library not have?"
+  },
+  "5cbaecfe3ff9f59e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do you do in the library?"
+  },
+  "12a7083a743dc4fe": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Which place do you like best?"
+  },
+  "d278ed85049d4540": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "I like the library best."
+  },
+  "d4f065adcae42c16": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Where is it?"
+  },
+  "5a17d5c372183cee": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "It is on the ground floor."
+  },
+  "6b989815b83cafde": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which place does the boy like best?"
+  },
+  "cfb8e9158cd90861": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "What is special about the library?"
+  },
+  "155c22bc6544779e": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "It looks like a boat."
+  },
+  "124c20d812b1c3d2": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Does it have chairs and desks?"
+  },
+  "31f3603c68258ee2": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "No, it does not."
+  },
+  "09cc241d1b059384": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which two features are given?"
+  },
+  "ce1f2884d4201fda": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I study in the classroom."
+  },
+  "f50d50d10a4a419a": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I sing in the hall."
+  },
+  "770703da9f3293a8": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "I read in the library."
+  },
+  "38163a2c109712a6": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Where does the boy read?"
+  },
+  "204b0f42b17d0b17": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "The bamboo school buildings have no walls."
+  },
+  "305648ec19288214": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "They look like big umbrellas."
+  },
+  "8b6ac414316c5b2a": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Our library looks like a boat."
+  },
+  "061718340f7b1c92": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Both places are special."
+  },
+  "45fe608e524d476f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which place looks like a boat?"
+  },
+  "28e400caab41a8b6": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Xiaopu is on the sports field."
+  },
+  "616b93b0482e4fb0": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "The group will meet in the computer room."
+  },
+  "f3ce83a0f16a90b8": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Where will the group meet?"
+  },
+  "e481b5f2b9f39038": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I like the library in my school best. It is on the ground floor. It is very special and looks like a boat. The room does not have any chairs or desks. In the library, I read many interesting books. I also like our classroom, hall, computer room, art room and sports field. In the classroom I study, on the sports field I play, and in the hall I sing for all."
   }
  },
  "courses": {
@@ -3843,6 +4719,114 @@
    "static/audio/listening/L4A-T1-W01-D05/q19.mp3": "b6b2380acd49d99e",
    "static/audio/listening/L4A-T1-W01-D05/q20.mp3": "dba4dcae66948515",
    "static/audio/listening/L4A-T1-W01-D05/p01.mp3": "1460f56d3cbf27f4"
+  },
+  "L4A-T1-W01-D06": {
+   "static/audio/listening/L4A-T1-W01-D06/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D06/q01.mp3": "07ee038f3b3d62b1",
+   "static/audio/listening/L4A-T1-W01-D06/q02.mp3": "1edc91f8cc8913ea",
+   "static/audio/listening/L4A-T1-W01-D06/q03.mp3": "1fe4f2fc79538578",
+   "static/audio/listening/L4A-T1-W01-D06/q04.mp3": "ea6ab6b88f931ebc",
+   "static/audio/listening/L4A-T1-W01-D06/q05.mp3": "0f556d70c7220e79",
+   "static/audio/listening/L4A-T1-W01-D06/q06.mp3": "509d28e9c1e2f49b",
+   "static/audio/listening/L4A-T1-W01-D06/q07.mp3": "760e89c2847684cc",
+   "static/audio/listening/L4A-T1-W01-D06/q08.mp3": "76971c06bb734a2d",
+   "static/audio/listening/L4A-T1-W01-D06/q09.mp3": "ec0e26e7c396e2d6",
+   "static/audio/listening/L4A-T1-W01-D06/q10.mp3": "c34c8cbeaeed5c33",
+   "static/audio/listening/L4A-T1-W01-D06/q11.mp3": "42517e657fdc3df1",
+   "static/audio/listening/L4A-T1-W01-D06/q12.mp3": "c0ca513dc099bbb9",
+   "static/audio/listening/L4A-T1-W01-D06/q13.mp3": "06bf058f211837da",
+   "static/audio/listening/L4A-T1-W01-D06/q14.mp3": "74d59a52ea8bd9af",
+   "static/audio/listening/L4A-T1-W01-D06/q15.mp3": "9fe4ac2a290a4fae",
+   "static/audio/listening/L4A-T1-W01-D06/q16.mp3": "18cfff006432e952",
+   "static/audio/listening/L4A-T1-W01-D06/p01.mp3": "1d3777c5fdc561da"
+  },
+  "L4A-T1-W01-D07": {
+   "static/audio/listening/L4A-T1-W01-D07/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D07/q01.mp3": "f10dd82e0e1d53d4",
+   "static/audio/listening/L4A-T1-W01-D07/q02.mp3": "86f050feeb9fe8e8",
+   "static/audio/listening/L4A-T1-W01-D07/q03.mp3": "308abeb440e29832",
+   "static/audio/listening/L4A-T1-W01-D07/q04.mp3": "6a1e7bf56b11ff46",
+   "static/audio/listening/L4A-T1-W01-D07/q05.mp3": "c505f6e2cee621da",
+   "static/audio/listening/L4A-T1-W01-D07/q06.mp3": "19c6ec469ef7aafb",
+   "static/audio/listening/L4A-T1-W01-D07/q07.mp3": "35b7558ff79df04c",
+   "static/audio/listening/L4A-T1-W01-D07/q08.mp3": "3561d51ddb904563",
+   "static/audio/listening/L4A-T1-W01-D07/q09.mp3": "13468eace1d5755d",
+   "static/audio/listening/L4A-T1-W01-D07/q10.mp3": "2d2aadfefe88babf",
+   "static/audio/listening/L4A-T1-W01-D07/q11.mp3": "4c572329634f08f7",
+   "static/audio/listening/L4A-T1-W01-D07/q12.mp3": "3a8c8d18a2ce9572",
+   "static/audio/listening/L4A-T1-W01-D07/q13.mp3": "3974cc811fe8d08e",
+   "static/audio/listening/L4A-T1-W01-D07/q14.mp3": "e339a26c15fe091a",
+   "static/audio/listening/L4A-T1-W01-D07/q15.mp3": "56d1151b4e83590b",
+   "static/audio/listening/L4A-T1-W01-D07/q16.mp3": "b9b0d667315c856f",
+   "static/audio/listening/L4A-T1-W01-D07/p01.mp3": "760d0398c3975a7f"
+  },
+  "L4A-T1-W01-D08": {
+   "static/audio/listening/L4A-T1-W01-D08/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D08/q01.mp3": "3178f5b2f5e4d6fd",
+   "static/audio/listening/L4A-T1-W01-D08/q02.mp3": "a7142f49dc4f4281",
+   "static/audio/listening/L4A-T1-W01-D08/q03.mp3": "9e21faf79c426439",
+   "static/audio/listening/L4A-T1-W01-D08/q04.mp3": "5559b2566d32c5fe",
+   "static/audio/listening/L4A-T1-W01-D08/q05.mp3": "1a9e6a03d689f332",
+   "static/audio/listening/L4A-T1-W01-D08/q06.mp3": "f8cb6e46dd34df71",
+   "static/audio/listening/L4A-T1-W01-D08/q07.mp3": "3561d51ddb904563",
+   "static/audio/listening/L4A-T1-W01-D08/q08.mp3": "5c918bf17015e5fd",
+   "static/audio/listening/L4A-T1-W01-D08/q09.mp3": "4c572329634f08f7",
+   "static/audio/listening/L4A-T1-W01-D08/q10.mp3": "2d2aadfefe88babf",
+   "static/audio/listening/L4A-T1-W01-D08/q11.mp3": "3d07948daf7b964e",
+   "static/audio/listening/L4A-T1-W01-D08/q12.mp3": "df712e4f2f044d6c",
+   "static/audio/listening/L4A-T1-W01-D08/q13.mp3": "1d8177a26ec26892",
+   "static/audio/listening/L4A-T1-W01-D08/q14.mp3": "eda3b5b5d3d432e1",
+   "static/audio/listening/L4A-T1-W01-D08/q15.mp3": "4b76ab73a68b4f76",
+   "static/audio/listening/L4A-T1-W01-D08/q16.mp3": "29c69f6facc4df37",
+   "static/audio/listening/L4A-T1-W01-D08/p01.mp3": "5b57b298bc80d2b0"
+  },
+  "L4A-T1-W01-D09": {
+   "static/audio/listening/L4A-T1-W01-D09/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D09/q01.mp3": "f6c919a8108f8562",
+   "static/audio/listening/L4A-T1-W01-D09/q02.mp3": "c88a70494c00dce1",
+   "static/audio/listening/L4A-T1-W01-D09/q03.mp3": "076dbc935b91d989",
+   "static/audio/listening/L4A-T1-W01-D09/q04.mp3": "c8615cfa825779e9",
+   "static/audio/listening/L4A-T1-W01-D09/q05.mp3": "a082259ccfa6d01e",
+   "static/audio/listening/L4A-T1-W01-D09/q06.mp3": "fb9e5ffde4ff7b90",
+   "static/audio/listening/L4A-T1-W01-D09/q07.mp3": "2a3faeaceeb66e96",
+   "static/audio/listening/L4A-T1-W01-D09/q08.mp3": "4c138c5484d5c6b0",
+   "static/audio/listening/L4A-T1-W01-D09/q09.mp3": "44fc4029e0e26fa8",
+   "static/audio/listening/L4A-T1-W01-D09/q10.mp3": "dae1206682305bae",
+   "static/audio/listening/L4A-T1-W01-D09/q11.mp3": "0d073ce168bf474e",
+   "static/audio/listening/L4A-T1-W01-D09/q12.mp3": "6a4f05b525d9606d",
+   "static/audio/listening/L4A-T1-W01-D09/q13.mp3": "2f5fb73d9b637912",
+   "static/audio/listening/L4A-T1-W01-D09/q14.mp3": "23e649ae41a0709e",
+   "static/audio/listening/L4A-T1-W01-D09/q15.mp3": "72013e08ffc86bff",
+   "static/audio/listening/L4A-T1-W01-D09/q16.mp3": "2b0056a7184ad328",
+   "static/audio/listening/L4A-T1-W01-D09/q17.mp3": "885e723fd2ee5ec9",
+   "static/audio/listening/L4A-T1-W01-D09/q18.mp3": "77de2535a541dab3",
+   "static/audio/listening/L4A-T1-W01-D09/q19.mp3": "cd5355fe1ff745a8",
+   "static/audio/listening/L4A-T1-W01-D09/q20.mp3": "8707153dd63b13b0",
+   "static/audio/listening/L4A-T1-W01-D09/p01.mp3": "c933dfcd0a8330a6"
+  },
+  "L4A-T1-W01-D10": {
+   "static/audio/listening/L4A-T1-W01-D10/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D10/q03.mp3": "338bbcc4bdcaf636",
+   "static/audio/listening/L4A-T1-W01-D10/q05.mp3": "1edc91f8cc8913ea",
+   "static/audio/listening/L4A-T1-W01-D10/q06.mp3": "bff961654db0d14b",
+   "static/audio/listening/L4A-T1-W01-D10/q08.mp3": "cd9235d37a06c462",
+   "static/audio/listening/L4A-T1-W01-D10/q10.mp3": "bc3b7f3b164a46c8",
+   "static/audio/listening/L4A-T1-W01-D10/q11.mp3": "eb682d0083230bb8",
+   "static/audio/listening/L4A-T1-W01-D10/q14.mp3": "c627d7dde75e143d",
+   "static/audio/listening/L4A-T1-W01-D10/q15.mp3": "c2bfcd0d37d91cb5",
+   "static/audio/listening/L4A-T1-W01-D10/q17.mp3": "40d4e7587b65651c",
+   "static/audio/listening/L4A-T1-W01-D10/p01.mp3": "1e1108379c9eda08",
+   "static/audio/listening/L4A-T1-W01-D10/q01.mp3": "d024cb607e4a7665",
+   "static/audio/listening/L4A-T1-W01-D10/q02.mp3": "49f3d3bf4fe2235a",
+   "static/audio/listening/L4A-T1-W01-D10/q04.mp3": "e0050dcd3dcd82ac",
+   "static/audio/listening/L4A-T1-W01-D10/q07.mp3": "8706cad500868f18",
+   "static/audio/listening/L4A-T1-W01-D10/q09.mp3": "a6207e1e9b85ae60",
+   "static/audio/listening/L4A-T1-W01-D10/q12.mp3": "0877e9d5962b1ec3",
+   "static/audio/listening/L4A-T1-W01-D10/q13.mp3": "5f51f64b5350af34",
+   "static/audio/listening/L4A-T1-W01-D10/q16.mp3": "73f1df1a5a53f2ab",
+   "static/audio/listening/L4A-T1-W01-D10/q18.mp3": "577dc97330fe9a69",
+   "static/audio/listening/L4A-T1-W01-D10/q19.mp3": "d4ecdf8936f0fba9",
+   "static/audio/listening/L4A-T1-W01-D10/q20.mp3": "7fcd897e92d348b5"
   }
  }
 }

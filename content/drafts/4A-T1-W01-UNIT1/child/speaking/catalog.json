@@ -1,0 +1,57 @@
+[
+  {
+    "course_id": "S4A-T1-W01-D06",
+    "course_version": "1b8544303fefe8a2",
+    "title": "四上·第6课｜Unit 1校园场所·我喜欢的地方（口语）",
+    "course_type": "training",
+    "week": 2,
+    "day": 1,
+    "visible": false,
+    "pair_id": "4A-T1-W01-D06",
+    "study_pack": "4A-T1-W01-D06"
+  },
+  {
+    "course_id": "S4A-T1-W01-D07",
+    "course_version": "f3670628e4df9be2",
+    "title": "四上·第7课｜Unit 1寻找同伴·在哪里见面（口语）",
+    "course_type": "training",
+    "week": 2,
+    "day": 2,
+    "visible": false,
+    "pair_id": "4A-T1-W01-D07",
+    "study_pack": "4A-T1-W01-D07"
+  },
+  {
+    "course_id": "S4A-T1-W01-D08",
+    "course_version": "c2e49e06878dfbc2",
+    "title": "四上·第8课｜Unit 1人物地点·连续对话（口语）",
+    "course_type": "training",
+    "week": 2,
+    "day": 3,
+    "visible": false,
+    "pair_id": "4A-T1-W01-D08",
+    "study_pack": "4A-T1-W01-D08"
+  },
+  {
+    "course_id": "S4A-T1-W01-D09",
+    "course_version": "93fd2b57063274e9",
+    "title": "四上·第9课｜Unit 1竹子学校·阅读整合（口语）",
+    "course_type": "training",
+    "week": 2,
+    "day": 4,
+    "visible": false,
+    "pair_id": "4A-T1-W01-D09",
+    "study_pack": "4A-T1-W01-D09"
+  },
+  {
+    "course_id": "S4A-T1-W01-D10",
+    "course_version": "f83edd7d18103fc5",
+    "title": "四上·第10课｜Unit 1我最喜欢的校园地点·综合（口语）",
+    "course_type": "weekly_review",
+    "week": 2,
+    "day": 5,
+    "visible": false,
+    "pair_id": "4A-T1-W01-D10",
+    "study_pack": "4A-T1-W01-D10"
+  }
+]

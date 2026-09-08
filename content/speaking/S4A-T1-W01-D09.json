@@ -1,0 +1,84 @@
+{
+  "course_id": "S4A-T1-W01-D09",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D09",
+  "pair_id": "4A-T1-W01-D09",
+  "publication_status": "test",
+  "title": "四上·第9课｜Unit 1竹子学校·阅读整合（口语）",
+  "week": 2,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 8,
+  "scope": "4A Unit 1 p7-p13",
+  "difficulty": "L2",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D09/q01.mp3",
+      "tag": "A主线·p12-p13·建筑材料",
+      "parent_note": "确认版教材p12-p13主线或不增加新知识的同语境受控重组",
+      "text": "All the school buildings are made of bamboo."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D09/q02.mp3",
+      "tag": "A主线·p11-p12·否定结构",
+      "parent_note": "确认版教材p11-p12主线或不增加新知识的同语境受控重组",
+      "text": "These bamboo buildings have no walls."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D09/q03.mp3",
+      "tag": "A主线·p11-p12·等义否定表达",
+      "parent_note": "确认版教材p11-p12主线或不增加新知识的同语境受控重组",
+      "text": "They do not have any walls."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D09/q04.mp3",
+      "tag": "A主线·p12·建筑外形",
+      "parent_note": "确认版教材p12主线或不增加新知识的同语境受控重组",
+      "text": "They look like big umbrellas."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D09/q05.mp3",
+      "tag": "A主线·p12·建筑楼层",
+      "parent_note": "确认版教材p12主线或不增加新知识的同语境受控重组",
+      "text": "Each building has three floors."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D09/q06.mp3",
+      "tag": "A主线·p12·场所活动",
+      "parent_note": "确认版教材p12主线或不增加新知识的同语境受控重组",
+      "text": "Students learn and play in bamboo classrooms."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D09/q07.mp3",
+      "tag": "C微调·p12-p13·听问句后材料回应",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p12-p13，不作未掌握结论",
+      "question": "What are the school buildings made of?",
+      "expected": "They are made of bamboo.",
+      "hint": "用完整句回答建筑材料。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D09/q08.mp3",
+      "tag": "A主线·p12·建筑外形问答",
+      "parent_note": "确认版教材p12主线或不增加新知识的同语境受控重组",
+      "question": "What do the buildings look like?",
+      "expected": "They look like big umbrellas.",
+      "hint": "用完整句回答建筑外形。"
+    }
+  ]
+}

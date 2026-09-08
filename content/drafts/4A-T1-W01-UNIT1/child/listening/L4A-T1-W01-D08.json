@@ -1,0 +1,224 @@
+{
+  "course_id": "L4A-T1-W01-D08",
+  "pair_id": "4A-T1-W01-D08",
+  "study_pack": "4A-T1-W01-D08",
+  "course_version": "0e6ab9bb9108ab2d",
+  "title": "四上·第8课｜Unit 1人物地点·连续对话（听力）",
+  "week": 2,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 17,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D08/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "classroom",
+            "computer room",
+            "music room"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D08/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "ground floor",
+            "second floor",
+            "sports field"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D08/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "has no computers",
+            "has three floors",
+            "has no walls"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D08/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "has no computers",
+            "does not have any computers",
+            "has many computers"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D08/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "The classroom has no computers.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D08/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "The classroom has no computers.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D08/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "The computer room is on the second floor.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D08/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "James is in the library and Xiaopu is likely on the sports field.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D08/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "On the sports field.",
+            "In the library.",
+            "In the classroom."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D08/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "In the computer room.",
+            "In the library.",
+            "On the sports field."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D08/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "No, it does not.",
+            "Yes, it does.",
+            "It has three floors."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D08/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "In the computer room on the ground floor.",
+            "In the classroom on the ground floor.",
+            "In the library on the second floor."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D08/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "options": [
+            "James.",
+            "Xiaopu.",
+            "Minmin."
+          ],
+          "question_text": "Who is in the library?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D08/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "options": [
+            "It has no computers.",
+            "It has no walls.",
+            "It is on the second floor."
+          ],
+          "question_text": "Why do they not choose the classroom?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D08/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "options": [
+            "In the computer room.",
+            "In the hall.",
+            "On the sports field."
+          ],
+          "question_text": "Where will they meet?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D08/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "The sports field and the library.",
+            "The classroom and the hall.",
+            "The art room and the computer room."
+          ],
+          "question_text": "Which two places should they go to?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D08/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D08/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "James is in the library."
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "Xiaopu is likely in the art room."
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "The classroom does not have any computers."
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "The group will meet on the second floor."
+        }
+      ]
+    }
+  ]
+}

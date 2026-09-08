@@ -6,11 +6,11 @@ const fs = require('node:fs')
 const path = require('node:path')
 const { createFileSpeakingCourseProvider } = require('../speaking-service')
 
-it('publishes matching versions for all retained and renumbered formal courses', () => {
+it('publishes matching versions for visible courses and excludes hidden test courses', () => {
   const provider = createFileSpeakingCourseProvider()
   const catalog = provider.catalog()
-  assert.equal(catalog.length, 17)
-  assert.equal(catalog.filter((item) => item.visible === false).length, 0)
+  assert.equal(catalog.length, 22)
+  assert.equal(catalog.filter((item) => item.visible === false).length, 5)
   const publicDirectory = path.join(__dirname, '..', '..', '..', 'web', 'public', 'content', 'speaking')
   for (const item of catalog) {
     const publicFile = path.join(publicDirectory, `${item.course_id}.json`)

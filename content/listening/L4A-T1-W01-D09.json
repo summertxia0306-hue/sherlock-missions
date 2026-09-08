@@ -1,0 +1,544 @@
+{
+  "course_id": "L4A-T1-W01-D09",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D09",
+  "pair_id": "4A-T1-W01-D09",
+  "publication_status": "test",
+  "title": "四上·第9课｜Unit 1竹子学校·阅读整合（听力）",
+  "week": 2,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 21,
+  "scope": "4A Unit 1 p7-p13",
+  "difficulty": "L2",
+  "scoring": {
+    "per_question": 4,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D09/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p12-p13·竹子学校关键词",
+          "parent_note": "确认版教材p12-p13主线或不增加新知识的同语境受控重组",
+          "options": [
+            "bamboo",
+            "umbrella",
+            "wall"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "bamboo"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p12-p13·建筑部位辨别",
+          "parent_note": "确认版教材p12-p13主线或不增加新知识的同语境受控重组",
+          "options": [
+            "floors",
+            "walls",
+            "classrooms"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "walls"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p12·外形比喻",
+          "parent_note": "确认版教材p12主线或不增加新知识的同语境受控重组",
+          "options": [
+            "buildings",
+            "umbrellas",
+            "computer rooms"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "umbrellas"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p12·建筑楼层信息",
+          "parent_note": "确认版教材p12主线或不增加新知识的同语境受控重组",
+          "options": [
+            "three floors",
+            "ground floor",
+            "school history"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "three floors"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q04.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p12·听音选词与功能房辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p12，不作未掌握结论",
+          "options": [
+            "computer room",
+            "art room",
+            "music room"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "music room"
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p12-p13·建筑材料",
+          "parent_note": "确认版教材p12-p13主线或不增加新知识的同语境受控重组",
+          "display": "All the school buildings are made of bamboo.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "All the school buildings are made of bamboo."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p11-p12·等义否定表达",
+          "parent_note": "确认版教材p11-p12主线或不增加新知识的同语境受控重组",
+          "display": "The bamboo buildings have no walls.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The bamboo buildings do not have any walls."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p12·建筑外形辨别",
+          "parent_note": "确认版教材p12主线或不增加新知识的同语境受控重组",
+          "display": "The buildings look like boats.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The buildings look like big umbrellas."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q08.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p12·楼层数量",
+          "parent_note": "确认版教材p12主线或不增加新知识的同语境受控重组",
+          "display": "Each building has three floors.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Each building has three floors."
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q09.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p12·跨句活动概括",
+          "parent_note": "确认版教材p12主线或不增加新知识的同语境受控重组",
+          "display": "Students learn and play in bamboo classrooms and special rooms.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Students learn and play in bamboo classrooms and special rooms."
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p12-p13·材料问答",
+          "parent_note": "确认版教材p12-p13主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Bamboo.",
+            "Walls.",
+            "Umbrellas."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What are all the school buildings made of?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p11-p12·否定事实回应",
+          "parent_note": "确认版教材p11-p12主线或不增加新知识的同语境受控重组",
+          "options": [
+            "No, they do not.",
+            "Yes, they do.",
+            "They have three walls."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Do the bamboo buildings have any walls?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q12.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p12·听问句选答语与外形辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p12，不作未掌握结论",
+          "options": [
+            "Big umbrellas.",
+            "Boats.",
+            "Computer rooms."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What do the buildings look like?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q13.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p12·数字信息提取",
+          "parent_note": "确认版教材p12主线或不增加新知识的同语境受控重组",
+          "options": [
+            "One.",
+            "Two.",
+            "Three."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "How many floors does each building have?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q14.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p12·场所活动整合",
+          "parent_note": "确认版教材p12主线或不增加新知识的同语境受控重组",
+          "options": [
+            "In bamboo classrooms and special rooms.",
+            "Only on the sports field.",
+            "Only in the library."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where do students learn and play?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p12-p13·三轮建筑材料提取",
+          "parent_note": "确认版教材p12-p13主线或不增加新知识的同语境受控重组",
+          "question_text": "What makes the school special?",
+          "options": [
+            "Its bamboo buildings.",
+            "Its boats.",
+            "Its desks."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "This is Green School Bali."
+            ],
+            [
+              "m",
+              "What is special about it?"
+            ],
+            [
+              "f",
+              "All the school buildings are made of bamboo."
+            ],
+            [
+              "n",
+              "Question: What makes the school special?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q16.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p11-p12·三轮否定信息",
+          "parent_note": "确认版教材p11-p12主线或不增加新知识的同语境受控重组",
+          "question_text": "What do the buildings not have?",
+          "options": [
+            "Walls.",
+            "Floors.",
+            "Classrooms."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Do the buildings have walls?"
+            ],
+            [
+              "f",
+              "No, they do not have any walls."
+            ],
+            [
+              "m",
+              "They look like big umbrellas."
+            ],
+            [
+              "n",
+              "Question: What do the buildings not have?"
+            ]
+          ],
+          "id": 17,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q17.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p12-p13·跨句楼层材料",
+          "parent_note": "确认版教材p12-p13主线或不增加新知识的同语境受控重组",
+          "question_text": "What are the floors made of?",
+          "options": [
+            "Bamboo.",
+            "Walls.",
+            "Umbrellas."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "How many floors does each building have?"
+            ],
+            [
+              "m",
+              "Three floors."
+            ],
+            [
+              "f",
+              "The floors are made of bamboo too."
+            ],
+            [
+              "n",
+              "Question: What are the floors made of?"
+            ]
+          ],
+          "id": 18,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q18.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p12·多地点信息筛选",
+          "parent_note": "确认版教材p12主线或不增加新知识的同语境受控重组",
+          "question_text": "Which room is not named?",
+          "options": [
+            "The hall.",
+            "The music room.",
+            "The art room."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Where do students learn?"
+            ],
+            [
+              "f",
+              "In bamboo classrooms and computer rooms."
+            ],
+            [
+              "m",
+              "They also use music rooms and art rooms."
+            ],
+            [
+              "n",
+              "Question: Which room is not named?"
+            ]
+          ],
+          "id": 19,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q19.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p12·四轮信息计数",
+          "parent_note": "确认版教材p12主线或不增加新知识的同语境受控重组",
+          "question_text": "How many features are given before the last sentence?",
+          "options": [
+            "One.",
+            "Two.",
+            "Three."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "The buildings have no walls."
+            ],
+            [
+              "m",
+              "They look like big umbrellas."
+            ],
+            [
+              "f",
+              "Each building has three floors."
+            ],
+            [
+              "m",
+              "That is a special school."
+            ],
+            [
+              "n",
+              "Question: How many features are given before the last sentence?"
+            ]
+          ],
+          "id": 20,
+          "audio": "static/audio/listening/L4A-T1-W01-D09/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p12-p13·学校材料概括",
+          "parent_note": "确认版教材p12-p13主线或不增加新知识的同语境受控重组",
+          "statement": "Green School Bali has bamboo school buildings.",
+          "answer": "true",
+          "id": 21
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p12·否定信息辨别",
+          "parent_note": "确认版教材p12主线或不增加新知识的同语境受控重组",
+          "statement": "The bamboo buildings have many walls.",
+          "answer": "false",
+          "id": 22
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p12·建筑外形",
+          "parent_note": "确认版教材p12主线或不增加新知识的同语境受控重组",
+          "statement": "The buildings look like big umbrellas.",
+          "answer": "true",
+          "id": 23
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p12·数字信息辨别",
+          "parent_note": "确认版教材p12主线或不增加新知识的同语境受控重组",
+          "statement": "Each building has two floors.",
+          "answer": "false",
+          "id": 24
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p12·跨句功能房整合",
+          "parent_note": "确认版教材p12主线或不增加新知识的同语境受控重组",
+          "statement": "Students use computer rooms, music rooms and art rooms.",
+          "answer": "true",
+          "id": 25
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D09/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Green School Bali is special. All the school buildings are made of bamboo. The bamboo buildings have no walls. They do not have any walls, and they look like big umbrellas. Each building has three floors. The floors are made of bamboo too. Students learn and play in bamboo classrooms, computer rooms, music rooms and art rooms."
+        ]
+      ]
+    }
+  ]
+}

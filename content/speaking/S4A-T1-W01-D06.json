@@ -1,0 +1,84 @@
+{
+  "course_id": "S4A-T1-W01-D06",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D06",
+  "pair_id": "4A-T1-W01-D06",
+  "publication_status": "test",
+  "title": "四上·第6课｜Unit 1校园场所·我喜欢的地方（口语）",
+  "week": 2,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 8,
+  "scope": "4A Unit 1 p7-p9",
+  "difficulty": "L1",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D06/q01.mp3",
+      "tag": "A主线·p9·表达喜欢",
+      "parent_note": "确认版教材p9主线或不增加新知识的同语境受控重组",
+      "text": "I like my school."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D06/q02.mp3",
+      "tag": "A主线·p9·描述学校",
+      "parent_note": "确认版教材p9主线或不增加新知识的同语境受控重组",
+      "text": "It is lovely and cool."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D06/q03.mp3",
+      "tag": "A主线·p9·场所活动",
+      "parent_note": "确认版教材p9主线或不增加新知识的同语境受控重组",
+      "text": "In the classroom I study."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D06/q04.mp3",
+      "tag": "A主线·p9·场所活动",
+      "parent_note": "确认版教材p9主线或不增加新知识的同语境受控重组",
+      "text": "On the sports field I play."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D06/q05.mp3",
+      "tag": "A主线·p9·场所活动",
+      "parent_note": "确认版教材p9主线或不增加新知识的同语境受控重组",
+      "text": "In the hall I sing for all."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D06/q06.mp3",
+      "tag": "A主线·p9·表达喜欢",
+      "parent_note": "确认版教材p9主线或不增加新知识的同语境受控重组",
+      "text": "The library is the best of all."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D06/q07.mp3",
+      "tag": "C微调·p9·听问句后准确回应",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p9，不作未掌握结论",
+      "question": "Where do you study?",
+      "expected": "In the classroom.",
+      "hint": "回答在哪里学习。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D06/q08.mp3",
+      "tag": "A主线·p9·场所活动问答",
+      "parent_note": "确认版教材p9主线或不增加新知识的同语境受控重组",
+      "question": "Where do you play?",
+      "expected": "On the sports field.",
+      "hint": "回答在哪里玩或做运动。"
+    }
+  ]
+}

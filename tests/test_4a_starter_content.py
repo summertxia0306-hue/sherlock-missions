@@ -130,8 +130,8 @@ class StarterFivePackContentTests(unittest.TestCase):
         for term in forbidden:
             self.assertNotIn(term, payload)
 
-    def test_obsolete_and_pre_migration_term_ids_are_absent(self):
-        for day in range(6, 12):
+    def test_obsolete_pre_migration_d11_is_absent(self):
+        for day in (11,):
             self.assertFalse((LISTENING_DIR / f"L4A-T1-W01-D{day:02d}.json").exists())
             self.assertFalse((SPEAKING_DIR / f"S4A-T1-W01-D{day:02d}.json").exists())
 

@@ -756,8 +756,12 @@ def remove_if_exists(path: Path):
 
 
 def clean_obsolete_course_outputs():
-    """Remove only generated term outputs superseded by the D01-D05 release."""
-    for day in range(6, 12):
+    """Remove only the obsolete D11 migration output.
+
+    D06-D10 are now the approved Unit 1 course numbers and must survive any
+    later Starter rebuild.
+    """
+    for day in (11,):
         remove_if_exists(LISTENING_OUT / f"L4A-T1-W01-D{day:02d}.json")
         remove_if_exists(SPEAKING_OUT / f"S4A-T1-W01-D{day:02d}.json")
     for day in range(1, 12):
@@ -768,12 +772,12 @@ def clean_obsolete_course_outputs():
 
 
 def reset_renumbered_audio():
-    """Clear exact generated course directories and manifest rows before rebuilding."""
+    """Clear only Starter D01-D05 audio before rebuilding Starter."""
     for module, prefix, audio_root in (
         ("listening", "L", LISTENING_AUDIO_ROOT),
         ("speaking", "S", SPEAKING_AUDIO_ROOT),
     ):
-        course_ids = [f"{prefix}4A-T1-W01-D{day:02d}" for day in range(1, 12)]
+        course_ids = [f"{prefix}4A-T1-W01-D{day:02d}" for day in range(1, 6)]
         for course_id in course_ids:
             target = audio_root / course_id
             if target.is_dir():
@@ -785,7 +789,7 @@ def reset_renumbered_audio():
             for course_id in course_ids:
                 courses.pop(course_id, None)
             json_write(manifest_path, manifest)
-        print(f"Reset {module} D01-D11 generated audio rows; D01-D05 must now be regenerated.")
+        print(f"Reset {module} Starter D01-D05 generated audio rows.")
 
 
 def main():
@@ -793,7 +797,7 @@ def main():
     parser.add_argument(
         "--reset-renumbered-audio",
         action="store_true",
-        help="remove exact D01-D11 generated audio directories and manifest rows before rebuilding D01-D05",
+        help="remove exact Starter D01-D05 audio directories and manifest rows before rebuilding",
     )
     args = parser.parse_args()
     clean_obsolete_course_outputs()

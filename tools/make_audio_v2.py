@@ -148,10 +148,14 @@ async def synth_fragment(role, text, dest):
     prefer_threaded_dns_on_windows()
     import edge_tts
     com = edge_tts.Communicate(text, VOICES[role], rate=RATE, proxy=PROXY)
-    buf = bytearray()
-    async for chunk in com.stream():
-        if chunk["type"] == "audio":
-            buf.extend(chunk["data"])
+    async def receive_audio():
+        audio = bytearray()
+        async for chunk in com.stream():
+            if chunk["type"] == "audio":
+                audio.extend(chunk["data"])
+        return audio
+
+    buf = await asyncio.wait_for(receive_audio(), timeout=45)
     if len(buf) < 1000:
         raise RuntimeError("音频过短，疑似生成失败")
     tmp = dest + ".tmp"

@@ -1,0 +1,224 @@
+{
+  "course_id": "L4A-T1-W01-D06",
+  "pair_id": "4A-T1-W01-D06",
+  "study_pack": "4A-T1-W01-D06",
+  "course_version": "179c79dd16602d7d",
+  "title": "四上·第6课｜Unit 1校园场所·我喜欢的地方（听力）",
+  "week": 2,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 12,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D06/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "school building",
+            "sports field",
+            "art room"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D06/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "classroom",
+            "library",
+            "hall"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D06/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "computer room",
+            "sports field",
+            "school building"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D06/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "hall",
+            "classroom",
+            "art room"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D06/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "In the classroom I study.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D06/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "On the sports field I play.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D06/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "In the hall I study.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D06/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "The library is the best of all.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D06/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "In the classroom.",
+            "On the sports field.",
+            "In the hall."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D06/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "In the library.",
+            "On the sports field.",
+            "In the computer room."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D06/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "In the hall.",
+            "In the classroom.",
+            "In the art room."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D06/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "The library.",
+            "The classroom.",
+            "The school building."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D06/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "options": [
+            "Their school.",
+            "The sports field only.",
+            "The computer room only."
+          ],
+          "question_text": "What do they like?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D06/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "options": [
+            "In the classroom.",
+            "In the hall.",
+            "In the library."
+          ],
+          "question_text": "Where does the boy study?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D06/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "options": [
+            "They study.",
+            "They do sports.",
+            "They sing."
+          ],
+          "question_text": "What do they do there?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D06/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "The hall.",
+            "The sports field.",
+            "The library."
+          ],
+          "question_text": "Which place does the girl like best?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D06/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D06/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "The school is lovely and cool."
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "The speaker studies in the hall."
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "They do sports on the sports field every day."
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "The library is the best of all."
+        }
+      ]
+    }
+  ]
+}

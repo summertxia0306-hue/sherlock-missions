@@ -839,6 +839,196 @@
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
    "text": "What day is after Saturday?"
+  },
+  "c9e8a0a4bb769dd6": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I like my school."
+  },
+  "da08866b4f26b49e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It is lovely and cool."
+  },
+  "8601cccd86211ef5": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "In the classroom I study."
+  },
+  "8c78a6bbed7d1b2d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "On the sports field I play."
+  },
+  "eabbad07f9b3dfd6": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "In the hall I sing for all."
+  },
+  "d3daf611384e1428": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The library is the best of all."
+  },
+  "54da626f7003614b": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where do you study?"
+  },
+  "f9fdb2b26d1dd2a1": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where do you play?"
+  },
+  "8866fc1044ed0d68": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Shall we begin with our project?"
+  },
+  "5e8375cf53db85df": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Sure. But where are James and Xiaopu?"
+  },
+  "c4919fe929d5322f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "James is in the library."
+  },
+  "271de88dbe6bacfc": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Xiaopu is likely on the sports field."
+  },
+  "7a832a0bb41a3b1a": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How about the computer room?"
+  },
+  "151f030314fb1b03": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Sure. Let us meet there then."
+  },
+  "274fc31b1de44562": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is James?"
+  },
+  "7f66750cb0edcd1f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where will the group meet?"
+  },
+  "bfad290748f3076e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The classroom has no computers."
+  },
+  "7f5bf11aabb79b07": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The classroom does not have any computers."
+  },
+  "0aa1d69f25a1b003": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The computer room is on the ground floor."
+  },
+  "57fb1c998a5d1432": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Let us meet in the computer room then."
+  },
+  "8301120a98d5a908": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Does the classroom have any computers?"
+  },
+  "4c66b7de6951738d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where will Minmin's group meet?"
+  },
+  "2ce8e03821573085": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "All the school buildings are made of bamboo."
+  },
+  "2c463725512726e2": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "These bamboo buildings have no walls."
+  },
+  "9d7b4716b9dad013": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "They do not have any walls."
+  },
+  "5eb335788589bf85": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "They look like big umbrellas."
+  },
+  "4d64607cc52b2f59": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Each building has three floors."
+  },
+  "6cd5da56e3a6cec7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Students learn and play in bamboo classrooms."
+  },
+  "4bd808763db66cf0": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What are the school buildings made of?"
+  },
+  "c7cf8a448890d89e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do the buildings look like?"
+  },
+  "62e0503eed2cf61f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I like the library in my school best."
+  },
+  "96d58f0f833499f0": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It is on the ground floor."
+  },
+  "841540bc607c9d51": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It is very special and looks like a boat."
+  },
+  "856353155ca3ad87": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The room does not have any chairs or desks."
+  },
+  "550844264627f04c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "In the library, I read many interesting books."
+  },
+  "d0c652ff15618d64": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I like my school because every place is special."
+  },
+  "a898721299d6b2fb": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is the library?"
+  },
+  "bc97b769a6288393": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do you do in the library?"
   }
  },
  "courses": {
@@ -1011,6 +1201,56 @@
    "static/audio/speaking/S4A-T1-W01-D05/q06.mp3": "847bb7e12cf1128d",
    "static/audio/speaking/S4A-T1-W01-D05/q07.mp3": "fd818df19483f9ff",
    "static/audio/speaking/S4A-T1-W01-D05/q08.mp3": "8174fedc9684c9eb"
+  },
+  "S4A-T1-W01-D06": {
+   "static/audio/speaking/S4A-T1-W01-D06/q01.mp3": "c9e8a0a4bb769dd6",
+   "static/audio/speaking/S4A-T1-W01-D06/q02.mp3": "da08866b4f26b49e",
+   "static/audio/speaking/S4A-T1-W01-D06/q03.mp3": "8601cccd86211ef5",
+   "static/audio/speaking/S4A-T1-W01-D06/q04.mp3": "8c78a6bbed7d1b2d",
+   "static/audio/speaking/S4A-T1-W01-D06/q05.mp3": "eabbad07f9b3dfd6",
+   "static/audio/speaking/S4A-T1-W01-D06/q06.mp3": "d3daf611384e1428",
+   "static/audio/speaking/S4A-T1-W01-D06/q07.mp3": "54da626f7003614b",
+   "static/audio/speaking/S4A-T1-W01-D06/q08.mp3": "f9fdb2b26d1dd2a1"
+  },
+  "S4A-T1-W01-D07": {
+   "static/audio/speaking/S4A-T1-W01-D07/q01.mp3": "8866fc1044ed0d68",
+   "static/audio/speaking/S4A-T1-W01-D07/q02.mp3": "5e8375cf53db85df",
+   "static/audio/speaking/S4A-T1-W01-D07/q03.mp3": "c4919fe929d5322f",
+   "static/audio/speaking/S4A-T1-W01-D07/q04.mp3": "271de88dbe6bacfc",
+   "static/audio/speaking/S4A-T1-W01-D07/q05.mp3": "7a832a0bb41a3b1a",
+   "static/audio/speaking/S4A-T1-W01-D07/q06.mp3": "151f030314fb1b03",
+   "static/audio/speaking/S4A-T1-W01-D07/q07.mp3": "274fc31b1de44562",
+   "static/audio/speaking/S4A-T1-W01-D07/q08.mp3": "7f66750cb0edcd1f"
+  },
+  "S4A-T1-W01-D08": {
+   "static/audio/speaking/S4A-T1-W01-D08/q01.mp3": "bfad290748f3076e",
+   "static/audio/speaking/S4A-T1-W01-D08/q02.mp3": "7f5bf11aabb79b07",
+   "static/audio/speaking/S4A-T1-W01-D08/q03.mp3": "c4919fe929d5322f",
+   "static/audio/speaking/S4A-T1-W01-D08/q04.mp3": "271de88dbe6bacfc",
+   "static/audio/speaking/S4A-T1-W01-D08/q05.mp3": "0aa1d69f25a1b003",
+   "static/audio/speaking/S4A-T1-W01-D08/q06.mp3": "57fb1c998a5d1432",
+   "static/audio/speaking/S4A-T1-W01-D08/q07.mp3": "8301120a98d5a908",
+   "static/audio/speaking/S4A-T1-W01-D08/q08.mp3": "4c66b7de6951738d"
+  },
+  "S4A-T1-W01-D09": {
+   "static/audio/speaking/S4A-T1-W01-D09/q01.mp3": "2ce8e03821573085",
+   "static/audio/speaking/S4A-T1-W01-D09/q02.mp3": "2c463725512726e2",
+   "static/audio/speaking/S4A-T1-W01-D09/q03.mp3": "9d7b4716b9dad013",
+   "static/audio/speaking/S4A-T1-W01-D09/q04.mp3": "5eb335788589bf85",
+   "static/audio/speaking/S4A-T1-W01-D09/q05.mp3": "4d64607cc52b2f59",
+   "static/audio/speaking/S4A-T1-W01-D09/q06.mp3": "6cd5da56e3a6cec7",
+   "static/audio/speaking/S4A-T1-W01-D09/q07.mp3": "4bd808763db66cf0",
+   "static/audio/speaking/S4A-T1-W01-D09/q08.mp3": "c7cf8a448890d89e"
+  },
+  "S4A-T1-W01-D10": {
+   "static/audio/speaking/S4A-T1-W01-D10/q01.mp3": "62e0503eed2cf61f",
+   "static/audio/speaking/S4A-T1-W01-D10/q02.mp3": "96d58f0f833499f0",
+   "static/audio/speaking/S4A-T1-W01-D10/q03.mp3": "841540bc607c9d51",
+   "static/audio/speaking/S4A-T1-W01-D10/q04.mp3": "856353155ca3ad87",
+   "static/audio/speaking/S4A-T1-W01-D10/q05.mp3": "550844264627f04c",
+   "static/audio/speaking/S4A-T1-W01-D10/q06.mp3": "d0c652ff15618d64",
+   "static/audio/speaking/S4A-T1-W01-D10/q07.mp3": "a898721299d6b2fb",
+   "static/audio/speaking/S4A-T1-W01-D10/q08.mp3": "bc97b769a6288393"
   }
  }
 }

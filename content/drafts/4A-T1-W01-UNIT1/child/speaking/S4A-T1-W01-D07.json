@@ -1,0 +1,61 @@
+{
+  "course_id": "S4A-T1-W01-D07",
+  "pair_id": "4A-T1-W01-D07",
+  "study_pack": "4A-T1-W01-D07",
+  "course_version": "f3670628e4df9be2",
+  "title": "四上·第7课｜Unit 1寻找同伴·在哪里见面（口语）",
+  "week": 2,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Shall we begin with our project?",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D07/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "Sure. But where are James and Xiaopu?",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D07/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "James is in the library.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D07/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Xiaopu is likely on the sports field.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D07/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "How about the computer room?",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D07/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Sure. Let us meet there then.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D07/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答James在哪里。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D07/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答小组在哪里见面。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D07/q08.mp3"
+    }
+  ]
+}

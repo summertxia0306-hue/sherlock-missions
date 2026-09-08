@@ -1,0 +1,61 @@
+{
+  "course_id": "S4A-T1-W01-D10",
+  "pair_id": "4A-T1-W01-D10",
+  "study_pack": "4A-T1-W01-D10",
+  "course_version": "f83edd7d18103fc5",
+  "title": "四上·第10课｜Unit 1我最喜欢的校园地点·综合（口语）",
+  "week": 2,
+  "day": 5,
+  "course_type": "weekly_review",
+  "est_minutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "I like the library in my school best.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D10/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "It is on the ground floor.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D10/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "It is very special and looks like a boat.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D10/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "The room does not have any chairs or desks.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D10/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "In the library, I read many interesting books.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D10/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "I like my school because every place is special.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D10/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答图书馆楼层。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D10/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答在图书馆做什么。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D10/q08.mp3"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "course_id": "S4A-T1-W01-D07",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D07",
+  "pair_id": "4A-T1-W01-D07",
+  "publication_status": "test",
+  "title": "四上·第7课｜Unit 1寻找同伴·在哪里见面（口语）",
+  "week": 2,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 8,
+  "scope": "4A Unit 1 p7-p10",
+  "difficulty": "L1",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D07/q01.mp3",
+      "tag": "A主线·p10·项目对话",
+      "parent_note": "确认版教材p10主线或不增加新知识的同语境受控重组",
+      "text": "Shall we begin with our project?"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D07/q02.mp3",
+      "tag": "A主线·p10·寻找同伴",
+      "parent_note": "确认版教材p10主线或不增加新知识的同语境受控重组",
+      "text": "Sure. But where are James and Xiaopu?"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D07/q03.mp3",
+      "tag": "A主线·p10·人物地点",
+      "parent_note": "确认版教材p10主线或不增加新知识的同语境受控重组",
+      "text": "James is in the library."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D07/q04.mp3",
+      "tag": "A主线·p10·人物地点推断",
+      "parent_note": "确认版教材p10主线或不增加新知识的同语境受控重组",
+      "text": "Xiaopu is likely on the sports field."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D07/q05.mp3",
+      "tag": "A主线·p10·提议见面地点",
+      "parent_note": "确认版教材p10主线或不增加新知识的同语境受控重组",
+      "text": "How about the computer room?"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D07/q06.mp3",
+      "tag": "A主线·p10·接受提议",
+      "parent_note": "确认版教材p10主线或不增加新知识的同语境受控重组",
+      "text": "Sure. Let us meet there then."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D07/q07.mp3",
+      "tag": "C微调·p10·听问句后人物地点对应",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p10，不作未掌握结论",
+      "question": "Where is James?",
+      "expected": "He is in the library.",
+      "hint": "用完整句回答James在哪里。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D07/q08.mp3",
+      "tag": "A主线·p10·见面地点问答",
+      "parent_note": "确认版教材p10主线或不增加新知识的同语境受控重组",
+      "question": "Where will the group meet?",
+      "expected": "They will meet in the computer room.",
+      "hint": "用完整句回答小组在哪里见面。"
+    }
+  ]
+}

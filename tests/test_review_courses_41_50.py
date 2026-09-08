@@ -12,9 +12,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LISTENING_IDS = ["W01D%02d" % i for i in range(41, 51)]
 SPEAKING_IDS = ["S01D%02d" % i for i in range(41, 51)]
 ACTIVE_LISTENING_IDS = sorted(["W01D%02d" % i for i in range(39, 51)] +
-                              ["L4A-T1-W01-D%02d" % i for i in range(1, 6)])
+                              ["L4A-T1-W01-D%02d" % i for i in range(1, 11)])
 ACTIVE_SPEAKING_IDS = sorted(["S01D%02d" % i for i in range(39, 51)] +
-                             ["S4A-T1-W01-D%02d" % i for i in range(1, 6)])
+                             ["S4A-T1-W01-D%02d" % i for i in range(1, 11)])
 
 EXPECTED_SCOPES = {
     41: "M1U1",

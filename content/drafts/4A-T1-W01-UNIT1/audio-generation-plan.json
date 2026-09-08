@@ -1,0 +1,1926 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "generation_status": "READY_TO_GENERATE",
+  "publication_status": "test",
+  "expected_listening_outputs": 98,
+  "expected_speaking_outputs": 40,
+  "expected_total_outputs": 138,
+  "items": [
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D06",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D06/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D06",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D06/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "school building"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D06",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D06/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "library"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D06",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D06/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "sports field"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D06",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D06/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "art room"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D06",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D06/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "In the classroom I study."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D06",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D06/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "On the sports field I play."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D06",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D06/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "In the hall I sing for all."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D06",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D06/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "The library is the best of all."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D06",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D06/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do you study?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D06",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D06/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do you play?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D06",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D06/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do you sing for all?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D06",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D06/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Which place is the best of all in the rhyme?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D06",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D06/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "I like my school."
+        ],
+        [
+          "m",
+          "It is lovely and cool."
+        ],
+        [
+          "n",
+          "Question: What do they like?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D06",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D06/q14.mp3",
+      "clips": [
+        [
+          "f",
+          "Where do you study?"
+        ],
+        [
+          "m",
+          "In the classroom."
+        ],
+        [
+          "n",
+          "Question: Where does the boy study?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D06",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D06/q15.mp3",
+      "clips": [
+        [
+          "m",
+          "I play on the sports field."
+        ],
+        [
+          "f",
+          "We do sports there every day."
+        ],
+        [
+          "n",
+          "Question: What do they do there?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D06",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D06/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "I like the sports field best."
+        ],
+        [
+          "m",
+          "We play basketball there."
+        ],
+        [
+          "n",
+          "Question: Which place does the girl like best?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D06",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D06/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "I like my school. It is lovely and cool. In the classroom I study. We always keep it tidy. On the sports field I play. We do sports there every day. In the hall I sing for all. The library is the best of all."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D07/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "project"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "school history"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "ground floor"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "computer room"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "Shenshen and Minmin begin with their project."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "James is in the library."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Xiaopu is likely on the sports field."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "The computer room is on the ground floor."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Shall we begin with our project?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Where is James?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Where is Xiaopu likely to be?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Where will the group meet?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "Shall we begin with our project?"
+        ],
+        [
+          "m",
+          "Sure. But where are James and Xiaopu?"
+        ],
+        [
+          "n",
+          "Question: What are they going to begin?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q14.mp3",
+      "clips": [
+        [
+          "f",
+          "Where is James?"
+        ],
+        [
+          "m",
+          "He is in the library."
+        ],
+        [
+          "n",
+          "Question: Where is James?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "Xiaopu likes playing football."
+        ],
+        [
+          "m",
+          "He is likely on the sports field."
+        ],
+        [
+          "n",
+          "Question: Why is Xiaopu likely there?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D07/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "How about the computer room?"
+        ],
+        [
+          "m",
+          "Sure. Let us meet there then."
+        ],
+        [
+          "n",
+          "Question: Where will they meet?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D07",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D07/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "Shenshen and Minmin begin with their school history project. James is in the library. Xiaopu likes playing football, so he is likely on the sports field. The classroom has no computers. The computer room is on the ground floor. They will meet there."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D08/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "classroom"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "second floor"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "has no computers"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "does not have any computers"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "The classroom has no computers."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "The classroom does not have any computers."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "The computer room is on the ground floor."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "James is in the library and Xiaopu is likely on the sports field."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Where is Xiaopu likely to be?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Where is James?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Does the classroom have any computers?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Where will Minmin's group meet?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "Where are James and Xiaopu?"
+        ],
+        [
+          "m",
+          "James is in the library."
+        ],
+        [
+          "f",
+          "Xiaopu is likely on the sports field."
+        ],
+        [
+          "n",
+          "Question: Who is in the library?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q14.mp3",
+      "clips": [
+        [
+          "f",
+          "Shall we meet in the classroom?"
+        ],
+        [
+          "m",
+          "The classroom has no computers."
+        ],
+        [
+          "f",
+          "How about the computer room?"
+        ],
+        [
+          "n",
+          "Question: Why do they not choose the classroom?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q15.mp3",
+      "clips": [
+        [
+          "m",
+          "Where is the computer room?"
+        ],
+        [
+          "f",
+          "It is on the ground floor."
+        ],
+        [
+          "m",
+          "Let us meet there then."
+        ],
+        [
+          "n",
+          "Question: Where will they meet?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D08/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "Xiaopu likes playing football."
+        ],
+        [
+          "m",
+          "He is likely on the sports field."
+        ],
+        [
+          "f",
+          "James is in the library."
+        ],
+        [
+          "m",
+          "Let us look for them."
+        ],
+        [
+          "n",
+          "Question: Which two places should they go to?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D08",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D08/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "Minmin's group begins a school history project. James is in the library. Xiaopu likes playing football and is likely on the sports field. The group needs computers. The classroom has no computers. It does not have any computers. The computer room is on the ground floor, so they will meet there."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D09/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "bamboo"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "walls"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "umbrellas"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "three floors"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "music room"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "All the school buildings are made of bamboo."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "The bamboo buildings do not have any walls."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "The buildings look like big umbrellas."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Each building has three floors."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Students learn and play in bamboo classrooms and special rooms."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What are all the school buildings made of?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Do the bamboo buildings have any walls?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q13.mp3",
+      "clips": [
+        [
+          "n",
+          "What do the buildings look like?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q14.mp3",
+      "clips": [
+        [
+          "n",
+          "How many floors does each building have?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q15.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do students learn and play?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "This is Green School Bali."
+        ],
+        [
+          "m",
+          "What is special about it?"
+        ],
+        [
+          "f",
+          "All the school buildings are made of bamboo."
+        ],
+        [
+          "n",
+          "Question: What makes the school special?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_17",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q17.mp3",
+      "clips": [
+        [
+          "m",
+          "Do the buildings have walls?"
+        ],
+        [
+          "f",
+          "No, they do not have any walls."
+        ],
+        [
+          "m",
+          "They look like big umbrellas."
+        ],
+        [
+          "n",
+          "Question: What do the buildings not have?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_18",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q18.mp3",
+      "clips": [
+        [
+          "f",
+          "How many floors does each building have?"
+        ],
+        [
+          "m",
+          "Three floors."
+        ],
+        [
+          "f",
+          "The floors are made of bamboo too."
+        ],
+        [
+          "n",
+          "Question: What are the floors made of?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_19",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q19.mp3",
+      "clips": [
+        [
+          "m",
+          "Where do students learn?"
+        ],
+        [
+          "f",
+          "In bamboo classrooms and computer rooms."
+        ],
+        [
+          "m",
+          "They also use music rooms and art rooms."
+        ],
+        [
+          "n",
+          "Question: Which room is not named?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "question_20",
+      "path": "static/audio/listening/L4A-T1-W01-D09/q20.mp3",
+      "clips": [
+        [
+          "f",
+          "The buildings have no walls."
+        ],
+        [
+          "m",
+          "They look like big umbrellas."
+        ],
+        [
+          "f",
+          "Each building has three floors."
+        ],
+        [
+          "m",
+          "That is a special school."
+        ],
+        [
+          "n",
+          "Question: How many features are given before the last sentence?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D09",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D09/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "Green School Bali is special. All the school buildings are made of bamboo. The bamboo buildings have no walls. They do not have any walls, and they look like big umbrellas. Each building has three floors. The floors are made of bamboo too. Students learn and play in bamboo classrooms, computer rooms, music rooms and art rooms."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D10/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "favourite place"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "looks like a boat"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "chairs and desks"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "read many interesting books"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "library"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "The library is on the ground floor."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "The library looks like a boat."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "The library does not have any chairs or desks."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "In the library, I read many interesting books."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "The bamboo buildings have three floors and no walls."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Which place do you like best in the example?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Where is the library?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q13.mp3",
+      "clips": [
+        [
+          "n",
+          "What does the library look like?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q14.mp3",
+      "clips": [
+        [
+          "n",
+          "What does the library not have?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q15.mp3",
+      "clips": [
+        [
+          "n",
+          "What do you do in the library?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "Which place do you like best?"
+        ],
+        [
+          "m",
+          "I like the library best."
+        ],
+        [
+          "f",
+          "Where is it?"
+        ],
+        [
+          "m",
+          "It is on the ground floor."
+        ],
+        [
+          "n",
+          "Question: Which place does the boy like best?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_17",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q17.mp3",
+      "clips": [
+        [
+          "m",
+          "What is special about the library?"
+        ],
+        [
+          "f",
+          "It looks like a boat."
+        ],
+        [
+          "m",
+          "Does it have chairs and desks?"
+        ],
+        [
+          "f",
+          "No, it does not."
+        ],
+        [
+          "n",
+          "Question: Which two features are given?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_18",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q18.mp3",
+      "clips": [
+        [
+          "f",
+          "I study in the classroom."
+        ],
+        [
+          "m",
+          "I play on the sports field."
+        ],
+        [
+          "f",
+          "I sing in the hall."
+        ],
+        [
+          "m",
+          "I read in the library."
+        ],
+        [
+          "n",
+          "Question: Where does the boy read?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_19",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q19.mp3",
+      "clips": [
+        [
+          "m",
+          "The bamboo school buildings have no walls."
+        ],
+        [
+          "f",
+          "They look like big umbrellas."
+        ],
+        [
+          "m",
+          "Our library looks like a boat."
+        ],
+        [
+          "f",
+          "Both places are special."
+        ],
+        [
+          "n",
+          "Question: Which place looks like a boat?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "question_20",
+      "path": "static/audio/listening/L4A-T1-W01-D10/q20.mp3",
+      "clips": [
+        [
+          "f",
+          "James is in the library."
+        ],
+        [
+          "m",
+          "Xiaopu is on the sports field."
+        ],
+        [
+          "f",
+          "The group will meet in the computer room."
+        ],
+        [
+          "m",
+          "It is on the ground floor."
+        ],
+        [
+          "n",
+          "Question: Where will the group meet?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D10",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D10/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "I like the library in my school best. It is on the ground floor. It is very special and looks like a boat. The room does not have any chairs or desks. In the library, I read many interesting books. I also like our classroom, hall, computer room, art room and sports field. In the classroom I study, on the sports field I play, and in the hall I sing for all."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D06",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D06/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "I like my school."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D06",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D06/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "It is lovely and cool."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D06",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D06/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "In the classroom I study."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D06",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D06/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "On the sports field I play."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D06",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D06/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "In the hall I sing for all."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D06",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D06/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "The library is the best of all."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D06",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D06/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do you study?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D06",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D06/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do you play?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D07",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D07/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "Shall we begin with our project?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D07",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D07/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "Sure. But where are James and Xiaopu?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D07",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D07/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "James is in the library."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D07",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D07/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "Xiaopu is likely on the sports field."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D07",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D07/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "How about the computer room?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D07",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D07/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Sure. Let us meet there then."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D07",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D07/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Where is James?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D07",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D07/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Where will the group meet?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D08",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D08/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "The classroom has no computers."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D08",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D08/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "The classroom does not have any computers."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D08",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D08/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "James is in the library."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D08",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D08/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "Xiaopu is likely on the sports field."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D08",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D08/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "The computer room is on the ground floor."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D08",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D08/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Let us meet in the computer room then."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D08",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D08/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Does the classroom have any computers?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D08",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D08/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Where will Minmin's group meet?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D09",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D09/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "All the school buildings are made of bamboo."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D09",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D09/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "These bamboo buildings have no walls."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D09",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D09/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "They do not have any walls."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D09",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D09/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "They look like big umbrellas."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D09",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D09/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "Each building has three floors."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D09",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D09/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Students learn and play in bamboo classrooms."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D09",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D09/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "What are the school buildings made of?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D09",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D09/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "What do the buildings look like?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D10",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D10/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "I like the library in my school best."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D10",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D10/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "It is on the ground floor."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D10",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D10/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "It is very special and looks like a boat."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D10",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D10/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "The room does not have any chairs or desks."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D10",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D10/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "In the library, I read many interesting books."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D10",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D10/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "I like my school because every place is special."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D10",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D10/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Where is the library?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D10",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D10/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "What do you do in the library?"
+        ]
+      ]
+    }
+  ]
+}

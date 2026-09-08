@@ -1,0 +1,84 @@
+{
+  "course_id": "S4A-T1-W01-D10",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D10",
+  "pair_id": "4A-T1-W01-D10",
+  "publication_status": "test",
+  "title": "四上·第10课｜Unit 1我最喜欢的校园地点·综合（口语）",
+  "week": 2,
+  "day": 5,
+  "course_type": "weekly_review",
+  "est_minutes": 8,
+  "scope": "4A Unit 1 p7-p14",
+  "difficulty": "L3",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D10/q01.mp3",
+      "tag": "A主线·p14·表达最喜欢的场所",
+      "parent_note": "确认版教材p14主线或不增加新知识的同语境受控重组",
+      "text": "I like the library in my school best."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D10/q02.mp3",
+      "tag": "A主线·p14·地点楼层",
+      "parent_note": "确认版教材p14主线或不增加新知识的同语境受控重组",
+      "text": "It is on the ground floor."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D10/q03.mp3",
+      "tag": "A主线·p14·场所外形",
+      "parent_note": "确认版教材p14主线或不增加新知识的同语境受控重组",
+      "text": "It is very special and looks like a boat."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D10/q04.mp3",
+      "tag": "A主线·p14·室内否定信息",
+      "parent_note": "确认版教材p14主线或不增加新知识的同语境受控重组",
+      "text": "The room does not have any chairs or desks."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D10/q05.mp3",
+      "tag": "A主线·p14·场所活动",
+      "parent_note": "确认版教材p14主线或不增加新知识的同语境受控重组",
+      "text": "In the library, I read many interesting books."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D10/q06.mp3",
+      "tag": "A主线·p7-p14·同语境综合输出",
+      "parent_note": "确认版教材p7-p14主线或不增加新知识的同语境受控重组",
+      "text": "I like my school because every place is special."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D10/q07.mp3",
+      "tag": "C微调·p11-p14·听问句后楼层辨别",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p11-p14，不作未掌握结论",
+      "question": "Where is the library?",
+      "expected": "It is on the ground floor.",
+      "hint": "用完整句回答图书馆楼层。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D10/q08.mp3",
+      "tag": "A主线·p14·稳定完整输出",
+      "parent_note": "确认版教材p14主线或不增加新知识的同语境受控重组",
+      "question": "What do you do in the library?",
+      "expected": "I read many interesting books in the library.",
+      "hint": "用完整句回答在图书馆做什么。"
+    }
+  ]
+}

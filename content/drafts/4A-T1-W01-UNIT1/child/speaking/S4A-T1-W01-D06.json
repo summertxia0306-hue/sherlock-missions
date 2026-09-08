@@ -1,0 +1,61 @@
+{
+  "course_id": "S4A-T1-W01-D06",
+  "pair_id": "4A-T1-W01-D06",
+  "study_pack": "4A-T1-W01-D06",
+  "course_version": "1b8544303fefe8a2",
+  "title": "四上·第6课｜Unit 1校园场所·我喜欢的地方（口语）",
+  "week": 2,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "I like my school.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D06/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "It is lovely and cool.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D06/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "In the classroom I study.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D06/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "On the sports field I play.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D06/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "In the hall I sing for all.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D06/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "The library is the best of all.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D06/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "回答在哪里学习。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D06/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "回答在哪里玩或做运动。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D06/q08.mp3"
+    }
+  ]
+}
