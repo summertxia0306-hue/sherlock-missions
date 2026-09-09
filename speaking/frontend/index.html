@@ -48,6 +48,7 @@ function fail(msg){
 }
 function recoverCaptureFailure(msg){
   releaseStream();
+  closeAudioContext();
   freshMic();
   fail(msg);
 }
@@ -77,20 +78,35 @@ function beginCountdown(){
 }
 
 var sink = null;
-function ensureCtx(){
-  // iOS 规矩：AudioContext 必须在用户手势调用栈里创建/恢复；全程只用这一个，
-  // 每次录音使用新麦克风流，录完只 suspend context、不 close。
-  if(!ctx){
-    ctx = new (window.AudioContext||window.webkitAudioContext)();
-    inRate = ctx.sampleRate;
+function closeAudioContext(){
+  var old = ctx;
+  ctx = null;
+  sink = null;
+  if(old && old.state !== "closed"){
+    try{
+      var closing = old.close();
+      if(closing && closing.catch){ closing.catch(function(){}); }
+    }catch(e){}
   }
-  if(ctx.state === "suspended"){ try{ ctx.resume(); }catch(e){} }
+}
+function createFreshContext(){
+  // iOS：每个录次都在话筒点击的用户手势栈里创建独立上下文。
+  // 不恢复上一录次 suspend 的上下文，避免 WebKit 交替返回空白缓冲块。
+  closeAudioContext();
+  ctx = new (window.AudioContext||window.webkitAudioContext)();
+  inRate = ctx.sampleRate;
+  if(ctx.state === "suspended"){
+    try{
+      var resuming = ctx.resume();
+      if(resuming && resuming.catch){ resuming.catch(function(){}); }
+    }catch(e){}
+  }
 }
 
 function startRecord(){
   state="recording"; chunks=[]; t0=Date.now();
   try{
-    ensureCtx();
+    if(!ctx || !stream){ throw new Error("录音上下文未就绪"); }
     srcNode = ctx.createMediaStreamSource(stream);
     node = ctx.createScriptProcessor(4096, 1, 1);
     node.onaudioprocess = function(e){
@@ -110,10 +126,14 @@ function stopRecord(){
   if(state!=="recording") return;
   state="processing"; hint.textContent="处理中…";
   durSec = (Date.now()-t0)/1000;
-  try{ if(node){node.onaudioprocess=null; node.disconnect();} if(srcNode){srcNode.disconnect();}
-       if(ctx && ctx.state==="running"){ ctx.suspend(); } }catch(e){}
+  try{ if(node){node.onaudioprocess=null; node.disconnect();} if(srcNode){srcNode.disconnect();} }catch(e){}
   node=null; srcNode=null;
   releaseStream();  // iOS：回放前结束麦克风音频会话，下一次录音再取新流
+  closeAudioContext();
+  if(hasAlternatingSilentChunks(chunks)){
+    recoverCaptureFailure("这次录音出现断续，已自动作废。请再点一次话筒重录（不计次数）。");
+    return;
+  }
   var total=0; for(var i=0;i<chunks.length;i++) total+=chunks[i].length;
   var all=new Float32Array(total), off=0;
   for(var j=0;j<chunks.length;j++){ all.set(chunks[j], off); off+=chunks[j].length; }
@@ -133,6 +153,32 @@ function stopRecord(){
   stage.innerHTML='<button id="mic" class="micbtn" style="display:none">🎙️</button>';
   mic=document.getElementById("mic");
   render();
+}
+
+function hasAlternatingSilentChunks(parts){
+  // 2026-09-08 iPad 故障证据：4096 采样的全零块与有声块严格交替。
+  // 只拦截高规律性的交替模式，普通停顿和句首静音不会命中。
+  if(!parts || parts.length < 8) return false;
+  var silent = [], silentCount = 0;
+  for(var i=0;i<parts.length;i++){
+    var peak=0, part=parts[i];
+    for(var j=0;j<part.length;j++){
+      var value=Math.abs(part[j]);
+      if(value>peak) peak=value;
+    }
+    var isSilent = peak < 0.000001;
+    silent.push(isSilent);
+    if(isSilent) silentCount++;
+  }
+  var voicedCount = silent.length-silentCount;
+  if(silentCount < 4 || voicedCount < 4) return false;
+  var ratio=silentCount/silent.length;
+  if(ratio < 0.30 || ratio > 0.70) return false;
+  var transitions=0;
+  for(var k=1;k<silent.length;k++){
+    if(silent[k] !== silent[k-1]) transitions++;
+  }
+  return transitions/(silent.length-1) >= 0.75;
 }
 
 function encodeWav16k(f32, rate){
@@ -170,17 +216,16 @@ function onMicTap(){
   err.style.display="none";
   if(state==="recording"){ stopRecord(); return; }
   if(state!=="idle") return;
-  ensureCtx();  // 必须在手势栈内（iOS）
-  // 与已通过 iOS 验证的 PWA v4.1 对齐：每次录音重新取流，避免示范音/回放
-  // 切换音频会话后复用一个表面 live、实际采集异常的旧流。
   releaseStream();
+  try{ createFreshContext(); }catch(e){ recoverCaptureFailure("启动录音失败：" + e); return; }
+  // 每次录音同时使用新上下文和新麦克风流，隔离示范音、回放及上一录次。
   if(!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia){
-    fail("这个浏览器不支持录音"); return; }
+    recoverCaptureFailure("这个浏览器不支持录音"); return; }
   navigator.mediaDevices.getUserMedia({audio:{channelCount:1,echoCancellation:true,
                                                noiseSuppression:true,autoGainControl:true}}).then(function(s){
     stream = s; beginCountdown();
   }).catch(function(){
-    fail("需要麦克风权限才能录音。请点允许，或让爸爸妈妈在设置里打开。");
+    recoverCaptureFailure("需要麦克风权限才能录音。请点允许，或让爸爸妈妈在设置里打开。");
   });
 }
 function freshMic(){
@@ -204,18 +249,19 @@ window.addEventListener("message", function(e){
   var d=e.data;
   if(!d || d.type!=="streamlit:render") return;
   args = d.args || {};
-  // 同一组件实例跨题复用（iOS 每个新 iframe 都重弹麦克风权限，2026-06-12 家长反馈）：
-  // qid/take 变化 = 切到新题或新录次 → 软复位界面，但保留已授权的 stream
+  // qid/take 变化 = 切到新题或新录次；释放上一录次全部音频资源。
   var sig = String(args.qid) + "|" + String(args.take);
   if (sig !== curSig){
     curSig = sig;
     wavB64 = null;
     if (state === "recording"){ try{ stopRecord(); }catch(err){} }
+    else { releaseStream(); closeAudioContext(); }
     state = "idle";
     freshMic();
   }
   render();
 });
+window.addEventListener("pagehide", function(){ releaseStream(); closeAudioContext(); });
 send("streamlit:componentReady", {apiVersion:1});
 setH();
 </script>

@@ -50,6 +50,30 @@ class RegressionTests(unittest.TestCase):
         self.assertIn("releaseStream();", stop_record)
         self.assertLess(stop_record.index("releaseStream();"), stop_record.index("var wav"))
 
+    def test_recorder_isolates_audio_context_per_take_and_rejects_alternating_silence(self):
+        html = (Path(recorder.__file__).parent / "frontend" / "index.html").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("function createFreshContext()", html)
+        self.assertIn("function closeAudioContext()", html)
+        self.assertIn("function hasAlternatingSilentChunks(parts)", html)
+
+        mic_tap = html.split("function onMicTap(){", 1)[1].split(
+            "function freshMic", 1
+        )[0]
+        self.assertIn("createFreshContext();", mic_tap)
+
+        stop_record = html.split("function stopRecord(){", 1)[1].split(
+            "function encodeWav16k", 1
+        )[0]
+        self.assertIn("closeAudioContext();", stop_record)
+        self.assertIn("hasAlternatingSilentChunks(chunks)", stop_record)
+        self.assertIn("这次录音出现断续，已自动作废", stop_record)
+        self.assertLess(
+            stop_record.index("hasAlternatingSilentChunks(chunks)"),
+            stop_record.index("var wav"),
+        )
+
     def test_limited_audio_uses_cdn_with_raw_fallback(self):
         path = "static/audio/listening/W01D39/q13.mp3"
         sources = listening_audio.audio_sources(path)
