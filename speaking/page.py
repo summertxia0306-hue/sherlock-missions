@@ -234,6 +234,10 @@ def _question_page(course, s, q, student_id):
                       label=au_label)
     merge_plays(s["plays"], pkey, v)
 
+    capture_error = s.pop("capture_error", None)
+    if capture_error:
+        st.warning(capture_error)
+
     if all_takes:
         _show_take_feedback(all_takes[-1])
         # 每次录音的星级历史（2026-06-12 家长反馈"重录后好像没变"——
@@ -265,10 +269,13 @@ def _question_page(course, s, q, student_id):
     # —— 还没 3 星：第 3 次有效评分前可以继续重录 ——
     if gate["can_retry"] and not qs_["done"]:
         seq = len(all_takes) + 1                  # 含 error 次；qid+take 一起做防重放签名
+        capture_gen = s.setdefault("capture_gen", {}).get(qid, 0)
         # key 与试音相同 = 全课单实例（iOS 只授权一次）；qid/take 经 args 传入，
-        # 前端检测变化后软复位；Python 端靠 (qid, take) 匹配防旧值重放
+        # 前端检测变化后软复位；只有完整性校验失败才轮换 capture_gen，
+        # 避免 Streamlit 重放同一个坏返回值导致无法再次点击话筒。
         rv = recorder.record(qid, take=seq,
-                             key="rec_%s_a%d" % (course["course_id"], s["attempt"]),
+                             key="rec_%s_a%d_c%d" % (
+                                 course["course_id"], s["attempt"], capture_gen),
                              max_sec=20, countdown=3)
         if rv is not None and str(rv.get("qid")) == str(qid) and rv.get("take") == seq:
             _consume_take(course, q, qs_, rv, s)
@@ -291,6 +298,16 @@ def _question_page(course, s, q, student_id):
 def _consume_take(course, q, qs_, rv, s):
     """一次录音：评分（同步）+ 不到3星重置示范音 + 上传私有库（尽力而为）。"""
     wav, pcm = recorder.wav_bytes(rv)
+    integrity = recorder.validate_wav_integrity(wav)
+    if not integrity["ok"]:
+        s["capture_error"] = (
+            "设备刚才把录音录坏了，系统已自动作废。请重新录一次；"
+            "这不是你的发音问题，也不计次数。"
+        )
+        capture_gen = s.setdefault("capture_gen", {})
+        capture_gen[q["id"]] = capture_gen.get(q["id"], 0) + 1
+        return False
+    s.pop("capture_error", None)
     try:
         with st.spinner("老师在听你的录音…"):
             res = ise.evaluate_retry(_secret("XF_APPID"), _secret("XF_API_KEY"),
@@ -324,6 +341,7 @@ def _consume_take(course, q, qs_, rv, s):
         })
     except Exception:
         pass  # 上传失败不阻塞孩子做题；家长端录音箱会缺这条
+    return True
 
 
 def _show_take_feedback(res):

@@ -31,7 +31,8 @@ audio{margin-top:10px;width:92%;max-width:380px}
 <script>
 "use strict";
 var args = {}, state = "idle", stream = null, ctx = null, node = null, srcNode = null;
-var chunks = [], inRate = 48000, timerIv = null, t0 = 0, wavB64 = null, durSec = 0;
+var chunks = [], mediaParts = [], mediaRecorder = null, recorderMode = null;
+var inRate = 48000, timerIv = null, t0 = 0, wavB64 = null, durSec = 0, playUrl = null;
 
 function send(t, d){ window.parent.postMessage(Object.assign({isStreamlitMessage:true,type:t}, d||{}), "*"); }
 function setValue(v){ send("streamlit:setComponentValue", {value:v, dataType:"json"}); }
@@ -47,6 +48,9 @@ function fail(msg){
   state = "idle"; render();
 }
 function recoverCaptureFailure(msg){
+  stopTimer();
+  discardMediaRecorder();
+  disconnectLegacyRecorder();
   releaseStream();
   closeAudioContext();
   freshMic();
@@ -90,8 +94,6 @@ function closeAudioContext(){
   }
 }
 function createFreshContext(){
-  // iOS：每个录次都在话筒点击的用户手势栈里创建独立上下文。
-  // 不恢复上一录次 suspend 的上下文，避免 WebKit 交替返回空白缓冲块。
   closeAudioContext();
   ctx = new (window.AudioContext||window.webkitAudioContext)();
   inRate = ctx.sampleRate;
@@ -104,55 +106,245 @@ function createFreshContext(){
 }
 
 function startRecord(){
-  state="recording"; chunks=[]; t0=Date.now();
+  state="recording"; chunks=[]; mediaParts=[]; t0=Date.now();
   try{
-    if(!ctx || !stream){ throw new Error("录音上下文未就绪"); }
-    srcNode = ctx.createMediaStreamSource(stream);
-    node = ctx.createScriptProcessor(4096, 1, 1);
-    node.onaudioprocess = function(e){
-      if(state!=="recording") return;
-      chunks.push(new Float32Array(e.inputBuffer.getChannelData(0)));
-      var sec = (Date.now()-t0)/1000;
-      timer.textContent = "🔴 " + sec.toFixed(0) + " 秒";
-      if(sec >= (args.max_sec||20)) stopRecord();
-    };
-    if(!sink){ sink = ctx.createGain(); sink.gain.value = 0; sink.connect(ctx.destination); }
-    srcNode.connect(node); node.connect(sink);  // 静音汇出，避免录音时外放回声
+    if(!stream){ throw new Error("麦克风未就绪"); }
+    if(window.MediaRecorder){
+      var mimeType = chooseRecorderMimeType();
+      mediaRecorder = mimeType
+        ? new MediaRecorder(stream, {mimeType:mimeType})
+        : new MediaRecorder(stream);
+      recorderMode="native";
+      mediaRecorder.ondataavailable=function(e){
+        if(e.data && e.data.size>0) mediaParts.push(e.data);
+      };
+      mediaRecorder.onerror=function(){
+        recoverCaptureFailure("设备录音启动失败，请重新点话筒录一次。");
+      };
+      mediaRecorder.start();
+    }else{
+      startLegacyRecord();
+    }
   }catch(e){ recoverCaptureFailure("启动录音失败：" + e); return; }
+  startTimer();
   render();
+}
+
+function chooseRecorderMimeType(){
+  if(!window.MediaRecorder || !MediaRecorder.isTypeSupported) return "";
+  var choices=["audio/mp4;codecs=mp4a.40.2", "audio/mp4",
+               "audio/webm;codecs=opus", "audio/webm", "audio/ogg;codecs=opus"];
+  for(var i=0;i<choices.length;i++){
+    if(MediaRecorder.isTypeSupported(choices[i])) return choices[i];
+  }
+  return "";
+}
+
+function startLegacyRecord(){
+  recorderMode="legacy";
+  if(!ctx) createFreshContext();
+  srcNode = ctx.createMediaStreamSource(stream);
+  node = ctx.createScriptProcessor(4096, 1, 1);
+  node.onaudioprocess = function(e){
+    if(state!=="recording") return;
+    chunks.push(new Float32Array(e.inputBuffer.getChannelData(0)));
+  };
+  if(!sink){ sink=ctx.createGain(); sink.gain.value=0; sink.connect(ctx.destination); }
+  srcNode.connect(node); node.connect(sink);
+}
+
+function startTimer(){
+  stopTimer();
+  timer.textContent="🔴 0 秒";
+  timerIv=setInterval(function(){
+    if(state!=="recording"){ stopTimer(); return; }
+    var sec=(Date.now()-t0)/1000;
+    timer.textContent="🔴 " + sec.toFixed(0) + " 秒";
+    if(sec >= (args.max_sec||20)) stopRecord();
+  }, 200);
+}
+function stopTimer(){
+  if(timerIv){ clearInterval(timerIv); timerIv=null; }
 }
 
 function stopRecord(){
   if(state!=="recording") return;
-  state="processing"; hint.textContent="处理中…";
+  state="processing"; hint.textContent="正在检查录音…"; stopTimer();
   durSec = (Date.now()-t0)/1000;
-  try{ if(node){node.onaudioprocess=null; node.disconnect();} if(srcNode){srcNode.disconnect();} }catch(e){}
+  if(recorderMode==="native" && mediaRecorder){
+    var finishedRecorder=mediaRecorder;
+    finishedRecorder.onstop=function(){
+      if(mediaRecorder===finishedRecorder) mediaRecorder=null;
+      finishNativeRecording(finishedRecorder);
+    };
+    try{ finishedRecorder.stop(); }
+    catch(e){ recoverCaptureFailure("停止录音失败，请重新录一次。"); return; }
+    releaseStream();
+    return;
+  }
+  finishLegacyRecording();
+}
+
+function finishNativeRecording(finishedRecorder){
+  var parts=mediaParts.slice();
+  mediaParts=[]; recorderMode=null;
+  releaseStream();
+  if(!parts.length){
+    recoverCaptureFailure("设备没有生成录音，请重新点话筒录一次。"); return;
+  }
+  var blob=new Blob(parts, {type:finishedRecorder.mimeType||parts[0].type||"audio/mp4"});
+  blobToArrayBuffer(blob).then(function(buffer){
+    var decodeCtx=new (window.AudioContext||window.webkitAudioContext)();
+    return decodeAudioData(decodeCtx, buffer).then(function(audioBuffer){
+      var mono=mixToMono(audioBuffer);
+      var rate=audioBuffer.sampleRate;
+      try{ var closing=decodeCtx.close(); if(closing&&closing.catch) closing.catch(function(){}); }
+      catch(e){}
+      finishSamples(mono, rate);
+    }, function(error){
+      try{ decodeCtx.close(); }catch(e){}
+      throw error;
+    });
+  }).catch(function(){
+    recoverCaptureFailure("设备录音解码失败，请重新录一次。");
+  });
+}
+
+function blobToArrayBuffer(blob){
+  if(blob.arrayBuffer) return blob.arrayBuffer();
+  return new Promise(function(resolve, reject){
+    var reader=new FileReader();
+    reader.onload=function(){ resolve(reader.result); };
+    reader.onerror=reject;
+    reader.readAsArrayBuffer(blob);
+  });
+}
+
+function decodeAudioData(audioContext, buffer){
+  return new Promise(function(resolve, reject){
+    var done=false;
+    function ok(value){ if(!done){ done=true; resolve(value); } }
+    function bad(error){ if(!done){ done=true; reject(error); } }
+    try{
+      var promise=audioContext.decodeAudioData(buffer.slice(0), ok, bad);
+      if(promise && promise.then) promise.then(ok, bad);
+    }catch(e){ bad(e); }
+  });
+}
+
+function mixToMono(audioBuffer){
+  var length=audioBuffer.length, count=audioBuffer.numberOfChannels;
+  var mono=new Float32Array(length);
+  for(var channel=0;channel<count;channel++){
+    var data=audioBuffer.getChannelData(channel);
+    for(var i=0;i<length;i++) mono[i]+=data[i]/count;
+  }
+  return mono;
+}
+
+function disconnectLegacyRecorder(){
+  try{
+    if(node){ node.onaudioprocess=null; node.disconnect(); }
+    if(srcNode) srcNode.disconnect();
+  }catch(e){}
   node=null; srcNode=null;
-  releaseStream();  // iOS：回放前结束麦克风音频会话，下一次录音再取新流
+}
+
+function finishLegacyRecording(){
+  disconnectLegacyRecorder();
+  releaseStream();
   closeAudioContext();
-  if(hasAlternatingSilentChunks(chunks)){
+  var total=0;
+  for(var i=0;i<chunks.length;i++) total+=chunks[i].length;
+  var all=new Float32Array(total), offset=0;
+  for(var j=0;j<chunks.length;j++){ all.set(chunks[j], offset); offset+=chunks[j].length; }
+  if(hasAlternatingSilentChunks(chunks) || hasDuplicatedAudioFrames(all, inRate)){
     recoverCaptureFailure("这次录音出现断续，已自动作废。请再点一次话筒重录（不计次数）。");
     return;
   }
-  var total=0; for(var i=0;i<chunks.length;i++) total+=chunks[i].length;
-  var all=new Float32Array(total), off=0;
-  for(var j=0;j<chunks.length;j++){ all.set(chunks[j], off); off+=chunks[j].length; }
-  if(all.length < inRate*0.4){ recoverCaptureFailure("录音太短了，重新录一次吧"); return; }
+  finishSamples(all, inRate);
+}
+
+function finishSamples(all, rate){
+  if(all.length < rate*0.4){ recoverCaptureFailure("录音太短了，重新录一次吧"); return; }
   var peak=0;
-  for(var k=0;k<all.length;k++){ var a=Math.abs(all[k]); if(a>peak) peak=a; }
+  for(var i=0;i<all.length;i++){ var a=Math.abs(all[i]); if(a>peak) peak=a; }
   if(peak < 0.01){
-    recoverCaptureFailure("好像没有录到声音，再点一次话筒重试（会重新连接麦克风）"
-                          + "〔调试: ctx=" + (ctx?ctx.state:"无") + " " + inRate + "Hz peak="
-                          + peak.toFixed(4) + "〕");
+    recoverCaptureFailure("好像没有录到声音，再点一次话筒重试（会重新连接麦克风）");
     return;
   }
-  var wav = encodeWav16k(all, inRate);
+  if(hasAlternatingSilentSamples(all, rate) || hasDuplicatedAudioFrames(all, rate)){
+    recoverCaptureFailure("这次录音出现断续，已自动作废。请再点一次话筒重录（不计次数）。");
+    return;
+  }
+  var wav = encodeWav16k(all, rate);
   wavB64 = b64(wav);
-  play.src = URL.createObjectURL(new Blob([wav], {type:"audio/wav"}));
+  if(playUrl) URL.revokeObjectURL(playUrl);
+  playUrl = URL.createObjectURL(new Blob([wav], {type:"audio/wav"}));
+  play.src = playUrl;
   state="review";
   stage.innerHTML='<button id="mic" class="micbtn" style="display:none">🎙️</button>';
   mic=document.getElementById("mic");
   render();
+}
+
+function frameCorrelation(samples, startA, startB, size){
+  var meanA=0, meanB=0, i;
+  for(i=0;i<size;i++){ meanA+=samples[startA+i]; meanB+=samples[startB+i]; }
+  meanA/=size; meanB/=size;
+  var cross=0, powerA=0, powerB=0;
+  for(i=0;i<size;i++){
+    var a=samples[startA+i]-meanA, b=samples[startB+i]-meanB;
+    cross+=a*b; powerA+=a*a; powerB+=b*b;
+  }
+  if(powerA/size<0.000009 || powerB/size<0.000009) return null;
+  return cross/Math.sqrt(powerA*powerB);
+}
+
+function hasDuplicatedAudioFrames(samples, rate){
+  // 2026-09-10 真机坏录音：4096 输入帧按相邻对重复，听感为结巴/断续。
+  var sizes=[Math.round(rate*4096/48000), Math.round(rate*4096/44100)];
+  for(var s=0;s<sizes.length;s++){
+    var size=sizes[s], frameCount=Math.floor(samples.length/size);
+    if(frameCount<10) continue;
+    var hits=[0,0], pairs=[0,0];
+    for(var index=1;index<frameCount;index++){
+      var parity=index%2; pairs[parity]++;
+      var correlation=frameCorrelation(samples, (index-1)*size, index*size, size);
+      if(correlation!==null && correlation>=0.95) hits[parity]++;
+    }
+    for(var parity=0;parity<2;parity++){
+      var other=1-parity;
+      if(hits[parity]>=5 && hits[parity]/pairs[parity]>=0.35
+          && hits[other]<=Math.max(2, Math.floor(hits[parity]/5))) return true;
+    }
+  }
+  return false;
+}
+
+function hasAlternatingSilentSamples(samples, rate){
+  var runs=[], runStart=-1;
+  for(var index=0;index<samples.length;index++){
+    if(Math.abs(samples[index])<0.00004 && runStart<0) runStart=index;
+    else if(Math.abs(samples[index])>=0.00004 && runStart>=0){
+      runs.push([runStart, index-runStart]); runStart=-1;
+    }
+  }
+  if(runStart>=0) runs.push([runStart, samples.length-runStart]);
+  var sizes=[Math.round(rate*4096/48000), Math.round(rate*4096/44100)];
+  for(var s=0;s<sizes.length;s++){
+    var size=sizes[s], candidates=[];
+    for(var r=0;r<runs.length;r++){
+      if(runs[r][1]>=size*0.55 && runs[r][1]<=size*1.35) candidates.push(runs[r]);
+    }
+    if(candidates.length<4) continue;
+    var regular=0;
+    for(var i=1;i<candidates.length;i++){
+      if(Math.abs(candidates[i][0]-candidates[i-1][0]-2*size)<=size*0.30) regular++;
+    }
+    if(regular>=3 && regular/(candidates.length-1)>=0.65) return true;
+  }
+  return false;
 }
 
 function hasAlternatingSilentChunks(parts){
@@ -212,13 +404,27 @@ function releaseStream(){
     stream = null;
   }
 }
+function discardMediaRecorder(){
+  var old=mediaRecorder;
+  mediaRecorder=null; mediaParts=[]; recorderMode=null;
+  if(old && old.state!=="inactive"){
+    old.ondataavailable=null; old.onstop=null; old.onerror=null;
+    try{ old.stop(); }catch(e){}
+  }
+}
+function cancelActiveRecording(){
+  stopTimer(); discardMediaRecorder(); disconnectLegacyRecorder();
+  releaseStream(); closeAudioContext();
+}
 function onMicTap(){
   err.style.display="none";
   if(state==="recording"){ stopRecord(); return; }
   if(state!=="idle") return;
   releaseStream();
-  try{ createFreshContext(); }catch(e){ recoverCaptureFailure("启动录音失败：" + e); return; }
-  // 每次录音同时使用新上下文和新麦克风流，隔离示范音、回放及上一录次。
+  // 极老浏览器兼容回退才需要 ScriptProcessor；必须在用户手势内先建上下文。
+  if(!window.MediaRecorder){
+    try{ createFreshContext(); }catch(e){ recoverCaptureFailure("启动录音失败：" + e); return; }
+  }
   if(!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia){
     recoverCaptureFailure("这个浏览器不支持录音"); return; }
   navigator.mediaDevices.getUserMedia({audio:{channelCount:1,echoCancellation:true,
@@ -235,6 +441,7 @@ function freshMic(){
 }
 mic.onclick=onMicTap;
 document.getElementById("redo").onclick = function(){
+  if(playUrl){ URL.revokeObjectURL(playUrl); playUrl=null; }
   wavB64=null; state="idle"; freshMic(); render();
 };
 document.getElementById("use").onclick = function(){
@@ -254,14 +461,13 @@ window.addEventListener("message", function(e){
   if (sig !== curSig){
     curSig = sig;
     wavB64 = null;
-    if (state === "recording"){ try{ stopRecord(); }catch(err){} }
-    else { releaseStream(); closeAudioContext(); }
+    cancelActiveRecording();
     state = "idle";
     freshMic();
   }
   render();
 });
-window.addEventListener("pagehide", function(){ releaseStream(); closeAudioContext(); });
+window.addEventListener("pagehide", function(){ cancelActiveRecording(); });
 send("streamlit:componentReady", {apiVersion:1});
 setH();
 </script>

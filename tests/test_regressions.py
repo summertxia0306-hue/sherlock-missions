@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 import base64
 import json
+import math
 from pathlib import Path
+import shutil
+import struct
+import subprocess
 import time
 import unittest
 from unittest import mock
@@ -26,6 +30,27 @@ class _Response:
 
 
 class RegressionTests(unittest.TestCase):
+    @staticmethod
+    def _wav_bytes(samples, sample_rate=16000):
+        pcm = b"".join(struct.pack("<h", max(-32768, min(32767, int(v))))
+                       for v in samples)
+        data_size = len(pcm)
+        return (b"RIFF" + struct.pack("<I", 36 + data_size) + b"WAVEfmt "
+                + struct.pack("<IHHIIHH", 16, 1, 1, sample_rate,
+                              sample_rate * 2, 2, 16)
+                + b"data" + struct.pack("<I", data_size) + pcm)
+
+    @staticmethod
+    def _speech_like_frames(frame_count=24, frame_size=1365):
+        samples = []
+        for frame_index in range(frame_count):
+            frequency = 170 + frame_index * 13
+            samples.extend(
+                int(7000 * math.sin(2 * math.pi * frequency * i / 16000))
+                for i in range(frame_size)
+            )
+        return samples
+
     def test_recorder_capture_failures_restore_a_tappable_microphone(self):
         html = (Path(recorder.__file__).parent / "frontend" / "index.html").read_text(
             encoding="utf-8"
@@ -50,29 +75,128 @@ class RegressionTests(unittest.TestCase):
         self.assertIn("releaseStream();", stop_record)
         self.assertLess(stop_record.index("releaseStream();"), stop_record.index("var wav"))
 
-    def test_recorder_isolates_audio_context_per_take_and_rejects_alternating_silence(self):
+    def test_recorder_uses_media_recorder_primary_capture_and_integrity_guards(self):
         html = (Path(recorder.__file__).parent / "frontend" / "index.html").read_text(
             encoding="utf-8"
         )
-        self.assertIn("function createFreshContext()", html)
+        self.assertIn("new MediaRecorder", html)
+        self.assertIn("decodeAudioData", html)
+        self.assertIn("function startLegacyRecord()", html)
         self.assertIn("function closeAudioContext()", html)
         self.assertIn("function hasAlternatingSilentChunks(parts)", html)
+        self.assertIn("function hasDuplicatedAudioFrames", html)
 
-        mic_tap = html.split("function onMicTap(){", 1)[1].split(
-            "function freshMic", 1
+        primary = html.split("function startRecord(){", 1)[1].split(
+            "function startLegacyRecord", 1
         )[0]
-        self.assertIn("createFreshContext();", mic_tap)
+        self.assertIn("MediaRecorder", primary)
+        self.assertNotIn("createScriptProcessor", primary)
 
         stop_record = html.split("function stopRecord(){", 1)[1].split(
             "function encodeWav16k", 1
         )[0]
-        self.assertIn("closeAudioContext();", stop_record)
-        self.assertIn("hasAlternatingSilentChunks(chunks)", stop_record)
+        self.assertIn("finishNativeRecording", stop_record)
         self.assertIn("这次录音出现断续，已自动作废", stop_record)
-        self.assertLess(
-            stop_record.index("hasAlternatingSilentChunks(chunks)"),
-            stop_record.index("var wav"),
+
+    def test_wav_integrity_rejects_duplicated_scriptprocessor_frames(self):
+        frame_size = 1365
+        originals = self._speech_like_frames(frame_count=12, frame_size=frame_size)
+        duplicated = []
+        for offset in range(0, len(originals), frame_size):
+            frame = originals[offset:offset + frame_size]
+            duplicated.extend(frame)
+            duplicated.extend(frame)
+        verdict = recorder.validate_wav_integrity(self._wav_bytes(duplicated))
+        self.assertFalse(verdict["ok"])
+        self.assertEqual("duplicated_frames", verdict["reason"])
+
+    def test_wav_integrity_accepts_continuous_speech_like_audio(self):
+        samples = self._speech_like_frames(frame_count=24)
+        verdict = recorder.validate_wav_integrity(self._wav_bytes(samples))
+        self.assertTrue(verdict["ok"], verdict)
+
+    def test_wav_integrity_rejects_offset_alternating_silence(self):
+        frame_size = 1365
+        voiced = self._speech_like_frames(frame_count=1, frame_size=frame_size)
+        samples = voiced[:frame_size // 2]
+        for _ in range(8):
+            samples.extend([0] * frame_size)
+            samples.extend(voiced)
+        verdict = recorder.validate_wav_integrity(self._wav_bytes(samples))
+        self.assertFalse(verdict["ok"])
+        self.assertEqual("alternating_silence", verdict["reason"])
+
+    def test_wav_integrity_rejects_malformed_short_and_silent_audio(self):
+        self.assertEqual(
+            "invalid_wav", recorder.validate_wav_integrity(b"not a wav")["reason"]
         )
+        self.assertEqual(
+            "too_short",
+            recorder.validate_wav_integrity(self._wav_bytes([1200] * 1000))["reason"],
+        )
+        self.assertEqual(
+            "silent",
+            recorder.validate_wav_integrity(self._wav_bytes([0] * 8000))["reason"],
+        )
+
+    def test_browser_integrity_detectors_execute_against_known_patterns(self):
+        node = shutil.which("node")
+        if not node:
+            self.skipTest("Node.js is unavailable; browser detector behavior not executable")
+        html = (Path(recorder.__file__).parent / "frontend" / "index.html").read_text(
+            encoding="utf-8"
+        )
+        detector_source = "function frameCorrelation" + html.split(
+            "function frameCorrelation", 1
+        )[1].split("function hasAlternatingSilentChunks", 1)[0]
+        script = detector_source + r"""
+function speechFrame(index, size) {
+  var frame = new Float32Array(size), frequency = 170 + index * 13;
+  for (var i = 0; i < size; i++) frame[i] = 0.22 * Math.sin(2 * Math.PI * frequency * i / 16000);
+  return frame;
+}
+function joinFrames(frames) {
+  var length = frames.reduce(function(total, frame){ return total + frame.length; }, 0);
+  var output = new Float32Array(length), offset = 0;
+  frames.forEach(function(frame){ output.set(frame, offset); offset += frame.length; });
+  return output;
+}
+var size = 1365, normal = [], duplicated = [];
+for (var index = 0; index < 24; index++) normal.push(speechFrame(index, size));
+for (var pair = 0; pair < 12; pair++) {
+  var frame = speechFrame(pair, size); duplicated.push(frame, frame);
+}
+var voiced = speechFrame(0, size), alternating = [voiced.slice(0, Math.floor(size / 2))];
+for (var run = 0; run < 8; run++) alternating.push(new Float32Array(size), voiced);
+if (hasDuplicatedAudioFrames(joinFrames(normal), 16000)) throw new Error("normal audio rejected");
+if (!hasDuplicatedAudioFrames(joinFrames(duplicated), 16000)) throw new Error("duplicate pattern missed");
+if (!hasAlternatingSilentSamples(joinFrames(alternating), 16000)) throw new Error("alternating silence missed");
+"""
+        result = subprocess.run(
+            [node, "-"], input=script, text=True, capture_output=True, check=False
+        )
+        self.assertEqual(0, result.returncode, result.stderr)
+
+    def test_invalid_capture_never_reaches_scoring_or_upload(self):
+        rv = {"wav_b64": base64.b64encode(self._wav_bytes([1000] * 8000)).decode(),
+              "dur": 0.5, "take": 1}
+        state = {"data_kind": "formal"}
+        qstate = {"takes": [], "recordings": [], "recording_records": []}
+        course = {"course_id": "S4A-T1-W01-D05"}
+        question = {"id": 6, "type": "repeat", "text": "hello"}
+        with mock.patch("speaking.page.recorder.validate_wav_integrity",
+                        return_value={"ok": False, "reason": "duplicated_frames"}), \
+             mock.patch("speaking.page.ise.evaluate_retry") as evaluate, \
+             mock.patch("speaking.page.recorder.upload_recording") as upload:
+            accepted = speaking_page._consume_take(
+                course, question, qstate, rv, state
+            )
+        self.assertFalse(accepted)
+        self.assertEqual([], qstate["takes"])
+        self.assertIn("capture_error", state)
+        self.assertEqual(1, state["capture_gen"][6])
+        evaluate.assert_not_called()
+        upload.assert_not_called()
 
     def test_limited_audio_uses_cdn_with_raw_fallback(self):
         path = "static/audio/listening/W01D39/q13.mp3"
