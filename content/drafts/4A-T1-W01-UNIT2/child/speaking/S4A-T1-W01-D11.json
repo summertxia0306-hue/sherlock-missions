@@ -1,0 +1,61 @@
+{
+  "course_id": "S4A-T1-W01-D11",
+  "pair_id": "4A-T1-W01-D11",
+  "study_pack": "4A-T1-W01-D11",
+  "course_version": "c19da793defbb8c6",
+  "title": "四上·第11课｜Unit 2认识新同学·人物特点（口语）",
+  "week": 3,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Here are my lovely classmates.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D11/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "They are different but all great.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D11/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "This classmate is helpful.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D11/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "My classmate is interesting.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D11/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "She is friendly and lovely.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D11/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Let us play a guessing game about classmates.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D11/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句说同学们的特点。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D11/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答并重复人物特点。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D11/q08.mp3"
+    }
+  ]
+}

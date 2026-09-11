@@ -1,0 +1,61 @@
+{
+  "course_id": "S4A-T1-W01-D13",
+  "pair_id": "4A-T1-W01-D13",
+  "study_pack": "4A-T1-W01-D13",
+  "course_version": "27001228f4590136",
+  "title": "四上·第13课｜Unit 2猜猜他是谁·人物信息（口语）",
+  "week": 3,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "He has a lovely smile and many friends.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D13/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "He often tells interesting stories.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D13/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "He always helps teachers clean the blackboard.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D13/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "James often helps other students learn English.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D13/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "Wenwen always helps his little brother clean the room.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D13/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "It is you, James. You are helpful too.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D13/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "先说人物，再完整复述帮助行为。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D13/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用教材中的帮助行为完整回答。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D13/q08.mp3"
+    }
+  ]
+}

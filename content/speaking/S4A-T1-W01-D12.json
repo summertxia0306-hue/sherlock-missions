@@ -1,0 +1,84 @@
+{
+  "course_id": "S4A-T1-W01-D12",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D12",
+  "pair_id": "4A-T1-W01-D12",
+  "publication_status": "formal",
+  "title": "四上·第12课｜Unit 2我的同学·兴趣与梦想（口语）",
+  "week": 3,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 8,
+  "scope": "4A Unit 2 p15-p17",
+  "difficulty": "L1",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D12/q01.mp3",
+      "tag": "A主线·p17·人物梦想句",
+      "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+      "text": "Shenshen wants to be a writer."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D12/q02.mp3",
+      "tag": "A主线·p17·人物梦想句",
+      "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+      "text": "Xiaojiang wants to be a painter."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D12/q03.mp3",
+      "tag": "A主线·p17·频率行为句",
+      "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+      "text": "They often share works with each other."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D12/q04.mp3",
+      "tag": "A主线·p17·擅长项目句",
+      "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+      "text": "Minmin is good at football."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D12/q05.mp3",
+      "tag": "A主线·p17·擅长项目句",
+      "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+      "text": "Xiaopu is good at basketball."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D12/q06.mp3",
+      "tag": "A主线·p17·帮助行为句",
+      "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+      "text": "Yaoyao often helps James with his Chinese."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D12/q07.mp3",
+      "tag": "C微调·p17·自主问答与人物信息对应",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p17，不作未掌握结论",
+      "question": "Who is good at basketball?",
+      "expected": "Xiaopu is good at basketball.",
+      "hint": "用人物名和完整句回答。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D12/q08.mp3",
+      "tag": "A主线·p17·人物梦想问答",
+      "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+      "question": "What does Shenshen want to be?",
+      "expected": "Shenshen wants to be a writer.",
+      "hint": "用完整句回答人物梦想。"
+    }
+  ]
+}

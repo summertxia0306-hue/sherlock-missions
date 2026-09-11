@@ -9,7 +9,7 @@ const { createFileSpeakingCourseProvider } = require('../speaking-service')
 it('publishes matching versions for all retained and term courses', () => {
   const provider = createFileSpeakingCourseProvider()
   const catalog = provider.catalog()
-  assert.equal(catalog.length, 22)
+  assert.equal(catalog.length, 27)
   assert.equal(catalog.filter((item) => item.visible === false).length, 0)
   const publicDirectory = path.join(__dirname, '..', '..', '..', 'web', 'public', 'content', 'speaking')
   for (const item of catalog) {

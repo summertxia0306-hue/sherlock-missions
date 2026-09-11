@@ -1,0 +1,224 @@
+{
+  "course_id": "L4A-T1-W01-D11",
+  "pair_id": "4A-T1-W01-D11",
+  "study_pack": "4A-T1-W01-D11",
+  "course_version": "46b9fa732cb2ea1f",
+  "title": "四上·第11课｜Unit 2认识新同学·人物特点（听力）",
+  "week": 3,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 12,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D11/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "helpful",
+            "friendly",
+            "lovely"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "different",
+            "interesting",
+            "great"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "lovely",
+            "clever",
+            "cool"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "great",
+            "different",
+            "interesting"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "My classmates are lovely.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "They are different but all great.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "This classmate is helpful.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "We play a guessing game about classmates.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "They are lovely.",
+            "They are in the classroom.",
+            "They play football."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "Yes, she is.",
+            "She is my classmate.",
+            "It is great."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "Yes, they are.",
+            "Yes, he is.",
+            "They are classmates."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "A football game.",
+            "A guessing game.",
+            "A basketball game."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "options": [
+            "She is lovely.",
+            "She is different.",
+            "She is cool."
+          ],
+          "question_text": "What is the classmate like?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "options": [
+            "They are the same.",
+            "They are different but great.",
+            "They are only interesting."
+          ],
+          "question_text": "What are the classmates like?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "options": [
+            "Helpful.",
+            "Lovely.",
+            "Different."
+          ],
+          "question_text": "Which word tells us about the girl?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "Teachers.",
+            "Classmates.",
+            "Families."
+          ],
+          "question_text": "Who is the game about?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D11/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D11/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "The classmates are all the same."
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "One classmate is interesting."
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "Another classmate is helpful."
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "They play a guessing game about teachers."
+        }
+      ]
+    }
+  ]
+}

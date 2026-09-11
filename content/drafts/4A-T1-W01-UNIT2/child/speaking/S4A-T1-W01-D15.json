@@ -1,0 +1,61 @@
+{
+  "course_id": "S4A-T1-W01-D15",
+  "pair_id": "4A-T1-W01-D15",
+  "study_pack": "4A-T1-W01-D15",
+  "course_version": "3e6850f217733252",
+  "title": "四上·第15课｜Unit 2我的同学·综合猜人（口语）",
+  "week": 3,
+  "day": 5,
+  "course_type": "weekly_review",
+  "est_minutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "My classmates are different but all great.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D15/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "She is friendly and helpful.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D15/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "She often helps me draw.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D15/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "She is good at painting pictures.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D15/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "She wants to be a painter.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D15/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "The problem has a solution, and the result is great.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D15/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用人物名、频率词和帮助行为完整回答。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D15/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用特点加一个帮助行为完成猜人描述。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D15/q08.mp3"
+    }
+  ]
+}

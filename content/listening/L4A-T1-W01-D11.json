@@ -1,0 +1,431 @@
+{
+  "course_id": "L4A-T1-W01-D11",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D11",
+  "pair_id": "4A-T1-W01-D11",
+  "publication_status": "formal",
+  "title": "四上·第11课｜Unit 2认识新同学·人物特点（听力）",
+  "week": 3,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 12,
+  "scope": "4A Unit 2 p15-p16",
+  "difficulty": "L1",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D11/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p15-p16·人物特点词直接识别",
+          "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+          "options": [
+            "helpful",
+            "friendly",
+            "lovely"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "helpful"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D11/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p15-p16·人物特点词直接识别",
+          "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+          "options": [
+            "different",
+            "interesting",
+            "great"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "interesting"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D11/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p15-p16·人物特点词直接识别",
+          "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+          "options": [
+            "lovely",
+            "clever",
+            "cool"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "lovely"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D11/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p15-p16·听音选词与相似特点词辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p15-p16，不作未掌握结论",
+          "options": [
+            "great",
+            "different",
+            "interesting"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "different"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D11/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p15-p16·人物特点直接理解",
+          "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+          "display": "My classmates are lovely.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "My classmates are lovely."
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D11/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p15-p16·人物特点组合",
+          "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+          "display": "They are different but all great.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "They are different but all great."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D11/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p15-p16·相近特点词辨别",
+          "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+          "display": "This classmate is helpful.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "This classmate is interesting."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D11/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p15·单元任务理解",
+          "parent_note": "确认版教材p15主线或不增加新知识的同语境受控重组",
+          "display": "We play a guessing game about classmates.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "We play a guessing game about classmates."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D11/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p15-p16·人物特点问答",
+          "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+          "options": [
+            "They are lovely.",
+            "They are in the classroom.",
+            "They play football."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What are your classmates like?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D11/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p15-p16·听问句选答语与人物特点辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p15-p16，不作未掌握结论",
+          "options": [
+            "Yes, she is.",
+            "She is my classmate.",
+            "It is great."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Is your classmate helpful?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D11/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p15-p16·复数人物回应",
+          "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Yes, they are.",
+            "Yes, he is.",
+            "They are classmates."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Are your classmates different?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D11/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p15·单元任务问答",
+          "parent_note": "确认版教材p15主线或不增加新知识的同语境受控重组",
+          "options": [
+            "A football game.",
+            "A guessing game.",
+            "A basketball game."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What game do we play?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D11/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p15-p16·两轮特点提取",
+          "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+          "question_text": "What is the classmate like?",
+          "options": [
+            "She is lovely.",
+            "She is different.",
+            "She is cool."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "This is my classmate."
+            ],
+            [
+              "m",
+              "She is lovely."
+            ],
+            [
+              "n",
+              "Question: What is the classmate like?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D11/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p15-p16·两轮特点整合",
+          "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+          "question_text": "What are the classmates like?",
+          "options": [
+            "They are the same.",
+            "They are different but great.",
+            "They are only interesting."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "My classmates are different."
+            ],
+            [
+              "f",
+              "Yes, but they are all great."
+            ],
+            [
+              "n",
+              "Question: What are the classmates like?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D11/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p15-p16·人物特点对应",
+          "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+          "question_text": "Which word tells us about the girl?",
+          "options": [
+            "Helpful.",
+            "Lovely.",
+            "Different."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Who is helpful?"
+            ],
+            [
+              "m",
+              "This girl is helpful."
+            ],
+            [
+              "n",
+              "Question: Which word tells us about the girl?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D11/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p15·单元任务提取",
+          "parent_note": "确认版教材p15主线或不增加新知识的同语境受控重组",
+          "question_text": "Who is the game about?",
+          "options": [
+            "Teachers.",
+            "Classmates.",
+            "Families."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "Let us play a guessing game."
+            ],
+            [
+              "f",
+              "Great! Let us talk about our classmates."
+            ],
+            [
+              "n",
+              "Question: Who is the game about?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D11/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p15-p16·短文特点判断",
+          "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+          "statement": "The classmates are all the same.",
+          "answer": "false",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p15-p16·短文信息提取",
+          "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+          "statement": "One classmate is interesting.",
+          "answer": "true",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p15-p16·人物特点提取",
+          "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+          "statement": "Another classmate is helpful.",
+          "answer": "true",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p15·单元任务判断",
+          "parent_note": "确认版教材p15主线或不增加新知识的同语境受控重组",
+          "statement": "They play a guessing game about teachers.",
+          "answer": "false",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D11/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Here are my classmates. They are different but all great. One classmate is lovely. One is interesting. Another classmate is very helpful. We play a guessing game about our classmates."
+        ]
+      ]
+    }
+  ]
+}

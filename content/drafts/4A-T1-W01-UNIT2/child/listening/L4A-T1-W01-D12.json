@@ -1,0 +1,224 @@
+{
+  "course_id": "L4A-T1-W01-D12",
+  "pair_id": "4A-T1-W01-D12",
+  "study_pack": "4A-T1-W01-D12",
+  "course_version": "ae6929ea9f574dbc",
+  "title": "四上·第12课｜Unit 2我的同学·兴趣与梦想（听力）",
+  "week": 3,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 14,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D12/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "writer",
+            "painter",
+            "football"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D12/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "basketball",
+            "painter",
+            "writer"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D12/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "football",
+            "basketball",
+            "blackboard"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D12/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "always",
+            "often",
+            "different"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D12/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "Shenshen wants to be a writer.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D12/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "Xiaojiang wants to be a painter.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D12/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "Minmin is good at football.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D12/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "Yaoyao often helps James with his Chinese.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D12/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "A writer.",
+            "A painter.",
+            "A football player."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D12/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "Minmin.",
+            "Xiaopu.",
+            "Yaoyao."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D12/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "They share works with each other.",
+            "They play basketball.",
+            "They learn Chinese."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D12/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "Thank you.",
+            "Please.",
+            "Keep going."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D12/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "options": [
+            "A writer and a painter.",
+            "Two painters.",
+            "Two writers."
+          ],
+          "question_text": "What do they want to be?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D12/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "options": [
+            "Xiaopu.",
+            "Minmin.",
+            "Yaoyao."
+          ],
+          "question_text": "Who is good at football?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D12/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "options": [
+            "She helps James.",
+            "She is a writer.",
+            "She plays football."
+          ],
+          "question_text": "Why is Yaoyao nice?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D12/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "They share works.",
+            "They cheer for them.",
+            "They clean the blackboard."
+          ],
+          "question_text": "What do they do for Minmin and Xiaopu?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D12/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D12/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "Shenshen wants to be a painter."
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "Shenshen and Xiaojiang often share works."
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "Xiaopu is good at basketball."
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "Yaoyao helps James with his English."
+        }
+      ]
+    }
+  ]
+}

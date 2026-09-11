@@ -4373,6 +4373,900 @@
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
    "text": "I like the library in my school best. It is on the ground floor. It is very special and looks like a boat. The room does not have any chairs or desks. In the library, I read many interesting books. I also like our classroom, hall, computer room, art room and sports field. In the classroom I study, on the sports field I play, and in the hall I sing for all."
+  },
+  "038f1397a1213c9b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "helpful"
+  },
+  "9eb2c54aa3247594": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "interesting"
+  },
+  "20f6f3019134adec": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "lovely"
+  },
+  "54d43a52afb5e225": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "different"
+  },
+  "fd0c7232723cd857": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "My classmates are lovely."
+  },
+  "6c373809fb240e34": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "They are different but all great."
+  },
+  "181b34b855ade7a4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This classmate is interesting."
+  },
+  "b7848331bd3e33dc": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "We play a guessing game about classmates."
+  },
+  "64248aec56a8321b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What are your classmates like?"
+  },
+  "819755b95cf6978b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is your classmate helpful?"
+  },
+  "0a772d9330542195": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Are your classmates different?"
+  },
+  "c9c6cd7d3ecad43d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What game do we play?"
+  },
+  "dc17f0ee058f3a7d": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "This is my classmate."
+  },
+  "dfed61e397573a76": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "She is lovely."
+  },
+  "f6d58363042f2be9": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What is the classmate like?"
+  },
+  "28b4ce9bb1d7b341": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "My classmates are different."
+  },
+  "b7b79d5c83d74003": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Yes, but they are all great."
+  },
+  "548261a313ba8eae": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What are the classmates like?"
+  },
+  "826486e1877edf9f": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Who is helpful?"
+  },
+  "7f7fd2325ecc5a73": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "This girl is helpful."
+  },
+  "e3ad076a759ae15f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which word tells us about the girl?"
+  },
+  "3d8e3f708b579ae4": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Let us play a guessing game."
+  },
+  "edddba81dda9c78a": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Great! Let us talk about our classmates."
+  },
+  "13a260872b5c363f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who is the game about?"
+  },
+  "ff72b51a08f9e392": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Here are my classmates. They are different but all great. One classmate is lovely. One is interesting. Another classmate is very helpful. We play a guessing game about our classmates."
+  },
+  "944651b7146ebbc5": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "writer"
+  },
+  "d914ccaba32863f0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "painter"
+  },
+  "99ed90bd7457cc41": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "basketball"
+  },
+  "0a456e5e183f62db": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "often"
+  },
+  "c02689e0483f4777": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Shenshen wants to be a writer."
+  },
+  "b285bd907bc3c110": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Xiaojiang wants to be a writer."
+  },
+  "a11d008f2a448216": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Minmin is good at football."
+  },
+  "ebb8bf2a756a7460": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Yaoyao often helps James with his Chinese."
+  },
+  "a1b55700ffc8afd7": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does Shenshen want to be?"
+  },
+  "192f848549cc7142": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who is good at basketball?"
+  },
+  "4b9a3b1189e45e1f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do Shenshen and Xiaojiang often do?"
+  },
+  "f001260238bbf054": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does Yaoyao always say?"
+  },
+  "d03476f32010f1cb": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Shenshen wants to be a writer."
+  },
+  "384d8aa59fee036f": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Xiaojiang wants to be a painter."
+  },
+  "55461b71c0cf26a5": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What do they want to be?"
+  },
+  "5ee4b21847dea3aa": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Minmin is good at football."
+  },
+  "e731f9fe77207c53": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Xiaopu is good at basketball."
+  },
+  "cfa9aae896094b4c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who is good at football?"
+  },
+  "4662590014759401": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Yaoyao is very nice."
+  },
+  "2337b5f432b80126": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "She often helps James with his Chinese."
+  },
+  "4467e514a5cd9923": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Why is Yaoyao nice?"
+  },
+  "2a97b161f40afc68": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Our classmates are different."
+  },
+  "3a7f0348c0c6881f": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "We always cheer for Minmin and Xiaopu."
+  },
+  "b5eb3347e4be9ef3": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What do they do for Minmin and Xiaopu?"
+  },
+  "fa195e2c87f51ccf": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Shenshen wants to be a writer and Xiaojiang wants to be a painter. They often share works with each other. Minmin is good at football and Xiaopu is good at basketball. We always cheer for them. Yaoyao often helps James with his Chinese."
+  },
+  "43cb31ecd779336c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "lovely smile"
+  },
+  "932fe66df5b5013b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "interesting stories"
+  },
+  "91e7549049ae51d0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "clean the blackboard"
+  },
+  "e525955490efc375": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "learn English"
+  },
+  "9d3818cc4acecb4d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "James has a lovely smile."
+  },
+  "c2083bbf40bd6a54": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "He often tells interesting stories."
+  },
+  "5027bb3ae69c668b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Xiaopu always helps teachers clean the blackboard."
+  },
+  "282958214a9d5004": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Wenwen always helps his little brother clean the room."
+  },
+  "efaedb9e719838a3": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who often tells interesting stories?"
+  },
+  "738059db89778d5b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who always helps teachers clean the blackboard?"
+  },
+  "4c08c92f72b2826a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How does James help other students?"
+  },
+  "158436d711862311": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is James helpful too?"
+  },
+  "d031156025204362": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "He has a lovely smile and many friends."
+  },
+  "bbd0e8a83a2afefe": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Is he Minmin?"
+  },
+  "9275f32571148cea": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "No, he is not."
+  },
+  "51a661748377f2a9": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Is the classmate Minmin?"
+  },
+  "8ebfd7058546d5cb": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "He is interesting and often tells interesting stories."
+  },
+  "f6f19cbfbd61237c": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Is he Xiaopu?"
+  },
+  "c13348fac1eb3836": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "No."
+  },
+  "c7c2cc44dfb69615": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which word describes the classmate?"
+  },
+  "0da08ff2e4fa2571": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "He always helps teachers clean the blackboard."
+  },
+  "bc09df433e117678": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "He also helps other students learn English."
+  },
+  "1e94e321ee7bd6c8": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What two things does he do?"
+  },
+  "e587cb4c1bbbdb17": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Who is he?"
+  },
+  "32a9768f1a7b01b4": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "It is you, James. You are helpful too."
+  },
+  "1fad5bfb5f077292": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who is the helpful classmate?"
+  },
+  "42716ddae06179b3": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This classmate has a lovely smile and many friends. He is interesting and often tells interesting stories. He is helpful too. He always helps teachers clean the blackboard and often helps other students learn English. It is James."
+  },
+  "5a6eabf6343428ed": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "long rope"
+  },
+  "8b73b6d8b0a2abfc": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "take it easy"
+  },
+  "061b8d8aaef6a130": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "jump over it"
+  },
+  "ecbe52dd242f7472": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "excited"
+  },
+  "39629ade79e70531": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "keep going"
+  },
+  "89e10d32ff21db76": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The classmates are skipping with a long rope."
+  },
+  "5d5ccee154f8bfe5": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "James feels bad at first."
+  },
+  "b277de1575e956d7": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Minmin shows James how to jump."
+  },
+  "df346ef2587f7881": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Shenshen and Xiaojiang turn the rope more slowly."
+  },
+  "1667e86c1839ac2f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "James is happy and excited at the end."
+  },
+  "3f71ff5a7fe4ca86": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What are the classmates doing?"
+  },
+  "f9ea890b8a3c403b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How does James feel before he jumps in?"
+  },
+  "2309b2b194bbf15e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who shows James how to jump?"
+  },
+  "060cc4e64214dfce": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do the classmates say to James?"
+  },
+  "5b0b865dab295941": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does James say at the end?"
+  },
+  "2534f61ebd7e7597": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "I cannot jump in."
+  },
+  "de0363fb3c29c609": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Take it easy. Wait and jump over the rope."
+  },
+  "02b52b83552622c5": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What should James do?"
+  },
+  "6debb26902470baa": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Come on, James! You can do it!"
+  },
+  "7b04a35122f4ee4d": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "But I am afraid."
+  },
+  "ac44477e33e7464d": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "We can turn the rope more slowly."
+  },
+  "e42f7faf04792f9c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: How do the classmates help James?"
+  },
+  "babf5470bc541eea": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "One, two, three!"
+  },
+  "5c8ffdfbc7988514": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "James jumps in and skips."
+  },
+  "d5f4d2dc5a1e6484": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Keep going!"
+  },
+  "e77d98d4318c707d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does James do?"
+  },
+  "3f7a2f4bd091ca55": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "The classmates cheer for James."
+  },
+  "63a9f45788d8b4e9": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "I did it! Thank you!"
+  },
+  "46516012185d5480": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: How does James feel now?"
+  },
+  "e09e55ad3aa12dd0": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "What is the problem?"
+  },
+  "98037e70c2e6a3df": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "James cannot jump in."
+  },
+  "f9bb34126704546a": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "What is the solution?"
+  },
+  "c23c040e019357e4": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "His classmates help him."
+  },
+  "2e9e1293db2695cf": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What is the solution?"
+  },
+  "80e3a4ad18db8e80": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "James and his classmates are skipping with a long rope. James is afraid and cannot jump in. Minmin shows him how. Shenshen and Xiaojiang turn the rope more slowly. His classmates say, You can do it. James jumps in and skips. They cheer for him. James is happy and excited."
+  },
+  "bd56e26b5c29917c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "helpful classmate"
+  },
+  "30b04cf419a72b6d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "painting pictures"
+  },
+  "9a3ecac803105f34": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "often helps"
+  },
+  "4a0b6d6bbf5dda62": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "guessing game"
+  },
+  "d21de886263a507b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "blackboard"
+  },
+  "ccba2d70f0ae92bb": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Here are my lovely classmates."
+  },
+  "9674582b853a30fd": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Shenshen and Xiaojiang often share works."
+  },
+  "eff4ff1acd8a86cd": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "James often helps other students learn English."
+  },
+  "19aa12688cda33bb": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The solution is to turn the rope more slowly."
+  },
+  "c8b632f681a18a97": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The project is a guessing game about classmates."
+  },
+  "4e1eed393542fecb": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who wants to be a painter?"
+  },
+  "42bc5a1486a67991": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who often helps James with his Chinese?"
+  },
+  "0d47fe17f4880a36": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does James often tell?"
+  },
+  "709791bae6c115f2": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What is the result of the rope story?"
+  },
+  "d9bbafa867a6dce9": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do we make for the project?"
+  },
+  "c310c62d834759cf": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "She is friendly and helpful."
+  },
+  "4a82f4b19c669fd2": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Does she help you draw?"
+  },
+  "51a6dcde373b6761": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Yes. She is good at painting pictures."
+  },
+  "584e062879e83ea4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What is the classmate good at?"
+  },
+  "f322a600feb3cbaa": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "He has a lovely smile."
+  },
+  "e37e6b93f74e4712": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "He often tells interesting stories."
+  },
+  "04f3d4e0d2a69944": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Is he James?"
+  },
+  "030ca6fee26c8408": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Yes, he is."
+  },
+  "07d55702eaeaba5e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who is the classmate?"
+  },
+  "1dcaeacc893d4755": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Minmin is good at football."
+  },
+  "5c669757d435742c": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Xiaopu is good at basketball."
+  },
+  "6259195d945c19e5": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "We always cheer for them."
+  },
+  "0e02ead17e618ed8": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who is good at basketball?"
+  },
+  "d9a37f7ea3e38302": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "James is afraid of the long rope."
+  },
+  "fee20308eee65401": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "His classmates slow it down and cheer for him."
+  },
+  "523b1f48afe8bbe0": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Then he jumps in and skips."
+  },
+  "0ab28c26805be7b2": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Why can James do it?"
+  },
+  "8ef9cabb9c6a0b42": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "She always says please and often helps James with his Chinese."
+  },
+  "756a3223e2c5a49e": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Is she Yaoyao?"
+  },
+  "5ff7b0430782d391": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Yes."
+  },
+  "50420bab5396d3ba": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which two clues tell us about Yaoyao?"
+  },
+  "2dde640e2756622f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "We are making a guessing game about my classmates. One girl is friendly and helpful. She often helps me draw. She is good at painting pictures and wants to be a painter. Another classmate is interesting and often tells stories. In our class, different classmates help and cheer for each other."
   }
  },
  "courses": {
@@ -4827,6 +5721,114 @@
    "static/audio/listening/L4A-T1-W01-D10/q18.mp3": "577dc97330fe9a69",
    "static/audio/listening/L4A-T1-W01-D10/q19.mp3": "d4ecdf8936f0fba9",
    "static/audio/listening/L4A-T1-W01-D10/q20.mp3": "7fcd897e92d348b5"
+  },
+  "L4A-T1-W01-D11": {
+   "static/audio/listening/L4A-T1-W01-D11/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D11/q01.mp3": "171348b9c2768d74",
+   "static/audio/listening/L4A-T1-W01-D11/q02.mp3": "d1981f7e7039bf6d",
+   "static/audio/listening/L4A-T1-W01-D11/q03.mp3": "d4226992aa093798",
+   "static/audio/listening/L4A-T1-W01-D11/q04.mp3": "ec684f2f2686a173",
+   "static/audio/listening/L4A-T1-W01-D11/q05.mp3": "dcaf11a916ef69bf",
+   "static/audio/listening/L4A-T1-W01-D11/q06.mp3": "b661c8fcef7081d6",
+   "static/audio/listening/L4A-T1-W01-D11/q07.mp3": "e2cd15c126bf5bae",
+   "static/audio/listening/L4A-T1-W01-D11/q08.mp3": "9b864424ad2cbbdb",
+   "static/audio/listening/L4A-T1-W01-D11/q09.mp3": "808b645662704da4",
+   "static/audio/listening/L4A-T1-W01-D11/q10.mp3": "a675711c99966e80",
+   "static/audio/listening/L4A-T1-W01-D11/q11.mp3": "38538102cb8adc29",
+   "static/audio/listening/L4A-T1-W01-D11/q12.mp3": "15626e3d0ee6c650",
+   "static/audio/listening/L4A-T1-W01-D11/q13.mp3": "e9bb73c90b22a593",
+   "static/audio/listening/L4A-T1-W01-D11/q14.mp3": "8a89bd2ce3a8173c",
+   "static/audio/listening/L4A-T1-W01-D11/q15.mp3": "16fe6357de70d2a0",
+   "static/audio/listening/L4A-T1-W01-D11/q16.mp3": "86768727b6a114bd",
+   "static/audio/listening/L4A-T1-W01-D11/p01.mp3": "3355b1c03a7b52b3"
+  },
+  "L4A-T1-W01-D12": {
+   "static/audio/listening/L4A-T1-W01-D12/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D12/q01.mp3": "887841a861b381f4",
+   "static/audio/listening/L4A-T1-W01-D12/q02.mp3": "b0641b3efb3d352d",
+   "static/audio/listening/L4A-T1-W01-D12/q03.mp3": "d913939cc07e4558",
+   "static/audio/listening/L4A-T1-W01-D12/q04.mp3": "24fcc5a31b0481af",
+   "static/audio/listening/L4A-T1-W01-D12/q05.mp3": "3069588ed9e5b65f",
+   "static/audio/listening/L4A-T1-W01-D12/q06.mp3": "2ae0c6a58495a2a4",
+   "static/audio/listening/L4A-T1-W01-D12/q07.mp3": "92f6f41cb904c81f",
+   "static/audio/listening/L4A-T1-W01-D12/q08.mp3": "e7a0816683ac4d0a",
+   "static/audio/listening/L4A-T1-W01-D12/q09.mp3": "ee004c5053e449bd",
+   "static/audio/listening/L4A-T1-W01-D12/q10.mp3": "923aa503081af7ab",
+   "static/audio/listening/L4A-T1-W01-D12/q11.mp3": "6e633d851331f002",
+   "static/audio/listening/L4A-T1-W01-D12/q12.mp3": "02828a41447f5b60",
+   "static/audio/listening/L4A-T1-W01-D12/q13.mp3": "b79d24f74e4f988d",
+   "static/audio/listening/L4A-T1-W01-D12/q14.mp3": "1ec7319397ba4139",
+   "static/audio/listening/L4A-T1-W01-D12/q15.mp3": "478043d63dd5648b",
+   "static/audio/listening/L4A-T1-W01-D12/q16.mp3": "b4744a926abe848f",
+   "static/audio/listening/L4A-T1-W01-D12/p01.mp3": "985bfc42b5c3c4cb"
+  },
+  "L4A-T1-W01-D13": {
+   "static/audio/listening/L4A-T1-W01-D13/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D13/q01.mp3": "4b3bffbd9298f8d1",
+   "static/audio/listening/L4A-T1-W01-D13/q02.mp3": "5401edbdb5cc2083",
+   "static/audio/listening/L4A-T1-W01-D13/q03.mp3": "5117f762a294e762",
+   "static/audio/listening/L4A-T1-W01-D13/q04.mp3": "1b85a75959ba6886",
+   "static/audio/listening/L4A-T1-W01-D13/q05.mp3": "eee1c27f05f25d6f",
+   "static/audio/listening/L4A-T1-W01-D13/q06.mp3": "fe4474727db7f830",
+   "static/audio/listening/L4A-T1-W01-D13/q07.mp3": "040c32d9e98055cc",
+   "static/audio/listening/L4A-T1-W01-D13/q08.mp3": "9896755781feed27",
+   "static/audio/listening/L4A-T1-W01-D13/q09.mp3": "d10106f2f18b6c84",
+   "static/audio/listening/L4A-T1-W01-D13/q10.mp3": "ec8c959a4883f1b1",
+   "static/audio/listening/L4A-T1-W01-D13/q11.mp3": "87edfc69927844d7",
+   "static/audio/listening/L4A-T1-W01-D13/q12.mp3": "d87f8444ad719663",
+   "static/audio/listening/L4A-T1-W01-D13/q13.mp3": "cb9f9976239a232e",
+   "static/audio/listening/L4A-T1-W01-D13/q14.mp3": "f1bceb39768c976f",
+   "static/audio/listening/L4A-T1-W01-D13/q15.mp3": "d9e0e70036ef0541",
+   "static/audio/listening/L4A-T1-W01-D13/q16.mp3": "f78dd7a3ff336f87",
+   "static/audio/listening/L4A-T1-W01-D13/p01.mp3": "6ec724bc0914b5cb"
+  },
+  "L4A-T1-W01-D14": {
+   "static/audio/listening/L4A-T1-W01-D14/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D14/q01.mp3": "69a9f3a06ad4f064",
+   "static/audio/listening/L4A-T1-W01-D14/q02.mp3": "591cb7891689a753",
+   "static/audio/listening/L4A-T1-W01-D14/q03.mp3": "a7fc19b80b904c9f",
+   "static/audio/listening/L4A-T1-W01-D14/q04.mp3": "15bba9221e789ed8",
+   "static/audio/listening/L4A-T1-W01-D14/q05.mp3": "3fff5f8467e5fa38",
+   "static/audio/listening/L4A-T1-W01-D14/q06.mp3": "05714c7088d695da",
+   "static/audio/listening/L4A-T1-W01-D14/q07.mp3": "4ff9205564bb739f",
+   "static/audio/listening/L4A-T1-W01-D14/q08.mp3": "b80222b292d0d9b7",
+   "static/audio/listening/L4A-T1-W01-D14/q09.mp3": "3794805ae082e511",
+   "static/audio/listening/L4A-T1-W01-D14/q10.mp3": "c05436a27ce21aed",
+   "static/audio/listening/L4A-T1-W01-D14/q11.mp3": "46e9a943dac89095",
+   "static/audio/listening/L4A-T1-W01-D14/q12.mp3": "eaf21bbfaada5619",
+   "static/audio/listening/L4A-T1-W01-D14/q13.mp3": "b2796b0e23be7ead",
+   "static/audio/listening/L4A-T1-W01-D14/q14.mp3": "a2761b87185744ca",
+   "static/audio/listening/L4A-T1-W01-D14/q15.mp3": "3cdba0c411c1305e",
+   "static/audio/listening/L4A-T1-W01-D14/q16.mp3": "5382040512e37f19",
+   "static/audio/listening/L4A-T1-W01-D14/q17.mp3": "eec6949cca1e07a7",
+   "static/audio/listening/L4A-T1-W01-D14/q18.mp3": "a72498c85eb83bcb",
+   "static/audio/listening/L4A-T1-W01-D14/q19.mp3": "d12a718ae2ed4c9d",
+   "static/audio/listening/L4A-T1-W01-D14/q20.mp3": "636f41d2bf1f68ee",
+   "static/audio/listening/L4A-T1-W01-D14/p01.mp3": "c98144e275076c17"
+  },
+  "L4A-T1-W01-D15": {
+   "static/audio/listening/L4A-T1-W01-D15/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D15/q01.mp3": "2ede75b8dcb88787",
+   "static/audio/listening/L4A-T1-W01-D15/q02.mp3": "6e4c64863efa5fe5",
+   "static/audio/listening/L4A-T1-W01-D15/q03.mp3": "c39a8736a2f64298",
+   "static/audio/listening/L4A-T1-W01-D15/q04.mp3": "f7f25fed9b009c72",
+   "static/audio/listening/L4A-T1-W01-D15/q05.mp3": "cc7485d13b9908a2",
+   "static/audio/listening/L4A-T1-W01-D15/q06.mp3": "24a0375ac87b770c",
+   "static/audio/listening/L4A-T1-W01-D15/q07.mp3": "caafe2fbc2a20900",
+   "static/audio/listening/L4A-T1-W01-D15/q08.mp3": "9e7a0983e499c50c",
+   "static/audio/listening/L4A-T1-W01-D15/q09.mp3": "91b8bde6aff07da8",
+   "static/audio/listening/L4A-T1-W01-D15/q10.mp3": "fe44ff029885053a",
+   "static/audio/listening/L4A-T1-W01-D15/q11.mp3": "b178485e8b6f8e97",
+   "static/audio/listening/L4A-T1-W01-D15/q12.mp3": "75961a86b1422a08",
+   "static/audio/listening/L4A-T1-W01-D15/q13.mp3": "1ebe24be6774966e",
+   "static/audio/listening/L4A-T1-W01-D15/q14.mp3": "a8688027c6cfcbe5",
+   "static/audio/listening/L4A-T1-W01-D15/q15.mp3": "76bf06f420cf2e57",
+   "static/audio/listening/L4A-T1-W01-D15/q16.mp3": "aded95623f26e6ba",
+   "static/audio/listening/L4A-T1-W01-D15/q17.mp3": "e83fbd995af82567",
+   "static/audio/listening/L4A-T1-W01-D15/q18.mp3": "01cd256643e3b495",
+   "static/audio/listening/L4A-T1-W01-D15/q19.mp3": "84228d09743ce0d0",
+   "static/audio/listening/L4A-T1-W01-D15/q20.mp3": "544d11fd69b4a821",
+   "static/audio/listening/L4A-T1-W01-D15/p01.mp3": "70e8e0abcb7b4800"
   }
  }
 }

@@ -1,0 +1,439 @@
+{
+  "course_id": "L4A-T1-W01-D13",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D13",
+  "pair_id": "4A-T1-W01-D13",
+  "publication_status": "formal",
+  "title": "四上·第13课｜Unit 2猜猜他是谁·人物信息（听力）",
+  "week": 3,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 17,
+  "scope": "4A Unit 2 p15-p19",
+  "difficulty": "L2",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D13/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p18·人物线索短语识别",
+          "parent_note": "确认版教材p18主线或不增加新知识的同语境受控重组",
+          "options": [
+            "lovely smile",
+            "helpful classmate",
+            "interesting story"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "lovely smile"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D13/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p18-p19·人物行为短语识别",
+          "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+          "options": [
+            "different stories",
+            "interesting stories",
+            "lovely stories"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "interesting stories"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D13/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p18-p19·帮助行为识别",
+          "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+          "options": [
+            "clean the room",
+            "learn English",
+            "clean the blackboard"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "clean the blackboard"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D13/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p18-p19·听音选词与相近帮助行为辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p18-p19，不作未掌握结论",
+          "options": [
+            "learn Chinese",
+            "learn English",
+            "tell stories"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "learn English"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D13/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p18·人物外貌线索",
+          "parent_note": "确认版教材p18主线或不增加新知识的同语境受控重组",
+          "display": "James has a lovely smile.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "James has a lovely smile."
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D13/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p18-p19·人物频率行为",
+          "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+          "display": "He often tells interesting stories.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "He often tells interesting stories."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D13/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p19·相近帮助行为辨别",
+          "parent_note": "确认版教材p19主线或不增加新知识的同语境受控重组",
+          "display": "Xiaopu always helps teachers clean the room.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Xiaopu always helps teachers clean the blackboard."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D13/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p19·人物帮助行为对应",
+          "parent_note": "确认版教材p19主线或不增加新知识的同语境受控重组",
+          "display": "Wenwen always helps his little brother clean the room.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Wenwen always helps his little brother clean the room."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D13/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p18-p19·人物行为问答",
+          "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+          "options": [
+            "James.",
+            "Minmin.",
+            "Wenwen."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who often tells interesting stories?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D13/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p18-p19·听问句选答语与人物信息对应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p18-p19，不作未掌握结论",
+          "options": [
+            "Wenwen.",
+            "Xiaopu.",
+            "James."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Who always helps teachers clean the blackboard?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D13/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p18-p19·帮助行为问答",
+          "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+          "options": [
+            "He helps them learn English.",
+            "He cleans the room.",
+            "He plays football."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "How does James help other students?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D13/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p18·猜人对话回应",
+          "parent_note": "确认版教材p18主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Yes, he is.",
+            "No, he is not.",
+            "He is James."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Is James helpful too?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D13/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p18·连续猜人对话",
+          "parent_note": "确认版教材p18主线或不增加新知识的同语境受控重组",
+          "question_text": "Is the classmate Minmin?",
+          "options": [
+            "Yes.",
+            "No.",
+            "We do not know."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "He has a lovely smile and many friends."
+            ],
+            [
+              "m",
+              "Is he Minmin?"
+            ],
+            [
+              "f",
+              "No, he is not."
+            ],
+            [
+              "n",
+              "Question: Is the classmate Minmin?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D13/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p18·连续线索提取",
+          "parent_note": "确认版教材p18主线或不增加新知识的同语境受控重组",
+          "question_text": "Which word describes the classmate?",
+          "options": [
+            "Interesting.",
+            "Different.",
+            "Afraid."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "He is interesting and often tells interesting stories."
+            ],
+            [
+              "f",
+              "Is he Xiaopu?"
+            ],
+            [
+              "m",
+              "No."
+            ],
+            [
+              "n",
+              "Question: Which word describes the classmate?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D13/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p18-p19·跨句行为整合",
+          "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+          "question_text": "What two things does he do?",
+          "options": [
+            "He cleans and helps students learn.",
+            "He paints and plays football.",
+            "He skips and tells stories."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "He always helps teachers clean the blackboard."
+            ],
+            [
+              "m",
+              "He also helps other students learn English."
+            ],
+            [
+              "n",
+              "Question: What two things does he do?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D13/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p18·猜人结果提取",
+          "parent_note": "确认版教材p18主线或不增加新知识的同语境受控重组",
+          "question_text": "Who is the helpful classmate?",
+          "options": [
+            "James.",
+            "Minmin.",
+            "Wenwen."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Who is he?"
+            ],
+            [
+              "f",
+              "It is you, James. You are helpful too."
+            ],
+            [
+              "n",
+              "Question: Who is the helpful classmate?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D13/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p18·人物外貌提取",
+          "parent_note": "确认版教材p18主线或不增加新知识的同语境受控重组",
+          "statement": "The classmate has a lovely smile.",
+          "answer": "true",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p18·人物信息判断",
+          "parent_note": "确认版教材p18主线或不增加新知识的同语境受控重组",
+          "statement": "He has no friends.",
+          "answer": "false",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p18-p19·帮助行为提取",
+          "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+          "statement": "He helps teachers clean the blackboard.",
+          "answer": "true",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p18·跨句猜人判断",
+          "parent_note": "确认版教材p18主线或不增加新知识的同语境受控重组",
+          "statement": "The classmate is Minmin.",
+          "answer": "false",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D13/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "This classmate has a lovely smile and many friends. He is interesting and often tells interesting stories. He is helpful too. He always helps teachers clean the blackboard and often helps other students learn English. It is James."
+        ]
+      ]
+    }
+  ]
+}

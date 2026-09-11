@@ -1,0 +1,536 @@
+{
+  "course_id": "L4A-T1-W01-D14",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D14",
+  "pair_id": "4A-T1-W01-D14",
+  "publication_status": "formal",
+  "title": "四上·第14课｜Unit 2你能做到·故事整合（听力）",
+  "week": 3,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 21,
+  "scope": "4A Unit 2 p15-p21",
+  "difficulty": "L2",
+  "scoring": {
+    "per_question": 4,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D14/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p20·故事物品识别",
+          "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+          "options": [
+            "long rope",
+            "lovely smile",
+            "little brother"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "long rope"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p20·安慰语识别",
+          "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+          "options": [
+            "keep going",
+            "take it easy",
+            "come on"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "take it easy"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p20·动作指令识别",
+          "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+          "options": [
+            "jump over it",
+            "clean it",
+            "turn it"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "jump over it"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p20-p21·情绪变化识别",
+          "parent_note": "确认版教材p20-p21主线或不增加新知识的同语境受控重组",
+          "options": [
+            "afraid",
+            "excited",
+            "helpful"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "excited"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q04.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p20-p21·听音选词与相近鼓励语辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p20-p21，不作未掌握结论",
+          "options": [
+            "take it easy",
+            "keep going",
+            "wait and jump"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "keep going"
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p20·故事场景理解",
+          "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+          "display": "The classmates are skipping with a long rope.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The classmates are skipping with a long rope."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p20·初始情绪辨别",
+          "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+          "display": "James feels great at first.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "James feels bad at first."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p20·帮助行为判断",
+          "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+          "display": "Minmin shows James how to jump.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Minmin shows James how to jump."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q08.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p20·解决办法辨别",
+          "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+          "display": "Shenshen and Xiaojiang turn the rope faster.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Shenshen and Xiaojiang turn the rope more slowly."
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q09.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p21·故事结果与情绪",
+          "parent_note": "确认版教材p21主线或不增加新知识的同语境受控重组",
+          "display": "James is happy and excited at the end.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "James is happy and excited at the end."
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p20·故事场景问答",
+          "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+          "options": [
+            "They are skipping.",
+            "They are painting.",
+            "They are cleaning."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What are the classmates doing?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p20·人物情绪问答",
+          "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+          "options": [
+            "He is afraid.",
+            "He is excited.",
+            "He is interesting."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "How does James feel before he jumps in?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q12.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p20·听问句选答语与人物信息对应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p20，不作未掌握结论",
+          "options": [
+            "Shenshen.",
+            "Minmin.",
+            "Xiaojiang."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Who shows James how to jump?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q13.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p20·鼓励语问答",
+          "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+          "options": [
+            "You can do it!",
+            "Please clean it!",
+            "Tell a story!"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What do the classmates say to James?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q14.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p21·故事结果问答",
+          "parent_note": "确认版教材p21主线或不增加新知识的同语境受控重组",
+          "options": [
+            "I did it! Thank you!",
+            "Take it easy!",
+            "Wait and jump!"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does James say at the end?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p20·两轮建议提取",
+          "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+          "question_text": "What should James do?",
+          "options": [
+            "Wait and jump.",
+            "Clean the room.",
+            "Tell a story."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "I cannot jump in."
+            ],
+            [
+              "f",
+              "Take it easy. Wait and jump over the rope."
+            ],
+            [
+              "n",
+              "Question: What should James do?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q16.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p20·连续对话解决办法",
+          "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+          "question_text": "How do the classmates help James?",
+          "options": [
+            "They slow the rope.",
+            "They stop the game.",
+            "They leave James."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Come on, James! You can do it!"
+            ],
+            [
+              "m",
+              "But I am afraid."
+            ],
+            [
+              "f",
+              "We can turn the rope more slowly."
+            ],
+            [
+              "n",
+              "Question: How do the classmates help James?"
+            ]
+          ],
+          "id": 17,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q17.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p21·动作序列提取",
+          "parent_note": "确认版教材p21主线或不增加新知识的同语境受控重组",
+          "question_text": "What does James do?",
+          "options": [
+            "He jumps in and skips.",
+            "He ducks again.",
+            "He cleans the blackboard."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "One, two, three!"
+            ],
+            [
+              "f",
+              "James jumps in and skips."
+            ],
+            [
+              "m",
+              "Keep going!"
+            ],
+            [
+              "n",
+              "Question: What does James do?"
+            ]
+          ],
+          "id": 18,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q18.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p21·结果情绪推断",
+          "parent_note": "确认版教材p21主线或不增加新知识的同语境受控重组",
+          "question_text": "How does James feel now?",
+          "options": [
+            "Happy and excited.",
+            "Bad and afraid.",
+            "Different and helpful."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "The classmates cheer for James."
+            ],
+            [
+              "m",
+              "I did it! Thank you!"
+            ],
+            [
+              "n",
+              "Question: How does James feel now?"
+            ]
+          ],
+          "id": 19,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q19.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p20-p21·问题与解决办法整合",
+          "parent_note": "确认版教材p20-p21主线或不增加新知识的同语境受控重组",
+          "question_text": "What is the solution?",
+          "options": [
+            "His classmates help him.",
+            "James goes home.",
+            "The rope turns faster."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "What is the problem?"
+            ],
+            [
+              "f",
+              "James cannot jump in."
+            ],
+            [
+              "m",
+              "What is the solution?"
+            ],
+            [
+              "f",
+              "His classmates help him."
+            ],
+            [
+              "n",
+              "Question: What is the solution?"
+            ]
+          ],
+          "id": 20,
+          "audio": "static/audio/listening/L4A-T1-W01-D14/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p20·故事问题提取",
+          "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+          "statement": "James is afraid at first.",
+          "answer": "true",
+          "id": 21
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p20·人物行为判断",
+          "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+          "statement": "Minmin tells James to clean the blackboard.",
+          "answer": "false",
+          "id": 22
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p20·解决办法提取",
+          "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+          "statement": "The rope turns more slowly to help James.",
+          "answer": "true",
+          "id": 23
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p20-p21·结果判断",
+          "parent_note": "确认版教材p20-p21主线或不增加新知识的同语境受控重组",
+          "statement": "James ducks and never jumps in.",
+          "answer": "false",
+          "id": 24
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p21·故事结果整合",
+          "parent_note": "确认版教材p21主线或不增加新知识的同语境受控重组",
+          "statement": "The result is that James skips and feels excited.",
+          "answer": "true",
+          "id": 25
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D14/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "James and his classmates are skipping with a long rope. James is afraid and cannot jump in. Minmin shows him how. Shenshen and Xiaojiang turn the rope more slowly. His classmates say, You can do it. James jumps in and skips. They cheer for him. James is happy and excited."
+        ]
+      ]
+    }
+  ]
+}

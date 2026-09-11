@@ -1,0 +1,84 @@
+{
+  "course_id": "S4A-T1-W01-D15",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D15",
+  "pair_id": "4A-T1-W01-D15",
+  "publication_status": "formal",
+  "title": "四上·第15课｜Unit 2我的同学·综合猜人（口语）",
+  "week": 3,
+  "day": 5,
+  "course_type": "weekly_review",
+  "est_minutes": 8,
+  "scope": "4A Unit 2 p15-p22",
+  "difficulty": "L3",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D15/q01.mp3",
+      "tag": "A主线·p15-p22·单元主题综合句",
+      "parent_note": "确认版教材p15-p22主线或不增加新知识的同语境受控重组",
+      "text": "My classmates are different but all great."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D15/q02.mp3",
+      "tag": "A主线·p22·项目人物特点句",
+      "parent_note": "确认版教材p22主线或不增加新知识的同语境受控重组",
+      "text": "She is friendly and helpful."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D15/q03.mp3",
+      "tag": "A主线·p22·项目帮助行为句",
+      "parent_note": "确认版教材p22主线或不增加新知识的同语境受控重组",
+      "text": "She often helps me draw."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D15/q04.mp3",
+      "tag": "A主线·p22·项目擅长句",
+      "parent_note": "确认版教材p22主线或不增加新知识的同语境受控重组",
+      "text": "She is good at painting pictures."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D15/q05.mp3",
+      "tag": "A主线·p17-p22·项目梦想句",
+      "parent_note": "确认版教材p17-p22主线或不增加新知识的同语境受控重组",
+      "text": "She wants to be a painter."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D15/q06.mp3",
+      "tag": "A主线·p20-p21·故事结构同语境整合",
+      "parent_note": "确认版教材p20-p21主线或不增加新知识的同语境受控重组",
+      "text": "The problem has a solution, and the result is great."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D15/q07.mp3",
+      "tag": "C微调·p17·自主问答与人物信息对应",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p17，不作未掌握结论",
+      "question": "Who often helps James with his Chinese?",
+      "expected": "Yaoyao often helps James with his Chinese.",
+      "hint": "用人物名、频率词和帮助行为完整回答。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D15/q08.mp3",
+      "tag": "A主线·p15-p22·项目综合稳定输出",
+      "parent_note": "确认版教材p15-p22主线或不增加新知识的同语境受控重组",
+      "question": "Can you describe a helpful classmate?",
+      "expected": "My classmate is helpful and often helps me draw.",
+      "hint": "用特点加一个帮助行为完成猜人描述。"
+    }
+  ]
+}

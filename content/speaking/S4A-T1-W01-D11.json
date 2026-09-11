@@ -1,0 +1,84 @@
+{
+  "course_id": "S4A-T1-W01-D11",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D11",
+  "pair_id": "4A-T1-W01-D11",
+  "publication_status": "formal",
+  "title": "四上·第11课｜Unit 2认识新同学·人物特点（口语）",
+  "week": 3,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 8,
+  "scope": "4A Unit 2 p15-p16",
+  "difficulty": "L1",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D11/q01.mp3",
+      "tag": "A主线·p15-p16·人物特点基础句",
+      "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+      "text": "Here are my lovely classmates."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D11/q02.mp3",
+      "tag": "A主线·p15-p16·人物特点组合句",
+      "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+      "text": "They are different but all great."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D11/q03.mp3",
+      "tag": "A主线·p15-p16·人物特点基础句",
+      "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+      "text": "This classmate is helpful."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D11/q04.mp3",
+      "tag": "A主线·p15-p16·人物特点基础句",
+      "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+      "text": "My classmate is interesting."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D11/q05.mp3",
+      "tag": "A主线·p16·同语境特点组合",
+      "parent_note": "确认版教材p16主线或不增加新知识的同语境受控重组",
+      "text": "She is friendly and lovely."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D11/q06.mp3",
+      "tag": "A主线·p15·单元任务句",
+      "parent_note": "确认版教材p15主线或不增加新知识的同语境受控重组",
+      "text": "Let us play a guessing game about classmates."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D11/q07.mp3",
+      "tag": "C微调·p15-p16·自主问答与特点信息组织",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p15-p16，不作未掌握结论",
+      "question": "What are your classmates like?",
+      "expected": "They are different but all great.",
+      "hint": "用完整句说同学们的特点。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D11/q08.mp3",
+      "tag": "A主线·p15-p16·基础问答输出",
+      "parent_note": "确认版教材p15-p16主线或不增加新知识的同语境受控重组",
+      "question": "Is your classmate helpful?",
+      "expected": "Yes, my classmate is helpful.",
+      "hint": "用完整句回答并重复人物特点。"
+    }
+  ]
+}

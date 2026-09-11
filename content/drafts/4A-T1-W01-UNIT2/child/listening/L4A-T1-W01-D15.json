@@ -1,0 +1,266 @@
+{
+  "course_id": "L4A-T1-W01-D15",
+  "pair_id": "4A-T1-W01-D15",
+  "study_pack": "4A-T1-W01-D15",
+  "course_version": "6aea014f5cc5d9ba",
+  "title": "四上·第15课｜Unit 2我的同学·综合猜人（听力）",
+  "week": 3,
+  "day": 5,
+  "course_type": "weekly_test",
+  "est_minutes": 25,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D15/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "helpful classmate",
+            "interesting story",
+            "lovely smile"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "playing football",
+            "painting pictures",
+            "telling stories"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "always says",
+            "often helps",
+            "often tells"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "skipping game",
+            "guessing game",
+            "football game"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q04.mp3"
+        },
+        {
+          "id": 5,
+          "type": "word_choice",
+          "options": [
+            "basketball",
+            "blackboard",
+            "classmate"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 1,
+      "questions": [
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "Here are my lovely classmates.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "Shenshen and Xiaojiang often share works.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "James always helps other students learn Chinese.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q08.mp3"
+        },
+        {
+          "id": 9,
+          "type": "sentence_judge",
+          "display": "The solution is to turn the rope more slowly.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "sentence_judge",
+          "display": "The project is a guessing game about classmates.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "Xiaojiang.",
+            "Shenshen.",
+            "Minmin."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "Yaoyao.",
+            "Wenwen.",
+            "Xiaopu."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q12.mp3"
+        },
+        {
+          "id": 13,
+          "type": "question_response",
+          "options": [
+            "Interesting stories.",
+            "The time.",
+            "A problem."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "question_response",
+          "options": [
+            "James jumps in and skips.",
+            "James cleans the room.",
+            "James tells a story."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "question_response",
+          "options": [
+            "A guessing game.",
+            "A school building.",
+            "A long rope."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "Painting pictures.",
+            "Playing basketball.",
+            "Telling stories."
+          ],
+          "question_text": "What is the classmate good at?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q16.mp3"
+        },
+        {
+          "id": 17,
+          "type": "dialogue_choice",
+          "options": [
+            "James.",
+            "Xiaopu.",
+            "Minmin."
+          ],
+          "question_text": "Who is the classmate?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q17.mp3"
+        },
+        {
+          "id": 18,
+          "type": "dialogue_choice",
+          "options": [
+            "Minmin.",
+            "Xiaopu.",
+            "James."
+          ],
+          "question_text": "Who is good at basketball?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q18.mp3"
+        },
+        {
+          "id": 19,
+          "type": "dialogue_choice",
+          "options": [
+            "His classmates help and cheer for him.",
+            "He leaves the game.",
+            "He turns the rope alone."
+          ],
+          "question_text": "Why can James do it?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q19.mp3"
+        },
+        {
+          "id": 20,
+          "type": "dialogue_choice",
+          "options": [
+            "She says please and helps James.",
+            "She paints and plays football.",
+            "She cleans and tells stories."
+          ],
+          "question_text": "Which two clues tell us about Yaoyao?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D15/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D15/p01.mp3",
+      "questions": [
+        {
+          "id": 21,
+          "type": "passage_judge",
+          "statement": "The girl is friendly and helpful."
+        },
+        {
+          "id": 22,
+          "type": "passage_judge",
+          "statement": "She is good at playing football."
+        },
+        {
+          "id": 23,
+          "type": "passage_judge",
+          "statement": "She wants to be a painter."
+        },
+        {
+          "id": 24,
+          "type": "passage_judge",
+          "statement": "Another classmate often tells stories."
+        },
+        {
+          "id": 25,
+          "type": "passage_judge",
+          "statement": "All classmates are the same."
+        }
+      ]
+    }
+  ]
+}

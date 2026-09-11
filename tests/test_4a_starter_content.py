@@ -130,10 +130,12 @@ class StarterFivePackContentTests(unittest.TestCase):
         for term in forbidden:
             self.assertNotIn(term, payload)
 
-    def test_obsolete_pre_migration_d11_is_absent(self):
-        for day in (11,):
-            self.assertFalse((LISTENING_DIR / f"L4A-T1-W01-D{day:02d}.json").exists())
-            self.assertFalse((SPEAKING_DIR / f"S4A-T1-W01-D{day:02d}.json").exists())
+    def test_current_d11_is_the_approved_unit2_course(self):
+        listening = load(LISTENING_DIR / "L4A-T1-W01-D11.json")
+        speaking = load(SPEAKING_DIR / "S4A-T1-W01-D11.json")
+        for course in (listening, speaking):
+            self.assertEqual("4A Unit 2 p15-p16", course["scope"])
+            self.assertEqual("formal", course["publication_status"])
 
     def test_study_packs_and_audio_plan_match_exactly(self):
         packs = load(DRAFT_DIR / "study-packs.json")

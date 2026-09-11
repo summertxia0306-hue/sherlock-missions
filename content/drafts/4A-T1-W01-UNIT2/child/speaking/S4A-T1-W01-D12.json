@@ -1,0 +1,61 @@
+{
+  "course_id": "S4A-T1-W01-D12",
+  "pair_id": "4A-T1-W01-D12",
+  "study_pack": "4A-T1-W01-D12",
+  "course_version": "c46354199842cbc3",
+  "title": "四上·第12课｜Unit 2我的同学·兴趣与梦想（口语）",
+  "week": 3,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Shenshen wants to be a writer.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D12/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "Xiaojiang wants to be a painter.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D12/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "They often share works with each other.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D12/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Minmin is good at football.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D12/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "Xiaopu is good at basketball.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D12/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Yaoyao often helps James with his Chinese.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D12/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用人物名和完整句回答。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D12/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答人物梦想。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D12/q08.mp3"
+    }
+  ]
+}

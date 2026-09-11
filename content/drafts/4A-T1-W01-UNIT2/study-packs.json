@@ -1,0 +1,78 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "publication_status": "formal",
+  "visible": true,
+  "authority_note": "父JSON是唯一活动课程源；本目录保存配对、音频计划和派生儿童安全校验副本。课程完成后默认formal开放。",
+  "study_packs": [
+    {
+      "lesson": 11,
+      "study_pack": "4A-T1-W01-D11",
+      "pair_id": "4A-T1-W01-D11",
+      "planned_title": "四上·第11课｜Unit 2认识新同学·人物特点",
+      "textbook_scope": "4A Unit 2 p15-p16",
+      "planned_difficulty": "L1",
+      "json_difficulty": "L1",
+      "planned_total_minutes": 20,
+      "focus": "人物特点词、同学特点直接识别、基础介绍",
+      "listening_course_id": "L4A-T1-W01-D11",
+      "speaking_course_id": "S4A-T1-W01-D11",
+      "publication_gate": "课程完成后默认formal开放；家长负责按实际学习进度依次使用。"
+    },
+    {
+      "lesson": 12,
+      "study_pack": "4A-T1-W01-D12",
+      "pair_id": "4A-T1-W01-D12",
+      "planned_title": "四上·第12课｜Unit 2我的同学·兴趣与梦想",
+      "textbook_scope": "4A Unit 2 p15-p17",
+      "planned_difficulty": "L1+",
+      "json_difficulty": "L1",
+      "planned_total_minutes": 22,
+      "focus": "人物梦想、擅长项目、often与always",
+      "listening_course_id": "L4A-T1-W01-D12",
+      "speaking_course_id": "S4A-T1-W01-D12",
+      "publication_gate": "课程完成后默认formal开放；家长负责按实际学习进度依次使用。"
+    },
+    {
+      "lesson": 13,
+      "study_pack": "4A-T1-W01-D13",
+      "pair_id": "4A-T1-W01-D13",
+      "planned_title": "四上·第13课｜Unit 2猜猜他是谁·人物信息",
+      "textbook_scope": "4A Unit 2 p15-p19",
+      "planned_difficulty": "L2",
+      "json_difficulty": "L2",
+      "planned_total_minutes": 25,
+      "focus": "连续猜人对话、人物与行为对应、跨句判断",
+      "listening_course_id": "L4A-T1-W01-D13",
+      "speaking_course_id": "S4A-T1-W01-D13",
+      "publication_gate": "课程完成后默认formal开放；家长负责按实际学习进度依次使用。"
+    },
+    {
+      "lesson": 14,
+      "study_pack": "4A-T1-W01-D14",
+      "pair_id": "4A-T1-W01-D14",
+      "planned_title": "四上·第14课｜Unit 2你能做到·故事整合",
+      "textbook_scope": "4A Unit 2 p15-p21",
+      "planned_difficulty": "L2+",
+      "json_difficulty": "L2",
+      "planned_total_minutes": 29,
+      "focus": "跳长绳故事、问题解决结果、跨句信息整合",
+      "listening_course_id": "L4A-T1-W01-D14",
+      "speaking_course_id": "S4A-T1-W01-D14",
+      "publication_gate": "课程完成后默认formal开放；家长负责按实际学习进度依次使用。"
+    },
+    {
+      "lesson": 15,
+      "study_pack": "4A-T1-W01-D15",
+      "pair_id": "4A-T1-W01-D15",
+      "planned_title": "四上·第15课｜Unit 2我的同学·综合猜人",
+      "textbook_scope": "4A Unit 2 p15-p22",
+      "planned_difficulty": "L3",
+      "json_difficulty": "L3",
+      "planned_total_minutes": 33,
+      "focus": "Unit 2综合、跨题型猜人、稳定完整输出",
+      "listening_course_id": "L4A-T1-W01-D15",
+      "speaking_course_id": "S4A-T1-W01-D15",
+      "publication_gate": "课程完成后默认formal开放；家长负责按实际学习进度依次使用。"
+    }
+  ]
+}

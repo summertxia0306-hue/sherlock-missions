@@ -1,0 +1,544 @@
+{
+  "course_id": "L4A-T1-W01-D15",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D15",
+  "pair_id": "4A-T1-W01-D15",
+  "publication_status": "formal",
+  "title": "四上·第15课｜Unit 2我的同学·综合猜人（听力）",
+  "week": 3,
+  "day": 5,
+  "course_type": "weekly_test",
+  "est_minutes": 25,
+  "scope": "4A Unit 2 p15-p22",
+  "difficulty": "L3",
+  "scoring": {
+    "per_question": 4,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D15/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p15-p22·综合人物特点识别",
+          "parent_note": "确认版教材p15-p22主线或不增加新知识的同语境受控重组",
+          "options": [
+            "helpful classmate",
+            "interesting story",
+            "lovely smile"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "helpful classmate"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p17-p22·梦想与活动短语识别",
+          "parent_note": "确认版教材p17-p22主线或不增加新知识的同语境受控重组",
+          "options": [
+            "playing football",
+            "painting pictures",
+            "telling stories"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "painting pictures"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p17-p19·频率行为短语辨别",
+          "parent_note": "确认版教材p17-p19主线或不增加新知识的同语境受控重组",
+          "options": [
+            "always says",
+            "often helps",
+            "often tells"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "often helps"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p15-p22·单元任务识别",
+          "parent_note": "确认版教材p15-p22主线或不增加新知识的同语境受控重组",
+          "options": [
+            "skipping game",
+            "guessing game",
+            "football game"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "guessing game"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q04.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p18-p19·听音选词与相近词辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p18-p19，不作未掌握结论",
+          "options": [
+            "basketball",
+            "blackboard",
+            "classmate"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "blackboard"
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p17·韵文信息复现",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "display": "Here are my lovely classmates.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Here are my lovely classmates."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p17·人物行为对应",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "display": "Shenshen and Xiaojiang often share works.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Shenshen and Xiaojiang often share works."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p18-p19·频率与语言双重辨别",
+          "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+          "display": "James always helps other students learn Chinese.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "James often helps other students learn English."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q08.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p20-p21·故事结构理解",
+          "parent_note": "确认版教材p20-p21主线或不增加新知识的同语境受控重组",
+          "display": "The solution is to turn the rope more slowly.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The solution is to turn the rope more slowly."
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q09.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p22·项目任务理解",
+          "parent_note": "确认版教材p22主线或不增加新知识的同语境受控重组",
+          "display": "The project is a guessing game about classmates.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The project is a guessing game about classmates."
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p17·人物梦想问答",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Xiaojiang.",
+            "Shenshen.",
+            "Minmin."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who wants to be a painter?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p17·听问句选答语与人物信息对应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p17，不作未掌握结论",
+          "options": [
+            "Yaoyao.",
+            "Wenwen.",
+            "Xiaopu."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who often helps James with his Chinese?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q12.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p18-p19·人物行为问答",
+          "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Interesting stories.",
+            "The time.",
+            "A problem."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does James often tell?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q13.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p20-p21·故事结果问答",
+          "parent_note": "确认版教材p20-p21主线或不增加新知识的同语境受控重组",
+          "options": [
+            "James jumps in and skips.",
+            "James cleans the room.",
+            "James tells a story."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What is the result of the rope story?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q14.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p22·项目任务问答",
+          "parent_note": "确认版教材p22主线或不增加新知识的同语境受控重组",
+          "options": [
+            "A guessing game.",
+            "A school building.",
+            "A long rope."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What do we make for the project?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p22·项目猜人线索整合",
+          "parent_note": "确认版教材p22主线或不增加新知识的同语境受控重组",
+          "question_text": "What is the classmate good at?",
+          "options": [
+            "Painting pictures.",
+            "Playing basketball.",
+            "Telling stories."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "She is friendly and helpful."
+            ],
+            [
+              "m",
+              "Does she help you draw?"
+            ],
+            [
+              "f",
+              "Yes. She is good at painting pictures."
+            ],
+            [
+              "n",
+              "Question: What is the classmate good at?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q16.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p18·多线索猜人",
+          "parent_note": "确认版教材p18主线或不增加新知识的同语境受控重组",
+          "question_text": "Who is the classmate?",
+          "options": [
+            "James.",
+            "Xiaopu.",
+            "Minmin."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "He has a lovely smile."
+            ],
+            [
+              "f",
+              "He often tells interesting stories."
+            ],
+            [
+              "m",
+              "Is he James?"
+            ],
+            [
+              "f",
+              "Yes, he is."
+            ],
+            [
+              "n",
+              "Question: Who is the classmate?"
+            ]
+          ],
+          "id": 17,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q17.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p17·跨句人物对应",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "question_text": "Who is good at basketball?",
+          "options": [
+            "Minmin.",
+            "Xiaopu.",
+            "James."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Minmin is good at football."
+            ],
+            [
+              "m",
+              "Xiaopu is good at basketball."
+            ],
+            [
+              "f",
+              "We always cheer for them."
+            ],
+            [
+              "n",
+              "Question: Who is good at basketball?"
+            ]
+          ],
+          "id": 18,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q18.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p20-p21·故事因果整合",
+          "parent_note": "确认版教材p20-p21主线或不增加新知识的同语境受控重组",
+          "question_text": "Why can James do it?",
+          "options": [
+            "His classmates help and cheer for him.",
+            "He leaves the game.",
+            "He turns the rope alone."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "James is afraid of the long rope."
+            ],
+            [
+              "f",
+              "His classmates slow it down and cheer for him."
+            ],
+            [
+              "m",
+              "Then he jumps in and skips."
+            ],
+            [
+              "n",
+              "Question: Why can James do it?"
+            ]
+          ],
+          "id": 19,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q19.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p17·双线索人物判断",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "question_text": "Which two clues tell us about Yaoyao?",
+          "options": [
+            "She says please and helps James.",
+            "She paints and plays football.",
+            "She cleans and tells stories."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "She always says please and often helps James with his Chinese."
+            ],
+            [
+              "m",
+              "Is she Yaoyao?"
+            ],
+            [
+              "f",
+              "Yes."
+            ],
+            [
+              "n",
+              "Question: Which two clues tell us about Yaoyao?"
+            ]
+          ],
+          "id": 20,
+          "audio": "static/audio/listening/L4A-T1-W01-D15/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p22·项目人物特点提取",
+          "parent_note": "确认版教材p22主线或不增加新知识的同语境受控重组",
+          "statement": "The girl is friendly and helpful.",
+          "answer": "true",
+          "id": 21
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p22·擅长项目辨别",
+          "parent_note": "确认版教材p22主线或不增加新知识的同语境受控重组",
+          "statement": "She is good at playing football.",
+          "answer": "false",
+          "id": 22
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p22·人物梦想提取",
+          "parent_note": "确认版教材p22主线或不增加新知识的同语境受控重组",
+          "statement": "She wants to be a painter.",
+          "answer": "true",
+          "id": 23
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p18-p19·跨人物信息提取",
+          "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+          "statement": "Another classmate often tells stories.",
+          "answer": "true",
+          "id": 24
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p15-p22·单元主题综合判断",
+          "parent_note": "确认版教材p15-p22主线或不增加新知识的同语境受控重组",
+          "statement": "All classmates are the same.",
+          "answer": "false",
+          "id": 25
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D15/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "We are making a guessing game about my classmates. One girl is friendly and helpful. She often helps me draw. She is good at painting pictures and wants to be a painter. Another classmate is interesting and often tells stories. In our class, different classmates help and cheer for each other."
+        ]
+      ]
+    }
+  ]
+}

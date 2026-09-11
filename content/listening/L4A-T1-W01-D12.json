@@ -1,0 +1,431 @@
+{
+  "course_id": "L4A-T1-W01-D12",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D12",
+  "pair_id": "4A-T1-W01-D12",
+  "publication_status": "formal",
+  "title": "四上·第12课｜Unit 2我的同学·兴趣与梦想（听力）",
+  "week": 3,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 14,
+  "scope": "4A Unit 2 p15-p17",
+  "difficulty": "L1",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D12/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p17·梦想词直接识别",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "options": [
+            "writer",
+            "painter",
+            "football"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "writer"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D12/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p17·梦想词直接识别",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "options": [
+            "basketball",
+            "painter",
+            "writer"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "painter"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D12/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p17·运动词直接识别",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "options": [
+            "football",
+            "basketball",
+            "blackboard"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "basketball"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D12/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p17·听音选词与频率词辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p17，不作未掌握结论",
+          "options": [
+            "always",
+            "often",
+            "different"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "often"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D12/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p17·人物梦想对应",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "display": "Shenshen wants to be a writer.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Shenshen wants to be a writer."
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D12/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p17·相近人物梦想辨别",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "display": "Xiaojiang wants to be a painter.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Xiaojiang wants to be a writer."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D12/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p17·人物擅长项目对应",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "display": "Minmin is good at football.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Minmin is good at football."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D12/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p17·频率与帮助行为",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "display": "Yaoyao often helps James with his Chinese.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Yaoyao often helps James with his Chinese."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D12/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p17·人物梦想问答",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "options": [
+            "A writer.",
+            "A painter.",
+            "A football player."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does Shenshen want to be?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D12/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p17·听问句选答语与人物信息对应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p17，不作未掌握结论",
+          "options": [
+            "Minmin.",
+            "Xiaopu.",
+            "Yaoyao."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Who is good at basketball?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D12/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p17·共同行为问答",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "options": [
+            "They share works with each other.",
+            "They play basketball.",
+            "They learn Chinese."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What do Shenshen and Xiaojiang often do?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D12/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p17·频率行为问答",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Thank you.",
+            "Please.",
+            "Keep going."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What does Yaoyao always say?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D12/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p17·两人物梦想整合",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "question_text": "What do they want to be?",
+          "options": [
+            "A writer and a painter.",
+            "Two painters.",
+            "Two writers."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Shenshen wants to be a writer."
+            ],
+            [
+              "m",
+              "Xiaojiang wants to be a painter."
+            ],
+            [
+              "n",
+              "Question: What do they want to be?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D12/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p17·人物运动对应",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "question_text": "Who is good at football?",
+          "options": [
+            "Xiaopu.",
+            "Minmin.",
+            "Yaoyao."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "Minmin is good at football."
+            ],
+            [
+              "f",
+              "Xiaopu is good at basketball."
+            ],
+            [
+              "n",
+              "Question: Who is good at football?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D12/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p17·跨句原因提取",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "question_text": "Why is Yaoyao nice?",
+          "options": [
+            "She helps James.",
+            "She is a writer.",
+            "She plays football."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Yaoyao is very nice."
+            ],
+            [
+              "m",
+              "She often helps James with his Chinese."
+            ],
+            [
+              "n",
+              "Question: Why is Yaoyao nice?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D12/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p17·频率行为提取",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "question_text": "What do they do for Minmin and Xiaopu?",
+          "options": [
+            "They share works.",
+            "They cheer for them.",
+            "They clean the blackboard."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "Our classmates are different."
+            ],
+            [
+              "f",
+              "We always cheer for Minmin and Xiaopu."
+            ],
+            [
+              "n",
+              "Question: What do they do for Minmin and Xiaopu?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D12/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p17·人物梦想判断",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "statement": "Shenshen wants to be a painter.",
+          "answer": "false",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p17·共同行为判断",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "statement": "Shenshen and Xiaojiang often share works.",
+          "answer": "true",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p17·人物运动判断",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "statement": "Xiaopu is good at basketball.",
+          "answer": "true",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p17·语言信息辨别",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "statement": "Yaoyao helps James with his English.",
+          "answer": "false",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D12/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Shenshen wants to be a writer and Xiaojiang wants to be a painter. They often share works with each other. Minmin is good at football and Xiaopu is good at basketball. We always cheer for them. Yaoyao often helps James with his Chinese."
+        ]
+      ]
+    }
+  ]
+}

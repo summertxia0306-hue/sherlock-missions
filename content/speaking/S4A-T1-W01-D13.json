@@ -1,0 +1,84 @@
+{
+  "course_id": "S4A-T1-W01-D13",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D13",
+  "pair_id": "4A-T1-W01-D13",
+  "publication_status": "formal",
+  "title": "四上·第13课｜Unit 2猜猜他是谁·人物信息（口语）",
+  "week": 3,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 8,
+  "scope": "4A Unit 2 p15-p19",
+  "difficulty": "L2",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D13/q01.mp3",
+      "tag": "A主线·p18·人物外貌线索句",
+      "parent_note": "确认版教材p18主线或不增加新知识的同语境受控重组",
+      "text": "He has a lovely smile and many friends."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D13/q02.mp3",
+      "tag": "A主线·p18-p19·人物频率行为句",
+      "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+      "text": "He often tells interesting stories."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D13/q03.mp3",
+      "tag": "A主线·p18-p19·人物帮助行为句",
+      "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+      "text": "He always helps teachers clean the blackboard."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D13/q04.mp3",
+      "tag": "A主线·p18-p19·人物帮助行为句",
+      "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+      "text": "James often helps other students learn English."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D13/q05.mp3",
+      "tag": "A主线·p19·规则例句复现",
+      "parent_note": "确认版教材p19主线或不增加新知识的同语境受控重组",
+      "text": "Wenwen always helps his little brother clean the room."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D13/q06.mp3",
+      "tag": "A主线·p18·猜人结果句",
+      "parent_note": "确认版教材p18主线或不增加新知识的同语境受控重组",
+      "text": "It is you, James. You are helpful too."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D13/q07.mp3",
+      "tag": "C微调·p19·自主问答与人物行为对应",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p19，不作未掌握结论",
+      "question": "Who always helps teachers clean the blackboard?",
+      "expected": "Xiaopu always helps teachers clean the blackboard.",
+      "hint": "先说人物，再完整复述帮助行为。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D13/q08.mp3",
+      "tag": "A主线·p18-p19·跨句人物说明",
+      "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+      "question": "Why is James helpful?",
+      "expected": "He often helps other students learn English.",
+      "hint": "用教材中的帮助行为完整回答。"
+    }
+  ]
+}

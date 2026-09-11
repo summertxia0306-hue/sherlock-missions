@@ -1,0 +1,84 @@
+{
+  "course_id": "S4A-T1-W01-D14",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D14",
+  "pair_id": "4A-T1-W01-D14",
+  "publication_status": "formal",
+  "title": "四上·第14课｜Unit 2你能做到·故事整合（口语）",
+  "week": 3,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 8,
+  "scope": "4A Unit 2 p15-p21",
+  "difficulty": "L2",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D14/q01.mp3",
+      "tag": "A主线·p20·故事场景句",
+      "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+      "text": "The classmates are skipping with a long rope."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D14/q02.mp3",
+      "tag": "A主线·p20·安慰与动作指令",
+      "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+      "text": "Take it easy. Wait and jump over it."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D14/q03.mp3",
+      "tag": "A主线·p20·帮助行为句",
+      "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+      "text": "Minmin shows James how to jump."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D14/q04.mp3",
+      "tag": "A主线·p20·鼓励语",
+      "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+      "text": "Come on, James! You can do it!"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D14/q05.mp3",
+      "tag": "A主线·p20·解决办法句",
+      "parent_note": "确认版教材p20主线或不增加新知识的同语境受控重组",
+      "text": "Shenshen and Xiaojiang turn the rope more slowly."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D14/q06.mp3",
+      "tag": "A主线·p21·结果情绪句",
+      "parent_note": "确认版教材p21主线或不增加新知识的同语境受控重组",
+      "text": "James is happy and excited at the end."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D14/q07.mp3",
+      "tag": "C微调·p20·自主问答与人物信息对应",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p20，不作未掌握结论",
+      "question": "Who shows James how to jump?",
+      "expected": "Minmin shows James how to jump.",
+      "hint": "用人物名和完整动作句回答。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D14/q08.mp3",
+      "tag": "A主线·p20-p21·故事结果整合输出",
+      "parent_note": "确认版教材p20-p21主线或不增加新知识的同语境受控重组",
+      "question": "What is the result of the story?",
+      "expected": "James jumps in and skips with his classmates.",
+      "hint": "用完整句说出故事结果。"
+    }
+  ]
+}

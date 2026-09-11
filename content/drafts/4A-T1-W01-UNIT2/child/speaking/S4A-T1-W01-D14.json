@@ -1,0 +1,61 @@
+{
+  "course_id": "S4A-T1-W01-D14",
+  "pair_id": "4A-T1-W01-D14",
+  "study_pack": "4A-T1-W01-D14",
+  "course_version": "fb7a0cde48f6ddce",
+  "title": "四上·第14课｜Unit 2你能做到·故事整合（口语）",
+  "week": 3,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "The classmates are skipping with a long rope.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D14/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "Take it easy. Wait and jump over it.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D14/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "Minmin shows James how to jump.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D14/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Come on, James! You can do it!",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D14/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "Shenshen and Xiaojiang turn the rope more slowly.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D14/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "James is happy and excited at the end.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D14/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用人物名和完整动作句回答。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D14/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句说出故事结果。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D14/q08.mp3"
+    }
+  ]
+}

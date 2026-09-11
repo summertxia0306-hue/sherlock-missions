@@ -1,0 +1,57 @@
+[
+  {
+    "course_id": "L4A-T1-W01-D11",
+    "course_version": "46b9fa732cb2ea1f",
+    "title": "四上·第11课｜Unit 2认识新同学·人物特点（听力）",
+    "course_type": "training",
+    "week": 3,
+    "day": 1,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D11",
+    "study_pack": "4A-T1-W01-D11"
+  },
+  {
+    "course_id": "L4A-T1-W01-D12",
+    "course_version": "ae6929ea9f574dbc",
+    "title": "四上·第12课｜Unit 2我的同学·兴趣与梦想（听力）",
+    "course_type": "training",
+    "week": 3,
+    "day": 2,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D12",
+    "study_pack": "4A-T1-W01-D12"
+  },
+  {
+    "course_id": "L4A-T1-W01-D13",
+    "course_version": "6580921a6a3b2eeb",
+    "title": "四上·第13课｜Unit 2猜猜他是谁·人物信息（听力）",
+    "course_type": "training",
+    "week": 3,
+    "day": 3,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D13",
+    "study_pack": "4A-T1-W01-D13"
+  },
+  {
+    "course_id": "L4A-T1-W01-D14",
+    "course_version": "341472bd0587ec73",
+    "title": "四上·第14课｜Unit 2你能做到·故事整合（听力）",
+    "course_type": "training",
+    "week": 3,
+    "day": 4,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D14",
+    "study_pack": "4A-T1-W01-D14"
+  },
+  {
+    "course_id": "L4A-T1-W01-D15",
+    "course_version": "6aea014f5cc5d9ba",
+    "title": "四上·第15课｜Unit 2我的同学·综合猜人（听力）",
+    "course_type": "weekly_test",
+    "week": 3,
+    "day": 5,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D15",
+    "study_pack": "4A-T1-W01-D15"
+  }
+]
