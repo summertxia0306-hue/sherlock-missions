@@ -80,7 +80,7 @@ class RegressionTests(unittest.TestCase):
         self.assertEqual(2, len(sources))
         self.assertTrue(sources[0].startswith("https://cdn.jsdelivr.net/gh/"))
         self.assertTrue(sources[1].startswith("https://raw.githubusercontent.com/"))
-        self.assertTrue(all("1f1e2ef175215128437df67d23d2707b3993993a" in source for source in sources))
+        self.assertTrue(all("b5dbb07aadf6a4e43ee8dc9f281a596ae8ed5543" in source for source in sources))
         self.assertTrue(sources[0].endswith(path))
         self.assertTrue(sources[1].endswith(path))
         self.assertEqual(sources[0], listening_audio.audio_url(path))

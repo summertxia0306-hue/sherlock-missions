@@ -15,8 +15,8 @@ _FRONTEND = os.path.join(os.path.dirname(os.path.abspath(__file__)), "frontend")
 _component = components.declare_component("limited_audio", path=_FRONTEND)
 
 _AUDIO_BASES = (
-    "https://cdn.jsdelivr.net/gh/summertxia0306-hue/sherlock-missions@1f1e2ef175215128437df67d23d2707b3993993a/",
-    "https://raw.githubusercontent.com/summertxia0306-hue/sherlock-missions/1f1e2ef175215128437df67d23d2707b3993993a/",
+    "https://cdn.jsdelivr.net/gh/summertxia0306-hue/sherlock-missions@b5dbb07aadf6a4e43ee8dc9f281a596ae8ed5543/",
+    "https://raw.githubusercontent.com/summertxia0306-hue/sherlock-missions/b5dbb07aadf6a4e43ee8dc9f281a596ae8ed5543/",
 )
 
 
