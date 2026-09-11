@@ -25,13 +25,15 @@ st.set_page_config(
 from listening import page as lpage
 from speaking import models as smodels
 from speaking import page as spage
+from speaking import recorder as srecorder
 from storage import progress
 
 # Streamlit Cloud can keep imported submodules alive across a hot rerun. Reload
-# shared progress first, then page/model modules, so a deploy cannot mix module
-# versions when a page starts using a new progress helper.
+# shared dependencies before their page modules, so a deploy cannot mix a new
+# page with an old recorder/progress module kept in the running process.
 progress = importlib.reload(progress)
 lpage = importlib.reload(lpage)
+srecorder = importlib.reload(srecorder)
 spage = importlib.reload(spage)
 smodels = importlib.reload(smodels)
 

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import base64
+import importlib
 import json
 import math
 from pathlib import Path
@@ -58,6 +59,33 @@ class RegressionTests(unittest.TestCase):
         self.assertIn("function recoverCaptureFailure(msg)", html)
         self.assertIn('recoverCaptureFailure("录音太短了，重新录一次吧")', html)
         self.assertIn('recoverCaptureFailure("好像没有录到声音，再点一次话筒重试', html)
+
+    def test_streamlit_hot_deploy_reloads_recorder_before_speaking_page(self):
+        app_source = (Path(recorder.__file__).parents[1] / "app.py").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("from speaking import recorder as srecorder", app_source)
+        self.assertIn("srecorder = importlib.reload(srecorder)", app_source)
+        self.assertLess(
+            app_source.index("srecorder = importlib.reload(srecorder)"),
+            app_source.index("spage = importlib.reload(spage)"),
+        )
+
+        # Reproduce the exact production failure: the long-lived Streamlit process
+        # has an old recorder module while app.py/page.py have already hot-updated.
+        from streamlit.testing.v1 import AppTest
+
+        delattr(recorder, "validate_wav_integrity")
+        try:
+            app = AppTest.from_file(
+                str(Path(recorder.__file__).parents[1] / "app.py"), default_timeout=20
+            )
+            app.query_params["course_id"] = "S4A-T1-W01-D15"
+            app.run()
+            self.assertEqual(0, len(app.exception))
+            self.assertTrue(hasattr(recorder, "validate_wav_integrity"))
+        finally:
+            importlib.reload(recorder)
 
     def test_recorder_uses_a_fresh_processed_stream_and_releases_it_before_review(self):
         html = (Path(recorder.__file__).parent / "frontend" / "index.html").read_text(
@@ -197,6 +225,41 @@ if (!hasAlternatingSilentSamples(joinFrames(alternating), 16000)) throw new Erro
         self.assertEqual(1, state["capture_gen"][6])
         evaluate.assert_not_called()
         upload.assert_not_called()
+
+    def test_valid_capture_completes_the_formal_scoring_path(self):
+        wav = self._wav_bytes(self._speech_like_frames(frame_count=12))
+        rv = {"wav_b64": base64.b64encode(wav).decode(), "dur": 1.0, "take": 1}
+        state = {"data_kind": "formal"}
+        qstate = {"takes": [], "recordings": [], "recording_records": []}
+        course = {"course_id": "S4A-T1-W01-D15"}
+        question = {"id": 1, "type": "repeat", "text": "hello"}
+        score = {
+            "total": 82,
+            "accuracy": 82,
+            "fluency": 82,
+            "integrity": 82,
+            "standard": 82,
+            "is_rejected": False,
+            "words": [],
+            "raw_xml": "",
+            "seconds": 1.0,
+        }
+        with mock.patch("speaking.page._secret", return_value="test-secret"), \
+             mock.patch("speaking.page.ise.evaluate_retry", return_value=score) as evaluate, \
+             mock.patch("speaking.page.recorder.upload_recording",
+                        return_value=("recordings/test.wav", 0.1)) as upload, \
+             mock.patch("speaking.page.progress.save_recording_identity") as save_identity:
+            accepted = speaking_page._consume_take(
+                course, question, qstate, rv, state
+            )
+        self.assertTrue(accepted)
+        self.assertEqual(82, qstate["takes"][0]["total"])
+        self.assertEqual(["recordings/test.wav"], qstate["recordings"])
+        evaluate.assert_called_once()
+        upload.assert_called_once()
+        save_identity.assert_called_once_with(
+            "recordings/test.wav", "formal", "S4A-T1-W01-D15", 1
+        )
 
     def test_limited_audio_uses_cdn_with_raw_fallback(self):
         path = "static/audio/listening/W01D39/q13.mp3"
