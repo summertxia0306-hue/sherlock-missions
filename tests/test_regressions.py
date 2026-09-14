@@ -65,9 +65,12 @@ class RegressionTests(unittest.TestCase):
             encoding="utf-8"
         )
         self.assertIn("from speaking import recorder as srecorder", app_source)
+        self.assertIn(
+            'if not hasattr(srecorder, "validate_wav_integrity"):', app_source
+        )
         self.assertIn("srecorder = importlib.reload(srecorder)", app_source)
         self.assertLess(
-            app_source.index("srecorder = importlib.reload(srecorder)"),
+            app_source.index('if not hasattr(srecorder, "validate_wav_integrity"):'),
             app_source.index("spage = importlib.reload(spage)"),
         )
 
@@ -86,6 +89,23 @@ class RegressionTests(unittest.TestCase):
             self.assertTrue(hasattr(recorder, "validate_wav_integrity"))
         finally:
             importlib.reload(recorder)
+
+    def test_normal_streamlit_reruns_do_not_redeclare_recorder_component(self):
+        """A normal rerun must keep the registered iframe component stable."""
+        from streamlit.testing.v1 import AppTest
+
+        component = recorder._component
+        app = AppTest.from_file(
+            str(Path(recorder.__file__).parents[1] / "app.py"), default_timeout=20
+        )
+        app.query_params["course_id"] = "S4A-T1-W01-D10"
+        app.run()
+        self.assertEqual(0, len(app.exception))
+        self.assertIs(component, recorder._component)
+
+        app.run()
+        self.assertEqual(0, len(app.exception))
+        self.assertIs(component, recorder._component)
 
     def test_recorder_uses_a_fresh_processed_stream_and_releases_it_before_review(self):
         html = (Path(recorder.__file__).parent / "frontend" / "index.html").read_text(

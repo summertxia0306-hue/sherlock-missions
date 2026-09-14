@@ -28,12 +28,14 @@ from speaking import page as spage
 from speaking import recorder as srecorder
 from storage import progress
 
-# Streamlit Cloud can keep imported submodules alive across a hot rerun. Reload
-# shared dependencies before their page modules, so a deploy cannot mix a new
-# page with an old recorder/progress module kept in the running process.
+# Streamlit Cloud can keep imported submodules alive across a hot deployment.
+# Only repair a genuinely stale recorder module: reloading it on every normal
+# Streamlit rerun re-registers the iframe component and can leave iPad Safari
+# showing permanent grey component placeholders instead of the microphone.
 progress = importlib.reload(progress)
 lpage = importlib.reload(lpage)
-srecorder = importlib.reload(srecorder)
+if not hasattr(srecorder, "validate_wav_integrity"):
+    srecorder = importlib.reload(srecorder)
 spage = importlib.reload(spage)
 smodels = importlib.reload(smodels)
 
