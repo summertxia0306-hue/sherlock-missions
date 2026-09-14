@@ -103,9 +103,14 @@ class RegressionTests(unittest.TestCase):
         self.assertEqual(0, len(app.exception))
         self.assertIs(component, recorder._component)
 
-        app.run()
-        self.assertEqual(0, len(app.exception))
-        self.assertIs(component, recorder._component)
+        # Move into the exact first-question route from the iPad screenshot and
+        # exercise repeated Streamlit reruns without creating formal results.
+        state_key = "S_formal_S4A-T1-W01-D10"
+        app.session_state[state_key]["idx"] = 0
+        for _ in range(5):
+            app.run()
+            self.assertEqual(0, len(app.exception))
+            self.assertIs(component, recorder._component)
 
     def test_recorder_uses_a_fresh_processed_stream_and_releases_it_before_review(self):
         html = (Path(recorder.__file__).parent / "frontend" / "index.html").read_text(
