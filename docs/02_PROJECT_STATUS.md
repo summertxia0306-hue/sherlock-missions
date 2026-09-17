@@ -428,3 +428,15 @@ iOS 真机验收：家长确认 700KB 档通过；返回 700000 字节，PUT 233
 最终云端复核：iOS 测试完成后 sherlock-english/test/direct-upload-probe/ 为 0 个对象；未生成学习结果、口语 take 或学习档案记录
 最终结论：Android 无 VPN 三档与 iOS 700KB 上限档均通过，跨 Android/iOS 的私有 COS 直传传输层可行性验收完成；是否替换正式分块方案仍须另立设计并保留回滚链路
 ```
+
+## 2026-09-17 Unit 3 D16–D20 工程兼容与 Streamlit 发布
+
+```text
+当前正式入口：Streamlit；CloudBase formal 仍关闭，未切换入口或部署 CloudBase
+课程：L/S4A-T1-W01-D16–D20 共 5 对；口语题量 10/10/12/12/12，旧课 8 题继续兼容
+工程：前后端题量、服务端清洗、题号 9–12 的评分、录音引用、门控和结果结构已扩展；阻塞 BLOCKED_BY_02_SPEAKING_COUNT 已解除
+内容和代码：内容 5ba77dd、兼容 68a90f3、音频主节点 79bc9b5 均已推送 main；154 项音频线上 SHA-256 与本地一致
+自动验收：Python 98/98、Web 110/110、sherlock-api 87/87、score-speaking 13/13；TypeScript 检查、生产构建、schema、旧课和话筒占位回归均通过
+线上页面：D16–D20 十个直链可打开且题量正确；5 门口语试音话筒组件加载。课程列表仍按最近完成/最近待学窗口展示，当前进度未到 D16 时不直接列出后续课程
+数据边界：未制造 test/formal 学习结果；未改历史成绩、录音、private 或家庭 24 点；未执行真实 iPad 麦克风录制
+```
