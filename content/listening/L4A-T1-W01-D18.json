@@ -1,0 +1,431 @@
+{
+  "course_id": "L4A-T1-W01-D18",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D18",
+  "pair_id": "4A-T1-W01-D18",
+  "publication_status": "formal",
+  "title": "四上·第18课｜Unit 3云南大象·连续对话（听力）",
+  "week": 4,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 17,
+  "scope": "4A Unit 3 p23-p27",
+  "difficulty": "L2",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D18/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p23-p27·小象识别",
+          "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+          "options": [
+            "baby elephant",
+            "elephant family",
+            "polar bear"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "baby elephant"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D18/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p23-p27·其他栖息地识别",
+          "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Yunnan and Sichuan",
+            "India and Africa",
+            "Guizhou and Yunnan"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "India and Africa"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D18/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p23-p27·进行时动作识别",
+          "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+          "options": [
+            "playing",
+            "swimming",
+            "pulling"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "swimming"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D18/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p23-p27·听音选词与相近动作辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p23-p27，不作未掌握结论",
+          "options": [
+            "pulling by the tail",
+            "playing in the river",
+            "giving bananas"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "pulling by the tail"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D18/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p27·象群动作",
+          "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+          "display": "The elephant family are playing in the river.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The elephant family are playing in the river."
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D18/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p27·小象动作地点辨别",
+          "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+          "display": "The baby elephant is playing in the trees.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The baby elephant is swimming in the river."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D18/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p27·母象动作",
+          "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+          "display": "The mother elephant is pulling her baby by the tail.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The mother elephant is pulling her baby by the tail."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D18/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p27·农民提供食物辨别",
+          "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+          "display": "The farmer is giving the elephants some apples.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The farmer is giving the elephants some bananas."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D18/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p23-p27·电视象群来源",
+          "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Yunnan.",
+            "India.",
+            "Africa."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where are the elephants on TV from?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D18/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p23-p27·问句选答语与动作对应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p23-p27，不作未掌握结论",
+          "options": [
+            "It is playing in the trees.",
+            "It is swimming in the river.",
+            "It is giving bananas."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What is the baby elephant doing?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D18/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p23-p27·栖息地原因",
+          "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+          "options": [
+            "There are trees and water nearby.",
+            "There is ice and snow.",
+            "There are no rivers."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Why do elephants like those places?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D18/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p23-p27·食物信息",
+          "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Fish.",
+            "Leaves.",
+            "Bananas."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "What is the farmer giving the elephants?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D18/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p27·多句来源提取",
+          "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+          "question_text": "Where are the elephants from?",
+          "options": [
+            "Yunnan.",
+            "India.",
+            "Africa."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Look, the elephant family are playing in the river."
+            ],
+            [
+              "m",
+              "They are from Yunnan."
+            ],
+            [
+              "n",
+              "Question: Where are the elephants from?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D18/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p27·地点双信息",
+          "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+          "question_text": "Which other places are named?",
+          "options": [
+            "Sichuan and Guizhou.",
+            "India and Africa.",
+            "Yunnan and Guizhou."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "Can we see elephants in other places?"
+            ],
+            [
+              "f",
+              "Yes, in India and Africa too."
+            ],
+            [
+              "n",
+              "Question: Which other places are named?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D18/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p27·动作人物对应",
+          "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+          "question_text": "Who is pulling the baby back?",
+          "options": [
+            "The farmer.",
+            "The mother elephant.",
+            "Shenshen."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "The baby elephant is swimming."
+            ],
+            [
+              "m",
+              "Its mother is pulling it back by the tail."
+            ],
+            [
+              "n",
+              "Question: Who is pulling the baby back?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D18/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p27·行为与评价整合",
+          "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+          "question_text": "Why are the farmers kind?",
+          "options": [
+            "They give bananas.",
+            "They pull the baby.",
+            "They swim in the river."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "The farmer is giving the elephants bananas."
+            ],
+            [
+              "f",
+              "Yes, farmers are very kind to them."
+            ],
+            [
+              "n",
+              "Question: Why are the farmers kind?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D18/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p27·人物场景",
+          "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+          "statement": "Shenshen and her mum are watching TV.",
+          "answer": "true",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p27·象群来源",
+          "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+          "statement": "The elephants are from India.",
+          "answer": "false",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p27·母象动作",
+          "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+          "statement": "The mother elephant pulls her baby by the tail.",
+          "answer": "true",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p27·食物辨别",
+          "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+          "statement": "The farmer is giving fish to the elephants.",
+          "answer": "false",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D18/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Shenshen and her mum are watching TV. An elephant family from Yunnan are playing in the river. A baby elephant is swimming. Its mother is pulling it back by the tail. A farmer is giving the elephants some bananas. Elephants like places with trees and water nearby."
+        ]
+      ]
+    }
+  ]
+}

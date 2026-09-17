@@ -1,0 +1,528 @@
+{
+  "course_id": "L4A-T1-W01-D19",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D19",
+  "pair_id": "4A-T1-W01-D19",
+  "publication_status": "formal",
+  "title": "四上·第19课｜Unit 3北极熊·阅读整合（听力）",
+  "week": 4,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 21,
+  "scope": "4A Unit 3 p23-p29",
+  "difficulty": "L2",
+  "scoring": {
+    "per_question": 4,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D19/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p23-p29·北极熊栖息地",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "options": [
+            "the North Pole",
+            "Yunnan",
+            "Guizhou"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "the North Pole"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p23-p29·保暖外形",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "options": [
+            "white snow",
+            "thick fur",
+            "cold water"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "thick fur"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p23-p29·北极熊食物",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "options": [
+            "fruit and leaves",
+            "bananas and leaves",
+            "seals and fish"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "seals and fish"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p23-p29·环境词组",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "options": [
+            "ice and snow",
+            "trees and water",
+            "fruit and leaves"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "ice and snow"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q04.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p23-p29·听音选词与动作环境辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p23-p29，不作未掌握结论",
+          "options": [
+            "sleeping in snow",
+            "swimming in cold water",
+            "playing in trees"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "swimming in cold water"
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p29·栖息地",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "display": "Polar bears live near the North Pole.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Polar bears live near the North Pole."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p29·外形细节",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "display": "Polar bears have thin fur to keep warm.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Polar bears have thick fur to keep warm."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p29·食物信息",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "display": "Polar bears catch seals and fish for food.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Polar bears catch seals and fish for food."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q08.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p29·睡眠环境辨别",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "display": "Polar bears sleep in a bed of green leaves.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Polar bears sleep in a bed of white snow."
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q09.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p29·环境因果",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "display": "The ice and snow are melting as the weather gets warmer.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The ice and snow are melting as the weather gets warmer."
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p23-p29·栖息地问答",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Near the North Pole.",
+            "In Yunnan.",
+            "In Guizhou."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where do polar bears live?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p23-p29·问句选答语与食物辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p23-p29，不作未掌握结论",
+          "options": [
+            "Fruit and leaves.",
+            "Seals and fish.",
+            "Bananas."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What do polar bears eat?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q12.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p23-p29·外形原因",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "options": [
+            "To keep warm.",
+            "To climb trees.",
+            "To catch bananas."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Why do polar bears have thick fur?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q13.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p23-p29·睡眠地点",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "options": [
+            "In the river.",
+            "In trees.",
+            "In white snow."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "Where do polar bears sleep?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q14.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p23-p29·环境变化",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "options": [
+            "They are growing.",
+            "They are melting.",
+            "They are swimming."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What is happening to the ice and snow?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p29·栖息地与外形因果",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "question_text": "Why do they have thick fur?",
+          "options": [
+            "To keep warm.",
+            "To swim faster.",
+            "To climb trees."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Polar bears live near the North Pole."
+            ],
+            [
+              "m",
+              "It is very cold there, so they have thick fur."
+            ],
+            [
+              "n",
+              "Question: Why do they have thick fur?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q16.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p29·食物提取",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "question_text": "Which food is named?",
+          "options": [
+            "Bananas.",
+            "Seals and fish.",
+            "Fruit and leaves."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "What do polar bears eat?"
+            ],
+            [
+              "f",
+              "They catch seals and fish for food."
+            ],
+            [
+              "n",
+              "Question: Which food is named?"
+            ]
+          ],
+          "id": 17,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q17.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p29·外形原因",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "question_text": "Why do they look white?",
+          "options": [
+            "Because of ice and snow.",
+            "Because they eat fish.",
+            "Because they swim."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "There is lots of ice and snow."
+            ],
+            [
+              "m",
+              "That is why polar bears look white."
+            ],
+            [
+              "n",
+              "Question: Why do they look white?"
+            ]
+          ],
+          "id": 18,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q18.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p29·两种环境整合",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "question_text": "Which two places are named?",
+          "options": [
+            "Snow and cold water.",
+            "Trees and river.",
+            "Guizhou and Yunnan."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Where do they sleep?"
+            ],
+            [
+              "f",
+              "In a bed of white snow."
+            ],
+            [
+              "m",
+              "And they swim in cold water too."
+            ],
+            [
+              "n",
+              "Question: Which two places are named?"
+            ]
+          ],
+          "id": 19,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q19.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p29·跨句因果整合",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "question_text": "What makes their lives difficult?",
+          "options": [
+            "Melting ice and snow.",
+            "Too many bananas.",
+            "A long tail."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "The weather is getting warmer."
+            ],
+            [
+              "m",
+              "The ice and snow are melting."
+            ],
+            [
+              "f",
+              "Their lives can be very difficult."
+            ],
+            [
+              "n",
+              "Question: What makes their lives difficult?"
+            ]
+          ],
+          "id": 20,
+          "audio": "static/audio/listening/L4A-T1-W01-D19/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p29·栖息地",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "statement": "Polar bears live near the North Pole.",
+          "answer": "true",
+          "id": 21
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p29·外形辨别",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "statement": "Their fur is thin.",
+          "answer": "false",
+          "id": 22
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p29·食物信息",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "statement": "They eat seals and fish.",
+          "answer": "true",
+          "id": 23
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p29·睡眠地点",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "statement": "They sleep in trees.",
+          "answer": "false",
+          "id": 24
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p29·环境因果",
+          "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+          "statement": "Melting ice and snow can make their lives difficult.",
+          "answer": "true",
+          "id": 25
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D19/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Polar bears live near the North Pole, where it is very cold. Their thick fur helps them keep warm. They look white in the ice and snow. They swim in cold water and catch seals and fish for food. They sleep in white snow. When the weather gets warmer, the ice and snow melt, and life can be difficult for them."
+        ]
+      ]
+    }
+  ]
+}

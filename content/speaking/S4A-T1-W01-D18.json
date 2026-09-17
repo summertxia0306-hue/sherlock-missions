@@ -1,0 +1,124 @@
+{
+  "course_id": "S4A-T1-W01-D18",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D18",
+  "pair_id": "4A-T1-W01-D18",
+  "publication_status": "formal",
+  "title": "四上·第18课｜Unit 3云南大象·连续对话（口语）",
+  "week": 4,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 16,
+  "scope": "4A Unit 3 p23-p27",
+  "difficulty": "L2",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D18/q01.mp3",
+      "tag": "A主线·p23-p27·象群进行时",
+      "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+      "text": "The elephant family are playing in the river."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D18/q02.mp3",
+      "tag": "A主线·p23-p27·象群来源",
+      "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+      "text": "They are from Yunnan."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D18/q03.mp3",
+      "tag": "A主线·p23-p27·栖息地",
+      "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+      "text": "Elephants like places with trees and water nearby."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D18/q04.mp3",
+      "tag": "A主线·p23-p27·小象进行时",
+      "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+      "text": "The baby elephant is swimming in the river."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D18/q05.mp3",
+      "tag": "A主线·p23-p27·母象进行时",
+      "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+      "text": "The mother elephant is pulling her baby by the tail."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D18/q06.mp3",
+      "tag": "A主线·p23-p27·农民进行时",
+      "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+      "text": "The farmer is giving the elephants some bananas."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D18/q07.mp3",
+      "tag": "C微调·p23-p27·动作与人物自主对应",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p23-p27，不作未掌握结论",
+      "question": "What is the baby elephant doing?",
+      "expected": "It is swimming in the river.",
+      "hint": "用完整句回答：它正在河里游泳。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D18/q08.mp3",
+      "tag": "A主线·p23-p27·多地点信息输出",
+      "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+      "question": "Where can we see elephants besides Yunnan?",
+      "expected": "We can see them in India and Africa too.",
+      "hint": "用完整句回答：我们也能在印度和非洲看到它们。"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D18/q09.mp3",
+      "tag": "A主线·p23-p27·复数进行时",
+      "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+      "question": "What are the elephant family doing?",
+      "expected": "They are playing in the river.",
+      "hint": "用完整句回答：象群正在河里玩。"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D18/q10.mp3",
+      "tag": "A主线·p23-p27·母象动作对应",
+      "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+      "question": "What is the mother elephant doing?",
+      "expected": "She is pulling her baby back by the tail.",
+      "hint": "用完整句回答：母象正拉着小象尾巴把它拉回来。"
+    },
+    {
+      "id": 11,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D18/q11.mp3",
+      "tag": "A主线·p23-p27·农民动作对应",
+      "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+      "question": "What is the farmer doing?",
+      "expected": "He is giving the elephants some bananas.",
+      "hint": "用完整句回答：农民正给大象香蕉。"
+    },
+    {
+      "id": 12,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D18/q12.mp3",
+      "tag": "A主线·p23-p27·栖息地完整表达",
+      "parent_note": "确认版教材p23-p27主线或不增加新知识的同语境受控重组",
+      "question": "Where do elephants like living?",
+      "expected": "They like living in places with trees and water nearby.",
+      "hint": "用完整句回答：大象喜欢住在附近有树和水的地方。"
+    }
+  ]
+}

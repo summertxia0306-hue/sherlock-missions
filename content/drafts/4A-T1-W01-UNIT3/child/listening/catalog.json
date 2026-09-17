@@ -1,0 +1,57 @@
+[
+  {
+    "course_id": "L4A-T1-W01-D16",
+    "course_version": "680eb9156ef94cdf",
+    "title": "四上·第16课｜Unit 3动物与家乡·基础识别（听力）",
+    "course_type": "training",
+    "week": 4,
+    "day": 1,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D16",
+    "study_pack": "4A-T1-W01-D16"
+  },
+  {
+    "course_id": "L4A-T1-W01-D17",
+    "course_version": "52daef6444b45206",
+    "title": "四上·第17课｜Unit 3中国动物·歌谣信息（听力）",
+    "course_type": "training",
+    "week": 4,
+    "day": 2,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D17",
+    "study_pack": "4A-T1-W01-D17"
+  },
+  {
+    "course_id": "L4A-T1-W01-D18",
+    "course_version": "2a100e971f66d674",
+    "title": "四上·第18课｜Unit 3云南大象·连续对话（听力）",
+    "course_type": "training",
+    "week": 4,
+    "day": 3,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D18",
+    "study_pack": "4A-T1-W01-D18"
+  },
+  {
+    "course_id": "L4A-T1-W01-D19",
+    "course_version": "e94d568fca892164",
+    "title": "四上·第19课｜Unit 3北极熊·阅读整合（听力）",
+    "course_type": "training",
+    "week": 4,
+    "day": 4,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D19",
+    "study_pack": "4A-T1-W01-D19"
+  },
+  {
+    "course_id": "L4A-T1-W01-D20",
+    "course_version": "61582c1c20b812ca",
+    "title": "四上·第20课｜Unit 3动物卡·Unit 3综合（听力）",
+    "course_type": "weekly_test",
+    "week": 4,
+    "day": 5,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D20",
+    "study_pack": "4A-T1-W01-D20"
+  }
+]

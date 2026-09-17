@@ -1,0 +1,2066 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "generation_status": "READY_TO_GENERATE",
+  "publication_status": "formal",
+  "expected_listening_outputs": 98,
+  "expected_speaking_outputs": 56,
+  "expected_total_outputs": 154,
+  "items": [
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D16",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D16/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D16",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D16/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "panda"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D16",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D16/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "elephant"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D16",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D16/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "family"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D16",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D16/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "hometown"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D16",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D16/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "This is a panda."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D16",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D16/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "This is an elephant."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D16",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D16/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "An animal card tells us where animals live."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D16",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D16/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "A baby elephant is in the elephant family."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D16",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D16/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What animal is this?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D16",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D16/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do the animals live?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D16",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D16/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What can you put on an animal card?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D16",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D16/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Is this a baby elephant?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D16",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D16/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "Look at this panda."
+        ],
+        [
+          "m",
+          "Let us make an animal card for it."
+        ],
+        [
+          "n",
+          "Question: Which animal is on the card?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D16",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D16/q14.mp3",
+      "clips": [
+        [
+          "m",
+          "This is an elephant."
+        ],
+        [
+          "f",
+          "This is its baby."
+        ],
+        [
+          "n",
+          "Question: Who is with the elephant?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D16",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D16/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "Where do they live?"
+        ],
+        [
+          "m",
+          "We can write that on the card."
+        ],
+        [
+          "n",
+          "Question: Which part of the card do they need?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D16",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D16/q16.mp3",
+      "clips": [
+        [
+          "m",
+          "I can see a monkey."
+        ],
+        [
+          "f",
+          "I can see a panda too."
+        ],
+        [
+          "n",
+          "Question: How many kinds of animals do they name?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D16",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D16/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "We are making an animal card. This card is about a panda. We write the animal's name and its hometown. We can also write what it eats, what it looks like, and what it can do."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D17",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D17/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D17",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D17/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "Sichuan"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D17",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D17/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "Guizhou"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D17",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D17/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "trunk"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D17",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D17/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "light grey"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D17",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D17/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "Pandas are black and white."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D17",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D17/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Monkeys are from Guizhou."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D17",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D17/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Elephants shower with their trunks."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D17",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D17/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Monkeys jump in trees."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D17",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D17/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Where are pandas from?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D17",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D17/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Where are monkeys from?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D17",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D17/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What colour are elephants in the chant?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D17",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D17/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What do monkeys do?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D17",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D17/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "The pandas roll like a ball."
+        ],
+        [
+          "m",
+          "Sichuan is their hometown."
+        ],
+        [
+          "n",
+          "Question: Where are the pandas from?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D17",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D17/q14.mp3",
+      "clips": [
+        [
+          "m",
+          "These animals are yellow and brown."
+        ],
+        [
+          "f",
+          "They jump in trees."
+        ],
+        [
+          "n",
+          "Question: Which animals are they?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D17",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D17/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "The elephants are light grey."
+        ],
+        [
+          "m",
+          "They are from Yunnan."
+        ],
+        [
+          "n",
+          "Question: Which place is their hometown?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D17",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D17/q16.mp3",
+      "clips": [
+        [
+          "m",
+          "Pandas are from Sichuan."
+        ],
+        [
+          "f",
+          "Monkeys are from Guizhou."
+        ],
+        [
+          "n",
+          "Question: Which animals are from Guizhou?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D17",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D17/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "In our chant, pandas are black and white and come from Sichuan. Monkeys are yellow and brown and come from Guizhou. Elephants are light grey and come from Yunnan. The monkeys jump in trees, and the elephants shower with their trunks."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D18",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D18/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D18",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D18/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "baby elephant"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D18",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D18/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "India and Africa"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D18",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D18/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "swimming"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D18",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D18/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "pulling by the tail"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D18",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D18/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "The elephant family are playing in the river."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D18",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D18/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "The baby elephant is swimming in the river."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D18",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D18/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "The mother elephant is pulling her baby by the tail."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D18",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D18/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "The farmer is giving the elephants some bananas."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D18",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D18/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Where are the elephants on TV from?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D18",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D18/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What is the baby elephant doing?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D18",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D18/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Why do elephants like those places?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D18",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D18/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What is the farmer giving the elephants?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D18",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D18/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "Look, the elephant family are playing in the river."
+        ],
+        [
+          "m",
+          "They are from Yunnan."
+        ],
+        [
+          "n",
+          "Question: Where are the elephants from?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D18",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D18/q14.mp3",
+      "clips": [
+        [
+          "m",
+          "Can we see elephants in other places?"
+        ],
+        [
+          "f",
+          "Yes, in India and Africa too."
+        ],
+        [
+          "n",
+          "Question: Which other places are named?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D18",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D18/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "The baby elephant is swimming."
+        ],
+        [
+          "m",
+          "Its mother is pulling it back by the tail."
+        ],
+        [
+          "n",
+          "Question: Who is pulling the baby back?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D18",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D18/q16.mp3",
+      "clips": [
+        [
+          "m",
+          "The farmer is giving the elephants bananas."
+        ],
+        [
+          "f",
+          "Yes, farmers are very kind to them."
+        ],
+        [
+          "n",
+          "Question: Why are the farmers kind?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D18",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D18/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "Shenshen and her mum are watching TV. An elephant family from Yunnan are playing in the river. A baby elephant is swimming. Its mother is pulling it back by the tail. A farmer is giving the elephants some bananas. Elephants like places with trees and water nearby."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D19/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "the North Pole"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "thick fur"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "seals and fish"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "ice and snow"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "swimming in cold water"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Polar bears live near the North Pole."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Polar bears have thick fur to keep warm."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Polar bears catch seals and fish for food."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Polar bears sleep in a bed of white snow."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "The ice and snow are melting as the weather gets warmer."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do polar bears live?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What do polar bears eat?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q13.mp3",
+      "clips": [
+        [
+          "n",
+          "Why do polar bears have thick fur?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q14.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do polar bears sleep?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q15.mp3",
+      "clips": [
+        [
+          "n",
+          "What is happening to the ice and snow?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "Polar bears live near the North Pole."
+        ],
+        [
+          "m",
+          "It is very cold there, so they have thick fur."
+        ],
+        [
+          "n",
+          "Question: Why do they have thick fur?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_17",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q17.mp3",
+      "clips": [
+        [
+          "m",
+          "What do polar bears eat?"
+        ],
+        [
+          "f",
+          "They catch seals and fish for food."
+        ],
+        [
+          "n",
+          "Question: Which food is named?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_18",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q18.mp3",
+      "clips": [
+        [
+          "f",
+          "There is lots of ice and snow."
+        ],
+        [
+          "m",
+          "That is why polar bears look white."
+        ],
+        [
+          "n",
+          "Question: Why do they look white?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_19",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q19.mp3",
+      "clips": [
+        [
+          "m",
+          "Where do they sleep?"
+        ],
+        [
+          "f",
+          "In a bed of white snow."
+        ],
+        [
+          "m",
+          "And they swim in cold water too."
+        ],
+        [
+          "n",
+          "Question: Which two places are named?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "question_20",
+      "path": "static/audio/listening/L4A-T1-W01-D19/q20.mp3",
+      "clips": [
+        [
+          "f",
+          "The weather is getting warmer."
+        ],
+        [
+          "m",
+          "The ice and snow are melting."
+        ],
+        [
+          "f",
+          "Their lives can be very difficult."
+        ],
+        [
+          "n",
+          "Question: What makes their lives difficult?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D19",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D19/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "Polar bears live near the North Pole, where it is very cold. Their thick fur helps them keep warm. They look white in the ice and snow. They swim in cold water and catch seals and fish for food. They sleep in white snow. When the weather gets warmer, the ice and snow melt, and life can be difficult for them."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D20/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "fruit and leaves"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "swing on branches"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "a long tail and long arms"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "the North Pole"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "giving the elephants bananas"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "The monkeys on the card are from Guizhou."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "The monkeys eat fruit and leaves."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "The monkeys have long tails and long arms."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "The polar bears live near the North Pole."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "The baby elephant is swimming in the river."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What can the monkeys on the card do?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What do polar bears eat?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q13.mp3",
+      "clips": [
+        [
+          "n",
+          "Where are the elephants in the chant from?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q14.mp3",
+      "clips": [
+        [
+          "n",
+          "What is the baby elephant doing?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q15.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do elephants like living?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "This card is about monkeys from Guizhou."
+        ],
+        [
+          "m",
+          "They eat fruit and leaves."
+        ],
+        [
+          "f",
+          "They can swing on branches."
+        ],
+        [
+          "n",
+          "Question: Which animal is on the card?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_17",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q17.mp3",
+      "clips": [
+        [
+          "m",
+          "Pandas come from Sichuan."
+        ],
+        [
+          "f",
+          "Monkeys come from Guizhou."
+        ],
+        [
+          "m",
+          "Elephants come from Yunnan."
+        ],
+        [
+          "n",
+          "Question: Which animal is from Yunnan?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_18",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q18.mp3",
+      "clips": [
+        [
+          "f",
+          "The baby elephant is swimming."
+        ],
+        [
+          "m",
+          "Its mother is pulling it back by the tail."
+        ],
+        [
+          "f",
+          "A farmer is giving them bananas."
+        ],
+        [
+          "n",
+          "Question: Who gives bananas?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_19",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q19.mp3",
+      "clips": [
+        [
+          "m",
+          "Polar bears have thick fur."
+        ],
+        [
+          "f",
+          "They live near the North Pole and catch fish."
+        ],
+        [
+          "m",
+          "They sleep in white snow."
+        ],
+        [
+          "n",
+          "Question: Where do they sleep?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "question_20",
+      "path": "static/audio/listening/L4A-T1-W01-D20/q20.mp3",
+      "clips": [
+        [
+          "f",
+          "Which card has long arms and a long tail?"
+        ],
+        [
+          "m",
+          "The monkey card."
+        ],
+        [
+          "f",
+          "And which card has thick fur?"
+        ],
+        [
+          "m",
+          "The polar bear card."
+        ],
+        [
+          "n",
+          "Question: Which card has thick fur?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D20",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D20/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "Here are three animal cards. The monkey card says monkeys live in Guizhou, eat fruit and leaves, and swing on branches. The elephant card says an elephant family from Yunnan are playing in a river. A farmer is giving them bananas. The polar bear card says polar bears live near the North Pole, have thick fur, and catch seals and fish. Ice and snow are melting there."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D16",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D16/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "This is a panda, and this is a monkey."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D16",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D16/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "Here is an elephant family with a baby elephant."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D16",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D16/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "This animal card is about a polar bear."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D16",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D16/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "On an animal card, we write where they live."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D16",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D16/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "We also write what they eat and what they can do."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D16",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D16/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Let us make an animal card together."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D16",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D16/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "What animal is this?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D16",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D16/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "What can we make?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D16",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D16/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What can we write on an animal card?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D16",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D16/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Which animal is in the elephant family?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D17",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D17/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "Pandas are black and white, and they roll like a ball."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D17",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D17/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "They are from Sichuan, and Sichuan is their hometown."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D17",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D17/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "Monkeys are yellow and brown, and they jump in trees."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D17",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D17/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "They are from Guizhou, and Guizhou is their hometown."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D17",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D17/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "Elephants are light grey and shower with their trunks."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D17",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D17/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "They are from Yunnan, and Yunnan is their hometown."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D17",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D17/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Where are elephants from?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D17",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D17/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "What colour are monkeys?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D17",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D17/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Where are pandas from?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D17",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D17/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Which animals jump in trees?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D18",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D18/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "The elephant family are playing in the river."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D18",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D18/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "They are from Yunnan."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D18",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D18/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "Elephants like places with trees and water nearby."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D18",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D18/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "The baby elephant is swimming in the river."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D18",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D18/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "The mother elephant is pulling her baby by the tail."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D18",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D18/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "The farmer is giving the elephants some bananas."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D18",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D18/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "What is the baby elephant doing?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D18",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D18/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Where can we see elephants besides Yunnan?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D18",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D18/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What are the elephant family doing?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D18",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D18/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What is the mother elephant doing?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D18",
+      "kind": "question_11_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D18/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What is the farmer doing?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D18",
+      "kind": "question_12_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D18/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do elephants like living?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D19",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D19/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "Polar bears live near the North Pole."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D19",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D19/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "It is very cold there."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D19",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D19/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "They have thick fur to keep warm."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D19",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D19/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "They catch seals and fish for food."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D19",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D19/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "Polar bears sleep in a bed of white snow."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D19",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D19/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "The ice and snow are melting as the weather gets warmer."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D19",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D19/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "What do polar bears eat?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D19",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D19/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Why do polar bears have thick fur?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D19",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D19/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do polar bears live?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D19",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D19/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Why do polar bears look white?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D19",
+      "kind": "question_11_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D19/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do polar bears sleep?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D19",
+      "kind": "question_12_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D19/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What is happening to the ice and snow?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D20",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D20/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "These monkeys are from Guizhou."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D20",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D20/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "They eat fruit and leaves."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D20",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D20/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "They have long tails and long arms."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D20",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D20/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "They can climb trees and swing on branches."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D20",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D20/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "The elephant family are playing in the river."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D20",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D20/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Polar bears have thick fur to keep warm."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D20",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D20/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do the monkeys on the card live?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D20",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D20/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "What can the monkeys on the card do?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D20",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D20/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What do the monkeys on the card eat?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D20",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D20/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What do the monkeys look like?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D20",
+      "kind": "question_11_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D20/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Where are the elephants from and what are they doing?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D20",
+      "kind": "question_12_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D20/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do polar bears live and what do they eat?"
+        ]
+      ]
+    }
+  ]
+}

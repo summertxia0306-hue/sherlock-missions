@@ -1,0 +1,85 @@
+{
+  "course_id": "S4A-T1-W01-D20",
+  "pair_id": "4A-T1-W01-D20",
+  "study_pack": "4A-T1-W01-D20",
+  "course_version": "97d3f16d5ecbdb94",
+  "title": "四上·第20课｜Unit 3动物卡·Unit 3综合（口语）",
+  "week": 4,
+  "day": 5,
+  "course_type": "weekly_review",
+  "est_minutes": 20,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "These monkeys are from Guizhou.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D20/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "They eat fruit and leaves.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D20/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "They have long tails and long arms.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D20/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "They can climb trees and swing on branches.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D20/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "The elephant family are playing in the river.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D20/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Polar bears have thick fur to keep warm.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D20/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：卡片上的猴子住在贵州。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D20/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：它们能爬树并在树枝上摆荡。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D20/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用完整句回答：卡片上的猴子吃水果和叶子。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D20/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用完整句回答：它们有长尾巴和长手臂。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D20/q10.mp3"
+    },
+    {
+      "id": 11,
+      "type": "qa",
+      "hint": "用完整句同时说明：大象来自云南，正在河里玩。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D20/q11.mp3"
+    },
+    {
+      "id": 12,
+      "type": "qa",
+      "hint": "用完整句同时说明：北极熊住在北极附近，吃海豹和鱼。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D20/q12.mp3"
+    }
+  ]
+}

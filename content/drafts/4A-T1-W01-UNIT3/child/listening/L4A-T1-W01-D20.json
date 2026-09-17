@@ -1,0 +1,266 @@
+{
+  "course_id": "L4A-T1-W01-D20",
+  "pair_id": "4A-T1-W01-D20",
+  "study_pack": "4A-T1-W01-D20",
+  "course_version": "61582c1c20b812ca",
+  "title": "四上·第20课｜Unit 3动物卡·Unit 3综合（听力）",
+  "week": 4,
+  "day": 5,
+  "course_type": "weekly_test",
+  "est_minutes": 25,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D20/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "seals and fish",
+            "fruit and leaves",
+            "bananas and fish"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "swim in water",
+            "swing on branches",
+            "roll like a ball"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "thick fur",
+            "a long tail and long arms",
+            "a light grey trunk"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "Guizhou",
+            "the North Pole",
+            "Yunnan"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q04.mp3"
+        },
+        {
+          "id": 5,
+          "type": "word_choice",
+          "options": [
+            "catching seals and fish",
+            "giving the elephants bananas",
+            "swinging on branches"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 1,
+      "questions": [
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "The monkeys on the card are from Guizhou.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "The monkeys eat seals and fish.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "The monkeys have long tails and long arms.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q08.mp3"
+        },
+        {
+          "id": 9,
+          "type": "sentence_judge",
+          "display": "The polar bears live in Yunnan.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "sentence_judge",
+          "display": "The baby elephant is swimming in the river.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "They can swing on branches.",
+            "They can catch seals.",
+            "They can shower with trunks."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "Fruit and leaves.",
+            "Seals and fish.",
+            "Bananas."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q12.mp3"
+        },
+        {
+          "id": 13,
+          "type": "question_response",
+          "options": [
+            "Sichuan.",
+            "Guizhou.",
+            "Yunnan."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "question_response",
+          "options": [
+            "It is swimming.",
+            "It is climbing.",
+            "It is catching fish."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "question_response",
+          "options": [
+            "In places with trees and water nearby.",
+            "In white snow.",
+            "On branches."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "Monkeys.",
+            "Polar bears.",
+            "Elephants."
+          ],
+          "question_text": "Which animal is on the card?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q16.mp3"
+        },
+        {
+          "id": 17,
+          "type": "dialogue_choice",
+          "options": [
+            "Pandas.",
+            "Monkeys.",
+            "Elephants."
+          ],
+          "question_text": "Which animal is from Yunnan?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q17.mp3"
+        },
+        {
+          "id": 18,
+          "type": "dialogue_choice",
+          "options": [
+            "The baby.",
+            "The mother.",
+            "A farmer."
+          ],
+          "question_text": "Who gives bananas?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q18.mp3"
+        },
+        {
+          "id": 19,
+          "type": "dialogue_choice",
+          "options": [
+            "In trees.",
+            "In white snow.",
+            "In a river."
+          ],
+          "question_text": "Where do they sleep?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q19.mp3"
+        },
+        {
+          "id": 20,
+          "type": "dialogue_choice",
+          "options": [
+            "The monkey card.",
+            "The elephant card.",
+            "The polar bear card."
+          ],
+          "question_text": "Which card has thick fur?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D20/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D20/p01.mp3",
+      "questions": [
+        {
+          "id": 21,
+          "type": "passage_judge",
+          "statement": "The monkey card says monkeys live in Guizhou."
+        },
+        {
+          "id": 22,
+          "type": "passage_judge",
+          "statement": "The monkeys eat seals and fish."
+        },
+        {
+          "id": 23,
+          "type": "passage_judge",
+          "statement": "The elephant family are playing in a river."
+        },
+        {
+          "id": 24,
+          "type": "passage_judge",
+          "statement": "The polar bears have long tails."
+        },
+        {
+          "id": 25,
+          "type": "passage_judge",
+          "statement": "Ice and snow are melting near the polar bears."
+        }
+      ]
+    }
+  ]
+}

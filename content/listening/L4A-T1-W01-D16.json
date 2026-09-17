@@ -1,0 +1,431 @@
+{
+  "course_id": "L4A-T1-W01-D16",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D16",
+  "pair_id": "4A-T1-W01-D16",
+  "publication_status": "formal",
+  "title": "四上·第16课｜Unit 3动物与家乡·基础识别（听力）",
+  "week": 4,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 12,
+  "scope": "4A Unit 3 p23-p24",
+  "difficulty": "L1",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D16/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p23-p24·动物直接识别",
+          "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+          "options": [
+            "panda",
+            "monkey",
+            "elephant"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "panda"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D16/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p23-p24·动物直接识别",
+          "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+          "options": [
+            "monkey",
+            "elephant",
+            "polar bear"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "elephant"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D16/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p23-p24·动物卡词汇",
+          "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+          "options": [
+            "hometown",
+            "family",
+            "animal"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "family"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D16/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p23-p24·听音选词相近词辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p23-p24，不作未掌握结论",
+          "options": [
+            "hometown",
+            "home",
+            "family"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "hometown"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D16/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p24·动物身份",
+          "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+          "display": "This is a panda.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "This is a panda."
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D16/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p24·相近动物辨别",
+          "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+          "display": "This is a polar bear.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "This is an elephant."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D16/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p24·动物卡字段",
+          "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+          "display": "An animal card tells us where animals live.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "An animal card tells us where animals live."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D16/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p24·动物家庭",
+          "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+          "display": "A baby elephant is in the elephant family.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "A baby elephant is in the elephant family."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D16/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p23-p24·动物身份问答",
+          "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+          "options": [
+            "It is a panda.",
+            "It is in China.",
+            "It is black and white."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What animal is this?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D16/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p23-p24·问句选答语与字段辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p23-p24，不作未掌握结论",
+          "options": [
+            "They eat fruit.",
+            "They live in China.",
+            "They are elephants."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Where do the animals live?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D16/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p23-p24·动物卡字段问答",
+          "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Where they live.",
+            "A school bag.",
+            "A classmate's name."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can you put on an animal card?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D16/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p23-p24·动物身份回应",
+          "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Yes, it is.",
+            "Yes, they are.",
+            "It is a family."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Is this a baby elephant?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D16/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p24·双句动物对应",
+          "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+          "question_text": "Which animal is on the card?",
+          "options": [
+            "A panda.",
+            "A monkey.",
+            "An elephant."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Look at this panda."
+            ],
+            [
+              "m",
+              "Let us make an animal card for it."
+            ],
+            [
+              "n",
+              "Question: Which animal is on the card?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D16/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p24·动物家庭对应",
+          "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+          "question_text": "Who is with the elephant?",
+          "options": [
+            "A panda.",
+            "A baby elephant.",
+            "A polar bear."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "This is an elephant."
+            ],
+            [
+              "f",
+              "This is its baby."
+            ],
+            [
+              "n",
+              "Question: Who is with the elephant?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D16/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p24·动物卡字段提取",
+          "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+          "question_text": "Which part of the card do they need?",
+          "options": [
+            "What they eat.",
+            "Where they live.",
+            "What they can do."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Where do they live?"
+            ],
+            [
+              "m",
+              "We can write that on the card."
+            ],
+            [
+              "n",
+              "Question: Which part of the card do they need?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D16/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p24·两种动物信息",
+          "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+          "question_text": "How many kinds of animals do they name?",
+          "options": [
+            "One.",
+            "Two.",
+            "Three."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "I can see a monkey."
+            ],
+            [
+              "f",
+              "I can see a panda too."
+            ],
+            [
+              "n",
+              "Question: How many kinds of animals do they name?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D16/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p24·动物身份判断",
+          "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+          "statement": "The card is about a monkey.",
+          "answer": "false",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p24·动物卡字段判断",
+          "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+          "statement": "The card has the animal's hometown.",
+          "answer": "true",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p24·动物卡字段判断",
+          "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+          "statement": "The card can tell us what the animal eats.",
+          "answer": "true",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p24·主题辨别",
+          "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+          "statement": "The card is about a classmate.",
+          "answer": "false",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D16/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "We are making an animal card. This card is about a panda. We write the animal's name and its hometown. We can also write what it eats, what it looks like, and what it can do."
+        ]
+      ]
+    }
+  ]
+}

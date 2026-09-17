@@ -1,0 +1,104 @@
+{
+  "course_id": "S4A-T1-W01-D16",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D16",
+  "pair_id": "4A-T1-W01-D16",
+  "publication_status": "formal",
+  "title": "四上·第16课｜Unit 3动物与家乡·基础识别（口语）",
+  "week": 4,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 12,
+  "scope": "4A Unit 3 p23-p24",
+  "difficulty": "L1",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D16/q01.mp3",
+      "tag": "A主线·p23-p24·双动物身份",
+      "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+      "text": "This is a panda, and this is a monkey."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D16/q02.mp3",
+      "tag": "A主线·p23-p24·动物家庭",
+      "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+      "text": "Here is an elephant family with a baby elephant."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D16/q03.mp3",
+      "tag": "A主线·p23-p24·卡片主题",
+      "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+      "text": "This animal card is about a polar bear."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D16/q04.mp3",
+      "tag": "A主线·p23-p24·卡片栖息地字段",
+      "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+      "text": "On an animal card, we write where they live."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D16/q05.mp3",
+      "tag": "A主线·p23-p24·卡片多字段",
+      "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+      "text": "We also write what they eat and what they can do."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D16/q06.mp3",
+      "tag": "A主线·p23-p24·项目任务",
+      "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+      "text": "Let us make an animal card together."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D16/q07.mp3",
+      "tag": "C微调·p23-p24·动物身份自主问答",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p23-p24，不作未掌握结论",
+      "question": "What animal is this?",
+      "expected": "It is a panda.",
+      "hint": "用完整句回答：它是大熊猫。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D16/q08.mp3",
+      "tag": "A主线·p23-p24·项目任务输出",
+      "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+      "question": "What can we make?",
+      "expected": "We can make an animal card.",
+      "hint": "用完整句回答：我们能制作动物卡。"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D16/q09.mp3",
+      "tag": "A主线·p23-p24·动物卡双字段组织",
+      "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+      "question": "What can we write on an animal card?",
+      "expected": "We can write where animals live and what they eat.",
+      "hint": "用完整句说出动物卡的居住地和食物两个栏目。"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D16/q10.mp3",
+      "tag": "A主线·p23-p24·动物家庭信息对应",
+      "parent_note": "确认版教材p23-p24主线或不增加新知识的同语境受控重组",
+      "question": "Which animal is in the elephant family?",
+      "expected": "The baby elephant is in the elephant family.",
+      "hint": "用完整句回答：小象是大象家庭的一员。"
+    }
+  ]
+}

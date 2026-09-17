@@ -1,0 +1,73 @@
+{
+  "course_id": "S4A-T1-W01-D17",
+  "pair_id": "4A-T1-W01-D17",
+  "study_pack": "4A-T1-W01-D17",
+  "course_version": "d46a71a20527bd9d",
+  "title": "四上·第17课｜Unit 3中国动物·歌谣信息（口语）",
+  "week": 4,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 13,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Pandas are black and white, and they roll like a ball.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D17/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "They are from Sichuan, and Sichuan is their hometown.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D17/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "Monkeys are yellow and brown, and they jump in trees.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D17/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "They are from Guizhou, and Guizhou is their hometown.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D17/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "Elephants are light grey and shower with their trunks.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D17/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "They are from Yunnan, and Yunnan is their hometown.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D17/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：它们来自云南。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D17/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：它们是黄色和棕色的。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D17/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用完整句回答：熊猫来自四川。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D17/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用完整句回答：猴子在树上跳。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D17/q10.mp3"
+    }
+  ]
+}

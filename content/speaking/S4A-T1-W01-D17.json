@@ -1,0 +1,104 @@
+{
+  "course_id": "S4A-T1-W01-D17",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D17",
+  "pair_id": "4A-T1-W01-D17",
+  "publication_status": "formal",
+  "title": "四上·第17课｜Unit 3中国动物·歌谣信息（口语）",
+  "week": 4,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 13,
+  "scope": "4A Unit 3 p23-p25",
+  "difficulty": "L1",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D17/q01.mp3",
+      "tag": "A主线·p23-p25·熊猫颜色动作",
+      "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+      "text": "Pandas are black and white, and they roll like a ball."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D17/q02.mp3",
+      "tag": "A主线·p23-p25·熊猫家乡",
+      "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+      "text": "They are from Sichuan, and Sichuan is their hometown."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D17/q03.mp3",
+      "tag": "A主线·p23-p25·猴子颜色动作",
+      "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+      "text": "Monkeys are yellow and brown, and they jump in trees."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D17/q04.mp3",
+      "tag": "A主线·p23-p25·猴子家乡",
+      "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+      "text": "They are from Guizhou, and Guizhou is their hometown."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D17/q05.mp3",
+      "tag": "A主线·p23-p25·大象颜色动作",
+      "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+      "text": "Elephants are light grey and shower with their trunks."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D17/q06.mp3",
+      "tag": "A主线·p23-p25·大象家乡",
+      "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+      "text": "They are from Yunnan, and Yunnan is their hometown."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D17/q07.mp3",
+      "tag": "C微调·p23-p25·动物家乡自主问答",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p23-p25，不作未掌握结论",
+      "question": "Where are elephants from?",
+      "expected": "They are from Yunnan.",
+      "hint": "用完整句回答：它们来自云南。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D17/q08.mp3",
+      "tag": "A主线·p23-p25·动物颜色输出",
+      "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+      "question": "What colour are monkeys?",
+      "expected": "They are yellow and brown.",
+      "hint": "用完整句回答：它们是黄色和棕色的。"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D17/q09.mp3",
+      "tag": "A主线·p23-p25·家乡信息对应",
+      "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+      "question": "Where are pandas from?",
+      "expected": "They are from Sichuan.",
+      "hint": "用完整句回答：熊猫来自四川。"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D17/q10.mp3",
+      "tag": "A主线·p23-p25·动物动作对应",
+      "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+      "question": "Which animals jump in trees?",
+      "expected": "Monkeys jump in trees.",
+      "hint": "用完整句回答：猴子在树上跳。"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "course_id": "S4A-T1-W01-D16",
+  "pair_id": "4A-T1-W01-D16",
+  "study_pack": "4A-T1-W01-D16",
+  "course_version": "a855b5345af0176b",
+  "title": "四上·第16课｜Unit 3动物与家乡·基础识别（口语）",
+  "week": 4,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "This is a panda, and this is a monkey.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D16/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "Here is an elephant family with a baby elephant.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D16/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "This animal card is about a polar bear.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D16/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "On an animal card, we write where they live.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D16/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "We also write what they eat and what they can do.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D16/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Let us make an animal card together.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D16/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：它是大熊猫。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D16/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：我们能制作动物卡。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D16/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用完整句说出动物卡的居住地和食物两个栏目。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D16/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用完整句回答：小象是大象家庭的一员。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D16/q10.mp3"
+    }
+  ]
+}

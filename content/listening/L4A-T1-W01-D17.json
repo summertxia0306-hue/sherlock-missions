@@ -1,0 +1,431 @@
+{
+  "course_id": "L4A-T1-W01-D17",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D17",
+  "pair_id": "4A-T1-W01-D17",
+  "publication_status": "formal",
+  "title": "四上·第17课｜Unit 3中国动物·歌谣信息（听力）",
+  "week": 4,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 14,
+  "scope": "4A Unit 3 p23-p25",
+  "difficulty": "L1",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D17/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p23-p25·熊猫家乡识别",
+          "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Sichuan",
+            "Guizhou",
+            "Yunnan"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Sichuan"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D17/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p23-p25·猴子家乡识别",
+          "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Yunnan",
+            "Guizhou",
+            "Sichuan"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Guizhou"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D17/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p23-p25·大象动作词识别",
+          "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+          "options": [
+            "tail",
+            "trunk",
+            "tree"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "trunk"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D17/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p23-p25·听音选词与颜色辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p23-p25，不作未掌握结论",
+          "options": [
+            "light grey",
+            "black and white",
+            "yellow and brown"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "light grey"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D17/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p25·熊猫颜色",
+          "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+          "display": "Pandas are black and white.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Pandas are black and white."
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D17/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p25·猴子家乡辨别",
+          "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+          "display": "Monkeys are from Yunnan.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Monkeys are from Guizhou."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D17/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p25·大象动作",
+          "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+          "display": "Elephants shower with their trunks.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Elephants shower with their trunks."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D17/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p25·动物动作对应",
+          "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+          "display": "Pandas jump in trees.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Monkeys jump in trees."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D17/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p23-p25·熊猫家乡问答",
+          "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Sichuan.",
+            "Guizhou.",
+            "Yunnan."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where are pandas from?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D17/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p23-p25·问句选答语与家乡对应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p23-p25，不作未掌握结论",
+          "options": [
+            "Yunnan.",
+            "Guizhou.",
+            "Sichuan."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Where are monkeys from?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D17/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p23-p25·大象颜色问答",
+          "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Black and white.",
+            "Yellow and brown.",
+            "Light grey."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "What colour are elephants in the chant?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D17/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p23-p25·动物动作问答",
+          "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+          "options": [
+            "They jump in trees.",
+            "They roll like a ball.",
+            "They shower with their trunks."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What do monkeys do?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D17/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p25·动作与家乡双线索",
+          "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+          "question_text": "Where are the pandas from?",
+          "options": [
+            "Sichuan.",
+            "Guizhou.",
+            "Yunnan."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "The pandas roll like a ball."
+            ],
+            [
+              "m",
+              "Sichuan is their hometown."
+            ],
+            [
+              "n",
+              "Question: Where are the pandas from?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D17/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p25·颜色动作整合",
+          "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+          "question_text": "Which animals are they?",
+          "options": [
+            "Pandas.",
+            "Monkeys.",
+            "Elephants."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "These animals are yellow and brown."
+            ],
+            [
+              "f",
+              "They jump in trees."
+            ],
+            [
+              "n",
+              "Question: Which animals are they?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D17/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p25·大象家乡提取",
+          "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+          "question_text": "Which place is their hometown?",
+          "options": [
+            "Sichuan.",
+            "Guizhou.",
+            "Yunnan."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "The elephants are light grey."
+            ],
+            [
+              "m",
+              "They are from Yunnan."
+            ],
+            [
+              "n",
+              "Question: Which place is their hometown?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D17/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p25·相邻动物家乡对应",
+          "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+          "question_text": "Which animals are from Guizhou?",
+          "options": [
+            "Pandas.",
+            "Monkeys.",
+            "Elephants."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "Pandas are from Sichuan."
+            ],
+            [
+              "f",
+              "Monkeys are from Guizhou."
+            ],
+            [
+              "n",
+              "Question: Which animals are from Guizhou?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D17/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p25·熊猫家乡",
+          "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+          "statement": "Pandas are from Sichuan.",
+          "answer": "true",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p25·动物颜色辨别",
+          "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+          "statement": "Monkeys are light grey.",
+          "answer": "false",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p25·大象家乡",
+          "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+          "statement": "Elephants are from Yunnan.",
+          "answer": "true",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p25·动物动作辨别",
+          "parent_note": "确认版教材p23-p25主线或不增加新知识的同语境受控重组",
+          "statement": "Pandas shower with their trunks.",
+          "answer": "false",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D17/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "In our chant, pandas are black and white and come from Sichuan. Monkeys are yellow and brown and come from Guizhou. Elephants are light grey and come from Yunnan. The monkeys jump in trees, and the elephants shower with their trunks."
+        ]
+      ]
+    }
+  ]
+}

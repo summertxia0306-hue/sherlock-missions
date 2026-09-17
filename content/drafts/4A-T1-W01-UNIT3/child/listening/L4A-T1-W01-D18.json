@@ -1,0 +1,224 @@
+{
+  "course_id": "L4A-T1-W01-D18",
+  "pair_id": "4A-T1-W01-D18",
+  "study_pack": "4A-T1-W01-D18",
+  "course_version": "2a100e971f66d674",
+  "title": "四上·第18课｜Unit 3云南大象·连续对话（听力）",
+  "week": 4,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 17,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D18/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "baby elephant",
+            "elephant family",
+            "polar bear"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D18/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "Yunnan and Sichuan",
+            "India and Africa",
+            "Guizhou and Yunnan"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D18/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "playing",
+            "swimming",
+            "pulling"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D18/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "pulling by the tail",
+            "playing in the river",
+            "giving bananas"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D18/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "The elephant family are playing in the river.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D18/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "The baby elephant is playing in the trees.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D18/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "The mother elephant is pulling her baby by the tail.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D18/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "The farmer is giving the elephants some apples.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D18/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "Yunnan.",
+            "India.",
+            "Africa."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D18/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "It is playing in the trees.",
+            "It is swimming in the river.",
+            "It is giving bananas."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D18/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "There are trees and water nearby.",
+            "There is ice and snow.",
+            "There are no rivers."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D18/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "Fish.",
+            "Leaves.",
+            "Bananas."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D18/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "options": [
+            "Yunnan.",
+            "India.",
+            "Africa."
+          ],
+          "question_text": "Where are the elephants from?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D18/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "options": [
+            "Sichuan and Guizhou.",
+            "India and Africa.",
+            "Yunnan and Guizhou."
+          ],
+          "question_text": "Which other places are named?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D18/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "options": [
+            "The farmer.",
+            "The mother elephant.",
+            "Shenshen."
+          ],
+          "question_text": "Who is pulling the baby back?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D18/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "They give bananas.",
+            "They pull the baby.",
+            "They swim in the river."
+          ],
+          "question_text": "Why are the farmers kind?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D18/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D18/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "Shenshen and her mum are watching TV."
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "The elephants are from India."
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "The mother elephant pulls her baby by the tail."
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "The farmer is giving fish to the elephants."
+        }
+      ]
+    }
+  ]
+}

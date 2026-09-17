@@ -1,0 +1,78 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "publication_status": "formal",
+  "visible": true,
+  "authority_note": "父JSON为唯一活动源；本目录仅含配对、音频计划和派生儿童安全副本。02负责回归与线上部署。",
+  "study_packs": [
+    {
+      "lesson": 16,
+      "study_pack": "4A-T1-W01-D16",
+      "pair_id": "4A-T1-W01-D16",
+      "planned_title": "四上·第16课｜Unit 3动物与家乡·基础识别",
+      "textbook_scope": "4A Unit 3 p23-p24",
+      "planned_difficulty": "L1",
+      "json_difficulty": "L1",
+      "planned_total_minutes": 24,
+      "focus": "动物、家庭、家乡和动物卡字段",
+      "listening_course_id": "L4A-T1-W01-D16",
+      "speaking_course_id": "S4A-T1-W01-D16",
+      "publication_gate": "02完成回归测试及线上部署后验收；内容窗口不部署。"
+    },
+    {
+      "lesson": 17,
+      "study_pack": "4A-T1-W01-D17",
+      "pair_id": "4A-T1-W01-D17",
+      "planned_title": "四上·第17课｜Unit 3中国动物·歌谣信息",
+      "textbook_scope": "4A Unit 3 p23-p25",
+      "planned_difficulty": "L1+",
+      "json_difficulty": "L1",
+      "planned_total_minutes": 27,
+      "focus": "三种动物、颜色、动作和家乡对应",
+      "listening_course_id": "L4A-T1-W01-D17",
+      "speaking_course_id": "S4A-T1-W01-D17",
+      "publication_gate": "02完成回归测试及线上部署后验收；内容窗口不部署。"
+    },
+    {
+      "lesson": 18,
+      "study_pack": "4A-T1-W01-D18",
+      "pair_id": "4A-T1-W01-D18",
+      "planned_title": "四上·第18课｜Unit 3云南大象·连续对话",
+      "textbook_scope": "4A Unit 3 p23-p27",
+      "planned_difficulty": "L2",
+      "json_difficulty": "L2",
+      "planned_total_minutes": 33,
+      "focus": "多轮对话、人物动作、现在进行时",
+      "listening_course_id": "L4A-T1-W01-D18",
+      "speaking_course_id": "S4A-T1-W01-D18",
+      "publication_gate": "02完成回归测试及线上部署后验收；内容窗口不部署。"
+    },
+    {
+      "lesson": 19,
+      "study_pack": "4A-T1-W01-D19",
+      "pair_id": "4A-T1-W01-D19",
+      "planned_title": "四上·第19课｜Unit 3北极熊·阅读整合",
+      "textbook_scope": "4A Unit 3 p23-p29",
+      "planned_difficulty": "L2+",
+      "json_difficulty": "L2",
+      "planned_total_minutes": 39,
+      "focus": "栖息地、食物、外形与因果",
+      "listening_course_id": "L4A-T1-W01-D19",
+      "speaking_course_id": "S4A-T1-W01-D19",
+      "publication_gate": "02完成回归测试及线上部署后验收；内容窗口不部署。"
+    },
+    {
+      "lesson": 20,
+      "study_pack": "4A-T1-W01-D20",
+      "pair_id": "4A-T1-W01-D20",
+      "planned_title": "四上·第20课｜Unit 3动物卡·Unit 3综合",
+      "textbook_scope": "4A Unit 3 p23-p30",
+      "planned_difficulty": "L3",
+      "json_difficulty": "L3",
+      "planned_total_minutes": 45,
+      "focus": "跨动物信息整合与动物卡表达",
+      "listening_course_id": "L4A-T1-W01-D20",
+      "speaking_course_id": "S4A-T1-W01-D20",
+      "publication_gate": "02完成回归测试及线上部署后验收；内容窗口不部署。"
+    }
+  ]
+}

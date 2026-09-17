@@ -1229,6 +1229,311 @@
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
    "text": "Can you describe a helpful classmate?"
+  },
+  "94f427b234b506cb": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is a panda."
+  },
+  "86b5a5094d52d2ec": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is a monkey."
+  },
+  "d25fc648f80edbc7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is an elephant."
+  },
+  "e7e28251f6a7023e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is a polar bear."
+  },
+  "e5cef6fdeba81202": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is a baby elephant."
+  },
+  "f04b581b15fa07bb": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "We can make an animal card."
+  },
+  "56bb4230353d7f38": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What animal is this?"
+  },
+  "18e8381a393efef8": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can we make?"
+  },
+  "7a468a823425d13d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is a panda, and this is a monkey."
+  },
+  "2c4a38ec0f56d463": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Here is an elephant family with a baby elephant."
+  },
+  "6ae7b60111fa5b7a": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This animal card is about a polar bear."
+  },
+  "8e8e72611a47ba1a": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "On an animal card, we write where they live."
+  },
+  "da3fdc1b3ac2839f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "We also write what they eat and what they can do."
+  },
+  "a484ab77def32059": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Let us make an animal card together."
+  },
+  "9d5c61761436ee59": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can we write on an animal card?"
+  },
+  "09798522487aa61d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Which animal is in the elephant family?"
+  },
+  "01437a951aaceffa": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Pandas are black and white, and they roll like a ball."
+  },
+  "4cc819f135d82c49": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "They are from Sichuan, and Sichuan is their hometown."
+  },
+  "a82aa80096878643": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Monkeys are yellow and brown, and they jump in trees."
+  },
+  "f6a057c4695cc311": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "They are from Guizhou, and Guizhou is their hometown."
+  },
+  "2e8f973e947979e6": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Elephants are light grey and shower with their trunks."
+  },
+  "4eb7645d91ae0537": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "They are from Yunnan, and Yunnan is their hometown."
+  },
+  "a30338b46ee40957": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where are elephants from?"
+  },
+  "4b9b05e1af0a75ff": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What colour are monkeys?"
+  },
+  "cdb760b5be876da7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where are pandas from?"
+  },
+  "e455768f61077b4d": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Which animals jump in trees?"
+  },
+  "c190b83e3928b879": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The elephant family are playing in the river."
+  },
+  "cf9fe1e7799a3e81": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "They are from Yunnan."
+  },
+  "7f4e3fc3185e4f69": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Elephants like places with trees and water nearby."
+  },
+  "9862f8f20d068091": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The baby elephant is swimming in the river."
+  },
+  "e6025319faa51b7b": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The mother elephant is pulling her baby by the tail."
+  },
+  "e10a8fd8dab03cfc": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The farmer is giving the elephants some bananas."
+  },
+  "0a705cd2595569d3": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What is the baby elephant doing?"
+  },
+  "8f1aea52ec4b07f5": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where can we see elephants besides Yunnan?"
+  },
+  "e2b50208fb61d551": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What are the elephant family doing?"
+  },
+  "c773bef214856259": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What is the mother elephant doing?"
+  },
+  "47463ba46e38b347": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What is the farmer doing?"
+  },
+  "02771b54861ed42f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where do elephants like living?"
+  },
+  "0e4392318342ef76": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Polar bears live near the North Pole."
+  },
+  "6273d34c37b8872c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It is very cold there."
+  },
+  "430859a350e56c4f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "They have thick fur to keep warm."
+  },
+  "5374cfb225e575e7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "They catch seals and fish for food."
+  },
+  "c138626d43027370": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Polar bears sleep in a bed of white snow."
+  },
+  "5dbf208d41e67dac": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The ice and snow are melting as the weather gets warmer."
+  },
+  "c6649a6d7d1d5128": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do polar bears eat?"
+  },
+  "e8dc0203161ef1c6": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Why do polar bears have thick fur?"
+  },
+  "a7cffaa1c1541de4": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where do polar bears live?"
+  },
+  "084a1c0246b34c9a": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Why do polar bears look white?"
+  },
+  "b16d1e83e3f9e85f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where do polar bears sleep?"
+  },
+  "332737833b0a6eba": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What is happening to the ice and snow?"
+  },
+  "81f9e78c43d74888": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "These monkeys are from Guizhou."
+  },
+  "cc68be50875af83c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "They eat fruit and leaves."
+  },
+  "4588734a3cb82eef": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "They have long tails and long arms."
+  },
+  "1021a49ec4729756": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "They can climb trees and swing on branches."
+  },
+  "2eb1497f0cbd7ceb": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Polar bears have thick fur to keep warm."
+  },
+  "6b1405e2580aacc3": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where do the monkeys on the card live?"
+  },
+  "9c64ed6f7fa5bca4": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can the monkeys on the card do?"
+  },
+  "482caf65fdf2f40f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do the monkeys on the card eat?"
+  },
+  "24052462b3f45f5a": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do the monkeys look like?"
+  },
+  "da9d2efad82b6fa7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where are the elephants from and what are they doing?"
+  },
+  "491a3797f0b5f230": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where do polar bears live and what do they eat?"
   }
  },
  "courses": {
@@ -1501,6 +1806,72 @@
    "static/audio/speaking/S4A-T1-W01-D15/q06.mp3": "83c1274e3a2aa57a",
    "static/audio/speaking/S4A-T1-W01-D15/q07.mp3": "37d8fd3aa02f6728",
    "static/audio/speaking/S4A-T1-W01-D15/q08.mp3": "326d3e8b09f2c007"
+  },
+  "S4A-T1-W01-D16": {
+   "static/audio/speaking/S4A-T1-W01-D16/q01.mp3": "7a468a823425d13d",
+   "static/audio/speaking/S4A-T1-W01-D16/q02.mp3": "2c4a38ec0f56d463",
+   "static/audio/speaking/S4A-T1-W01-D16/q03.mp3": "6ae7b60111fa5b7a",
+   "static/audio/speaking/S4A-T1-W01-D16/q04.mp3": "8e8e72611a47ba1a",
+   "static/audio/speaking/S4A-T1-W01-D16/q05.mp3": "da3fdc1b3ac2839f",
+   "static/audio/speaking/S4A-T1-W01-D16/q06.mp3": "a484ab77def32059",
+   "static/audio/speaking/S4A-T1-W01-D16/q07.mp3": "56bb4230353d7f38",
+   "static/audio/speaking/S4A-T1-W01-D16/q08.mp3": "18e8381a393efef8",
+   "static/audio/speaking/S4A-T1-W01-D16/q09.mp3": "9d5c61761436ee59",
+   "static/audio/speaking/S4A-T1-W01-D16/q10.mp3": "09798522487aa61d"
+  },
+  "S4A-T1-W01-D17": {
+   "static/audio/speaking/S4A-T1-W01-D17/q01.mp3": "01437a951aaceffa",
+   "static/audio/speaking/S4A-T1-W01-D17/q02.mp3": "4cc819f135d82c49",
+   "static/audio/speaking/S4A-T1-W01-D17/q03.mp3": "a82aa80096878643",
+   "static/audio/speaking/S4A-T1-W01-D17/q04.mp3": "f6a057c4695cc311",
+   "static/audio/speaking/S4A-T1-W01-D17/q05.mp3": "2e8f973e947979e6",
+   "static/audio/speaking/S4A-T1-W01-D17/q06.mp3": "4eb7645d91ae0537",
+   "static/audio/speaking/S4A-T1-W01-D17/q07.mp3": "a30338b46ee40957",
+   "static/audio/speaking/S4A-T1-W01-D17/q08.mp3": "4b9b05e1af0a75ff",
+   "static/audio/speaking/S4A-T1-W01-D17/q09.mp3": "cdb760b5be876da7",
+   "static/audio/speaking/S4A-T1-W01-D17/q10.mp3": "e455768f61077b4d"
+  },
+  "S4A-T1-W01-D18": {
+   "static/audio/speaking/S4A-T1-W01-D18/q01.mp3": "c190b83e3928b879",
+   "static/audio/speaking/S4A-T1-W01-D18/q02.mp3": "cf9fe1e7799a3e81",
+   "static/audio/speaking/S4A-T1-W01-D18/q03.mp3": "7f4e3fc3185e4f69",
+   "static/audio/speaking/S4A-T1-W01-D18/q04.mp3": "9862f8f20d068091",
+   "static/audio/speaking/S4A-T1-W01-D18/q05.mp3": "e6025319faa51b7b",
+   "static/audio/speaking/S4A-T1-W01-D18/q06.mp3": "e10a8fd8dab03cfc",
+   "static/audio/speaking/S4A-T1-W01-D18/q07.mp3": "0a705cd2595569d3",
+   "static/audio/speaking/S4A-T1-W01-D18/q08.mp3": "8f1aea52ec4b07f5",
+   "static/audio/speaking/S4A-T1-W01-D18/q09.mp3": "e2b50208fb61d551",
+   "static/audio/speaking/S4A-T1-W01-D18/q10.mp3": "c773bef214856259",
+   "static/audio/speaking/S4A-T1-W01-D18/q11.mp3": "47463ba46e38b347",
+   "static/audio/speaking/S4A-T1-W01-D18/q12.mp3": "02771b54861ed42f"
+  },
+  "S4A-T1-W01-D19": {
+   "static/audio/speaking/S4A-T1-W01-D19/q01.mp3": "0e4392318342ef76",
+   "static/audio/speaking/S4A-T1-W01-D19/q02.mp3": "6273d34c37b8872c",
+   "static/audio/speaking/S4A-T1-W01-D19/q03.mp3": "430859a350e56c4f",
+   "static/audio/speaking/S4A-T1-W01-D19/q04.mp3": "5374cfb225e575e7",
+   "static/audio/speaking/S4A-T1-W01-D19/q05.mp3": "c138626d43027370",
+   "static/audio/speaking/S4A-T1-W01-D19/q06.mp3": "5dbf208d41e67dac",
+   "static/audio/speaking/S4A-T1-W01-D19/q07.mp3": "c6649a6d7d1d5128",
+   "static/audio/speaking/S4A-T1-W01-D19/q08.mp3": "e8dc0203161ef1c6",
+   "static/audio/speaking/S4A-T1-W01-D19/q09.mp3": "a7cffaa1c1541de4",
+   "static/audio/speaking/S4A-T1-W01-D19/q10.mp3": "084a1c0246b34c9a",
+   "static/audio/speaking/S4A-T1-W01-D19/q11.mp3": "b16d1e83e3f9e85f",
+   "static/audio/speaking/S4A-T1-W01-D19/q12.mp3": "332737833b0a6eba"
+  },
+  "S4A-T1-W01-D20": {
+   "static/audio/speaking/S4A-T1-W01-D20/q01.mp3": "81f9e78c43d74888",
+   "static/audio/speaking/S4A-T1-W01-D20/q02.mp3": "cc68be50875af83c",
+   "static/audio/speaking/S4A-T1-W01-D20/q03.mp3": "4588734a3cb82eef",
+   "static/audio/speaking/S4A-T1-W01-D20/q04.mp3": "1021a49ec4729756",
+   "static/audio/speaking/S4A-T1-W01-D20/q05.mp3": "c190b83e3928b879",
+   "static/audio/speaking/S4A-T1-W01-D20/q06.mp3": "2eb1497f0cbd7ceb",
+   "static/audio/speaking/S4A-T1-W01-D20/q07.mp3": "6b1405e2580aacc3",
+   "static/audio/speaking/S4A-T1-W01-D20/q08.mp3": "9c64ed6f7fa5bca4",
+   "static/audio/speaking/S4A-T1-W01-D20/q09.mp3": "482caf65fdf2f40f",
+   "static/audio/speaking/S4A-T1-W01-D20/q10.mp3": "24052462b3f45f5a",
+   "static/audio/speaking/S4A-T1-W01-D20/q11.mp3": "da9d2efad82b6fa7",
+   "static/audio/speaking/S4A-T1-W01-D20/q12.mp3": "491a3797f0b5f230"
   }
  }
 }

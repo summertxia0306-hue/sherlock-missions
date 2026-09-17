@@ -1,0 +1,124 @@
+{
+  "course_id": "S4A-T1-W01-D19",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D19",
+  "pair_id": "4A-T1-W01-D19",
+  "publication_status": "formal",
+  "title": "四上·第19课｜Unit 3北极熊·阅读整合（口语）",
+  "week": 4,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 18,
+  "scope": "4A Unit 3 p23-p29",
+  "difficulty": "L2",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D19/q01.mp3",
+      "tag": "A主线·p23-p29·栖息地",
+      "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+      "text": "Polar bears live near the North Pole."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D19/q02.mp3",
+      "tag": "A主线·p23-p29·环境",
+      "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+      "text": "It is very cold there."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D19/q03.mp3",
+      "tag": "A主线·p23-p29·外形原因",
+      "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+      "text": "They have thick fur to keep warm."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D19/q04.mp3",
+      "tag": "A主线·p23-p29·食物",
+      "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+      "text": "They catch seals and fish for food."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D19/q05.mp3",
+      "tag": "A主线·p23-p29·睡眠环境",
+      "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+      "text": "Polar bears sleep in a bed of white snow."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D19/q06.mp3",
+      "tag": "A主线·p23-p29·环境变化",
+      "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+      "text": "The ice and snow are melting as the weather gets warmer."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D19/q07.mp3",
+      "tag": "C微调·p23-p29·食物自主问答",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p23-p29，不作未掌握结论",
+      "question": "What do polar bears eat?",
+      "expected": "They eat seals and fish.",
+      "hint": "用完整句回答：它们吃海豹和鱼。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D19/q08.mp3",
+      "tag": "A主线·p23-p29·外形因果输出",
+      "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+      "question": "Why do polar bears have thick fur?",
+      "expected": "They have thick fur to keep warm.",
+      "hint": "用完整句回答：它们有厚皮毛来保暖。"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D19/q09.mp3",
+      "tag": "A主线·p23-p29·栖息地提取",
+      "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+      "question": "Where do polar bears live?",
+      "expected": "They live near the North Pole.",
+      "hint": "用完整句回答：北极熊住在北极附近。"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D19/q10.mp3",
+      "tag": "A主线·p23-p29·外形因果表达",
+      "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+      "question": "Why do polar bears look white?",
+      "expected": "They look white because there is lots of ice and snow.",
+      "hint": "用完整句回答：因为那里有很多冰雪，所以它们看起来是白色的。"
+    },
+    {
+      "id": 11,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D19/q11.mp3",
+      "tag": "A主线·p23-p29·睡眠地点",
+      "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+      "question": "Where do polar bears sleep?",
+      "expected": "They sleep in a bed of white snow.",
+      "hint": "用完整句回答：它们睡在白雪铺成的床上。"
+    },
+    {
+      "id": 12,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D19/q12.mp3",
+      "tag": "A主线·p23-p29·环境变化表达",
+      "parent_note": "确认版教材p23-p29主线或不增加新知识的同语境受控重组",
+      "question": "What is happening to the ice and snow?",
+      "expected": "The ice and snow are melting.",
+      "hint": "用完整句回答：冰雪正在融化。"
+    }
+  ]
+}

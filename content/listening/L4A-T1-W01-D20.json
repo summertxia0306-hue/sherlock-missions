@@ -1,0 +1,544 @@
+{
+  "course_id": "L4A-T1-W01-D20",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D20",
+  "pair_id": "4A-T1-W01-D20",
+  "publication_status": "formal",
+  "title": "四上·第20课｜Unit 3动物卡·Unit 3综合（听力）",
+  "week": 4,
+  "day": 5,
+  "course_type": "weekly_test",
+  "est_minutes": 25,
+  "scope": "4A Unit 3 p23-p30",
+  "difficulty": "L3",
+  "scoring": {
+    "per_question": 4,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D20/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p23-p30·猴子卡食物",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "options": [
+            "seals and fish",
+            "fruit and leaves",
+            "bananas and fish"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "fruit and leaves"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p23-p30·猴子能力",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "options": [
+            "swim in water",
+            "swing on branches",
+            "roll like a ball"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "swing on branches"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p23-p30·猴子外形",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "options": [
+            "thick fur",
+            "a long tail and long arms",
+            "a light grey trunk"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "a long tail and long arms"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p23-p30·北极熊家乡",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Guizhou",
+            "the North Pole",
+            "Yunnan"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "the North Pole"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q04.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p23-p30·听音选词与跨动物动作辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p23-p30，不作未掌握结论",
+          "options": [
+            "catching seals and fish",
+            "giving the elephants bananas",
+            "swinging on branches"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "giving the elephants bananas"
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p30·动物卡来源",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "display": "The monkeys on the card are from Guizhou.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The monkeys on the card are from Guizhou."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p30·跨动物食物辨别",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "display": "The monkeys eat seals and fish.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The monkeys eat fruit and leaves."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p30·动物卡外形",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "display": "The monkeys have long tails and long arms.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The monkeys have long tails and long arms."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q08.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p30·跨动物栖息地",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "display": "The polar bears live in Yunnan.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The polar bears live near the North Pole."
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q09.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p23-p30·进行时综合",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "display": "The baby elephant is swimming in the river.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The baby elephant is swimming in the river."
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p23-p30·动物卡能力",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "options": [
+            "They can swing on branches.",
+            "They can catch seals.",
+            "They can shower with trunks."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can the monkeys on the card do?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p23-p30·问句选答语与跨动物食物辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p23-p30，不作未掌握结论",
+          "options": [
+            "Fruit and leaves.",
+            "Seals and fish.",
+            "Bananas."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What do polar bears eat?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q12.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p23-p30·大象家乡",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Sichuan.",
+            "Guizhou.",
+            "Yunnan."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "Where are the elephants in the chant from?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q13.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p23-p30·进行时动作",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "options": [
+            "It is swimming.",
+            "It is climbing.",
+            "It is catching fish."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What is the baby elephant doing?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q14.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p23-p30·栖息地归纳",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "options": [
+            "In places with trees and water nearby.",
+            "In white snow.",
+            "On branches."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where do elephants like living?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p30·动物卡多字段整合",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "question_text": "Which animal is on the card?",
+          "options": [
+            "Monkeys.",
+            "Polar bears.",
+            "Elephants."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "This card is about monkeys from Guizhou."
+            ],
+            [
+              "m",
+              "They eat fruit and leaves."
+            ],
+            [
+              "f",
+              "They can swing on branches."
+            ],
+            [
+              "n",
+              "Question: Which animal is on the card?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q16.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p30·三动物家乡对应",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "question_text": "Which animal is from Yunnan?",
+          "options": [
+            "Pandas.",
+            "Monkeys.",
+            "Elephants."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "m",
+              "Pandas come from Sichuan."
+            ],
+            [
+              "f",
+              "Monkeys come from Guizhou."
+            ],
+            [
+              "m",
+              "Elephants come from Yunnan."
+            ],
+            [
+              "n",
+              "Question: Which animal is from Yunnan?"
+            ]
+          ],
+          "id": 17,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q17.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p30·多人物动作对应",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "question_text": "Who gives bananas?",
+          "options": [
+            "The baby.",
+            "The mother.",
+            "A farmer."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "The baby elephant is swimming."
+            ],
+            [
+              "m",
+              "Its mother is pulling it back by the tail."
+            ],
+            [
+              "f",
+              "A farmer is giving them bananas."
+            ],
+            [
+              "n",
+              "Question: Who gives bananas?"
+            ]
+          ],
+          "id": 18,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q18.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p30·北极熊多字段整合",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "question_text": "Where do they sleep?",
+          "options": [
+            "In trees.",
+            "In white snow.",
+            "In a river."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "m",
+              "Polar bears have thick fur."
+            ],
+            [
+              "f",
+              "They live near the North Pole and catch fish."
+            ],
+            [
+              "m",
+              "They sleep in white snow."
+            ],
+            [
+              "n",
+              "Question: Where do they sleep?"
+            ]
+          ],
+          "id": 19,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q19.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p23-p30·双卡对比",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "question_text": "Which card has thick fur?",
+          "options": [
+            "The monkey card.",
+            "The elephant card.",
+            "The polar bear card."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "Which card has long arms and a long tail?"
+            ],
+            [
+              "m",
+              "The monkey card."
+            ],
+            [
+              "f",
+              "And which card has thick fur?"
+            ],
+            [
+              "m",
+              "The polar bear card."
+            ],
+            [
+              "n",
+              "Question: Which card has thick fur?"
+            ]
+          ],
+          "id": 20,
+          "audio": "static/audio/listening/L4A-T1-W01-D20/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p30·猴子来源",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "statement": "The monkey card says monkeys live in Guizhou.",
+          "answer": "true",
+          "id": 21
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p30·跨动物食物辨别",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "statement": "The monkeys eat seals and fish.",
+          "answer": "false",
+          "id": 22
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p30·大象动作",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "statement": "The elephant family are playing in a river.",
+          "answer": "true",
+          "id": 23
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p30·跨动物外形辨别",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "statement": "The polar bears have long tails.",
+          "answer": "false",
+          "id": 24
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p23-p30·环境变化",
+          "parent_note": "确认版教材p23-p30主线或不增加新知识的同语境受控重组",
+          "statement": "Ice and snow are melting near the polar bears.",
+          "answer": "true",
+          "id": 25
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D20/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Here are three animal cards. The monkey card says monkeys live in Guizhou, eat fruit and leaves, and swing on branches. The elephant card says an elephant family from Yunnan are playing in a river. A farmer is giving them bananas. The polar bear card says polar bears live near the North Pole, have thick fur, and catch seals and fish. Ice and snow are melting there."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "course_id": "S4A-T1-W01-D19",
+  "pair_id": "4A-T1-W01-D19",
+  "study_pack": "4A-T1-W01-D19",
+  "course_version": "16dfb0383a87b704",
+  "title": "四上·第19课｜Unit 3北极熊·阅读整合（口语）",
+  "week": 4,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 18,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Polar bears live near the North Pole.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D19/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "It is very cold there.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D19/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "They have thick fur to keep warm.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D19/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "They catch seals and fish for food.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D19/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "Polar bears sleep in a bed of white snow.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D19/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "The ice and snow are melting as the weather gets warmer.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D19/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：它们吃海豹和鱼。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D19/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：它们有厚皮毛来保暖。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D19/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用完整句回答：北极熊住在北极附近。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D19/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用完整句回答：因为那里有很多冰雪，所以它们看起来是白色的。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D19/q10.mp3"
+    },
+    {
+      "id": 11,
+      "type": "qa",
+      "hint": "用完整句回答：它们睡在白雪铺成的床上。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D19/q11.mp3"
+    },
+    {
+      "id": 12,
+      "type": "qa",
+      "hint": "用完整句回答：冰雪正在融化。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D19/q12.mp3"
+    }
+  ]
+}

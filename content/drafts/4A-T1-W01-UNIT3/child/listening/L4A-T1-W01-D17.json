@@ -1,0 +1,224 @@
+{
+  "course_id": "L4A-T1-W01-D17",
+  "pair_id": "4A-T1-W01-D17",
+  "study_pack": "4A-T1-W01-D17",
+  "course_version": "52daef6444b45206",
+  "title": "四上·第17课｜Unit 3中国动物·歌谣信息（听力）",
+  "week": 4,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 14,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D17/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "Sichuan",
+            "Guizhou",
+            "Yunnan"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D17/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "Yunnan",
+            "Guizhou",
+            "Sichuan"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D17/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "tail",
+            "trunk",
+            "tree"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D17/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "light grey",
+            "black and white",
+            "yellow and brown"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D17/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "Pandas are black and white.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D17/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "Monkeys are from Yunnan.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D17/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "Elephants shower with their trunks.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D17/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "Pandas jump in trees.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D17/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "Sichuan.",
+            "Guizhou.",
+            "Yunnan."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D17/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "Yunnan.",
+            "Guizhou.",
+            "Sichuan."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D17/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "Black and white.",
+            "Yellow and brown.",
+            "Light grey."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D17/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "They jump in trees.",
+            "They roll like a ball.",
+            "They shower with their trunks."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D17/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "options": [
+            "Sichuan.",
+            "Guizhou.",
+            "Yunnan."
+          ],
+          "question_text": "Where are the pandas from?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D17/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "options": [
+            "Pandas.",
+            "Monkeys.",
+            "Elephants."
+          ],
+          "question_text": "Which animals are they?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D17/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "options": [
+            "Sichuan.",
+            "Guizhou.",
+            "Yunnan."
+          ],
+          "question_text": "Which place is their hometown?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D17/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "Pandas.",
+            "Monkeys.",
+            "Elephants."
+          ],
+          "question_text": "Which animals are from Guizhou?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D17/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D17/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "Pandas are from Sichuan."
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "Monkeys are light grey."
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "Elephants are from Yunnan."
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "Pandas shower with their trunks."
+        }
+      ]
+    }
+  ]
+}

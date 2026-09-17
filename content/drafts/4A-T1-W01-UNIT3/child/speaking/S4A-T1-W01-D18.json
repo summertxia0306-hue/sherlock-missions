@@ -1,0 +1,85 @@
+{
+  "course_id": "S4A-T1-W01-D18",
+  "pair_id": "4A-T1-W01-D18",
+  "study_pack": "4A-T1-W01-D18",
+  "course_version": "b7bc8ed6eb6ce9f2",
+  "title": "四上·第18课｜Unit 3云南大象·连续对话（口语）",
+  "week": 4,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 16,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "The elephant family are playing in the river.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D18/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "They are from Yunnan.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D18/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "Elephants like places with trees and water nearby.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D18/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "The baby elephant is swimming in the river.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D18/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "The mother elephant is pulling her baby by the tail.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D18/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "The farmer is giving the elephants some bananas.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D18/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：它正在河里游泳。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D18/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：我们也能在印度和非洲看到它们。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D18/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用完整句回答：象群正在河里玩。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D18/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用完整句回答：母象正拉着小象尾巴把它拉回来。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D18/q10.mp3"
+    },
+    {
+      "id": 11,
+      "type": "qa",
+      "hint": "用完整句回答：农民正给大象香蕉。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D18/q11.mp3"
+    },
+    {
+      "id": 12,
+      "type": "qa",
+      "hint": "用完整句回答：大象喜欢住在附近有树和水的地方。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D18/q12.mp3"
+    }
+  ]
+}
