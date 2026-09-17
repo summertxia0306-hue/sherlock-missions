@@ -20,6 +20,7 @@ _AUDIO_BASES = (
     "https://raw.githubusercontent.com/summertxia0306-hue/sherlock-missions/b5dbb07aadf6a4e43ee8dc9f281a596ae8ed5543/",
 )
 _UNIT3_AUDIO_BASES = (
+    "https://gcore.jsdelivr.net/gh/summertxia0306-hue/sherlock-missions@5ba77dd641dfb21a954feff731484950637097f0/",
     "https://cdn.jsdelivr.net/gh/summertxia0306-hue/sherlock-missions@5ba77dd641dfb21a954feff731484950637097f0/",
     "https://raw.githubusercontent.com/summertxia0306-hue/sherlock-missions/5ba77dd641dfb21a954feff731484950637097f0/",
 )

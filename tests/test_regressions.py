@@ -317,6 +317,7 @@ if (!hasAlternatingSilentSamples(joinFrames(alternating), 16000)) throw new Erro
 
         new_path = "static/audio/speaking/S4A-T1-W01-D18/q12.mp3"
         new_sources = listening_audio.audio_sources(new_path)
+        self.assertTrue(new_sources[0].startswith("https://gcore.jsdelivr.net/gh/"))
         self.assertTrue(all("5ba77dd" in source for source in new_sources))
         self.assertEqual(new_sources[0], listening_audio.audio_url(new_path))
 
