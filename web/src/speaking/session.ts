@@ -40,8 +40,9 @@ export function markSafetyPass(state: SpeakingSession, questionId: number): Spea
   return { ...state, questions: { ...state.questions, [String(questionId)]: { ...current, complete: true, passed_by_safety: true } } }
 }
 
-export function buildSpeakingSubmission(state: SpeakingSession, version: string, submittedAt = new Date().toISOString()): SpeakingSubmission {
-  const questions = Array.from({ length: 8 }, (_, index) => {
+export function buildSpeakingSubmission(state: SpeakingSession, version: string, questionCount: number, submittedAt = new Date().toISOString()): SpeakingSubmission {
+  if (![8, 10, 12].includes(questionCount)) throw new Error('SPEAKING_INVALID_COUNT')
+  const questions = Array.from({ length: questionCount }, (_, index) => {
     const entry = state.questions[String(index + 1)]
     if (!entry?.complete) throw new Error('SPEAKING_INCOMPLETE')
     return { id: index + 1, proofs: [...entry.proofs], passed_by_safety: entry.passed_by_safety }

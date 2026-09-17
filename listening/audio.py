@@ -8,6 +8,7 @@ st.audio 自带进度条可无限重播，无法满足"播放次数限制不能�
 组件 postMessage 协议。
 """
 import os
+import re
 
 import streamlit.components.v1 as components
 
@@ -18,18 +19,28 @@ _AUDIO_BASES = (
     "https://cdn.jsdelivr.net/gh/summertxia0306-hue/sherlock-missions@b5dbb07aadf6a4e43ee8dc9f281a596ae8ed5543/",
     "https://raw.githubusercontent.com/summertxia0306-hue/sherlock-missions/b5dbb07aadf6a4e43ee8dc9f281a596ae8ed5543/",
 )
+_UNIT3_AUDIO_BASES = (
+    "https://cdn.jsdelivr.net/gh/summertxia0306-hue/sherlock-missions@5ba77dd641dfb21a954feff731484950637097f0/",
+    "https://raw.githubusercontent.com/summertxia0306-hue/sherlock-missions/5ba77dd641dfb21a954feff731484950637097f0/",
+)
+
+
+def _bases_for(repo_path):
+    if re.match(r"^static/audio/(?:listening/L|speaking/S)4A-T1-W01-D(?:16|17|18|19|20)/", repo_path):
+        return _UNIT3_AUDIO_BASES
+    return _AUDIO_BASES
 
 
 def audio_url(repo_path):
     """repo 内 static/xxx 路径 → 默认 CDN 音频 URL。"""
     assert repo_path.startswith("static/"), repo_path
-    return _AUDIO_BASES[0] + repo_path
+    return _bases_for(repo_path)[0] + repo_path
 
 
 def audio_sources(repo_path):
     """返回多个可播放地址，前端失败时自动切换。"""
     assert repo_path.startswith("static/"), repo_path
-    return [base + repo_path for base in _AUDIO_BASES]
+    return [base + repo_path for base in _bases_for(repo_path)]
 
 
 def limited_audio(repo_path, qid, max_plays, used, key, label="还能听"):

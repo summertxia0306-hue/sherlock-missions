@@ -9,17 +9,21 @@ class StreamlitPublicationGateTests(unittest.TestCase):
     def test_listening_renumbered_courses_are_exposed_by_streamlit(self):
         self.assertIn("L4A-T1-W01-D01", progress.all_courses())
         self.assertIn("L4A-T1-W01-D15", progress.all_courses())
+        self.assertIn("L4A-T1-W01-D20", progress.all_courses())
         courses = progress.visible_courses()
         self.assertIn("L4A-T1-W01-D01", courses)
         self.assertIn("L4A-T1-W01-D15", courses)
+        self.assertIn("L4A-T1-W01-D20", courses)
         self.assertIn("W01D50", courses)
 
     def test_speaking_renumbered_courses_are_exposed_by_streamlit(self):
         self.assertIn("S4A-T1-W01-D01", speaking_models.all_courses())
         self.assertIn("S4A-T1-W01-D15", speaking_models.all_courses())
+        self.assertIn("S4A-T1-W01-D20", speaking_models.all_courses())
         courses = speaking_models.visible_courses()
         self.assertIn("S4A-T1-W01-D01", courses)
         self.assertIn("S4A-T1-W01-D15", courses)
+        self.assertIn("S4A-T1-W01-D20", courses)
         self.assertIn("S01D50", courses)
 
 

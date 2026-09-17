@@ -14,15 +14,13 @@ function stableVersion(course) {
 }
 
 function validateCourse(course) {
-  if (!course || !COURSE_ID.test(course.course_id) || !Array.isArray(course.questions) || course.questions.length !== 8) fail()
+  if (!course || !COURSE_ID.test(course.course_id) || !Array.isArray(course.questions) || ![8, 10, 12].includes(course.questions.length)) fail()
   course.questions.forEach((question, index) => {
-    if (question.id !== index + 1 || !['repeat', 'qa'].includes(question.type)
+    if (question.id !== index + 1 || question.type !== (index < 6 ? 'repeat' : 'qa')
       || !AUDIO_PATH.test(question.audio) || !question.audio.includes(`/${course.course_id}/`)) fail()
     if (question.type === 'repeat' && (typeof question.text !== 'string' || !question.text.trim())) fail()
     if (question.type === 'qa' && (![question.question, question.expected, question.hint].every((value) => typeof value === 'string' && value.trim()))) fail()
   })
-  if (course.questions.filter((item) => item.type === 'repeat').length !== 6
-    || course.questions.filter((item) => item.type === 'qa').length !== 2) fail()
   return course
 }
 

@@ -17,6 +17,19 @@ describe('P3 speaking child course contract', () => {
     expect(JSON.stringify(parsed)).not.toMatch(/"expected"|"question"|"parent_note"|"tag"/)
   })
 
+  it('accepts the approved Unit 3 ten- and twelve-question courses but rejects other lengths', () => {
+    for (const [day, count] of [[16, 10], [18, 12]] as const) {
+      const id = `S4A-T1-W01-D${day}`
+      const paired = `4A-T1-W01-D${day}`
+      const questions = Array.from({ length: count }, (_, index) => index < 6
+        ? { id: index + 1, type: 'repeat', text: `Sentence ${index + 1}.`, audio_asset: `audio/speaking/${id}/q${String(index + 1).padStart(2, '0')}.mp3` }
+        : { id: index + 1, type: 'qa', hint: '用英语回答。', audio_asset: `audio/speaking/${id}/q${String(index + 1).padStart(2, '0')}.mp3` })
+      const input = { ...course, course_id: id, pair_id: paired, study_pack: paired, questions }
+      expect(parseSpeakingCourse(input).questions).toHaveLength(count)
+      expect(() => parseSpeakingCourse({ ...input, questions: questions.slice(0, -1) })).toThrow()
+    }
+  })
+
   it('rejects leaked scoring or parent fields', () => {
     for (const key of ['expected', 'question', 'tag', 'parent_note', 'score']) {
       const leaked = structuredClone(course) as typeof course & { questions: Array<Record<string, unknown>> }

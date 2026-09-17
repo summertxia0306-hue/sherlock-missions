@@ -132,7 +132,7 @@ export function SpeakingPage({
       const saved = sessionStorage.getItem(`sherlock-speaking-${dataKind}-${courseId}`)
       const restored = saved ? JSON.parse(saved) as SpeakingSession : createSpeakingSession(courseId, newResultId())
       setCourse(loaded); setSession(restored); setTrialDone(false); setSubmitted(false); setTransportDiagnostics([])
-      setQuestionIndex(Math.min(7, Array.from({ length: 8 }, (_, index) => index).find((index) => !restored.questions[String(index + 1)]?.complete) ?? 0))
+      setQuestionIndex(Math.min(loaded.questions.length - 1, Array.from({ length: loaded.questions.length }, (_, index) => index).find((index) => !restored.questions[String(index + 1)]?.complete) ?? 0))
     } catch { setMessage('课程暂时无法打开，请稍后重试。') }
   }
 
@@ -230,7 +230,7 @@ export function SpeakingPage({
     if (!course || !session || activity !== 'idle') return
     setActivity('submitting')
     try {
-      const submission = buildSpeakingSubmission(session, course.course_version)
+      const submission = buildSpeakingSubmission(session, course.course_version, course.questions.length)
       const response = await withSession(
         (token) => api.submitSpeakingResult(token, submission),
         () => setMessage('正式会话已失效，正在自动恢复；全部评分、星数、proof 和录音引用均已保留…')
@@ -267,7 +267,7 @@ export function SpeakingPage({
       <p className="eyebrow">{dataKind === 'formal' ? 'FORMAL RESULT SAVED' : 'TEST RESULT SAVED'}</p>
       <h1>完成啦</h1><p>{message}</p>
       {dataKind === 'test' && transportDiagnostics.length > 0 && <section aria-label="本节传输诊断">
-        <p className="notice"><strong>本节传输汇总：</strong>覆盖 {summary.questions}/8 题 · 直传 {summary.direct}/{summary.takes} 次 · 分块兜底 {summary.fallback} 次 · 中位数 {summary.medianMs}ms · 最慢 {summary.slowestMs}ms</p>
+        <p className="notice"><strong>本节传输汇总：</strong>覆盖 {summary.questions}/{course.questions.length} 题 · 直传 {summary.direct}/{summary.takes} 次 · 分块兜底 {summary.fallback} 次 · 中位数 {summary.medianMs}ms · 最慢 {summary.slowestMs}ms</p>
         {transportDiagnostics.map((entry) => <TransportDiagnostic key={`${entry.questionId}-${entry.attempt}`} entry={entry} />)}
       </section>}
       <button type="button" onClick={() => { setCourse(undefined); setSession(undefined); setSubmitted(false); setTransportDiagnostics([]) }}>返回课程列表</button>
@@ -302,7 +302,7 @@ export function SpeakingPage({
         {dataKind === 'test' && currentDiagnostic && <TransportDiagnostic entry={currentDiagnostic} />}
         {!questionState && message && <p className="notice" role="status">{message}</p>}
         {questionState && !questionState.complete && questionState.proofs.length === 3 && <button type="button" className="quiet-button" disabled={activity !== 'idle'} onClick={safetyPass}>先过这题</button>}
-        {questionState?.complete && (questionIndex < 7 ? <button type="button" disabled={activity !== 'idle'} onClick={nextQuestion}>下一题</button> : <button type="button" disabled={!allComplete || activity !== 'idle'} onClick={submit}>全部完成，提交{dataKind === 'formal' ? '正式结果' : ' TEST'}</button>)}
+        {questionState?.complete && (questionIndex < course.questions.length - 1 ? <button type="button" disabled={activity !== 'idle'} onClick={nextQuestion}>下一题</button> : <button type="button" disabled={!allComplete || activity !== 'idle'} onClick={submit}>全部完成，提交{dataKind === 'formal' ? '正式结果' : ' TEST'}</button>)}
       </section><p className="notice">播放、录音、评分时不能切题，避免两个声音叠加。</p>
     </main>
   )

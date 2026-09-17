@@ -12,13 +12,13 @@ const {
   buildSpeakingResult
 } = require('../speaking-service')
 
-function fixtureCourse() {
+function fixtureCourse(count = 8, courseId = 'S01D39') {
   return {
-    course_id: 'S01D39', title: 'Speaking', week: 5, day: 4,
+    course_id: courseId, title: 'Speaking', week: 5, day: 4,
     course_type: 'training', est_minutes: 10,
-    questions: Array.from({ length: 8 }, (_, index) => index < 6
-      ? { id: index + 1, type: 'repeat', text: `It is bright ${index + 1}.`, audio: `static/audio/speaking/S01D39/q0${index + 1}.mp3`, tag: 'tag', parent_note: 'note' }
-      : { id: index + 1, type: 'qa', question: 'What is it?', expected: 'It is bright.', hint: '用英语说：它很明亮。', audio: `static/audio/speaking/S01D39/q0${index + 1}.mp3`, tag: 'tag' })
+    questions: Array.from({ length: count }, (_, index) => index < 6
+      ? { id: index + 1, type: 'repeat', text: `It is bright ${index + 1}.`, audio: `static/audio/speaking/${courseId}/q${String(index + 1).padStart(2, '0')}.mp3`, tag: 'tag', parent_note: 'note' }
+      : { id: index + 1, type: 'qa', question: 'What is it?', expected: 'It is bright.', hint: '用英语说：它很明亮。', audio: `static/audio/speaking/${courseId}/q${String(index + 1).padStart(2, '0')}.mp3`, tag: 'tag' })
   }
 }
 
@@ -34,6 +34,42 @@ function take(questionId, attempt, total, overrides = {}) {
 }
 
 describe('P3 speaking service contract', () => {
+  it('sanitizes approved ten/twelve-question Unit 3 courses without leaking answers', () => {
+    for (const [day, count] of [[16, 10], [18, 12]]) {
+      const id = `S4A-T1-W01-D${day}`
+      const course = fixtureCourse(count, id)
+      const child = sanitizeSpeakingCourse(course, 'version1')
+      assert.equal(child.questions.length, count)
+      assert.equal(child.questions.at(-1).id, count)
+      assert.equal(child.questions.at(-1).audio_asset, `audio/speaking/${id}/q${count}.mp3`)
+      assert.equal(JSON.stringify(child).includes('expected'), false)
+      assert.throws(() => sanitizeSpeakingCourse({ ...course, questions: course.questions.slice(0, -1) }, 'version1'), /INVALID_SPEAKING_DATA/)
+    }
+  })
+
+  it('retains question twelve scoring, private recording reference, and star maximum', () => {
+    const id = 'S4A-T1-W01-D18'
+    const course = fixtureCourse(12, id)
+    const questions = Array.from({ length: 12 }, (_, index) => {
+      const questionId = index + 1
+      const scored = take(questionId, 1, 85, {
+        course_id: id,
+        recording_path: `sherlock-english/test/test/${id}/r12/q${String(questionId).padStart(2, '0')}-take1.wav`
+      })
+      return { id: questionId, proofs: [signTakeProof(scored, '1234567890abcdef')], passed_by_safety: false }
+    })
+    const result = buildSpeakingResult(course, {
+      result_id: 'r12', student_id: 'sherlock', course_id: id, course_version: 'version1',
+      started_at: '2026-09-17T10:00:00.000Z', submitted_at: '2026-09-17T10:03:00.000Z', duration_seconds: 180,
+      questions
+    }, 'version1', '1234567890abcdef')
+    assert.equal(result.question_results.length, 12)
+    assert.equal(result.stars_max, 36)
+    assert.equal(result.question_results[11].id, 12)
+    assert.match(result.question_results[11].recordings[0], /q12-take1\.wav$/)
+    assert.equal(result.data_kind, 'test')
+    assert.equal(result.formal_completion_eligible, false)
+  })
   it('publishes only child-safe course fields', () => {
     const child = sanitizeSpeakingCourse(fixtureCourse(), 'version1')
     assert.equal(child.questions.length, 8)
@@ -98,19 +134,19 @@ describe('P3 speaking service contract', () => {
     }, 'version1', '1234567890abcdef'))
   })
 
-  it('loads 12 retained plus 15 visible term courses', () => {
+  it('loads 12 retained plus 20 visible term courses', () => {
     const provider = createFileSpeakingCourseProvider()
     const catalog = provider.catalog()
     const ids = catalog.map((item) => item.course_id)
     assert.deepEqual(ids, [
       ...Array.from({ length: 12 }, (_, index) => `S01D${index + 39}`),
-      ...Array.from({ length: 15 }, (_, index) => `S4A-T1-W01-D${String(index + 1).padStart(2, '0')}`)
+      ...Array.from({ length: 20 }, (_, index) => `S4A-T1-W01-D${String(index + 1).padStart(2, '0')}`)
     ])
     assert.equal(catalog.filter((item) => item.visible === false).length, 0)
     for (const id of ids) {
       const loaded = provider.get(id)
       assert.equal(loaded.course.questions.filter((item) => item.type === 'repeat').length, 6)
-      assert.equal(loaded.course.questions.filter((item) => item.type === 'qa').length, 2)
+      assert.equal(loaded.course.questions.filter((item) => item.type === 'qa').length, loaded.course.questions.length - 6)
     }
   })
 })

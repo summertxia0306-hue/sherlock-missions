@@ -112,6 +112,24 @@ class RegressionTests(unittest.TestCase):
             self.assertEqual(0, len(app.exception))
             self.assertIs(component, recorder._component)
 
+    def test_unit3_speaking_page_loads_demo_audio_and_microphone_component(self):
+        from streamlit.testing.v1 import AppTest
+
+        app = AppTest.from_file(
+            str(Path(recorder.__file__).parents[1] / "app.py"), default_timeout=20
+        )
+        app.query_params["course_id"] = "S4A-T1-W01-D18"
+        app.run()
+        self.assertEqual(0, len(app.exception))
+        app.button[-1].click().run()
+        self.assertEqual(0, len(app.exception))
+        components = app.get("component_instance")
+        self.assertEqual(2, len(components))
+        self.assertIn("5ba77dd", components[0].proto.json_args)
+        self.assertIn("q01.mp3", components[0].proto.json_args)
+        self.assertEqual("1", json.loads(components[1].proto.json_args)["qid"])
+        self.assertIn("rec_S4A-T1-W01-D18", components[1].proto.id)
+
     def test_recorder_uses_a_fresh_processed_stream_and_releases_it_before_review(self):
         html = (Path(recorder.__file__).parent / "frontend" / "index.html").read_text(
             encoding="utf-8"
@@ -296,6 +314,11 @@ if (!hasAlternatingSilentSamples(joinFrames(alternating), 16000)) throw new Erro
         self.assertTrue(sources[0].endswith(path))
         self.assertTrue(sources[1].endswith(path))
         self.assertEqual(sources[0], listening_audio.audio_url(path))
+
+        new_path = "static/audio/speaking/S4A-T1-W01-D18/q12.mp3"
+        new_sources = listening_audio.audio_sources(new_path)
+        self.assertTrue(all("5ba77dd" in source for source in new_sources))
+        self.assertEqual(new_sources[0], listening_audio.audio_url(new_path))
 
     def test_all_course_json_files_still_validate(self):
         for path in listening_models.list_course_files():

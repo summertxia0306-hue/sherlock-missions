@@ -30,9 +30,18 @@ describe('P3 speaking session gate', () => {
   it('builds proof-only test submission without numeric scores', () => {
     let state = createSpeakingSession('S01D39', 'r1', '2026-08-24T10:00:00.000Z')
     for (let id = 1; id <= 8; id += 1) state = addScoredTake(state, id, response(3, `p${id}`))
-    const submission = buildSpeakingSubmission(state, 'version1', '2026-08-24T10:02:00.000Z')
+    const submission = buildSpeakingSubmission(state, 'version1', 8, '2026-08-24T10:02:00.000Z')
     expect(submission.questions).toHaveLength(8)
     expect(JSON.stringify(submission)).not.toMatch(/score|total|accuracy|fluency|integrity/)
     expect(submission.duration_seconds).toBe(120)
+  })
+
+  it('preserves questions nine through twelve and their proof and safety gate', () => {
+    let state = createSpeakingSession('S4A-T1-W01-D18', 'r12', '2026-09-17T10:00:00.000Z')
+    for (let id = 1; id <= 12; id += 1) state = addScoredTake(state, id, response(3, `p${id}`))
+    expect(() => buildSpeakingSubmission(state, 'version12', 12, '2026-09-17T10:03:00.000Z')).not.toThrow()
+    const submission = buildSpeakingSubmission(state, 'version12', 12, '2026-09-17T10:03:00.000Z')
+    expect(submission.questions.map((item) => item.id)).toEqual(Array.from({ length: 12 }, (_, index) => index + 1))
+    expect(submission.questions[11].proofs).toEqual(['p12'])
   })
 })

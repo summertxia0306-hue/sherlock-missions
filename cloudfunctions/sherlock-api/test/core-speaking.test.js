@@ -87,6 +87,46 @@ function termCourse() {
 }
 
 describe('P3 speaking API', () => {
+  it('scores question twelve with the course-bound gate and preserves a single test result', async () => {
+    const courseId = 'S4A-T1-W01-D18'
+    const course = {
+      ...fixtureCourse(), course_id: courseId, publication_status: 'test',
+      questions: Array.from({ length: 12 }, (_, index) => ({
+        ...(index < 6
+          ? { id: index + 1, type: 'repeat', text: `Sentence ${index + 1}.` }
+          : { id: index + 1, type: 'qa', question: 'What is it?', expected: 'It is bright.', hint: '用英语回答。' }),
+        audio: `static/audio/speaking/${courseId}/q${String(index + 1).padStart(2, '0')}.mp3`
+      }))
+    }
+    const scorer = async (request) => ({
+      ...request, total: 80, is_rejected: false, words: [],
+      recording_path: `sherlock-english/test/test/${courseId}/${request.result_id}/q${String(request.question_id).padStart(2, '0')}-take${request.attempt}.wav`
+    })
+    const store = memoryStore()
+    const passwordHash = await hashPassword('right-password', '00112233445566778899aabbccddeeff')
+    const service = createService({
+      store, passwordHash, hmacKey: '1234567890abcdef', randomToken: () => 'test-token',
+      speakingCourseProvider: { get: () => ({ course, version: 'version12' }) },
+      speakingScorer: scorer
+    })
+    const auth = await service.handle({ action: 'parentAuth', password: 'right-password' }, { callerId: 'parent' })
+    const request = { result_id: 'r12', course_id: courseId, course_version: 'version12', attempt: 1, wav_base64: Buffer.alloc(5000).toString('base64') }
+    const scored = []
+    for (let questionId = 1; questionId <= 12; questionId += 1) {
+      scored.push(await service.handle({ action: 'scoreSpeakingTake', session_token: auth.session_token, request: { ...request, question_id: questionId } }, { callerId: 'parent' }))
+    }
+    assert.equal(scored[11].stars, 3)
+    const submission = {
+      result_id: 'r12', student_id: 'sherlock', course_id: courseId, course_version: 'version12',
+      started_at: '2026-09-17T10:00:00.000Z', submitted_at: '2026-09-17T10:03:00.000Z', duration_seconds: 180,
+      questions: scored.map((item, index) => ({ id: index + 1, proofs: [item.proof], passed_by_safety: false }))
+    }
+    await service.handle({ action: 'submitSpeakingResult', session_token: auth.session_token, submission }, { callerId: 'parent' })
+    await service.handle({ action: 'submitSpeakingResult', session_token: auth.session_token, submission }, { callerId: 'parent' })
+    assert.equal(store.results.size, 1)
+    assert.equal(store.results.get('r12').question_results.length, 12)
+    assert.match(store.results.get('r12').question_results[11].recordings[0], /q12-take1\.wav$/)
+  })
   it('uploads bounded private chunks, reassembles the WAV, and reuses the existing scoring contract', async () => {
     let scoredBase64 = ''
     const uploadStore = memoryUploadStore()

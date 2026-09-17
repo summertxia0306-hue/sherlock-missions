@@ -149,6 +149,35 @@ describe('P3 speaking page', () => {
     expect(await screen.findByRole('heading', { name: '跟读口语' })).toBeInTheDocument()
   })
 
+  it('resumes at question twelve and submits all twelve proofs instead of stopping at eight', async () => {
+    const id = 'S4A-T1-W01-D18'
+    const pair = '4A-T1-W01-D18'
+    const twelve = parseSpeakingCourse({
+      course_id: id, course_version: 'version12', pair_id: pair, study_pack: pair,
+      title: 'Unit 3', week: 4, day: 3, course_type: 'training', est_minutes: 12,
+      questions: Array.from({ length: 12 }, (_, index) => index < 6
+        ? { id: index + 1, type: 'repeat', text: `Sentence ${index + 1}.`, audio_asset: `audio/speaking/${id}/q${String(index + 1).padStart(2, '0')}.mp3` }
+        : { id: index + 1, type: 'qa', hint: `Question ${index + 1}.`, audio_asset: `audio/speaking/${id}/q${String(index + 1).padStart(2, '0')}.mp3` })
+    })
+    const twelveCatalog = parseSpeakingCatalog([{ course_id: id, course_version: 'version12', pair_id: pair, study_pack: pair, title: 'Unit 3', course_type: 'training', week: 4, day: 3, visible: true }])
+    const complete = Object.fromEntries(Array.from({ length: 11 }, (_, index) => [String(index + 1), {
+      proofs: [`proof-${index + 1}-1`], take_stars: [3], stars: 3, child_feedback: '', weak_words: [], word_lights: [], complete: true, passed_by_safety: false
+    }]))
+    sessionStorage.setItem(`sherlock-speaking-test-${id}`, JSON.stringify({ course_id: id, result_id: 'r12', started_at: '2026-09-17T10:00:00.000Z', questions: complete }))
+    const user = userEvent.setup()
+    const service = api(async (request) => scored(3, request.question_id, request.attempt))
+    render(<MemoryRouter><SpeakingPage api={service} sessionToken="token" loadCatalog={async () => twelveCatalog} loadCourse={async () => twelve} recorder={fakeRecorder()} /></MemoryRouter>)
+    await user.click(await screen.findByRole('button', { name: `开始 ${id}` }))
+    await finishTrial(user)
+    expect(screen.getByText(/第 12 \/ 12 题/)).toBeInTheDocument()
+    await recordAndScore(user)
+    await user.click(screen.getByRole('button', { name: '全部完成，提交 TEST' }))
+    await screen.findByRole('heading', { name: '完成啦' })
+    const submission = vi.mocked(service.submitSpeakingResult).mock.calls[0][1]
+    expect(submission.questions).toHaveLength(12)
+    expect(submission.questions[11]).toMatchObject({ id: 12, proofs: ['proof-12-1'] })
+  })
+
   it('keeps the local recording when scoring fails so the retry does not consume a take', async () => {
     const user = userEvent.setup()
     let calls = 0

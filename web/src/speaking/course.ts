@@ -8,10 +8,10 @@ const audioSchema = z.string().refine((value) => {
   return Boolean(match && isCourseId(match[1], 'speaking'))
 }, 'invalid speaking audio asset')
 const repeatSchema = z.object({
-  id: z.number().int().min(1).max(8), type: z.literal('repeat'), text: z.string().min(1).max(500), audio_asset: audioSchema
+  id: z.number().int().min(1).max(12), type: z.literal('repeat'), text: z.string().min(1).max(500), audio_asset: audioSchema
 }).strict()
 const qaSchema = z.object({
-  id: z.number().int().min(1).max(8), type: z.literal('qa'), hint: z.string().min(1).max(500), audio_asset: audioSchema
+  id: z.number().int().min(1).max(12), type: z.literal('qa'), hint: z.string().min(1).max(500), audio_asset: audioSchema
 }).strict()
 
 export const speakingQuestionSchema = z.discriminatedUnion('type', [repeatSchema, qaSchema])
@@ -20,16 +20,15 @@ export const speakingCourseSchema = z.object({
   pair_id: pairIdSchema.optional(), study_pack: pairIdSchema.optional(),
   title: z.string().min(1).max(160), week: z.number().int().positive(), day: z.number().int().positive(),
   course_type: z.enum(['training', 'weekly_review']), est_minutes: z.number().int().positive().max(60),
-  questions: z.array(speakingQuestionSchema).length(8)
+  questions: z.array(speakingQuestionSchema).min(8).max(12)
 }).strict().superRefine((course, context) => {
   const expected = pairIdForCourse(course.course_id)
   if (expected && (course.pair_id !== expected || course.study_pack !== expected)) {
     context.addIssue({ code: 'custom', message: 'term course must match pair_id and study_pack' })
   }
-  if (course.questions.some((item, index) => item.id !== index + 1)
-    || course.questions.filter((item) => item.type === 'repeat').length !== 6
-    || course.questions.filter((item) => item.type === 'qa').length !== 2) {
-    context.addIssue({ code: 'custom', message: 'speaking question sequence must be 6 repeat + 2 qa' })
+  if (![8, 10, 12].includes(course.questions.length)
+    || course.questions.some((item, index) => item.id !== index + 1 || item.type !== (index < 6 ? 'repeat' : 'qa'))) {
+    context.addIssue({ code: 'custom', message: 'speaking question sequence must be 6 repeat followed by 2, 4, or 6 qa' })
   }
   if (course.questions.some((item) => !item.audio_asset.includes(`/${course.course_id}/`))) {
     context.addIssue({ code: 'custom', message: 'audio must belong to course' })
