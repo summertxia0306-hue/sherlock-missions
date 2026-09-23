@@ -1,5 +1,7 @@
 # 听力模块对接契约与功能清单（给统一架构 / Codex）
 
+> 版本 v5.2 · 2026-09-23。当前唯一儿童 formal 入口为 Streamlit，CloudBase formal 保持关闭。新增 4A Unit 1–Unit 2 综合复习 L4A-T1-W01-D21–D25，题量 20/20/20/25/25；本批音频固定到内容提交 `b83a08ddfdf0066d0d419f39c61398c6640d8bb9`，优先 Gcore jsDelivr，并保留 cdn.jsdelivr.net 与 GitHub Raw 回退。旧课程和 D16–D20 的固定版本不变，推荐课程仍按首个 formal 未完成课程动态计算。
+
 > 版本 v5.1 · 2026-08-27。P5 课程列表恢复卡片内“推荐”标签，已完成课程标题与辅助信息置灰；听力/口语按钮和“返回本周任务”扩大触控留白。推荐算法、完成事实和 formal/test 边界不变。
 
 > 版本 v5.0 · 2026-08-26。P5 普通 CloudBase 儿童入口由服务端 formal 会话写正式结果；完成集合只读取 `student_id=sherlock`、`data_kind=formal`、`status=completed`，并以首个 formal 未完成课程为推荐、显示其附近最多 5 课。`?mode=test` 只接受当前应用内已认证家长会话，仍不产生完成状态。Streamlit 已改造为只读迁移提示，不再创建课程会话或提交结果。

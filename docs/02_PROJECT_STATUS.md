@@ -440,3 +440,19 @@ iOS 真机验收：家长确认 700KB 档通过；返回 700000 字节，PUT 233
 线上页面：D16–D20 十个直链可打开且题量正确；5 门口语试音话筒组件加载。课程列表仍按最近完成/最近待学窗口展示，当前进度未到 D16 时不直接列出后续课程
 数据边界：未制造 test/formal 学习结果；未改历史成绩、录音、private 或家庭 24 点；未执行真实 iPad 麦克风录制
 ```
+
+## 2026-09-23 Unit 1–Unit 2 综合复习 D21–D25 工程兼容与 Streamlit 发布
+
+```text
+当前正式入口：Streamlit；CloudBase formal 仍关闭，未切换入口或部署 CloudBase formal
+课程：L/S4A-T1-W01-D21–D25 共 5 对；听力 20/20/20/25/25，口语 10/10/12/12/12；旧 8 题与 D16–D20 继续兼容
+提交：内容与音频固定版本 b83a08d；工程兼容 5b04f82；均已推送 main
+固定音频：D21–D25 独立使用 b83a08d 的 Gcore jsDelivr 主节点，保留 cdn.jsdelivr.net / GitHub Raw 回退；历史批次固定版本不变
+自动验证：Python 104/104、Web 110/110、sherlock-api 87/87、score-speaking 13/13；TypeScript、production build、8/10/12 题、recorder 热部署/连续 5 次 rerun/灰块回归均通过
+源保护：同步前后 content/listening、content/speaking 与 static/audio 共 2577 个文件逐项哈希零变化；未覆盖 01 内容或历史课程
+线上音频：154/154 HTTP 200、非空、完整 SHA-256 与本地一致；五门听力试音和五门口语示范音/话筒的本地 Streamlit 渲染参数均含完整固定 SHA
+线上状态：Streamlit /healthz 正常，十个直链 HTTP 200；浏览器自动化服务故障导致部署后动态 DOM/iframe 未取证，因此不登记“工程发布通过”
+隔离：CloudBase health 为 formal_enabled=false / writes=test-only；家庭 24 点 HTTP 200；未生成 test/formal 结果、录音或完成状态
+待验：线上动态 DOM/iframe 与真实 iPad 麦克风授权、录音、回听、讯飞评分、题号 9–12、整课提交
+回滚：动态页面、音频、话筒或结果结构异常时停用本批并回退 Streamlit 到 d62b5e3；不删除课程、成绩、录音或 Git 历史
+```
