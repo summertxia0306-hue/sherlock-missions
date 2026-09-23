@@ -1,0 +1,57 @@
+[
+  {
+    "course_id": "S4A-T1-W01-D21",
+    "course_version": "80f346892ca16ba8",
+    "title": "四上·第21课｜Unit 1校园生活·地点活动与喜好（口语）",
+    "course_type": "training",
+    "week": 5,
+    "day": 1,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D21",
+    "study_pack": "4A-T1-W01-D21"
+  },
+  {
+    "course_id": "S4A-T1-W01-D22",
+    "course_version": "d36f5ff72e7cc773",
+    "title": "四上·第22课｜Unit 2我的同学·特点习惯与梦想（口语）",
+    "course_type": "training",
+    "week": 5,
+    "day": 2,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D22",
+    "study_pack": "4A-T1-W01-D22"
+  },
+  {
+    "course_id": "S4A-T1-W01-D23",
+    "course_version": "35b9a74a43ea90f0",
+    "title": "四上·第23课｜Unit 1–2人物地点活动·信息整合（口语）",
+    "course_type": "training",
+    "week": 5,
+    "day": 3,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D23",
+    "study_pack": "4A-T1-W01-D23"
+  },
+  {
+    "course_id": "S4A-T1-W01-D24",
+    "course_version": "52cb4af21443f371",
+    "title": "四上·第24课｜Unit 1–2相似信息·连续对话（口语）",
+    "course_type": "training",
+    "week": 5,
+    "day": 4,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D24",
+    "study_pack": "4A-T1-W01-D24"
+  },
+  {
+    "course_id": "S4A-T1-W01-D25",
+    "course_version": "0ba5a1a5ba403e64",
+    "title": "四上·第25课｜Unit 1–2综合复习与检测（口语）",
+    "course_type": "weekly_review",
+    "week": 5,
+    "day": 5,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D25",
+    "study_pack": "4A-T1-W01-D25"
+  }
+]

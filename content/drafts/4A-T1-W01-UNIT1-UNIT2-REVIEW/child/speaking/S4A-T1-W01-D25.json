@@ -1,0 +1,85 @@
+{
+  "course_id": "S4A-T1-W01-D25",
+  "pair_id": "4A-T1-W01-D25",
+  "study_pack": "4A-T1-W01-D25",
+  "course_version": "0ba5a1a5ba403e64",
+  "title": "四上·第25课｜Unit 1–2综合复习与检测（口语）",
+  "week": 5,
+  "day": 5,
+  "course_type": "weekly_review",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Minmin is good at football and plays on the sports field.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D25/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "James is in the library, tells interesting stories, and helps others learn English.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D25/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "The bamboo buildings look like umbrellas, but the library looks like a boat.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D25/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "She is friendly and helpful, good at painting pictures, and wants to be a painter.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D25/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "His classmates slow down the rope, cheer for him, and help him skip.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D25/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Our school is lovely, and our classmates are different but all great.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D25/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：Yaoyao经常帮助James学中文。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D25/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用一句话说出Minmin活动的地点和擅长项目。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D25/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用一句话说出James的位置和帮助行为。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D25/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用一句话分别说出两处建筑的外形。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D25/q10.mp3"
+    },
+    {
+      "id": 11,
+      "type": "qa",
+      "hint": "用一句话说出她的特点、擅长项目和梦想。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D25/q11.mp3"
+    },
+    {
+      "id": 12,
+      "type": "qa",
+      "hint": "用一句话说出故事中的问题和结果。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D25/q12.mp3"
+    }
+  ]
+}

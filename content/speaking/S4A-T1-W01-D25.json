@@ -1,0 +1,124 @@
+{
+  "course_id": "S4A-T1-W01-D25",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D25",
+  "pair_id": "4A-T1-W01-D25",
+  "publication_status": "formal",
+  "title": "四上·第25课｜Unit 1–2综合复习与检测（口语）",
+  "week": 5,
+  "day": 5,
+  "course_type": "weekly_review",
+  "est_minutes": 12,
+  "scope": "4A Unit 1 p7-p14 + Unit 2 p15-p22",
+  "difficulty": "L3",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D25/q01.mp3",
+      "tag": "A主线·p9,p17·人物能力地点综合",
+      "parent_note": "确认版教材p9,p17主线或不增加新知识的同语境受控重组",
+      "text": "Minmin is good at football and plays on the sports field."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D25/q02.mp3",
+      "tag": "A主线·p10-p11,p18-p19·人物三信息整合",
+      "parent_note": "确认版教材p10-p11,p18-p19主线或不增加新知识的同语境受控重组",
+      "text": "James is in the library, tells interesting stories, and helps others learn English."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D25/q03.mp3",
+      "tag": "A主线·p12-p14·双场所外形对比",
+      "parent_note": "确认版教材p12-p14主线或不增加新知识的同语境受控重组",
+      "text": "The bamboo buildings look like umbrellas, but the library looks like a boat."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D25/q04.mp3",
+      "tag": "A主线·p17-p22·人物多线索描述",
+      "parent_note": "确认版教材p17-p22主线或不增加新知识的同语境受控重组",
+      "text": "She is friendly and helpful, good at painting pictures, and wants to be a painter."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D25/q05.mp3",
+      "tag": "A主线·p20-p21·故事帮助过程",
+      "parent_note": "确认版教材p20-p21主线或不增加新知识的同语境受控重组",
+      "text": "His classmates slow down the rope, cheer for him, and help him skip."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D25/q06.mp3",
+      "tag": "A主线·p7-p22·双单元主题总结",
+      "parent_note": "确认版教材p7-p22主线或不增加新知识的同语境受控重组",
+      "text": "Our school is lovely, and our classmates are different but all great."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D25/q07.mp3",
+      "tag": "C微调·p17-p19·人物信息对应",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p17-p19，不作未掌握结论",
+      "question": "Who often helps James with his Chinese?",
+      "expected": "Yaoyao often helps James with his Chinese.",
+      "hint": "用完整句回答：Yaoyao经常帮助James学中文。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D25/q08.mp3",
+      "tag": "A主线·p9,p17·人物地点能力整合",
+      "parent_note": "确认版教材p9,p17主线或不增加新知识的同语境受控重组",
+      "question": "Where does Minmin play, and what is he good at?",
+      "expected": "Minmin plays on the sports field and is good at football.",
+      "hint": "用一句话说出Minmin活动的地点和擅长项目。"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D25/q09.mp3",
+      "tag": "A主线·p10-p11,p18-p19·人物地点行为整合",
+      "parent_note": "确认版教材p10-p11,p18-p19主线或不增加新知识的同语境受控重组",
+      "question": "Where is James, and why is he helpful?",
+      "expected": "James is in the library and often helps others learn English.",
+      "hint": "用一句话说出James的位置和帮助行为。"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D25/q10.mp3",
+      "tag": "A主线·p12-p14·双场所外形整合",
+      "parent_note": "确认版教材p12-p14主线或不增加新知识的同语境受控重组",
+      "question": "How are the bamboo buildings and the library different?",
+      "expected": "The bamboo buildings look like umbrellas, and the library looks like a boat.",
+      "hint": "用一句话分别说出两处建筑的外形。"
+    },
+    {
+      "id": 11,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D25/q11.mp3",
+      "tag": "A主线·p17-p22·人物三线索描述",
+      "parent_note": "确认版教材p17-p22主线或不增加新知识的同语境受控重组",
+      "question": "Can you describe the helpful girl in the project?",
+      "expected": "She is helpful, good at painting pictures, and wants to be a painter.",
+      "hint": "用一句话说出她的特点、擅长项目和梦想。"
+    },
+    {
+      "id": 12,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D25/q12.mp3",
+      "tag": "A主线·p20-p21·故事前后整合输出",
+      "parent_note": "确认版教材p20-p21主线或不增加新知识的同语境受控重组",
+      "question": "What is the problem, and what is the result in the rope story?",
+      "expected": "James cannot skip at first, but he jumps in and skips at the end.",
+      "hint": "用一句话说出故事中的问题和结果。"
+    }
+  ]
+}

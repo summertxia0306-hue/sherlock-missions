@@ -1,0 +1,2122 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "generation_status": "READY_TO_GENERATE",
+  "publication_status": "formal",
+  "expected_listening_outputs": 98,
+  "expected_speaking_outputs": 56,
+  "expected_total_outputs": 154,
+  "items": [
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D21",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D21/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D21",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D21/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "library"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D21",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D21/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "sports field"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D21",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D21/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "ground floor"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D21",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D21/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "computer room"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D21",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D21/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "In the classroom I study."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D21",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D21/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "We play basketball on the sports field."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D21",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D21/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "James is in the library."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D21",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D21/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "The bamboo buildings have no walls."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D21",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D21/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do you study?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D21",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D21/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Where is James?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D21",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D21/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Which place do you like best?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D21",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D21/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What are the school buildings made of?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D21",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D21/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "I like the sports field best."
+        ],
+        [
+          "m",
+          "We play basketball there."
+        ],
+        [
+          "n",
+          "Question: What do they do there?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D21",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D21/q14.mp3",
+      "clips": [
+        [
+          "m",
+          "James is in the library."
+        ],
+        [
+          "f",
+          "I can go and look for him."
+        ],
+        [
+          "n",
+          "Question: Where will the girl go?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D21",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D21/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "The classroom has no computers."
+        ],
+        [
+          "m",
+          "Let us meet in the computer room."
+        ],
+        [
+          "n",
+          "Question: Why do they choose the computer room?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D21",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D21/q16.mp3",
+      "clips": [
+        [
+          "m",
+          "My favourite place is the library."
+        ],
+        [
+          "f",
+          "It looks like a boat."
+        ],
+        [
+          "n",
+          "Question: Which place looks like a boat?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D21",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D21/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "I like my school. In the classroom I study, and on the sports field I play. James is in the library. My favourite place is the library on the ground floor. It looks like a boat, and I read many interesting books there."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D22",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D22/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D22",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D22/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "helpful"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D22",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D22/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "writer"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D22",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D22/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "basketball"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D22",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D22/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "often helps"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D22",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D22/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "Shenshen wants to be a writer."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D22",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D22/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Xiaopu is good at basketball."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D22",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D22/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "James often tells interesting stories."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D22",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D22/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "James is happy and excited at the end of the story."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D22",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D22/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What does Shenshen want to be?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D22",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D22/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Who is good at basketball?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D22",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D22/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "How does James help other students?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D22",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D22/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "How does James feel at the end?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D22",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D22/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "Shenshen wants to be a writer."
+        ],
+        [
+          "m",
+          "Xiaojiang wants to be a painter."
+        ],
+        [
+          "n",
+          "Question: Who wants to be a painter?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D22",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D22/q14.mp3",
+      "clips": [
+        [
+          "m",
+          "Minmin is good at football."
+        ],
+        [
+          "f",
+          "Xiaopu is good at basketball."
+        ],
+        [
+          "n",
+          "Question: What is Minmin good at?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D22",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D22/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "He has a lovely smile and many friends."
+        ],
+        [
+          "m",
+          "He often tells interesting stories."
+        ],
+        [
+          "f",
+          "It is James."
+        ],
+        [
+          "n",
+          "Question: Who is the classmate?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D22",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D22/q16.mp3",
+      "clips": [
+        [
+          "m",
+          "James is afraid of the long rope."
+        ],
+        [
+          "f",
+          "His classmates slow it down and cheer for him."
+        ],
+        [
+          "m",
+          "Now he jumps in and skips."
+        ],
+        [
+          "n",
+          "Question: What helps James succeed?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D22",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D22/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "My classmates are different but all great. Shenshen wants to be a writer, and Xiaojiang wants to be a painter. Minmin is good at football, and Xiaopu is good at basketball. Yaoyao often helps James with his Chinese. James often helps other students learn English."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D23",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D23/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D23",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D23/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "school history project"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D23",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D23/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "helpful classmate"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D23",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D23/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "computer room"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D23",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D23/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "painter"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D23",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D23/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "Minmin plays football and likes the sports field."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D23",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D23/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "James is in the library and often helps others learn English."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D23",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D23/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "The helpful girl likes painting pictures."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D23",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D23/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "The bamboo school has no walls, and James can skip at the end."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D23",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D23/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Where does Minmin play football?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D23",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D23/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Who wants to be a painter?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D23",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D23/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Where can the group use computers?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D23",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D23/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What does James often do?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D23",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D23/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "Minmin is good at football."
+        ],
+        [
+          "m",
+          "He plays on the sports field."
+        ],
+        [
+          "f",
+          "We always cheer for him."
+        ],
+        [
+          "n",
+          "Question: Where does Minmin play?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D23",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D23/q14.mp3",
+      "clips": [
+        [
+          "m",
+          "James is in the library."
+        ],
+        [
+          "f",
+          "He often helps other students learn English."
+        ],
+        [
+          "m",
+          "He is helpful and interesting."
+        ],
+        [
+          "n",
+          "Question: Which two things do we learn about James?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D23",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D23/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "She is friendly and helpful."
+        ],
+        [
+          "m",
+          "She is good at painting pictures."
+        ],
+        [
+          "f",
+          "She likes the art room in our school."
+        ],
+        [
+          "n",
+          "Question: Which place does she like?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D23",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D23/q16.mp3",
+      "clips": [
+        [
+          "m",
+          "Xiaopu is on the sports field."
+        ],
+        [
+          "f",
+          "He is good at basketball."
+        ],
+        [
+          "m",
+          "Let us look for him there."
+        ],
+        [
+          "n",
+          "Question: Who will they look for?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D23",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D23/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "Our classmates use different places in the school. Minmin is good at football and plays on the sports field. James is in the library and often helps other students learn English. Xiaojiang wants to be a painter and likes the art room. The group meets in the computer room for the school history project."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D24/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "ground floor"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "helps students learn English"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "painting pictures"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "turn the rope more slowly"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "helpful"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "James is in the library, but the group will meet in the computer room."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "The bamboo buildings look like umbrellas, and the library looks like a boat."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Yaoyao helps James with Chinese, and James helps others learn English."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Shenshen wants to be a writer, and Xiaojiang wants to be a painter."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "James is afraid at first and excited at the end."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Where is James, and where will the group meet?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Who wants to be a writer?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q13.mp3",
+      "clips": [
+        [
+          "n",
+          "Who helps James with Chinese?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q14.mp3",
+      "clips": [
+        [
+          "n",
+          "What does the library look like, and what do you do there?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q15.mp3",
+      "clips": [
+        [
+          "n",
+          "What is the result of the rope story?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "James is in the library."
+        ],
+        [
+          "m",
+          "Xiaopu is on the sports field."
+        ],
+        [
+          "f",
+          "The classroom has no computers."
+        ],
+        [
+          "m",
+          "Then let us meet in the computer room on the ground floor."
+        ],
+        [
+          "n",
+          "Question: Where will the group meet?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_17",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q17.mp3",
+      "clips": [
+        [
+          "m",
+          "Yaoyao often helps James with his Chinese."
+        ],
+        [
+          "f",
+          "James often helps other students learn English."
+        ],
+        [
+          "m",
+          "Xiaopu helps teachers clean the blackboard."
+        ],
+        [
+          "n",
+          "Question: Who helps students learn English?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_18",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q18.mp3",
+      "clips": [
+        [
+          "f",
+          "She is friendly and helpful."
+        ],
+        [
+          "m",
+          "She is good at painting pictures."
+        ],
+        [
+          "f",
+          "She likes the art room, but her favourite place is the library."
+        ],
+        [
+          "n",
+          "Question: Which place does she like best?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_19",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q19.mp3",
+      "clips": [
+        [
+          "m",
+          "Minmin is good at football."
+        ],
+        [
+          "f",
+          "She also shows James how to jump."
+        ],
+        [
+          "m",
+          "Shenshen and Xiaojiang slow down the rope."
+        ],
+        [
+          "f",
+          "Then James jumps in and skips."
+        ],
+        [
+          "n",
+          "Question: What does Minmin do for James?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "question_20",
+      "path": "static/audio/listening/L4A-T1-W01-D24/q20.mp3",
+      "clips": [
+        [
+          "f",
+          "The bamboo buildings have no walls and look like umbrellas."
+        ],
+        [
+          "m",
+          "Our library has no chairs or desks and looks like a boat."
+        ],
+        [
+          "f",
+          "These places are special."
+        ],
+        [
+          "n",
+          "Question: Which place looks like a boat?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D24",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D24/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "James is in the library, but his group will meet in the computer room on the ground floor. The classroom has no computers. James is helpful and often helps other students learn English. Yaoyao helps James with his Chinese. Later, the classmates skip with a long rope. James is afraid at first. His classmates slow down the rope and cheer for him. Then he jumps in and skips."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D25/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "favourite place"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "guessing game"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "does not have any"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "good at painting pictures"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "interesting"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Minmin is good at football and plays on the sports field."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "James is in the library and helps other students learn English."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "The bamboo buildings look like umbrellas, but the library looks like a boat."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "The girl is helpful, good at painting pictures, and wants to be a painter."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "James cannot skip at first, but he can skip at the end."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Which school place do you like best, and what do you do there?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Who often helps James with his Chinese?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q13.mp3",
+      "clips": [
+        [
+          "n",
+          "Who wants to be a painter and is good at painting pictures?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q14.mp3",
+      "clips": [
+        [
+          "n",
+          "Where is James, and what does he often do?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q15.mp3",
+      "clips": [
+        [
+          "n",
+          "What happens after the classmates help James?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "Minmin is good at football."
+        ],
+        [
+          "m",
+          "He plays on the sports field."
+        ],
+        [
+          "f",
+          "Xiaopu is good at basketball."
+        ],
+        [
+          "m",
+          "We always cheer for them."
+        ],
+        [
+          "n",
+          "Question: Which sport is Minmin good at?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_17",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q17.mp3",
+      "clips": [
+        [
+          "m",
+          "James is in the library."
+        ],
+        [
+          "f",
+          "He often tells interesting stories."
+        ],
+        [
+          "m",
+          "He also helps other students learn English."
+        ],
+        [
+          "f",
+          "He is interesting and helpful."
+        ],
+        [
+          "n",
+          "Question: Which two words describe James?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_18",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q18.mp3",
+      "clips": [
+        [
+          "f",
+          "The library is on the ground floor and looks like a boat."
+        ],
+        [
+          "m",
+          "This helpful girl is good at painting pictures."
+        ],
+        [
+          "f",
+          "She likes the art room, but she reads in the library."
+        ],
+        [
+          "n",
+          "Question: Where does the girl read?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_19",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q19.mp3",
+      "clips": [
+        [
+          "m",
+          "Shenshen wants to be a writer."
+        ],
+        [
+          "f",
+          "Xiaojiang wants to be a painter."
+        ],
+        [
+          "m",
+          "They slow down the rope for James."
+        ],
+        [
+          "f",
+          "Then they cheer when he skips."
+        ],
+        [
+          "n",
+          "Question: What do Shenshen and Xiaojiang do for James?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "question_20",
+      "path": "static/audio/listening/L4A-T1-W01-D25/q20.mp3",
+      "clips": [
+        [
+          "f",
+          "Our favourite school place project is about the library."
+        ],
+        [
+          "m",
+          "Our classmate project is a guessing game."
+        ],
+        [
+          "f",
+          "One project describes a place."
+        ],
+        [
+          "m",
+          "The other describes a classmate."
+        ],
+        [
+          "n",
+          "Question: What do the two projects describe?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D25",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D25/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "Our school is special, and our classmates are different but all great. Minmin is good at football and plays on the sports field. James is in the library, tells interesting stories, and helps other students learn English. The library is on the ground floor and looks like a boat. A helpful girl likes painting pictures and wants to be a painter. When James is afraid of the long rope, his classmates slow it down and cheer for him. At the end, he jumps in and skips."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D21",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D21/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "In the classroom I study, and on the sports field I play."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D21",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D21/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "I like the library best in our school."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D21",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D21/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "James is in the library, and Xiaopu is on the sports field."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D21",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D21/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "The classroom has no computers."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D21",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D21/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "The bamboo buildings look like big umbrellas."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D21",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D21/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "The library is on the ground floor and looks like a boat."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D21",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D21/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do you play basketball?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D21",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D21/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Where will Minmin's group meet?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D21",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D21/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What are the bamboo buildings made of?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D21",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D21/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What do you do in the library?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D22",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D22/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "My classmates are different but all great."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D22",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D22/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "Shenshen wants to be a writer, and Xiaojiang wants to be a painter."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D22",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D22/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "Minmin is good at football, and Xiaopu is good at basketball."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D22",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D22/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "Yaoyao often helps James with his Chinese."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D22",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D22/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "James often tells interesting stories and helps others learn English."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D22",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D22/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "His classmates cheer for him, and James is happy and excited."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D22",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D22/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Who is good at basketball?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D22",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D22/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "What does Xiaojiang want to be?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D22",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D22/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Why is James helpful?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D22",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D22/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What is the result of the rope story?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D23",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D23/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "Minmin is good at football and plays on the sports field."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D23",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D23/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "James is in the library and often helps other students learn English."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D23",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D23/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "Xiaojiang wants to be a painter and is good at painting pictures."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D23",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D23/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "The helpful girl likes the art room and often helps me draw."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D23",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D23/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "The group needs computers and meets in the computer room."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D23",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D23/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Our school is special, and our classmates are different but all great."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D23",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D23/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Who wants to be a painter?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D23",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D23/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Where does Minmin play football?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D23",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D23/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Where is James and how does he help others?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D23",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D23/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What is special about the library?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D23",
+      "kind": "question_11_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D23/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What is the helpful girl good at?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D23",
+      "kind": "question_12_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D23/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Where will the group meet for the project?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D24",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D24/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "James is in the library, but the group will meet in the computer room."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D24",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D24/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "The bamboo buildings look like umbrellas, but the library looks like a boat."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D24",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D24/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "Shenshen wants to be a writer, and Xiaojiang wants to be a painter."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D24",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D24/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "Yaoyao helps James with Chinese, and James helps others learn English."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D24",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D24/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "His classmates slow down the rope and cheer for him."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D24",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D24/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "James is afraid at first, but he is happy and excited at the end."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D24",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D24/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Who wants to be a writer?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D24",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D24/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Where is James, and where will the group meet?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D24",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D24/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What do the bamboo buildings and the library look like?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D24",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D24/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "How do Yaoyao and James help others?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D24",
+      "kind": "question_11_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D24/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "How do the classmates help James?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D24",
+      "kind": "question_12_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D24/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "How does James feel at first and at the end?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D25",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D25/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "Minmin is good at football and plays on the sports field."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D25",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D25/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "James is in the library, tells interesting stories, and helps others learn English."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D25",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D25/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "The bamboo buildings look like umbrellas, but the library looks like a boat."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D25",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D25/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "She is friendly and helpful, good at painting pictures, and wants to be a painter."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D25",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D25/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "His classmates slow down the rope, cheer for him, and help him skip."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D25",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D25/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Our school is lovely, and our classmates are different but all great."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D25",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D25/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Who often helps James with his Chinese?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D25",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D25/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Where does Minmin play, and what is he good at?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D25",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D25/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Where is James, and why is he helpful?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D25",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D25/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "How are the bamboo buildings and the library different?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D25",
+      "kind": "question_11_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D25/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Can you describe the helpful girl in the project?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D25",
+      "kind": "question_12_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D25/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What is the problem, and what is the result in the rope story?"
+        ]
+      ]
+    }
+  ]
+}

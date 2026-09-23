@@ -1,0 +1,447 @@
+{
+  "course_id": "L4A-T1-W01-D23",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D23",
+  "pair_id": "4A-T1-W01-D23",
+  "publication_status": "formal",
+  "title": "四上·第23课｜Unit 1–2人物地点活动·信息整合（听力）",
+  "week": 5,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 17,
+  "scope": "4A Unit 1 p7-p14 + Unit 2 p15-p22",
+  "difficulty": "L2",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D23/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p10-p11·Unit 1项目识别",
+          "parent_note": "确认版教材p10-p11主线或不增加新知识的同语境受控重组",
+          "options": [
+            "school history project",
+            "guessing game",
+            "favourite place"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "school history project"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D23/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p15-p22·Unit 2人物特点识别",
+          "parent_note": "确认版教材p15-p22主线或不增加新知识的同语境受控重组",
+          "options": [
+            "helpful classmate",
+            "interesting story",
+            "lovely school"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "helpful classmate"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D23/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p7-p14·功能房识别",
+          "parent_note": "确认版教材p7-p14主线或不增加新知识的同语境受控重组",
+          "options": [
+            "computer room",
+            "classroom",
+            "art room"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "computer room"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D23/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p17-p22·听音选词与人物梦想辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p17-p22，不作未掌握结论",
+          "options": [
+            "writer",
+            "painter",
+            "classmate"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "painter"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D23/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p9,p17·跨单元人物活动辨别",
+          "parent_note": "确认版教材p9,p17主线或不增加新知识的同语境受控重组",
+          "display": "Minmin plays basketball on the sports field.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Minmin plays football and likes the sports field."
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D23/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p10-p11,p18-p19·人物地点与行为整合",
+          "parent_note": "确认版教材p10-p11,p18-p19主线或不增加新知识的同语境受控重组",
+          "display": "James is in the library and often helps others learn English.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "James is in the library and often helps others learn English."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D23/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p14,p22·喜好与人物特点整合",
+          "parent_note": "确认版教材p14,p22主线或不增加新知识的同语境受控重组",
+          "display": "The helpful girl likes painting pictures.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The helpful girl likes painting pictures."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D23/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p12-p13,p20-p21·双单元事实判断",
+          "parent_note": "确认版教材p12-p13,p20-p21主线或不增加新知识的同语境受控重组",
+          "display": "The bamboo school has walls, and James cannot skip at the end.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The bamboo school has no walls, and James can skip at the end."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D23/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p9·人物活动地点问答",
+          "parent_note": "确认版教材p9主线或不增加新知识的同语境受控重组",
+          "options": [
+            "On the sports field.",
+            "In the library.",
+            "In the hall."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where does Minmin play football?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D23/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p17·问句选答语与人物梦想对应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p17，不作未掌握结论",
+          "options": [
+            "Shenshen.",
+            "Xiaojiang.",
+            "James."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Who wants to be a painter?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D23/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p10-p11·功能房选择",
+          "parent_note": "确认版教材p10-p11主线或不增加新知识的同语境受控重组",
+          "options": [
+            "In the computer room.",
+            "In the hall.",
+            "On the sports field."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where can the group use computers?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D23/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p18-p19·人物习惯问答",
+          "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+          "options": [
+            "He tells interesting stories.",
+            "He plays in the hall.",
+            "He reads about bamboo."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does James often do?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D23/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p9,p17·人物擅长与地点整合",
+          "parent_note": "确认版教材p9,p17主线或不增加新知识的同语境受控重组",
+          "question_text": "Where does Minmin play?",
+          "options": [
+            "On the sports field.",
+            "In the hall.",
+            "In the library."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Minmin is good at football."
+            ],
+            [
+              "m",
+              "He plays on the sports field."
+            ],
+            [
+              "f",
+              "We always cheer for him."
+            ],
+            [
+              "n",
+              "Question: Where does Minmin play?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D23/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p10-p11,p18-p19·人物地点与行为整合",
+          "parent_note": "确认版教材p10-p11,p18-p19主线或不增加新知识的同语境受控重组",
+          "question_text": "Which two things do we learn about James?",
+          "options": [
+            "His place and his actions.",
+            "His dream and his sport.",
+            "His classroom and his teacher."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "James is in the library."
+            ],
+            [
+              "f",
+              "He often helps other students learn English."
+            ],
+            [
+              "m",
+              "He is helpful and interesting."
+            ],
+            [
+              "n",
+              "Question: Which two things do we learn about James?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D23/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p14,p22·人物能力与场所匹配",
+          "parent_note": "确认版教材p14,p22主线或不增加新知识的同语境受控重组",
+          "question_text": "Which place does she like?",
+          "options": [
+            "The art room.",
+            "The sports field.",
+            "The computer room."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "She is friendly and helpful."
+            ],
+            [
+              "m",
+              "She is good at painting pictures."
+            ],
+            [
+              "f",
+              "She likes the art room in our school."
+            ],
+            [
+              "n",
+              "Question: Which place does she like?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D23/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p10-p11,p17·人物地点活动多信息",
+          "parent_note": "确认版教材p10-p11,p17主线或不增加新知识的同语境受控重组",
+          "question_text": "Who will they look for?",
+          "options": [
+            "Xiaopu.",
+            "James.",
+            "Shenshen."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Xiaopu is on the sports field."
+            ],
+            [
+              "f",
+              "He is good at basketball."
+            ],
+            [
+              "m",
+              "Let us look for him there."
+            ],
+            [
+              "n",
+              "Question: Who will they look for?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D23/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p9,p17·人物活动地点",
+          "parent_note": "确认版教材p9,p17主线或不增加新知识的同语境受控重组",
+          "statement": "Minmin plays on the sports field.",
+          "answer": "true",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p10-p11,p18-p19·人物地点辨别",
+          "parent_note": "确认版教材p10-p11,p18-p19主线或不增加新知识的同语境受控重组",
+          "statement": "James is in the computer room.",
+          "answer": "false",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p17,p22·人物梦想判断",
+          "parent_note": "确认版教材p17,p22主线或不增加新知识的同语境受控重组",
+          "statement": "Xiaojiang wants to be a painter.",
+          "answer": "true",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p10-p11·项目地点判断",
+          "parent_note": "确认版教材p10-p11主线或不增加新知识的同语境受控重组",
+          "statement": "The group meets in the classroom for the project.",
+          "answer": "false",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D23/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Our classmates use different places in the school. Minmin is good at football and plays on the sports field. James is in the library and often helps other students learn English. Xiaojiang wants to be a painter and likes the art room. The group meets in the computer room for the school history project."
+        ]
+      ]
+    }
+  ]
+}

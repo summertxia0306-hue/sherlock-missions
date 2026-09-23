@@ -1,0 +1,85 @@
+{
+  "course_id": "S4A-T1-W01-D23",
+  "pair_id": "4A-T1-W01-D23",
+  "study_pack": "4A-T1-W01-D23",
+  "course_version": "35b9a74a43ea90f0",
+  "title": "四上·第23课｜Unit 1–2人物地点活动·信息整合（口语）",
+  "week": 5,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Minmin is good at football and plays on the sports field.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D23/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "James is in the library and often helps other students learn English.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D23/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "Xiaojiang wants to be a painter and is good at painting pictures.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D23/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "The helpful girl likes the art room and often helps me draw.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D23/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "The group needs computers and meets in the computer room.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D23/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Our school is special, and our classmates are different but all great.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D23/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：Xiaojiang想成为画家。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D23/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：Minmin在运动场踢足球。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D23/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用一句话回答：James在图书馆，并帮助别人学英语。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D23/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用一句话说出图书馆的位置和外形。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D23/q10.mp3"
+    },
+    {
+      "id": 11,
+      "type": "qa",
+      "hint": "用完整句回答：她擅长画画。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D23/q11.mp3"
+    },
+    {
+      "id": 12,
+      "type": "qa",
+      "hint": "用完整句回答：他们将在电脑教室见面。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D23/q12.mp3"
+    }
+  ]
+}

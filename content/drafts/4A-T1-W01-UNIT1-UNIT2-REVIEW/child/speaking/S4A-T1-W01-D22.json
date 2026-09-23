@@ -1,0 +1,73 @@
+{
+  "course_id": "S4A-T1-W01-D22",
+  "pair_id": "4A-T1-W01-D22",
+  "study_pack": "4A-T1-W01-D22",
+  "course_version": "d36f5ff72e7cc773",
+  "title": "四上·第22课｜Unit 2我的同学·特点习惯与梦想（口语）",
+  "week": 5,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 10,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "My classmates are different but all great.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D22/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "Shenshen wants to be a writer, and Xiaojiang wants to be a painter.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D22/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "Minmin is good at football, and Xiaopu is good at basketball.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D22/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Yaoyao often helps James with his Chinese.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D22/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "James often tells interesting stories and helps others learn English.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D22/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "His classmates cheer for him, and James is happy and excited.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D22/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：Xiaopu擅长篮球。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D22/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：Xiaojiang想成为画家。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D22/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用完整句回答：他经常帮助其他同学学英语。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D22/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用完整句回答：James跳进去，和同学们一起跳绳。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D22/q10.mp3"
+    }
+  ]
+}

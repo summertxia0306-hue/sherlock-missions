@@ -1,0 +1,439 @@
+{
+  "course_id": "L4A-T1-W01-D22",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D22",
+  "pair_id": "4A-T1-W01-D22",
+  "publication_status": "formal",
+  "title": "四上·第22课｜Unit 2我的同学·特点习惯与梦想（听力）",
+  "week": 5,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 14,
+  "scope": "4A Unit 2 p15-p22",
+  "difficulty": "L1",
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D22/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p15-p22·人物特点识别",
+          "parent_note": "确认版教材p15-p22主线或不增加新知识的同语境受控重组",
+          "options": [
+            "helpful",
+            "interesting",
+            "different"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "helpful"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D22/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p17-p22·人物梦想识别",
+          "parent_note": "确认版教材p17-p22主线或不增加新知识的同语境受控重组",
+          "options": [
+            "painter",
+            "writer",
+            "classmate"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "writer"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D22/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p17·擅长项目识别",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "options": [
+            "football",
+            "basketball",
+            "long rope"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "basketball"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D22/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p17-p19·听音选词与频率行为辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p17-p19，不作未掌握结论",
+          "options": [
+            "always helps",
+            "often helps",
+            "often tells"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "often helps"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D22/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p17·人物梦想对应",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "display": "Shenshen wants to be a writer.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Shenshen wants to be a writer."
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D22/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p17·人物擅长项目辨别",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "display": "Xiaojiang is good at basketball.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Xiaopu is good at basketball."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D22/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p18-p19·人物习惯对应",
+          "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+          "display": "James often tells interesting stories.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "James often tells interesting stories."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D22/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p20-p21·故事结果辨别",
+          "parent_note": "确认版教材p20-p21主线或不增加新知识的同语境受控重组",
+          "display": "James is sad at the end of the story.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "James is happy and excited at the end of the story."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D22/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p17·人物梦想问答",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "options": [
+            "A writer.",
+            "A painter.",
+            "A teacher."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does Shenshen want to be?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D22/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p17·问句选答语与人物信息对应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p17，不作未掌握结论",
+          "options": [
+            "Minmin.",
+            "Xiaopu.",
+            "James."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Who is good at basketball?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D22/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p18-p19·帮助行为问答",
+          "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+          "options": [
+            "He helps them learn English.",
+            "He helps them draw.",
+            "He helps them play football."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "How does James help other students?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D22/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p20-p21·故事结果与情绪",
+          "parent_note": "确认版教材p20-p21主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Happy and excited.",
+            "Afraid and bad.",
+            "Lovely and helpful."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "How does James feel at the end?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D22/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p17·双人物梦想对应",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "question_text": "Who wants to be a painter?",
+          "options": [
+            "Shenshen.",
+            "Xiaojiang.",
+            "Yaoyao."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Shenshen wants to be a writer."
+            ],
+            [
+              "m",
+              "Xiaojiang wants to be a painter."
+            ],
+            [
+              "n",
+              "Question: Who wants to be a painter?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D22/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p17·双人物擅长项目辨别",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "question_text": "What is Minmin good at?",
+          "options": [
+            "Football.",
+            "Basketball.",
+            "Painting."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "Minmin is good at football."
+            ],
+            [
+              "f",
+              "Xiaopu is good at basketball."
+            ],
+            [
+              "n",
+              "Question: What is Minmin good at?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D22/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p18-p19·多线索猜人",
+          "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+          "question_text": "Who is the classmate?",
+          "options": [
+            "James.",
+            "Xiaopu.",
+            "Wenwen."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "He has a lovely smile and many friends."
+            ],
+            [
+              "m",
+              "He often tells interesting stories."
+            ],
+            [
+              "f",
+              "It is James."
+            ],
+            [
+              "n",
+              "Question: Who is the classmate?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D22/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p20-p21·问题解决结果",
+          "parent_note": "确认版教材p20-p21主线或不增加新知识的同语境受控重组",
+          "question_text": "What helps James succeed?",
+          "options": [
+            "His classmates help him.",
+            "He leaves the sports field.",
+            "He reads a book."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "m",
+              "James is afraid of the long rope."
+            ],
+            [
+              "f",
+              "His classmates slow it down and cheer for him."
+            ],
+            [
+              "m",
+              "Now he jumps in and skips."
+            ],
+            [
+              "n",
+              "Question: What helps James succeed?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D22/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p17-p19·人物梦想判断",
+          "parent_note": "确认版教材p17-p19主线或不增加新知识的同语境受控重组",
+          "statement": "Shenshen wants to be a writer.",
+          "answer": "true",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p17·人物信息判断",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "statement": "Xiaojiang is good at basketball.",
+          "answer": "false",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p17·帮助行为判断",
+          "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+          "statement": "Yaoyao helps James with his Chinese.",
+          "answer": "true",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p18-p19·相似语言信息辨别",
+          "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+          "statement": "James helps other students learn Chinese.",
+          "answer": "false",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D22/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "My classmates are different but all great. Shenshen wants to be a writer, and Xiaojiang wants to be a painter. Minmin is good at football, and Xiaopu is good at basketball. Yaoyao often helps James with his Chinese. James often helps other students learn English."
+        ]
+      ]
+    }
+  ]
+}

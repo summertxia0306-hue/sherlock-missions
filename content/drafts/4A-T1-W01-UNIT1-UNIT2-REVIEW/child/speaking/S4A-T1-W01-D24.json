@@ -1,0 +1,85 @@
+{
+  "course_id": "S4A-T1-W01-D24",
+  "pair_id": "4A-T1-W01-D24",
+  "study_pack": "4A-T1-W01-D24",
+  "course_version": "52cb4af21443f371",
+  "title": "四上·第24课｜Unit 1–2相似信息·连续对话（口语）",
+  "week": 5,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "James is in the library, but the group will meet in the computer room.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D24/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "The bamboo buildings look like umbrellas, but the library looks like a boat.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D24/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "Shenshen wants to be a writer, and Xiaojiang wants to be a painter.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D24/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Yaoyao helps James with Chinese, and James helps others learn English.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D24/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "His classmates slow down the rope and cheer for him.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D24/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "James is afraid at first, but he is happy and excited at the end.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D24/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：Shenshen想成为作家。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D24/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用一句话说出James的位置和小组见面地点。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D24/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用一句话分别说出两处建筑的外形。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D24/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用一句话分别说出两人的帮助行为。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D24/q10.mp3"
+    },
+    {
+      "id": 11,
+      "type": "qa",
+      "hint": "用完整句回答：他们放慢绳子并为他加油。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D24/q11.mp3"
+    },
+    {
+      "id": 12,
+      "type": "qa",
+      "hint": "用一句话说出James开始和最后的感受。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D24/q12.mp3"
+    }
+  ]
+}

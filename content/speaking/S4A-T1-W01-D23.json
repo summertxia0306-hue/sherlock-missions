@@ -1,0 +1,124 @@
+{
+  "course_id": "S4A-T1-W01-D23",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D23",
+  "pair_id": "4A-T1-W01-D23",
+  "publication_status": "formal",
+  "title": "四上·第23课｜Unit 1–2人物地点活动·信息整合（口语）",
+  "week": 5,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 12,
+  "scope": "4A Unit 1 p7-p14 + Unit 2 p15-p22",
+  "difficulty": "L2",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D23/q01.mp3",
+      "tag": "A主线·p9,p17·人物能力与地点",
+      "parent_note": "确认版教材p9,p17主线或不增加新知识的同语境受控重组",
+      "text": "Minmin is good at football and plays on the sports field."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D23/q02.mp3",
+      "tag": "A主线·p10-p11,p18-p19·人物地点与行为",
+      "parent_note": "确认版教材p10-p11,p18-p19主线或不增加新知识的同语境受控重组",
+      "text": "James is in the library and often helps other students learn English."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D23/q03.mp3",
+      "tag": "A主线·p17,p22·人物梦想与能力",
+      "parent_note": "确认版教材p17,p22主线或不增加新知识的同语境受控重组",
+      "text": "Xiaojiang wants to be a painter and is good at painting pictures."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D23/q04.mp3",
+      "tag": "A主线·p14,p22·人物特点与场所",
+      "parent_note": "确认版教材p14,p22主线或不增加新知识的同语境受控重组",
+      "text": "The helpful girl likes the art room and often helps me draw."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D23/q05.mp3",
+      "tag": "A主线·p10-p11·需求与见面地点",
+      "parent_note": "确认版教材p10-p11主线或不增加新知识的同语境受控重组",
+      "text": "The group needs computers and meets in the computer room."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D23/q06.mp3",
+      "tag": "A主线·p12-p13,p15-p22·双单元主题整合",
+      "parent_note": "确认版教材p12-p13,p15-p22主线或不增加新知识的同语境受控重组",
+      "text": "Our school is special, and our classmates are different but all great."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D23/q07.mp3",
+      "tag": "C微调·p17·人物梦想对应",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p17，不作未掌握结论",
+      "question": "Who wants to be a painter?",
+      "expected": "Xiaojiang wants to be a painter.",
+      "hint": "用完整句回答：Xiaojiang想成为画家。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D23/q08.mp3",
+      "tag": "A主线·p9,p17·人物活动地点",
+      "parent_note": "确认版教材p9,p17主线或不增加新知识的同语境受控重组",
+      "question": "Where does Minmin play football?",
+      "expected": "Minmin plays football on the sports field.",
+      "hint": "用完整句回答：Minmin在运动场踢足球。"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D23/q09.mp3",
+      "tag": "A主线·p10-p11,p18-p19·双信息整合问答",
+      "parent_note": "确认版教材p10-p11,p18-p19主线或不增加新知识的同语境受控重组",
+      "question": "Where is James and how does he help others?",
+      "expected": "James is in the library and helps others learn English.",
+      "hint": "用一句话回答：James在图书馆，并帮助别人学英语。"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D23/q10.mp3",
+      "tag": "A主线·p14·场所双特征",
+      "parent_note": "确认版教材p14主线或不增加新知识的同语境受控重组",
+      "question": "What is special about the library?",
+      "expected": "It is on the ground floor and looks like a boat.",
+      "hint": "用一句话说出图书馆的位置和外形。"
+    },
+    {
+      "id": 11,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D23/q11.mp3",
+      "tag": "A主线·p22·人物能力问答",
+      "parent_note": "确认版教材p22主线或不增加新知识的同语境受控重组",
+      "question": "What is the helpful girl good at?",
+      "expected": "She is good at painting pictures.",
+      "hint": "用完整句回答：她擅长画画。"
+    },
+    {
+      "id": 12,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D23/q12.mp3",
+      "tag": "A主线·p10-p11·项目地点输出",
+      "parent_note": "确认版教材p10-p11主线或不增加新知识的同语境受控重组",
+      "question": "Where will the group meet for the project?",
+      "expected": "They will meet in the computer room.",
+      "hint": "用完整句回答：他们将在电脑教室见面。"
+    }
+  ]
+}

@@ -6089,6 +6089,618 @@
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
    "text": "Here are three animal cards. The monkey card says monkeys live in Guizhou, eat fruit and leaves, and swing on branches. The elephant card says an elephant family from Yunnan are playing in a river. A farmer is giving them bananas. The polar bear card says polar bears live near the North Pole, have thick fur, and catch seals and fish. Ice and snow are melting there."
+  },
+  "24558592bc2aa307": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "We play basketball on the sports field."
+  },
+  "0f7bc08df7bc42f1": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The bamboo buildings have no walls."
+  },
+  "8e582c163bbb3071": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Which place do you like best?"
+  },
+  "a1160a4d19f74452": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What are the school buildings made of?"
+  },
+  "1aee10494c4666f1": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I can go and look for him."
+  },
+  "b945d848a5fe864b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Where will the girl go?"
+  },
+  "fc76355fede93fb6": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "The classroom has no computers."
+  },
+  "702d40faaec4967a": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Let us meet in the computer room."
+  },
+  "dd9d29ec5fd61630": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Why do they choose the computer room?"
+  },
+  "69e009fe6fc43372": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "My favourite place is the library."
+  },
+  "ea1f04a928b24ce8": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I like my school. In the classroom I study, and on the sports field I play. James is in the library. My favourite place is the library on the ground floor. It looks like a boat, and I read many interesting books there."
+  },
+  "320f18014ec19b59": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Xiaopu is good at basketball."
+  },
+  "8fa102c42c178f53": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "James often tells interesting stories."
+  },
+  "f57b101a094a37ce": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "James is happy and excited at the end of the story."
+  },
+  "c4c242abd66e593c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How does James feel at the end?"
+  },
+  "f4404f5315896053": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who wants to be a painter?"
+  },
+  "252e0c6f42491ee4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What is Minmin good at?"
+  },
+  "ebed99dd8d24b141": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "He often tells interesting stories."
+  },
+  "962307df1c3ddb91": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "It is James."
+  },
+  "4c844a05424641ea": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Now he jumps in and skips."
+  },
+  "b70a26e6799ab276": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What helps James succeed?"
+  },
+  "459cbdbb7cc10ba7": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "My classmates are different but all great. Shenshen wants to be a writer, and Xiaojiang wants to be a painter. Minmin is good at football, and Xiaopu is good at basketball. Yaoyao often helps James with his Chinese. James often helps other students learn English."
+  },
+  "9a045c793322f29d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "school history project"
+  },
+  "392c0ad023734579": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Minmin plays football and likes the sports field."
+  },
+  "a3b38461a14f71df": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "James is in the library and often helps others learn English."
+  },
+  "a49c557c6d4c0d71": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The helpful girl likes painting pictures."
+  },
+  "ae59cca4b3e10d3d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The bamboo school has no walls, and James can skip at the end."
+  },
+  "cd3ca1c7e6e82f78": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where does Minmin play football?"
+  },
+  "0ac6c51de157f3d0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where can the group use computers?"
+  },
+  "38f6347d4c21012a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does James often do?"
+  },
+  "9dc0643397a1f988": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "He plays on the sports field."
+  },
+  "b125a01312e0ccf1": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "We always cheer for him."
+  },
+  "c2b33ff477cde469": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Where does Minmin play?"
+  },
+  "c68f11d0f836508c": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "He often helps other students learn English."
+  },
+  "4c0128c47df5651f": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "He is helpful and interesting."
+  },
+  "9ce92bbf6f19ab21": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which two things do we learn about James?"
+  },
+  "f1a9ac5628062eb1": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "She is good at painting pictures."
+  },
+  "57f837c83bf92a60": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "She likes the art room in our school."
+  },
+  "6c34fc53ed20f875": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which place may she like?"
+  },
+  "72b4f4c6b1c64ac8": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "He is good at basketball."
+  },
+  "e83dfb199a67c9ed": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Let us look for him there."
+  },
+  "547f039c0249922a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who will they look for?"
+  },
+  "1942b363a5636f13": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Our classmates use different places in the school. Minmin is good at football and plays on the sports field. James is in the library and often helps other students learn English. Xiaojiang wants to be a painter and likes the art room. The group meets in the computer room for the school history project."
+  },
+  "ddce4c8d1f4e228e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "helps students learn English"
+  },
+  "c4292855da790e83": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "turn the rope more slowly"
+  },
+  "866531ff432c5337": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "James is in the library, but the group will meet in the computer room."
+  },
+  "fbde4a1dd431fa8b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The bamboo buildings look like umbrellas, and the library looks like a boat."
+  },
+  "fa1c97bdf538db0f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Yaoyao helps James with Chinese, and James helps others learn English."
+  },
+  "439c5278741fd1f1": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Shenshen wants to be a writer, and Xiaojiang wants to be a painter."
+  },
+  "818a8123b6c500bf": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "James is afraid at first and excited at the end."
+  },
+  "b0b55baa29536ab0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is James, and where will the group meet?"
+  },
+  "bdf2d8657400e8b2": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who wants to be a writer?"
+  },
+  "0cd85d8c275cd81b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who helps James with Chinese?"
+  },
+  "f196cd756bcf0541": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does the library look like, and what do you do there?"
+  },
+  "dfca51a07fbbfffe": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Then let us meet in the computer room on the ground floor."
+  },
+  "e889336be46c72ad": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Yaoyao often helps James with his Chinese."
+  },
+  "f12e7e9eff32865d": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "James often helps other students learn English."
+  },
+  "b5c5f53bb2b006a3": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Xiaopu helps teachers clean the blackboard."
+  },
+  "37aee4064a9025df": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who helps students learn English?"
+  },
+  "02e701ff75e7da71": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "She likes the art room, but her favourite place is the library."
+  },
+  "d2fbb487a031d0fa": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which place does she like best?"
+  },
+  "b19a8c026a9a2d5f": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "She also shows James how to jump."
+  },
+  "ced1c0cea4947d49": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Shenshen and Xiaojiang slow down the rope."
+  },
+  "e223f22b968fefda": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Then James jumps in and skips."
+  },
+  "55b19ec6667cfe7b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does Minmin do for James?"
+  },
+  "4812a8f0ce91f408": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "The bamboo buildings have no walls and look like umbrellas."
+  },
+  "976e9e9f058748b9": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Our library has no chairs or desks and looks like a boat."
+  },
+  "3101cd023104a674": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "James is in the library, but his group will meet in the computer room on the ground floor. The classroom has no computers. James is helpful and often helps other students learn English. Yaoyao helps James with his Chinese. Later, the classmates skip with a long rope. James is afraid at first. His classmates slow down the rope and cheer for him, so he jumps in and skips."
+  },
+  "39e161b9b56896a6": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "does not have any"
+  },
+  "926cfa1f3d7ae8b7": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "good at painting pictures"
+  },
+  "5455297885129bf5": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Minmin is good at football and plays on the sports field."
+  },
+  "e75c9debb229e05c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "James is in the library and helps other students learn English."
+  },
+  "fbe5a28ecd4c0b7d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The bamboo buildings look like umbrellas, but the library looks like a boat."
+  },
+  "b40c5ed5c04c196e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The girl is helpful, good at painting pictures, and wants to be a painter."
+  },
+  "bb3cbd6d605e13d0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "James cannot skip at first, but he can skip at the end."
+  },
+  "13ca11c552bf14a2": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Which school place do you like best, and what do you do there?"
+  },
+  "f05d67d0dbcdd50d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who wants to be a painter and is good at painting pictures?"
+  },
+  "b41fc2b4965183b2": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is James, and what does he often do?"
+  },
+  "8c7c40863755e5f6": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What happens after the classmates help James?"
+  },
+  "ae674e624a4cb599": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "We always cheer for them."
+  },
+  "df82f0e0f1dd8eea": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which sport is Minmin good at?"
+  },
+  "3f1a1c3f44b82a02": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "He is interesting and helpful."
+  },
+  "da027cb58383df14": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which two words describe James?"
+  },
+  "90376ff91179d59d": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "The library is on the ground floor and looks like a boat."
+  },
+  "9efbad49c05ef64d": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "This helpful girl is good at painting pictures."
+  },
+  "b4e8e3ce4b07ad8a": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "She likes the art room, but she reads in the library."
+  },
+  "67ac827b0975b4b9": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Where does the girl read?"
+  },
+  "51569feea55fa329": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Shenshen wants to be a writer."
+  },
+  "f7f6ebfcc8e60117": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Xiaojiang wants to be a painter."
+  },
+  "c2921b9c0cae6b88": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "They slow down the rope for James."
+  },
+  "aada3cda34d59638": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Then they cheer when he skips."
+  },
+  "ce711cd6a1d05dea": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What do Shenshen and Xiaojiang do for James?"
+  },
+  "724118538021c844": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Our favourite school place project is about the library."
+  },
+  "20b8461edf816d05": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Our classmate project is a guessing game."
+  },
+  "50985719493c1e63": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "One project describes a place."
+  },
+  "3b730cb77d431eb2": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "The other describes a classmate."
+  },
+  "d2efdb62ea1e7eb2": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What do the two projects describe?"
+  },
+  "e11731f39d058c5a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Our school and our classmates are both special. Minmin is good at football and plays on the sports field. James is in the library, tells interesting stories, and helps other students learn English. The library is on the ground floor and looks like a boat. A helpful girl likes painting pictures and wants to be a painter. When James is afraid of the long rope, his classmates slow it down and cheer for him. At the end, he jumps in and skips."
+  },
+  "e1976558498eee37": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which place does she like?"
+  },
+  "26edd840fd5a05a2": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "These places are special."
+  },
+  "167635dd6d953caa": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "James is in the library, but his group will meet in the computer room on the ground floor. The classroom has no computers. James is helpful and often helps other students learn English. Yaoyao helps James with his Chinese. Later, the classmates skip with a long rope. James is afraid at first. His classmates slow down the rope and cheer for him. Then he jumps in and skips."
+  },
+  "d0b3a82d9d3e2039": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Our school is special, and our classmates are different but all great. Minmin is good at football and plays on the sports field. James is in the library, tells interesting stories, and helps other students learn English. The library is on the ground floor and looks like a boat. A helpful girl likes painting pictures and wants to be a painter. When James is afraid of the long rope, his classmates slow it down and cheer for him. At the end, he jumps in and skips."
   }
  },
  "courses": {
@@ -6759,6 +7371,114 @@
    "static/audio/listening/L4A-T1-W01-D20/q19.mp3": "f25cee71f797e4a3",
    "static/audio/listening/L4A-T1-W01-D20/q20.mp3": "783ab365f2cd7077",
    "static/audio/listening/L4A-T1-W01-D20/p01.mp3": "cdf2f0bc3ce04138"
+  },
+  "L4A-T1-W01-D21": {
+   "static/audio/listening/L4A-T1-W01-D21/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D21/q01.mp3": "1edc91f8cc8913ea",
+   "static/audio/listening/L4A-T1-W01-D21/q02.mp3": "1fe4f2fc79538578",
+   "static/audio/listening/L4A-T1-W01-D21/q03.mp3": "308abeb440e29832",
+   "static/audio/listening/L4A-T1-W01-D21/q04.mp3": "6a1e7bf56b11ff46",
+   "static/audio/listening/L4A-T1-W01-D21/q05.mp3": "0f556d70c7220e79",
+   "static/audio/listening/L4A-T1-W01-D21/q06.mp3": "19916282c38c20d8",
+   "static/audio/listening/L4A-T1-W01-D21/q07.mp3": "19c6ec469ef7aafb",
+   "static/audio/listening/L4A-T1-W01-D21/q08.mp3": "31b8a69e7d612d9c",
+   "static/audio/listening/L4A-T1-W01-D21/q09.mp3": "ec0e26e7c396e2d6",
+   "static/audio/listening/L4A-T1-W01-D21/q10.mp3": "2d2aadfefe88babf",
+   "static/audio/listening/L4A-T1-W01-D21/q11.mp3": "0a17af5c8e3df823",
+   "static/audio/listening/L4A-T1-W01-D21/q12.mp3": "6c523007083a369f",
+   "static/audio/listening/L4A-T1-W01-D21/q13.mp3": "0b605db75e51c307",
+   "static/audio/listening/L4A-T1-W01-D21/q14.mp3": "331a3b031f3cfb14",
+   "static/audio/listening/L4A-T1-W01-D21/q15.mp3": "789638fa61cef578",
+   "static/audio/listening/L4A-T1-W01-D21/q16.mp3": "e1bfc20ae04a9e11",
+   "static/audio/listening/L4A-T1-W01-D21/p01.mp3": "3a036aaed66727f8"
+  },
+  "L4A-T1-W01-D22": {
+   "static/audio/listening/L4A-T1-W01-D22/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D22/q01.mp3": "171348b9c2768d74",
+   "static/audio/listening/L4A-T1-W01-D22/q02.mp3": "887841a861b381f4",
+   "static/audio/listening/L4A-T1-W01-D22/q03.mp3": "d913939cc07e4558",
+   "static/audio/listening/L4A-T1-W01-D22/q04.mp3": "c39a8736a2f64298",
+   "static/audio/listening/L4A-T1-W01-D22/q05.mp3": "3069588ed9e5b65f",
+   "static/audio/listening/L4A-T1-W01-D22/q06.mp3": "766b01d21724efb0",
+   "static/audio/listening/L4A-T1-W01-D22/q07.mp3": "1c7ff8ea2e5cef86",
+   "static/audio/listening/L4A-T1-W01-D22/q08.mp3": "201c9787365ac710",
+   "static/audio/listening/L4A-T1-W01-D22/q09.mp3": "ee004c5053e449bd",
+   "static/audio/listening/L4A-T1-W01-D22/q10.mp3": "923aa503081af7ab",
+   "static/audio/listening/L4A-T1-W01-D22/q11.mp3": "87edfc69927844d7",
+   "static/audio/listening/L4A-T1-W01-D22/q12.mp3": "97e1faed204a5928",
+   "static/audio/listening/L4A-T1-W01-D22/q13.mp3": "b185ab2a741aaae2",
+   "static/audio/listening/L4A-T1-W01-D22/q14.mp3": "839d4260fd403b32",
+   "static/audio/listening/L4A-T1-W01-D22/q15.mp3": "eb7bdbbc3c774cae",
+   "static/audio/listening/L4A-T1-W01-D22/q16.mp3": "9e1f81ffc35b0fac",
+   "static/audio/listening/L4A-T1-W01-D22/p01.mp3": "6a8bced68449af54"
+  },
+  "L4A-T1-W01-D23": {
+   "static/audio/listening/L4A-T1-W01-D23/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D23/q01.mp3": "d49ddb29ba3e2031",
+   "static/audio/listening/L4A-T1-W01-D23/q02.mp3": "2ede75b8dcb88787",
+   "static/audio/listening/L4A-T1-W01-D23/q03.mp3": "6a1e7bf56b11ff46",
+   "static/audio/listening/L4A-T1-W01-D23/q04.mp3": "b0641b3efb3d352d",
+   "static/audio/listening/L4A-T1-W01-D23/q05.mp3": "f5de3083f444f75e",
+   "static/audio/listening/L4A-T1-W01-D23/q06.mp3": "404a463e30faa5ce",
+   "static/audio/listening/L4A-T1-W01-D23/q07.mp3": "ec67e1221391dd07",
+   "static/audio/listening/L4A-T1-W01-D23/q08.mp3": "c6a4c13d990818ee",
+   "static/audio/listening/L4A-T1-W01-D23/q09.mp3": "c89ec3e2bb9e49f2",
+   "static/audio/listening/L4A-T1-W01-D23/q10.mp3": "b178485e8b6f8e97",
+   "static/audio/listening/L4A-T1-W01-D23/q11.mp3": "4399af6a8a1f2bc1",
+   "static/audio/listening/L4A-T1-W01-D23/q12.mp3": "66986b21ae7950f9",
+   "static/audio/listening/L4A-T1-W01-D23/q13.mp3": "75559998a8eb6e52",
+   "static/audio/listening/L4A-T1-W01-D23/q14.mp3": "d3e4a433b436451f",
+   "static/audio/listening/L4A-T1-W01-D23/q15.mp3": "f4258cf4f896b604",
+   "static/audio/listening/L4A-T1-W01-D23/q16.mp3": "797167989ef7a616",
+   "static/audio/listening/L4A-T1-W01-D23/p01.mp3": "75d2ea1a5d27e340"
+  },
+  "L4A-T1-W01-D24": {
+   "static/audio/listening/L4A-T1-W01-D24/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D24/q01.mp3": "308abeb440e29832",
+   "static/audio/listening/L4A-T1-W01-D24/q02.mp3": "b3d8732160a80138",
+   "static/audio/listening/L4A-T1-W01-D24/q03.mp3": "6e4c64863efa5fe5",
+   "static/audio/listening/L4A-T1-W01-D24/q04.mp3": "a0151ef1205e415c",
+   "static/audio/listening/L4A-T1-W01-D24/q05.mp3": "171348b9c2768d74",
+   "static/audio/listening/L4A-T1-W01-D24/q06.mp3": "39011e19f7c55fdc",
+   "static/audio/listening/L4A-T1-W01-D24/q07.mp3": "f4e24fbc866fa196",
+   "static/audio/listening/L4A-T1-W01-D24/q08.mp3": "efe3f14d959d3479",
+   "static/audio/listening/L4A-T1-W01-D24/q09.mp3": "db1185167c0b698e",
+   "static/audio/listening/L4A-T1-W01-D24/q10.mp3": "d063dd168c6a9703",
+   "static/audio/listening/L4A-T1-W01-D24/q11.mp3": "55471963792f7940",
+   "static/audio/listening/L4A-T1-W01-D24/q12.mp3": "37e0778baf5a53d7",
+   "static/audio/listening/L4A-T1-W01-D24/q13.mp3": "7bfbf3b3bb9db8a8",
+   "static/audio/listening/L4A-T1-W01-D24/q14.mp3": "fd9e0dae602a8e39",
+   "static/audio/listening/L4A-T1-W01-D24/q15.mp3": "a8688027c6cfcbe5",
+   "static/audio/listening/L4A-T1-W01-D24/q16.mp3": "8d9fd32f83ee1b4e",
+   "static/audio/listening/L4A-T1-W01-D24/q17.mp3": "5ffc2c34a68715ef",
+   "static/audio/listening/L4A-T1-W01-D24/q18.mp3": "3493989955da9f32",
+   "static/audio/listening/L4A-T1-W01-D24/q19.mp3": "425fceff4c743dbc",
+   "static/audio/listening/L4A-T1-W01-D24/q20.mp3": "3ded8e7d9c8a3194",
+   "static/audio/listening/L4A-T1-W01-D24/p01.mp3": "81e2014e4ac9d0cb"
+  },
+  "L4A-T1-W01-D25": {
+   "static/audio/listening/L4A-T1-W01-D25/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D25/q01.mp3": "d024cb607e4a7665",
+   "static/audio/listening/L4A-T1-W01-D25/q02.mp3": "f7f25fed9b009c72",
+   "static/audio/listening/L4A-T1-W01-D25/q03.mp3": "2c56557a7b449706",
+   "static/audio/listening/L4A-T1-W01-D25/q04.mp3": "35b6ceb37001a7d6",
+   "static/audio/listening/L4A-T1-W01-D25/q05.mp3": "d1981f7e7039bf6d",
+   "static/audio/listening/L4A-T1-W01-D25/q06.mp3": "521a48acab1fd43c",
+   "static/audio/listening/L4A-T1-W01-D25/q07.mp3": "4248bbb11cff9d5b",
+   "static/audio/listening/L4A-T1-W01-D25/q08.mp3": "f38d6247688d02c4",
+   "static/audio/listening/L4A-T1-W01-D25/q09.mp3": "39a7fb2f55ffe056",
+   "static/audio/listening/L4A-T1-W01-D25/q10.mp3": "de7e4480689ef282",
+   "static/audio/listening/L4A-T1-W01-D25/q11.mp3": "db341d4d2f7fb2d7",
+   "static/audio/listening/L4A-T1-W01-D25/q12.mp3": "75961a86b1422a08",
+   "static/audio/listening/L4A-T1-W01-D25/q13.mp3": "a5302bf62a884459",
+   "static/audio/listening/L4A-T1-W01-D25/q14.mp3": "5e7ea08dd0aeceb2",
+   "static/audio/listening/L4A-T1-W01-D25/q15.mp3": "cfd94fa0d7ca06b2",
+   "static/audio/listening/L4A-T1-W01-D25/q16.mp3": "8b57e6c8adee4aef",
+   "static/audio/listening/L4A-T1-W01-D25/q17.mp3": "e1cea98aef6db021",
+   "static/audio/listening/L4A-T1-W01-D25/q18.mp3": "dc4fb10faf9d0500",
+   "static/audio/listening/L4A-T1-W01-D25/q19.mp3": "1ced763a8d5983c7",
+   "static/audio/listening/L4A-T1-W01-D25/q20.mp3": "6cdc3309aba23196",
+   "static/audio/listening/L4A-T1-W01-D25/p01.mp3": "8d62f9d19cc7f1b1"
   }
  }
 }

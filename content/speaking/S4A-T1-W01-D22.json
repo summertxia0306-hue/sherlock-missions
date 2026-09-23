@@ -1,0 +1,104 @@
+{
+  "course_id": "S4A-T1-W01-D22",
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D22",
+  "pair_id": "4A-T1-W01-D22",
+  "publication_status": "formal",
+  "title": "四上·第22课｜Unit 2我的同学·特点习惯与梦想（口语）",
+  "week": 5,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 10,
+  "scope": "4A Unit 2 p15-p22",
+  "difficulty": "L1",
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D22/q01.mp3",
+      "tag": "A主线·p15-p17·同学特点概括",
+      "parent_note": "确认版教材p15-p17主线或不增加新知识的同语境受控重组",
+      "text": "My classmates are different but all great."
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D22/q02.mp3",
+      "tag": "A主线·p17·双人物梦想",
+      "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+      "text": "Shenshen wants to be a writer, and Xiaojiang wants to be a painter."
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D22/q03.mp3",
+      "tag": "A主线·p17·双人物擅长项目",
+      "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+      "text": "Minmin is good at football, and Xiaopu is good at basketball."
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D22/q04.mp3",
+      "tag": "A主线·p17·频率与帮助行为",
+      "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+      "text": "Yaoyao often helps James with his Chinese."
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D22/q05.mp3",
+      "tag": "A主线·p18-p19·人物多行为",
+      "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+      "text": "James often tells interesting stories and helps others learn English."
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "audio": "static/audio/speaking/S4A-T1-W01-D22/q06.mp3",
+      "tag": "A主线·p20-p21·故事帮助与结果",
+      "parent_note": "确认版教材p20-p21主线或不增加新知识的同语境受控重组",
+      "text": "His classmates cheer for him, and James is happy and excited."
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D22/q07.mp3",
+      "tag": "C微调·p17·人物与擅长项目对应",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p17，不作未掌握结论",
+      "question": "Who is good at basketball?",
+      "expected": "Xiaopu is good at basketball.",
+      "hint": "用完整句回答：Xiaopu擅长篮球。"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D22/q08.mp3",
+      "tag": "A主线·p17·人物梦想问答",
+      "parent_note": "确认版教材p17主线或不增加新知识的同语境受控重组",
+      "question": "What does Xiaojiang want to be?",
+      "expected": "Xiaojiang wants to be a painter.",
+      "hint": "用完整句回答：Xiaojiang想成为画家。"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D22/q09.mp3",
+      "tag": "A主线·p18-p19·人物帮助行为",
+      "parent_note": "确认版教材p18-p19主线或不增加新知识的同语境受控重组",
+      "question": "Why is James helpful?",
+      "expected": "He often helps other students learn English.",
+      "hint": "用完整句回答：他经常帮助其他同学学英语。"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "audio": "static/audio/speaking/S4A-T1-W01-D22/q10.mp3",
+      "tag": "A主线·p20-p21·故事结果完整输出",
+      "parent_note": "确认版教材p20-p21主线或不增加新知识的同语境受控重组",
+      "question": "What is the result of the rope story?",
+      "expected": "James jumps in and skips with his classmates.",
+      "hint": "用完整句回答：James跳进去，和同学们一起跳绳。"
+    }
+  ]
+}

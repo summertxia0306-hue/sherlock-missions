@@ -1,0 +1,78 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "publication_status": "formal",
+  "visible": true,
+  "authority_note": "父JSON为唯一活动源；本目录仅含配对、音频计划和派生儿童安全副本。02负责回归与线上部署。",
+  "study_packs": [
+    {
+      "lesson": 21,
+      "study_pack": "4A-T1-W01-D21",
+      "pair_id": "4A-T1-W01-D21",
+      "planned_title": "四上·第21课｜Unit 1校园生活·地点活动与喜好",
+      "textbook_scope": "4A Unit 1 p7-p14",
+      "planned_difficulty": "L1",
+      "json_difficulty": "L1",
+      "planned_total_minutes": 22,
+      "focus": "校园地点、活动、喜好与场所特点直接复习",
+      "listening_course_id": "L4A-T1-W01-D21",
+      "speaking_course_id": "S4A-T1-W01-D21",
+      "publication_gate": "02完成回归测试及线上部署后验收；内容窗口不部署。"
+    },
+    {
+      "lesson": 22,
+      "study_pack": "4A-T1-W01-D22",
+      "pair_id": "4A-T1-W01-D22",
+      "planned_title": "四上·第22课｜Unit 2我的同学·特点习惯与梦想",
+      "textbook_scope": "4A Unit 2 p15-p22",
+      "planned_difficulty": "L1+",
+      "json_difficulty": "L1",
+      "planned_total_minutes": 24,
+      "focus": "人物特点、频率习惯、梦想、擅长项目与帮助行为",
+      "listening_course_id": "L4A-T1-W01-D22",
+      "speaking_course_id": "S4A-T1-W01-D22",
+      "publication_gate": "02完成回归测试及线上部署后验收；内容窗口不部署。"
+    },
+    {
+      "lesson": 23,
+      "study_pack": "4A-T1-W01-D23",
+      "pair_id": "4A-T1-W01-D23",
+      "planned_title": "四上·第23课｜Unit 1–2人物地点活动·信息整合",
+      "textbook_scope": "4A Unit 1 p7-p14 + Unit 2 p15-p22",
+      "planned_difficulty": "L2",
+      "json_difficulty": "L2",
+      "planned_total_minutes": 29,
+      "focus": "人物、地点、活动和特点的双单元信息整合",
+      "listening_course_id": "L4A-T1-W01-D23",
+      "speaking_course_id": "S4A-T1-W01-D23",
+      "publication_gate": "02完成回归测试及线上部署后验收；内容窗口不部署。"
+    },
+    {
+      "lesson": 24,
+      "study_pack": "4A-T1-W01-D24",
+      "pair_id": "4A-T1-W01-D24",
+      "planned_title": "四上·第24课｜Unit 1–2相似信息·连续对话",
+      "textbook_scope": "4A Unit 1 p7-p14 + Unit 2 p15-p22",
+      "planned_difficulty": "L2+",
+      "json_difficulty": "L2",
+      "planned_total_minutes": 33,
+      "focus": "连续对话、相似信息辨别、跨句判断和理由提取",
+      "listening_course_id": "L4A-T1-W01-D24",
+      "speaking_course_id": "S4A-T1-W01-D24",
+      "publication_gate": "02完成回归测试及线上部署后验收；内容窗口不部署。"
+    },
+    {
+      "lesson": 25,
+      "study_pack": "4A-T1-W01-D25",
+      "pair_id": "4A-T1-W01-D25",
+      "planned_title": "四上·第25课｜Unit 1–2综合复习与检测",
+      "textbook_scope": "4A Unit 1 p7-p14 + Unit 2 p15-p22",
+      "planned_difficulty": "L3",
+      "json_difficulty": "L3",
+      "planned_total_minutes": 37,
+      "focus": "跨题型整合、综合判断与稳定完整输出",
+      "listening_course_id": "L4A-T1-W01-D25",
+      "speaking_course_id": "S4A-T1-W01-D25",
+      "publication_gate": "02完成回归测试及线上部署后验收；内容窗口不部署。"
+    }
+  ]
+}

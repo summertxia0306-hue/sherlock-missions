@@ -1,0 +1,224 @@
+{
+  "course_id": "L4A-T1-W01-D21",
+  "pair_id": "4A-T1-W01-D21",
+  "study_pack": "4A-T1-W01-D21",
+  "course_version": "6c302d91be1c088e",
+  "title": "四上·第21课｜Unit 1校园生活·地点活动与喜好（听力）",
+  "week": 5,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 12,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D21/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "library",
+            "classroom",
+            "hall"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D21/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "art room",
+            "sports field",
+            "computer room"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D21/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "second floor",
+            "ground floor",
+            "school building"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D21/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "classroom",
+            "computer room",
+            "art room"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D21/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "In the classroom I study.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D21/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "We play basketball in the library.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D21/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "James is in the library.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D21/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "The bamboo buildings have many walls.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D21/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "In the classroom.",
+            "In the hall.",
+            "On the sports field."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D21/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "In the library.",
+            "In the art room.",
+            "In the classroom."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D21/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "I like the library best.",
+            "I read many books.",
+            "It is on the ground floor."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D21/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "They are made of bamboo.",
+            "They look like umbrellas.",
+            "They have three floors."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D21/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "options": [
+            "They study.",
+            "They play basketball.",
+            "They read books."
+          ],
+          "question_text": "What do they do there?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D21/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "options": [
+            "To the library.",
+            "To the hall.",
+            "To the art room."
+          ],
+          "question_text": "Where will the girl go?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D21/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "options": [
+            "They need computers.",
+            "They want to sing.",
+            "They want to play football."
+          ],
+          "question_text": "Why do they choose the computer room?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D21/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "The library.",
+            "The bamboo school.",
+            "The sports field."
+          ],
+          "question_text": "Which place looks like a boat?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D21/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D21/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "The speaker studies in the classroom."
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "James is on the sports field."
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "The library is on the ground floor."
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "The library looks like a big umbrella."
+        }
+      ]
+    }
+  ]
+}

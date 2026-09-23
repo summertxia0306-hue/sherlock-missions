@@ -1,0 +1,57 @@
+[
+  {
+    "course_id": "L4A-T1-W01-D21",
+    "course_version": "6c302d91be1c088e",
+    "title": "四上·第21课｜Unit 1校园生活·地点活动与喜好（听力）",
+    "course_type": "training",
+    "week": 5,
+    "day": 1,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D21",
+    "study_pack": "4A-T1-W01-D21"
+  },
+  {
+    "course_id": "L4A-T1-W01-D22",
+    "course_version": "03a21d0b27d2ed42",
+    "title": "四上·第22课｜Unit 2我的同学·特点习惯与梦想（听力）",
+    "course_type": "training",
+    "week": 5,
+    "day": 2,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D22",
+    "study_pack": "4A-T1-W01-D22"
+  },
+  {
+    "course_id": "L4A-T1-W01-D23",
+    "course_version": "4266c3816b541c9e",
+    "title": "四上·第23课｜Unit 1–2人物地点活动·信息整合（听力）",
+    "course_type": "training",
+    "week": 5,
+    "day": 3,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D23",
+    "study_pack": "4A-T1-W01-D23"
+  },
+  {
+    "course_id": "L4A-T1-W01-D24",
+    "course_version": "c6da7fe694435ae4",
+    "title": "四上·第24课｜Unit 1–2相似信息·连续对话（听力）",
+    "course_type": "training",
+    "week": 5,
+    "day": 4,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D24",
+    "study_pack": "4A-T1-W01-D24"
+  },
+  {
+    "course_id": "L4A-T1-W01-D25",
+    "course_version": "cc12adfcf3c3e288",
+    "title": "四上·第25课｜Unit 1–2综合复习与检测（听力）",
+    "course_type": "weekly_test",
+    "week": 5,
+    "day": 5,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D25",
+    "study_pack": "4A-T1-W01-D25"
+  }
+]
