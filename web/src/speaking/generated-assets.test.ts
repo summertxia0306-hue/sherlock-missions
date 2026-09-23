@@ -1,21 +1,28 @@
-import { existsSync, readFileSync, statSync } from 'node:fs'
-import { join } from 'node:path'
+import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
+import { join, relative } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { parseSpeakingCatalog, parseSpeakingCourse } from './course'
 
 const publicRoot = join(process.cwd(), 'public')
 const contentRoot = join(publicRoot, 'content', 'speaking')
 
+function audioFiles(root: string): string[] {
+  return readdirSync(root, { withFileTypes: true }).flatMap((entry) => {
+    const path = join(root, entry.name)
+    return entry.isDirectory() ? audioFiles(path) : [relative(publicRoot, path).replaceAll('\\', '/')]
+  })
+}
+
 describe('generated speaking assets', () => {
-  it('publishes S01D39-S01D50 followed by the twenty current term courses', () => {
+  it('publishes S01D39-S01D50 followed by the twenty-five current term courses', () => {
     const catalog = parseSpeakingCatalog(JSON.parse(readFileSync(join(contentRoot, 'catalog.json'), 'utf8')))
     expect(catalog.courses.map((course) => course.course_id)).toEqual(
       [
         ...Array.from({ length: 12 }, (_, index) => `S01D${index + 39}`),
-        ...Array.from({ length: 20 }, (_, index) => `S4A-T1-W01-D${String(index + 1).padStart(2, '0')}`)
+        ...Array.from({ length: 25 }, (_, index) => `S4A-T1-W01-D${String(index + 1).padStart(2, '0')}`)
       ]
     )
-    for (let day = 1; day <= 20; day += 1) {
+    for (let day = 1; day <= 25; day += 1) {
       expect(existsSync(join(contentRoot, `S4A-T1-W01-D${String(day).padStart(2, '0')}.json`))).toBe(true)
     }
     for (const entry of catalog.courses) {
@@ -29,10 +36,10 @@ describe('generated speaking assets', () => {
     }
     expect(Object.keys(manifest.courses)).toEqual([
       ...Array.from({ length: 12 }, (_, index) => `S01D${index + 39}`),
-      ...Array.from({ length: 20 }, (_, index) => `S4A-T1-W01-D${String(index + 1).padStart(2, '0')}`)
+      ...Array.from({ length: 25 }, (_, index) => `S4A-T1-W01-D${String(index + 1).padStart(2, '0')}`)
     ])
     const assets = Object.values(manifest.courses).flatMap((course) => Object.keys(course))
-    expect(assets).toHaveLength(272)
+    expect(assets.sort()).toEqual(audioFiles(join(publicRoot, 'audio', 'speaking')).sort())
     for (const asset of assets) {
       const file = join(publicRoot, ...asset.split('/'))
       expect(existsSync(file), asset).toBe(true)

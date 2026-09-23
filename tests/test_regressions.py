@@ -130,6 +130,54 @@ class RegressionTests(unittest.TestCase):
         self.assertEqual("1", json.loads(components[1].proto.json_args)["qid"])
         self.assertIn("rec_S4A-T1-W01-D18", components[1].proto.id)
 
+    def test_unit1_unit2_review_listening_pages_load_trial_audio_component(self):
+        """Each new listening route must pass its fixed revision into Streamlit."""
+        from streamlit.testing.v1 import AppTest
+
+        revision = "b83a08ddfdf0066d0d419f39c61398c6640d8bb9"
+        for day in range(21, 26):
+            course_id = f"L4A-T1-W01-D{day:02d}"
+            with self.subTest(course_id=course_id):
+                app = AppTest.from_file(
+                    str(Path(recorder.__file__).parents[1] / "app.py"),
+                    default_timeout=20,
+                )
+                app.query_params["course_id"] = course_id
+                app.run()
+                self.assertEqual(0, len(app.exception))
+                components = app.get("component_instance")
+                self.assertEqual(1, len(components))
+                self.assertIn(revision, components[0].proto.json_args)
+                self.assertIn("hello.mp3", components[0].proto.json_args)
+
+    def test_unit1_unit2_review_speaking_pages_load_demo_audio_and_microphone(self):
+        """D21-D25 must render both components without touching learning data."""
+        from streamlit.testing.v1 import AppTest
+
+        revision = "b83a08ddfdf0066d0d419f39c61398c6640d8bb9"
+        for day in range(21, 26):
+            course_id = f"S4A-T1-W01-D{day:02d}"
+            with self.subTest(course_id=course_id):
+                app = AppTest.from_file(
+                    str(Path(recorder.__file__).parents[1] / "app.py"),
+                    default_timeout=20,
+                )
+                app.query_params["course_id"] = course_id
+                app.run()
+                self.assertEqual(0, len(app.exception))
+                state_key = f"S_formal_{course_id}"
+                app.session_state[state_key]["idx"] = 0
+                app.run()
+                self.assertEqual(0, len(app.exception))
+                components = app.get("component_instance")
+                self.assertEqual(2, len(components))
+                self.assertIn(revision, components[0].proto.json_args)
+                self.assertIn("q01.mp3", components[0].proto.json_args)
+                self.assertEqual(
+                    "1", json.loads(components[1].proto.json_args)["qid"]
+                )
+                self.assertIn(f"rec_{course_id}", components[1].proto.id)
+
     def test_recorder_uses_a_fresh_processed_stream_and_releases_it_before_review(self):
         html = (Path(recorder.__file__).parent / "frontend" / "index.html").read_text(
             encoding="utf-8"
@@ -318,8 +366,18 @@ if (!hasAlternatingSilentSamples(joinFrames(alternating), 16000)) throw new Erro
         new_path = "static/audio/speaking/S4A-T1-W01-D18/q12.mp3"
         new_sources = listening_audio.audio_sources(new_path)
         self.assertTrue(new_sources[0].startswith("https://gcore.jsdelivr.net/gh/"))
-        self.assertTrue(all("5ba77dd" in source for source in new_sources))
+        self.assertTrue(all("5ba77dd641dfb21a954feff731484950637097f0" in source for source in new_sources))
         self.assertEqual(new_sources[0], listening_audio.audio_url(new_path))
+
+        review_path = "static/audio/speaking/S4A-T1-W01-D25/q12.mp3"
+        review_sources = listening_audio.audio_sources(review_path)
+        self.assertEqual(3, len(review_sources))
+        self.assertTrue(review_sources[0].startswith("https://gcore.jsdelivr.net/gh/"))
+        self.assertTrue(all(
+            "b83a08ddfdf0066d0d419f39c61398c6640d8bb9" in source
+            for source in review_sources
+        ))
+        self.assertEqual(review_sources[0], listening_audio.audio_url(review_path))
 
     def test_all_course_json_files_still_validate(self):
         for path in listening_models.list_course_files():
