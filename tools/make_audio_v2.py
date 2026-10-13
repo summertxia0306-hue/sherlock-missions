@@ -20,6 +20,11 @@ import os
 import subprocess
 import sys
 
+if __package__:
+    from .edge_tts_compat import configure_synthesis_endpoint
+else:
+    from edge_tts_compat import configure_synthesis_endpoint
+
 VOICES = {"n": "en-US-AnaNeural", "f": "en-US-AriaNeural", "m": "en-US-GuyNeural"}
 RATE = "-10%"          # 约0.9倍速，与旧配音版一致
 
@@ -147,6 +152,7 @@ def collect_items(course):
 async def synth_fragment(role, text, dest):
     prefer_threaded_dns_on_windows()
     import edge_tts
+    configure_synthesis_endpoint()
     com = edge_tts.Communicate(text, VOICES[role], rate=RATE, proxy=PROXY)
     async def receive_audio():
         audio = bytearray()

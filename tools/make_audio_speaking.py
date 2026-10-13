@@ -15,6 +15,11 @@ import os
 import subprocess
 import sys
 
+if __package__:
+    from .edge_tts_compat import configure_synthesis_endpoint
+else:
+    from edge_tts_compat import configure_synthesis_endpoint
+
 VOICE = "en-US-AnaNeural"   # 与听力旁白同音色（孩子熟悉）
 RATE = "-10%"
 BITRATE = "64k"
@@ -86,6 +91,7 @@ def prefer_threaded_dns_on_windows():
 async def synth(text, dest):
     prefer_threaded_dns_on_windows()
     import edge_tts
+    configure_synthesis_endpoint()
     com = edge_tts.Communicate(text, VOICE, rate=RATE, proxy=PROXY)
     async def receive_audio():
         audio = bytearray()
