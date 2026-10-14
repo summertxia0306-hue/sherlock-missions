@@ -456,3 +456,12 @@ iOS 真机验收：家长确认 700KB 档通过；返回 700000 字节，PUT 233
 待验：线上动态 DOM/iframe 与真实 iPad 麦克风授权、录音、回听、讯飞评分、题号 9–12、整课提交
 回滚：动态页面、音频、话筒或结果结构异常时停用本批并回退 Streamlit 到 d62b5e3；不删除课程、成绩、录音或 Git 历史
 ```
+
+## 2026-10-14 Unit 4 D26–D30 正式发布
+
+- 依据D36完成确认版Unit4 p31–38五对课程，听力20/20/20/25/25、口语10/10/12/12/12；唯一formal入口仍为Streamlit，CloudBase formal关闭。
+- 内容与固定音频提交a99d4ad37b2e6b6e02f015e638dff3fdd490190a；最终工程7c517072f593ffe64aeddc666ad9c80186e346d5，已推送main并由线上动态页面确认使用。
+- Python114/114、Web110/110、API87/87、评分13/13，TypeScript/production build通过；2946权威源文件同步前后原始SHA-256零变化，七个录音/评分/进度核心字节不变。
+- 新提交触发jsDelivr整仓50MB限制，仅U4音频改为完整验证的GitHub Raw主节点；154/154 HTTP200非空且完整SHA匹配，00独立复核通过，旧批次不变。
+- 十门真实DOM题量正确；五听力试音currentSrc为Raw完整固定SHA且readyState4，五口语试音🎙️iframe可用。口语首题双组件及连续5rerun由本地AppTest验证；未绕过线上试音门、未录音/评分/提交学习结果，真实iPad硬件仍未测。
+- 本轮不部署CloudBase、不改24点/private/历史成绩录音。完整发布、边界与回滚记录：docs/course-batches/2026-10-14-4A-Unit4-D26-D30正式发布与02验收记录.md；部署回滚基准f5c9ed5997d5048efe9dc76aa975b848e58f196f。
