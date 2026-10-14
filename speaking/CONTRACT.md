@@ -1,5 +1,7 @@
 # 口语模块对接契约与功能清单
 
+> 版本 v4.7 · 2026-10-14。新增确认版 Unit 4 p31–38 的 S4A-T1-W01-D26–D30，题量10/10/12/12/12，前6题repeat、其余QA；音频独立固定到 `a99d4ad37b2e6b6e02f015e638dff3fdd490190a`。Streamlit 唯一 formal 入口、旧8/10/12题、MediaRecorder与条件式旧模块修复均不变；普通rerun不得reload recorder，不启用CloudBase formal。
+
 > 版本 v4.6 · 2026-09-23：新增 4A Unit 1–Unit 2 综合复习 S4A-T1-W01-D21–D25，题量 10/10/12/12/12，均为前 6 题 repeat、后续 QA；旧 8 题与 D16–D20 的 10/12 题继续兼容。Streamlit 继续是唯一儿童 formal 入口，CloudBase formal 保持关闭。录音仍以 `MediaRecorder` 为主链路，保留热部署旧模块自修复、正常 rerun 不重声明组件、单题组件实例稳定、WAV 双重完整性检查、私有录音引用、幂等和 formal/test 隔离；不得恢复为每次 rerun reload recorder 或以 `ScriptProcessor` 为主链路。
 
 > 版本 v4.5 · 2026-09-17：当前唯一儿童 formal 入口为 Streamlit，CloudBase formal 保持关闭。4A Unit 3 D16–D20 经家长批准为每课 6 repeat＋4/6 QA（10/12 题）；旧课继续 6＋2（8 题）。PWA 子课程、会话续做、最终 proof 提交与 `sherlock-api` 清洗/评分/结果结构按课程题量处理，第 9–12 题保留原有三星或三次安全通过、录音私有路径及服务端 test/formal 隔离；本次只发布 Streamlit 课程，不部署 CloudBase formal。

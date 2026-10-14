@@ -20,11 +20,11 @@ describe('generated listening assets', () => {
     expect(catalog.courses.map((course) => course.course_id)).toEqual(
       [
         ...Array.from({ length: 12 }, (_, index) => `W01D${index + 39}`),
-        ...Array.from({ length: 25 }, (_, index) => `L4A-T1-W01-D${String(index + 1).padStart(2, '0')}`)
+        ...Array.from({ length: 30 }, (_, index) => `L4A-T1-W01-D${String(index + 1).padStart(2, '0')}`)
       ]
     )
     expect(catalog.testCourses().filter((course) => !course.visible)).toEqual([])
-    for (let day = 1; day <= 25; day += 1) {
+    for (let day = 1; day <= 30; day += 1) {
       expect(existsSync(join(contentRoot, `L4A-T1-W01-D${String(day).padStart(2, '0')}.json`))).toBe(true)
     }
     for (const entry of catalog.testCourses()) {
