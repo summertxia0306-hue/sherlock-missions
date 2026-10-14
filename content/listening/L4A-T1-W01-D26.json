@@ -1,0 +1,431 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D26",
+  "pair_id": "4A-T1-W01-D26",
+  "publication_status": "formal",
+  "week": 6,
+  "day": 1,
+  "scope": "4A Unit 4 p31-p32",
+  "difficulty": "L1",
+  "course_id": "L4A-T1-W01-D26",
+  "title": "四上·第26课｜Unit 4生日词汇与活动（听力）",
+  "course_type": "training",
+  "est_minutes": 12,
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D26/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p31-p32·听音选词辨别",
+          "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组",
+          "options": [
+            "invitation",
+            "activity",
+            "party"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "invitation"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D26/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p31-p32·听音选词辨别",
+          "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组",
+          "options": [
+            "letter",
+            "noodles",
+            "egg"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "noodles"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D26/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p31-p32·听音选词辨别",
+          "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组",
+          "options": [
+            "read a letter",
+            "play games",
+            "share a cake"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "share a cake"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D26/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p31-p32·听音选词辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p31-p32，不作未掌握结论",
+          "options": [
+            "letter",
+            "party",
+            "activity"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "letter"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D26/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p32·句子信息对应",
+          "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组",
+          "display": "I can play games at the birthday party.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "I can play games at the birthday party."
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D26/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p32·句子信息对应",
+          "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组",
+          "display": "I can act as a bee.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "I can act as a cat."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D26/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p32·句子信息对应",
+          "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组",
+          "display": "We can share a cake.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "We can share a cake."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D26/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p32·句子信息对应",
+          "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组",
+          "display": "I can read a letter.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "I can write a letter."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D26/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p31-p32·听问句选答语",
+          "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组",
+          "options": [
+            "I can play games.",
+            "It is a letter.",
+            "It is an egg."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can you do at the birthday party?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D26/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p31-p32·听问句选答语",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p31-p32，不作未掌握结论",
+          "options": [
+            "It is a party.",
+            "Yes, I can.",
+            "It is a letter."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Can you share a cake?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D26/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p31-p32·听问句选答语",
+          "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组",
+          "options": [
+            "A cake.",
+            "An egg.",
+            "A letter."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "What can you read?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D26/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p31-p32·听问句选答语",
+          "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组",
+          "options": [
+            "A letter.",
+            "A cake.",
+            "Noodles."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can you write?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D26/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p32·对话信息整合",
+          "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组",
+          "question_text": "What can the girl act as?",
+          "options": [
+            "A bee.",
+            "A cat.",
+            "An egg."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "I can act as a bee."
+            ],
+            [
+              "m",
+              "I can act as a cat."
+            ],
+            [
+              "n",
+              "Question: What can the girl act as?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D26/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p32·对话信息整合",
+          "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组",
+          "question_text": "What can they share?",
+          "options": [
+            "A letter.",
+            "A cake.",
+            "An invitation."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "We can share a cake."
+            ],
+            [
+              "m",
+              "Yes, at the birthday party."
+            ],
+            [
+              "n",
+              "Question: What can they share?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D26/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p32·对话信息整合",
+          "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组",
+          "question_text": "What can the boy do?",
+          "options": [
+            "Eat a cake.",
+            "Play games.",
+            "Read a letter."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "I can write a letter."
+            ],
+            [
+              "m",
+              "I can read your letter."
+            ],
+            [
+              "n",
+              "Question: What can the boy do?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D26/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p32·对话信息整合",
+          "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组",
+          "question_text": "What can the girl do?",
+          "options": [
+            "Play games.",
+            "Write a letter.",
+            "Act as a cat."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "I can play games at the party."
+            ],
+            [
+              "m",
+              "I can eat a cake."
+            ],
+            [
+              "n",
+              "Question: What can the girl do?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D26/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p32·短文跨句判断",
+          "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组",
+          "statement": "The speaker can act as a bee.",
+          "answer": "true",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p32·短文跨句判断",
+          "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组",
+          "statement": "The friend can act as a bee.",
+          "answer": "false",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p32·短文跨句判断",
+          "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组",
+          "statement": "They can share a cake.",
+          "answer": "true",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p32·短文跨句判断",
+          "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组",
+          "statement": "The speaker cannot write a letter.",
+          "answer": "false",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D26/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "We have a birthday party. I can act as a bee. My friend can act as a cat. We can play games and share a cake. I can write a letter, and my friend can read it."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D28",
+  "pair_id": "4A-T1-W01-D28",
+  "publication_status": "formal",
+  "week": 6,
+  "day": 3,
+  "scope": "4A Unit 4 p31-p35",
+  "difficulty": "L2",
+  "course_id": "L4A-T1-W01-D28",
+  "title": "四上·第28课｜Unit 4爱的来信·感谢与传统（听力）",
+  "course_type": "training",
+  "est_minutes": 17,
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D28/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p31-p35·听音选词辨别",
+          "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组",
+          "options": [
+            "tradition",
+            "invitation",
+            "activity"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "tradition"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D28/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p31-p35·听音选词辨别",
+          "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组",
+          "options": [
+            "parents' letters",
+            "birthday cakes",
+            "birthday games"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "parents' letters"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D28/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p31-p35·听音选词辨别",
+          "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组",
+          "options": [
+            "family photo",
+            "birthday invitation",
+            "football player"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "family photo"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D28/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p31-p35·听音选词辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p31-p35，不作未掌握结论",
+          "options": [
+            "bring a letter",
+            "read a letter",
+            "write a letter"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "read a letter"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D28/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p35·句子信息对应",
+          "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组",
+          "display": "Minmin's father writes about a football player.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Minmin's father writes about a football player."
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D28/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p35·句子信息对应",
+          "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组",
+          "display": "The mother writes many words in her letter.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The mother does not write a word in her letter."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D28/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p35·句子信息对应",
+          "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组",
+          "display": "The mother draws some pictures.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The mother draws some pictures."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D28/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p35·句子信息对应",
+          "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组",
+          "display": "Shenshen thanks Mum and Dad for a cake.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Shenshen says, Thank you for all the time you spend with me."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D28/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p31-p35·听问句选答语",
+          "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组",
+          "options": [
+            "A doctor.",
+            "A football player.",
+            "A teacher."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What does Minmin's father say Minmin can be?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D28/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p31-p35·听问句选答语",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p31-p35，不作未掌握结论",
+          "options": [
+            "Some pictures.",
+            "Some eggs.",
+            "Some games."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does the mother put in the letter with no words?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D28/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p31-p35·听问句选答语",
+          "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组",
+          "options": [
+            "See you at school.",
+            "Thank you, Mum and Dad.",
+            "Welcome to the hall."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What do the children say to their parents?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D28/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p31-p35·听问句选答语",
+          "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组",
+          "options": [
+            "To read a cake.",
+            "To write noodles.",
+            "To take a family photo."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "What is a birthday tradition in the book?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D28/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p35·对话信息整合",
+          "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组",
+          "question_text": "Who is the father's letter for?",
+          "options": [
+            "Minmin.",
+            "Miss Li.",
+            "Grandma."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "My father writes, You can be a great football player, Minmin."
+            ],
+            [
+              "m",
+              "He loves you and your dream."
+            ],
+            [
+              "n",
+              "Question: Who is the father's letter for?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D28/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p35·对话信息整合",
+          "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组",
+          "question_text": "What is in the mother's letter?",
+          "options": [
+            "Many words.",
+            "Some pictures.",
+            "An invitation."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "My mother does not write a word."
+            ],
+            [
+              "m",
+              "Does she draw pictures?"
+            ],
+            [
+              "f",
+              "Yes. I like this letter."
+            ],
+            [
+              "n",
+              "Question: What is in the mother's letter?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D28/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p35·对话信息整合",
+          "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组",
+          "question_text": "What do they do after reading the letters?",
+          "options": [
+            "They cook noodles.",
+            "They watch a play.",
+            "They thank their parents."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "Let us read our parents' letters."
+            ],
+            [
+              "m",
+              "It is a tradition at our group birthday party."
+            ],
+            [
+              "f",
+              "Then let us say thank you."
+            ],
+            [
+              "n",
+              "Question: What do they do after reading the letters?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D28/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p35·对话信息整合",
+          "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组",
+          "question_text": "Who is the thank-you card for?",
+          "options": [
+            "Mum and Dad.",
+            "A football player.",
+            "Class One."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Thank you for all the time you spend with me."
+            ],
+            [
+              "m",
+              "Who is your card for?"
+            ],
+            [
+              "f",
+              "It is for Mum and Dad."
+            ],
+            [
+              "n",
+              "Question: Who is the thank-you card for?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D28/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p35·短文跨句判断",
+          "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组",
+          "statement": "The children read their parents' letters.",
+          "answer": "true",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p35·短文跨句判断",
+          "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组",
+          "statement": "Minmin's father says Minmin can be a doctor.",
+          "answer": "false",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p35·短文跨句判断",
+          "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组",
+          "statement": "One letter has pictures but no words.",
+          "answer": "true",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p35·短文跨句判断",
+          "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组",
+          "statement": "Shenshen's card is for Miss Li.",
+          "answer": "false",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D28/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "At the group birthday party, the children read their parents' letters. Minmin's father says Minmin can be a great football player. One mother writes no words, but she draws some pictures. The child likes the letter. Shenshen writes a card to Mum and Dad. Shenshen says, Thank you for all the time you spend with me."
+        ]
+      ]
+    }
+  ]
+}

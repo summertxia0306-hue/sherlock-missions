@@ -1,0 +1,224 @@
+{
+  "course_id": "L4A-T1-W01-D27",
+  "pair_id": "4A-T1-W01-D27",
+  "study_pack": "4A-T1-W01-D27",
+  "course_version": "7ccbb4d328a014f5",
+  "title": "四上·第27课｜Unit 4生日邀请·时间与地点（听力）",
+  "week": 6,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 14,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D27/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "birthday invitation",
+            "birthday activity",
+            "birthday cake"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D27/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "one p.m.",
+            "nine a.m.",
+            "three p.m."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D27/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "School Building One",
+            "School Building Two",
+            "Class One"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D27/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "read a letter",
+            "write a letter",
+            "bring a letter"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D27/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "The party is at nine a.m.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D27/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "The party is on the twenty-eighth of October.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D27/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "The party is in the hall in School Building Two.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D27/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "Parents bring a cake to their children.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D27/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "It is our birthday party invitation.",
+            "I can play games.",
+            "It is at nine a.m."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D27/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "At nine a.m.",
+            "In the hall in School Building Two.",
+            "On the twenty-seventh of October."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D27/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "They can watch a play.",
+            "They can read a cake.",
+            "They can write noodles."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D27/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "A big cake.",
+            "A game.",
+            "A letter to their children."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D27/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "options": [
+            "Nine a.m.",
+            "Nine p.m.",
+            "One p.m."
+          ],
+          "question_text": "What time is the party?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D27/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "options": [
+            "The twenty-eighth of October.",
+            "The twenty-seventh of October.",
+            "The twenty-sixth of October."
+          ],
+          "question_text": "When is the party in the invitation?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D27/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "options": [
+            "The hall in Building One.",
+            "The classroom in Building Two.",
+            "The hall in Building Two."
+          ],
+          "question_text": "Where is the party?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D27/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "A letter.",
+            "A cake.",
+            "Noodles."
+          ],
+          "question_text": "What should the parent bring?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D27/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D27/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "The students are turning ten."
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "The party is at nine p.m."
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "The party is in School Building Two."
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "Parents should bring noodles."
+        }
+      ]
+    }
+  ]
+}

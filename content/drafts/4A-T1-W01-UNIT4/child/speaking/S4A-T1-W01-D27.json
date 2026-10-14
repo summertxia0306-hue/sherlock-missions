@@ -1,0 +1,73 @@
+{
+  "course_id": "S4A-T1-W01-D27",
+  "pair_id": "4A-T1-W01-D27",
+  "study_pack": "4A-T1-W01-D27",
+  "course_version": "baa8e80ddfda8704",
+  "title": "四上·第27课｜Unit 4生日邀请·时间与地点（口语）",
+  "week": 6,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 10,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "It is our birthday party invitation.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D27/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "Welcome to our birthday party.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D27/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "The party is at nine a.m. on the twenty-seventh of October.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D27/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "The party is in the hall in School Building Two.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D27/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "We can watch a play and share a big cake.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D27/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Please bring a letter to your child.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D27/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：它在二号教学楼的礼堂。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D27/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：它在上午九点。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D27/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用完整句回答：他们能看一出戏并分享一个大蛋糕。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D27/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用完整句回答：他们应该带一封给孩子们的信。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D27/q10.mp3"
+    }
+  ]
+}

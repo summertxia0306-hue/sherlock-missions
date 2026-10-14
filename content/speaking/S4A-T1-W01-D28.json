@@ -1,0 +1,124 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D28",
+  "pair_id": "4A-T1-W01-D28",
+  "publication_status": "formal",
+  "week": 6,
+  "day": 3,
+  "scope": "4A Unit 4 p31-p35",
+  "difficulty": "L2",
+  "course_id": "S4A-T1-W01-D28",
+  "title": "四上·第28课｜Unit 4爱的来信·感谢与传统（口语）",
+  "course_type": "training",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "type": "repeat",
+      "text": "It is a tradition to read parents' letters at our group birthday party.",
+      "tag": "A主线·p31-p35·教材句型跟读",
+      "id": 1,
+      "audio": "static/audio/speaking/S4A-T1-W01-D28/q01.mp3",
+      "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "You can be a great football player, Minmin.",
+      "tag": "A主线·p31-p35·教材句型跟读",
+      "id": 2,
+      "audio": "static/audio/speaking/S4A-T1-W01-D28/q02.mp3",
+      "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "Work hard and your dreams will come true.",
+      "tag": "A主线·p31-p35·教材句型跟读",
+      "id": 3,
+      "audio": "static/audio/speaking/S4A-T1-W01-D28/q03.mp3",
+      "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "My mother writes no words, but she draws some pictures.",
+      "tag": "A主线·p31-p35·教材句型跟读",
+      "id": 4,
+      "audio": "static/audio/speaking/S4A-T1-W01-D28/q04.mp3",
+      "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "Thank you for all the time you spend with me.",
+      "tag": "A主线·p31-p35·教材句型跟读",
+      "id": 5,
+      "audio": "static/audio/speaking/S4A-T1-W01-D28/q05.mp3",
+      "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "It is a tradition to take a family photo on your birthday.",
+      "tag": "A主线·p31-p35·教材句型跟读",
+      "id": 6,
+      "audio": "static/audio/speaking/S4A-T1-W01-D28/q06.mp3",
+      "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "Who is Minmin's father's letter for?",
+      "expected": "It is for Minmin.",
+      "hint": "用完整句回答：它是给Minmin的。",
+      "tag": "C微调·p31-p35·引导问答信息对应",
+      "id": 7,
+      "audio": "static/audio/speaking/S4A-T1-W01-D28/q07.mp3",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p31-p35，不作未掌握结论"
+    },
+    {
+      "type": "qa",
+      "question": "What is in the mother's letter with no words?",
+      "expected": "There are some pictures in the letter.",
+      "hint": "用完整句回答：信里有一些图画。",
+      "tag": "A主线·p31-p35·引导问答信息对应",
+      "id": 8,
+      "audio": "static/audio/speaking/S4A-T1-W01-D28/q08.mp3",
+      "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What do you say to your parents?",
+      "expected": "Thank you, Mum and Dad. I love you.",
+      "hint": "用完整句回答：谢谢你们，妈妈和爸爸。我爱你们。",
+      "tag": "A主线·p31-p35·引导问答信息对应",
+      "id": 9,
+      "audio": "static/audio/speaking/S4A-T1-W01-D28/q09.mp3",
+      "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What is the tradition at the group birthday party?",
+      "expected": "It is a tradition to read parents' letters.",
+      "hint": "用完整句回答：读父母的信是一项传统。",
+      "tag": "A主线·p31-p35·引导问答信息对应",
+      "id": 10,
+      "audio": "static/audio/speaking/S4A-T1-W01-D28/q10.mp3",
+      "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What does Shenshen say to Mum and Dad?",
+      "expected": "Thank you for all the time you spend with me.",
+      "hint": "用完整句回答：感谢你们陪伴我的所有时间。",
+      "tag": "A主线·p31-p35·引导问答信息对应",
+      "id": 11,
+      "audio": "static/audio/speaking/S4A-T1-W01-D28/q11.mp3",
+      "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What photo can you take on your birthday?",
+      "expected": "I can take a family photo on my birthday.",
+      "hint": "用完整句回答：我能在生日时拍一张全家福。",
+      "tag": "A主线·p31-p35·引导问答信息对应",
+      "id": 12,
+      "audio": "static/audio/speaking/S4A-T1-W01-D28/q12.mp3",
+      "parent_note": "确认版教材p31-p35主线或不增加新知识的同语境受控重组"
+    }
+  ]
+}

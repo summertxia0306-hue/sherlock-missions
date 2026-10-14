@@ -1,0 +1,85 @@
+{
+  "course_id": "S4A-T1-W01-D29",
+  "pair_id": "4A-T1-W01-D29",
+  "study_pack": "4A-T1-W01-D29",
+  "course_version": "7a0c014ae19f793c",
+  "title": "四上·第29课｜Unit 4生日面条·故事整合（口语）",
+  "week": 6,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Minmin turns ten today, and Mum cooks noodles for him.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D29/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "There are two eggs, some tomatoes and other vegetables in his bowl.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D29/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "It is a tradition to eat a bowl of noodles on your birthday.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D29/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Grandma had only soup noodles when she was ten.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D29/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "It may not be much, but there was lots of love in the bowl.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D29/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Parents wish their child good health and a long and happy life.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D29/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：他的碗里有两个鸡蛋。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D29/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：妈妈为Minmin煮生日面条。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D29/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用完整句回答：他的面条里有一些番茄。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D29/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用完整句回答：她只有汤面。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D29/q10.mp3"
+    },
+    {
+      "id": 11,
+      "type": "qa",
+      "hint": "用完整句回答：碗里有很多爱。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D29/q11.mp3"
+    },
+    {
+      "id": 12,
+      "type": "qa",
+      "hint": "用完整句回答：他们祝愿孩子身体健康，拥有长久而幸福的生活。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D29/q12.mp3"
+    }
+  ]
+}

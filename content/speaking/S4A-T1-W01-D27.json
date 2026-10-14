@@ -1,0 +1,104 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D27",
+  "pair_id": "4A-T1-W01-D27",
+  "publication_status": "formal",
+  "week": 6,
+  "day": 2,
+  "scope": "4A Unit 4 p31-p33",
+  "difficulty": "L1",
+  "course_id": "S4A-T1-W01-D27",
+  "title": "四上·第27课｜Unit 4生日邀请·时间与地点（口语）",
+  "course_type": "training",
+  "est_minutes": 10,
+  "questions": [
+    {
+      "type": "repeat",
+      "text": "It is our birthday party invitation.",
+      "tag": "A主线·p31-p33·教材句型跟读",
+      "id": 1,
+      "audio": "static/audio/speaking/S4A-T1-W01-D27/q01.mp3",
+      "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "Welcome to our birthday party.",
+      "tag": "A主线·p31-p33·教材句型跟读",
+      "id": 2,
+      "audio": "static/audio/speaking/S4A-T1-W01-D27/q02.mp3",
+      "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "The party is at nine a.m. on the twenty-seventh of October.",
+      "tag": "A主线·p31-p33·教材句型跟读",
+      "id": 3,
+      "audio": "static/audio/speaking/S4A-T1-W01-D27/q03.mp3",
+      "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "The party is in the hall in School Building Two.",
+      "tag": "A主线·p31-p33·教材句型跟读",
+      "id": 4,
+      "audio": "static/audio/speaking/S4A-T1-W01-D27/q04.mp3",
+      "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "We can watch a play and share a big cake.",
+      "tag": "A主线·p31-p33·教材句型跟读",
+      "id": 5,
+      "audio": "static/audio/speaking/S4A-T1-W01-D27/q05.mp3",
+      "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "Please bring a letter to your child.",
+      "tag": "A主线·p31-p33·教材句型跟读",
+      "id": 6,
+      "audio": "static/audio/speaking/S4A-T1-W01-D27/q06.mp3",
+      "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "Where is the party in the invitation?",
+      "expected": "It is in the hall in School Building Two.",
+      "hint": "用完整句回答：它在二号教学楼的礼堂。",
+      "tag": "C微调·p31-p33·引导问答信息对应",
+      "id": 7,
+      "audio": "static/audio/speaking/S4A-T1-W01-D27/q07.mp3",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p31-p33，不作未掌握结论"
+    },
+    {
+      "type": "qa",
+      "question": "What time is the party?",
+      "expected": "It is at nine a.m.",
+      "hint": "用完整句回答：它在上午九点。",
+      "tag": "A主线·p31-p33·引导问答信息对应",
+      "id": 8,
+      "audio": "static/audio/speaking/S4A-T1-W01-D27/q08.mp3",
+      "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What can parents do at the party?",
+      "expected": "They can watch a play and share a big cake.",
+      "hint": "用完整句回答：他们能看一出戏并分享一个大蛋糕。",
+      "tag": "A主线·p31-p33·引导问答信息对应",
+      "id": 9,
+      "audio": "static/audio/speaking/S4A-T1-W01-D27/q09.mp3",
+      "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What should parents bring?",
+      "expected": "They should bring a letter to their children.",
+      "hint": "用完整句回答：他们应该带一封给孩子们的信。",
+      "tag": "A主线·p31-p33·引导问答信息对应",
+      "id": 10,
+      "audio": "static/audio/speaking/S4A-T1-W01-D27/q10.mp3",
+      "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组"
+    }
+  ]
+}

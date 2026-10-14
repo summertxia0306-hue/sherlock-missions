@@ -6701,6 +6701,906 @@
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
    "text": "Our school is special, and our classmates are different but all great. Minmin is good at football and plays on the sports field. James is in the library, tells interesting stories, and helps other students learn English. The library is on the ground floor and looks like a boat. A helpful girl likes painting pictures and wants to be a painter. When James is afraid of the long rope, his classmates slow it down and cheer for him. At the end, he jumps in and skips."
+  },
+  "69dafb9afb655999": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "invitation"
+  },
+  "0ac55bcfc03e9ba6": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "noodles"
+  },
+  "2387a50525643280": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "share a cake"
+  },
+  "a00207dedcb3afc0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "letter"
+  },
+  "9ef163fcd49a3d1e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I can play games at the birthday party."
+  },
+  "ce46cd17a26a0614": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I can act as a cat."
+  },
+  "99946f63caaf310a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "We can share a cake."
+  },
+  "d1a58a5d51f29a1f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I can write a letter."
+  },
+  "ab52c0666544b115": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can you do at the birthday party?"
+  },
+  "1e848245f81aabd3": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Can you share a cake?"
+  },
+  "b708a8b73fc476fe": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can you read?"
+  },
+  "90590644206ef4a1": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can you write?"
+  },
+  "a355c57762f382b9": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I can act as a bee."
+  },
+  "4c213ef98c553120": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "I can act as a cat."
+  },
+  "27546bbf3c1a1730": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What can the girl act as?"
+  },
+  "4cc370bdd0486e2f": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "We can share a cake."
+  },
+  "8673c9d7e2f22b7c": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Yes, at the birthday party."
+  },
+  "b0aaaab793502a23": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What can they share?"
+  },
+  "9a4ab861c56c6600": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I can write a letter."
+  },
+  "4166a4d0d29fb47f": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "I can read your letter."
+  },
+  "6b5f5552bcefdfe7": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What can the boy do?"
+  },
+  "fee0562fd73d3670": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I can play games at the party."
+  },
+  "c73126d024ac1863": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "I can eat a cake."
+  },
+  "0242d15153d108a2": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What can the girl do?"
+  },
+  "5545ec509e4fee78": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "We have a birthday party. I can act as a bee. My friend can act as a cat. We can play games and share a cake. I can write a letter, and my friend can read it."
+  },
+  "7d7a66b034df755b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "birthday invitation"
+  },
+  "2f8af5971ec76c86": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "nine a.m."
+  },
+  "453b6859d8c6e73f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "School Building Two"
+  },
+  "9a75f1b1e6cb612e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "bring a letter"
+  },
+  "2978b0c105fa6cae": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The party is at nine a.m."
+  },
+  "94afe6fa4224e3d0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The party is on the twenty-seventh of October."
+  },
+  "7341da645ecf3fc1": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The party is in the hall in School Building Two."
+  },
+  "17d7082485da8b77": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Parents bring a letter to their children."
+  },
+  "2aeb426e4545001e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What is this?"
+  },
+  "3f3add6758c9d71e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is the birthday party?"
+  },
+  "384f3947fe0bf432": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can parents watch at the party?"
+  },
+  "c0ce8541f2aa61dd": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What should parents bring?"
+  },
+  "fd5acd008fc19ca4": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Welcome to our birthday party."
+  },
+  "9f49f5a9197e77be": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "What time is it?"
+  },
+  "0a9083c8114b9a76": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "It is at nine a.m."
+  },
+  "4008f4f7609ef339": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What time is the party?"
+  },
+  "27e06f4a083b8c66": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "The invitation says the twenty-seventh of October."
+  },
+  "7bad7a6814b53b46": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Good. We can watch a play there."
+  },
+  "eb7efb3243dec1d8": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: When is the party in the invitation?"
+  },
+  "047001568667f553": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Is the party in School Building One?"
+  },
+  "ac7058a8058a0d8a": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "No, it is in the hall in School Building Two."
+  },
+  "66bc060e353f7100": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Where is the party?"
+  },
+  "3971b4389543787c": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Please bring a letter to your child."
+  },
+  "5c686d93537e7316": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "All right. Can we share a cake?"
+  },
+  "b5f954b2a666fe37": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Yes, a big cake."
+  },
+  "38fc691968899580": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What should the parent bring?"
+  },
+  "7f4bbfa9ad51ccb1": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is the birthday invitation from Class One. The students are turning ten. The party is at nine a.m. on the twenty-seventh of October, in the hall in School Building Two. Parents can watch a play and share a big cake. Please bring a letter to your child."
+  },
+  "69093641a66198f1": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "tradition"
+  },
+  "d1379b34ba9028f8": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "parents' letters"
+  },
+  "595eaba5bb8f1fe0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "family photo"
+  },
+  "824d26aed6c7ae6b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "read a letter"
+  },
+  "3eea252df2d8f8f4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Minmin's father writes about a football player."
+  },
+  "09242eeb65fb1f04": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The mother does not write a word in her letter."
+  },
+  "fc932eb31865f191": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The mother draws some pictures."
+  },
+  "495a5a1a7c018a3f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Shenshen says, Thank you for all the time you spend with me."
+  },
+  "2a3d8eb39b9bb91d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does Minmin's father say Minmin can be?"
+  },
+  "7f7e81ab29636f4d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does the mother put in the letter with no words?"
+  },
+  "b66b8993314611c9": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do the children say to their parents?"
+  },
+  "76cbc5d581f55915": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What is a birthday tradition in the book?"
+  },
+  "538fbc0e8a0b0928": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "My father writes, You can be a great football player, Minmin."
+  },
+  "769fdb6292593d70": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "He loves you and your dream."
+  },
+  "f57ea40f58cbe66e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who is the father's letter for?"
+  },
+  "d7b2c95db58d45e8": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "My mother does not write a word."
+  },
+  "258d34ce8a72e2cc": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Does she draw pictures?"
+  },
+  "2be36a5c4b73e39a": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Yes. I like this letter."
+  },
+  "4810ff0b77cb3aa6": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What is in the mother's letter?"
+  },
+  "d27f7366e99b4e1f": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Let us read our parents' letters."
+  },
+  "4990b3c01e51ca2f": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "It is a tradition at our group birthday party."
+  },
+  "68672d7b8821a2d2": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Then let us say thank you."
+  },
+  "57b6dfa610236b9b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What do they do after reading the letters?"
+  },
+  "512f90cc537d71d6": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Thank you for all the time you spend with me."
+  },
+  "350455d7817f9533": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Who is your card for?"
+  },
+  "c200146e880bfbd3": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "It is for Mum and Dad."
+  },
+  "2c85a038b235baa7": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who is the thank-you card for?"
+  },
+  "72fbdcf29b78791c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "At the group birthday party, the children read their parents' letters. Minmin's father says Minmin can be a great football player. One mother writes no words, but she draws some pictures. The child likes the letter. Shenshen writes a card to Mum and Dad. Shenshen says, Thank you for all the time you spend with me."
+  },
+  "07f564b04c13a8d4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "a bowl of noodles"
+  },
+  "a51204498e0a6260": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "two eggs"
+  },
+  "f95f4197e5ec1a71": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "soup noodles"
+  },
+  "1e7bddc372015042": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "good health"
+  },
+  "fcf7bd48c78a0993": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "tomatoes"
+  },
+  "96f77697745f4201": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Minmin turns ten, and Mum cooks noodles for him."
+  },
+  "50ea95f428674fe3": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Minmin's bowl has two eggs and some tomatoes."
+  },
+  "cc2d59487fc270cb": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Grandma had only soup noodles when she was ten."
+  },
+  "2f934c996935200c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Grandma says there was lots of love in the bowl."
+  },
+  "88031e538f1ab58e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Parents wish their child good health and a long, happy life."
+  },
+  "e95e5d05cd27a6f2": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who cooks birthday noodles for Minmin?"
+  },
+  "788a853b5c10a0f5": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How many eggs are in Minmin's noodles?"
+  },
+  "47fa3bcc33623784": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What did Grandma have at ten?"
+  },
+  "92290d61bec5b1f7": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do parents wish their child?"
+  },
+  "7dcb7e1c5c4f0611": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What was in Grandma's bowl besides soup noodles?"
+  },
+  "9bc09aae7fe5ed64": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Minmin turns ten today."
+  },
+  "5de9fbfd70b24f80": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "His mother cooks birthday noodles for him."
+  },
+  "c8c725e0588af0e9": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "There are two eggs in the bowl."
+  },
+  "fd716cfe1fd8abee": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who cooks the noodles?"
+  },
+  "197e9441fc1510d7": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Are there tomatoes in Minmin's bowl?"
+  },
+  "9346522cd0341f6e": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Yes, and two eggs and other vegetables."
+  },
+  "9903d4e65c59355b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which food is in Minmin's bowl?"
+  },
+  "6503b8bd443c6e17": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Did you have noodles at ten, Grandma?"
+  },
+  "d5d03b049b1c0c03": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Yes, but only soup noodles."
+  },
+  "6f0bf1f369d9ed94": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Minmin is surprised."
+  },
+  "af687e2b58053cba": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: How does Minmin feel?"
+  },
+  "5ceb060eda73a621": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Grandma had only soup noodles."
+  },
+  "cc596583914c9155": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Was there love in the bowl?"
+  },
+  "a3d19e83c624925a": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Yes, lots of love."
+  },
+  "e9a90a4dfca76216": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does Grandma remember?"
+  },
+  "1c6ff50750c91f03": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I want to put eggs in my mother's birthday noodles."
+  },
+  "356e3930e98a4176": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "That is your plan for her birthday."
+  },
+  "fda1794cf3284dd0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Whose noodles does the girl plan to make?"
+  },
+  "4933c83ee9edb721": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Minmin turns ten today. Mum cooks a bowl of noodles with two eggs, some tomatoes and other vegetables. Grandma had noodles when she was ten too, but she had only soup noodles. Minmin is surprised. Grandma says there was lots of love in the bowl. Parents wish their child good health and a long and happy life."
+  },
+  "070eec09bcc8d1ad": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "group birthday party"
+  },
+  "e0a06a4847f348db": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "a camera"
+  },
+  "548fd6deec42aaf4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "read parents' letters"
+  },
+  "16db2673f3656944": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "one p.m. to three p.m."
+  },
+  "61900d735724fb93": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "birthday hats"
+  },
+  "6717979942b0f999": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The project plan is for Monday, the twenty-eighth of October."
+  },
+  "47761f8b5c412a16": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The invitation says nine a.m., but the project plan says one p.m. to three p.m."
+  },
+  "7f2baae9a5456f8d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "We need a camera to take a group photo."
+  },
+  "fd34cc8fa25984de": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Minmin has two eggs, but Grandma had only soup noodles."
+  },
+  "d69625f455c993a5": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Reading parents' letters is a tradition at the group birthday party."
+  },
+  "b7bbead65611b32f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do you need to take a group photo?"
+  },
+  "401914140b0fb624": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What time is the party in the project plan?"
+  },
+  "385935a6baf5cfb0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can you give at the planned birthday party?"
+  },
+  "74e5d037740b511e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Which activity shows a birthday tradition in the book?"
+  },
+  "a6b1a8782a448965": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do Minmin's noodles and Grandma's noodles both show?"
+  },
+  "edbc704df17aa9f1": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Our project plan is for Monday, the twenty-eighth of October."
+  },
+  "033061f683163937": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "The invitation is for the twenty-seventh of October."
+  },
+  "512e85a2ccc4b3da": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "They are different examples."
+  },
+  "83166c61b67759db": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which date is in the project plan?"
+  },
+  "bd976d5472a380ac": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "We want to take a group photo."
+  },
+  "a644c50dd1d935e4": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Then we need a camera."
+  },
+  "4f2e59c386942eef": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "We also need letters for reading."
+  },
+  "b4fd52132161a176": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What is needed for the photo?"
+  },
+  "55231dd6f5cd23a5": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Our party is from one p.m. to three p.m."
+  },
+  "baccfaeae6300cbf": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Can we watch a show?"
+  },
+  "698b81d0704bdd1f": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Yes, and we can give birthday cards."
+  },
+  "34edd584436bed4a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which activity is in their plan?"
+  },
+  "2df29c85532a2ea5": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Minmin has two eggs and vegetables in his noodles."
+  },
+  "afa3ac59a708a4d5": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Grandma had only soup noodles."
+  },
+  "8bb3ce52166f6651": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Both bowls show love."
+  },
+  "2f25a02c57a5abf9": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: How are the bowls different?"
+  },
+  "2b56875a4f1bb3d3": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "We read our parents' letters at the party."
+  },
+  "71d4cfbc76533e12": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Then we say thank you to them."
+  },
+  "96775aebb401e69e": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "It is our birthday tradition."
+  },
+  "82a35af10044244a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What do they do after reading?"
+  },
+  "472b0f0ca69cba81": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is the project plan for our group birthday party. It is on Monday, the twenty-eighth of October, from one p.m. to three p.m. We can give birthday cards, read parents' letters, watch a show and take a group photo. We need balloons, birthday hats, gifts, letters and a camera. Reading parents' letters is a tradition. After reading, we say thank you to our parents."
   }
  },
  "courses": {
@@ -7479,6 +8379,114 @@
    "static/audio/listening/L4A-T1-W01-D25/q19.mp3": "1ced763a8d5983c7",
    "static/audio/listening/L4A-T1-W01-D25/q20.mp3": "6cdc3309aba23196",
    "static/audio/listening/L4A-T1-W01-D25/p01.mp3": "8d62f9d19cc7f1b1"
+  },
+  "L4A-T1-W01-D26": {
+   "static/audio/listening/L4A-T1-W01-D26/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D26/q01.mp3": "2aee22d5f69de813",
+   "static/audio/listening/L4A-T1-W01-D26/q02.mp3": "90d41bfffb50826c",
+   "static/audio/listening/L4A-T1-W01-D26/q03.mp3": "243466f76de0b5ce",
+   "static/audio/listening/L4A-T1-W01-D26/q04.mp3": "d3d104375ba44a4e",
+   "static/audio/listening/L4A-T1-W01-D26/q05.mp3": "5615ddeff972dd12",
+   "static/audio/listening/L4A-T1-W01-D26/q06.mp3": "5ddd59dc1ffd832a",
+   "static/audio/listening/L4A-T1-W01-D26/q07.mp3": "5ab2debd2c95e8ac",
+   "static/audio/listening/L4A-T1-W01-D26/q08.mp3": "7058f09ec0027cb0",
+   "static/audio/listening/L4A-T1-W01-D26/q09.mp3": "73f25bfa1578961c",
+   "static/audio/listening/L4A-T1-W01-D26/q10.mp3": "8b8e1aac61554a24",
+   "static/audio/listening/L4A-T1-W01-D26/q11.mp3": "a894f3aa811a3bce",
+   "static/audio/listening/L4A-T1-W01-D26/q12.mp3": "5eb94ba68195b5c9",
+   "static/audio/listening/L4A-T1-W01-D26/q13.mp3": "d204352c356131ba",
+   "static/audio/listening/L4A-T1-W01-D26/q14.mp3": "01097d53d701a0b7",
+   "static/audio/listening/L4A-T1-W01-D26/q16.mp3": "50abdbd9d904d628",
+   "static/audio/listening/L4A-T1-W01-D26/p01.mp3": "965538de05673b46",
+   "static/audio/listening/L4A-T1-W01-D26/q15.mp3": "e46036995b2eab02"
+  },
+  "L4A-T1-W01-D27": {
+   "static/audio/listening/L4A-T1-W01-D27/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D27/q01.mp3": "540097884116ccd7",
+   "static/audio/listening/L4A-T1-W01-D27/q02.mp3": "db334b09450c9ed6",
+   "static/audio/listening/L4A-T1-W01-D27/q03.mp3": "602596f4f6e99c42",
+   "static/audio/listening/L4A-T1-W01-D27/q04.mp3": "96d981b5a0a8e14d",
+   "static/audio/listening/L4A-T1-W01-D27/q05.mp3": "b2c2a2ff84431b1d",
+   "static/audio/listening/L4A-T1-W01-D27/q06.mp3": "22e4cfbb9b4fb416",
+   "static/audio/listening/L4A-T1-W01-D27/q07.mp3": "4061f4567aee636b",
+   "static/audio/listening/L4A-T1-W01-D27/q08.mp3": "805bf232181dc016",
+   "static/audio/listening/L4A-T1-W01-D27/q09.mp3": "6dbb3145fe59c90c",
+   "static/audio/listening/L4A-T1-W01-D27/q10.mp3": "8826ad6b10f25c9c",
+   "static/audio/listening/L4A-T1-W01-D27/q11.mp3": "cb1e4c617b56c14e",
+   "static/audio/listening/L4A-T1-W01-D27/q12.mp3": "12f8eb439f1f1917",
+   "static/audio/listening/L4A-T1-W01-D27/q13.mp3": "5af5cc3e52a916a8",
+   "static/audio/listening/L4A-T1-W01-D27/q14.mp3": "f13f1b1de3a81f59",
+   "static/audio/listening/L4A-T1-W01-D27/q15.mp3": "92bd79105235a5cd",
+   "static/audio/listening/L4A-T1-W01-D27/q16.mp3": "a98e1da1fa4e3141",
+   "static/audio/listening/L4A-T1-W01-D27/p01.mp3": "94ec108d35f5c315"
+  },
+  "L4A-T1-W01-D28": {
+   "static/audio/listening/L4A-T1-W01-D28/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D28/q01.mp3": "e736dcc10a9ece81",
+   "static/audio/listening/L4A-T1-W01-D28/q02.mp3": "5e313493f2670583",
+   "static/audio/listening/L4A-T1-W01-D28/q03.mp3": "ab1e7397deb2e98d",
+   "static/audio/listening/L4A-T1-W01-D28/q04.mp3": "79341c3d5290d4f1",
+   "static/audio/listening/L4A-T1-W01-D28/q05.mp3": "83ad1ddcdf566644",
+   "static/audio/listening/L4A-T1-W01-D28/q06.mp3": "b56e788340faadec",
+   "static/audio/listening/L4A-T1-W01-D28/q07.mp3": "35275941ded2f6ce",
+   "static/audio/listening/L4A-T1-W01-D28/q08.mp3": "414bedf51ef98cb9",
+   "static/audio/listening/L4A-T1-W01-D28/q09.mp3": "b6ac673de6ad08bd",
+   "static/audio/listening/L4A-T1-W01-D28/q10.mp3": "ea039417573948d4",
+   "static/audio/listening/L4A-T1-W01-D28/q11.mp3": "b805ca854142465c",
+   "static/audio/listening/L4A-T1-W01-D28/q12.mp3": "e99366e0ef777cc9",
+   "static/audio/listening/L4A-T1-W01-D28/q13.mp3": "a0269e56dee20e60",
+   "static/audio/listening/L4A-T1-W01-D28/q14.mp3": "8705037b239910e7",
+   "static/audio/listening/L4A-T1-W01-D28/q15.mp3": "f58bda381011d396",
+   "static/audio/listening/L4A-T1-W01-D28/q16.mp3": "3210dcd8622661af",
+   "static/audio/listening/L4A-T1-W01-D28/p01.mp3": "a8f56cddab0ef846"
+  },
+  "L4A-T1-W01-D29": {
+   "static/audio/listening/L4A-T1-W01-D29/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D29/q01.mp3": "cfe3a3a7913d2095",
+   "static/audio/listening/L4A-T1-W01-D29/q02.mp3": "767ab2b23cabc053",
+   "static/audio/listening/L4A-T1-W01-D29/q03.mp3": "096bb4f3b3afffe0",
+   "static/audio/listening/L4A-T1-W01-D29/q04.mp3": "df23affb086b85fe",
+   "static/audio/listening/L4A-T1-W01-D29/q05.mp3": "9a4642f4e7c963ce",
+   "static/audio/listening/L4A-T1-W01-D29/q06.mp3": "bc282473671b1666",
+   "static/audio/listening/L4A-T1-W01-D29/q07.mp3": "d7f7d44db8ea4e8d",
+   "static/audio/listening/L4A-T1-W01-D29/q08.mp3": "31d1d6c107aa90a8",
+   "static/audio/listening/L4A-T1-W01-D29/q09.mp3": "961d36c7ac257e56",
+   "static/audio/listening/L4A-T1-W01-D29/q10.mp3": "baf6c83361bee0ff",
+   "static/audio/listening/L4A-T1-W01-D29/q11.mp3": "02fda4c6ecbd24b3",
+   "static/audio/listening/L4A-T1-W01-D29/q12.mp3": "241083750eb325cc",
+   "static/audio/listening/L4A-T1-W01-D29/q13.mp3": "b322daefb8e5e15d",
+   "static/audio/listening/L4A-T1-W01-D29/q14.mp3": "5364205905dae151",
+   "static/audio/listening/L4A-T1-W01-D29/q15.mp3": "e3b4511845bbaddd",
+   "static/audio/listening/L4A-T1-W01-D29/q16.mp3": "0fff8c1438e34c2d",
+   "static/audio/listening/L4A-T1-W01-D29/q17.mp3": "23e2e6622ed867c3",
+   "static/audio/listening/L4A-T1-W01-D29/q18.mp3": "dfa1ec3fb7515721",
+   "static/audio/listening/L4A-T1-W01-D29/q19.mp3": "c9a8a0945d2b098a",
+   "static/audio/listening/L4A-T1-W01-D29/q20.mp3": "41181ebdde980876",
+   "static/audio/listening/L4A-T1-W01-D29/p01.mp3": "3adf695ae95a73b1"
+  },
+  "L4A-T1-W01-D30": {
+   "static/audio/listening/L4A-T1-W01-D30/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D30/q01.mp3": "fc7ed5b1902d33d2",
+   "static/audio/listening/L4A-T1-W01-D30/q02.mp3": "fd8623db2da90fad",
+   "static/audio/listening/L4A-T1-W01-D30/q03.mp3": "a514d036f4128513",
+   "static/audio/listening/L4A-T1-W01-D30/q04.mp3": "ef136705106efdfd",
+   "static/audio/listening/L4A-T1-W01-D30/q05.mp3": "d68768403f0ec84c",
+   "static/audio/listening/L4A-T1-W01-D30/q06.mp3": "2af53c4c17906196",
+   "static/audio/listening/L4A-T1-W01-D30/q07.mp3": "84e30a36babf8f19",
+   "static/audio/listening/L4A-T1-W01-D30/q08.mp3": "8d2cf4bfef541497",
+   "static/audio/listening/L4A-T1-W01-D30/q09.mp3": "3e4e0f87f4871c9d",
+   "static/audio/listening/L4A-T1-W01-D30/q10.mp3": "e085312a79d4a81f",
+   "static/audio/listening/L4A-T1-W01-D30/q11.mp3": "ebf667bf5c909447",
+   "static/audio/listening/L4A-T1-W01-D30/q12.mp3": "82c4ab6c01452c91",
+   "static/audio/listening/L4A-T1-W01-D30/q13.mp3": "84cf3a9632dc45fd",
+   "static/audio/listening/L4A-T1-W01-D30/q14.mp3": "e9fee09648863db9",
+   "static/audio/listening/L4A-T1-W01-D30/q15.mp3": "9a10abba2bd1231e",
+   "static/audio/listening/L4A-T1-W01-D30/q16.mp3": "4cd0c3a1605b7fb8",
+   "static/audio/listening/L4A-T1-W01-D30/q17.mp3": "7aa74a8547377680",
+   "static/audio/listening/L4A-T1-W01-D30/q18.mp3": "31fd248a9cdb26f9",
+   "static/audio/listening/L4A-T1-W01-D30/q19.mp3": "679b1b9decd0f399",
+   "static/audio/listening/L4A-T1-W01-D30/q20.mp3": "0e7626b3ec69f1d9",
+   "static/audio/listening/L4A-T1-W01-D30/p01.mp3": "a65685000849164a"
   }
  }
 }

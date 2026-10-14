@@ -1,0 +1,540 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D30",
+  "pair_id": "4A-T1-W01-D30",
+  "publication_status": "formal",
+  "week": 6,
+  "day": 5,
+  "scope": "4A Unit 4 p31-p38",
+  "difficulty": "L3",
+  "course_id": "L4A-T1-W01-D30",
+  "title": "四上·第30课｜Unit 4生日会计划·单元综合（听力）",
+  "course_type": "weekly_test",
+  "est_minutes": 25,
+  "scoring": {
+    "per_question": 4,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D30/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p31-p38·听音选词辨别",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "options": [
+            "group birthday party",
+            "family birthday noodles",
+            "birthday invitation"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "group birthday party"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p31-p38·听音选词辨别",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "options": [
+            "a letter",
+            "a camera",
+            "a birthday hat"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "a camera"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p31-p38·听音选词辨别",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "options": [
+            "give birthday cards",
+            "read parents' letters",
+            "take a group photo"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "read parents' letters"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p31-p38·听音选词辨别",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "options": [
+            "nine a.m. to one p.m.",
+            "one p.m. to three p.m.",
+            "three p.m. to nine p.m."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "one p.m. to three p.m."
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q04.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p31-p38·听音选词辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p31-p38，不作未掌握结论",
+          "options": [
+            "birthday hats",
+            "birthday cards",
+            "birthday letters"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "birthday hats"
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p38·句子信息对应",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "display": "The project plan is for Monday, the twenty-eighth of October.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The project plan is for Monday, the twenty-eighth of October."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p38·句子信息对应",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "display": "The invitation and the project plan both say nine a.m.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The invitation says nine a.m., but the project plan says one p.m. to three p.m."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p38·句子信息对应",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "display": "We need a camera to take a group photo.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "We need a camera to take a group photo."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q08.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p38·句子信息对应",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "display": "Grandma had two eggs, but Minmin had only soup noodles.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Minmin has two eggs, but Grandma had only soup noodles."
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q09.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p38·句子信息对应",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "display": "Reading parents' letters is a tradition at the group birthday party.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Reading parents' letters is a tradition at the group birthday party."
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p31-p38·听问句选答语",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "options": [
+            "A camera.",
+            "A cake.",
+            "An egg."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What do you need to take a group photo?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p31-p38·听问句选答语",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p31-p38，不作未掌握结论",
+          "options": [
+            "Nine a.m.",
+            "One p.m. to three p.m.",
+            "Three p.m. to nine p.m."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What time is the party in the project plan?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q12.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p31-p38·听问句选答语",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Soup noodles.",
+            "School buildings.",
+            "Birthday cards."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "What can you give at the planned birthday party?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q13.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p31-p38·听问句选答语",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Reading parents' letters.",
+            "Buying a school building.",
+            "Reading a camera."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Which activity shows a birthday tradition in the book?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q14.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p31-p38·听问句选答语",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "options": [
+            "They both have two eggs.",
+            "They both show love.",
+            "They both have tomatoes."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What do Minmin's noodles and Grandma's noodles both show?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p38·对话信息整合",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "question_text": "Which date is in the project plan?",
+          "options": [
+            "The twenty-seventh of October.",
+            "The twenty-eighth of October.",
+            "The twenty-ninth of October."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Our project plan is for Monday, the twenty-eighth of October."
+            ],
+            [
+              "m",
+              "The invitation is for the twenty-seventh of October."
+            ],
+            [
+              "f",
+              "They are different examples."
+            ],
+            [
+              "n",
+              "Question: Which date is in the project plan?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q16.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p38·对话信息整合",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "question_text": "What is needed for the photo?",
+          "options": [
+            "A camera.",
+            "A letter.",
+            "An invitation."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "We want to take a group photo."
+            ],
+            [
+              "m",
+              "Then we need a camera."
+            ],
+            [
+              "f",
+              "We also need letters for reading."
+            ],
+            [
+              "n",
+              "Question: What is needed for the photo?"
+            ]
+          ],
+          "id": 17,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q17.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p38·对话信息整合",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "question_text": "Which activity is in their plan?",
+          "options": [
+            "Cooking soup.",
+            "Playing football.",
+            "Giving birthday cards."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "Our party is from one p.m. to three p.m."
+            ],
+            [
+              "m",
+              "Can we watch a show?"
+            ],
+            [
+              "f",
+              "Yes, and we can give birthday cards."
+            ],
+            [
+              "n",
+              "Question: Which activity is in their plan?"
+            ]
+          ],
+          "id": 18,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q18.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p38·对话信息整合",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "question_text": "How are the bowls different?",
+          "options": [
+            "Only Grandma has two eggs.",
+            "Minmin has eggs and vegetables.",
+            "Neither bowl shows love."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Minmin has two eggs and vegetables in his noodles."
+            ],
+            [
+              "m",
+              "Grandma had only soup noodles."
+            ],
+            [
+              "f",
+              "Both bowls show love."
+            ],
+            [
+              "n",
+              "Question: How are the bowls different?"
+            ]
+          ],
+          "id": 19,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q19.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p38·对话信息整合",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "question_text": "What do they do after reading?",
+          "options": [
+            "Thank their parents.",
+            "Take away the letters.",
+            "Cook two eggs."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "We read our parents' letters at the party."
+            ],
+            [
+              "m",
+              "Then we say thank you to them."
+            ],
+            [
+              "f",
+              "It is our birthday tradition."
+            ],
+            [
+              "n",
+              "Question: What do they do after reading?"
+            ]
+          ],
+          "id": 20,
+          "audio": "static/audio/listening/L4A-T1-W01-D30/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p38·短文跨句判断",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "statement": "The plan is for Monday, the twenty-eighth of October.",
+          "answer": "true",
+          "id": 21
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p38·短文跨句判断",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "statement": "The planned party starts at nine a.m.",
+          "answer": "false",
+          "id": 22
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p38·短文跨句判断",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "statement": "They can read parents' letters and watch a show.",
+          "answer": "true",
+          "id": 23
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p38·短文跨句判断",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "statement": "They do not need a camera.",
+          "answer": "false",
+          "id": 24
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p38·短文跨句判断",
+          "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组",
+          "statement": "They thank their parents after reading the letters.",
+          "answer": "true",
+          "id": 25
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D30/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "This is the project plan for our group birthday party. It is on Monday, the twenty-eighth of October, from one p.m. to three p.m. We can give birthday cards, read parents' letters, watch a show and take a group photo. We need balloons, birthday hats, gifts, letters and a camera. Reading parents' letters is a tradition. After reading, we say thank you to our parents."
+        ]
+      ]
+    }
+  ]
+}

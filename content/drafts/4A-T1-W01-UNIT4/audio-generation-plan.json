@@ -1,0 +1,2086 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "generation_status": "READY_TO_GENERATE",
+  "publication_status": "formal",
+  "expected_listening_outputs": 98,
+  "expected_speaking_outputs": 56,
+  "expected_total_outputs": 154,
+  "items": [
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D26",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D26/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D26",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D26/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "invitation"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D26",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D26/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "noodles"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D26",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D26/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "share a cake"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D26",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D26/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "letter"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D26",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D26/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "I can play games at the birthday party."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D26",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D26/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "I can act as a cat."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D26",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D26/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "We can share a cake."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D26",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D26/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "I can write a letter."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D26",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D26/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What can you do at the birthday party?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D26",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D26/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Can you share a cake?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D26",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D26/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What can you read?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D26",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D26/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What can you write?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D26",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D26/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "I can act as a bee."
+        ],
+        [
+          "m",
+          "I can act as a cat."
+        ],
+        [
+          "n",
+          "Question: What can the girl act as?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D26",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D26/q14.mp3",
+      "clips": [
+        [
+          "f",
+          "We can share a cake."
+        ],
+        [
+          "m",
+          "Yes, at the birthday party."
+        ],
+        [
+          "n",
+          "Question: What can they share?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D26",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D26/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "I can write a letter."
+        ],
+        [
+          "m",
+          "I can read your letter."
+        ],
+        [
+          "n",
+          "Question: What can the boy do?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D26",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D26/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "I can play games at the party."
+        ],
+        [
+          "m",
+          "I can eat a cake."
+        ],
+        [
+          "n",
+          "Question: What can the girl do?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D26",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D26/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "We have a birthday party. I can act as a bee. My friend can act as a cat. We can play games and share a cake. I can write a letter, and my friend can read it."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D27",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D27/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D27",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D27/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "birthday invitation"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D27",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D27/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "nine a.m."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D27",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D27/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "School Building Two"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D27",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D27/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "bring a letter"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D27",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D27/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "The party is at nine a.m."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D27",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D27/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "The party is on the twenty-seventh of October."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D27",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D27/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "The party is in the hall in School Building Two."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D27",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D27/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Parents bring a letter to their children."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D27",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D27/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What is this?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D27",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D27/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Where is the birthday party?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D27",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D27/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What can parents watch at the party?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D27",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D27/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What should parents bring?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D27",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D27/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "Welcome to our birthday party."
+        ],
+        [
+          "m",
+          "What time is it?"
+        ],
+        [
+          "f",
+          "It is at nine a.m."
+        ],
+        [
+          "n",
+          "Question: What time is the party?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D27",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D27/q14.mp3",
+      "clips": [
+        [
+          "f",
+          "The invitation says the twenty-seventh of October."
+        ],
+        [
+          "m",
+          "Good. We can watch a play there."
+        ],
+        [
+          "n",
+          "Question: When is the party in the invitation?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D27",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D27/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "Is the party in School Building One?"
+        ],
+        [
+          "m",
+          "No, it is in the hall in School Building Two."
+        ],
+        [
+          "n",
+          "Question: Where is the party?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D27",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D27/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "Please bring a letter to your child."
+        ],
+        [
+          "m",
+          "All right. Can we share a cake?"
+        ],
+        [
+          "f",
+          "Yes, a big cake."
+        ],
+        [
+          "n",
+          "Question: What should the parent bring?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D27",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D27/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "This is the birthday invitation from Class One. The students are turning ten. The party is at nine a.m. on the twenty-seventh of October, in the hall in School Building Two. Parents can watch a play and share a big cake. Please bring a letter to your child."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D28",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D28/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D28",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D28/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "tradition"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D28",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D28/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "parents' letters"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D28",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D28/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "family photo"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D28",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D28/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "read a letter"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D28",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D28/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "Minmin's father writes about a football player."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D28",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D28/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "The mother does not write a word in her letter."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D28",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D28/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "The mother draws some pictures."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D28",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D28/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Shenshen says, Thank you for all the time you spend with me."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D28",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D28/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What does Minmin's father say Minmin can be?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D28",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D28/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What does the mother put in the letter with no words?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D28",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D28/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What do the children say to their parents?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D28",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D28/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What is a birthday tradition in the book?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D28",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D28/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "My father writes, You can be a great football player, Minmin."
+        ],
+        [
+          "m",
+          "He loves you and your dream."
+        ],
+        [
+          "n",
+          "Question: Who is the father's letter for?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D28",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D28/q14.mp3",
+      "clips": [
+        [
+          "f",
+          "My mother does not write a word."
+        ],
+        [
+          "m",
+          "Does she draw pictures?"
+        ],
+        [
+          "f",
+          "Yes. I like this letter."
+        ],
+        [
+          "n",
+          "Question: What is in the mother's letter?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D28",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D28/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "Let us read our parents' letters."
+        ],
+        [
+          "m",
+          "It is a tradition at our group birthday party."
+        ],
+        [
+          "f",
+          "Then let us say thank you."
+        ],
+        [
+          "n",
+          "Question: What do they do after reading the letters?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D28",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D28/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "Thank you for all the time you spend with me."
+        ],
+        [
+          "m",
+          "Who is your card for?"
+        ],
+        [
+          "f",
+          "It is for Mum and Dad."
+        ],
+        [
+          "n",
+          "Question: Who is the thank-you card for?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D28",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D28/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "At the group birthday party, the children read their parents' letters. Minmin's father says Minmin can be a great football player. One mother writes no words, but she draws some pictures. The child likes the letter. Shenshen writes a card to Mum and Dad. Shenshen says, Thank you for all the time you spend with me."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D29/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "a bowl of noodles"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "two eggs"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "soup noodles"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "good health"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "tomatoes"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Minmin turns ten, and Mum cooks noodles for him."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Minmin's bowl has two eggs and some tomatoes."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Grandma had only soup noodles when she was ten."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Grandma says there was lots of love in the bowl."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Parents wish their child good health and a long, happy life."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Who cooks birthday noodles for Minmin?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "How many eggs are in Minmin's noodles?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q13.mp3",
+      "clips": [
+        [
+          "n",
+          "What did Grandma have at ten?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q14.mp3",
+      "clips": [
+        [
+          "n",
+          "What do parents wish their child?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q15.mp3",
+      "clips": [
+        [
+          "n",
+          "What was in Grandma's bowl besides soup noodles?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "Minmin turns ten today."
+        ],
+        [
+          "m",
+          "His mother cooks birthday noodles for him."
+        ],
+        [
+          "f",
+          "There are two eggs in the bowl."
+        ],
+        [
+          "n",
+          "Question: Who cooks the noodles?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_17",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q17.mp3",
+      "clips": [
+        [
+          "f",
+          "Are there tomatoes in Minmin's bowl?"
+        ],
+        [
+          "m",
+          "Yes, and two eggs and other vegetables."
+        ],
+        [
+          "n",
+          "Question: Which food is in Minmin's bowl?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_18",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q18.mp3",
+      "clips": [
+        [
+          "f",
+          "Did you have noodles at ten, Grandma?"
+        ],
+        [
+          "m",
+          "Yes, but only soup noodles."
+        ],
+        [
+          "f",
+          "Minmin is surprised."
+        ],
+        [
+          "n",
+          "Question: How does Minmin feel?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_19",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q19.mp3",
+      "clips": [
+        [
+          "f",
+          "Grandma had only soup noodles."
+        ],
+        [
+          "m",
+          "Was there love in the bowl?"
+        ],
+        [
+          "f",
+          "Yes, lots of love."
+        ],
+        [
+          "n",
+          "Question: What does Grandma remember?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "question_20",
+      "path": "static/audio/listening/L4A-T1-W01-D29/q20.mp3",
+      "clips": [
+        [
+          "f",
+          "I want to put eggs in my mother's birthday noodles."
+        ],
+        [
+          "m",
+          "That is your plan for her birthday."
+        ],
+        [
+          "n",
+          "Question: Whose noodles does the girl plan to make?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D29",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D29/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "Minmin turns ten today. Mum cooks a bowl of noodles with two eggs, some tomatoes and other vegetables. Grandma had noodles when she was ten too, but she had only soup noodles. Minmin is surprised. Grandma says there was lots of love in the bowl. Parents wish their child good health and a long and happy life."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D30/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "group birthday party"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "a camera"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "read parents' letters"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "one p.m. to three p.m."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "birthday hats"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "The project plan is for Monday, the twenty-eighth of October."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "The invitation says nine a.m., but the project plan says one p.m. to three p.m."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "We need a camera to take a group photo."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Minmin has two eggs, but Grandma had only soup noodles."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Reading parents' letters is a tradition at the group birthday party."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What do you need to take a group photo?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What time is the party in the project plan?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q13.mp3",
+      "clips": [
+        [
+          "n",
+          "What can you give at the planned birthday party?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q14.mp3",
+      "clips": [
+        [
+          "n",
+          "Which activity shows a birthday tradition in the book?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q15.mp3",
+      "clips": [
+        [
+          "n",
+          "What do Minmin's noodles and Grandma's noodles both show?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "Our project plan is for Monday, the twenty-eighth of October."
+        ],
+        [
+          "m",
+          "The invitation is for the twenty-seventh of October."
+        ],
+        [
+          "f",
+          "They are different examples."
+        ],
+        [
+          "n",
+          "Question: Which date is in the project plan?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_17",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q17.mp3",
+      "clips": [
+        [
+          "f",
+          "We want to take a group photo."
+        ],
+        [
+          "m",
+          "Then we need a camera."
+        ],
+        [
+          "f",
+          "We also need letters for reading."
+        ],
+        [
+          "n",
+          "Question: What is needed for the photo?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_18",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q18.mp3",
+      "clips": [
+        [
+          "f",
+          "Our party is from one p.m. to three p.m."
+        ],
+        [
+          "m",
+          "Can we watch a show?"
+        ],
+        [
+          "f",
+          "Yes, and we can give birthday cards."
+        ],
+        [
+          "n",
+          "Question: Which activity is in their plan?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_19",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q19.mp3",
+      "clips": [
+        [
+          "f",
+          "Minmin has two eggs and vegetables in his noodles."
+        ],
+        [
+          "m",
+          "Grandma had only soup noodles."
+        ],
+        [
+          "f",
+          "Both bowls show love."
+        ],
+        [
+          "n",
+          "Question: How are the bowls different?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "question_20",
+      "path": "static/audio/listening/L4A-T1-W01-D30/q20.mp3",
+      "clips": [
+        [
+          "f",
+          "We read our parents' letters at the party."
+        ],
+        [
+          "m",
+          "Then we say thank you to them."
+        ],
+        [
+          "f",
+          "It is our birthday tradition."
+        ],
+        [
+          "n",
+          "Question: What do they do after reading?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D30",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D30/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "This is the project plan for our group birthday party. It is on Monday, the twenty-eighth of October, from one p.m. to three p.m. We can give birthday cards, read parents' letters, watch a show and take a group photo. We need balloons, birthday hats, gifts, letters and a camera. Reading parents' letters is a tradition. After reading, we say thank you to our parents."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D26",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D26/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "I can play games at the birthday party."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D26",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D26/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "We can share a cake at the party."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D26",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D26/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "I can write a letter."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D26",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D26/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "My friend can read a letter."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D26",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D26/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "I can act as a bee."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D26",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D26/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "My friend can act as a cat."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D26",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D26/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "What can you read?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D26",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D26/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "What can you share at the party?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D26",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D26/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What can you do at the party?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D26",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D26/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What can you act as?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D27",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D27/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "It is our birthday party invitation."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D27",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D27/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "Welcome to our birthday party."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D27",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D27/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "The party is at nine a.m. on the twenty-seventh of October."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D27",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D27/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "The party is in the hall in School Building Two."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D27",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D27/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "We can watch a play and share a big cake."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D27",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D27/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Please bring a letter to your child."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D27",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D27/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Where is the party in the invitation?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D27",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D27/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "What time is the party?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D27",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D27/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What can parents do at the party?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D27",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D27/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What should parents bring?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D28",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D28/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "It is a tradition to read parents' letters at our group birthday party."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D28",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D28/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "You can be a great football player, Minmin."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D28",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D28/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "Work hard and your dreams will come true."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D28",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D28/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "My mother writes no words, but she draws some pictures."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D28",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D28/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "Thank you for all the time you spend with me."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D28",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D28/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "It is a tradition to take a family photo on your birthday."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D28",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D28/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Who is Minmin's father's letter for?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D28",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D28/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "What is in the mother's letter with no words?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D28",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D28/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What do you say to your parents?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D28",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D28/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What is the tradition at the group birthday party?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D28",
+      "kind": "question_11_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D28/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What does Shenshen say to Mum and Dad?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D28",
+      "kind": "question_12_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D28/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What photo can you take on your birthday?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D29",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D29/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "Minmin turns ten today, and Mum cooks noodles for him."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D29",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D29/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "There are two eggs, some tomatoes and other vegetables in his bowl."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D29",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D29/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "It is a tradition to eat a bowl of noodles on your birthday."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D29",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D29/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "Grandma had only soup noodles when she was ten."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D29",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D29/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "It may not be much, but there was lots of love in the bowl."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D29",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D29/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Parents wish their child good health and a long and happy life."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D29",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D29/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "How many eggs are in Minmin's bowl?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D29",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D29/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Who cooks birthday noodles for Minmin?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D29",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D29/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What vegetables are named in Minmin's noodles?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D29",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D29/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What did Grandma have at ten?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D29",
+      "kind": "question_11_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D29/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What does Grandma say about her bowl?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D29",
+      "kind": "question_12_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D29/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What do parents wish their child?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D30",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D30/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "This is my plan for our group birthday party."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D30",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D30/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "Our party is on Monday, the twenty-eighth of October, from one p.m. to three p.m."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D30",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D30/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "We can give birthday cards, read parents' letters and watch a show."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D30",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D30/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "We need balloons, birthday hats, gifts, letters and a camera."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D30",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D30/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "It is a tradition to read parents' letters at our group birthday party."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D30",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D30/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Minmin has eggs and vegetables, but Grandma had only soup noodles."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D30",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D30/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "What do you need for a group photo?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D30",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D30/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "When is the party in the project plan?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D30",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D30/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What time is the planned party?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D30",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D30/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Which two activities can you do in the project plan?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D30",
+      "kind": "question_11_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D30/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What is a tradition at the group birthday party?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D30",
+      "kind": "question_12_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D30/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "How are Minmin's noodles different from Grandma's?"
+        ]
+      ]
+    }
+  ]
+}

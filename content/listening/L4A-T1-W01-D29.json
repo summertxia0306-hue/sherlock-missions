@@ -1,0 +1,532 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D29",
+  "pair_id": "4A-T1-W01-D29",
+  "publication_status": "formal",
+  "week": 6,
+  "day": 4,
+  "scope": "4A Unit 4 p31-p37",
+  "difficulty": "L2",
+  "course_id": "L4A-T1-W01-D29",
+  "title": "四上·第29课｜Unit 4生日面条·故事整合（听力）",
+  "course_type": "training",
+  "est_minutes": 21,
+  "scoring": {
+    "per_question": 4,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D29/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p31-p37·听音选词辨别",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "options": [
+            "a bowl of noodles",
+            "a bowl of eggs",
+            "a birthday cake"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "a bowl of noodles"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p31-p37·听音选词辨别",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "options": [
+            "one egg",
+            "two eggs",
+            "three eggs"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "two eggs"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p31-p37·听音选词辨别",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "options": [
+            "birthday letters",
+            "soup noodles",
+            "birthday hats"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "soup noodles"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p31-p37·听音选词辨别",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "options": [
+            "a big cake",
+            "good health",
+            "a family photo"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "good health"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q04.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p31-p37·听音选词辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p31-p37，不作未掌握结论",
+          "options": [
+            "tomatoes",
+            "noodles",
+            "vegetables"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "tomatoes"
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p37·句子信息对应",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "display": "Minmin turns ten, and Mum cooks noodles for him.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Minmin turns ten, and Mum cooks noodles for him."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p37·句子信息对应",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "display": "Minmin's bowl has one egg and no tomatoes.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Minmin's bowl has two eggs and some tomatoes."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p37·句子信息对应",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "display": "Grandma had only soup noodles when she was ten.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Grandma had only soup noodles when she was ten."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q08.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p37·句子信息对应",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "display": "Grandma says there was no love in the bowl.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Grandma says there was lots of love in the bowl."
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q09.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p37·句子信息对应",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "display": "Parents wish their child good health and a long, happy life.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Parents wish their child good health and a long, happy life."
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p31-p37·听问句选答语",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "options": [
+            "His mother.",
+            "His father.",
+            "His grandma."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who cooks birthday noodles for Minmin?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p31-p37·听问句选答语",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p31-p37，不作未掌握结论",
+          "options": [
+            "One.",
+            "Two.",
+            "Three."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "How many eggs are in Minmin's noodles?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q12.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p31-p37·听问句选答语",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "options": [
+            "A big cake.",
+            "Noodles with two eggs.",
+            "Only soup noodles."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "What did Grandma have at ten?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q13.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p31-p37·听问句选答语",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Good health and a long, happy life.",
+            "A birthday invitation.",
+            "A football game."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What do parents wish their child?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q14.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p31-p37·听问句选答语",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Two eggs.",
+            "Lots of love.",
+            "Some tomatoes."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What was in Grandma's bowl besides soup noodles?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p37·对话信息整合",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "question_text": "Who cooks the noodles?",
+          "options": [
+            "Grandma.",
+            "Mum.",
+            "Minmin."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Minmin turns ten today."
+            ],
+            [
+              "m",
+              "His mother cooks birthday noodles for him."
+            ],
+            [
+              "f",
+              "There are two eggs in the bowl."
+            ],
+            [
+              "n",
+              "Question: Who cooks the noodles?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q16.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p37·对话信息整合",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "question_text": "Which food is in Minmin's bowl?",
+          "options": [
+            "Tomatoes.",
+            "A cake.",
+            "Gifts."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Are there tomatoes in Minmin's bowl?"
+            ],
+            [
+              "m",
+              "Yes, and two eggs and other vegetables."
+            ],
+            [
+              "n",
+              "Question: Which food is in Minmin's bowl?"
+            ]
+          ],
+          "id": 17,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q17.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p37·对话信息整合",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "question_text": "How does Minmin feel?",
+          "options": [
+            "Angry.",
+            "Afraid.",
+            "Surprised."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "Did you have noodles at ten, Grandma?"
+            ],
+            [
+              "m",
+              "Yes, but only soup noodles."
+            ],
+            [
+              "f",
+              "Minmin is surprised."
+            ],
+            [
+              "n",
+              "Question: How does Minmin feel?"
+            ]
+          ],
+          "id": 18,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q18.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p37·对话信息整合",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "question_text": "What does Grandma remember?",
+          "options": [
+            "A bowl full of eggs.",
+            "Lots of love.",
+            "A birthday show."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Grandma had only soup noodles."
+            ],
+            [
+              "m",
+              "Was there love in the bowl?"
+            ],
+            [
+              "f",
+              "Yes, lots of love."
+            ],
+            [
+              "n",
+              "Question: What does Grandma remember?"
+            ]
+          ],
+          "id": 19,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q19.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p37·对话信息整合",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "question_text": "Whose noodles does the girl plan to make?",
+          "options": [
+            "Her mother's.",
+            "Her grandma's.",
+            "Minmin's."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "I want to put eggs in my mother's birthday noodles."
+            ],
+            [
+              "m",
+              "That is your plan for her birthday."
+            ],
+            [
+              "n",
+              "Question: Whose noodles does the girl plan to make?"
+            ]
+          ],
+          "id": 20,
+          "audio": "static/audio/listening/L4A-T1-W01-D29/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p37·短文跨句判断",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "statement": "Minmin turns ten today.",
+          "answer": "true",
+          "id": 21
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p37·短文跨句判断",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "statement": "Mum puts three eggs in his noodles.",
+          "answer": "false",
+          "id": 22
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p37·短文跨句判断",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "statement": "Grandma had only soup noodles at ten.",
+          "answer": "true",
+          "id": 23
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p37·短文跨句判断",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "statement": "Grandma says there was no love in her bowl.",
+          "answer": "false",
+          "id": 24
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p37·短文跨句判断",
+          "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组",
+          "statement": "Parents wish their child good health.",
+          "answer": "true",
+          "id": 25
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D29/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Minmin turns ten today. Mum cooks a bowl of noodles with two eggs, some tomatoes and other vegetables. Grandma had noodles when she was ten too, but she had only soup noodles. Minmin is surprised. Grandma says there was lots of love in the bowl. Parents wish their child good health and a long and happy life."
+        ]
+      ]
+    }
+  ]
+}

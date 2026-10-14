@@ -1,0 +1,124 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D29",
+  "pair_id": "4A-T1-W01-D29",
+  "publication_status": "formal",
+  "week": 6,
+  "day": 4,
+  "scope": "4A Unit 4 p31-p37",
+  "difficulty": "L2",
+  "course_id": "S4A-T1-W01-D29",
+  "title": "四上·第29课｜Unit 4生日面条·故事整合（口语）",
+  "course_type": "training",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "type": "repeat",
+      "text": "Minmin turns ten today, and Mum cooks noodles for him.",
+      "tag": "A主线·p31-p37·教材句型跟读",
+      "id": 1,
+      "audio": "static/audio/speaking/S4A-T1-W01-D29/q01.mp3",
+      "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "There are two eggs, some tomatoes and other vegetables in his bowl.",
+      "tag": "A主线·p31-p37·教材句型跟读",
+      "id": 2,
+      "audio": "static/audio/speaking/S4A-T1-W01-D29/q02.mp3",
+      "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "It is a tradition to eat a bowl of noodles on your birthday.",
+      "tag": "A主线·p31-p37·教材句型跟读",
+      "id": 3,
+      "audio": "static/audio/speaking/S4A-T1-W01-D29/q03.mp3",
+      "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "Grandma had only soup noodles when she was ten.",
+      "tag": "A主线·p31-p37·教材句型跟读",
+      "id": 4,
+      "audio": "static/audio/speaking/S4A-T1-W01-D29/q04.mp3",
+      "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "It may not be much, but there was lots of love in the bowl.",
+      "tag": "A主线·p31-p37·教材句型跟读",
+      "id": 5,
+      "audio": "static/audio/speaking/S4A-T1-W01-D29/q05.mp3",
+      "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "Parents wish their child good health and a long and happy life.",
+      "tag": "A主线·p31-p37·教材句型跟读",
+      "id": 6,
+      "audio": "static/audio/speaking/S4A-T1-W01-D29/q06.mp3",
+      "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "How many eggs are in Minmin's bowl?",
+      "expected": "There are two eggs in his bowl.",
+      "hint": "用完整句回答：他的碗里有两个鸡蛋。",
+      "tag": "C微调·p31-p37·引导问答信息对应",
+      "id": 7,
+      "audio": "static/audio/speaking/S4A-T1-W01-D29/q07.mp3",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p31-p37，不作未掌握结论"
+    },
+    {
+      "type": "qa",
+      "question": "Who cooks birthday noodles for Minmin?",
+      "expected": "Mum cooks birthday noodles for Minmin.",
+      "hint": "用完整句回答：妈妈为Minmin煮生日面条。",
+      "tag": "A主线·p31-p37·引导问答信息对应",
+      "id": 8,
+      "audio": "static/audio/speaking/S4A-T1-W01-D29/q08.mp3",
+      "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What vegetables are named in Minmin's noodles?",
+      "expected": "There are some tomatoes in his noodles.",
+      "hint": "用完整句回答：他的面条里有一些番茄。",
+      "tag": "A主线·p31-p37·引导问答信息对应",
+      "id": 9,
+      "audio": "static/audio/speaking/S4A-T1-W01-D29/q09.mp3",
+      "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What did Grandma have at ten?",
+      "expected": "She had only soup noodles.",
+      "hint": "用完整句回答：她只有汤面。",
+      "tag": "A主线·p31-p37·引导问答信息对应",
+      "id": 10,
+      "audio": "static/audio/speaking/S4A-T1-W01-D29/q10.mp3",
+      "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What does Grandma say about her bowl?",
+      "expected": "There was lots of love in the bowl.",
+      "hint": "用完整句回答：碗里有很多爱。",
+      "tag": "A主线·p31-p37·引导问答信息对应",
+      "id": 11,
+      "audio": "static/audio/speaking/S4A-T1-W01-D29/q11.mp3",
+      "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What do parents wish their child?",
+      "expected": "They wish their child good health and a long and happy life.",
+      "hint": "用完整句回答：他们祝愿孩子身体健康，拥有长久而幸福的生活。",
+      "tag": "A主线·p31-p37·引导问答信息对应",
+      "id": 12,
+      "audio": "static/audio/speaking/S4A-T1-W01-D29/q12.mp3",
+      "parent_note": "确认版教材p31-p37主线或不增加新知识的同语境受控重组"
+    }
+  ]
+}

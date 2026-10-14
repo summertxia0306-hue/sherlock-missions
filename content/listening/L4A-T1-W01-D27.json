@@ -1,0 +1,439 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D27",
+  "pair_id": "4A-T1-W01-D27",
+  "publication_status": "formal",
+  "week": 6,
+  "day": 2,
+  "scope": "4A Unit 4 p31-p33",
+  "difficulty": "L1",
+  "course_id": "L4A-T1-W01-D27",
+  "title": "四上·第27课｜Unit 4生日邀请·时间与地点（听力）",
+  "course_type": "training",
+  "est_minutes": 14,
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D27/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p31-p33·听音选词辨别",
+          "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组",
+          "options": [
+            "birthday invitation",
+            "birthday activity",
+            "birthday cake"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "birthday invitation"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D27/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p31-p33·听音选词辨别",
+          "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组",
+          "options": [
+            "one p.m.",
+            "nine a.m.",
+            "three p.m."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "nine a.m."
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D27/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p31-p33·听音选词辨别",
+          "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组",
+          "options": [
+            "School Building One",
+            "School Building Two",
+            "Class One"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "School Building Two"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D27/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p31-p33·听音选词辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p31-p33，不作未掌握结论",
+          "options": [
+            "read a letter",
+            "write a letter",
+            "bring a letter"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "bring a letter"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D27/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p33·句子信息对应",
+          "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组",
+          "display": "The party is at nine a.m.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The party is at nine a.m."
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D27/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p33·句子信息对应",
+          "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组",
+          "display": "The party is on the twenty-eighth of October.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The party is on the twenty-seventh of October."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D27/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p33·句子信息对应",
+          "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组",
+          "display": "The party is in the hall in School Building Two.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The party is in the hall in School Building Two."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D27/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p31-p33·句子信息对应",
+          "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组",
+          "display": "Parents bring a cake to their children.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Parents bring a letter to their children."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D27/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p31-p33·听问句选答语",
+          "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组",
+          "options": [
+            "It is our birthday party invitation.",
+            "I can play games.",
+            "It is at nine a.m."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What is this?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D27/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p31-p33·听问句选答语",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p31-p33，不作未掌握结论",
+          "options": [
+            "At nine a.m.",
+            "In the hall in School Building Two.",
+            "On the twenty-seventh of October."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Where is the birthday party?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D27/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p31-p33·听问句选答语",
+          "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组",
+          "options": [
+            "They can watch a play.",
+            "They can read a cake.",
+            "They can write noodles."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can parents watch at the party?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D27/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p31-p33·听问句选答语",
+          "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组",
+          "options": [
+            "A big cake.",
+            "A game.",
+            "A letter to their children."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "What should parents bring?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D27/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p33·对话信息整合",
+          "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组",
+          "question_text": "What time is the party?",
+          "options": [
+            "Nine a.m.",
+            "Nine p.m.",
+            "One p.m."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Welcome to our birthday party."
+            ],
+            [
+              "m",
+              "What time is it?"
+            ],
+            [
+              "f",
+              "It is at nine a.m."
+            ],
+            [
+              "n",
+              "Question: What time is the party?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D27/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p33·对话信息整合",
+          "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组",
+          "question_text": "When is the party in the invitation?",
+          "options": [
+            "The twenty-eighth of October.",
+            "The twenty-seventh of October.",
+            "The twenty-sixth of October."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "The invitation says the twenty-seventh of October."
+            ],
+            [
+              "m",
+              "Good. We can watch a play there."
+            ],
+            [
+              "n",
+              "Question: When is the party in the invitation?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D27/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p33·对话信息整合",
+          "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组",
+          "question_text": "Where is the party?",
+          "options": [
+            "The hall in Building One.",
+            "The classroom in Building Two.",
+            "The hall in Building Two."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "Is the party in School Building One?"
+            ],
+            [
+              "m",
+              "No, it is in the hall in School Building Two."
+            ],
+            [
+              "n",
+              "Question: Where is the party?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D27/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p31-p33·对话信息整合",
+          "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组",
+          "question_text": "What should the parent bring?",
+          "options": [
+            "A letter.",
+            "A cake.",
+            "Noodles."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Please bring a letter to your child."
+            ],
+            [
+              "m",
+              "All right. Can we share a cake?"
+            ],
+            [
+              "f",
+              "Yes, a big cake."
+            ],
+            [
+              "n",
+              "Question: What should the parent bring?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D27/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p33·短文跨句判断",
+          "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组",
+          "statement": "The students are turning ten.",
+          "answer": "true",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p33·短文跨句判断",
+          "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组",
+          "statement": "The party is at nine p.m.",
+          "answer": "false",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p33·短文跨句判断",
+          "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组",
+          "statement": "The party is in School Building Two.",
+          "answer": "true",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p31-p33·短文跨句判断",
+          "parent_note": "确认版教材p31-p33主线或不增加新知识的同语境受控重组",
+          "statement": "Parents should bring noodles.",
+          "answer": "false",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D27/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "This is the birthday invitation from Class One. The students are turning ten. The party is at nine a.m. on the twenty-seventh of October, in the hall in School Building Two. Parents can watch a play and share a big cake. Please bring a letter to your child."
+        ]
+      ]
+    }
+  ]
+}

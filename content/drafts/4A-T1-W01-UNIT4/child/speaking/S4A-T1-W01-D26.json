@@ -1,0 +1,73 @@
+{
+  "course_id": "S4A-T1-W01-D26",
+  "pair_id": "4A-T1-W01-D26",
+  "study_pack": "4A-T1-W01-D26",
+  "course_version": "37da03d3ec1b1660",
+  "title": "四上·第26课｜Unit 4生日词汇与活动（口语）",
+  "week": 6,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 10,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "I can play games at the birthday party.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D26/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "We can share a cake at the party.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D26/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "I can write a letter.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D26/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "My friend can read a letter.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D26/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "I can act as a bee.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D26/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "My friend can act as a cat.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D26/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：我能读一封信。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D26/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：我们能分享一个蛋糕。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D26/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用完整句回答：我能在聚会上玩游戏。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D26/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用完整句回答：我能扮演一只蜜蜂。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D26/q10.mp3"
+    }
+  ]
+}

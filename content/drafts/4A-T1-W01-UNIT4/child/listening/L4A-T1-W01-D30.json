@@ -1,0 +1,266 @@
+{
+  "course_id": "L4A-T1-W01-D30",
+  "pair_id": "4A-T1-W01-D30",
+  "study_pack": "4A-T1-W01-D30",
+  "course_version": "b954589371bb941c",
+  "title": "四上·第30课｜Unit 4生日会计划·单元综合（听力）",
+  "week": 6,
+  "day": 5,
+  "course_type": "weekly_test",
+  "est_minutes": 25,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D30/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "group birthday party",
+            "family birthday noodles",
+            "birthday invitation"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "a letter",
+            "a camera",
+            "a birthday hat"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "give birthday cards",
+            "read parents' letters",
+            "take a group photo"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "nine a.m. to one p.m.",
+            "one p.m. to three p.m.",
+            "three p.m. to nine p.m."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q04.mp3"
+        },
+        {
+          "id": 5,
+          "type": "word_choice",
+          "options": [
+            "birthday hats",
+            "birthday cards",
+            "birthday letters"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 1,
+      "questions": [
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "The project plan is for Monday, the twenty-eighth of October.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "The invitation and the project plan both say nine a.m.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "We need a camera to take a group photo.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q08.mp3"
+        },
+        {
+          "id": 9,
+          "type": "sentence_judge",
+          "display": "Grandma had two eggs, but Minmin had only soup noodles.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "sentence_judge",
+          "display": "Reading parents' letters is a tradition at the group birthday party.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "A camera.",
+            "A cake.",
+            "An egg."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "Nine a.m.",
+            "One p.m. to three p.m.",
+            "Three p.m. to nine p.m."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q12.mp3"
+        },
+        {
+          "id": 13,
+          "type": "question_response",
+          "options": [
+            "Soup noodles.",
+            "School buildings.",
+            "Birthday cards."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "question_response",
+          "options": [
+            "Reading parents' letters.",
+            "Buying a school building.",
+            "Reading a camera."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "question_response",
+          "options": [
+            "They both have two eggs.",
+            "They both show love.",
+            "They both have tomatoes."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "The twenty-seventh of October.",
+            "The twenty-eighth of October.",
+            "The twenty-ninth of October."
+          ],
+          "question_text": "Which date is in the project plan?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q16.mp3"
+        },
+        {
+          "id": 17,
+          "type": "dialogue_choice",
+          "options": [
+            "A camera.",
+            "A letter.",
+            "An invitation."
+          ],
+          "question_text": "What is needed for the photo?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q17.mp3"
+        },
+        {
+          "id": 18,
+          "type": "dialogue_choice",
+          "options": [
+            "Cooking soup.",
+            "Playing football.",
+            "Giving birthday cards."
+          ],
+          "question_text": "Which activity is in their plan?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q18.mp3"
+        },
+        {
+          "id": 19,
+          "type": "dialogue_choice",
+          "options": [
+            "Only Grandma has two eggs.",
+            "Minmin has eggs and vegetables.",
+            "Neither bowl shows love."
+          ],
+          "question_text": "How are the bowls different?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q19.mp3"
+        },
+        {
+          "id": 20,
+          "type": "dialogue_choice",
+          "options": [
+            "Thank their parents.",
+            "Take away the letters.",
+            "Cook two eggs."
+          ],
+          "question_text": "What do they do after reading?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D30/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D30/p01.mp3",
+      "questions": [
+        {
+          "id": 21,
+          "type": "passage_judge",
+          "statement": "The plan is for Monday, the twenty-eighth of October."
+        },
+        {
+          "id": 22,
+          "type": "passage_judge",
+          "statement": "The planned party starts at nine a.m."
+        },
+        {
+          "id": 23,
+          "type": "passage_judge",
+          "statement": "They can read parents' letters and watch a show."
+        },
+        {
+          "id": 24,
+          "type": "passage_judge",
+          "statement": "They do not need a camera."
+        },
+        {
+          "id": 25,
+          "type": "passage_judge",
+          "statement": "They thank their parents after reading the letters."
+        }
+      ]
+    }
+  ]
+}

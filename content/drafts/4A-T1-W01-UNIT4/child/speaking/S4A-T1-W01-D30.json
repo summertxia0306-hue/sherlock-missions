@@ -1,0 +1,85 @@
+{
+  "course_id": "S4A-T1-W01-D30",
+  "pair_id": "4A-T1-W01-D30",
+  "study_pack": "4A-T1-W01-D30",
+  "course_version": "53658661d6640b51",
+  "title": "四上·第30课｜Unit 4生日会计划·单元综合（口语）",
+  "week": 6,
+  "day": 5,
+  "course_type": "weekly_review",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "This is my plan for our group birthday party.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D30/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "Our party is on Monday, the twenty-eighth of October, from one p.m. to three p.m.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D30/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "We can give birthday cards, read parents' letters and watch a show.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D30/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "We need balloons, birthday hats, gifts, letters and a camera.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D30/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "It is a tradition to read parents' letters at our group birthday party.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D30/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Minmin has eggs and vegetables, but Grandma had only soup noodles.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D30/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：我们需要一部相机来拍集体照。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D30/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：它在十月二十八日，星期一。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D30/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用完整句回答：它从下午一点到三点。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D30/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用完整句回答：我们能送生日卡片并读父母的信。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D30/q10.mp3"
+    },
+    {
+      "id": 11,
+      "type": "qa",
+      "hint": "用完整句回答：读父母的信是一项传统。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D30/q11.mp3"
+    },
+    {
+      "id": 12,
+      "type": "qa",
+      "hint": "用完整句回答：Minmin有鸡蛋和蔬菜，而奶奶只有汤面。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D30/q12.mp3"
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "course_id": "L4A-T1-W01-D26",
+  "pair_id": "4A-T1-W01-D26",
+  "study_pack": "4A-T1-W01-D26",
+  "course_version": "05173ab0225fd004",
+  "title": "四上·第26课｜Unit 4生日词汇与活动（听力）",
+  "week": 6,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 12,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D26/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "invitation",
+            "activity",
+            "party"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D26/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "letter",
+            "noodles",
+            "egg"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D26/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "read a letter",
+            "play games",
+            "share a cake"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D26/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "letter",
+            "party",
+            "activity"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D26/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "I can play games at the birthday party.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D26/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "I can act as a bee.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D26/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "We can share a cake.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D26/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "I can read a letter.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D26/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "I can play games.",
+            "It is a letter.",
+            "It is an egg."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D26/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "It is a party.",
+            "Yes, I can.",
+            "It is a letter."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D26/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "A cake.",
+            "An egg.",
+            "A letter."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D26/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "A letter.",
+            "A cake.",
+            "Noodles."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D26/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "options": [
+            "A bee.",
+            "A cat.",
+            "An egg."
+          ],
+          "question_text": "What can the girl act as?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D26/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "options": [
+            "A letter.",
+            "A cake.",
+            "An invitation."
+          ],
+          "question_text": "What can they share?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D26/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "options": [
+            "Eat a cake.",
+            "Play games.",
+            "Read a letter."
+          ],
+          "question_text": "What can the boy do?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D26/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "Play games.",
+            "Write a letter.",
+            "Act as a cat."
+          ],
+          "question_text": "What can the girl do?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D26/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D26/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "The speaker can act as a bee."
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "The friend can act as a bee."
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "They can share a cake."
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "The speaker cannot write a letter."
+        }
+      ]
+    }
+  ]
+}

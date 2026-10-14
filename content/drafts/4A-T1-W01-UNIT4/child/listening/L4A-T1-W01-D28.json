@@ -1,0 +1,224 @@
+{
+  "course_id": "L4A-T1-W01-D28",
+  "pair_id": "4A-T1-W01-D28",
+  "study_pack": "4A-T1-W01-D28",
+  "course_version": "99264b5112ef9255",
+  "title": "四上·第28课｜Unit 4爱的来信·感谢与传统（听力）",
+  "week": 6,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 17,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D28/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "tradition",
+            "invitation",
+            "activity"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D28/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "parents' letters",
+            "birthday cakes",
+            "birthday games"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D28/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "family photo",
+            "birthday invitation",
+            "football player"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D28/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "bring a letter",
+            "read a letter",
+            "write a letter"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D28/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "Minmin's father writes about a football player.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D28/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "The mother writes many words in her letter.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D28/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "The mother draws some pictures.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D28/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "Shenshen thanks Mum and Dad for a cake.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D28/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "A doctor.",
+            "A football player.",
+            "A teacher."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D28/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "Some pictures.",
+            "Some eggs.",
+            "Some games."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D28/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "See you at school.",
+            "Thank you, Mum and Dad.",
+            "Welcome to the hall."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D28/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "To read a cake.",
+            "To write noodles.",
+            "To take a family photo."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D28/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "options": [
+            "Minmin.",
+            "Miss Li.",
+            "Grandma."
+          ],
+          "question_text": "Who is the father's letter for?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D28/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "options": [
+            "Many words.",
+            "Some pictures.",
+            "An invitation."
+          ],
+          "question_text": "What is in the mother's letter?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D28/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "options": [
+            "They cook noodles.",
+            "They watch a play.",
+            "They thank their parents."
+          ],
+          "question_text": "What do they do after reading the letters?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D28/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "Mum and Dad.",
+            "A football player.",
+            "Class One."
+          ],
+          "question_text": "Who is the thank-you card for?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D28/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D28/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "The children read their parents' letters."
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "Minmin's father says Minmin can be a doctor."
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "One letter has pictures but no words."
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "Shenshen's card is for Miss Li."
+        }
+      ]
+    }
+  ]
+}

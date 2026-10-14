@@ -1,0 +1,266 @@
+{
+  "course_id": "L4A-T1-W01-D29",
+  "pair_id": "4A-T1-W01-D29",
+  "study_pack": "4A-T1-W01-D29",
+  "course_version": "404958ba4fc031e7",
+  "title": "四上·第29课｜Unit 4生日面条·故事整合（听力）",
+  "week": 6,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 21,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D29/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "a bowl of noodles",
+            "a bowl of eggs",
+            "a birthday cake"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "one egg",
+            "two eggs",
+            "three eggs"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "birthday letters",
+            "soup noodles",
+            "birthday hats"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "a big cake",
+            "good health",
+            "a family photo"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q04.mp3"
+        },
+        {
+          "id": 5,
+          "type": "word_choice",
+          "options": [
+            "tomatoes",
+            "noodles",
+            "vegetables"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "Minmin turns ten, and Mum cooks noodles for him.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "Minmin's bowl has one egg and no tomatoes.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "Grandma had only soup noodles when she was ten.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q08.mp3"
+        },
+        {
+          "id": 9,
+          "type": "sentence_judge",
+          "display": "Grandma says there was no love in the bowl.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "sentence_judge",
+          "display": "Parents wish their child good health and a long, happy life.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "His mother.",
+            "His father.",
+            "His grandma."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "One.",
+            "Two.",
+            "Three."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q12.mp3"
+        },
+        {
+          "id": 13,
+          "type": "question_response",
+          "options": [
+            "A big cake.",
+            "Noodles with two eggs.",
+            "Only soup noodles."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "question_response",
+          "options": [
+            "Good health and a long, happy life.",
+            "A birthday invitation.",
+            "A football game."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "question_response",
+          "options": [
+            "Two eggs.",
+            "Lots of love.",
+            "Some tomatoes."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "Grandma.",
+            "Mum.",
+            "Minmin."
+          ],
+          "question_text": "Who cooks the noodles?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q16.mp3"
+        },
+        {
+          "id": 17,
+          "type": "dialogue_choice",
+          "options": [
+            "Tomatoes.",
+            "A cake.",
+            "Gifts."
+          ],
+          "question_text": "Which food is in Minmin's bowl?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q17.mp3"
+        },
+        {
+          "id": 18,
+          "type": "dialogue_choice",
+          "options": [
+            "Angry.",
+            "Afraid.",
+            "Surprised."
+          ],
+          "question_text": "How does Minmin feel?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q18.mp3"
+        },
+        {
+          "id": 19,
+          "type": "dialogue_choice",
+          "options": [
+            "A bowl full of eggs.",
+            "Lots of love.",
+            "A birthday show."
+          ],
+          "question_text": "What does Grandma remember?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q19.mp3"
+        },
+        {
+          "id": 20,
+          "type": "dialogue_choice",
+          "options": [
+            "Her mother's.",
+            "Her grandma's.",
+            "Minmin's."
+          ],
+          "question_text": "Whose noodles does the girl plan to make?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D29/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D29/p01.mp3",
+      "questions": [
+        {
+          "id": 21,
+          "type": "passage_judge",
+          "statement": "Minmin turns ten today."
+        },
+        {
+          "id": 22,
+          "type": "passage_judge",
+          "statement": "Mum puts three eggs in his noodles."
+        },
+        {
+          "id": 23,
+          "type": "passage_judge",
+          "statement": "Grandma had only soup noodles at ten."
+        },
+        {
+          "id": 24,
+          "type": "passage_judge",
+          "statement": "Grandma says there was no love in her bowl."
+        },
+        {
+          "id": 25,
+          "type": "passage_judge",
+          "statement": "Parents wish their child good health."
+        }
+      ]
+    }
+  ]
+}

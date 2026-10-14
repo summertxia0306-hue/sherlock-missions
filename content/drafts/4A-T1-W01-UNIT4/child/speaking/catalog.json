@@ -1,0 +1,57 @@
+[
+  {
+    "course_id": "S4A-T1-W01-D26",
+    "course_version": "37da03d3ec1b1660",
+    "title": "四上·第26课｜Unit 4生日词汇与活动（口语）",
+    "course_type": "training",
+    "week": 6,
+    "day": 1,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D26",
+    "study_pack": "4A-T1-W01-D26"
+  },
+  {
+    "course_id": "S4A-T1-W01-D27",
+    "course_version": "baa8e80ddfda8704",
+    "title": "四上·第27课｜Unit 4生日邀请·时间与地点（口语）",
+    "course_type": "training",
+    "week": 6,
+    "day": 2,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D27",
+    "study_pack": "4A-T1-W01-D27"
+  },
+  {
+    "course_id": "S4A-T1-W01-D28",
+    "course_version": "f0dd11196619f5eb",
+    "title": "四上·第28课｜Unit 4爱的来信·感谢与传统（口语）",
+    "course_type": "training",
+    "week": 6,
+    "day": 3,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D28",
+    "study_pack": "4A-T1-W01-D28"
+  },
+  {
+    "course_id": "S4A-T1-W01-D29",
+    "course_version": "7a0c014ae19f793c",
+    "title": "四上·第29课｜Unit 4生日面条·故事整合（口语）",
+    "course_type": "training",
+    "week": 6,
+    "day": 4,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D29",
+    "study_pack": "4A-T1-W01-D29"
+  },
+  {
+    "course_id": "S4A-T1-W01-D30",
+    "course_version": "53658661d6640b51",
+    "title": "四上·第30课｜Unit 4生日会计划·单元综合（口语）",
+    "course_type": "weekly_review",
+    "week": 6,
+    "day": 5,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D30",
+    "study_pack": "4A-T1-W01-D30"
+  }
+]

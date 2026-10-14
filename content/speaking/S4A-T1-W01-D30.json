@@ -1,0 +1,124 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D30",
+  "pair_id": "4A-T1-W01-D30",
+  "publication_status": "formal",
+  "week": 6,
+  "day": 5,
+  "scope": "4A Unit 4 p31-p38",
+  "difficulty": "L3",
+  "course_id": "S4A-T1-W01-D30",
+  "title": "四上·第30课｜Unit 4生日会计划·单元综合（口语）",
+  "course_type": "weekly_review",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "type": "repeat",
+      "text": "This is my plan for our group birthday party.",
+      "tag": "A主线·p31-p38·教材句型跟读",
+      "id": 1,
+      "audio": "static/audio/speaking/S4A-T1-W01-D30/q01.mp3",
+      "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "Our party is on Monday, the twenty-eighth of October, from one p.m. to three p.m.",
+      "tag": "A主线·p31-p38·教材句型跟读",
+      "id": 2,
+      "audio": "static/audio/speaking/S4A-T1-W01-D30/q02.mp3",
+      "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "We can give birthday cards, read parents' letters and watch a show.",
+      "tag": "A主线·p31-p38·教材句型跟读",
+      "id": 3,
+      "audio": "static/audio/speaking/S4A-T1-W01-D30/q03.mp3",
+      "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "We need balloons, birthday hats, gifts, letters and a camera.",
+      "tag": "A主线·p31-p38·教材句型跟读",
+      "id": 4,
+      "audio": "static/audio/speaking/S4A-T1-W01-D30/q04.mp3",
+      "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "It is a tradition to read parents' letters at our group birthday party.",
+      "tag": "A主线·p31-p38·教材句型跟读",
+      "id": 5,
+      "audio": "static/audio/speaking/S4A-T1-W01-D30/q05.mp3",
+      "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "Minmin has eggs and vegetables, but Grandma had only soup noodles.",
+      "tag": "A主线·p31-p38·教材句型跟读",
+      "id": 6,
+      "audio": "static/audio/speaking/S4A-T1-W01-D30/q06.mp3",
+      "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What do you need for a group photo?",
+      "expected": "We need a camera to take a group photo.",
+      "hint": "用完整句回答：我们需要一部相机来拍集体照。",
+      "tag": "C微调·p31-p38·引导问答信息对应",
+      "id": 7,
+      "audio": "static/audio/speaking/S4A-T1-W01-D30/q07.mp3",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p31-p38，不作未掌握结论"
+    },
+    {
+      "type": "qa",
+      "question": "When is the party in the project plan?",
+      "expected": "It is on Monday, the twenty-eighth of October.",
+      "hint": "用完整句回答：它在十月二十八日，星期一。",
+      "tag": "A主线·p31-p38·引导问答信息对应",
+      "id": 8,
+      "audio": "static/audio/speaking/S4A-T1-W01-D30/q08.mp3",
+      "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What time is the planned party?",
+      "expected": "It is from one p.m. to three p.m.",
+      "hint": "用完整句回答：它从下午一点到三点。",
+      "tag": "A主线·p31-p38·引导问答信息对应",
+      "id": 9,
+      "audio": "static/audio/speaking/S4A-T1-W01-D30/q09.mp3",
+      "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "Which two activities can you do in the project plan?",
+      "expected": "We can give birthday cards and read parents' letters.",
+      "hint": "用完整句回答：我们能送生日卡片并读父母的信。",
+      "tag": "A主线·p31-p38·引导问答信息对应",
+      "id": 10,
+      "audio": "static/audio/speaking/S4A-T1-W01-D30/q10.mp3",
+      "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What is a tradition at the group birthday party?",
+      "expected": "It is a tradition to read parents' letters.",
+      "hint": "用完整句回答：读父母的信是一项传统。",
+      "tag": "A主线·p31-p38·引导问答信息对应",
+      "id": 11,
+      "audio": "static/audio/speaking/S4A-T1-W01-D30/q11.mp3",
+      "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "How are Minmin's noodles different from Grandma's?",
+      "expected": "Minmin has eggs and vegetables, but Grandma had only soup noodles.",
+      "hint": "用完整句回答：Minmin有鸡蛋和蔬菜，而奶奶只有汤面。",
+      "tag": "A主线·p31-p38·引导问答信息对应",
+      "id": 12,
+      "audio": "static/audio/speaking/S4A-T1-W01-D30/q12.mp3",
+      "parent_note": "确认版教材p31-p38主线或不增加新知识的同语境受控重组"
+    }
+  ]
+}

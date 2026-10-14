@@ -1,0 +1,104 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D26",
+  "pair_id": "4A-T1-W01-D26",
+  "publication_status": "formal",
+  "week": 6,
+  "day": 1,
+  "scope": "4A Unit 4 p31-p32",
+  "difficulty": "L1",
+  "course_id": "S4A-T1-W01-D26",
+  "title": "四上·第26课｜Unit 4生日词汇与活动（口语）",
+  "course_type": "training",
+  "est_minutes": 10,
+  "questions": [
+    {
+      "type": "repeat",
+      "text": "I can play games at the birthday party.",
+      "tag": "A主线·p31-p32·教材句型跟读",
+      "id": 1,
+      "audio": "static/audio/speaking/S4A-T1-W01-D26/q01.mp3",
+      "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "We can share a cake at the party.",
+      "tag": "A主线·p31-p32·教材句型跟读",
+      "id": 2,
+      "audio": "static/audio/speaking/S4A-T1-W01-D26/q02.mp3",
+      "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "I can write a letter.",
+      "tag": "A主线·p31-p32·教材句型跟读",
+      "id": 3,
+      "audio": "static/audio/speaking/S4A-T1-W01-D26/q03.mp3",
+      "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "My friend can read a letter.",
+      "tag": "A主线·p31-p32·教材句型跟读",
+      "id": 4,
+      "audio": "static/audio/speaking/S4A-T1-W01-D26/q04.mp3",
+      "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "I can act as a bee.",
+      "tag": "A主线·p31-p32·教材句型跟读",
+      "id": 5,
+      "audio": "static/audio/speaking/S4A-T1-W01-D26/q05.mp3",
+      "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "My friend can act as a cat.",
+      "tag": "A主线·p31-p32·教材句型跟读",
+      "id": 6,
+      "audio": "static/audio/speaking/S4A-T1-W01-D26/q06.mp3",
+      "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What can you read?",
+      "expected": "I can read a letter.",
+      "hint": "用完整句回答：我能读一封信。",
+      "tag": "C微调·p31-p32·引导问答信息对应",
+      "id": 7,
+      "audio": "static/audio/speaking/S4A-T1-W01-D26/q07.mp3",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p31-p32，不作未掌握结论"
+    },
+    {
+      "type": "qa",
+      "question": "What can you share at the party?",
+      "expected": "We can share a cake.",
+      "hint": "用完整句回答：我们能分享一个蛋糕。",
+      "tag": "A主线·p31-p32·引导问答信息对应",
+      "id": 8,
+      "audio": "static/audio/speaking/S4A-T1-W01-D26/q08.mp3",
+      "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What can you do at the party?",
+      "expected": "I can play games at the party.",
+      "hint": "用完整句回答：我能在聚会上玩游戏。",
+      "tag": "A主线·p31-p32·引导问答信息对应",
+      "id": 9,
+      "audio": "static/audio/speaking/S4A-T1-W01-D26/q09.mp3",
+      "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What can you act as?",
+      "expected": "I can act as a bee.",
+      "hint": "用完整句回答：我能扮演一只蜜蜂。",
+      "tag": "A主线·p31-p32·引导问答信息对应",
+      "id": 10,
+      "audio": "static/audio/speaking/S4A-T1-W01-D26/q10.mp3",
+      "parent_note": "确认版教材p31-p32主线或不增加新知识的同语境受控重组"
+    }
+  ]
+}
