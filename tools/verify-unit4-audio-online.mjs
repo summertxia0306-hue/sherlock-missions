@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url'
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 assert.equal(root.toLowerCase(), 'D:\\ObsidianVaults\\Education\\Sherlock\\English-Learning'.toLowerCase())
 const revision = 'a99d4ad37b2e6b6e02f015e638dff3fdd490190a'
-const base = `https://gcore.jsdelivr.net/gh/summertxia0306-hue/sherlock-missions@${revision}/`
+const base = `https://raw.githubusercontent.com/summertxia0306-hue/sherlock-missions/${revision}/`
 const plan = JSON.parse(await readFile(join(root, 'content/drafts/4A-T1-W01-UNIT4/audio-generation-plan.json'), 'utf8'))
 const manifests = Object.fromEntries(await Promise.all(['listening', 'speaking'].map(async module => [
   module, JSON.parse(await readFile(join(root, `static/audio/${module}/manifest.json`), 'utf8'))

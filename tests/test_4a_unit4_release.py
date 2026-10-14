@@ -19,7 +19,7 @@ class Unit4ReleaseTests(unittest.TestCase):
                 with self.subTest(path=path):
                     sources = audio.audio_sources(path)
                     self.assertEqual(3, len(sources))
-                    self.assertTrue(sources[0].startswith("https://gcore.jsdelivr.net/gh/"))
+                    self.assertTrue(sources[0].startswith("https://raw.githubusercontent.com/"))
                     self.assertTrue(all(REVISION in source for source in sources))
                     self.assertEqual(sources[0], audio.audio_url(path))
         # Exact day boundaries prevent routing old or future courses to U4.
