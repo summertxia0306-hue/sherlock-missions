@@ -66,7 +66,7 @@ def _state(course, student_id, data_kind):
 
 def _save_checkpoint(course, s, student_id):
     try:
-        saved = progress.save_speaking_checkpoint(
+        saved = progress.queue_speaking_checkpoint(
             student_id, course["course_id"], s["data_kind"],
             checkpoint.snapshot(course, s),
         )
@@ -190,6 +190,9 @@ def render_course(student_id, course_id, data_kind="formal"):
         st.session_state["active_speaking_route"] = course_id
     if s.pop("resumed", False):
         st.info("已接上这门课的上次进度，不用从第一题重做。")
+    if progress.speaking_checkpoint_sync_status(
+            student_id, course_id, data_kind) == "failed":
+        s["checkpoint_warning"] = True
     if s.get("checkpoint_warning"):
         st.warning("当前进度暂未同步到私有备份，请保持本页打开；系统会在下一题继续重试。")
     if s["result"]:
@@ -307,7 +310,10 @@ def _question_page(course, s, q, student_id):
                                  course["course_id"], s["attempt"], capture_gen),
                              max_sec=20, countdown=3)
         if rv is not None and str(rv.get("qid")) == str(qid) and rv.get("take") == seq:
-            _consume_take(course, q, qs_, rv, s)
+            if _consume_take(course, q, qs_, rv, s):
+                # A reconnect can happen after grading but before Next is tapped.
+                # Persist this take now, not only when moving to the next question.
+                _save_checkpoint(course, s, student_id)
             st.rerun()
         if gate["scored_takes"]:
             st.caption("还没到三颗星呢～ 看上面老师标出哪里要再读，"

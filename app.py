@@ -48,7 +48,7 @@ module = qp.get("module", None)
 # Streamlit/iPad can unexpectedly lose the query route during a long lesson.
 # Keep an in-session route only for an unfinished, actively started lesson;
 # explicit navigation clears the marker in the back buttons below.
-if mode == "child" and not course_id and not module:
+if mode == "child" and not course_id and module in (None, "", "speaking"):
     active_course = st.session_state.get("active_speaking_route")
     active_state = st.session_state.get(
         progress.course_session_key("S", active_course, "formal")

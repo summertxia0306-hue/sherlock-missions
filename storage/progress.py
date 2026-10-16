@@ -24,6 +24,8 @@ import time
 import urllib.error
 import urllib.request
 
+from . import checkpoint_jobs
+
 _LOCK = threading.Lock()
 COURSE_STATUSES = ("open", "closed", "hidden", "archived")
 DATA_KINDS = ("test", "formal")
@@ -135,11 +137,15 @@ def _speaking_checkpoint_names(student_id, course_id, data_kind):
 
 def _checkpoint_rank(item):
     if not isinstance(item, dict):
-        return (0, -1, False)
+        return (0, -1, 0, False)
     attempt, idx = item.get("attempt"), item.get("idx")
     if not isinstance(attempt, int) or not isinstance(idx, int):
-        return (0, -1, False)
-    return (attempt, idx, bool(item.get("submitted")))
+        return (0, -1, 0, False)
+    questions = item.get("q")
+    takes = sum(len(q.get("takes", [])) for q in questions.values()
+                if isinstance(q, dict) and isinstance(q.get("takes"), list)) \
+        if isinstance(questions, dict) else 0
+    return (attempt, idx, takes, bool(item.get("submitted")))
 
 
 def load_speaking_checkpoint(student_id, course_id, data_kind):
@@ -184,6 +190,66 @@ def save_speaking_checkpoint(student_id, course_id, data_kind, payload):
             if remote is None or _checkpoint_rank(remote) > _checkpoint_rank(payload):
                 break
     return False
+
+
+def _sync_remote_speaking_checkpoint(remote_name, payload, token, repo):
+    """Background CAS write; credentials were captured on the Streamlit thread."""
+    url = "https://api.github.com/repos/%s/contents/%s" % (repo, remote_name)
+    for _attempt in range(2):
+        try:
+            obj = _gh_request("GET", url, token)
+            remote = json.loads(base64.b64decode(obj["content"]).decode("utf-8"))
+            sha = obj["sha"]
+        except urllib.error.HTTPError as exc:
+            if exc.code != 404:
+                return False
+            remote, sha = {}, None
+        except Exception:
+            return False
+        if _checkpoint_rank(remote) > _checkpoint_rank(payload):
+            return True
+        body = {"message": "update %s (%s)" % (remote_name, beijing_today()),
+                "content": base64.b64encode(json.dumps(
+                    payload, ensure_ascii=False, indent=1).encode("utf-8")
+                ).decode("ascii")}
+        if sha:
+            body["sha"] = sha
+        try:
+            _gh_request("PUT", url, token, body)
+            return True
+        except urllib.error.HTTPError as exc:
+            if exc.code not in (409, 422):
+                return False
+        except Exception:
+            return False
+    return False
+
+
+def queue_speaking_checkpoint(student_id, course_id, data_kind, payload):
+    """Save locally now, then sync the private draft without freezing the lesson."""
+    local_name, remote_name = _speaking_checkpoint_names(
+        student_id, course_id, data_kind)
+    if not isinstance(payload, dict) or len(json.dumps(payload)) > 512_000:
+        raise ValueError("invalid speaking checkpoint")
+    with checkpoint_jobs.local_lock:
+        current = _read(local_name, None)
+        if _checkpoint_rank(current) > _checkpoint_rank(payload):
+            return False
+        _write(local_name, payload)
+    token, repo = _gh_conf()
+    if token and repo:
+        checkpoint_jobs.submit(
+            remote_name, payload,
+            lambda latest: _sync_remote_speaking_checkpoint(
+                remote_name, latest, token, repo),
+        )
+    return True
+
+
+def speaking_checkpoint_sync_status(student_id, course_id, data_kind):
+    _local_name, remote_name = _speaking_checkpoint_names(
+        student_id, course_id, data_kind)
+    return checkpoint_jobs.status(remote_name)
 
 
 def _annotate_result(result):
