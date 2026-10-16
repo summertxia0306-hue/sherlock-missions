@@ -56,7 +56,7 @@ class RegressionTests(unittest.TestCase):
         html = (Path(recorder.__file__).parent / "frontend" / "index.html").read_text(
             encoding="utf-8"
         )
-        self.assertIn("function recoverCaptureFailure(msg)", html)
+        self.assertIn("function recoverCaptureFailure(msg, reason)", html)
         self.assertIn('recoverCaptureFailure("录音太短了，重新录一次吧")', html)
         self.assertIn('recoverCaptureFailure("好像没有录到声音，再点一次话筒重试', html)
 

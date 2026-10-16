@@ -7,7 +7,8 @@
 postMessage 协议），JS 端优先使用 MediaRecorder 采集并直接产出
 16kHz/16bit/单声道 wav，服务端零转码直送讯飞。
 
-组件返回值：{qid, take, dur, wav_b64} 或 None（孩子点"✅就用这个"才返回）。
+组件返回值：{qid, take, dur, wav_b64} 或 None（孩子点"✅就用这个"才返回音频）；
+原生采集为空/超时可返回 {qid, take, capture_error}，仅请求重建组件，不是一次录音。
 """
 import base64
 from array import array

@@ -33,6 +33,7 @@ audio{margin-top:10px;width:92%;max-width:380px}
 var args = {}, state = "idle", stream = null, ctx = null, node = null, srcNode = null;
 var chunks = [], mediaParts = [], mediaRecorder = null, recorderMode = null;
 var inRate = 48000, timerIv = null, t0 = 0, wavB64 = null, durSec = 0, playUrl = null;
+var captureEpoch = 0, countdownTo = null, finalizeTo = null;
 
 function send(t, d){ window.parent.postMessage(Object.assign({isStreamlitMessage:true,type:t}, d||{}), "*"); }
 function setValue(v){ send("streamlit:setComponentValue", {value:v, dataType:"json"}); }
@@ -47,36 +48,39 @@ function fail(msg){
   err.textContent = msg; err.style.display = "block";
   state = "idle"; render();
 }
-function recoverCaptureFailure(msg){
-  stopTimer();
-  discardMediaRecorder();
-  disconnectLegacyRecorder();
-  releaseStream();
-  closeAudioContext();
+function recoverCaptureFailure(msg, reason){
+  cancelActiveRecording();
   freshMic();
   fail(msg);
+  if(reason && args.qid && String(args.qid)!=="test"){
+    setValue({qid:args.qid, take:args.take||1, capture_error:reason});
+  }
 }
 function render(){
   mic.classList.toggle("rec", state==="recording");
+  mic.disabled = state==="acquiring" || state==="countdown" || state==="processing";
   mic.style.display = (state==="review") ? "none" : "";
   play.style.display = (state==="review") ? "" : "none";
   row.style.display = (state==="review") ? "block" : "none";
   timer.style.display = (state==="recording") ? "" : "none";
   if(state==="idle") hint.textContent = args.label || "点红圈话筒，数完 3-2-1 再开始读";
+  if(state==="acquiring") hint.textContent = "正在连接麦克风…";
+  if(state==="processing") hint.textContent = "正在检查录音…";
   if(state==="recording") hint.textContent = "在录啦！读完再点一下红圈停止";
   if(state==="review") hint.textContent = "听听自己的声音。满意就点绿色按钮！";
   setH();
 }
 
 function beginCountdown(){
+  var epoch = captureEpoch;
   var n = (typeof args.countdown==="number") ? args.countdown : 3;
   if(n<=0){ startRecord(); return; }
   state="countdown";
   var show=function(){
-    if(n<=0){ stage.innerHTML='<button id="mic" class="micbtn rec">🎙️</button>';
-      mic=document.getElementById("mic"); mic.onclick=stopRecord; startRecord(); return; }
+    if(epoch!==captureEpoch) return;
+    if(n<=0){ freshMic(); startRecord(); return; }
     stage.innerHTML='<div class="count">'+n+'</div>'; hint.textContent="准备…"; setH();
-    n--; setTimeout(show, 800);
+    n--; countdownTo=setTimeout(show, 800);
   };
   show();
 }
@@ -106,6 +110,7 @@ function createFreshContext(){
 }
 
 function startRecord(){
+  var epoch=captureEpoch;
   state="recording"; chunks=[]; mediaParts=[]; t0=Date.now();
   try{
     if(!stream){ throw new Error("麦克风未就绪"); }
@@ -115,13 +120,25 @@ function startRecord(){
         ? new MediaRecorder(stream, {mimeType:mimeType})
         : new MediaRecorder(stream);
       recorderMode="native";
-      mediaRecorder.ondataavailable=function(e){
-        if(e.data && e.data.size>0) mediaParts.push(e.data);
+      var currentRecorder=mediaRecorder, parts=[];
+      currentRecorder.ondataavailable=function(e){
+        if(epoch!==captureEpoch || mediaRecorder!==currentRecorder) return;
+        if(e.data && e.data.size>0) parts.push(e.data);
       };
-      mediaRecorder.onerror=function(){
+      currentRecorder.onerror=function(){
+        if(epoch!==captureEpoch || mediaRecorder!==currentRecorder) return;
         recoverCaptureFailure("设备录音启动失败，请重新点话筒录一次。");
       };
-      mediaRecorder.start();
+      currentRecorder.onstop=function(){
+        if(epoch!==captureEpoch || mediaRecorder!==currentRecorder) return;
+        stopTimer();
+        state="processing";
+        durSec=(Date.now()-t0)/1000;
+        mediaRecorder=null;
+        armFinalizeTimeout(epoch);
+        finishNativeRecording(currentRecorder, parts, epoch);
+      };
+      currentRecorder.start();
     }else{
       startLegacyRecord();
     }
@@ -166,6 +183,14 @@ function startTimer(){
 function stopTimer(){
   if(timerIv){ clearInterval(timerIv); timerIv=null; }
 }
+function armFinalizeTimeout(epoch){
+  if(finalizeTo) clearTimeout(finalizeTo);
+  finalizeTo=setTimeout(function(){
+    if(epoch===captureEpoch && state==="processing"){
+      recoverCaptureFailure("设备处理录音超时，请重新点话筒录一次（不计次数）。", "native_timeout");
+    }
+  }, 8000);
+}
 
 function stopRecord(){
   if(state!=="recording") return;
@@ -173,40 +198,40 @@ function stopRecord(){
   durSec = (Date.now()-t0)/1000;
   if(recorderMode==="native" && mediaRecorder){
     var finishedRecorder=mediaRecorder;
-    finishedRecorder.onstop=function(){
-      if(mediaRecorder===finishedRecorder) mediaRecorder=null;
-      finishNativeRecording(finishedRecorder);
-    };
-    try{ finishedRecorder.stop(); }
+    armFinalizeTimeout(captureEpoch);
+    try{ if(finishedRecorder.state!=="inactive") finishedRecorder.stop(); }
     catch(e){ recoverCaptureFailure("停止录音失败，请重新录一次。"); return; }
-    releaseStream();
+    // Native encoders flush asynchronously. Keep tracks live until onstop.
     return;
   }
   finishLegacyRecording();
 }
 
-function finishNativeRecording(finishedRecorder){
-  var parts=mediaParts.slice();
+function finishNativeRecording(finishedRecorder, parts, epoch){
   mediaParts=[]; recorderMode=null;
   releaseStream();
   if(!parts.length){
-    recoverCaptureFailure("设备没有生成录音，请重新点话筒录一次。"); return;
+    recoverCaptureFailure("设备没有生成录音，请重新点话筒录一次。", "empty_native"); return;
   }
   var blob=new Blob(parts, {type:finishedRecorder.mimeType||parts[0].type||"audio/mp4"});
   blobToArrayBuffer(blob).then(function(buffer){
+    if(epoch!==captureEpoch) return;
     var decodeCtx=new (window.AudioContext||window.webkitAudioContext)();
+    ctx=decodeCtx; // A cancelled/hung decoder must also be closed by cleanup.
     return decodeAudioData(decodeCtx, buffer).then(function(audioBuffer){
       var mono=mixToMono(audioBuffer);
       var rate=audioBuffer.sampleRate;
       try{ var closing=decodeCtx.close(); if(closing&&closing.catch) closing.catch(function(){}); }
       catch(e){}
-      finishSamples(mono, rate);
+      if(ctx===decodeCtx) ctx=null;
+      if(epoch===captureEpoch) finishSamples(mono, rate);
     }, function(error){
       try{ decodeCtx.close(); }catch(e){}
+      if(ctx===decodeCtx) ctx=null;
       throw error;
     });
   }).catch(function(){
-    recoverCaptureFailure("设备录音解码失败，请重新录一次。");
+    if(epoch===captureEpoch) recoverCaptureFailure("设备录音解码失败，请重新录一次。");
   });
 }
 
@@ -266,6 +291,7 @@ function finishLegacyRecording(){
 }
 
 function finishSamples(all, rate){
+  if(finalizeTo){ clearTimeout(finalizeTo); finalizeTo=null; }
   if(all.length < rate*0.4){ recoverCaptureFailure("录音太短了，重新录一次吧"); return; }
   var peak=0;
   for(var i=0;i<all.length;i++){ var a=Math.abs(all[i]); if(a>peak) peak=a; }
@@ -407,20 +433,26 @@ function releaseStream(){
 function discardMediaRecorder(){
   var old=mediaRecorder;
   mediaRecorder=null; mediaParts=[]; recorderMode=null;
-  if(old && old.state!=="inactive"){
+  if(old){
     old.ondataavailable=null; old.onstop=null; old.onerror=null;
-    try{ old.stop(); }catch(e){}
+    try{ if(old.state!=="inactive") old.stop(); }catch(e){}
   }
 }
 function cancelActiveRecording(){
+  captureEpoch++;
+  if(countdownTo){ clearTimeout(countdownTo); countdownTo=null; }
+  if(finalizeTo){ clearTimeout(finalizeTo); finalizeTo=null; }
   stopTimer(); discardMediaRecorder(); disconnectLegacyRecorder();
   releaseStream(); closeAudioContext();
+  state="idle"; wavB64=null;
 }
 function onMicTap(){
   err.style.display="none";
   if(state==="recording"){ stopRecord(); return; }
   if(state!=="idle") return;
-  releaseStream();
+  cancelActiveRecording();
+  var epoch=captureEpoch;
+  state="acquiring"; render();
   // 极老浏览器兼容回退才需要 ScriptProcessor；必须在用户手势内先建上下文。
   if(!window.MediaRecorder){
     try{ createFreshContext(); }catch(e){ recoverCaptureFailure("启动录音失败：" + e); return; }
@@ -429,8 +461,12 @@ function onMicTap(){
     recoverCaptureFailure("这个浏览器不支持录音"); return; }
   navigator.mediaDevices.getUserMedia({audio:{channelCount:1,echoCancellation:true,
                                                noiseSuppression:true,autoGainControl:true}}).then(function(s){
+    if(epoch!==captureEpoch || state!=="acquiring"){
+      s.getTracks().forEach(function(track){ track.stop(); }); return;
+    }
     stream = s; beginCountdown();
   }).catch(function(){
+    if(epoch!==captureEpoch) return;
     recoverCaptureFailure("需要麦克风权限才能录音。请点允许，或让爸爸妈妈在设置里打开。");
   });
 }

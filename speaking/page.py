@@ -333,6 +333,11 @@ def _question_page(course, s, q, student_id):
 
 def _consume_take(course, q, qs_, rv, s):
     """一次录音：评分（同步）+ 不到3星重置示范音 + 上传私有库（尽力而为）。"""
+    if rv.get("capture_error") in ("empty_native", "native_timeout"):
+        capture_gen = s.setdefault("capture_gen", {})
+        capture_gen[q["id"]] = capture_gen.get(q["id"], 0) + 1
+        s["capture_error"] = "麦克风刚才没有生成有效录音，已重新连接。请再录本题一次，不计次数。"
+        return False
     wav, pcm = recorder.wav_bytes(rv)
     integrity = recorder.validate_wav_integrity(wav)
     if not integrity["ok"]:
