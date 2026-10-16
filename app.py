@@ -45,6 +45,19 @@ mode = qp.get("mode", "child")
 course_id = qp.get("course_id", None)
 module = qp.get("module", None)
 
+# Streamlit/iPad can unexpectedly lose the query route during a long lesson.
+# Keep an in-session route only for an unfinished, actively started lesson;
+# explicit navigation clears the marker in the back buttons below.
+if mode == "child" and not course_id and not module:
+    active_course = st.session_state.get("active_speaking_route")
+    active_state = st.session_state.get(
+        progress.course_session_key("S", active_course, "formal")
+    ) if active_course else None
+    if (isinstance(active_state, dict) and active_state.get("idx", -1) >= 0
+            and not active_state.get("submitted")):
+        st.query_params["course_id"] = active_course
+        st.rerun()
+
 _HOME_CSS = """
 <style>
 .entry { border:3px solid #d8dee5; border-radius:18px; padding:22px 10px;
@@ -92,6 +105,7 @@ def _home():
 
 def _back_home():
     if st.button("← 回到首页", key="home_btn"):
+        st.session_state.pop("active_speaking_route", None)
         for key in ("module", "course_id"):
             if key in st.query_params:
                 del st.query_params[key]

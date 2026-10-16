@@ -14,7 +14,7 @@ import time
 
 import streamlit as st
 
-from . import engine, ise, models, recorder
+from . import checkpoint, engine, ise, models, recorder
 from listening.audio import limited_audio, merge_plays  # 只调用，不改其内部
 from storage import progress
 
@@ -49,13 +49,33 @@ def _secret(name):
     return v or os.environ.get(name, "")
 
 
-def _state(course_id, data_kind):
+def _state(course, student_id, data_kind):
+    course_id = course["course_id"]
     key = progress.course_session_key("S", course_id, data_kind)
     if key not in st.session_state:
-        st.session_state[key] = {"idx": -1, "q": {}, "t0": None, "result": None,
-                                 "submitted": False, "attempt": 1,
-                                 "data_kind": data_kind}
+        fresh = {"idx": -1, "q": {}, "t0": None, "result": None,
+                 "submitted": False, "attempt": 1, "data_kind": data_kind}
+        saved = progress.load_speaking_checkpoint(student_id, course_id, data_kind)
+        restored = checkpoint.restore(course, saved)
+        if restored is not None:
+            fresh.update(restored)
+            fresh["resumed"] = True
+        st.session_state[key] = fresh
     return st.session_state[key]
+
+
+def _save_checkpoint(course, s, student_id):
+    try:
+        saved = progress.save_speaking_checkpoint(
+            student_id, course["course_id"], s["data_kind"],
+            checkpoint.snapshot(course, s),
+        )
+    except Exception:
+        saved = False
+    if saved:
+        s.pop("checkpoint_warning", None)
+    else:
+        s["checkpoint_warning"] = True
 
 
 def _qstate(s, qid):
@@ -149,6 +169,7 @@ def render_course(student_id, course_id, data_kind="formal"):
     st.markdown(_CSS, unsafe_allow_html=True)
     if st.button("← 返回家长端" if data_kind == "test" else "← 返回课程列表",
                  key="sback_%s_%s" % (data_kind, course_id)):
+        st.session_state.pop("active_speaking_route", None)
         if data_kind == "test":
             st.query_params.clear()
             st.query_params["mode"] = "parent"
@@ -164,14 +185,20 @@ def render_course(student_id, course_id, data_kind="formal"):
         st.error("找不到课程 %s" % course_id)
         return None
 
-    s = _state(course_id, data_kind)
+    s = _state(course, student_id, data_kind)
+    if data_kind == "formal" and s["idx"] >= 0 and not s["submitted"]:
+        st.session_state["active_speaking_route"] = course_id
+    if s.pop("resumed", False):
+        st.info("已接上这门课的上次进度，不用从第一题重做。")
+    if s.get("checkpoint_warning"):
+        st.warning("当前进度暂未同步到私有备份，请保持本页打开；系统会在下一题继续重试。")
     if s["result"]:
-        _result_page(course, s)
+        _result_page(course, s, student_id)
         return s["result"] if s["submitted"] else None
 
     qs = course["questions"]
     if s["idx"] < 0:
-        _start_page(course, s)
+        _start_page(course, s, student_id)
     elif s["idx"] >= len(qs):
         _finish(course, s, student_id)
         st.rerun()
@@ -182,7 +209,7 @@ def render_course(student_id, course_id, data_kind="formal"):
     return None
 
 
-def _start_page(course, s):
+def _start_page(course, s, student_id):
     st.markdown("## 🗣️ %s" % course["title"])
     st.caption("Week%s · 第%s天 · 共 %d 题 · 大约 %s 分钟"
                % (course["week"], course["day"],
@@ -205,6 +232,7 @@ def _start_page(course, s):
                  use_container_width=True):
         s["idx"] = 0
         s["t0"] = time.time()
+        _save_checkpoint(course, s, student_id)
         st.rerun()
     if not ready:
         st.caption("先试音：录一小段，点'✅就用这个'后这里就会亮起来")
@@ -263,6 +291,7 @@ def _question_page(course, s, q, student_id):
                      key="snext_%d_a%d" % (qid, s["attempt"])):
             qs_["done"] = True
             s["idx"] += 1
+            _save_checkpoint(course, s, student_id)
             st.rerun()
         return
 
@@ -292,6 +321,7 @@ def _question_page(course, s, q, student_id):
             qs_["passed_by_safety"] = True  # 兼容既有结果字段名：表示三次后先过
             qs_["done"] = True
             s["idx"] += 1
+            _save_checkpoint(course, s, student_id)
             st.rerun()
 
 
@@ -375,7 +405,7 @@ def _finish(course, s, student_id):
     s["result"] = result
 
 
-def _result_page(course, s):
+def _result_page(course, s, student_id):
     result = s["result"]
     st.markdown("## 🎉 口语练习做完啦！")
     if s["attempt"] > 1:
@@ -397,6 +427,7 @@ def _result_page(course, s):
                      key="ssubmit_a%d" % s["attempt"]):
             progress.save_result(result)
             s["submitted"] = True
+            _save_checkpoint(course, s, student_id)
             st.rerun()
         st.caption("点提交后，爸爸妈妈在家长端就能看到。不提交就没有记录哦。")
     else:
@@ -404,6 +435,7 @@ def _result_page(course, s):
         if st.button("再做一次（重新开始本课）", use_container_width=True,
                      key="sretry_a%d" % s["attempt"]):
             _reset_for_retry(s)
+            _save_checkpoint(course, s, student_id)
             st.rerun()
 
     st.markdown('<div class="bignote">点下面成绩框右上角的复制图标，'

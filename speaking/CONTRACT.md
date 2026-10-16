@@ -1,5 +1,7 @@
 # 口语模块对接契约与功能清单
 
+> 版本 v4.8 · 2026-10-16：Streamlit 正式口语课增加逐题私有进度草稿。开始、跨题、第 3 次安全通过、提交及重做时保存；意外丢失路由但会话仍在时恢复原课，重建会话后再次进入原课可恢复到未做题。草稿按学生、课号及 formal/test 隔离，校验课程题目签名，不算完成、不得进入成绩或学习分析。课程退回及回首页须清除会话路由标记。以后每批 8/10/12 题课程发布前，都须自动验证逐题前进、尤其第 8→9、9→10 题与长课最后一题；浏览器自动化不替代 iPad 真机录音及讯飞评分验收。
+
 > 版本 v4.7 · 2026-10-14。新增确认版 Unit 4 p31–38 的 S4A-T1-W01-D26–D30，题量10/10/12/12/12，前6题repeat、其余QA；音频独立固定到 `a99d4ad37b2e6b6e02f015e638dff3fdd490190a`。Streamlit 唯一 formal 入口、旧8/10/12题、MediaRecorder与条件式旧模块修复均不变；普通rerun不得reload recorder，不启用CloudBase formal。
 
 > 版本 v4.6 · 2026-09-23：新增 4A Unit 1–Unit 2 综合复习 S4A-T1-W01-D21–D25，题量 10/10/12/12/12，均为前 6 题 repeat、后续 QA；旧 8 题与 D16–D20 的 10/12 题继续兼容。Streamlit 继续是唯一儿童 formal 入口，CloudBase formal 保持关闭。录音仍以 `MediaRecorder` 为主链路，保留热部署旧模块自修复、正常 rerun 不重声明组件、单题组件实例稳定、WAV 双重完整性检查、私有录音引用、幂等和 formal/test 隔离；不得恢复为每次 rerun reload recorder 或以 `ScriptProcessor` 为主链路。

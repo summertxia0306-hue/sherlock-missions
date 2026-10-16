@@ -15,6 +15,7 @@ v1.1（2026-06-12）：新增 GitHub 私有仓库持久化后端，修复生产�
 """
 import base64
 import datetime
+import hashlib
 import json
 import os
 import re
@@ -39,7 +40,7 @@ def beijing_today():
 
 def _runtime_dir():
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    d = os.path.join(root, "_runtime")
+    d = os.environ.get("SHERLOCK_RUNTIME_DIR") or os.path.join(root, "_runtime")
     os.makedirs(d, exist_ok=True)
     return d
 
@@ -116,6 +117,73 @@ def course_session_key(module_prefix, course_id, data_kind):
     """隔离同一课程的 test/formal 页面状态，防止跨入口串写。"""
     kind = _write_data_kind(data_kind, default="formal")
     return "%s_%s_%s" % (module_prefix, kind, course_id)
+
+
+def _speaking_checkpoint_names(student_id, course_id, data_kind):
+    """Opaque names keep learner identifiers out of private Git paths."""
+    kind = _write_data_kind(data_kind)
+    if not isinstance(student_id, str) or not 0 < len(student_id) <= 128:
+        raise ValueError("invalid student_id")
+    if not isinstance(course_id, str) or not re.fullmatch(
+            r"(?:S\d{2}D\d{2}|S[1-9][A-Z]-T\d{1,2}-W\d{2}-D\d{2})", course_id):
+        raise ValueError("invalid speaking course_id")
+    digest = hashlib.sha256(
+        json.dumps([student_id, course_id, kind]).encode("utf-8")
+    ).hexdigest()
+    return "speaking_checkpoint_%s.json" % digest, "drafts/speaking/%s.json" % digest
+
+
+def _checkpoint_rank(item):
+    if not isinstance(item, dict):
+        return (0, -1, False)
+    attempt, idx = item.get("attempt"), item.get("idx")
+    if not isinstance(attempt, int) or not isinstance(idx, int):
+        return (0, -1, False)
+    return (attempt, idx, bool(item.get("submitted")))
+
+
+def load_speaking_checkpoint(student_id, course_id, data_kind):
+    """Read the latest private draft; it never counts as a submitted result."""
+    local_name, remote_name = _speaking_checkpoint_names(
+        student_id, course_id, data_kind)
+    local = _read(local_name, None)
+    remote = None
+    if persistence_enabled():
+        remote, _sha = _remote_read(remote_name, {}, use_cache=False)
+    if _checkpoint_rank(remote) > _checkpoint_rank(local):
+        return remote
+    return local
+
+
+def save_speaking_checkpoint(student_id, course_id, data_kind, payload):
+    """Save an in-progress draft locally and in the existing private results repo.
+
+    Returns False when the private remote copy could not be verified. The local
+    copy still protects a normal Streamlit WebSocket reconnect.
+    """
+    local_name, remote_name = _speaking_checkpoint_names(
+        student_id, course_id, data_kind)
+    if not isinstance(payload, dict) or len(json.dumps(payload)) > 512_000:
+        raise ValueError("invalid speaking checkpoint")
+    remote, sha = ({}, None)
+    if persistence_enabled():
+        remote, sha = _remote_read(remote_name, {}, use_cache=False)
+        if remote is None:
+            _write(local_name, payload)
+            return False
+        if _checkpoint_rank(remote) > _checkpoint_rank(payload):
+            return False
+    _write(local_name, payload)
+    if not persistence_enabled():
+        return True
+    for _attempt in range(2):
+        try:
+            return _remote_write(remote_name, payload, sha)
+        except Exception:
+            remote, sha = _remote_read(remote_name, {}, use_cache=False)
+            if remote is None or _checkpoint_rank(remote) > _checkpoint_rank(payload):
+                break
+    return False
 
 
 def _annotate_result(result):
