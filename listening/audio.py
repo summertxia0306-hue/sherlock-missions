@@ -9,6 +9,8 @@ st.audio 自带进度条可无限重播，无法满足"播放次数限制不能�
 """
 import os
 import re
+import hashlib
+from functools import lru_cache
 
 import streamlit.components.v1 as components
 
@@ -58,12 +60,32 @@ def audio_sources(repo_path):
     return [base + repo_path for base in _bases_for(repo_path)]
 
 
+@lru_cache(maxsize=4096)
+def _local_audio_digest(path, mtime_ns, size):
+    with open(path, "rb") as source:
+        return hashlib.sha256(source.read()).hexdigest()
+
+
+def local_audio_source(repo_path):
+    """Same app route, versioned by bytes; the iframe resolves the proxy prefix."""
+    if not repo_path.startswith("static/audio/") or ".." in repo_path.split("/"):
+        raise ValueError("invalid audio path")
+    path = os.path.join(os.path.dirname(os.path.dirname(__file__)), repo_path)
+    try:
+        stat = os.stat(path)
+        digest = _local_audio_digest(path, stat.st_mtime_ns, stat.st_size)
+    except OSError:
+        return None
+    return "app/%s?v=%s" % (repo_path, digest)
+
+
 def limited_audio(repo_path, qid, max_plays, used, key, label="还能听"):
     """渲染播放按钮；返回前端上报值 {qid, used, ts} 或 None。
 
     调用方负责：used_new = max(used, value['used'])（仅当 value['qid']==qid）。
     """
     return _component(src=audio_url(repo_path), sources=audio_sources(repo_path),
+                      local_src=local_audio_source(repo_path),
                       qid=str(qid),
                       max_plays=int(max_plays), used=int(used),
                       label=label, key=key, default=None)

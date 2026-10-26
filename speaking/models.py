@@ -106,6 +106,7 @@ def load_course(course_id, check_audio=True):
 def all_courses():
     """{course_id: 元数据}（含家长可设状态，状态存储复用 storage.progress）。"""
     from storage import progress
+    statuses = progress._status_map()
     out = {}
     for path in list_course_files():
         try:
@@ -120,7 +121,7 @@ def all_courses():
                                 "publication_status", "formal"
                             ),
                             "open_date": d.get("open_date"),
-                            "status": progress.get_course_status(cid)}
+                            "status": statuses.get(cid, "open")}
         except Exception:
             continue
     return out

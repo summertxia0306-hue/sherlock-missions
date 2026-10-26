@@ -20,6 +20,7 @@ body{margin:0;padding:4px 0 0;font-family:-apple-system,"PingFang SC","Microsoft
 "use strict";
 var args = {}, used = 0, playing = false, lastSourcesKey = "";
 var playToken = 0, activeSourceIndex = 0, countedThisPlay = false;
+var sourceTimer = null;
 
 function send(type, data){
  var msg = Object.assign({isStreamlitMessage:true, type:type}, data || {});
@@ -40,24 +41,36 @@ function left(){
 function refresh(){
  btn.disabled = playing || left() <= 0;
  cnt.innerHTML = (args.label || "还能听") + " <b>" + left() + "</b> 遍";
+ if(playing && !countedThisPlay) cnt.innerHTML += " · 正在加载音频…";
  setHeight();
 }
 
 function sources(){
+ var list = [];
  if (Array.isArray(args.sources) && args.sources.length){
-  return args.sources.filter(function(src){ return !!src; });
+  list = args.sources.filter(function(src){ return !!src; });
+ } else if (args.src){
+  var legacyRawPrefix = "https://raw.githubusercontent.com/summertxia0306-hue/sherlock-missions/main/";
+  var cdnPrefix = "https://cdn.jsdelivr.net/gh/summertxia0306-hue/sherlock-missions@main/";
+  list = args.src.indexOf(legacyRawPrefix) === 0
+   ? [cdnPrefix + args.src.slice(legacyRawPrefix.length), args.src] : [args.src];
  }
- if (!args.src) return [];
- var legacyRawPrefix = "https://raw.githubusercontent.com/summertxia0306-hue/sherlock-missions/main/";
- var cdnPrefix = "https://cdn.jsdelivr.net/gh/summertxia0306-hue/sherlock-missions@main/";
- if (args.src.indexOf(legacyRawPrefix) === 0){
-  return [cdnPrefix + args.src.slice(legacyRawPrefix.length), args.src];
+ if(args.local_src){
+  try{
+   var base = new URLSearchParams(window.location.search).get("streamlitUrl") || window.location.origin + "/";
+   var local = new URL(args.local_src, base);
+   if(local.origin === window.location.origin) list.unshift(local.href);
+  }catch(e){}
  }
- return [args.src];
+ return list.filter(function(src, index){ return list.indexOf(src) === index; });
 }
 
-function countStarted(token){
- if (token !== playToken || countedThisPlay) return;
+function clearSourceTimer(){
+ if(sourceTimer){ clearTimeout(sourceTimer); sourceTimer=null; }
+}
+function countStarted(token, index){
+ if (token !== playToken || index !== activeSourceIndex || !playing || countedThisPlay) return;
+ clearSourceTimer();
  countedThisPlay = true;
  used++;
  refresh();
@@ -65,14 +78,16 @@ function countStarted(token){
 }
 
 function failSource(token, index){
- if (token !== playToken || !playing || countedThisPlay) return;
+ if (token !== playToken || !playing) return;
  if (index !== activeSourceIndex) return;
+ clearSourceTimer();
  var list = sources();
- if (index + 1 < list.length){
+ if (!countedThisPlay && index + 1 < list.length){
   trySource(index + 1, token);
   return;
  }
  playing = false;
+ try{ au.pause(); }catch(e){}
  err.style.display = "block";
  refresh();
 }
@@ -87,14 +102,17 @@ function trySource(index, token){
   return;
  }
  activeSourceIndex = index;
+ clearSourceTimer();
+ try{ au.pause(); }catch(e){}
  if (au.src !== list[index]) au.src = list[index];
  try{ au.currentTime = 0; }catch(e){}
- var p = au.play();
+ au.onplaying = function(){ countStarted(token, index); };
+ sourceTimer=setTimeout(function(){ failSource(token, index); }, 4000);
+ var p;
+ try{ p = au.play(); }catch(e){ failSource(token, index); return; }
  if (p && p.then){
-  p.then(function(){ countStarted(token); })
+  p.then(function(){ countStarted(token, index); })
    .catch(function(){ failSource(token, index); });
- } else {
-  countStarted(token);
  }
 }
 
@@ -107,7 +125,7 @@ btn.onclick = function(){
  refresh();
  trySource(0, playToken);
 };
-au.onended = function(){ playing = false; refresh(); };
+au.onended = function(){ clearSourceTimer(); playing = false; refresh(); };
 au.onerror = function(){
  if (playing) failSource(playToken, activeSourceIndex);
 };
@@ -116,13 +134,17 @@ window.addEventListener("message", function(e){
  var d = e.data;
  if (!d || d.type !== "streamlit:render") return;
  args = (d.args) || {};
- var key = sources().join("|");
+ var key = String(args.qid) + "|" + sources().join("|");
  if (key && key !== lastSourcesKey){
+  playToken++;
+  clearSourceTimer();
+  try{ au.pause(); }catch(e){}
   lastSourcesKey = key;
   au.src = sources()[0];
   used = args.used || 0;
   playing = false;
   countedThisPlay = false;
+  err.style.display = "none";
  }
  if (typeof args.used === "number" && args.used > used) used = args.used;
  refresh();

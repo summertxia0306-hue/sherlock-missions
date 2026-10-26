@@ -26,11 +26,13 @@ import urllib.request
 
 from . import checkpoint_jobs
 
-_LOCK = threading.Lock()
+_LOCK = globals().get("_LOCK") or threading.Lock()
 COURSE_STATUSES = ("open", "closed", "hidden", "archived")
 DATA_KINDS = ("test", "formal")
 _TTL = 45
-_cache = {}
+# app.py reloads this module on reruns; retain the already bounded read cache.
+_cache = globals().get("_cache", {})
+_read_failures = globals().get("_read_failures", {})
 
 
 def beijing_today():
@@ -348,23 +350,30 @@ def _remote_read(name, default, use_cache=True):
     tok, repo = _gh_conf()
     if not tok:
         return None, None
+    cache_key = (repo, hashlib.sha256(tok.encode()).hexdigest(), name)
     now = time.time()
     if use_cache:
-        hit = _cache.get(name)
+        hit = _cache.get(cache_key)
         if hit and hit[0] > now:
             return hit[1], hit[2]
+        if _read_failures.get(cache_key, 0) > now:
+            return None, None
     url = "https://api.github.com/repos/%s/contents/%s" % (repo, name)
     try:
         obj = _gh_request("GET", url, tok)
         data = json.loads(base64.b64decode(obj["content"]).decode("utf-8"))
-        _cache[name] = (now + _TTL, data, obj["sha"])
+        _cache[cache_key] = (time.time() + _TTL, data, obj["sha"])
+        _read_failures.pop(cache_key, None)
         return data, obj["sha"]
     except urllib.error.HTTPError as e:
         if e.code == 404:
-            _cache[name] = (now + _TTL, default, None)
+            _cache[cache_key] = (time.time() + _TTL, default, None)
+            _read_failures.pop(cache_key, None)
             return default, None
+        _read_failures[cache_key] = time.time() + 5
         return None, None
     except Exception:
+        _read_failures[cache_key] = time.time() + 5
         return None, None
 
 
@@ -379,7 +388,9 @@ def _remote_write(name, data, sha):
     if sha:
         payload["sha"] = sha
     obj = _gh_request("PUT", url, tok, payload)
-    _cache[name] = (time.time() + _TTL, data, obj["content"]["sha"])
+    cache_key = (repo, hashlib.sha256(tok.encode()).hexdigest(), name)
+    _cache[cache_key] = (time.time() + _TTL, data, obj["content"]["sha"])
+    _read_failures.pop(cache_key, None)
     return True
 
 

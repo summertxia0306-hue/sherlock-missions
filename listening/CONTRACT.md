@@ -1,5 +1,7 @@
 # 听力模块对接契约与功能清单（给统一架构 / Codex）
 
+> 版本 v5.4 · 2026-10-26：听力与口语示范音优先使用当前Streamlit同站静态资产（内容SHA-256作缓存版本），原固定提交CDN/Raw地址保留备用。每个播放源4秒未开始即切换，失败前未开始不消耗次数；切题或换源后的旧回调不得计次，播放中断必须恢复按钮。私有读取缓存跨rerun保留45秒，失败短退避5秒；口语目录只读一次课程状态快照，写入前仍强制重新读取。
+
 > 版本 v5.3 · 2026-10-14。新增确认版 Unit 4《Our birthday》p31–38 的 L4A-T1-W01-D26–D30，听力题量20/20/20/25/25，正式入口仍为 Streamlit。音频独立固定到 `a99d4ad37b2e6b6e02f015e638dff3fdd490190a`；本批新提交触发 jsDelivr 50 MB 仓库限制，采用完整验证的 GitHub Raw 主节点，保留 Gcore/CDN 回退。旧批次不变，CloudBase formal 不启用。
 
 > 版本 v5.2 · 2026-09-23。当前唯一儿童 formal 入口为 Streamlit，CloudBase formal 保持关闭。新增 4A Unit 1–Unit 2 综合复习 L4A-T1-W01-D21–D25，题量 20/20/20/25/25；本批音频固定到内容提交 `b83a08ddfdf0066d0d419f39c61398c6640d8bb9`，优先 Gcore jsDelivr，并保留 cdn.jsdelivr.net 与 GitHub Raw 回退。旧课程和 D16–D20 的固定版本不变，推荐课程仍按首个 formal 未完成课程动态计算。
