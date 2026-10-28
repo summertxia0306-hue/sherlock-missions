@@ -1,0 +1,266 @@
+{
+  "course_id": "L4A-T1-W01-D35",
+  "pair_id": "4A-T1-W01-D35",
+  "study_pack": "4A-T1-W01-D35",
+  "course_version": "8ae91f0b2b77a5e3",
+  "title": "四上·第35课｜Unit 5最喜欢的地方·单元综合（听力）",
+  "week": 7,
+  "day": 5,
+  "course_type": "weekly_test",
+  "est_minutes": 25,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D35/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "a playground",
+            "a supermarket",
+            "a museum"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "old shops",
+            "old trees",
+            "old bridges"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "a photo of a boat",
+            "a photo of a bridge",
+            "a photo of my favourite place"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "nice and clean",
+            "old and small",
+            "new and colourful"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q04.mp3"
+        },
+        {
+          "id": 5,
+          "type": "word_choice",
+          "options": [
+            "every day",
+            "every week",
+            "every month"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 1,
+      "questions": [
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "There is a big park in the neighbourhood.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "The old trees in the park are short.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "There is a big playground in the park.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q08.mp3"
+        },
+        {
+          "id": 9,
+          "type": "sentence_judge",
+          "display": "The child goes there with Dad every day.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "sentence_judge",
+          "display": "People go around Venice by boat.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "Yes, there are.",
+            "Yes, there is.",
+            "Yes, it is."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "Yes, there are.",
+            "Yes, there is.",
+            "Yes, they are."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q12.mp3"
+        },
+        {
+          "id": 13,
+          "type": "question_response",
+          "options": [
+            "It is a gondola.",
+            "It is out of battery.",
+            "It is nice and clean."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "question_response",
+          "options": [
+            "The child's mum.",
+            "The child's brother.",
+            "The child's dad."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "question_response",
+          "options": [
+            "A boat.",
+            "A camera.",
+            "A bridge."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "A park.",
+            "A museum.",
+            "A cinema."
+          ],
+          "question_text": "What is the photo of?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q16.mp3"
+        },
+        {
+          "id": 17,
+          "type": "dialogue_choice",
+          "options": [
+            "Shops and bridges.",
+            "Old trees and a playground.",
+            "Boats and restaurants."
+          ],
+          "question_text": "Which two things are in the park?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q17.mp3"
+        },
+        {
+          "id": 18,
+          "type": "dialogue_choice",
+          "options": [
+            "Every day.",
+            "Every month.",
+            "Every week."
+          ],
+          "question_text": "When does the child go to the park?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q18.mp3"
+        },
+        {
+          "id": 19,
+          "type": "dialogue_choice",
+          "options": [
+            "A gondola.",
+            "A playground.",
+            "A supermarket."
+          ],
+          "question_text": "Which detail helps them recognise Venice?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q19.mp3"
+        },
+        {
+          "id": 20,
+          "type": "dialogue_choice",
+          "options": [
+            "The museum is closed.",
+            "It is out of battery.",
+            "There is no river."
+          ],
+          "question_text": "Why can they not use this camera?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D35/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D35/p01.mp3",
+      "questions": [
+        {
+          "id": 21,
+          "type": "passage_judge",
+          "statement": "The favourite place is a park."
+        },
+        {
+          "id": 22,
+          "type": "passage_judge",
+          "statement": "The park is small and dirty."
+        },
+        {
+          "id": 23,
+          "type": "passage_judge",
+          "statement": "There are tall old trees in the park."
+        },
+        {
+          "id": 24,
+          "type": "passage_judge",
+          "statement": "There is no playground in the park."
+        },
+        {
+          "id": 25,
+          "type": "passage_judge",
+          "statement": "The speaker goes there with Mum every week."
+        }
+      ]
+    }
+  ]
+}

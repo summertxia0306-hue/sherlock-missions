@@ -1,0 +1,544 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D35",
+  "pair_id": "4A-T1-W01-D35",
+  "publication_status": "formal",
+  "week": 7,
+  "day": 5,
+  "scope": "4A Unit 5 p39-p46",
+  "difficulty": "L3",
+  "course_id": "L4A-T1-W01-D35",
+  "title": "四上·第35课｜Unit 5最喜欢的地方·单元综合（听力）",
+  "course_type": "weekly_test",
+  "est_minutes": 25,
+  "scoring": {
+    "per_question": 4,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D35/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p39-p46·场所词汇辨别",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "options": [
+            "a playground",
+            "a supermarket",
+            "a museum"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "a playground"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p39-p46·场所词汇辨别",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "options": [
+            "old shops",
+            "old trees",
+            "old bridges"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "old trees"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p39-p46·场所词汇辨别",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "options": [
+            "a photo of a boat",
+            "a photo of a bridge",
+            "a photo of my favourite place"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "a photo of my favourite place"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p39-p46·场所词汇辨别",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "options": [
+            "nice and clean",
+            "old and small",
+            "new and colourful"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "nice and clean"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q04.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p39-p46·场所词汇辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p39-p46，不作未掌握结论",
+          "options": [
+            "every day",
+            "every week",
+            "every month"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "every week"
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p46·句子信息对应",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "display": "There is a big park in the neighbourhood.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "There is a big park in the neighbourhood."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p46·句子信息对应",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "display": "The old trees in the park are short.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The old trees in the park are very tall."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p46·句子信息对应",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "display": "There is a big playground in the park.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "There is a big playground in the park."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q08.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p46·句子信息对应",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "display": "The child goes there with Dad every day.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The child goes there with Mum every week."
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q09.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p46·句子信息对应",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "display": "People go around Venice by boat.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "People go around Venice by boat."
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p39-p46·单复数与问答对应",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Yes, there are.",
+            "Yes, there is.",
+            "Yes, it is."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Are there any old trees in the park?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p39-p46·单复数与问答对应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p39-p46，不作未掌握结论",
+          "options": [
+            "Yes, there are.",
+            "Yes, there is.",
+            "Yes, they are."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Is there a playground in the park?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q12.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p39-p46·单复数与问答对应",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "options": [
+            "It is a gondola.",
+            "It is out of battery.",
+            "It is nice and clean."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "Why do you like the park in the example?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q13.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p39-p46·单复数与问答对应",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "options": [
+            "The child's mum.",
+            "The child's brother.",
+            "The child's dad."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Who goes to the park with the child in the example?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q14.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p39-p46·单复数与问答对应",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "options": [
+            "A boat.",
+            "A camera.",
+            "A bridge."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What do you need to take a photo of your favourite place?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p46·地点与细节整合",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "question_text": "What is the photo of?",
+          "options": [
+            "A park.",
+            "A museum.",
+            "A cinema."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Look at my photo. This park is my favourite place."
+            ],
+            [
+              "m",
+              "Is it in your neighbourhood?"
+            ],
+            [
+              "f",
+              "Yes. It is nice and clean."
+            ],
+            [
+              "n",
+              "Question: What is the photo of?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q16.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p46·地点与细节整合",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "question_text": "Which two things are in the park?",
+          "options": [
+            "Shops and bridges.",
+            "Old trees and a playground.",
+            "Boats and restaurants."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Are there any old trees in the park?"
+            ],
+            [
+              "m",
+              "Yes, and they are very tall."
+            ],
+            [
+              "f",
+              "Is there a playground?"
+            ],
+            [
+              "m",
+              "Yes, a big one."
+            ],
+            [
+              "n",
+              "Question: Which two things are in the park?"
+            ]
+          ],
+          "id": 17,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q17.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p46·地点与细节整合",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "question_text": "When does the child go to the park?",
+          "options": [
+            "Every day.",
+            "Every month.",
+            "Every week."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "I go to this park with my mum every week."
+            ],
+            [
+              "m",
+              "Do you go with your dad every day?"
+            ],
+            [
+              "f",
+              "No, with my mum every week."
+            ],
+            [
+              "n",
+              "Question: When does the child go to the park?"
+            ]
+          ],
+          "id": 18,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q18.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p46·地点与细节整合",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "question_text": "Which detail helps them recognise Venice?",
+          "options": [
+            "A gondola.",
+            "A playground.",
+            "A supermarket."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Is this photo of Venice?"
+            ],
+            [
+              "m",
+              "Yes. Look at the colourful houses by the water."
+            ],
+            [
+              "f",
+              "I can see a gondola too."
+            ],
+            [
+              "n",
+              "Question: Which detail helps them recognise Venice?"
+            ]
+          ],
+          "id": 19,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q19.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p46·地点与细节整合",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "question_text": "Why can they not use this camera?",
+          "options": [
+            "The museum is closed.",
+            "It is out of battery.",
+            "There is no river."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Let us take a photo at the water town museum."
+            ],
+            [
+              "m",
+              "My camera is out of battery."
+            ],
+            [
+              "f",
+              "Then we cannot use it now."
+            ],
+            [
+              "n",
+              "Question: Why can they not use this camera?"
+            ]
+          ],
+          "id": 20,
+          "audio": "static/audio/listening/L4A-T1-W01-D35/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p46·短文取证",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "statement": "The favourite place is a park.",
+          "answer": "true",
+          "id": 21
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p46·短文取证",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "statement": "The park is small and dirty.",
+          "answer": "false",
+          "id": 22
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p46·短文取证",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "statement": "There are tall old trees in the park.",
+          "answer": "true",
+          "id": 23
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p46·短文取证",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "statement": "There is no playground in the park.",
+          "answer": "false",
+          "id": 24
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p46·短文取证",
+          "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组",
+          "statement": "The speaker goes there with Mum every week.",
+          "answer": "true",
+          "id": 25
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D35/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Look at this photo of my favourite place. It is a big park in my neighbourhood. It is nice and clean. There are some old trees, and they are very tall. There is a big playground too. I go there with my mum every week. My friend wants to play there with her brother. We can introduce the park and answer questions about it."
+        ]
+      ]
+    }
+  ]
+}

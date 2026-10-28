@@ -2039,6 +2039,281 @@
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
    "text": "How are Minmin's noodles different from Grandma's?"
+  },
+  "93a380b81cf3e1de": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Welcome to my neighbourhood."
+  },
+  "ca1f91b88cd0a89b": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "There is a nice park and a shop."
+  },
+  "1be47af4bef62cbf": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "There is a big museum and a library."
+  },
+  "411176a9962823e7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "There is a new cinema and a supermarket."
+  },
+  "7b3069a022eb67b1": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is my lovely neighbourhood."
+  },
+  "066568d2ba44d2de": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It is nice to go around my neighbourhood."
+  },
+  "aac9a97eccc87c73": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is there a park in the chant?"
+  },
+  "507a05e8e35aa493": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What is the museum like in the chant?"
+  },
+  "3847249db77bbcd0": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Which place is new in the chant?"
+  },
+  "56d3d9b484130e80": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can you say to welcome a visitor?"
+  },
+  "95d1f215a865b9a1": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Look, there is a beautiful river."
+  },
+  "a74efbe669b8a4c3": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Let us go on a boat trip."
+  },
+  "9b2f3c56f75bd53e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Are there any nice old bridges around?"
+  },
+  "d56b9c175ee87897": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Two beautiful bridges near here are over four hundred years old."
+  },
+  "d44b78c6810f4eb3": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The museum tells the story of the old town."
+  },
+  "3b8013a90392ba4a": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Oh no! My camera is out of battery."
+  },
+  "94630e7408e97626": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is there a museum in the water town?"
+  },
+  "58edecacd854897e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How old are the two bridges?"
+  },
+  "033417c849396079": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does the museum tell?"
+  },
+  "4174158f92a6acce": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What is wrong with the camera?"
+  },
+  "79773c843df76d32": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is there a museum here? Yes, there is."
+  },
+  "08c4d3cf323e1cf7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is there a cinema in the water town? No, there is not."
+  },
+  "fb2758df81ec6af3": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Are there any nice old bridges around? Yes, there are."
+  },
+  "3bd845606219d97a": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Are there any buses in the water town? No, there are not."
+  },
+  "edfd4a067c6f82a5": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "There is a new bridge in my neighbourhood."
+  },
+  "898e98a767d20625": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "There is a very nice museum too."
+  },
+  "31b61be333a735dd": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Are there any buses in the water town?"
+  },
+  "224813da8ea1b05a": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is there a cinema in the water town?"
+  },
+  "78ca2f9ce7aa2c6c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Are there any old bridges in the water town?"
+  },
+  "c35297062b343487": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What kind of bridge is in the neighbourhood in the example?"
+  },
+  "fbaf351ffa1c5462": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What other place is in that neighbourhood?"
+  },
+  "4034f53286dab297": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Venice is a famous city in Italy."
+  },
+  "4377ed833b45c45a": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The houses are all by the water and look colourful."
+  },
+  "920fa0d56c16b329": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "There are a lot of bridges in different colours."
+  },
+  "e30e28f1391e2657": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "People in Venice go around the city by boat."
+  },
+  "c891ea18c6ac54a7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This special boat is called a gondola."
+  },
+  "f590662ee05f44b7": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Venice is also famous for its museums."
+  },
+  "0de9035f93d14c0f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Are there any bridges in Venice?"
+  },
+  "ea974a59c7c33079": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where is Venice?"
+  },
+  "c496449ef952be4f": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How do people go around Venice?"
+  },
+  "46ecfcd1aaab9115": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What is a gondola?"
+  },
+  "1b0214bd0c6d0d66": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Why do you like the bridges in Venice?"
+  },
+  "25507b55bb589506": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where are many restaurants in Venice?"
+  },
+  "5901576ce8879531": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "This is a photo of my favourite place."
+  },
+  "8d27ee1d973072b0": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It is a big park in my neighbourhood."
+  },
+  "032d036343003c4c": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It is nice and clean."
+  },
+  "4505e5779986c23e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "There are some very tall old trees in it."
+  },
+  "9b3d9f3be1edd7c2": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "There is a big playground in the park."
+  },
+  "6b68c1bbe9047c02": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I go there with my mum every week."
+  },
+  "fbebfa4aae17f5e3": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Is there a playground in the park in the example?"
+  },
+  "b86002d90f5ad7c0": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Are there any old trees in that park?"
+  },
+  "f2f77aa7c0cea3cd": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What is the park like in the example?"
+  },
+  "430d81f23c39c35e": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Who goes to the park with the child every week?"
+  },
+  "a310fee939c76f76": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Why do people like the bridges in Venice?"
+  },
+  "fa45256889acf469": {
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Why can they not use the camera at the museum?"
   }
  },
  "courses": {
@@ -2509,6 +2784,72 @@
    "static/audio/speaking/S4A-T1-W01-D30/q10.mp3": "c12ba7ad7f563d82",
    "static/audio/speaking/S4A-T1-W01-D30/q11.mp3": "a01dbf877f4d537c",
    "static/audio/speaking/S4A-T1-W01-D30/q12.mp3": "f4e892ca919315dd"
+  },
+  "S4A-T1-W01-D31": {
+   "static/audio/speaking/S4A-T1-W01-D31/q01.mp3": "93a380b81cf3e1de",
+   "static/audio/speaking/S4A-T1-W01-D31/q02.mp3": "ca1f91b88cd0a89b",
+   "static/audio/speaking/S4A-T1-W01-D31/q03.mp3": "1be47af4bef62cbf",
+   "static/audio/speaking/S4A-T1-W01-D31/q04.mp3": "411176a9962823e7",
+   "static/audio/speaking/S4A-T1-W01-D31/q05.mp3": "7b3069a022eb67b1",
+   "static/audio/speaking/S4A-T1-W01-D31/q06.mp3": "066568d2ba44d2de",
+   "static/audio/speaking/S4A-T1-W01-D31/q07.mp3": "aac9a97eccc87c73",
+   "static/audio/speaking/S4A-T1-W01-D31/q08.mp3": "507a05e8e35aa493",
+   "static/audio/speaking/S4A-T1-W01-D31/q09.mp3": "3847249db77bbcd0",
+   "static/audio/speaking/S4A-T1-W01-D31/q10.mp3": "56d3d9b484130e80"
+  },
+  "S4A-T1-W01-D32": {
+   "static/audio/speaking/S4A-T1-W01-D32/q01.mp3": "95d1f215a865b9a1",
+   "static/audio/speaking/S4A-T1-W01-D32/q02.mp3": "a74efbe669b8a4c3",
+   "static/audio/speaking/S4A-T1-W01-D32/q03.mp3": "9b2f3c56f75bd53e",
+   "static/audio/speaking/S4A-T1-W01-D32/q04.mp3": "d56b9c175ee87897",
+   "static/audio/speaking/S4A-T1-W01-D32/q05.mp3": "d44b78c6810f4eb3",
+   "static/audio/speaking/S4A-T1-W01-D32/q06.mp3": "3b8013a90392ba4a",
+   "static/audio/speaking/S4A-T1-W01-D32/q07.mp3": "94630e7408e97626",
+   "static/audio/speaking/S4A-T1-W01-D32/q08.mp3": "58edecacd854897e",
+   "static/audio/speaking/S4A-T1-W01-D32/q09.mp3": "033417c849396079",
+   "static/audio/speaking/S4A-T1-W01-D32/q10.mp3": "4174158f92a6acce"
+  },
+  "S4A-T1-W01-D33": {
+   "static/audio/speaking/S4A-T1-W01-D33/q01.mp3": "79773c843df76d32",
+   "static/audio/speaking/S4A-T1-W01-D33/q02.mp3": "08c4d3cf323e1cf7",
+   "static/audio/speaking/S4A-T1-W01-D33/q03.mp3": "fb2758df81ec6af3",
+   "static/audio/speaking/S4A-T1-W01-D33/q04.mp3": "3bd845606219d97a",
+   "static/audio/speaking/S4A-T1-W01-D33/q05.mp3": "edfd4a067c6f82a5",
+   "static/audio/speaking/S4A-T1-W01-D33/q06.mp3": "898e98a767d20625",
+   "static/audio/speaking/S4A-T1-W01-D33/q07.mp3": "31b61be333a735dd",
+   "static/audio/speaking/S4A-T1-W01-D33/q08.mp3": "224813da8ea1b05a",
+   "static/audio/speaking/S4A-T1-W01-D33/q09.mp3": "94630e7408e97626",
+   "static/audio/speaking/S4A-T1-W01-D33/q10.mp3": "78ca2f9ce7aa2c6c",
+   "static/audio/speaking/S4A-T1-W01-D33/q11.mp3": "c35297062b343487",
+   "static/audio/speaking/S4A-T1-W01-D33/q12.mp3": "fbaf351ffa1c5462"
+  },
+  "S4A-T1-W01-D34": {
+   "static/audio/speaking/S4A-T1-W01-D34/q01.mp3": "4034f53286dab297",
+   "static/audio/speaking/S4A-T1-W01-D34/q02.mp3": "4377ed833b45c45a",
+   "static/audio/speaking/S4A-T1-W01-D34/q03.mp3": "920fa0d56c16b329",
+   "static/audio/speaking/S4A-T1-W01-D34/q04.mp3": "e30e28f1391e2657",
+   "static/audio/speaking/S4A-T1-W01-D34/q05.mp3": "c891ea18c6ac54a7",
+   "static/audio/speaking/S4A-T1-W01-D34/q06.mp3": "f590662ee05f44b7",
+   "static/audio/speaking/S4A-T1-W01-D34/q07.mp3": "0de9035f93d14c0f",
+   "static/audio/speaking/S4A-T1-W01-D34/q08.mp3": "ea974a59c7c33079",
+   "static/audio/speaking/S4A-T1-W01-D34/q09.mp3": "c496449ef952be4f",
+   "static/audio/speaking/S4A-T1-W01-D34/q10.mp3": "46ecfcd1aaab9115",
+   "static/audio/speaking/S4A-T1-W01-D34/q11.mp3": "1b0214bd0c6d0d66",
+   "static/audio/speaking/S4A-T1-W01-D34/q12.mp3": "25507b55bb589506"
+  },
+  "S4A-T1-W01-D35": {
+   "static/audio/speaking/S4A-T1-W01-D35/q01.mp3": "5901576ce8879531",
+   "static/audio/speaking/S4A-T1-W01-D35/q02.mp3": "8d27ee1d973072b0",
+   "static/audio/speaking/S4A-T1-W01-D35/q03.mp3": "032d036343003c4c",
+   "static/audio/speaking/S4A-T1-W01-D35/q04.mp3": "4505e5779986c23e",
+   "static/audio/speaking/S4A-T1-W01-D35/q05.mp3": "9b3d9f3be1edd7c2",
+   "static/audio/speaking/S4A-T1-W01-D35/q06.mp3": "6b68c1bbe9047c02",
+   "static/audio/speaking/S4A-T1-W01-D35/q07.mp3": "fbebfa4aae17f5e3",
+   "static/audio/speaking/S4A-T1-W01-D35/q08.mp3": "b86002d90f5ad7c0",
+   "static/audio/speaking/S4A-T1-W01-D35/q09.mp3": "f2f77aa7c0cea3cd",
+   "static/audio/speaking/S4A-T1-W01-D35/q10.mp3": "430d81f23c39c35e",
+   "static/audio/speaking/S4A-T1-W01-D35/q11.mp3": "a310fee939c76f76",
+   "static/audio/speaking/S4A-T1-W01-D35/q12.mp3": "fa45256889acf469"
   }
  }
 }

@@ -1,0 +1,124 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D33",
+  "pair_id": "4A-T1-W01-D33",
+  "publication_status": "formal",
+  "week": 7,
+  "day": 3,
+  "scope": "4A Unit 5 p39-p43",
+  "difficulty": "L2",
+  "course_id": "S4A-T1-W01-D33",
+  "title": "四上·第33课｜Unit 5水乡与社区·单复数问答（口语）",
+  "course_type": "training",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "type": "repeat",
+      "text": "Is there a museum here? Yes, there is.",
+      "tag": "A主线·p39-p43·教材句型跟读",
+      "id": 1,
+      "audio": "static/audio/speaking/S4A-T1-W01-D33/q01.mp3",
+      "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "Is there a cinema in the water town? No, there is not.",
+      "tag": "A主线·p39-p43·教材句型跟读",
+      "id": 2,
+      "audio": "static/audio/speaking/S4A-T1-W01-D33/q02.mp3",
+      "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "Are there any nice old bridges around? Yes, there are.",
+      "tag": "A主线·p39-p43·教材句型跟读",
+      "id": 3,
+      "audio": "static/audio/speaking/S4A-T1-W01-D33/q03.mp3",
+      "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "Are there any buses in the water town? No, there are not.",
+      "tag": "A主线·p39-p43·教材句型跟读",
+      "id": 4,
+      "audio": "static/audio/speaking/S4A-T1-W01-D33/q04.mp3",
+      "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "There is a new bridge in my neighbourhood.",
+      "tag": "A主线·p39-p43·教材句型跟读",
+      "id": 5,
+      "audio": "static/audio/speaking/S4A-T1-W01-D33/q05.mp3",
+      "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "There is a very nice museum too.",
+      "tag": "A主线·p39-p43·教材句型跟读",
+      "id": 6,
+      "audio": "static/audio/speaking/S4A-T1-W01-D33/q06.mp3",
+      "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "Are there any buses in the water town?",
+      "expected": "No, there are not.",
+      "hint": "用完整句回答：不，没有。",
+      "tag": "C微调·p39-p43·引导问答与信息对应",
+      "id": 7,
+      "audio": "static/audio/speaking/S4A-T1-W01-D33/q07.mp3",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p39-p43，不作未掌握结论"
+    },
+    {
+      "type": "qa",
+      "question": "Is there a cinema in the water town?",
+      "expected": "No, there is not.",
+      "hint": "用完整句回答：不，没有。",
+      "tag": "A主线·p39-p43·引导问答与信息对应",
+      "id": 8,
+      "audio": "static/audio/speaking/S4A-T1-W01-D33/q08.mp3",
+      "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "Is there a museum in the water town?",
+      "expected": "Yes, there is.",
+      "hint": "用完整句回答：是的，有。",
+      "tag": "A主线·p39-p43·引导问答与信息对应",
+      "id": 9,
+      "audio": "static/audio/speaking/S4A-T1-W01-D33/q09.mp3",
+      "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "Are there any old bridges in the water town?",
+      "expected": "Yes, there are.",
+      "hint": "用完整句回答：是的，有。",
+      "tag": "A主线·p39-p43·引导问答与信息对应",
+      "id": 10,
+      "audio": "static/audio/speaking/S4A-T1-W01-D33/q10.mp3",
+      "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What kind of bridge is in the neighbourhood in the example?",
+      "expected": "There is a new bridge.",
+      "hint": "用完整句回答：有一座新桥。",
+      "tag": "A主线·p39-p43·引导问答与信息对应",
+      "id": 11,
+      "audio": "static/audio/speaking/S4A-T1-W01-D33/q11.mp3",
+      "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What other place is in that neighbourhood?",
+      "expected": "There is a very nice museum too.",
+      "hint": "用完整句回答：还有一个非常漂亮的博物馆。",
+      "tag": "A主线·p39-p43·引导问答与信息对应",
+      "id": 12,
+      "audio": "static/audio/speaking/S4A-T1-W01-D33/q12.mp3",
+      "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D31",
+  "pair_id": "4A-T1-W01-D31",
+  "publication_status": "formal",
+  "week": 7,
+  "day": 1,
+  "scope": "4A Unit 5 p39-p41",
+  "difficulty": "L1",
+  "course_id": "S4A-T1-W01-D31",
+  "title": "四上·第31课｜Unit 5社区场所·欢迎来访（口语）",
+  "course_type": "training",
+  "est_minutes": 10,
+  "questions": [
+    {
+      "type": "repeat",
+      "text": "Welcome to my neighbourhood.",
+      "tag": "A主线·p39-p41·教材句型跟读",
+      "id": 1,
+      "audio": "static/audio/speaking/S4A-T1-W01-D31/q01.mp3",
+      "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "There is a nice park and a shop.",
+      "tag": "A主线·p39-p41·教材句型跟读",
+      "id": 2,
+      "audio": "static/audio/speaking/S4A-T1-W01-D31/q02.mp3",
+      "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "There is a big museum and a library.",
+      "tag": "A主线·p39-p41·教材句型跟读",
+      "id": 3,
+      "audio": "static/audio/speaking/S4A-T1-W01-D31/q03.mp3",
+      "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "There is a new cinema and a supermarket.",
+      "tag": "A主线·p39-p41·教材句型跟读",
+      "id": 4,
+      "audio": "static/audio/speaking/S4A-T1-W01-D31/q04.mp3",
+      "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "This is my lovely neighbourhood.",
+      "tag": "A主线·p39-p41·教材句型跟读",
+      "id": 5,
+      "audio": "static/audio/speaking/S4A-T1-W01-D31/q05.mp3",
+      "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "It is nice to go around my neighbourhood.",
+      "tag": "A主线·p39-p41·教材句型跟读",
+      "id": 6,
+      "audio": "static/audio/speaking/S4A-T1-W01-D31/q06.mp3",
+      "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "Is there a park in the chant?",
+      "expected": "Yes, there is a nice park.",
+      "hint": "用完整句回答：是的，有一个漂亮的公园。",
+      "tag": "C微调·p39-p41·引导问答与信息对应",
+      "id": 7,
+      "audio": "static/audio/speaking/S4A-T1-W01-D31/q07.mp3",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p39-p41，不作未掌握结论"
+    },
+    {
+      "type": "qa",
+      "question": "What is the museum like in the chant?",
+      "expected": "It is a big museum.",
+      "hint": "用完整句回答：它是一个大博物馆。",
+      "tag": "A主线·p39-p41·引导问答与信息对应",
+      "id": 8,
+      "audio": "static/audio/speaking/S4A-T1-W01-D31/q08.mp3",
+      "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "Which place is new in the chant?",
+      "expected": "The cinema is new.",
+      "hint": "用完整句回答：电影院是新的。",
+      "tag": "A主线·p39-p41·引导问答与信息对应",
+      "id": 9,
+      "audio": "static/audio/speaking/S4A-T1-W01-D31/q09.mp3",
+      "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What can you say to welcome a visitor?",
+      "expected": "Welcome to my neighbourhood.",
+      "hint": "用完整句回答：欢迎来到我的社区。",
+      "tag": "A主线·p39-p41·引导问答与信息对应",
+      "id": 10,
+      "audio": "static/audio/speaking/S4A-T1-W01-D31/q10.mp3",
+      "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组"
+    }
+  ]
+}

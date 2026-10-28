@@ -1,0 +1,73 @@
+{
+  "course_id": "S4A-T1-W01-D31",
+  "pair_id": "4A-T1-W01-D31",
+  "study_pack": "4A-T1-W01-D31",
+  "course_version": "5c4eb987a8327c8f",
+  "title": "四上·第31课｜Unit 5社区场所·欢迎来访（口语）",
+  "week": 7,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 10,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Welcome to my neighbourhood.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D31/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "There is a nice park and a shop.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D31/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "There is a big museum and a library.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D31/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "There is a new cinema and a supermarket.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D31/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "This is my lovely neighbourhood.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D31/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "It is nice to go around my neighbourhood.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D31/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：是的，有一个漂亮的公园。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D31/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：它是一个大博物馆。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D31/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用完整句回答：电影院是新的。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D31/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用完整句回答：欢迎来到我的社区。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D31/q10.mp3"
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "course_id": "L4A-T1-W01-D32",
+  "pair_id": "4A-T1-W01-D32",
+  "study_pack": "4A-T1-W01-D32",
+  "course_version": "8911fb459be1a54c",
+  "title": "四上·第32课｜Unit 5水乡游览·地点与细节（听力）",
+  "week": 7,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 14,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D32/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "a photo",
+            "a boat trip",
+            "an old house"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D32/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "old houses",
+            "old shops",
+            "old bridges"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D32/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "a beautiful river",
+            "a big museum",
+            "a new cinema"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D32/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "over the bridge",
+            "out of battery",
+            "by the water"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D32/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "They want to go on a boat trip.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D32/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "The two bridges are forty years old.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D32/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "The museum tells the story of the old town.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D32/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "The camera has a full battery.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D32/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "Take a boat trip.",
+            "Visit a cinema.",
+            "Read in a library."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D32/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "Yes, it is.",
+            "Yes, there are.",
+            "Yes, there is."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D32/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "The camera.",
+            "The cinema.",
+            "The museum."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D32/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "It is out of battery.",
+            "It is very old.",
+            "It is over the river."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D32/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "options": [
+            "Visit a library.",
+            "Take a boat trip.",
+            "Go to a cinema."
+          ],
+          "question_text": "What do they want to do?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D32/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "options": [
+            "Two.",
+            "Four.",
+            "One."
+          ],
+          "question_text": "How many old bridges are mentioned?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D32/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "options": [
+            "New buses.",
+            "A new cinema.",
+            "Old houses and shops."
+          ],
+          "question_text": "What do they want to photograph?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D32/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "There is no museum.",
+            "The camera is out of battery.",
+            "There is no river."
+          ],
+          "question_text": "What is the problem?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D32/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D32/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "They are visiting a water town."
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "They want to take a bus trip."
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "Two bridges are over four hundred years old."
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "The camera works at the museum."
+        }
+      ]
+    }
+  ]
+}

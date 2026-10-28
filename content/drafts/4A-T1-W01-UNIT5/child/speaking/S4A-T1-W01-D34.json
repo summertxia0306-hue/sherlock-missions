@@ -1,0 +1,85 @@
+{
+  "course_id": "S4A-T1-W01-D34",
+  "pair_id": "4A-T1-W01-D34",
+  "study_pack": "4A-T1-W01-D34",
+  "course_version": "df91b561c2479e40",
+  "title": "四上·第34课｜Unit 5走进威尼斯·信息与理由（口语）",
+  "week": 7,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Venice is a famous city in Italy.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D34/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "The houses are all by the water and look colourful.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D34/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "There are a lot of bridges in different colours.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D34/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "People in Venice go around the city by boat.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D34/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "This special boat is called a gondola.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D34/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Venice is also famous for its museums.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D34/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：是的，有很多桥。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D34/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：威尼斯在意大利。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D34/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用完整句回答：他们乘船在城里游览。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D34/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用完整句回答：它是一种特别的船。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D34/q10.mp3"
+    },
+    {
+      "id": 11,
+      "type": "qa",
+      "hint": "用完整句回答：它们看起来各不相同，色彩缤纷。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D34/q11.mp3"
+    },
+    {
+      "id": 12,
+      "type": "qa",
+      "hint": "用完整句回答：它们在水边。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D34/q12.mp3"
+    }
+  ]
+}

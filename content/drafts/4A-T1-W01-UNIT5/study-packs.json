@@ -1,0 +1,53 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "publication_status": "formal",
+  "visible": true,
+  "authority_note": "父JSON为唯一活动源；本目录为派生产物。",
+  "study_packs": [
+    {
+      "lesson": 31,
+      "pair_id": "4A-T1-W01-D31",
+      "study_pack": "4A-T1-W01-D31",
+      "textbook_scope": "4A Unit 5 p39-p41",
+      "planned_difficulty": "L1",
+      "listening_course_id": "L4A-T1-W01-D31",
+      "speaking_course_id": "S4A-T1-W01-D31"
+    },
+    {
+      "lesson": 32,
+      "pair_id": "4A-T1-W01-D32",
+      "study_pack": "4A-T1-W01-D32",
+      "textbook_scope": "4A Unit 5 p39-p42",
+      "planned_difficulty": "L1+",
+      "listening_course_id": "L4A-T1-W01-D32",
+      "speaking_course_id": "S4A-T1-W01-D32"
+    },
+    {
+      "lesson": 33,
+      "pair_id": "4A-T1-W01-D33",
+      "study_pack": "4A-T1-W01-D33",
+      "textbook_scope": "4A Unit 5 p39-p43",
+      "planned_difficulty": "L2",
+      "listening_course_id": "L4A-T1-W01-D33",
+      "speaking_course_id": "S4A-T1-W01-D33"
+    },
+    {
+      "lesson": 34,
+      "pair_id": "4A-T1-W01-D34",
+      "study_pack": "4A-T1-W01-D34",
+      "textbook_scope": "4A Unit 5 p39-p45",
+      "planned_difficulty": "L2+",
+      "listening_course_id": "L4A-T1-W01-D34",
+      "speaking_course_id": "S4A-T1-W01-D34"
+    },
+    {
+      "lesson": 35,
+      "pair_id": "4A-T1-W01-D35",
+      "study_pack": "4A-T1-W01-D35",
+      "textbook_scope": "4A Unit 5 p39-p46",
+      "planned_difficulty": "L3",
+      "listening_course_id": "L4A-T1-W01-D35",
+      "speaking_course_id": "S4A-T1-W01-D35"
+    }
+  ]
+}

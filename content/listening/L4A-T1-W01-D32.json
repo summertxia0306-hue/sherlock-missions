@@ -1,0 +1,435 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D32",
+  "pair_id": "4A-T1-W01-D32",
+  "publication_status": "formal",
+  "week": 7,
+  "day": 2,
+  "scope": "4A Unit 5 p39-p42",
+  "difficulty": "L1",
+  "course_id": "L4A-T1-W01-D32",
+  "title": "四上·第32课｜Unit 5水乡游览·地点与细节（听力）",
+  "course_type": "training",
+  "est_minutes": 14,
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D32/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p39-p42·场所词汇辨别",
+          "parent_note": "确认版教材p39-p42主线或不增加新知识的同语境受控重组",
+          "options": [
+            "a photo",
+            "a boat trip",
+            "an old house"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "a boat trip"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D32/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p39-p42·场所词汇辨别",
+          "parent_note": "确认版教材p39-p42主线或不增加新知识的同语境受控重组",
+          "options": [
+            "old houses",
+            "old shops",
+            "old bridges"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "old bridges"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D32/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p39-p42·场所词汇辨别",
+          "parent_note": "确认版教材p39-p42主线或不增加新知识的同语境受控重组",
+          "options": [
+            "a beautiful river",
+            "a big museum",
+            "a new cinema"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "a beautiful river"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D32/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p39-p42·场所词汇辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p39-p42，不作未掌握结论",
+          "options": [
+            "over the bridge",
+            "out of battery",
+            "by the water"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "out of battery"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D32/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p42·句子信息对应",
+          "parent_note": "确认版教材p39-p42主线或不增加新知识的同语境受控重组",
+          "display": "They want to go on a boat trip.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "They want to go on a boat trip."
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D32/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p42·句子信息对应",
+          "parent_note": "确认版教材p39-p42主线或不增加新知识的同语境受控重组",
+          "display": "The two bridges are forty years old.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The two bridges are over four hundred years old."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D32/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p42·句子信息对应",
+          "parent_note": "确认版教材p39-p42主线或不增加新知识的同语境受控重组",
+          "display": "The museum tells the story of the old town.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The museum tells the story of the old town."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D32/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p42·句子信息对应",
+          "parent_note": "确认版教材p39-p42主线或不增加新知识的同语境受控重组",
+          "display": "The camera has a full battery.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The camera is out of battery."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D32/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p39-p42·单复数与问答对应",
+          "parent_note": "确认版教材p39-p42主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Take a boat trip.",
+            "Visit a cinema.",
+            "Read in a library."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What can we do on the river?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D32/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p39-p42·单复数与问答对应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p39-p42，不作未掌握结论",
+          "options": [
+            "Yes, it is.",
+            "Yes, there are.",
+            "Yes, there is."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Are there any nice old bridges around?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D32/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p39-p42·单复数与问答对应",
+          "parent_note": "确认版教材p39-p42主线或不增加新知识的同语境受控重组",
+          "options": [
+            "The camera.",
+            "The cinema.",
+            "The museum."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "What tells the story of the old town?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D32/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p39-p42·单复数与问答对应",
+          "parent_note": "确认版教材p39-p42主线或不增加新知识的同语境受控重组",
+          "options": [
+            "It is out of battery.",
+            "It is very old.",
+            "It is over the river."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Why can we not use the camera now?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D32/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p42·地点与细节整合",
+          "parent_note": "确认版教材p39-p42主线或不增加新知识的同语境受控重组",
+          "question_text": "What do they want to do?",
+          "options": [
+            "Visit a library.",
+            "Take a boat trip.",
+            "Go to a cinema."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Look, there is a beautiful river."
+            ],
+            [
+              "m",
+              "Let us go on a boat trip."
+            ],
+            [
+              "n",
+              "Question: What do they want to do?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D32/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p42·地点与细节整合",
+          "parent_note": "确认版教材p39-p42主线或不增加新知识的同语境受控重组",
+          "question_text": "How many old bridges are mentioned?",
+          "options": [
+            "Two.",
+            "Four.",
+            "One."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Are there any old bridges?"
+            ],
+            [
+              "m",
+              "Yes, two beautiful bridges near here are over four hundred years old."
+            ],
+            [
+              "n",
+              "Question: How many old bridges are mentioned?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D32/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p42·地点与细节整合",
+          "parent_note": "确认版教材p39-p42主线或不增加新知识的同语境受控重组",
+          "question_text": "What do they want to photograph?",
+          "options": [
+            "New buses.",
+            "A new cinema.",
+            "Old houses and shops."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "I like the old houses and shops."
+            ],
+            [
+              "m",
+              "They look nice. Let us take some photos."
+            ],
+            [
+              "n",
+              "Question: What do they want to photograph?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D32/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p42·地点与细节整合",
+          "parent_note": "确认版教材p39-p42主线或不增加新知识的同语境受控重组",
+          "question_text": "What is the problem?",
+          "options": [
+            "There is no museum.",
+            "The camera is out of battery.",
+            "There is no river."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Is there a museum here?"
+            ],
+            [
+              "m",
+              "Yes, there is. Let us take a photo there."
+            ],
+            [
+              "f",
+              "Oh no! My camera is out of battery."
+            ],
+            [
+              "n",
+              "Question: What is the problem?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D32/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p42·短文取证",
+          "parent_note": "确认版教材p39-p42主线或不增加新知识的同语境受控重组",
+          "statement": "They are visiting a water town.",
+          "answer": "true",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p42·短文取证",
+          "parent_note": "确认版教材p39-p42主线或不增加新知识的同语境受控重组",
+          "statement": "They want to take a bus trip.",
+          "answer": "false",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p42·短文取证",
+          "parent_note": "确认版教材p39-p42主线或不增加新知识的同语境受控重组",
+          "statement": "Two bridges are over four hundred years old.",
+          "answer": "true",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p42·短文取证",
+          "parent_note": "确认版教材p39-p42主线或不增加新知识的同语境受控重组",
+          "statement": "The camera works at the museum.",
+          "answer": "false",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D32/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Shenshen, her mum and Yaoyao are visiting an old water town. There is a beautiful river. They want to go on a boat trip. Two bridges near them are over four hundred years old. The museum tells the story of the old town. They want to take a photo there, but the camera is out of battery."
+        ]
+      ]
+    }
+  ]
+}

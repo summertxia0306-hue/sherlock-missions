@@ -1,0 +1,443 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D31",
+  "pair_id": "4A-T1-W01-D31",
+  "publication_status": "formal",
+  "week": 7,
+  "day": 1,
+  "scope": "4A Unit 5 p39-p41",
+  "difficulty": "L1",
+  "course_id": "L4A-T1-W01-D31",
+  "title": "四上·第31课｜Unit 5社区场所·欢迎来访（听力）",
+  "course_type": "training",
+  "est_minutes": 12,
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D31/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p39-p41·场所词汇辨别",
+          "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组",
+          "options": [
+            "museum",
+            "cinema",
+            "supermarket"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "museum"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D31/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p39-p41·场所词汇辨别",
+          "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组",
+          "options": [
+            "shop",
+            "bridge",
+            "park"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "bridge"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D31/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p39-p41·场所词汇辨别",
+          "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组",
+          "options": [
+            "museum",
+            "supermarket",
+            "neighbourhood"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "neighbourhood"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D31/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p39-p41·场所词汇辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p39-p41，不作未掌握结论",
+          "options": [
+            "a new cinema",
+            "a big museum",
+            "a nice park"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "a new cinema"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D31/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p41·句子信息对应",
+          "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组",
+          "display": "There is a nice park.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "There is a nice park."
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D31/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p41·句子信息对应",
+          "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组",
+          "display": "There is a small museum.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "There is a big museum."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D31/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p41·句子信息对应",
+          "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组",
+          "display": "There is a new cinema.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "There is a new cinema."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D31/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p41·句子信息对应",
+          "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组",
+          "display": "Welcome to my school.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Welcome to my neighbourhood."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D31/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p39-p41·单复数与问答对应",
+          "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组",
+          "options": [
+            "There is a park.",
+            "It is green.",
+            "I can read."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What is in your neighbourhood?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D31/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p39-p41·单复数与问答对应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p39-p41，不作未掌握结论",
+          "options": [
+            "It is a shop.",
+            "Yes, there is.",
+            "There are two."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Is there a shop?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D31/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p39-p41·单复数与问答对应",
+          "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组",
+          "options": [
+            "At the bridge.",
+            "At the park.",
+            "At the cinema."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "Where can you see a film?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D31/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p39-p41·单复数与问答对应",
+          "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组",
+          "options": [
+            "It is big.",
+            "It is a museum.",
+            "There is one."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Is the museum big or small?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D31/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p41·地点与细节整合",
+          "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组",
+          "question_text": "What place do they talk about?",
+          "options": [
+            "A park.",
+            "A shop.",
+            "A cinema."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Welcome to my neighbourhood."
+            ],
+            [
+              "m",
+              "Is there a park?"
+            ],
+            [
+              "f",
+              "Yes, there is a nice park."
+            ],
+            [
+              "n",
+              "Question: What place do they talk about?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D31/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p41·地点与细节整合",
+          "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组",
+          "question_text": "What is the museum like?",
+          "options": [
+            "Small.",
+            "Big.",
+            "New."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "There is a museum here."
+            ],
+            [
+              "m",
+              "Is it big?"
+            ],
+            [
+              "f",
+              "Yes, it is."
+            ],
+            [
+              "n",
+              "Question: What is the museum like?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D31/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p41·地点与细节整合",
+          "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组",
+          "question_text": "Which place is new?",
+          "options": [
+            "The shop.",
+            "The park.",
+            "The cinema."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "Is there a new shop?"
+            ],
+            [
+              "m",
+              "There is a shop, but the cinema is new."
+            ],
+            [
+              "n",
+              "Question: Which place is new?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D31/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p41·地点与细节整合",
+          "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组",
+          "question_text": "Where can they buy food?",
+          "options": [
+            "At the supermarket.",
+            "At the library.",
+            "At the bridge."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "There is a library and a supermarket."
+            ],
+            [
+              "m",
+              "Can we buy food at the supermarket?"
+            ],
+            [
+              "f",
+              "Yes, we can."
+            ],
+            [
+              "n",
+              "Question: Where can they buy food?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D31/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p41·短文取证",
+          "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组",
+          "statement": "There is a nice park.",
+          "answer": "true",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p41·短文取证",
+          "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组",
+          "statement": "The museum is small.",
+          "answer": "false",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p41·短文取证",
+          "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组",
+          "statement": "There is a new cinema.",
+          "answer": "true",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p41·短文取证",
+          "parent_note": "确认版教材p39-p41主线或不增加新知识的同语境受控重组",
+          "statement": "There is no supermarket.",
+          "answer": "false",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D31/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Welcome to my neighbourhood. There is a nice park and a shop. There is a big museum and a library. There is a new cinema and a supermarket. It is nice to go around my neighbourhood."
+        ]
+      ]
+    }
+  ]
+}

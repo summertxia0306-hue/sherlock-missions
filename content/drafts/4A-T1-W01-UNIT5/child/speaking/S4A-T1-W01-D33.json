@@ -1,0 +1,85 @@
+{
+  "course_id": "S4A-T1-W01-D33",
+  "pair_id": "4A-T1-W01-D33",
+  "study_pack": "4A-T1-W01-D33",
+  "course_version": "326e985a5518248c",
+  "title": "四上·第33课｜Unit 5水乡与社区·单复数问答（口语）",
+  "week": 7,
+  "day": 3,
+  "course_type": "training",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Is there a museum here? Yes, there is.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D33/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "Is there a cinema in the water town? No, there is not.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D33/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "Are there any nice old bridges around? Yes, there are.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D33/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Are there any buses in the water town? No, there are not.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D33/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "There is a new bridge in my neighbourhood.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D33/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "There is a very nice museum too.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D33/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：不，没有。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D33/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：不，没有。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D33/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用完整句回答：是的，有。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D33/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用完整句回答：是的，有。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D33/q10.mp3"
+    },
+    {
+      "id": 11,
+      "type": "qa",
+      "hint": "用完整句回答：有一座新桥。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D33/q11.mp3"
+    },
+    {
+      "id": 12,
+      "type": "qa",
+      "hint": "用完整句回答：还有一个非常漂亮的博物馆。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D33/q12.mp3"
+    }
+  ]
+}

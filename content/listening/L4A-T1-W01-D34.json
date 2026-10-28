@@ -1,0 +1,532 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D34",
+  "pair_id": "4A-T1-W01-D34",
+  "publication_status": "formal",
+  "week": 7,
+  "day": 4,
+  "scope": "4A Unit 5 p39-p45",
+  "difficulty": "L2",
+  "course_id": "L4A-T1-W01-D34",
+  "title": "四上·第34课｜Unit 5走进威尼斯·信息与理由（听力）",
+  "course_type": "training",
+  "est_minutes": 21,
+  "scoring": {
+    "per_question": 4,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D34/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p39-p45·场所词汇辨别",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Italy",
+            "Venice",
+            "a water town"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Italy"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p39-p45·场所词汇辨别",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "options": [
+            "old bridges",
+            "colourful bridges",
+            "a new bridge"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "colourful bridges"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p39-p45·场所词汇辨别",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "options": [
+            "a camera",
+            "a museum",
+            "a gondola"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "a gondola"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p39-p45·场所词汇辨别",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "options": [
+            "by the water",
+            "over the river",
+            "in the park"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "by the water"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q04.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p39-p45·场所词汇辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p39-p45，不作未掌握结论",
+          "options": [
+            "colourful houses",
+            "interesting shops",
+            "old trees"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "interesting shops"
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p45·句子信息对应",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "display": "Venice is a famous city in Italy.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Venice is a famous city in Italy."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p45·句子信息对应",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "display": "People go around Venice by bus.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "People go around Venice by boat."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p45·句子信息对应",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "display": "The bridges are in different colours.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The bridges are in different colours."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q08.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p45·句子信息对应",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "display": "There are no restaurants by the water.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "There are many restaurants by the water."
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q09.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p45·句子信息对应",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "display": "Venice is also famous for its museums.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Venice is also famous for its museums."
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p39-p45·单复数与问答对应",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "options": [
+            "It is in Italy.",
+            "It is in the park.",
+            "It is a museum."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Where is Venice?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p39-p45·单复数与问答对应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p39-p45，不作未掌握结论",
+          "options": [
+            "By bus.",
+            "By boat.",
+            "By car."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "How do people go around Venice?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q12.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p39-p45·单复数与问答对应",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "options": [
+            "A colourful bridge.",
+            "An interesting shop.",
+            "A special boat."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "What is a gondola?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q13.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p39-p45·单复数与问答对应",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "options": [
+            "They look different and colourful.",
+            "They are boats.",
+            "They are in a museum."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Why do you like the bridges in Venice?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q14.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p39-p45·单复数与问答对应",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Over the park.",
+            "By the water.",
+            "In a gondola."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Where are the houses in Venice?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p45·地点与细节整合",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "question_text": "Where is Venice?",
+          "options": [
+            "In Italy.",
+            "In the old museum.",
+            "In the park."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Venice is a famous city."
+            ],
+            [
+              "m",
+              "Is it in Italy?"
+            ],
+            [
+              "f",
+              "Yes, it is."
+            ],
+            [
+              "n",
+              "Question: Where is Venice?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q16.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p45·地点与细节整合",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "question_text": "What is a gondola?",
+          "options": [
+            "A bridge.",
+            "A boat.",
+            "A restaurant."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "How do people go around the city?"
+            ],
+            [
+              "m",
+              "By boat. This special boat is called a gondola."
+            ],
+            [
+              "n",
+              "Question: What is a gondola?"
+            ]
+          ],
+          "id": 17,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q17.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p45·地点与细节整合",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "question_text": "Why does the speaker like the bridges?",
+          "options": [
+            "They are all new.",
+            "They are all tall.",
+            "They look colourful."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "I like the bridges in Venice."
+            ],
+            [
+              "m",
+              "Why?"
+            ],
+            [
+              "f",
+              "They look different and colourful."
+            ],
+            [
+              "n",
+              "Question: Why does the speaker like the bridges?"
+            ]
+          ],
+          "id": 18,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q18.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p45·地点与细节整合",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "question_text": "Which two places are mentioned?",
+          "options": [
+            "Restaurants and shops.",
+            "Parks and cinemas.",
+            "Schools and libraries."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Are there any restaurants by the water?"
+            ],
+            [
+              "m",
+              "Yes, many. There are interesting shops too."
+            ],
+            [
+              "n",
+              "Question: Which two places are mentioned?"
+            ]
+          ],
+          "id": 19,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q19.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p45·地点与细节整合",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "question_text": "What does the speaker like?",
+          "options": [
+            "The buses.",
+            "The houses.",
+            "The cameras."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "The houses in Venice are all by the water."
+            ],
+            [
+              "m",
+              "Do they look colourful?"
+            ],
+            [
+              "f",
+              "Yes. I like them."
+            ],
+            [
+              "n",
+              "Question: What does the speaker like?"
+            ]
+          ],
+          "id": 20,
+          "audio": "static/audio/listening/L4A-T1-W01-D34/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p45·短文取证",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "statement": "Venice is in Italy.",
+          "answer": "true",
+          "id": 21
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p45·短文取证",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "statement": "All the bridges are the same colour.",
+          "answer": "false",
+          "id": 22
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p45·短文取证",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "statement": "A gondola is a special boat.",
+          "answer": "true",
+          "id": 23
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p45·短文取证",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "statement": "There are no interesting shops in Venice.",
+          "answer": "false",
+          "id": 24
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p45·短文取证",
+          "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组",
+          "statement": "Venice is famous for its museums too.",
+          "answer": "true",
+          "id": 25
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D34/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Venice is a famous city in Italy. Its houses are by the water and look colourful. There are a lot of bridges in different colours. People go around the city by boat. A special boat is called a gondola. There are many restaurants by the water and interesting shops. Venice is also famous for its museums."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "course_id": "S4A-T1-W01-D35",
+  "pair_id": "4A-T1-W01-D35",
+  "study_pack": "4A-T1-W01-D35",
+  "course_version": "f38b64dbb94a264a",
+  "title": "四上·第35课｜Unit 5最喜欢的地方·单元综合（口语）",
+  "week": 7,
+  "day": 5,
+  "course_type": "weekly_review",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "This is a photo of my favourite place.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D35/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "It is a big park in my neighbourhood.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D35/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "It is nice and clean.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D35/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "There are some very tall old trees in it.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D35/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "There is a big playground in the park.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D35/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "I go there with my mum every week.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D35/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：是的，有一个大游乐场。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D35/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：是的，有。它们非常高。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D35/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用完整句回答：它漂亮又干净。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D35/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用完整句回答：这个孩子和妈妈一起去那里。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D35/q10.mp3"
+    },
+    {
+      "id": 11,
+      "type": "qa",
+      "hint": "用完整句回答：它们看起来各不相同，色彩缤纷。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D35/q11.mp3"
+    },
+    {
+      "id": 12,
+      "type": "qa",
+      "hint": "用完整句回答：相机没电了。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D35/q12.mp3"
+    }
+  ]
+}

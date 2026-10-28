@@ -1,0 +1,124 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D35",
+  "pair_id": "4A-T1-W01-D35",
+  "publication_status": "formal",
+  "week": 7,
+  "day": 5,
+  "scope": "4A Unit 5 p39-p46",
+  "difficulty": "L3",
+  "course_id": "S4A-T1-W01-D35",
+  "title": "四上·第35课｜Unit 5最喜欢的地方·单元综合（口语）",
+  "course_type": "weekly_review",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "type": "repeat",
+      "text": "This is a photo of my favourite place.",
+      "tag": "A主线·p39-p46·教材句型跟读",
+      "id": 1,
+      "audio": "static/audio/speaking/S4A-T1-W01-D35/q01.mp3",
+      "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "It is a big park in my neighbourhood.",
+      "tag": "A主线·p39-p46·教材句型跟读",
+      "id": 2,
+      "audio": "static/audio/speaking/S4A-T1-W01-D35/q02.mp3",
+      "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "It is nice and clean.",
+      "tag": "A主线·p39-p46·教材句型跟读",
+      "id": 3,
+      "audio": "static/audio/speaking/S4A-T1-W01-D35/q03.mp3",
+      "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "There are some very tall old trees in it.",
+      "tag": "A主线·p39-p46·教材句型跟读",
+      "id": 4,
+      "audio": "static/audio/speaking/S4A-T1-W01-D35/q04.mp3",
+      "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "There is a big playground in the park.",
+      "tag": "A主线·p39-p46·教材句型跟读",
+      "id": 5,
+      "audio": "static/audio/speaking/S4A-T1-W01-D35/q05.mp3",
+      "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "I go there with my mum every week.",
+      "tag": "A主线·p39-p46·教材句型跟读",
+      "id": 6,
+      "audio": "static/audio/speaking/S4A-T1-W01-D35/q06.mp3",
+      "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "Is there a playground in the park in the example?",
+      "expected": "Yes, there is a big playground.",
+      "hint": "用完整句回答：是的，有一个大游乐场。",
+      "tag": "C微调·p39-p46·引导问答与信息对应",
+      "id": 7,
+      "audio": "static/audio/speaking/S4A-T1-W01-D35/q07.mp3",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p39-p46，不作未掌握结论"
+    },
+    {
+      "type": "qa",
+      "question": "Are there any old trees in that park?",
+      "expected": "Yes, there are. They are very tall.",
+      "hint": "用完整句回答：是的，有。它们非常高。",
+      "tag": "A主线·p39-p46·引导问答与信息对应",
+      "id": 8,
+      "audio": "static/audio/speaking/S4A-T1-W01-D35/q08.mp3",
+      "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What is the park like in the example?",
+      "expected": "It is nice and clean.",
+      "hint": "用完整句回答：它漂亮又干净。",
+      "tag": "A主线·p39-p46·引导问答与信息对应",
+      "id": 9,
+      "audio": "static/audio/speaking/S4A-T1-W01-D35/q09.mp3",
+      "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "Who goes to the park with the child every week?",
+      "expected": "The child goes there with Mum.",
+      "hint": "用完整句回答：这个孩子和妈妈一起去那里。",
+      "tag": "A主线·p39-p46·引导问答与信息对应",
+      "id": 10,
+      "audio": "static/audio/speaking/S4A-T1-W01-D35/q10.mp3",
+      "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "Why do people like the bridges in Venice?",
+      "expected": "They look different and colourful.",
+      "hint": "用完整句回答：它们看起来各不相同，色彩缤纷。",
+      "tag": "A主线·p39-p46·引导问答与信息对应",
+      "id": 11,
+      "audio": "static/audio/speaking/S4A-T1-W01-D35/q11.mp3",
+      "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "Why can they not use the camera at the museum?",
+      "expected": "The camera is out of battery.",
+      "hint": "用完整句回答：相机没电了。",
+      "tag": "A主线·p39-p46·引导问答与信息对应",
+      "id": 12,
+      "audio": "static/audio/speaking/S4A-T1-W01-D35/q12.mp3",
+      "parent_note": "确认版教材p39-p46主线或不增加新知识的同语境受控重组"
+    }
+  ]
+}

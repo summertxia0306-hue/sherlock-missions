@@ -1,0 +1,73 @@
+{
+  "course_id": "S4A-T1-W01-D32",
+  "pair_id": "4A-T1-W01-D32",
+  "study_pack": "4A-T1-W01-D32",
+  "course_version": "08cba70fbc96ef3c",
+  "title": "四上·第32课｜Unit 5水乡游览·地点与细节（口语）",
+  "week": 7,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 10,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Look, there is a beautiful river.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D32/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "Let us go on a boat trip.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D32/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "Are there any nice old bridges around?",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D32/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Two beautiful bridges near here are over four hundred years old.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D32/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "The museum tells the story of the old town.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D32/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Oh no! My camera is out of battery.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D32/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：是的，有一个博物馆。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D32/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：它们有四百多年的历史。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D32/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用完整句回答：它讲述这个古镇的故事。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D32/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用完整句回答：它没电了。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D32/q10.mp3"
+    }
+  ]
+}

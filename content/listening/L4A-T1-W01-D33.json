@@ -1,0 +1,443 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D33",
+  "pair_id": "4A-T1-W01-D33",
+  "publication_status": "formal",
+  "week": 7,
+  "day": 3,
+  "scope": "4A Unit 5 p39-p43",
+  "difficulty": "L2",
+  "course_id": "L4A-T1-W01-D33",
+  "title": "四上·第33课｜Unit 5水乡与社区·单复数问答（听力）",
+  "course_type": "training",
+  "est_minutes": 17,
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D33/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "A主线·p39-p43·场所词汇辨别",
+          "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组",
+          "options": [
+            "a museum",
+            "some museums",
+            "some bridges"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "a museum"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D33/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p39-p43·场所词汇辨别",
+          "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组",
+          "options": [
+            "any bridges",
+            "any buses",
+            "any shops"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "any buses"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D33/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p39-p43·场所词汇辨别",
+          "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组",
+          "options": [
+            "an old bridge",
+            "a new cinema",
+            "a new bridge"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "a new bridge"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D33/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "C微调·p39-p43·场所词汇辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p39-p43，不作未掌握结论",
+          "options": [
+            "some old houses",
+            "some old bridges",
+            "some new shops"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "some old houses"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D33/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p43·句子信息对应",
+          "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组",
+          "display": "There is a museum in the water town.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "There is a museum in the water town."
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D33/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p43·句子信息对应",
+          "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组",
+          "display": "There is a cinema in the water town.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "There is no cinema in the water town."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D33/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p43·句子信息对应",
+          "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组",
+          "display": "There are some old bridges around.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "There are some old bridges around."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D33/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p39-p43·句子信息对应",
+          "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组",
+          "display": "There are some buses in the water town.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "There are no buses in the water town."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D33/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "A主线·p39-p43·单复数与问答对应",
+          "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组",
+          "options": [
+            "No, there is not.",
+            "No, there are not.",
+            "Yes, it is."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Is there a cinema in the water town?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D33/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "C微调·p39-p43·单复数与问答对应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p39-p43，不作未掌握结论",
+          "options": [
+            "No, there is not.",
+            "No, there are not.",
+            "No, it is not."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Are there any buses in the water town?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D33/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p39-p43·单复数与问答对应",
+          "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Yes, there are.",
+            "Yes, it is.",
+            "Yes, there is."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "Is there a museum in the water town?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D33/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p39-p43·单复数与问答对应",
+          "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Yes, there are.",
+            "Yes, there is.",
+            "Yes, they can."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Are there any nice old bridges around?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D33/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p43·地点与细节整合",
+          "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组",
+          "question_text": "Which place can they visit?",
+          "options": [
+            "A cinema.",
+            "A museum.",
+            "A supermarket."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Is there a cinema in the water town?"
+            ],
+            [
+              "m",
+              "No, there is not. But there is a museum."
+            ],
+            [
+              "n",
+              "Question: Which place can they visit?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D33/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p43·地点与细节整合",
+          "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组",
+          "question_text": "What kind of bridge is in this neighbourhood?",
+          "options": [
+            "A new bridge.",
+            "An old bridge.",
+            "No bridge."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Are there any old bridges in your neighbourhood?"
+            ],
+            [
+              "m",
+              "No, there are not. But there is a new bridge."
+            ],
+            [
+              "n",
+              "Question: What kind of bridge is in this neighbourhood?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D33/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p43·地点与细节整合",
+          "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组",
+          "question_text": "How do they plan to travel?",
+          "options": [
+            "By bus.",
+            "By car.",
+            "By boat."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "Are there any buses in the water town?"
+            ],
+            [
+              "m",
+              "No, there are not."
+            ],
+            [
+              "f",
+              "Let us go on a boat trip."
+            ],
+            [
+              "n",
+              "Question: How do they plan to travel?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D33/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p39-p43·地点与细节整合",
+          "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组",
+          "question_text": "What is in this neighbourhood?",
+          "options": [
+            "Old bridges.",
+            "A museum.",
+            "A cinema."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Is there a museum in your neighbourhood?"
+            ],
+            [
+              "m",
+              "Yes, a very nice one."
+            ],
+            [
+              "f",
+              "Are there any old bridges?"
+            ],
+            [
+              "m",
+              "No, there are not."
+            ],
+            [
+              "n",
+              "Question: What is in this neighbourhood?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D33/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p43·短文取证",
+          "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组",
+          "statement": "There is a museum in the water town.",
+          "answer": "true",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p43·短文取证",
+          "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组",
+          "statement": "There are buses in the water town.",
+          "answer": "false",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p43·短文取证",
+          "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组",
+          "statement": "There is a new bridge in the speaker's neighbourhood.",
+          "answer": "true",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p39-p43·短文取证",
+          "parent_note": "确认版教材p39-p43主线或不增加新知识的同语境受控重组",
+          "statement": "There are old bridges in the speaker's neighbourhood.",
+          "answer": "false",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D33/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "We are in the water town. There is a museum, but there is no cinema. There are some nice old bridges, but there are no buses. My neighbourhood is different. There is a new bridge and a very nice museum. There are no old bridges in my neighbourhood."
+        ]
+      ]
+    }
+  ]
+}

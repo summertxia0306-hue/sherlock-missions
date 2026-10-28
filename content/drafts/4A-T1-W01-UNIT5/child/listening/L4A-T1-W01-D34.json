@@ -1,0 +1,266 @@
+{
+  "course_id": "L4A-T1-W01-D34",
+  "pair_id": "4A-T1-W01-D34",
+  "study_pack": "4A-T1-W01-D34",
+  "course_version": "1695b8661ed0685f",
+  "title": "四上·第34课｜Unit 5走进威尼斯·信息与理由（听力）",
+  "week": 7,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 21,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D34/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "Italy",
+            "Venice",
+            "a water town"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "old bridges",
+            "colourful bridges",
+            "a new bridge"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "a camera",
+            "a museum",
+            "a gondola"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "by the water",
+            "over the river",
+            "in the park"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q04.mp3"
+        },
+        {
+          "id": 5,
+          "type": "word_choice",
+          "options": [
+            "colourful houses",
+            "interesting shops",
+            "old trees"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "Venice is a famous city in Italy.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "People go around Venice by bus.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "The bridges are in different colours.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q08.mp3"
+        },
+        {
+          "id": 9,
+          "type": "sentence_judge",
+          "display": "There are no restaurants by the water.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "sentence_judge",
+          "display": "Venice is also famous for its museums.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "It is in Italy.",
+            "It is in the park.",
+            "It is a museum."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "By bus.",
+            "By boat.",
+            "By car."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q12.mp3"
+        },
+        {
+          "id": 13,
+          "type": "question_response",
+          "options": [
+            "A colourful bridge.",
+            "An interesting shop.",
+            "A special boat."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "question_response",
+          "options": [
+            "They look different and colourful.",
+            "They are boats.",
+            "They are in a museum."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "question_response",
+          "options": [
+            "Over the park.",
+            "By the water.",
+            "In a gondola."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "In Italy.",
+            "In the old museum.",
+            "In the park."
+          ],
+          "question_text": "Where is Venice?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q16.mp3"
+        },
+        {
+          "id": 17,
+          "type": "dialogue_choice",
+          "options": [
+            "A bridge.",
+            "A boat.",
+            "A restaurant."
+          ],
+          "question_text": "What is a gondola?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q17.mp3"
+        },
+        {
+          "id": 18,
+          "type": "dialogue_choice",
+          "options": [
+            "They are all new.",
+            "They are all tall.",
+            "They look colourful."
+          ],
+          "question_text": "Why does the speaker like the bridges?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q18.mp3"
+        },
+        {
+          "id": 19,
+          "type": "dialogue_choice",
+          "options": [
+            "Restaurants and shops.",
+            "Parks and cinemas.",
+            "Schools and libraries."
+          ],
+          "question_text": "Which two places are mentioned?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q19.mp3"
+        },
+        {
+          "id": 20,
+          "type": "dialogue_choice",
+          "options": [
+            "The buses.",
+            "The houses.",
+            "The cameras."
+          ],
+          "question_text": "What does the speaker like?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D34/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D34/p01.mp3",
+      "questions": [
+        {
+          "id": 21,
+          "type": "passage_judge",
+          "statement": "Venice is in Italy."
+        },
+        {
+          "id": 22,
+          "type": "passage_judge",
+          "statement": "All the bridges are the same colour."
+        },
+        {
+          "id": 23,
+          "type": "passage_judge",
+          "statement": "A gondola is a special boat."
+        },
+        {
+          "id": 24,
+          "type": "passage_judge",
+          "statement": "There are no interesting shops in Venice."
+        },
+        {
+          "id": 25,
+          "type": "passage_judge",
+          "statement": "Venice is famous for its museums too."
+        }
+      ]
+    }
+  ]
+}

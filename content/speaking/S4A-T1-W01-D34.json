@@ -1,0 +1,124 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D34",
+  "pair_id": "4A-T1-W01-D34",
+  "publication_status": "formal",
+  "week": 7,
+  "day": 4,
+  "scope": "4A Unit 5 p39-p45",
+  "difficulty": "L2",
+  "course_id": "S4A-T1-W01-D34",
+  "title": "四上·第34课｜Unit 5走进威尼斯·信息与理由（口语）",
+  "course_type": "training",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "type": "repeat",
+      "text": "Venice is a famous city in Italy.",
+      "tag": "A主线·p39-p45·教材句型跟读",
+      "id": 1,
+      "audio": "static/audio/speaking/S4A-T1-W01-D34/q01.mp3",
+      "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "The houses are all by the water and look colourful.",
+      "tag": "A主线·p39-p45·教材句型跟读",
+      "id": 2,
+      "audio": "static/audio/speaking/S4A-T1-W01-D34/q02.mp3",
+      "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "There are a lot of bridges in different colours.",
+      "tag": "A主线·p39-p45·教材句型跟读",
+      "id": 3,
+      "audio": "static/audio/speaking/S4A-T1-W01-D34/q03.mp3",
+      "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "People in Venice go around the city by boat.",
+      "tag": "A主线·p39-p45·教材句型跟读",
+      "id": 4,
+      "audio": "static/audio/speaking/S4A-T1-W01-D34/q04.mp3",
+      "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "This special boat is called a gondola.",
+      "tag": "A主线·p39-p45·教材句型跟读",
+      "id": 5,
+      "audio": "static/audio/speaking/S4A-T1-W01-D34/q05.mp3",
+      "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "Venice is also famous for its museums.",
+      "tag": "A主线·p39-p45·教材句型跟读",
+      "id": 6,
+      "audio": "static/audio/speaking/S4A-T1-W01-D34/q06.mp3",
+      "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "Are there any bridges in Venice?",
+      "expected": "Yes, there are a lot of bridges.",
+      "hint": "用完整句回答：是的，有很多桥。",
+      "tag": "C微调·p39-p45·引导问答与信息对应",
+      "id": 7,
+      "audio": "static/audio/speaking/S4A-T1-W01-D34/q07.mp3",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p39-p45，不作未掌握结论"
+    },
+    {
+      "type": "qa",
+      "question": "Where is Venice?",
+      "expected": "Venice is in Italy.",
+      "hint": "用完整句回答：威尼斯在意大利。",
+      "tag": "A主线·p39-p45·引导问答与信息对应",
+      "id": 8,
+      "audio": "static/audio/speaking/S4A-T1-W01-D34/q08.mp3",
+      "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "How do people go around Venice?",
+      "expected": "They go around the city by boat.",
+      "hint": "用完整句回答：他们乘船在城里游览。",
+      "tag": "A主线·p39-p45·引导问答与信息对应",
+      "id": 9,
+      "audio": "static/audio/speaking/S4A-T1-W01-D34/q09.mp3",
+      "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What is a gondola?",
+      "expected": "It is a special boat.",
+      "hint": "用完整句回答：它是一种特别的船。",
+      "tag": "A主线·p39-p45·引导问答与信息对应",
+      "id": 10,
+      "audio": "static/audio/speaking/S4A-T1-W01-D34/q10.mp3",
+      "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "Why do you like the bridges in Venice?",
+      "expected": "They look different and colourful.",
+      "hint": "用完整句回答：它们看起来各不相同，色彩缤纷。",
+      "tag": "A主线·p39-p45·引导问答与信息对应",
+      "id": 11,
+      "audio": "static/audio/speaking/S4A-T1-W01-D34/q11.mp3",
+      "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "Where are many restaurants in Venice?",
+      "expected": "They are by the water.",
+      "hint": "用完整句回答：它们在水边。",
+      "tag": "A主线·p39-p45·引导问答与信息对应",
+      "id": 12,
+      "audio": "static/audio/speaking/S4A-T1-W01-D34/q12.mp3",
+      "parent_note": "确认版教材p39-p45主线或不增加新知识的同语境受控重组"
+    }
+  ]
+}

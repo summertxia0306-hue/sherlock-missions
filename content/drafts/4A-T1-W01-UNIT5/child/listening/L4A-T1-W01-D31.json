@@ -1,0 +1,224 @@
+{
+  "course_id": "L4A-T1-W01-D31",
+  "pair_id": "4A-T1-W01-D31",
+  "study_pack": "4A-T1-W01-D31",
+  "course_version": "0403431971b360b4",
+  "title": "四上·第31课｜Unit 5社区场所·欢迎来访（听力）",
+  "week": 7,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 12,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D31/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "museum",
+            "cinema",
+            "supermarket"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D31/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "shop",
+            "bridge",
+            "park"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D31/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "museum",
+            "supermarket",
+            "neighbourhood"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D31/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "a new cinema",
+            "a big museum",
+            "a nice park"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D31/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "There is a nice park.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D31/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "There is a small museum.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D31/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "There is a new cinema.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D31/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "Welcome to my school.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D31/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "There is a park.",
+            "It is green.",
+            "I can read."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D31/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "It is a shop.",
+            "Yes, there is.",
+            "There are two."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D31/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "At the bridge.",
+            "At the park.",
+            "At the cinema."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D31/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "It is big.",
+            "It is a museum.",
+            "There is one."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D31/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "options": [
+            "A park.",
+            "A shop.",
+            "A cinema."
+          ],
+          "question_text": "What place do they talk about?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D31/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "options": [
+            "Small.",
+            "Big.",
+            "New."
+          ],
+          "question_text": "What is the museum like?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D31/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "options": [
+            "The shop.",
+            "The park.",
+            "The cinema."
+          ],
+          "question_text": "Which place is new?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D31/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "At the supermarket.",
+            "At the library.",
+            "At the bridge."
+          ],
+          "question_text": "Where can they buy food?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D31/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D31/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "There is a nice park."
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "The museum is small."
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "There is a new cinema."
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "There is no supermarket."
+        }
+      ]
+    }
+  ]
+}

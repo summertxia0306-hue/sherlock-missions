@@ -1,0 +1,2098 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "generation_status": "READY_TO_GENERATE",
+  "publication_status": "formal",
+  "expected_listening_outputs": 98,
+  "expected_speaking_outputs": 56,
+  "expected_total_outputs": 154,
+  "items": [
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D31",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D31/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D31",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D31/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "museum"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D31",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D31/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "bridge"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D31",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D31/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "neighbourhood"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D31",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D31/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "a new cinema"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D31",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D31/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "There is a nice park."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D31",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D31/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "There is a big museum."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D31",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D31/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "There is a new cinema."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D31",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D31/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Welcome to my neighbourhood."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D31",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D31/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What is in your neighbourhood?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D31",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D31/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Is there a shop?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D31",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D31/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Where can you see a film?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D31",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D31/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Is the museum big or small?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D31",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D31/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "Welcome to my neighbourhood."
+        ],
+        [
+          "m",
+          "Is there a park?"
+        ],
+        [
+          "f",
+          "Yes, there is a nice park."
+        ],
+        [
+          "n",
+          "Question: What place do they talk about?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D31",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D31/q14.mp3",
+      "clips": [
+        [
+          "f",
+          "There is a museum here."
+        ],
+        [
+          "m",
+          "Is it big?"
+        ],
+        [
+          "f",
+          "Yes, it is."
+        ],
+        [
+          "n",
+          "Question: What is the museum like?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D31",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D31/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "Is there a new shop?"
+        ],
+        [
+          "m",
+          "There is a shop, but the cinema is new."
+        ],
+        [
+          "n",
+          "Question: Which place is new?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D31",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D31/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "There is a library and a supermarket."
+        ],
+        [
+          "m",
+          "Can we buy food at the supermarket?"
+        ],
+        [
+          "f",
+          "Yes, we can."
+        ],
+        [
+          "n",
+          "Question: Where can they buy food?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D31",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D31/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "Welcome to my neighbourhood. There is a nice park and a shop. There is a big museum and a library. There is a new cinema and a supermarket. It is nice to go around my neighbourhood."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D32",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D32/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D32",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D32/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "a boat trip"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D32",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D32/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "old bridges"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D32",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D32/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "a beautiful river"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D32",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D32/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "out of battery"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D32",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D32/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "They want to go on a boat trip."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D32",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D32/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "The two bridges are over four hundred years old."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D32",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D32/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "The museum tells the story of the old town."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D32",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D32/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "The camera is out of battery."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D32",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D32/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What can we do on the river?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D32",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D32/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Are there any nice old bridges around?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D32",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D32/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What tells the story of the old town?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D32",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D32/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Why can we not use the camera now?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D32",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D32/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "Look, there is a beautiful river."
+        ],
+        [
+          "m",
+          "Let us go on a boat trip."
+        ],
+        [
+          "n",
+          "Question: What do they want to do?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D32",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D32/q14.mp3",
+      "clips": [
+        [
+          "f",
+          "Are there any old bridges?"
+        ],
+        [
+          "m",
+          "Yes, two beautiful bridges near here are over four hundred years old."
+        ],
+        [
+          "n",
+          "Question: How many old bridges are mentioned?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D32",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D32/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "I like the old houses and shops."
+        ],
+        [
+          "m",
+          "They look nice. Let us take some photos."
+        ],
+        [
+          "n",
+          "Question: What do they want to photograph?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D32",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D32/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "Is there a museum here?"
+        ],
+        [
+          "m",
+          "Yes, there is. Let us take a photo there."
+        ],
+        [
+          "f",
+          "Oh no! My camera is out of battery."
+        ],
+        [
+          "n",
+          "Question: What is the problem?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D32",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D32/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "Shenshen, her mum and Yaoyao are visiting an old water town. There is a beautiful river. They want to go on a boat trip. Two bridges near them are over four hundred years old. The museum tells the story of the old town. They want to take a photo there, but the camera is out of battery."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D33",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D33/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D33",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D33/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "a museum"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D33",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D33/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "any buses"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D33",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D33/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "a new bridge"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D33",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D33/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "some old houses"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D33",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D33/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "There is a museum in the water town."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D33",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D33/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "There is no cinema in the water town."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D33",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D33/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "There are some old bridges around."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D33",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D33/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "There are no buses in the water town."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D33",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D33/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Is there a cinema in the water town?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D33",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D33/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Are there any buses in the water town?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D33",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D33/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Is there a museum in the water town?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D33",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D33/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Are there any nice old bridges around?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D33",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D33/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "Is there a cinema in the water town?"
+        ],
+        [
+          "m",
+          "No, there is not. But there is a museum."
+        ],
+        [
+          "n",
+          "Question: Which place can they visit?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D33",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D33/q14.mp3",
+      "clips": [
+        [
+          "f",
+          "Are there any old bridges in your neighbourhood?"
+        ],
+        [
+          "m",
+          "No, there are not. But there is a new bridge."
+        ],
+        [
+          "n",
+          "Question: What kind of bridge is in this neighbourhood?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D33",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D33/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "Are there any buses in the water town?"
+        ],
+        [
+          "m",
+          "No, there are not."
+        ],
+        [
+          "f",
+          "Let us go on a boat trip."
+        ],
+        [
+          "n",
+          "Question: How do they plan to travel?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D33",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D33/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "Is there a museum in your neighbourhood?"
+        ],
+        [
+          "m",
+          "Yes, a very nice one."
+        ],
+        [
+          "f",
+          "Are there any old bridges?"
+        ],
+        [
+          "m",
+          "No, there are not."
+        ],
+        [
+          "n",
+          "Question: What is in this neighbourhood?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D33",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D33/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "We are in the water town. There is a museum, but there is no cinema. There are some nice old bridges, but there are no buses. My neighbourhood is different. There is a new bridge and a very nice museum. There are no old bridges in my neighbourhood."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D34/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "Italy"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "colourful bridges"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "a gondola"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "by the water"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "interesting shops"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Venice is a famous city in Italy."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "People go around Venice by boat."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "The bridges are in different colours."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "There are many restaurants by the water."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Venice is also famous for its museums."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Where is Venice?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "How do people go around Venice?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q13.mp3",
+      "clips": [
+        [
+          "n",
+          "What is a gondola?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q14.mp3",
+      "clips": [
+        [
+          "n",
+          "Why do you like the bridges in Venice?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q15.mp3",
+      "clips": [
+        [
+          "n",
+          "Where are the houses in Venice?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "Venice is a famous city."
+        ],
+        [
+          "m",
+          "Is it in Italy?"
+        ],
+        [
+          "f",
+          "Yes, it is."
+        ],
+        [
+          "n",
+          "Question: Where is Venice?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_17",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q17.mp3",
+      "clips": [
+        [
+          "f",
+          "How do people go around the city?"
+        ],
+        [
+          "m",
+          "By boat. This special boat is called a gondola."
+        ],
+        [
+          "n",
+          "Question: What is a gondola?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_18",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q18.mp3",
+      "clips": [
+        [
+          "f",
+          "I like the bridges in Venice."
+        ],
+        [
+          "m",
+          "Why?"
+        ],
+        [
+          "f",
+          "They look different and colourful."
+        ],
+        [
+          "n",
+          "Question: Why does the speaker like the bridges?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_19",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q19.mp3",
+      "clips": [
+        [
+          "f",
+          "Are there any restaurants by the water?"
+        ],
+        [
+          "m",
+          "Yes, many. There are interesting shops too."
+        ],
+        [
+          "n",
+          "Question: Which two places are mentioned?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "question_20",
+      "path": "static/audio/listening/L4A-T1-W01-D34/q20.mp3",
+      "clips": [
+        [
+          "f",
+          "The houses in Venice are all by the water."
+        ],
+        [
+          "m",
+          "Do they look colourful?"
+        ],
+        [
+          "f",
+          "Yes. I like them."
+        ],
+        [
+          "n",
+          "Question: What does the speaker like?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D34",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D34/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "Venice is a famous city in Italy. Its houses are by the water and look colourful. There are a lot of bridges in different colours. People go around the city by boat. A special boat is called a gondola. There are many restaurants by the water and interesting shops. Venice is also famous for its museums."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D35/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "a playground"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "old trees"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "a photo of my favourite place"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "nice and clean"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "every week"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "There is a big park in the neighbourhood."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "The old trees in the park are very tall."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "There is a big playground in the park."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "The child goes there with Mum every week."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "People go around Venice by boat."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Are there any old trees in the park?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Is there a playground in the park?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q13.mp3",
+      "clips": [
+        [
+          "n",
+          "Why do you like the park in the example?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q14.mp3",
+      "clips": [
+        [
+          "n",
+          "Who goes to the park with the child in the example?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q15.mp3",
+      "clips": [
+        [
+          "n",
+          "What do you need to take a photo of your favourite place?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "Look at my photo. This park is my favourite place."
+        ],
+        [
+          "m",
+          "Is it in your neighbourhood?"
+        ],
+        [
+          "f",
+          "Yes. It is nice and clean."
+        ],
+        [
+          "n",
+          "Question: What is the photo of?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_17",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q17.mp3",
+      "clips": [
+        [
+          "f",
+          "Are there any old trees in the park?"
+        ],
+        [
+          "m",
+          "Yes, and they are very tall."
+        ],
+        [
+          "f",
+          "Is there a playground?"
+        ],
+        [
+          "m",
+          "Yes, a big one."
+        ],
+        [
+          "n",
+          "Question: Which two things are in the park?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_18",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q18.mp3",
+      "clips": [
+        [
+          "f",
+          "I go to this park with my mum every week."
+        ],
+        [
+          "m",
+          "Do you go with your dad every day?"
+        ],
+        [
+          "f",
+          "No, with my mum every week."
+        ],
+        [
+          "n",
+          "Question: When does the child go to the park?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_19",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q19.mp3",
+      "clips": [
+        [
+          "f",
+          "Is this photo of Venice?"
+        ],
+        [
+          "m",
+          "Yes. Look at the colourful houses by the water."
+        ],
+        [
+          "f",
+          "I can see a gondola too."
+        ],
+        [
+          "n",
+          "Question: Which detail helps them recognise Venice?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "question_20",
+      "path": "static/audio/listening/L4A-T1-W01-D35/q20.mp3",
+      "clips": [
+        [
+          "f",
+          "Let us take a photo at the water town museum."
+        ],
+        [
+          "m",
+          "My camera is out of battery."
+        ],
+        [
+          "f",
+          "Then we cannot use it now."
+        ],
+        [
+          "n",
+          "Question: Why can they not use this camera?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D35",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D35/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "Look at this photo of my favourite place. It is a big park in my neighbourhood. It is nice and clean. There are some old trees, and they are very tall. There is a big playground too. I go there with my mum every week. My friend wants to play there with her brother. We can introduce the park and answer questions about it."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D31",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D31/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "Welcome to my neighbourhood."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D31",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D31/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "There is a nice park and a shop."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D31",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D31/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "There is a big museum and a library."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D31",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D31/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "There is a new cinema and a supermarket."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D31",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D31/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "This is my lovely neighbourhood."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D31",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D31/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "It is nice to go around my neighbourhood."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D31",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D31/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Is there a park in the chant?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D31",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D31/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "What is the museum like in the chant?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D31",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D31/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Which place is new in the chant?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D31",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D31/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What can you say to welcome a visitor?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D32",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D32/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "Look, there is a beautiful river."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D32",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D32/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "Let us go on a boat trip."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D32",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D32/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "Are there any nice old bridges around?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D32",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D32/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "Two beautiful bridges near here are over four hundred years old."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D32",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D32/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "The museum tells the story of the old town."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D32",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D32/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Oh no! My camera is out of battery."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D32",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D32/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Is there a museum in the water town?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D32",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D32/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "How old are the two bridges?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D32",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D32/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What does the museum tell?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D32",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D32/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What is wrong with the camera?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D33",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D33/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "Is there a museum here? Yes, there is."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D33",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D33/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "Is there a cinema in the water town? No, there is not."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D33",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D33/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "Are there any nice old bridges around? Yes, there are."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D33",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D33/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "Are there any buses in the water town? No, there are not."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D33",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D33/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "There is a new bridge in my neighbourhood."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D33",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D33/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "There is a very nice museum too."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D33",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D33/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Are there any buses in the water town?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D33",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D33/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Is there a cinema in the water town?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D33",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D33/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Is there a museum in the water town?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D33",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D33/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Are there any old bridges in the water town?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D33",
+      "kind": "question_11_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D33/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What kind of bridge is in the neighbourhood in the example?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D33",
+      "kind": "question_12_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D33/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What other place is in that neighbourhood?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D34",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D34/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "Venice is a famous city in Italy."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D34",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D34/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "The houses are all by the water and look colourful."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D34",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D34/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "There are a lot of bridges in different colours."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D34",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D34/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "People in Venice go around the city by boat."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D34",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D34/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "This special boat is called a gondola."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D34",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D34/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Venice is also famous for its museums."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D34",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D34/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Are there any bridges in Venice?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D34",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D34/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Where is Venice?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D34",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D34/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "How do people go around Venice?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D34",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D34/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What is a gondola?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D34",
+      "kind": "question_11_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D34/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Why do you like the bridges in Venice?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D34",
+      "kind": "question_12_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D34/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Where are many restaurants in Venice?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D35",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D35/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "This is a photo of my favourite place."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D35",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D35/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "It is a big park in my neighbourhood."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D35",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D35/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "It is nice and clean."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D35",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D35/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "There are some very tall old trees in it."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D35",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D35/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "There is a big playground in the park."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D35",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D35/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "I go there with my mum every week."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D35",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D35/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Is there a playground in the park in the example?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D35",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D35/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Are there any old trees in that park?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D35",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D35/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What is the park like in the example?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D35",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D35/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Who goes to the park with the child every week?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D35",
+      "kind": "question_11_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D35/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Why do people like the bridges in Venice?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D35",
+      "kind": "question_12_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D35/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Why can they not use the camera at the museum?"
+        ]
+      ]
+    }
+  ]
+}
