@@ -8,11 +8,24 @@ from unittest import mock
 
 from streamlit.testing.v1 import AppTest
 from speaking import models, recorder
+from listening import audio
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 class Unit5ReleaseTests(unittest.TestCase):
+    def test_unit5_backup_routes_have_their_own_fixed_content_revision(self):
+        revision = "0d7a46d18aec8aa2f55ae2c44649b70b77437f2c"
+        for day in range(31, 36):
+            for module, prefix in (("listening", "L"), ("speaking", "S")):
+                path = f"static/audio/{module}/{prefix}4A-T1-W01-D{day}/q01.mp3"
+                sources = audio.audio_sources(path)
+                self.assertEqual(3, len(sources))
+                self.assertTrue(sources[0].startswith("https://raw.githubusercontent.com/"))
+                self.assertTrue(all(revision in source for source in sources))
+        self.assertIn("a99d4ad37", audio.audio_url("static/audio/listening/L4A-T1-W01-D30/q01.mp3"))
+        self.assertIn("b5dbb07a", audio.audio_url("static/audio/listening/L4A-T1-W01-D36/q01.mp3"))
+
     def test_ten_course_pages_have_their_audio_and_mic(self):
         with tempfile.TemporaryDirectory() as runtime, mock.patch.dict(os.environ, {
             "SHERLOCK_RUNTIME_DIR": runtime, "RESULTS_TOKEN": "", "RESULTS_REPO": "",

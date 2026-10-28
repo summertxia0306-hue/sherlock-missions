@@ -24,7 +24,7 @@ class Unit4ReleaseTests(unittest.TestCase):
                     self.assertEqual(sources[0], audio.audio_url(path))
         # Exact day boundaries prevent routing old or future courses to U4.
         self.assertIn("b83a08dd", audio.audio_url("static/audio/speaking/S4A-T1-W01-D25/q01.mp3"))
-        self.assertIn("b5dbb07a", audio.audio_url("static/audio/speaking/S4A-T1-W01-D31/q01.mp3"))
+        self.assertIn("b5dbb07a", audio.audio_url("static/audio/speaking/S4A-T1-W01-D36/q01.mp3"))
 
     def test_all_listening_pages_render_trial_audio(self):
         for day in range(26, 31):
