@@ -137,6 +137,15 @@ def speaking_home(student_id):
         progress.list_results(student_id=student_id),
         student_id=student_id,
     )
+    read_state = progress.completion_read_state()
+    if read_state != "ready":
+        st.warning("暂时无法读取学习进度，请稍后重试。" if read_state == "unavailable"
+                   else "连接暂时不稳定，以下显示最近同步的学习进度。")
+        if st.button("重新读取进度", key="retry_speaking_progress"):
+            progress.retry_completion_reads()
+            st.rerun()
+        if read_state == "unavailable":
+            return
     metas = models.visible_courses()
     shown = _shown_courses(metas, today)
     recommended = _recommended_course_id(shown, done)

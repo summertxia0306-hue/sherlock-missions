@@ -33,6 +33,7 @@ _TTL = 45
 # app.py reloads this module on reruns; retain the already bounded read cache.
 _cache = globals().get("_cache", {})
 _read_failures = globals().get("_read_failures", {})
+_read_errors = globals().get("_read_errors", set())
 
 
 def beijing_today():
@@ -346,35 +347,88 @@ def _gh_request(method, url, token, payload=None):
 
 
 def _remote_read(name, default, use_cache=True):
-    """→ (data, sha)。未配置或网络失败 → (None, None) 哨兵，调用方退本地。"""
+    """Read JSON plus SHA, including large blobs; cached reads may retain stale data.
+
+    A fresh read (use_cache=False) always fails with (None, None) on an outage,
+    so writes never use an unverified old version. Missing configuration also
+    returns that sentinel for callers' existing local-only behavior.
+    """
     tok, repo = _gh_conf()
     if not tok:
         return None, None
     cache_key = (repo, hashlib.sha256(tok.encode()).hexdigest(), name)
+    hit = _cache.get(cache_key)
     now = time.time()
     if use_cache:
-        hit = _cache.get(cache_key)
         if hit and hit[0] > now:
             return hit[1], hit[2]
         if _read_failures.get(cache_key, 0) > now:
-            return None, None
+            _read_errors.add(cache_key)
+            return (hit[1], hit[2]) if hit else (None, None)
     url = "https://api.github.com/repos/%s/contents/%s" % (repo, name)
     try:
         obj = _gh_request("GET", url, tok)
-        data = json.loads(base64.b64decode(obj["content"]).decode("utf-8"))
+        encoded = obj
+        if obj.get("encoding") == "none":
+            # Contents omits the body above 1 MiB. Fetch that exact immutable
+            # blob rather than a moving download URL; retain its SHA for CAS.
+            sha = obj["sha"]
+            if not re.fullmatch(r"[a-f0-9]{40}", sha):
+                raise ValueError("invalid content blob SHA")
+            encoded = _gh_request(
+                "GET", "https://api.github.com/repos/%s/git/blobs/%s" % (repo, sha), tok
+            )
+            if encoded.get("encoding") != "base64" or encoded.get("sha") != sha:
+                raise ValueError("unexpected content blob")
+        raw = base64.b64decode(encoded["content"])
+        if obj.get("encoding") == "none":
+            actual = hashlib.sha1(b"blob " + str(len(raw)).encode("ascii") + b"\0" + raw).hexdigest()
+            if actual != obj["sha"] or len(raw) != obj["size"]:
+                raise ValueError("incomplete content blob")
+        data = json.loads(raw.decode("utf-8"))
         _cache[cache_key] = (time.time() + _TTL, data, obj["sha"])
         _read_failures.pop(cache_key, None)
+        _read_errors.discard(cache_key)
         return data, obj["sha"]
     except urllib.error.HTTPError as e:
         if e.code == 404:
             _cache[cache_key] = (time.time() + _TTL, default, None)
             _read_failures.pop(cache_key, None)
+            _read_errors.discard(cache_key)
             return default, None
-        _read_failures[cache_key] = time.time() + 5
-        return None, None
     except Exception:
-        _read_failures[cache_key] = time.time() + 5
-        return None, None
+        pass
+    _read_failures[cache_key] = time.time() + 5
+    _read_errors.add(cache_key)
+    # Read-only pages may keep a last-known-good snapshot during an outage.
+    # Fresh reads used before writes must still fail closed, never use stale SHA.
+    return (hit[1], hit[2]) if use_cache and hit else (None, None)
+
+
+def completion_read_state():
+    """ready/stale/unavailable for this configured private completion source."""
+    token, repo = _gh_conf()
+    if not token:
+        return "ready"
+    scope = (repo, hashlib.sha256(token.encode()).hexdigest())
+    failed = [scope + (name,) for name in ("results.json", "completion_reconciliations.json")
+              if scope + (name,) in _read_errors]
+    if any(key not in _cache for key in failed):
+        return "unavailable"
+    return "stale" if failed else "ready"
+
+
+def retry_completion_reads():
+    """Retry on demand without deleting the last valid progress snapshot."""
+    token, repo = _gh_conf()
+    if not token:
+        return
+    for name in ("results.json", "completion_reconciliations.json"):
+        key = (repo, hashlib.sha256(token.encode()).hexdigest(), name)
+        if key in _cache:
+            _expiry, data, sha = _cache[key]
+            _cache[key] = (0, data, sha)
+        _read_failures.pop(key, None)
 
 
 def _remote_write(name, data, sha):
@@ -391,6 +445,7 @@ def _remote_write(name, data, sha):
     cache_key = (repo, hashlib.sha256(tok.encode()).hexdigest(), name)
     _cache[cache_key] = (time.time() + _TTL, data, obj["content"]["sha"])
     _read_failures.pop(cache_key, None)
+    _read_errors.discard(cache_key)
     return True
 
 
