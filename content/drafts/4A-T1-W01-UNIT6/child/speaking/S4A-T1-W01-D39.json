@@ -1,0 +1,85 @@
+{
+  "course_id": "S4A-T1-W01-D39",
+  "pair_id": "4A-T1-W01-D39",
+  "study_pack": "4A-T1-W01-D39",
+  "course_version": "ef69fe085f71304c",
+  "title": "四上·第39课｜Unit 6塞罕坝故事（口语）",
+  "week": 8,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "Minmin sees a colourful forest.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D39/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "He is excited to see the golden fields.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D39/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "He enjoys picking apples and watching birds.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D39/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "Grandpa shows him a tall tree.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D39/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "The workers are working hard.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D39/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "How beautiful autumn is here!",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D39/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：田野是金色的。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D39/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：他喜欢摘苹果和看鸟。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D39/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用完整句回答：爷爷给他看一棵高大的树。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D39/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用完整句回答：他们只看得到一棵树。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D39/q10.mp3"
+    },
+    {
+      "id": 11,
+      "type": "qa",
+      "hint": "用完整句回答：他们正在努力工作。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D39/q11.mp3"
+    },
+    {
+      "id": 12,
+      "type": "qa",
+      "hint": "用完整句回答：用 How 感叹：这里的秋天多美啊！",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D39/q12.mp3"
+    }
+  ]
+}

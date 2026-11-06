@@ -1,0 +1,266 @@
+{
+  "course_id": "L4A-T1-W01-D40",
+  "pair_id": "4A-T1-W01-D40",
+  "study_pack": "4A-T1-W01-D40",
+  "course_version": "2c6f4de8a7e27815",
+  "title": "四上·第40课｜Unit 6秋天小诗与综合（听力）",
+  "week": 8,
+  "day": 5,
+  "course_type": "weekly_test",
+  "est_minutes": 25,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D40/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "feel the cool wind",
+            "smell nice fruits",
+            "see golden fields"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "pick apples",
+            "watch birds",
+            "pick up leaves"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "see colourful trees",
+            "feel the cool wind",
+            "smell nice fruits"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "workers picking apples",
+            "birds flying south",
+            "boys flying kites"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q04.mp3"
+        },
+        {
+          "id": 5,
+          "type": "word_choice",
+          "options": [
+            "busy farmer",
+            "lovely autumn",
+            "beautiful leaves"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 1,
+      "questions": [
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "I see birds flying south.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "I feel the warm wind.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "I smell nice fruits.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q08.mp3"
+        },
+        {
+          "id": 9,
+          "type": "sentence_judge",
+          "display": "I pick up colourful leaves.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "sentence_judge",
+          "display": "How busy the farmer is!",
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "I see the cool wind.",
+            "I feel the cool wind.",
+            "I smell the cool wind."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "I smell nice fruits.",
+            "I smell colourful leaves.",
+            "I smell the blue sky."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q12.mp3"
+        },
+        {
+          "id": 13,
+          "type": "question_response",
+          "options": [
+            "I pick up some kites.",
+            "I pick up colourful leaves.",
+            "I pick up some birds."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "question_response",
+          "options": [
+            "How beautiful the leaves is!",
+            "How beautiful are the leaves!",
+            "How beautiful the leaves are!"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "question_response",
+          "options": [
+            "He enjoys flying kites.",
+            "He enjoys working in the fields.",
+            "He enjoys picking apples."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "Colourful leaves.",
+            "The cool wind.",
+            "Nice fruits."
+          ],
+          "question_text": "What does the second speaker smell?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q16.mp3"
+        },
+        {
+          "id": 17,
+          "type": "dialogue_choice",
+          "options": [
+            "Apples.",
+            "Kites.",
+            "Leaves."
+          ],
+          "question_text": "What are they going to pick up?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q17.mp3"
+        },
+        {
+          "id": 18,
+          "type": "dialogue_choice",
+          "options": [
+            "The people who work hard there.",
+            "The students on the outing.",
+            "The birds flying south."
+          ],
+          "question_text": "Who helps make the park wonderful?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q18.mp3"
+        },
+        {
+          "id": 19,
+          "type": "dialogue_choice",
+          "options": [
+            "The leaves.",
+            "The kites.",
+            "The apples."
+          ],
+          "question_text": "What does the second speaker want to photograph?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q19.mp3"
+        },
+        {
+          "id": 20,
+          "type": "dialogue_choice",
+          "options": [
+            "Smelling fruit.",
+            "Feeling the wind.",
+            "Seeing leaves."
+          ],
+          "question_text": "What does the line describe?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D40/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D40/p01.mp3",
+      "questions": [
+        {
+          "id": 21,
+          "type": "passage_judge",
+          "statement": "The speaker sees birds flying south."
+        },
+        {
+          "id": 22,
+          "type": "passage_judge",
+          "statement": "The speaker feels a warm wind."
+        },
+        {
+          "id": 23,
+          "type": "passage_judge",
+          "statement": "The speaker's friend picks up colourful leaves."
+        },
+        {
+          "id": 24,
+          "type": "passage_judge",
+          "statement": "They take a photo of the kites."
+        },
+        {
+          "id": 25,
+          "type": "passage_judge",
+          "statement": "At school they share a poem about winter."
+        }
+      ]
+    }
+  ]
+}

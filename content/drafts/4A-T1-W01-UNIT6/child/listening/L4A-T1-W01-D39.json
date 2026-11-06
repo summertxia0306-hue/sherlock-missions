@@ -1,0 +1,266 @@
+{
+  "course_id": "L4A-T1-W01-D39",
+  "pair_id": "4A-T1-W01-D39",
+  "study_pack": "4A-T1-W01-D39",
+  "course_version": "9d1bff29d56b6972",
+  "title": "四上·第39课｜Unit 6塞罕坝故事（听力）",
+  "week": 8,
+  "day": 4,
+  "course_type": "training",
+  "est_minutes": 21,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D39/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "colourful forest",
+            "golden fields",
+            "tall tree"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "golden fields",
+            "blue sky",
+            "sweet apples"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "pick up leaves",
+            "pick apples",
+            "watch birds"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "flying south",
+            "taking photos",
+            "working hard"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q04.mp3"
+        },
+        {
+          "id": 5,
+          "type": "word_choice",
+          "options": [
+            "a high kite",
+            "a tall tree",
+            "a busy worker"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "Minmin visits the park with his family.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "Minmin sees golden fields.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "Grandpa shows Minmin two tall trees.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q08.mp3"
+        },
+        {
+          "id": 9,
+          "type": "sentence_judge",
+          "display": "The workers are working hard.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "sentence_judge",
+          "display": "Minmin enjoys picking leaves.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "He enjoys flying kites.",
+            "He enjoys taking photos.",
+            "He enjoys picking apples."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "He shows him a tall tree.",
+            "He shows him a photo.",
+            "He shows him some kites."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q12.mp3"
+        },
+        {
+          "id": 13,
+          "type": "question_response",
+          "options": [
+            "He is excited.",
+            "He is tired.",
+            "He is sad."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "question_response",
+          "options": [
+            "They are flying south.",
+            "They are working hard.",
+            "They are falling."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "question_response",
+          "options": [
+            "How busy the farmer is!",
+            "How beautiful autumn is here!",
+            "How high the kites are!"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "The shop and farm.",
+            "The forest and fields.",
+            "The birds and kites."
+          ],
+          "question_text": "Which two things make Minmin excited?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q16.mp3"
+        },
+        {
+          "id": 17,
+          "type": "dialogue_choice",
+          "options": [
+            "Watching birds.",
+            "Taking photos.",
+            "Flying kites."
+          ],
+          "question_text": "What else does Minmin enjoy?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q17.mp3"
+        },
+        {
+          "id": 18,
+          "type": "dialogue_choice",
+          "options": [
+            "There are many trees.",
+            "There is no tree.",
+            "There is only one tree."
+          ],
+          "question_text": "What does the first speaker notice about the place now?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q18.mp3"
+        },
+        {
+          "id": 19,
+          "type": "dialogue_choice",
+          "options": [
+            "The birds and little animals.",
+            "The workers and people like them.",
+            "Minmin and his classmates."
+          ],
+          "question_text": "Who helps make the place wonderful?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q19.mp3"
+        },
+        {
+          "id": 20,
+          "type": "dialogue_choice",
+          "options": [
+            "A golden field.",
+            "A bird in the sky.",
+            "A tall tree."
+          ],
+          "question_text": "What does Grandpa ask Minmin to look at?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D39/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D39/p01.mp3",
+      "questions": [
+        {
+          "id": 21,
+          "type": "passage_judge",
+          "statement": "Minmin goes to Saihanba with his family."
+        },
+        {
+          "id": 22,
+          "type": "passage_judge",
+          "statement": "He sees a colourful forest."
+        },
+        {
+          "id": 23,
+          "type": "passage_judge",
+          "statement": "He enjoys picking apples and flying kites."
+        },
+        {
+          "id": 24,
+          "type": "passage_judge",
+          "statement": "Grandpa says there were many trees there years ago."
+        },
+        {
+          "id": 25,
+          "type": "passage_judge",
+          "statement": "Grandpa talks about people who work hard."
+        }
+      ]
+    }
+  ]
+}

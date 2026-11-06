@@ -1,0 +1,104 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D37",
+  "pair_id": "4A-T1-W01-D37",
+  "publication_status": "formal",
+  "week": 8,
+  "day": 2,
+  "scope": "4A Unit 6 p47-p50",
+  "difficulty": "L1",
+  "course_id": "S4A-T1-W01-D37",
+  "title": "四上·第37课｜Unit 6秋游观察（口语）",
+  "course_type": "training",
+  "est_minutes": 10,
+  "questions": [
+    {
+      "type": "repeat",
+      "text": "We go on an autumn outing.",
+      "tag": "A主线·p47-p50·教材句型跟读",
+      "id": 1,
+      "audio": "static/audio/speaking/S4A-T1-W01-D37/q01.mp3",
+      "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "A Wutong leaf is falling.",
+      "tag": "A主线·p47-p50·教材句型跟读",
+      "id": 2,
+      "audio": "static/audio/speaking/S4A-T1-W01-D37/q02.mp3",
+      "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "How beautiful these Wutong leaves are!",
+      "tag": "A主线·p47-p50·教材句型跟读",
+      "id": 3,
+      "audio": "static/audio/speaking/S4A-T1-W01-D37/q03.mp3",
+      "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "How blue the sky is!",
+      "tag": "A主线·p47-p50·教材句型跟读",
+      "id": 4,
+      "audio": "static/audio/speaking/S4A-T1-W01-D37/q04.mp3",
+      "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "How high the kites are!",
+      "tag": "A主线·p47-p50·教材句型跟读",
+      "id": 5,
+      "audio": "static/audio/speaking/S4A-T1-W01-D37/q05.mp3",
+      "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "Some birds are flying across the sky.",
+      "tag": "A主线·p47-p50·教材句型跟读",
+      "id": 6,
+      "audio": "static/audio/speaking/S4A-T1-W01-D37/q06.mp3",
+      "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What do the students see in the trees?",
+      "expected": "They see beautiful Wutong leaves.",
+      "hint": "用完整句回答：他们看到漂亮的梧桐叶。",
+      "tag": "C微调·p47-p50·引导问答与信息对应",
+      "id": 7,
+      "audio": "static/audio/speaking/S4A-T1-W01-D37/q07.mp3",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p47-p50，不作未掌握结论"
+    },
+    {
+      "type": "qa",
+      "question": "What is falling from a Wutong tree?",
+      "expected": "A leaf is falling.",
+      "hint": "用完整句回答：一片叶子正在落下。",
+      "tag": "A主线·p47-p50·引导问答与信息对应",
+      "id": 8,
+      "audio": "static/audio/speaking/S4A-T1-W01-D37/q08.mp3",
+      "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What are the birds doing?",
+      "expected": "They are flying across the sky.",
+      "hint": "用完整句回答：它们正飞过天空。",
+      "tag": "A主线·p47-p50·引导问答与信息对应",
+      "id": 9,
+      "audio": "static/audio/speaking/S4A-T1-W01-D37/q09.mp3",
+      "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What do the students want to take?",
+      "expected": "They want to take a photo.",
+      "hint": "用完整句回答：他们想拍一张照片。",
+      "tag": "A主线·p47-p50·引导问答与信息对应",
+      "id": 10,
+      "audio": "static/audio/speaking/S4A-T1-W01-D37/q10.mp3",
+      "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组"
+    }
+  ]
+}

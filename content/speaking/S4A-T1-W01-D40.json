@@ -1,0 +1,124 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D40",
+  "pair_id": "4A-T1-W01-D40",
+  "publication_status": "formal",
+  "week": 8,
+  "day": 5,
+  "scope": "4A Unit 6 p47-p54",
+  "difficulty": "L3",
+  "course_id": "S4A-T1-W01-D40",
+  "title": "四上·第40课｜Unit 6秋天小诗与综合（口语）",
+  "course_type": "weekly_review",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "type": "repeat",
+      "text": "It is autumn.",
+      "tag": "A主线·p47-p54·教材句型跟读",
+      "id": 1,
+      "audio": "static/audio/speaking/S4A-T1-W01-D40/q01.mp3",
+      "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "I see birds flying south.",
+      "tag": "A主线·p47-p54·教材句型跟读",
+      "id": 2,
+      "audio": "static/audio/speaking/S4A-T1-W01-D40/q02.mp3",
+      "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "I smell nice fruits.",
+      "tag": "A主线·p47-p54·教材句型跟读",
+      "id": 3,
+      "audio": "static/audio/speaking/S4A-T1-W01-D40/q03.mp3",
+      "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "I pick up colourful leaves.",
+      "tag": "A主线·p47-p54·教材句型跟读",
+      "id": 4,
+      "audio": "static/audio/speaking/S4A-T1-W01-D40/q04.mp3",
+      "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "I feel the cool wind.",
+      "tag": "A主线·p47-p54·教材句型跟读",
+      "id": 5,
+      "audio": "static/audio/speaking/S4A-T1-W01-D40/q05.mp3",
+      "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "How lovely autumn is!",
+      "tag": "A主线·p47-p54·教材句型跟读",
+      "id": 6,
+      "audio": "static/audio/speaking/S4A-T1-W01-D40/q06.mp3",
+      "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What do you see in the poem?",
+      "expected": "I see birds flying south.",
+      "hint": "用完整句回答：我看到鸟儿向南飞。",
+      "tag": "C微调·p47-p54·引导问答与信息对应",
+      "id": 7,
+      "audio": "static/audio/speaking/S4A-T1-W01-D40/q07.mp3",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p47-p54，不作未掌握结论"
+    },
+    {
+      "type": "qa",
+      "question": "What do you smell in the poem?",
+      "expected": "I smell nice fruits.",
+      "hint": "用完整句回答：我闻到水果的香味。",
+      "tag": "A主线·p47-p54·引导问答与信息对应",
+      "id": 8,
+      "audio": "static/audio/speaking/S4A-T1-W01-D40/q08.mp3",
+      "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What do you pick up in the poem?",
+      "expected": "I pick up colourful leaves.",
+      "hint": "用完整句回答：我捡起五颜六色的树叶。",
+      "tag": "A主线·p47-p54·引导问答与信息对应",
+      "id": 9,
+      "audio": "static/audio/speaking/S4A-T1-W01-D40/q09.mp3",
+      "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What do you feel in the poem?",
+      "expected": "I feel the cool wind.",
+      "hint": "用完整句回答：我感觉到凉爽的风。",
+      "tag": "A主线·p47-p54·引导问答与信息对应",
+      "id": 10,
+      "audio": "static/audio/speaking/S4A-T1-W01-D40/q10.mp3",
+      "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What can you say at the end of the poem?",
+      "expected": "How lovely autumn is!",
+      "hint": "用完整句回答：用 How 感叹：秋天多可爱啊！",
+      "tag": "A主线·p47-p54·引导问答与信息对应",
+      "id": 11,
+      "audio": "static/audio/speaking/S4A-T1-W01-D40/q11.mp3",
+      "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What can you say about the blue sky and high kites?",
+      "expected": "How blue the sky is! How high the kites are!",
+      "hint": "用完整句回答：用两个 How 感叹句：天空多蓝啊！风筝多高啊！",
+      "tag": "A主线·p47-p54·引导问答与信息对应",
+      "id": 12,
+      "audio": "static/audio/speaking/S4A-T1-W01-D40/q12.mp3",
+      "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组"
+    }
+  ]
+}

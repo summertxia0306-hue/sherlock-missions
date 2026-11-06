@@ -1,0 +1,435 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D37",
+  "pair_id": "4A-T1-W01-D37",
+  "publication_status": "formal",
+  "week": 8,
+  "day": 2,
+  "scope": "4A Unit 6 p47-p50",
+  "difficulty": "L1",
+  "course_id": "L4A-T1-W01-D37",
+  "title": "四上·第37课｜Unit 6秋游观察（听力）",
+  "course_type": "training",
+  "est_minutes": 14,
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D37/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "C微调·p47-p50·秋日词汇辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p47-p50，不作未掌握结论",
+          "options": [
+            "a farm boy",
+            "an autumn day",
+            "an autumn outing"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "an autumn outing"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D37/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p47-p50·秋日词汇辨别",
+          "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组",
+          "options": [
+            "a blue sky",
+            "a falling leaf",
+            "a high kite"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "a falling leaf"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D37/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p47-p50·秋日词汇辨别",
+          "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组",
+          "options": [
+            "take a photo",
+            "pick an apple",
+            "look for leaves"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "take a photo"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D37/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p47-p50·秋日词汇辨别",
+          "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组",
+          "options": [
+            "in the fields",
+            "across the sky",
+            "on the farm"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "across the sky"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D37/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p50·信息对应",
+          "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组",
+          "display": "Miss Li and her students go on an autumn outing.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Miss Li and her students go on an autumn outing."
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D37/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p50·信息对应",
+          "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组",
+          "display": "A falling Wutong leaf tells us spring is coming.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "A falling Wutong leaf tells us autumn is coming."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D37/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p50·信息对应",
+          "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组",
+          "display": "The kites are low.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The kites are high."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D37/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p50·信息对应",
+          "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组",
+          "display": "Some birds are flying across the sky.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Some birds are flying across the sky."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D37/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "C微调·p47-p50·句型与问答对应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p47-p50，不作未掌握结论",
+          "options": [
+            "The sky is blue.",
+            "They are flying.",
+            "They are kites."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What are the birds doing?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D37/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p47-p50·句型与问答对应",
+          "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组",
+          "options": [
+            "They are getting closer.",
+            "A falling Wutong leaf.",
+            "The kite is high."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What tells us that autumn is coming?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D37/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p47-p50·句型与问答对应",
+          "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组",
+          "options": [
+            "They are colourful.",
+            "It is high.",
+            "It is blue."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "What colour is the sky?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D37/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p47-p50·句型与问答对应",
+          "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Yes, let's do that.",
+            "They are leaves.",
+            "The sky is high."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Shall we take a photo?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D37/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p50·秋日情境与细节",
+          "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组",
+          "question_text": "What is falling?",
+          "options": [
+            "An apple.",
+            "A leaf.",
+            "A kite."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Look at these Wutong trees."
+            ],
+            [
+              "m",
+              "A leaf is falling. Autumn is coming."
+            ],
+            [
+              "n",
+              "Question: What is falling?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D37/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p50·秋日情境与细节",
+          "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组",
+          "question_text": "What is high in the sky?",
+          "options": [
+            "The trees.",
+            "The leaves.",
+            "The kites."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "The sky is blue. Look at the kites!"
+            ],
+            [
+              "m",
+              "They are very high."
+            ],
+            [
+              "n",
+              "Question: What is high in the sky?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D37/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p50·秋日情境与细节",
+          "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组",
+          "question_text": "What do the children want to do?",
+          "options": [
+            "Take a photo.",
+            "Pick fruits.",
+            "Fly a kite."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Some birds are flying across the sky."
+            ],
+            [
+              "m",
+              "They are getting closer. Let's take a photo."
+            ],
+            [
+              "n",
+              "Question: What do the children want to do?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D37/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p50·秋日情境与细节",
+          "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组",
+          "question_text": "What do the students notice?",
+          "options": [
+            "Golden apples.",
+            "Beautiful Wutong leaves.",
+            "Little animals."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Boys and girls, please go and find autumn."
+            ],
+            [
+              "m",
+              "Look! These Wutong leaves are beautiful."
+            ],
+            [
+              "f",
+              "Well done. You found lovely autumn."
+            ],
+            [
+              "n",
+              "Question: What do the students notice?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D37/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p50·短文取证",
+          "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组",
+          "statement": "The students go on an autumn outing.",
+          "answer": "true",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p50·短文取证",
+          "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组",
+          "statement": "A Wutong leaf is falling.",
+          "answer": "true",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p50·短文取证",
+          "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组",
+          "statement": "The sky is grey.",
+          "answer": "false",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p50·短文取证",
+          "parent_note": "确认版教材p47-p50主线或不增加新知识的同语境受控重组",
+          "statement": "The birds are getting farther away.",
+          "answer": "false",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D37/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Miss Li takes her students on an autumn outing. They look at the beautiful Wutong leaves. One leaf is falling. They see a blue sky and high kites. Some birds fly across the sky and get closer. The students want to take a photo."
+        ]
+      ]
+    }
+  ]
+}

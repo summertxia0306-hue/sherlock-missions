@@ -1,0 +1,524 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D40",
+  "pair_id": "4A-T1-W01-D40",
+  "publication_status": "formal",
+  "week": 8,
+  "day": 5,
+  "scope": "4A Unit 6 p47-p54",
+  "difficulty": "L3",
+  "course_id": "L4A-T1-W01-D40",
+  "title": "四上·第40课｜Unit 6秋天小诗与综合（听力）",
+  "course_type": "weekly_test",
+  "est_minutes": 25,
+  "scoring": {
+    "per_question": 4,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D40/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "C微调·p47-p54·秋日词汇辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p47-p54，不作未掌握结论",
+          "options": [
+            "feel the cool wind",
+            "smell nice fruits",
+            "see golden fields"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "feel the cool wind"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p47-p54·秋日词汇辨别",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "options": [
+            "pick apples",
+            "watch birds",
+            "pick up leaves"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "pick up leaves"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p47-p54·秋日词汇辨别",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "options": [
+            "see colourful trees",
+            "feel the cool wind",
+            "smell nice fruits"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "smell nice fruits"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p47-p54·秋日词汇辨别",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "options": [
+            "workers picking apples",
+            "birds flying south",
+            "boys flying kites"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "birds flying south"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q04.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p47-p54·秋日词汇辨别",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "options": [
+            "busy farmer",
+            "lovely autumn",
+            "beautiful leaves"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "lovely autumn"
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p54·信息对应",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "display": "I see birds flying south.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "I see birds flying south."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p54·信息对应",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "display": "I feel the warm wind.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "I feel the cool wind."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p54·信息对应",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "display": "I smell nice fruits.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "I smell nice fruits."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q08.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p54·信息对应",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "display": "I pick up colourful leaves.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "I pick up colourful leaves."
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q09.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p54·信息对应",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "display": "How busy the farmer is!",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "How lovely autumn is!"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "C微调·p47-p54·句型与问答对应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p47-p54，不作未掌握结论",
+          "options": [
+            "I see the cool wind.",
+            "I feel the cool wind.",
+            "I smell the cool wind."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What do you feel in the autumn poem?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p47-p54·句型与问答对应",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "options": [
+            "I smell nice fruits.",
+            "I smell colourful leaves.",
+            "I smell the blue sky."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What do you smell in the poem?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q12.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p47-p54·句型与问答对应",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "options": [
+            "I pick up some kites.",
+            "I pick up colourful leaves.",
+            "I pick up some birds."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What do you pick up in the poem?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q13.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p47-p54·句型与问答对应",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "options": [
+            "How beautiful the leaves is!",
+            "How beautiful are the leaves!",
+            "How beautiful the leaves are!"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "The leaves are beautiful. What can you say?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q14.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p47-p54·句型与问答对应",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "options": [
+            "He enjoys flying kites.",
+            "He enjoys working in the fields.",
+            "He enjoys picking apples."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "What does Minmin enjoy doing in Saihanba?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p54·秋日情境与细节",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "question_text": "What does the second speaker smell?",
+          "options": [
+            "Colourful leaves.",
+            "The cool wind.",
+            "Nice fruits."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "I can feel the cool wind."
+            ],
+            [
+              "m",
+              "I can smell nice fruits."
+            ],
+            [
+              "n",
+              "Question: What does the second speaker smell?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q16.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p54·秋日情境与细节",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "question_text": "What are they going to pick up?",
+          "options": [
+            "Apples.",
+            "Kites.",
+            "Leaves."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "I see birds flying south."
+            ],
+            [
+              "m",
+              "Look down. There are colourful leaves on the ground."
+            ],
+            [
+              "f",
+              "Let's pick some up."
+            ],
+            [
+              "n",
+              "Question: What are they going to pick up?"
+            ]
+          ],
+          "id": 17,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q17.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p54·秋日情境与细节",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "question_text": "Who helps make the park wonderful?",
+          "options": [
+            "The people who work hard there.",
+            "The students on the outing.",
+            "The birds flying south."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Look at that tall tree in Saihanba."
+            ],
+            [
+              "m",
+              "Grandpa says many people work hard to make the park wonderful."
+            ],
+            [
+              "n",
+              "Question: Who helps make the park wonderful?"
+            ]
+          ],
+          "id": 18,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q18.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p54·秋日情境与细节",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "question_text": "What does the second speaker want to photograph?",
+          "options": [
+            "The leaves.",
+            "The kites.",
+            "The apples."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "The sky is blue and the kites are high."
+            ],
+            [
+              "m",
+              "I want a photo of the kites, not the leaves."
+            ],
+            [
+              "n",
+              "Question: What does the second speaker want to photograph?"
+            ]
+          ],
+          "id": 19,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q19.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p54·秋日情境与细节",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "question_text": "What does the line describe?",
+          "options": [
+            "Smelling fruit.",
+            "Feeling the wind.",
+            "Seeing leaves."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Can you read a line from your autumn poem?"
+            ],
+            [
+              "m",
+              "Yes. I feel the cool wind."
+            ],
+            [
+              "n",
+              "Question: What does the line describe?"
+            ]
+          ],
+          "id": 20,
+          "audio": "static/audio/listening/L4A-T1-W01-D40/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p54·短文取证",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "statement": "The speaker sees birds flying south.",
+          "answer": "true",
+          "id": 21
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p54·短文取证",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "statement": "The speaker feels a warm wind.",
+          "answer": "false",
+          "id": 22
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p54·短文取证",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "statement": "The speaker's friend picks up colourful leaves.",
+          "answer": "true",
+          "id": 23
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p54·短文取证",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "statement": "They take a photo of the kites.",
+          "answer": "true",
+          "id": 24
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p54·短文取证",
+          "parent_note": "确认版教材p47-p54主线或不增加新知识的同语境受控重组",
+          "statement": "At school they share a poem about winter.",
+          "answer": "false",
+          "id": 25
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D40/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "It is autumn. I see birds flying south and feel the cool wind. On the farm, I smell nice fruits. My friend picks up colourful leaves. We look up and see high kites in the blue sky. We take a photo of the kites. Back at school, we share a poem about what we see, smell, feel and do in autumn."
+        ]
+      ]
+    }
+  ]
+}

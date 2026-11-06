@@ -1,0 +1,57 @@
+[
+  {
+    "course_id": "S4A-T1-W01-D36",
+    "course_version": "c741f315b06bdd05",
+    "title": "四上·第36课｜Unit 6秋日农场（口语）",
+    "course_type": "training",
+    "week": 8,
+    "day": 1,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D36",
+    "study_pack": "4A-T1-W01-D36"
+  },
+  {
+    "course_id": "S4A-T1-W01-D37",
+    "course_version": "85e4ed4841aeba77",
+    "title": "四上·第37课｜Unit 6秋游观察（口语）",
+    "course_type": "training",
+    "week": 8,
+    "day": 2,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D37",
+    "study_pack": "4A-T1-W01-D37"
+  },
+  {
+    "course_id": "S4A-T1-W01-D38",
+    "course_version": "9a183bbb4ba92638",
+    "title": "四上·第38课｜Unit 6秋景感叹句（口语）",
+    "course_type": "training",
+    "week": 8,
+    "day": 3,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D38",
+    "study_pack": "4A-T1-W01-D38"
+  },
+  {
+    "course_id": "S4A-T1-W01-D39",
+    "course_version": "ef69fe085f71304c",
+    "title": "四上·第39课｜Unit 6塞罕坝故事（口语）",
+    "course_type": "training",
+    "week": 8,
+    "day": 4,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D39",
+    "study_pack": "4A-T1-W01-D39"
+  },
+  {
+    "course_id": "S4A-T1-W01-D40",
+    "course_version": "dfb1e4057c4965ef",
+    "title": "四上·第40课｜Unit 6秋天小诗与综合（口语）",
+    "course_type": "weekly_review",
+    "week": 8,
+    "day": 5,
+    "visible": true,
+    "pair_id": "4A-T1-W01-D40",
+    "study_pack": "4A-T1-W01-D40"
+  }
+]

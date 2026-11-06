@@ -1,0 +1,524 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D39",
+  "pair_id": "4A-T1-W01-D39",
+  "publication_status": "formal",
+  "week": 8,
+  "day": 4,
+  "scope": "4A Unit 6 p47-p53",
+  "difficulty": "L2",
+  "course_id": "L4A-T1-W01-D39",
+  "title": "四上·第39课｜Unit 6塞罕坝故事（听力）",
+  "course_type": "training",
+  "est_minutes": 21,
+  "scoring": {
+    "per_question": 4,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D39/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 1,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "C微调·p47-p53·秋日词汇辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p47-p53，不作未掌握结论",
+          "options": [
+            "colourful forest",
+            "golden fields",
+            "tall tree"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "colourful forest"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p47-p53·秋日词汇辨别",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "options": [
+            "golden fields",
+            "blue sky",
+            "sweet apples"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "golden fields"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p47-p53·秋日词汇辨别",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "options": [
+            "pick up leaves",
+            "pick apples",
+            "watch birds"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "pick apples"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p47-p53·秋日词汇辨别",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "options": [
+            "flying south",
+            "taking photos",
+            "working hard"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "working hard"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q04.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p47-p53·秋日词汇辨别",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "options": [
+            "a high kite",
+            "a tall tree",
+            "a busy worker"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "a tall tree"
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p53·信息对应",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "display": "Minmin visits the park with his family.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Minmin visits the park with his family."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p53·信息对应",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "display": "Minmin sees golden fields.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "Minmin sees golden fields."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p53·信息对应",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "display": "Grandpa shows Minmin two tall trees.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Grandpa shows Minmin one tall tree."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q08.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p53·信息对应",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "display": "The workers are working hard.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "The workers are working hard."
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q09.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p53·信息对应",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "display": "Minmin enjoys picking leaves.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Minmin enjoys picking apples."
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "C微调·p47-p53·句型与问答对应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p47-p53，不作未掌握结论",
+          "options": [
+            "He enjoys flying kites.",
+            "He enjoys taking photos.",
+            "He enjoys picking apples."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "What does Minmin enjoy picking in the park?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p47-p53·句型与问答对应",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "options": [
+            "He shows him a tall tree.",
+            "He shows him a photo.",
+            "He shows him some kites."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What does Grandpa show Minmin?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q12.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p47-p53·句型与问答对应",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "options": [
+            "He is excited.",
+            "He is tired.",
+            "He is sad."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "How does Minmin feel about the forest and fields?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q13.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p47-p53·句型与问答对应",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "options": [
+            "They are flying south.",
+            "They are working hard.",
+            "They are falling."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What are the workers doing?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q14.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p47-p53·句型与问答对应",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "options": [
+            "How busy the farmer is!",
+            "How beautiful autumn is here!",
+            "How high the kites are!"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "What can you say about the beautiful autumn there?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p53·秋日情境与细节",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "question_text": "Which two things make Minmin excited?",
+          "options": [
+            "The shop and farm.",
+            "The forest and fields.",
+            "The birds and kites."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Minmin is excited to see the colourful forest."
+            ],
+            [
+              "m",
+              "He can see golden fields too."
+            ],
+            [
+              "n",
+              "Question: Which two things make Minmin excited?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q16.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p53·秋日情境与细节",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "question_text": "What else does Minmin enjoy?",
+          "options": [
+            "Watching birds.",
+            "Taking photos.",
+            "Flying kites."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Do you enjoy picking apples here, Minmin?"
+            ],
+            [
+              "m",
+              "Yes. I enjoy watching birds too."
+            ],
+            [
+              "n",
+              "Question: What else does Minmin enjoy?"
+            ]
+          ],
+          "id": 17,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q17.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p53·秋日情境与细节",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "question_text": "What does the first speaker notice about the place now?",
+          "options": [
+            "There are many trees.",
+            "There is no tree.",
+            "There is only one tree."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "There are many trees here now."
+            ],
+            [
+              "m",
+              "Years ago, people could see only one tree here."
+            ],
+            [
+              "f",
+              "Grandpa, please show me that tree."
+            ],
+            [
+              "n",
+              "Question: What does the first speaker notice about the place now?"
+            ]
+          ],
+          "id": 18,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q18.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p53·秋日情境与细节",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "question_text": "Who helps make the place wonderful?",
+          "options": [
+            "The birds and little animals.",
+            "The workers and people like them.",
+            "Minmin and his classmates."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Look at those workers, Minmin. They are working hard."
+            ],
+            [
+              "m",
+              "Many people like them make this place wonderful."
+            ],
+            [
+              "n",
+              "Question: Who helps make the place wonderful?"
+            ]
+          ],
+          "id": 19,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q19.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p53·秋日情境与细节",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "question_text": "What does Grandpa ask Minmin to look at?",
+          "options": [
+            "A golden field.",
+            "A bird in the sky.",
+            "A tall tree."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "Grandpa, how beautiful autumn is here!"
+            ],
+            [
+              "m",
+              "Yes. Look at that tall tree."
+            ],
+            [
+              "n",
+              "Question: What does Grandpa ask Minmin to look at?"
+            ]
+          ],
+          "id": 20,
+          "audio": "static/audio/listening/L4A-T1-W01-D39/q20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p53·短文取证",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "statement": "Minmin goes to Saihanba with his family.",
+          "answer": "true",
+          "id": 21
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p53·短文取证",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "statement": "He sees a colourful forest.",
+          "answer": "true",
+          "id": 22
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p53·短文取证",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "statement": "He enjoys picking apples and flying kites.",
+          "answer": "false",
+          "id": 23
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p53·短文取证",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "statement": "Grandpa says there were many trees there years ago.",
+          "answer": "false",
+          "id": 24
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p53·短文取证",
+          "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组",
+          "statement": "Grandpa talks about people who work hard.",
+          "answer": "true",
+          "id": 25
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D39/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "Minmin and his family visit Saihanba National Forest Park. He is excited to see the colourful forest and the golden fields. He enjoys picking apples and watching birds. Grandpa shows him a tall tree. Grandpa says that years ago people could see only one tree there. He tells Minmin that many people work hard to make this place wonderful."
+        ]
+      ]
+    }
+  ]
+}

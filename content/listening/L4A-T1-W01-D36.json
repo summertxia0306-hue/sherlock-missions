@@ -1,0 +1,439 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D36",
+  "pair_id": "4A-T1-W01-D36",
+  "publication_status": "formal",
+  "week": 8,
+  "day": 1,
+  "scope": "4A Unit 6 p47-p49",
+  "difficulty": "L1",
+  "course_id": "L4A-T1-W01-D36",
+  "title": "四上·第36课｜Unit 6秋日农场（听力）",
+  "course_type": "training",
+  "est_minutes": 12,
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D36/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "C微调·p47-p49·秋日词汇辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p47-p49，不作未掌握结论",
+          "options": [
+            "fruit",
+            "farm",
+            "fall"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "farm"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D36/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p47-p49·秋日词汇辨别",
+          "parent_note": "确认版教材p47-p49主线或不增加新知识的同语境受控重组",
+          "options": [
+            "leaf",
+            "apple",
+            "field"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "leaf"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D36/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p47-p49·秋日词汇辨别",
+          "parent_note": "确认版教材p47-p49主线或不增加新知识的同语境受控重组",
+          "options": [
+            "fly south",
+            "pick fruits",
+            "fall down"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "fly south"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D36/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p47-p49·秋日词汇辨别",
+          "parent_note": "确认版教材p47-p49主线或不增加新知识的同语境受控重组",
+          "options": [
+            "colourful leaves",
+            "beautiful fields",
+            "sweet fruits"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "sweet fruits"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D36/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p49·信息对应",
+          "parent_note": "确认版教材p47-p49主线或不增加新知识的同语境受控重组",
+          "display": "I love autumn days.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "I love autumn days."
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D36/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p49·信息对应",
+          "parent_note": "确认版教材p47-p49主线或不增加新知识的同语境受控重组",
+          "display": "The leaves are on the trees.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The leaves are falling."
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D36/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p49·信息对应",
+          "parent_note": "确认版教材p47-p49主线或不增加新知识的同语境受控重组",
+          "display": "My parents work in our fields.",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "My parents work in our fields."
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D36/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p49·信息对应",
+          "parent_note": "确认版教材p47-p49主线或不增加新知识的同语境受控重组",
+          "display": "Birds fly north.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "Birds fly south."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D36/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "C微调·p47-p49·句型与问答对应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p47-p49，不作未掌握结论",
+          "options": [
+            "I love autumn.",
+            "In our fields.",
+            "They are sweet."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Where do your parents work?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D36/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p47-p49·句型与问答对应",
+          "parent_note": "确认版教材p47-p49主线或不增加新知识的同语境受控重组",
+          "options": [
+            "They collect food.",
+            "Apples are sweet.",
+            "They fly south."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "What do the little animals collect?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D36/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p47-p49·句型与问答对应",
+          "parent_note": "确认版教材p47-p49主线或不增加新知识的同语境受控重组",
+          "options": [
+            "Yes, I do.",
+            "They are in the fields.",
+            "I pick fruits."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "Do you like autumn days?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D36/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p47-p49·句型与问答对应",
+          "parent_note": "确认版教材p47-p49主线或不增加新知识的同语境受控重组",
+          "options": [
+            "They work in the fields.",
+            "They fly south.",
+            "They are sweet."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "What are the fruits like?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D36/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p49·秋日情境与细节",
+          "parent_note": "确认版教材p47-p49主线或不增加新知识的同语境受控重组",
+          "question_text": "What does the child pick?",
+          "options": [
+            "Leaves.",
+            "Flowers.",
+            "Apples."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "I love autumn days on the farm."
+            ],
+            [
+              "m",
+              "What do you pick there?"
+            ],
+            [
+              "f",
+              "I pick sweet apples."
+            ],
+            [
+              "n",
+              "Question: What does the child pick?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D36/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p49·秋日情境与细节",
+          "parent_note": "确认版教材p47-p49主线或不增加新知识的同语境受控重组",
+          "question_text": "Which way are the birds flying?",
+          "options": [
+            "South.",
+            "North.",
+            "Across the field only."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Look at the birds."
+            ],
+            [
+              "m",
+              "Are they flying south?"
+            ],
+            [
+              "f",
+              "Yes, they are."
+            ],
+            [
+              "n",
+              "Question: Which way are the birds flying?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D36/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p49·秋日情境与细节",
+          "parent_note": "确认版教材p47-p49主线或不增加新知识的同语境受控重组",
+          "question_text": "What does the second child like doing?",
+          "options": [
+            "Taking photos.",
+            "Picking fruits.",
+            "Watching birds."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "I like looking for colourful leaves."
+            ],
+            [
+              "m",
+              "I like taking photos of the fields."
+            ],
+            [
+              "n",
+              "Question: What does the second child like doing?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D36/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p49·秋日情境与细节",
+          "parent_note": "确认版教材p47-p49主线或不增加新知识的同语境受控重组",
+          "question_text": "Who works in the fields?",
+          "options": [
+            "The child's friends.",
+            "The child's parents.",
+            "The little animals."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "Do your parents work in the fields?"
+            ],
+            [
+              "m",
+              "Yes, they do. I pick fruits with my friends."
+            ],
+            [
+              "n",
+              "Question: Who works in the fields?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D36/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p49·短文取证",
+          "parent_note": "确认版教材p47-p49主线或不增加新知识的同语境受控重组",
+          "statement": "The boy loves autumn days.",
+          "answer": "true",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p49·短文取证",
+          "parent_note": "确认版教材p47-p49主线或不增加新知识的同语境受控重组",
+          "statement": "The friends pick sweet fruits.",
+          "answer": "true",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p49·短文取证",
+          "parent_note": "确认版教材p47-p49主线或不增加新知识的同语境受控重组",
+          "statement": "The boy's parents work in a shop.",
+          "answer": "false",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p49·短文取证",
+          "parent_note": "确认版教材p47-p49主线或不增加新知识的同语境受控重组",
+          "statement": "The little animals do not collect food.",
+          "answer": "false",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D36/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "I am a farm boy. I love autumn days. My friends and I dance with falling leaves and pick sweet fruits. My parents work in the fields. Birds fly south. Little animals collect food."
+        ]
+      ]
+    }
+  ]
+}

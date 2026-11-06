@@ -1,0 +1,2054 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "generation_status": "READY_TO_GENERATE",
+  "publication_status": "formal",
+  "expected_listening_outputs": 98,
+  "expected_speaking_outputs": 56,
+  "expected_total_outputs": 154,
+  "items": [
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D36",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D36/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D36",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D36/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "farm"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D36",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D36/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "leaf"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D36",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D36/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "fly south"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D36",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D36/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "sweet fruits"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D36",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D36/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "I love autumn days."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D36",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D36/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "The leaves are falling."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D36",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D36/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "My parents work in our fields."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D36",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D36/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Birds fly south."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D36",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D36/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do your parents work?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D36",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D36/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What do the little animals collect?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D36",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D36/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "Do you like autumn days?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D36",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D36/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What are the fruits like?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D36",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D36/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "I love autumn days on the farm."
+        ],
+        [
+          "m",
+          "What do you pick there?"
+        ],
+        [
+          "f",
+          "I pick sweet apples."
+        ],
+        [
+          "n",
+          "Question: What does the child pick?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D36",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D36/q14.mp3",
+      "clips": [
+        [
+          "f",
+          "Look at the birds."
+        ],
+        [
+          "m",
+          "Are they flying south?"
+        ],
+        [
+          "f",
+          "Yes, they are."
+        ],
+        [
+          "n",
+          "Question: Which way are the birds flying?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D36",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D36/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "I like looking for colourful leaves."
+        ],
+        [
+          "m",
+          "I like taking photos of the fields."
+        ],
+        [
+          "n",
+          "Question: What does the second child like doing?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D36",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D36/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "Do your parents work in the fields?"
+        ],
+        [
+          "m",
+          "Yes, they do. I pick fruits with my friends."
+        ],
+        [
+          "n",
+          "Question: Who works in the fields?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D36",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D36/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "I am a farm boy. I love autumn days. My friends and I dance with falling leaves and pick sweet fruits. My parents work in the fields. Birds fly south. Little animals collect food."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D37",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D37/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D37",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D37/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "an autumn outing"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D37",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D37/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "a falling leaf"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D37",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D37/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "take a photo"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D37",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D37/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "across the sky"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D37",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D37/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "Miss Li and her students go on an autumn outing."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D37",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D37/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "A falling Wutong leaf tells us autumn is coming."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D37",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D37/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "The kites are high."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D37",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D37/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Some birds are flying across the sky."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D37",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D37/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What are the birds doing?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D37",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D37/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What tells us that autumn is coming?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D37",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D37/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What colour is the sky?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D37",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D37/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Shall we take a photo?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D37",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D37/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "Look at these Wutong trees."
+        ],
+        [
+          "m",
+          "A leaf is falling. Autumn is coming."
+        ],
+        [
+          "n",
+          "Question: What is falling?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D37",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D37/q14.mp3",
+      "clips": [
+        [
+          "f",
+          "The sky is blue. Look at the kites!"
+        ],
+        [
+          "m",
+          "They are very high."
+        ],
+        [
+          "n",
+          "Question: What is high in the sky?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D37",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D37/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "Some birds are flying across the sky."
+        ],
+        [
+          "m",
+          "They are getting closer. Let's take a photo."
+        ],
+        [
+          "n",
+          "Question: What do the children want to do?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D37",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D37/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "Boys and girls, please go and find autumn."
+        ],
+        [
+          "m",
+          "Look! These Wutong leaves are beautiful."
+        ],
+        [
+          "f",
+          "Well done. You found lovely autumn."
+        ],
+        [
+          "n",
+          "Question: What do the students notice?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D37",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D37/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "Miss Li takes her students on an autumn outing. They look at the beautiful Wutong leaves. One leaf is falling. They see a blue sky and high kites. Some birds fly across the sky and get closer. The students want to take a photo."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D38",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D38/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D38",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D38/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "blue sky"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D38",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D38/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "busy farmer"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D38",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D38/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "beautiful leaves"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D38",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D38/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "high kites"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D38",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D38/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "How blue the sky is!"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D38",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D38/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "How beautiful the leaves are!"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D38",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D38/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "How busy the farmer is!"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D38",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D38/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "The birds are flying."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D38",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D38/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "The sky looks very blue. What can you say?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D38",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D38/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Look at those beautiful leaves. What can you say?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D38",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D38/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "The farmer is very busy. What can you say?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D38",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D38/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "Look at those high kites. What can you say?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D38",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D38/q13.mp3",
+      "clips": [
+        [
+          "f",
+          "Look up. How blue the sky is!"
+        ],
+        [
+          "m",
+          "Let's take a photo of it."
+        ],
+        [
+          "n",
+          "Question: What do they want to photograph?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D38",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D38/q14.mp3",
+      "clips": [
+        [
+          "f",
+          "How busy the farmer is!"
+        ],
+        [
+          "m",
+          "Yes. He is picking fruits on the farm."
+        ],
+        [
+          "n",
+          "Question: Who is picking fruits?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D38",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D38/q15.mp3",
+      "clips": [
+        [
+          "f",
+          "How high the kites are!"
+        ],
+        [
+          "m",
+          "Yes, but those birds are flying even higher."
+        ],
+        [
+          "n",
+          "Question: What is flying higher than the kites?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D38",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D38/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "How beautiful the leaves are!"
+        ],
+        [
+          "m",
+          "Look! Some are falling. Let's watch them."
+        ],
+        [
+          "n",
+          "Question: What do they want to watch?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D38",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D38/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "It is a cool autumn day. Two friends are on an outing. One friend takes a photo of the blue sky. The other looks at the beautiful falling leaves. The boys fly kites. The friends see a busy farmer picking fruits."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D39/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "colourful forest"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "golden fields"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "pick apples"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "working hard"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "a tall tree"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Minmin visits the park with his family."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "Minmin sees golden fields."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Grandpa shows Minmin one tall tree."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "The workers are working hard."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "Minmin enjoys picking apples."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What does Minmin enjoy picking in the park?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What does Grandpa show Minmin?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q13.mp3",
+      "clips": [
+        [
+          "n",
+          "How does Minmin feel about the forest and fields?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q14.mp3",
+      "clips": [
+        [
+          "n",
+          "What are the workers doing?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q15.mp3",
+      "clips": [
+        [
+          "n",
+          "What can you say about the beautiful autumn there?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "Minmin is excited to see the colourful forest."
+        ],
+        [
+          "m",
+          "He can see golden fields too."
+        ],
+        [
+          "n",
+          "Question: Which two things make Minmin excited?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_17",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q17.mp3",
+      "clips": [
+        [
+          "f",
+          "Do you enjoy picking apples here, Minmin?"
+        ],
+        [
+          "m",
+          "Yes. I enjoy watching birds too."
+        ],
+        [
+          "n",
+          "Question: What else does Minmin enjoy?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_18",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q18.mp3",
+      "clips": [
+        [
+          "f",
+          "There are many trees here now."
+        ],
+        [
+          "m",
+          "Years ago, people could see only one tree here."
+        ],
+        [
+          "f",
+          "Grandpa, please show me that tree."
+        ],
+        [
+          "n",
+          "Question: What does the first speaker notice about the place now?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_19",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q19.mp3",
+      "clips": [
+        [
+          "f",
+          "Look at those workers, Minmin. They are working hard."
+        ],
+        [
+          "m",
+          "Many people like them make this place wonderful."
+        ],
+        [
+          "n",
+          "Question: Who helps make the place wonderful?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "question_20",
+      "path": "static/audio/listening/L4A-T1-W01-D39/q20.mp3",
+      "clips": [
+        [
+          "f",
+          "Grandpa, how beautiful autumn is here!"
+        ],
+        [
+          "m",
+          "Yes. Look at that tall tree."
+        ],
+        [
+          "n",
+          "Question: What does Grandpa ask Minmin to look at?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D39",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D39/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "Minmin and his family visit Saihanba National Forest Park. He is excited to see the colourful forest and the golden fields. He enjoys picking apples and watching birds. Grandpa shows him a tall tree. Grandpa says that years ago people could see only one tree there. He tells Minmin that many people work hard to make this place wonderful."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "test_audio",
+      "path": "static/audio/listening/L4A-T1-W01-D40/hello.mp3",
+      "clips": [
+        [
+          "n",
+          "Hello! Can you hear me? Let us begin."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_01",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "feel the cool wind"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_02",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "pick up leaves"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_03",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "smell nice fruits"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_04",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "birds flying south"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_05",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "lovely autumn"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_06",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "I see birds flying south."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_07",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "I feel the cool wind."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_08",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "I smell nice fruits."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_09",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "I pick up colourful leaves."
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_10",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "How lovely autumn is!"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_11",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What do you feel in the autumn poem?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_12",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What do you smell in the poem?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_13",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q13.mp3",
+      "clips": [
+        [
+          "n",
+          "What do you pick up in the poem?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_14",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q14.mp3",
+      "clips": [
+        [
+          "n",
+          "The leaves are beautiful. What can you say?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_15",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q15.mp3",
+      "clips": [
+        [
+          "n",
+          "What does Minmin enjoy doing in Saihanba?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_16",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q16.mp3",
+      "clips": [
+        [
+          "f",
+          "I can feel the cool wind."
+        ],
+        [
+          "m",
+          "I can smell nice fruits."
+        ],
+        [
+          "n",
+          "Question: What does the second speaker smell?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_17",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q17.mp3",
+      "clips": [
+        [
+          "f",
+          "I see birds flying south."
+        ],
+        [
+          "m",
+          "Look down. There are colourful leaves on the ground."
+        ],
+        [
+          "f",
+          "Let's pick some up."
+        ],
+        [
+          "n",
+          "Question: What are they going to pick up?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_18",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q18.mp3",
+      "clips": [
+        [
+          "f",
+          "Look at that tall tree in Saihanba."
+        ],
+        [
+          "m",
+          "Grandpa says many people work hard to make the park wonderful."
+        ],
+        [
+          "n",
+          "Question: Who helps make the park wonderful?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_19",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q19.mp3",
+      "clips": [
+        [
+          "f",
+          "The sky is blue and the kites are high."
+        ],
+        [
+          "m",
+          "I want a photo of the kites, not the leaves."
+        ],
+        [
+          "n",
+          "Question: What does the second speaker want to photograph?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "question_20",
+      "path": "static/audio/listening/L4A-T1-W01-D40/q20.mp3",
+      "clips": [
+        [
+          "f",
+          "Can you read a line from your autumn poem?"
+        ],
+        [
+          "m",
+          "Yes. I feel the cool wind."
+        ],
+        [
+          "n",
+          "Question: What does the line describe?"
+        ]
+      ]
+    },
+    {
+      "module": "listening",
+      "course_id": "L4A-T1-W01-D40",
+      "kind": "passage",
+      "path": "static/audio/listening/L4A-T1-W01-D40/p01.mp3",
+      "clips": [
+        [
+          "n",
+          "It is autumn. I see birds flying south and feel the cool wind. On the farm, I smell nice fruits. My friend picks up colourful leaves. We look up and see high kites in the blue sky. We take a photo of the kites. Back at school, we share a poem about what we see, smell, feel and do in autumn."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D36",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D36/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "I am a happy farm boy."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D36",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D36/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "I love autumn days."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D36",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D36/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "We dance with falling leaves."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D36",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D36/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "We pick nice and sweet fruits."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D36",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D36/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "My parents work in our fields."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D36",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D36/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Birds fly south."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D36",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D36/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "What do the children pick on the farm?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D36",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D36/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "Where do the farm boy's parents work?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D36",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D36/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "Which way do the birds fly?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D36",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D36/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What do the little animals collect?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D37",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D37/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "We go on an autumn outing."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D37",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D37/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "A Wutong leaf is falling."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D37",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D37/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "How beautiful these Wutong leaves are!"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D37",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D37/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "How blue the sky is!"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D37",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D37/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "How high the kites are!"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D37",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D37/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "Some birds are flying across the sky."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D37",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D37/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "What do the students see in the trees?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D37",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D37/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "What is falling from a Wutong tree?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D37",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D37/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What are the birds doing?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D37",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D37/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What do the students want to take?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D38",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D38/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "How blue the sky is!"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D38",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D38/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "How high the kites are!"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D38",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D38/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "How busy the farmer is!"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D38",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D38/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "How beautiful the leaves are!"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D38",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D38/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "Colourful leaves fall."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D38",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D38/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "We take photos of the blue sky."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D38",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D38/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "What can you say about the blue sky? Start with How."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D38",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D38/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "What can you say about the high kites? Start with How."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D38",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D38/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What can you say about the busy farmer?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D38",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D38/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What can you say about the beautiful leaves?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D38",
+      "kind": "question_11_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D38/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What do the boys fly on the outing?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D38",
+      "kind": "question_12_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D38/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What do the friends take photos of?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D39",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D39/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "Minmin sees a colourful forest."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D39",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D39/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "He is excited to see the golden fields."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D39",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D39/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "He enjoys picking apples and watching birds."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D39",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D39/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "Grandpa shows him a tall tree."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D39",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D39/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "The workers are working hard."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D39",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D39/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "How beautiful autumn is here!"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D39",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D39/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "What colour are the fields Minmin sees?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D39",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D39/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "What two things does Minmin enjoy doing?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D39",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D39/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What does Grandpa show Minmin?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D39",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D39/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "How many trees does Grandpa say people could see there years ago?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D39",
+      "kind": "question_11_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D39/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What are the workers doing?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D39",
+      "kind": "question_12_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D39/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What can Minmin say about autumn there?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D40",
+      "kind": "question_01_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D40/q01.mp3",
+      "clips": [
+        [
+          "n",
+          "It is autumn."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D40",
+      "kind": "question_02_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D40/q02.mp3",
+      "clips": [
+        [
+          "n",
+          "I see birds flying south."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D40",
+      "kind": "question_03_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D40/q03.mp3",
+      "clips": [
+        [
+          "n",
+          "I smell nice fruits."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D40",
+      "kind": "question_04_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D40/q04.mp3",
+      "clips": [
+        [
+          "n",
+          "I pick up colourful leaves."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D40",
+      "kind": "question_05_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D40/q05.mp3",
+      "clips": [
+        [
+          "n",
+          "I feel the cool wind."
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D40",
+      "kind": "question_06_repeat",
+      "path": "static/audio/speaking/S4A-T1-W01-D40/q06.mp3",
+      "clips": [
+        [
+          "n",
+          "How lovely autumn is!"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D40",
+      "kind": "question_07_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D40/q07.mp3",
+      "clips": [
+        [
+          "n",
+          "What do you see in the poem?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D40",
+      "kind": "question_08_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D40/q08.mp3",
+      "clips": [
+        [
+          "n",
+          "What do you smell in the poem?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D40",
+      "kind": "question_09_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D40/q09.mp3",
+      "clips": [
+        [
+          "n",
+          "What do you pick up in the poem?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D40",
+      "kind": "question_10_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D40/q10.mp3",
+      "clips": [
+        [
+          "n",
+          "What do you feel in the poem?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D40",
+      "kind": "question_11_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D40/q11.mp3",
+      "clips": [
+        [
+          "n",
+          "What can you say at the end of the poem?"
+        ]
+      ]
+    },
+    {
+      "module": "speaking",
+      "course_id": "S4A-T1-W01-D40",
+      "kind": "question_12_qa",
+      "path": "static/audio/speaking/S4A-T1-W01-D40/q12.mp3",
+      "clips": [
+        [
+          "n",
+          "What can you say about the blue sky and high kites?"
+        ]
+      ]
+    }
+  ]
+}

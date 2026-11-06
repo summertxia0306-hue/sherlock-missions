@@ -1,0 +1,224 @@
+{
+  "course_id": "L4A-T1-W01-D37",
+  "pair_id": "4A-T1-W01-D37",
+  "study_pack": "4A-T1-W01-D37",
+  "course_version": "a07960a42e2b6372",
+  "title": "四上·第37课｜Unit 6秋游观察（听力）",
+  "week": 8,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 14,
+  "test_audio_asset": "audio/listening/L4A-T1-W01-D37/hello.mp3",
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 1,
+          "type": "word_choice",
+          "options": [
+            "a farm boy",
+            "an autumn day",
+            "an autumn outing"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D37/q01.mp3"
+        },
+        {
+          "id": 2,
+          "type": "word_choice",
+          "options": [
+            "a blue sky",
+            "a falling leaf",
+            "a high kite"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D37/q02.mp3"
+        },
+        {
+          "id": 3,
+          "type": "word_choice",
+          "options": [
+            "take a photo",
+            "pick an apple",
+            "look for leaves"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D37/q03.mp3"
+        },
+        {
+          "id": 4,
+          "type": "word_choice",
+          "options": [
+            "in the fields",
+            "across the sky",
+            "on the farm"
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D37/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 5,
+          "type": "sentence_judge",
+          "display": "Miss Li and her students go on an autumn outing.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D37/q05.mp3"
+        },
+        {
+          "id": 6,
+          "type": "sentence_judge",
+          "display": "A falling Wutong leaf tells us spring is coming.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D37/q06.mp3"
+        },
+        {
+          "id": 7,
+          "type": "sentence_judge",
+          "display": "The kites are low.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D37/q07.mp3"
+        },
+        {
+          "id": 8,
+          "type": "sentence_judge",
+          "display": "Some birds are flying across the sky.",
+          "audio_asset": "audio/listening/L4A-T1-W01-D37/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 9,
+          "type": "question_response",
+          "options": [
+            "The sky is blue.",
+            "They are flying.",
+            "They are kites."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D37/q09.mp3"
+        },
+        {
+          "id": 10,
+          "type": "question_response",
+          "options": [
+            "They are getting closer.",
+            "A falling Wutong leaf.",
+            "The kite is high."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D37/q10.mp3"
+        },
+        {
+          "id": 11,
+          "type": "question_response",
+          "options": [
+            "They are colourful.",
+            "It is high.",
+            "It is blue."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D37/q11.mp3"
+        },
+        {
+          "id": 12,
+          "type": "question_response",
+          "options": [
+            "Yes, let's do that.",
+            "They are leaves.",
+            "The sky is high."
+          ],
+          "audio_asset": "audio/listening/L4A-T1-W01-D37/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "id": 13,
+          "type": "dialogue_choice",
+          "options": [
+            "An apple.",
+            "A leaf.",
+            "A kite."
+          ],
+          "question_text": "What is falling?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D37/q13.mp3"
+        },
+        {
+          "id": 14,
+          "type": "dialogue_choice",
+          "options": [
+            "The trees.",
+            "The leaves.",
+            "The kites."
+          ],
+          "question_text": "What is high in the sky?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D37/q14.mp3"
+        },
+        {
+          "id": 15,
+          "type": "dialogue_choice",
+          "options": [
+            "Take a photo.",
+            "Pick fruits.",
+            "Fly a kite."
+          ],
+          "question_text": "What do the children want to do?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D37/q15.mp3"
+        },
+        {
+          "id": 16,
+          "type": "dialogue_choice",
+          "options": [
+            "Golden apples.",
+            "Beautiful Wutong leaves.",
+            "Little animals."
+          ],
+          "question_text": "What do the students notice?",
+          "audio_asset": "audio/listening/L4A-T1-W01-D37/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "shared_audio": true,
+      "passage_audio_asset": "audio/listening/L4A-T1-W01-D37/p01.mp3",
+      "questions": [
+        {
+          "id": 17,
+          "type": "passage_judge",
+          "statement": "The students go on an autumn outing."
+        },
+        {
+          "id": 18,
+          "type": "passage_judge",
+          "statement": "A Wutong leaf is falling."
+        },
+        {
+          "id": 19,
+          "type": "passage_judge",
+          "statement": "The sky is grey."
+        },
+        {
+          "id": 20,
+          "type": "passage_judge",
+          "statement": "The birds are getting farther away."
+        }
+      ]
+    }
+  ]
+}

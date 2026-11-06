@@ -1,0 +1,431 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D38",
+  "pair_id": "4A-T1-W01-D38",
+  "publication_status": "formal",
+  "week": 8,
+  "day": 3,
+  "scope": "4A Unit 6 p47-p51",
+  "difficulty": "L2",
+  "course_id": "L4A-T1-W01-D38",
+  "title": "四上·第38课｜Unit 6秋景感叹句（听力）",
+  "course_type": "training",
+  "est_minutes": 17,
+  "scoring": {
+    "per_question": 5,
+    "total": 100
+  },
+  "test_audio": "static/audio/listening/L4A-T1-W01-D38/hello.mp3",
+  "test_transcript": [
+    [
+      "n",
+      "Hello! Can you hear me? Let us begin."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "word_discrimination",
+      "name": "听音选词",
+      "tip": "听录音，选出你听到的单词或短语",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "word_choice",
+          "tag": "C微调·p47-p51·秋日词汇辨别",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p47-p51，不作未掌握结论",
+          "options": [
+            "high kites",
+            "blue sky",
+            "sweet fruits"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "blue sky"
+            ]
+          ],
+          "id": 1,
+          "audio": "static/audio/listening/L4A-T1-W01-D38/q01.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p47-p51·秋日词汇辨别",
+          "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组",
+          "options": [
+            "happy farm boy",
+            "little animal",
+            "busy farmer"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "busy farmer"
+            ]
+          ],
+          "id": 2,
+          "audio": "static/audio/listening/L4A-T1-W01-D38/q02.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p47-p51·秋日词汇辨别",
+          "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组",
+          "options": [
+            "beautiful leaves",
+            "falling fruits",
+            "beautiful fields"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "beautiful leaves"
+            ]
+          ],
+          "id": 3,
+          "audio": "static/audio/listening/L4A-T1-W01-D38/q03.mp3"
+        },
+        {
+          "type": "word_choice",
+          "tag": "A主线·p47-p51·秋日词汇辨别",
+          "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组",
+          "options": [
+            "tall trees",
+            "blue sky",
+            "high kites"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "high kites"
+            ]
+          ],
+          "id": 4,
+          "audio": "static/audio/listening/L4A-T1-W01-D38/q04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sentence_meaning",
+      "name": "听句判断",
+      "tip": "听句子，判断和屏幕信息是否一致",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p51·信息对应",
+          "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组",
+          "display": "How blue the sky is!",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "How blue the sky is!"
+            ]
+          ],
+          "id": 5,
+          "audio": "static/audio/listening/L4A-T1-W01-D38/q05.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p51·信息对应",
+          "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组",
+          "display": "How high the kites are!",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "How beautiful the leaves are!"
+            ]
+          ],
+          "id": 6,
+          "audio": "static/audio/listening/L4A-T1-W01-D38/q06.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p51·信息对应",
+          "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组",
+          "display": "How busy the farmer is!",
+          "answer": "same",
+          "transcript": [
+            [
+              "n",
+              "How busy the farmer is!"
+            ]
+          ],
+          "id": 7,
+          "audio": "static/audio/listening/L4A-T1-W01-D38/q07.mp3"
+        },
+        {
+          "type": "sentence_judge",
+          "tag": "A主线·p47-p51·信息对应",
+          "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组",
+          "display": "The leaves are falling.",
+          "answer": "different",
+          "transcript": [
+            [
+              "n",
+              "The birds are flying."
+            ]
+          ],
+          "id": 8,
+          "audio": "static/audio/listening/L4A-T1-W01-D38/q08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "question_response",
+      "name": "听问句选答语",
+      "tip": "听问句，选出最合适的回答",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "question_response",
+          "tag": "C微调·p47-p51·句型与问答对应",
+          "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p47-p51，不作未掌握结论",
+          "options": [
+            "How high the kites are!",
+            "How busy the farmer is!",
+            "How blue the sky is!"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "The sky looks very blue. What can you say?"
+            ]
+          ],
+          "id": 9,
+          "audio": "static/audio/listening/L4A-T1-W01-D38/q09.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p47-p51·句型与问答对应",
+          "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组",
+          "options": [
+            "How beautiful the leaves is!",
+            "How beautiful the leaves are!",
+            "How beautiful is the leaves!"
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "n",
+              "Look at those beautiful leaves. What can you say?"
+            ]
+          ],
+          "id": 10,
+          "audio": "static/audio/listening/L4A-T1-W01-D38/q10.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p47-p51·句型与问答对应",
+          "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组",
+          "options": [
+            "How busy the farmer is!",
+            "How busy the farmer are!",
+            "How busy are the farmer!"
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "n",
+              "The farmer is very busy. What can you say?"
+            ]
+          ],
+          "id": 11,
+          "audio": "static/audio/listening/L4A-T1-W01-D38/q11.mp3"
+        },
+        {
+          "type": "question_response",
+          "tag": "A主线·p47-p51·句型与问答对应",
+          "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组",
+          "options": [
+            "How high the kites is!",
+            "How blue the sky is!",
+            "How high the kites are!"
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "n",
+              "Look at those high kites. What can you say?"
+            ]
+          ],
+          "id": 12,
+          "audio": "static/audio/listening/L4A-T1-W01-D38/q12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "name": "听对话选答案",
+      "tip": "听连续对话和问题，选出正确答案",
+      "max_plays": 2,
+      "questions": [
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p51·秋日情境与细节",
+          "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组",
+          "question_text": "What do they want to photograph?",
+          "options": [
+            "The blue sky.",
+            "The sweet fruits.",
+            "The falling leaves."
+          ],
+          "answer": 0,
+          "transcript": [
+            [
+              "f",
+              "Look up. How blue the sky is!"
+            ],
+            [
+              "m",
+              "Let's take a photo of it."
+            ],
+            [
+              "n",
+              "Question: What do they want to photograph?"
+            ]
+          ],
+          "id": 13,
+          "audio": "static/audio/listening/L4A-T1-W01-D38/q13.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p51·秋日情境与细节",
+          "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组",
+          "question_text": "Who is picking fruits?",
+          "options": [
+            "The farm boy.",
+            "The students.",
+            "The farmer."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "How busy the farmer is!"
+            ],
+            [
+              "m",
+              "Yes. He is picking fruits on the farm."
+            ],
+            [
+              "n",
+              "Question: Who is picking fruits?"
+            ]
+          ],
+          "id": 14,
+          "audio": "static/audio/listening/L4A-T1-W01-D38/q14.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p51·秋日情境与细节",
+          "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组",
+          "question_text": "What is flying higher than the kites?",
+          "options": [
+            "Leaves.",
+            "Apples.",
+            "Birds."
+          ],
+          "answer": 2,
+          "transcript": [
+            [
+              "f",
+              "How high the kites are!"
+            ],
+            [
+              "m",
+              "Yes, but those birds are flying even higher."
+            ],
+            [
+              "n",
+              "Question: What is flying higher than the kites?"
+            ]
+          ],
+          "id": 15,
+          "audio": "static/audio/listening/L4A-T1-W01-D38/q15.mp3"
+        },
+        {
+          "type": "dialogue_choice",
+          "tag": "A主线·p47-p51·秋日情境与细节",
+          "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组",
+          "question_text": "What do they want to watch?",
+          "options": [
+            "The busy farmer.",
+            "The falling leaves.",
+            "The high kites."
+          ],
+          "answer": 1,
+          "transcript": [
+            [
+              "f",
+              "How beautiful the leaves are!"
+            ],
+            [
+              "m",
+              "Look! Some are falling. Let's watch them."
+            ],
+            [
+              "n",
+              "Question: What do they want to watch?"
+            ]
+          ],
+          "id": 16,
+          "audio": "static/audio/listening/L4A-T1-W01-D38/q16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "passage",
+      "name": "听短文判断",
+      "tip": "先听完整短文，再判断每句话是否正确",
+      "max_plays": 3,
+      "questions": [
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p51·短文取证",
+          "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组",
+          "statement": "The friends are on an autumn outing.",
+          "answer": "true",
+          "id": 17
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p51·短文取证",
+          "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组",
+          "statement": "One friend takes a photo of the blue sky.",
+          "answer": "true",
+          "id": 18
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p51·短文取证",
+          "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组",
+          "statement": "The boys pick fruits in this passage.",
+          "answer": "false",
+          "id": 19
+        },
+        {
+          "type": "passage_judge",
+          "tag": "A主线·p47-p51·短文取证",
+          "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组",
+          "statement": "The farmer is flying a kite.",
+          "answer": "false",
+          "id": 20
+        }
+      ],
+      "shared_audio": true,
+      "passage_audio": "static/audio/listening/L4A-T1-W01-D38/p01.mp3",
+      "passage_transcript": [
+        [
+          "n",
+          "It is a cool autumn day. Two friends are on an outing. One friend takes a photo of the blue sky. The other looks at the beautiful falling leaves. The boys fly kites. The friends see a busy farmer picking fruits."
+        ]
+      ]
+    }
+  ]
+}

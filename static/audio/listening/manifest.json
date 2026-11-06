@@ -8489,6 +8489,852 @@
    "voice": "en-US-AnaNeural",
    "rate": "-10%",
    "text": "Look at this photo of my favourite place. It is a big park in my neighbourhood. It is nice and clean. There are some old trees, and they are very tall. There is a big playground too. I go there with my mum every week. My friend wants to play there with her brother. We can introduce the park and answer questions about it."
+  },
+  "93560f1afb742774": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "farm"
+  },
+  "8ea40fbb9a667a4d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "leaf"
+  },
+  "da1c9e8f2330adb5": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "fly south"
+  },
+  "fac2e0ac907d25a7": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "sweet fruits"
+  },
+  "6d1949b85fcc3acd": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I love autumn days."
+  },
+  "461d2d5296b8cc0a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The leaves are falling."
+  },
+  "77558521d1dd8609": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "My parents work in our fields."
+  },
+  "94b2780ceb7e290c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Birds fly south."
+  },
+  "808dc8faa6c5e525": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Where do your parents work?"
+  },
+  "4c74bbcb2bc768eb": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do the little animals collect?"
+  },
+  "eb3ef3590ee5b65a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Do you like autumn days?"
+  },
+  "bff1b99464013eaf": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What are the fruits like?"
+  },
+  "369b30953775f721": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I love autumn days on the farm."
+  },
+  "d589cb2af71cc499": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "What do you pick there?"
+  },
+  "10ec458f807b2cec": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I pick sweet apples."
+  },
+  "ed454c03414e17ab": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does the child pick?"
+  },
+  "3a63c212c6f2b173": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Look at the birds."
+  },
+  "f8fd51c624c1c9e7": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Are they flying south?"
+  },
+  "c86dd266717a11f0": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Yes, they are."
+  },
+  "fde8b6fe8fa3ca26": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which way are the birds flying?"
+  },
+  "6cfff3023f8182e2": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I like looking for colourful leaves."
+  },
+  "f0bc854f3bb4b24d": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "I like taking photos of the fields."
+  },
+  "d024bb958295212b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does the second child like doing?"
+  },
+  "f9fd6aecfcca65a1": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Do your parents work in the fields?"
+  },
+  "924792b6a1f7274f": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Yes, they do. I pick fruits with my friends."
+  },
+  "503a78ce6069e62a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who works in the fields?"
+  },
+  "6dcd6847614f200e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I am a farm boy. I love autumn days. My friends and I dance with falling leaves and pick sweet fruits. My parents work in the fields. Birds fly south. Little animals collect food."
+  },
+  "68570aa2c305c812": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "an autumn outing"
+  },
+  "f3cef23a5d412ff5": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "a falling leaf"
+  },
+  "4e1869d48cf4863d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "take a photo"
+  },
+  "4cf17664f17650e8": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "across the sky"
+  },
+  "a4c426946fbaa4be": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Miss Li and her students go on an autumn outing."
+  },
+  "06249e2c1bffabd3": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "A falling Wutong leaf tells us autumn is coming."
+  },
+  "eb4c1392ce0b6afd": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The kites are high."
+  },
+  "de1be70e9fefbc4a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Some birds are flying across the sky."
+  },
+  "089d463ed55d7eb8": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What are the birds doing?"
+  },
+  "c80e16d854ebb105": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What tells us that autumn is coming?"
+  },
+  "5f9f6272934b53f1": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What colour is the sky?"
+  },
+  "706c9631488f3aea": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Shall we take a photo?"
+  },
+  "d0e0fc37e61f8f15": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Look at these Wutong trees."
+  },
+  "4b9fa75dd766dcf6": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "A leaf is falling. Autumn is coming."
+  },
+  "4243e3f0b8abfff1": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What is falling?"
+  },
+  "57baf22f894fe34b": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "The sky is blue. Look at the kites!"
+  },
+  "975a06020d1f38e6": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "They are very high."
+  },
+  "483037384e6ae417": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What is high in the sky?"
+  },
+  "4169ed88c3804aae": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Some birds are flying across the sky."
+  },
+  "17e210b5759918d5": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "They are getting closer. Let's take a photo."
+  },
+  "0267ce193435eae0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What do the children want to do?"
+  },
+  "4b5857a38f9f789c": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Boys and girls, please go and find autumn."
+  },
+  "2685bc77f0e91305": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Look! These Wutong leaves are beautiful."
+  },
+  "3d0223a657c1af39": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Well done. You found lovely autumn."
+  },
+  "9bdff5fc25eeab85": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What do the students notice?"
+  },
+  "a3edbbc8ca300ebc": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Miss Li takes her students on an autumn outing. They look at the beautiful Wutong leaves. One leaf is falling. They see a blue sky and high kites. Some birds fly across the sky and get closer. The students want to take a photo."
+  },
+  "f5b3048b83b55cb8": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "blue sky"
+  },
+  "6b4d3cfd491faf7d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "busy farmer"
+  },
+  "e6a6223e71bbed15": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "beautiful leaves"
+  },
+  "22b721b0691c595e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "high kites"
+  },
+  "132a088def3cd54e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How blue the sky is!"
+  },
+  "dfe92ef24ec17920": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How beautiful the leaves are!"
+  },
+  "5a5126efc8decda1": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How busy the farmer is!"
+  },
+  "c47da4496d589f01": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The birds are flying."
+  },
+  "33560ab2e28b2111": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The sky looks very blue. What can you say?"
+  },
+  "aaebeb2fb791af0b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Look at those beautiful leaves. What can you say?"
+  },
+  "30f30135fb7d201b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The farmer is very busy. What can you say?"
+  },
+  "e6b241b1c8f12a2d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Look at those high kites. What can you say?"
+  },
+  "4e0384e51d2a3473": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Look up. How blue the sky is!"
+  },
+  "22a69eb26bf2342b": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Let's take a photo of it."
+  },
+  "d29e8a55b832d7dc": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "How busy the farmer is!"
+  },
+  "d7a61a26694627ba": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Yes. He is picking fruits on the farm."
+  },
+  "2454b8e636a7c71e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who is picking fruits?"
+  },
+  "f988465b3bd2bbc1": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "How high the kites are!"
+  },
+  "eb986ec0170d09e2": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Yes, but those birds are flying even higher."
+  },
+  "224b7b83ccb3c170": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What is flying higher than the kites?"
+  },
+  "bd06c77c26dfccf6": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "How beautiful the leaves are!"
+  },
+  "a19e200f729468a8": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Look! Some are falling. Let's watch them."
+  },
+  "72cce2bfa71e8364": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What do they want to watch?"
+  },
+  "68f022700c6717b9": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It is a cool autumn day. Two friends are on an outing. One friend takes a photo of the blue sky. The other looks at the beautiful falling leaves. The boys fly kites. The friends see a busy farmer picking fruits."
+  },
+  "1a09ead9546a0367": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "colourful forest"
+  },
+  "c9704ec3128cc452": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "golden fields"
+  },
+  "917f23cd3d569514": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "pick apples"
+  },
+  "443fd6f02629c9f0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "working hard"
+  },
+  "1a0f7d165d434587": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "a tall tree"
+  },
+  "d524b3539b546376": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Minmin visits the park with his family."
+  },
+  "1ea6ae5401cd87bc": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Minmin sees golden fields."
+  },
+  "4b4bb8460d7c6ef4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Grandpa shows Minmin one tall tree."
+  },
+  "42c00aae048b6f43": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The workers are working hard."
+  },
+  "8cfa1c9820a0ca0d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Minmin enjoys picking apples."
+  },
+  "e4557db951f12de7": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does Minmin enjoy picking in the park?"
+  },
+  "6040a5011fde616a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does Grandpa show Minmin?"
+  },
+  "49f26c4f3488e04d": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How does Minmin feel about the forest and fields?"
+  },
+  "b04cbeba7fe56421": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What are the workers doing?"
+  },
+  "2e217993683ad75e": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What can you say about the beautiful autumn there?"
+  },
+  "3170a1fad3b5c134": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Minmin is excited to see the colourful forest."
+  },
+  "4893b196021406db": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "He can see golden fields too."
+  },
+  "e148f1d86ab508cf": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Which two things make Minmin excited?"
+  },
+  "017c88ea441e13f9": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Do you enjoy picking apples here, Minmin?"
+  },
+  "7a0de58d3298c6f3": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Yes. I enjoy watching birds too."
+  },
+  "a17f2d2f99ed0297": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What else does Minmin enjoy?"
+  },
+  "e9da6f258f6bc552": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "There are many trees here now."
+  },
+  "9cd7ee5fa3e827f7": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Years ago, people could see only one tree here."
+  },
+  "dec3f54e9681cdf7": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Grandpa, please show me that tree."
+  },
+  "6a1052b44697ac88": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does the first speaker notice about the place now?"
+  },
+  "124d26cbea504616": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Look at those workers, Minmin. They are working hard."
+  },
+  "0b114ee02bfbaa7f": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Many people like them make this place wonderful."
+  },
+  "ed47faeb95e80fc7": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who helps make the place wonderful?"
+  },
+  "b0261b8ffb7d2e92": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Grandpa, how beautiful autumn is here!"
+  },
+  "5cb44a6dcef9d09e": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Yes. Look at that tall tree."
+  },
+  "4b308f8dce12fc6b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does Grandpa ask Minmin to look at?"
+  },
+  "457cba2809150794": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Minmin and his family visit Saihanba National Forest Park. He is excited to see the colourful forest and the golden fields. He enjoys picking apples and watching birds. Grandpa shows him a tall tree. Grandpa says that years ago people could see only one tree there. He tells Minmin that many people work hard to make this place wonderful."
+  },
+  "2f2d8af1ec616130": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "feel the cool wind"
+  },
+  "2b5387debb1e5005": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "pick up leaves"
+  },
+  "ebf28146b34b8d89": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "smell nice fruits"
+  },
+  "c8c18e052768f5d5": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "birds flying south"
+  },
+  "5b3bcc097f5ae12c": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "lovely autumn"
+  },
+  "494b9d8411c00281": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I see birds flying south."
+  },
+  "8f85186296f09171": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I feel the cool wind."
+  },
+  "bfbd050d7f368ad9": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I smell nice fruits."
+  },
+  "d7fd615cb470f93f": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "I pick up colourful leaves."
+  },
+  "1d892d54bf3ef850": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "How lovely autumn is!"
+  },
+  "07e6f59d9dda876a": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do you feel in the autumn poem?"
+  },
+  "5e19d2f8322e2bb0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do you smell in the poem?"
+  },
+  "aa04101270212cd1": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What do you pick up in the poem?"
+  },
+  "33f9dac6ed3d12a0": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "The leaves are beautiful. What can you say?"
+  },
+  "8df388fd02a5a866": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "What does Minmin enjoy doing in Saihanba?"
+  },
+  "88b10952919ec4e8": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I can feel the cool wind."
+  },
+  "ca8c05362ca0a1e5": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "I can smell nice fruits."
+  },
+  "3717f8996acbb802": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does the second speaker smell?"
+  },
+  "efac2a1b7ef1fc5d": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "I see birds flying south."
+  },
+  "7e8ad7aa8f8a61a6": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Look down. There are colourful leaves on the ground."
+  },
+  "89481f5529e9a7c3": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Let's pick some up."
+  },
+  "3afb246e25e91b9b": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What are they going to pick up?"
+  },
+  "64348c57996ff001": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Look at that tall tree in Saihanba."
+  },
+  "5e167d4a3657e701": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Grandpa says many people work hard to make the park wonderful."
+  },
+  "1ba04158137b6ef4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: Who helps make the park wonderful?"
+  },
+  "7b47ec6fea319258": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "The sky is blue and the kites are high."
+  },
+  "279c330d27b21e0c": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "I want a photo of the kites, not the leaves."
+  },
+  "d873ab51253e03b4": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does the second speaker want to photograph?"
+  },
+  "4ee8d16b52f718c7": {
+   "role": "f",
+   "voice": "en-US-AriaNeural",
+   "rate": "-10%",
+   "text": "Can you read a line from your autumn poem?"
+  },
+  "89761d1b06b03358": {
+   "role": "m",
+   "voice": "en-US-GuyNeural",
+   "rate": "-10%",
+   "text": "Yes. I feel the cool wind."
+  },
+  "650b45af018fd449": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "Question: What does the line describe?"
+  },
+  "c05af109c8b19b79": {
+   "role": "n",
+   "voice": "en-US-AnaNeural",
+   "rate": "-10%",
+   "text": "It is autumn. I see birds flying south and feel the cool wind. On the farm, I smell nice fruits. My friend picks up colourful leaves. We look up and see high kites in the blue sky. We take a photo of the kites. Back at school, we share a poem about what we see, smell, feel and do in autumn."
   }
  },
  "courses": {
@@ -9483,6 +10329,114 @@
    "static/audio/listening/L4A-T1-W01-D35/q19.mp3": "7252a6134e78bfba",
    "static/audio/listening/L4A-T1-W01-D35/q20.mp3": "550ec7245c101fbe",
    "static/audio/listening/L4A-T1-W01-D35/p01.mp3": "0a3d88dd53d9b158"
+  },
+  "L4A-T1-W01-D36": {
+   "static/audio/listening/L4A-T1-W01-D36/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D36/q01.mp3": "03898d56175c9abc",
+   "static/audio/listening/L4A-T1-W01-D36/q02.mp3": "71e15f57deacdcd3",
+   "static/audio/listening/L4A-T1-W01-D36/q03.mp3": "b45be25cdcf52945",
+   "static/audio/listening/L4A-T1-W01-D36/q04.mp3": "b767819fd636e37c",
+   "static/audio/listening/L4A-T1-W01-D36/q05.mp3": "304a8d3287d10a25",
+   "static/audio/listening/L4A-T1-W01-D36/q06.mp3": "4da96f0ea2d36b16",
+   "static/audio/listening/L4A-T1-W01-D36/q07.mp3": "c26a3265d55a0cfe",
+   "static/audio/listening/L4A-T1-W01-D36/q08.mp3": "016798f344d07efa",
+   "static/audio/listening/L4A-T1-W01-D36/q09.mp3": "993bcca07e164b91",
+   "static/audio/listening/L4A-T1-W01-D36/q10.mp3": "1d057d437122b814",
+   "static/audio/listening/L4A-T1-W01-D36/q11.mp3": "9b28b3f768e0270e",
+   "static/audio/listening/L4A-T1-W01-D36/q12.mp3": "fc78a375751c8ad3",
+   "static/audio/listening/L4A-T1-W01-D36/q13.mp3": "1085ed472cf32eb8",
+   "static/audio/listening/L4A-T1-W01-D36/q14.mp3": "619397f5f3bf476d",
+   "static/audio/listening/L4A-T1-W01-D36/q15.mp3": "371c603ef260c811",
+   "static/audio/listening/L4A-T1-W01-D36/q16.mp3": "ebe0e4bf6844c182",
+   "static/audio/listening/L4A-T1-W01-D36/p01.mp3": "24f0a7957e4783db"
+  },
+  "L4A-T1-W01-D37": {
+   "static/audio/listening/L4A-T1-W01-D37/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D37/q01.mp3": "5f8acb73bc7ff6b0",
+   "static/audio/listening/L4A-T1-W01-D37/q02.mp3": "246fe96013f2bd44",
+   "static/audio/listening/L4A-T1-W01-D37/q03.mp3": "89353093d374b679",
+   "static/audio/listening/L4A-T1-W01-D37/q04.mp3": "593b3848634ed9dd",
+   "static/audio/listening/L4A-T1-W01-D37/q05.mp3": "42b657ff1d696e3a",
+   "static/audio/listening/L4A-T1-W01-D37/q06.mp3": "8adf33f2e976338d",
+   "static/audio/listening/L4A-T1-W01-D37/q07.mp3": "24c9668101e04742",
+   "static/audio/listening/L4A-T1-W01-D37/q08.mp3": "31cf25e622d63123",
+   "static/audio/listening/L4A-T1-W01-D37/q09.mp3": "f3697d2f3154a3c9",
+   "static/audio/listening/L4A-T1-W01-D37/q10.mp3": "2e8a531a671c2c83",
+   "static/audio/listening/L4A-T1-W01-D37/q11.mp3": "936eb62a37f1f285",
+   "static/audio/listening/L4A-T1-W01-D37/q12.mp3": "80b6c375c18a2a0b",
+   "static/audio/listening/L4A-T1-W01-D37/q13.mp3": "6417125658d44bd9",
+   "static/audio/listening/L4A-T1-W01-D37/q14.mp3": "f338d617cb960633",
+   "static/audio/listening/L4A-T1-W01-D37/q15.mp3": "9b1955e584abe145",
+   "static/audio/listening/L4A-T1-W01-D37/q16.mp3": "2462bd3b6ec6d429",
+   "static/audio/listening/L4A-T1-W01-D37/p01.mp3": "50301baa39411d63"
+  },
+  "L4A-T1-W01-D38": {
+   "static/audio/listening/L4A-T1-W01-D38/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D38/q01.mp3": "0ddbd1225447e7af",
+   "static/audio/listening/L4A-T1-W01-D38/q02.mp3": "9822f88d3a4189a8",
+   "static/audio/listening/L4A-T1-W01-D38/q03.mp3": "54f3159b0485315d",
+   "static/audio/listening/L4A-T1-W01-D38/q04.mp3": "a98e0e7fb085e744",
+   "static/audio/listening/L4A-T1-W01-D38/q05.mp3": "e654065d71794a11",
+   "static/audio/listening/L4A-T1-W01-D38/q06.mp3": "e31529f9fa5a043c",
+   "static/audio/listening/L4A-T1-W01-D38/q07.mp3": "3c805227d54f141a",
+   "static/audio/listening/L4A-T1-W01-D38/q08.mp3": "bde14b137c6a1867",
+   "static/audio/listening/L4A-T1-W01-D38/q09.mp3": "a32004ad18fcc501",
+   "static/audio/listening/L4A-T1-W01-D38/q10.mp3": "a81c9284215c1a0d",
+   "static/audio/listening/L4A-T1-W01-D38/q11.mp3": "d7147a74bc7ef052",
+   "static/audio/listening/L4A-T1-W01-D38/q12.mp3": "5adbec55168ad03f",
+   "static/audio/listening/L4A-T1-W01-D38/q13.mp3": "094ae5c1d8341605",
+   "static/audio/listening/L4A-T1-W01-D38/q14.mp3": "b9fdce83e07b6715",
+   "static/audio/listening/L4A-T1-W01-D38/q15.mp3": "2209bb4e1d4685ea",
+   "static/audio/listening/L4A-T1-W01-D38/q16.mp3": "5e1cbebfbd8492f5",
+   "static/audio/listening/L4A-T1-W01-D38/p01.mp3": "57a760d720be25ec"
+  },
+  "L4A-T1-W01-D39": {
+   "static/audio/listening/L4A-T1-W01-D39/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D39/q01.mp3": "41abd6a93a0ed278",
+   "static/audio/listening/L4A-T1-W01-D39/q02.mp3": "9a2ada6d40492998",
+   "static/audio/listening/L4A-T1-W01-D39/q03.mp3": "ca6589ffff353640",
+   "static/audio/listening/L4A-T1-W01-D39/q04.mp3": "a289d09333c388e0",
+   "static/audio/listening/L4A-T1-W01-D39/q05.mp3": "66d0be75338e1616",
+   "static/audio/listening/L4A-T1-W01-D39/q06.mp3": "174acf2306a4c1e9",
+   "static/audio/listening/L4A-T1-W01-D39/q07.mp3": "c0f7e4ef6d037eeb",
+   "static/audio/listening/L4A-T1-W01-D39/q08.mp3": "899bfd4ab07edbbd",
+   "static/audio/listening/L4A-T1-W01-D39/q09.mp3": "46d3a51ccda44f61",
+   "static/audio/listening/L4A-T1-W01-D39/q10.mp3": "ac74493a28d67adf",
+   "static/audio/listening/L4A-T1-W01-D39/q11.mp3": "59d7214bc5c6ea39",
+   "static/audio/listening/L4A-T1-W01-D39/q12.mp3": "7721dcc45be1beae",
+   "static/audio/listening/L4A-T1-W01-D39/q13.mp3": "44373e0b6e547610",
+   "static/audio/listening/L4A-T1-W01-D39/q14.mp3": "2d4b0d7f620e3237",
+   "static/audio/listening/L4A-T1-W01-D39/q15.mp3": "eec8b340aeef5571",
+   "static/audio/listening/L4A-T1-W01-D39/q16.mp3": "814b573b76e030e6",
+   "static/audio/listening/L4A-T1-W01-D39/q17.mp3": "22743997a137dce3",
+   "static/audio/listening/L4A-T1-W01-D39/q18.mp3": "147a659ebf532c75",
+   "static/audio/listening/L4A-T1-W01-D39/q19.mp3": "84daea28f6f6c3b7",
+   "static/audio/listening/L4A-T1-W01-D39/q20.mp3": "49aae4d4be80366b",
+   "static/audio/listening/L4A-T1-W01-D39/p01.mp3": "fc9d44a85d3ebad2"
+  },
+  "L4A-T1-W01-D40": {
+   "static/audio/listening/L4A-T1-W01-D40/hello.mp3": "aba9bb5a772dd0cb",
+   "static/audio/listening/L4A-T1-W01-D40/q01.mp3": "4e587549130dec84",
+   "static/audio/listening/L4A-T1-W01-D40/q02.mp3": "7061d954b3cc03f9",
+   "static/audio/listening/L4A-T1-W01-D40/q03.mp3": "ffd42330fc0c64d2",
+   "static/audio/listening/L4A-T1-W01-D40/q04.mp3": "0b56b1cef6d7fa11",
+   "static/audio/listening/L4A-T1-W01-D40/q05.mp3": "0dd3824ff55d4ffb",
+   "static/audio/listening/L4A-T1-W01-D40/q06.mp3": "034b65b0fd9a924f",
+   "static/audio/listening/L4A-T1-W01-D40/q07.mp3": "f850fe2bd262f454",
+   "static/audio/listening/L4A-T1-W01-D40/q08.mp3": "bcbfb9e07045845b",
+   "static/audio/listening/L4A-T1-W01-D40/q09.mp3": "8633b731c822d2f6",
+   "static/audio/listening/L4A-T1-W01-D40/q10.mp3": "5092e975775b5747",
+   "static/audio/listening/L4A-T1-W01-D40/q11.mp3": "e3d0652cc71e2799",
+   "static/audio/listening/L4A-T1-W01-D40/q12.mp3": "de11796acf42c451",
+   "static/audio/listening/L4A-T1-W01-D40/q13.mp3": "9a7dbc552e8e05dc",
+   "static/audio/listening/L4A-T1-W01-D40/q14.mp3": "8efa9f6dbf500b80",
+   "static/audio/listening/L4A-T1-W01-D40/q15.mp3": "df2b12eb54bcb3ae",
+   "static/audio/listening/L4A-T1-W01-D40/q16.mp3": "ba44bc0919b14a3a",
+   "static/audio/listening/L4A-T1-W01-D40/q17.mp3": "6e9c72094c1983b9",
+   "static/audio/listening/L4A-T1-W01-D40/q18.mp3": "432ca8dbd2fa3617",
+   "static/audio/listening/L4A-T1-W01-D40/q19.mp3": "6ee4443844754988",
+   "static/audio/listening/L4A-T1-W01-D40/q20.mp3": "8f1c804bbe831797",
+   "static/audio/listening/L4A-T1-W01-D40/p01.mp3": "c457550d8e630a1d"
   }
  }
 }

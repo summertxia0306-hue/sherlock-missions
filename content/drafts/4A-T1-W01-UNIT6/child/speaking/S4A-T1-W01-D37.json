@@ -1,0 +1,73 @@
+{
+  "course_id": "S4A-T1-W01-D37",
+  "pair_id": "4A-T1-W01-D37",
+  "study_pack": "4A-T1-W01-D37",
+  "course_version": "85e4ed4841aeba77",
+  "title": "四上·第37课｜Unit 6秋游观察（口语）",
+  "week": 8,
+  "day": 2,
+  "course_type": "training",
+  "est_minutes": 10,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "We go on an autumn outing.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D37/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "A Wutong leaf is falling.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D37/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "How beautiful these Wutong leaves are!",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D37/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "How blue the sky is!",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D37/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "How high the kites are!",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D37/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Some birds are flying across the sky.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D37/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：他们看到漂亮的梧桐叶。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D37/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：一片叶子正在落下。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D37/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用完整句回答：它们正飞过天空。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D37/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用完整句回答：他们想拍一张照片。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D37/q10.mp3"
+    }
+  ]
+}

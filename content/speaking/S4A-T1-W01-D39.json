@@ -1,0 +1,124 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D39",
+  "pair_id": "4A-T1-W01-D39",
+  "publication_status": "formal",
+  "week": 8,
+  "day": 4,
+  "scope": "4A Unit 6 p47-p53",
+  "difficulty": "L2",
+  "course_id": "S4A-T1-W01-D39",
+  "title": "四上·第39课｜Unit 6塞罕坝故事（口语）",
+  "course_type": "training",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "type": "repeat",
+      "text": "Minmin sees a colourful forest.",
+      "tag": "A主线·p47-p53·教材句型跟读",
+      "id": 1,
+      "audio": "static/audio/speaking/S4A-T1-W01-D39/q01.mp3",
+      "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "He is excited to see the golden fields.",
+      "tag": "A主线·p47-p53·教材句型跟读",
+      "id": 2,
+      "audio": "static/audio/speaking/S4A-T1-W01-D39/q02.mp3",
+      "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "He enjoys picking apples and watching birds.",
+      "tag": "A主线·p47-p53·教材句型跟读",
+      "id": 3,
+      "audio": "static/audio/speaking/S4A-T1-W01-D39/q03.mp3",
+      "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "Grandpa shows him a tall tree.",
+      "tag": "A主线·p47-p53·教材句型跟读",
+      "id": 4,
+      "audio": "static/audio/speaking/S4A-T1-W01-D39/q04.mp3",
+      "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "The workers are working hard.",
+      "tag": "A主线·p47-p53·教材句型跟读",
+      "id": 5,
+      "audio": "static/audio/speaking/S4A-T1-W01-D39/q05.mp3",
+      "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "How beautiful autumn is here!",
+      "tag": "A主线·p47-p53·教材句型跟读",
+      "id": 6,
+      "audio": "static/audio/speaking/S4A-T1-W01-D39/q06.mp3",
+      "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What colour are the fields Minmin sees?",
+      "expected": "The fields are golden.",
+      "hint": "用完整句回答：田野是金色的。",
+      "tag": "C微调·p47-p53·引导问答与信息对应",
+      "id": 7,
+      "audio": "static/audio/speaking/S4A-T1-W01-D39/q07.mp3",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p47-p53，不作未掌握结论"
+    },
+    {
+      "type": "qa",
+      "question": "What two things does Minmin enjoy doing?",
+      "expected": "He enjoys picking apples and watching birds.",
+      "hint": "用完整句回答：他喜欢摘苹果和看鸟。",
+      "tag": "A主线·p47-p53·引导问答与信息对应",
+      "id": 8,
+      "audio": "static/audio/speaking/S4A-T1-W01-D39/q08.mp3",
+      "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What does Grandpa show Minmin?",
+      "expected": "Grandpa shows him a tall tree.",
+      "hint": "用完整句回答：爷爷给他看一棵高大的树。",
+      "tag": "A主线·p47-p53·引导问答与信息对应",
+      "id": 9,
+      "audio": "static/audio/speaking/S4A-T1-W01-D39/q09.mp3",
+      "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "How many trees does Grandpa say people could see there years ago?",
+      "expected": "They could see only one tree.",
+      "hint": "用完整句回答：他们只看得到一棵树。",
+      "tag": "A主线·p47-p53·引导问答与信息对应",
+      "id": 10,
+      "audio": "static/audio/speaking/S4A-T1-W01-D39/q10.mp3",
+      "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What are the workers doing?",
+      "expected": "They are working hard.",
+      "hint": "用完整句回答：他们正在努力工作。",
+      "tag": "A主线·p47-p53·引导问答与信息对应",
+      "id": 11,
+      "audio": "static/audio/speaking/S4A-T1-W01-D39/q11.mp3",
+      "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What can Minmin say about autumn there?",
+      "expected": "How beautiful autumn is here!",
+      "hint": "用完整句回答：用 How 感叹：这里的秋天多美啊！",
+      "tag": "A主线·p47-p53·引导问答与信息对应",
+      "id": 12,
+      "audio": "static/audio/speaking/S4A-T1-W01-D39/q12.mp3",
+      "parent_note": "确认版教材p47-p53主线或不增加新知识的同语境受控重组"
+    }
+  ]
+}

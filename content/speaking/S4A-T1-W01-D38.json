@@ -1,0 +1,124 @@
+{
+  "weekly_batch_id": "4A-T1-W01",
+  "study_pack": "4A-T1-W01-D38",
+  "pair_id": "4A-T1-W01-D38",
+  "publication_status": "formal",
+  "week": 8,
+  "day": 3,
+  "scope": "4A Unit 6 p47-p51",
+  "difficulty": "L2",
+  "course_id": "S4A-T1-W01-D38",
+  "title": "四上·第38课｜Unit 6秋景感叹句（口语）",
+  "course_type": "training",
+  "est_minutes": 12,
+  "questions": [
+    {
+      "type": "repeat",
+      "text": "How blue the sky is!",
+      "tag": "A主线·p47-p51·教材句型跟读",
+      "id": 1,
+      "audio": "static/audio/speaking/S4A-T1-W01-D38/q01.mp3",
+      "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "How high the kites are!",
+      "tag": "A主线·p47-p51·教材句型跟读",
+      "id": 2,
+      "audio": "static/audio/speaking/S4A-T1-W01-D38/q02.mp3",
+      "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "How busy the farmer is!",
+      "tag": "A主线·p47-p51·教材句型跟读",
+      "id": 3,
+      "audio": "static/audio/speaking/S4A-T1-W01-D38/q03.mp3",
+      "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "How beautiful the leaves are!",
+      "tag": "A主线·p47-p51·教材句型跟读",
+      "id": 4,
+      "audio": "static/audio/speaking/S4A-T1-W01-D38/q04.mp3",
+      "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "Colourful leaves fall.",
+      "tag": "A主线·p47-p51·教材句型跟读",
+      "id": 5,
+      "audio": "static/audio/speaking/S4A-T1-W01-D38/q05.mp3",
+      "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "repeat",
+      "text": "We take photos of the blue sky.",
+      "tag": "A主线·p47-p51·教材句型跟读",
+      "id": 6,
+      "audio": "static/audio/speaking/S4A-T1-W01-D38/q06.mp3",
+      "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What can you say about the blue sky? Start with How.",
+      "expected": "How blue the sky is!",
+      "hint": "用完整句回答：用 How 感叹：天空多蓝啊！",
+      "tag": "C微调·p47-p51·引导问答与信息对应",
+      "id": 7,
+      "audio": "static/audio/speaking/S4A-T1-W01-D38/q07.mp3",
+      "parent_note": "00确认的历史题型微调；语言材料仍只取确认版教材p47-p51，不作未掌握结论"
+    },
+    {
+      "type": "qa",
+      "question": "What can you say about the high kites? Start with How.",
+      "expected": "How high the kites are!",
+      "hint": "用完整句回答：用 How 感叹：风筝多高啊！",
+      "tag": "A主线·p47-p51·引导问答与信息对应",
+      "id": 8,
+      "audio": "static/audio/speaking/S4A-T1-W01-D38/q08.mp3",
+      "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What can you say about the busy farmer?",
+      "expected": "How busy the farmer is!",
+      "hint": "用完整句回答：用 How 感叹：这位农民多忙啊！",
+      "tag": "A主线·p47-p51·引导问答与信息对应",
+      "id": 9,
+      "audio": "static/audio/speaking/S4A-T1-W01-D38/q09.mp3",
+      "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What can you say about the beautiful leaves?",
+      "expected": "How beautiful the leaves are!",
+      "hint": "用完整句回答：用 How 感叹：这些叶子多美啊！",
+      "tag": "A主线·p47-p51·引导问答与信息对应",
+      "id": 10,
+      "audio": "static/audio/speaking/S4A-T1-W01-D38/q10.mp3",
+      "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What do the boys fly on the outing?",
+      "expected": "They fly kites.",
+      "hint": "用完整句回答：他们放风筝。",
+      "tag": "A主线·p47-p51·引导问答与信息对应",
+      "id": 11,
+      "audio": "static/audio/speaking/S4A-T1-W01-D38/q11.mp3",
+      "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组"
+    },
+    {
+      "type": "qa",
+      "question": "What do the friends take photos of?",
+      "expected": "They take photos of the blue sky.",
+      "hint": "用完整句回答：他们给蓝蓝的天空拍照。",
+      "tag": "A主线·p47-p51·引导问答与信息对应",
+      "id": 12,
+      "audio": "static/audio/speaking/S4A-T1-W01-D38/q12.mp3",
+      "parent_note": "确认版教材p47-p51主线或不增加新知识的同语境受控重组"
+    }
+  ]
+}

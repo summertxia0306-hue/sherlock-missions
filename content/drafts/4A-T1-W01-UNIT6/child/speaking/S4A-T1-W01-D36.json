@@ -1,0 +1,73 @@
+{
+  "course_id": "S4A-T1-W01-D36",
+  "pair_id": "4A-T1-W01-D36",
+  "study_pack": "4A-T1-W01-D36",
+  "course_version": "c741f315b06bdd05",
+  "title": "四上·第36课｜Unit 6秋日农场（口语）",
+  "week": 8,
+  "day": 1,
+  "course_type": "training",
+  "est_minutes": 10,
+  "questions": [
+    {
+      "id": 1,
+      "type": "repeat",
+      "text": "I am a happy farm boy.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D36/q01.mp3"
+    },
+    {
+      "id": 2,
+      "type": "repeat",
+      "text": "I love autumn days.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D36/q02.mp3"
+    },
+    {
+      "id": 3,
+      "type": "repeat",
+      "text": "We dance with falling leaves.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D36/q03.mp3"
+    },
+    {
+      "id": 4,
+      "type": "repeat",
+      "text": "We pick nice and sweet fruits.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D36/q04.mp3"
+    },
+    {
+      "id": 5,
+      "type": "repeat",
+      "text": "My parents work in our fields.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D36/q05.mp3"
+    },
+    {
+      "id": 6,
+      "type": "repeat",
+      "text": "Birds fly south.",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D36/q06.mp3"
+    },
+    {
+      "id": 7,
+      "type": "qa",
+      "hint": "用完整句回答：他们采摘甜甜的水果。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D36/q07.mp3"
+    },
+    {
+      "id": 8,
+      "type": "qa",
+      "hint": "用完整句回答：他们在田里工作。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D36/q08.mp3"
+    },
+    {
+      "id": 9,
+      "type": "qa",
+      "hint": "用完整句回答：它们向南飞。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D36/q09.mp3"
+    },
+    {
+      "id": 10,
+      "type": "qa",
+      "hint": "用完整句回答：它们收集食物。",
+      "audio_asset": "audio/speaking/S4A-T1-W01-D36/q10.mp3"
+    }
+  ]
+}
