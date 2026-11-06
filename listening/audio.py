@@ -15,7 +15,9 @@ from functools import lru_cache
 import streamlit.components.v1 as components
 
 _FRONTEND = os.path.join(os.path.dirname(os.path.abspath(__file__)), "frontend")
-_component = components.declare_component("limited_audio", path=_FRONTEND)
+# Keep the iframe registration when the audio routes are hot-reloaded.
+if "_component" not in globals():
+    _component = components.declare_component("limited_audio", path=_FRONTEND)
 
 _AUDIO_BASES = (
     "https://cdn.jsdelivr.net/gh/summertxia0306-hue/sherlock-missions@b5dbb07aadf6a4e43ee8dc9f281a596ae8ed5543/",

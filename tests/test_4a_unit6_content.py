@@ -1,4 +1,5 @@
 """Check U6 pairing, audio completeness and the student catalogue transition."""
+import importlib
 import json
 import os
 import tempfile
@@ -19,6 +20,31 @@ def read_json(path):
 
 
 class Unit6ContentTests(unittest.TestCase):
+    def test_hot_deploy_refreshes_stale_audio_once_before_course_pages(self):
+        from listening import audio, page as listening_page
+        from speaking import page as speaking_page
+
+        component = audio._component
+        del audio._UNIT6_AUDIO_BASES
+        try:
+            app = AppTest.from_file(str(ROOT / "app.py"), default_timeout=20)
+            app.query_params["course_id"] = "L4A-T1-W01-D36"
+            with tempfile.TemporaryDirectory() as runtime, mock.patch.dict(
+                os.environ, {"SHERLOCK_RUNTIME_DIR": runtime, "RESULTS_TOKEN": "", "RESULTS_REPO": ""}
+            ):
+                app.run()
+                self.assertFalse(app.exception)
+                self.assertIn("36b82554", audio.audio_url("static/audio/listening/L4A-T1-W01-D36/hello.mp3"))
+                self.assertIs(listening_page.limited_audio, audio.limited_audio)
+                self.assertIs(speaking_page.limited_audio, audio.limited_audio)
+                self.assertIs(component, audio._component)
+                app.run()
+                self.assertFalse(app.exception)
+                self.assertIs(component, audio._component)
+        finally:
+            if not hasattr(audio, "_UNIT6_AUDIO_BASES"):
+                importlib.reload(audio)
+
     def test_u6_audio_uses_its_immutable_backup_and_stays_in_batch_bounds(self):
         from listening import audio
 

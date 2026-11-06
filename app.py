@@ -22,6 +22,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
+from listening import audio as laudio
 from listening import page as lpage
 from speaking import models as smodels
 from speaking import page as spage
@@ -33,6 +34,9 @@ from storage import progress
 # Streamlit rerun re-registers the iframe component and can leave iPad Safari
 # showing permanent grey component placeholders instead of the microphone.
 progress = importlib.reload(progress)
+# Refresh the audio routes if a hot deployment retained the pre-U6 module.
+if not hasattr(laudio, "_UNIT6_AUDIO_BASES"):
+    laudio = importlib.reload(laudio)
 lpage = importlib.reload(lpage)
 if not hasattr(srecorder, "validate_wav_integrity"):
     srecorder = importlib.reload(srecorder)
