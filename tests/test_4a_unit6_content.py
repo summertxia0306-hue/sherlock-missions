@@ -19,6 +19,19 @@ def read_json(path):
 
 
 class Unit6ContentTests(unittest.TestCase):
+    def test_u6_audio_uses_its_immutable_backup_and_stays_in_batch_bounds(self):
+        from listening import audio
+
+        revision = "36b825548d454ba7eeb8905ad961e0bc5555af1e"
+        for module, prefix in (("listening", "L"), ("speaking", "S")):
+            for day in range(36, 41):
+                name = f"static/audio/{module}/{prefix}4A-T1-W01-D{day}/q01.mp3"
+                sources = audio.audio_sources(name)
+                self.assertEqual(f"https://raw.githubusercontent.com/summertxia0306-hue/sherlock-missions/{revision}/{name}",
+                                 sources[0])
+        self.assertIn("0d7a46d1", audio.audio_url("static/audio/listening/L4A-T1-W01-D35/q01.mp3"))
+        self.assertIn("b5dbb07a", audio.audio_url("static/audio/listening/L4A-T1-W01-D41/q01.mp3"))
+
     def test_five_paired_lessons_within_their_textbook_pages(self):
         end_pages = [49, 50, 51, 53, 54]
         for index, day in enumerate(range(36, 41)):

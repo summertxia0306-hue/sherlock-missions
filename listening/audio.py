@@ -41,9 +41,14 @@ _UNIT5_AUDIO_BASES = (
     "https://gcore.jsdelivr.net/gh/summertxia0306-hue/sherlock-missions@0d7a46d18aec8aa2f55ae2c44649b70b77437f2c/",
     "https://cdn.jsdelivr.net/gh/summertxia0306-hue/sherlock-missions@0d7a46d18aec8aa2f55ae2c44649b70b77437f2c/",
 )
+_UNIT6_AUDIO_BASES = (
+    "https://raw.githubusercontent.com/summertxia0306-hue/sherlock-missions/36b825548d454ba7eeb8905ad961e0bc5555af1e/",
+)
 
 
 def _bases_for(repo_path):
+    if re.match(r"^static/audio/(?:listening/L|speaking/S)4A-T1-W01-D(?:36|37|38|39|40)/", repo_path):
+        return _UNIT6_AUDIO_BASES
     if re.match(r"^static/audio/(?:listening/L|speaking/S)4A-T1-W01-D(?:31|32|33|34|35)/", repo_path):
         return _UNIT5_AUDIO_BASES
     if re.match(r"^static/audio/(?:listening/L|speaking/S)4A-T1-W01-D(?:26|27|28|29|30)/", repo_path):

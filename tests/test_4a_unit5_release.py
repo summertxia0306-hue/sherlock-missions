@@ -24,7 +24,7 @@ class Unit5ReleaseTests(unittest.TestCase):
                 self.assertTrue(sources[0].startswith("https://raw.githubusercontent.com/"))
                 self.assertTrue(all(revision in source for source in sources))
         self.assertIn("a99d4ad37", audio.audio_url("static/audio/listening/L4A-T1-W01-D30/q01.mp3"))
-        self.assertIn("b5dbb07a", audio.audio_url("static/audio/listening/L4A-T1-W01-D36/q01.mp3"))
+        self.assertIn("b5dbb07a", audio.audio_url("static/audio/listening/L4A-T1-W01-D41/q01.mp3"))
 
     def test_ten_course_pages_have_their_audio_and_mic(self):
         with tempfile.TemporaryDirectory() as runtime, mock.patch.dict(os.environ, {
